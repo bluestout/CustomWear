@@ -69,6 +69,116 @@
         "name": "single_line_text_field",
         "category": "TEXT"
       }
+    },
+    {
+      "key": "qty_caps",
+      "namespace": "custom",
+      "name": "Qty Caps",
+      "description": "",
+      "type": {
+        "name": "number_decimal",
+        "category": "NUMBER"
+      }
+    },
+    {
+      "key": "qty_cw",
+      "namespace": "custom",
+      "name": "Qty CW",
+      "description": "",
+      "type": {
+        "name": "number_decimal",
+        "category": "NUMBER"
+      }
+    },
+    {
+      "key": "qty_from",
+      "namespace": "custom",
+      "name": "Qty From",
+      "description": "",
+      "type": {
+        "name": "number_decimal",
+        "category": "NUMBER"
+      }
+    },
+    {
+      "key": "qty_to",
+      "namespace": "custom",
+      "name": "Qty To",
+      "description": "",
+      "type": {
+        "name": "number_decimal",
+        "category": "NUMBER"
+      }
+    },
+    {
+      "key": "qty_price",
+      "namespace": "custom",
+      "name": "Qty Price",
+      "description": "",
+      "type": {
+        "name": "number_decimal",
+        "category": "NUMBER"
+      }
+    },
+    {
+      "key": "upc_code",
+      "namespace": "custom",
+      "name": "UPC Code",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "main_cat_id",
+      "namespace": "custom",
+      "name": "Main Cat ID",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "queries",
+      "namespace": "shopify--discovery--product_search_boost",
+      "name": "Search product boosts",
+      "description": "List of search queries for which a product gets higher rank in search results",
+      "type": {
+        "name": "list.single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "related_products",
+      "namespace": "shopify--discovery--product_recommendation",
+      "name": "Related products",
+      "description": "List of related products",
+      "type": {
+        "name": "list.product_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "related_products_display",
+      "namespace": "shopify--discovery--product_recommendation",
+      "name": "Related products settings",
+      "description": "Determines how related products are displayed along with algorithmic product recommendations",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "complementary_products",
+      "namespace": "shopify--discovery--product_recommendation",
+      "name": "Complementary products",
+      "description": "List of complementary products",
+      "type": {
+        "name": "list.product_reference",
+        "category": "REFERENCE"
+      }
     }
   ],
   "variant": [

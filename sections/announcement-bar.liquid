@@ -29,6 +29,7 @@
       <div
         class="announcement-bar{% if section.settings.show_social %} announcement-bar--one-announcement{% endif %}"
         role="region"
+        id="node-marquee"
         aria-label="{{ 'sections.header.announcement' | t }}"
         {{ section.blocks.first.shopify_attributes }}
       >
@@ -161,6 +162,20 @@
     </div>
   </div>
 </div>
+
+{% comment %} <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    console.log(window.innerWidth);
+
+    if (window.innerWidth < 768) {
+      nodeMarquee({
+        parent: '#node-marquee',
+        speed: 1,
+        minQuantity: 2,
+      });
+    }
+  });
+</script> {% endcomment %}
 
 {% schema %}
 {
