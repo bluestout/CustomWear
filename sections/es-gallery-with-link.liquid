@@ -1,0 +1,178 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    --padding-top: {{ section.settings.padding_top }}px;
+    --padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+
+  @media (max-width: 768px) {
+    #shopify-section-{{ section.id }} {
+      --padding-top: {{ section.settings.padding_top_mobile }}px;
+      --padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="container">
+  <div class="page-width">
+    <h2 class="es-gallery-with-link__title es-font-h2 center{% if section.settings.hide_title_on_mobile %} small-hide{% endif %}">{{ section.settings.title }}</h2>
+    <div class="es-gallery-with-link__items">
+      {%- for block in section.blocks -%}
+        <div class="es-gallery-with-link__item{% if block.settings.image_2 != blank and block.settings.image != blank %} es-gallery-with-link__item--two-images{% endif %}" style="--width: {{ block.settings.item_width | times: 10 }}%; --gap: {{ 10 | divided_by: section.settings.item_count_row }}px;">
+          <div class="es-gallery-with-link__item-item" onclick="window.location.href = '{{ block.settings.url }}'">
+            <div class="es-gallery-with-link__item-item-image">
+              <img
+                src="{{ block.settings.image | image_url: width: 1000 }}"
+                alt="{{ block.settings.title }}"
+                width="{{ block.settings.image.width }}"
+                height="{{ block.settings.image.height }}"
+              >
+            </div>
+            <div class="es-gallery-with-link__item-item-title">
+              <a class="es-button link white" href="{{ block.settings.url }}">{{ block.settings.title }}</a>
+            </div>
+          </div>
+          {%- if block.settings.image_2 != blank -%}
+            <div class="es-gallery-with-link__item-item" onclick="window.location.href = '{{ block.settings.url_2 }}'">
+              <div class="es-gallery-with-link__item-item-image">
+                <img
+                  src="{{ block.settings.image_2 | image_url: width: 1000 }}"
+                  alt="{{ block.settings.title_2 }}"
+                  width="{{ block.settings.image_2.width }}"
+                  height="{{ block.settings.image_2.height }}"
+                >
+              </div>
+              <div class="es-gallery-with-link__item-item-title">
+                <a class="es-button link white" href="{{ block.settings.url_2 }}">{{ block.settings.title_2 }}</a>
+              </div>
+            </div>
+          {%- endif -%}
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{%- schema -%}
+{
+  "name": "ES Gallery with Link",
+  "tag": "section",
+  "class": "section es-gallery-with-link",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Title",
+      "default": "Shop By Hat Style"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_title_on_mobile",
+      "label": "Hide Title on Mobile",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Padding Top Mobile",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Padding Bottom Mobile",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "item_count_row",
+      "label": "Item Count Row",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 2
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+        {
+          "type": "range",
+          "id": "item_width",
+          "label": "Item Width",
+          "min": 0,
+          "max": 10,
+          "step": 1,
+          "default": 5
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "title",
+          "label": "Title",
+          "default": "Hat Style"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "URL"
+        },
+        {
+          "type": "header",
+          "content": "Image 2"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_2",
+          "label": "Image 2"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "title_2",
+          "label": "Title 2",
+          "default": "Hat Style 2"
+        },
+        {
+          "type": "url",
+          "id": "url_2",
+          "label": "URL 2"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "ES Gallery with Link"
+    }
+  ]
+}
+{%- endschema -%}
