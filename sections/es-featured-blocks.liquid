@@ -1,0 +1,138 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    --padding-top: {{ section.settings.padding_top }}px;
+    --padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+
+  @media (max-width: 768px) {
+    #shopify-section-{{ section.id }} {
+      --padding-top: {{ section.settings.padding_top | divided_by: 2 }}px;
+      --padding-bottom: {{ section.settings.padding_bottom | divided_by: 2 }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="container">
+  <div class="swiper">
+    <div class="page-width es-featured-blocks__title-wrapper small-hide">
+      <h2 class="es-font-h2">{{ section.settings.title }}</h2>
+      <div class="es-featured-blocks__navigation">
+        <div class="swiper-button-prev">
+          {%- render 'es-icon-arrow-right' -%}
+        </div>
+        <div class="swiper-button-next">
+          {%- render 'es-icon-arrow-right' -%}
+        </div>
+      </div>
+    </div>
+    <div class="esSwiper page-width">
+      <div class="swiper-wrapper">
+        {%- for block in section.blocks -%}
+          <div class="swiper-slide">
+            <div class="es-featured-blocks__item">
+              <div class="es-featured-blocks__item-image">
+                <img
+                  src="{{ block.settings.image | image_url: width: 1000 }}"
+                  alt="{{ block.settings.title }}"
+                  width="{{ block.settings.image.width | divided_by: 2 }}"
+                  height="{{ block.settings.image.height | divided_by: 2 }}"
+                >
+              </div>
+              <div class="es-featured-blocks__item-title">
+                <a class="es-button link" href="{{ block.settings.url }}">{{ block.settings.title }}</a>
+              </div>
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const swiper = new Swiper('.esSwiper', {
+      slidesPerView: 5,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        1024: {
+          slidesPerView: 5,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        320: {
+          slidesPerView: 2.5,
+          spaceBetween: 4,
+        },
+      },
+    });
+  });
+</script>
+
+{%- schema -%}
+{
+  "name": "ES Featured Blocks",
+  "tag": "section",
+  "class": "section es-featured-blocks",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Title",
+      "default": "Shop By Hat Style"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Collection",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "title",
+          "label": "Title",
+          "default": "Hat Style"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "URL"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "ES Featured Blocks"
+    }
+  ]
+}
+{%- endschema -%}

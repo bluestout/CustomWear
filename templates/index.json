@@ -68,37 +68,140 @@
         "show_text_below": false
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "es_featured_blocks_zzkdqw": {
+      "type": "es-featured-blocks",
+      "blocks": {
+        "collection_rthtNn": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/Group_247.png",
+            "title": "Imperial",
+            "url": "shopify://collections/frontpage"
+          }
+        },
+        "collection_3tFD4j": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/img.png",
+            "title": "Premium 5-Panel Golf",
+            "url": "#"
+          }
+        },
+        "collection_J89ex6": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/Group_248.png",
+            "title": "Sport",
+            "url": "#"
+          }
+        },
+        "collection_EmE39w": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/Group_249.png",
+            "title": "Flexfit",
+            "url": "#"
+          }
+        },
+        "collection_fraWam": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/Group_251.png",
+            "title": "Trucker Mesh",
+            "url": "#"
+          }
+        },
+        "collection_TGYUpq": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/Group_247.png",
+            "title": "Imperial",
+            "url": "shopify://collections/frontpage"
+          }
+        },
+        "collection_nfmcKf": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/img.png",
+            "title": "Premium 5-Panel Golf",
+            "url": "#"
+          }
+        },
+        "collection_epykX9": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/Group_248.png",
+            "title": "Sport",
+            "url": "#"
+          }
+        },
+        "collection_LgkCT4": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/Group_249.png",
+            "title": "Flexfit",
+            "url": "#"
+          }
+        },
+        "collection_tzd3HU": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/Group_251.png",
+            "title": "Trucker Mesh",
+            "url": "#"
+          }
+        }
+      },
+      "block_order": [
+        "collection_rthtNn",
+        "collection_3tFD4j",
+        "collection_J89ex6",
+        "collection_EmE39w",
+        "collection_fraWam",
+        "collection_TGYUpq",
+        "collection_nfmcKf",
+        "collection_epykX9",
+        "collection_LgkCT4",
+        "collection_tzd3HU"
+      ],
       "settings": {
-        "collection": "all",
-        "products_to_show": 8,
-        "title": "Featured products",
-        "heading_size": "h2",
+        "title": "Shop By Hat Style",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
+    "es_featured_collection_RGkMJh": {
+      "type": "es-featured-collection",
+      "settings": {
+        "collection": "frontpage",
+        "products_to_show": 15,
+        "title": "Shop By Hat Style",
+        "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "columns_desktop": 4,
-        "enable_desktop_slider": false,
+        "columns_desktop": 5,
+        "enable_desktop_slider": true,
         "full_width": false,
-        "show_view_all": true,
+        "show_view_all": false,
         "view_all_style": "solid",
-        "color_scheme": "scheme-1",
+        "color_scheme": "",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 44,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
         "padding_bottom": 36
       }
     }
   },
   "order": [
     "es_image_banner_Qc9Nmz",
-    "featured_collection"
+    "es_featured_blocks_zzkdqw",
+    "es_featured_collection_RGkMJh"
   ]
 }
