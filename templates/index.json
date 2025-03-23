@@ -170,6 +170,45 @@
         "padding_bottom": 32
       }
     },
+    "es_image_with_text_QiEqMH": {
+      "type": "es-image-with-text",
+      "blocks": {
+        "heading_ptCCnT": {
+          "type": "heading",
+          "settings": {
+            "heading": "Custom Embroidery",
+            "heading_size": "h1"
+          }
+        },
+        "text_XxeLzC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>On Richardson hats, including the popular </p><p><strong>112 models</strong>—</p><p>crafted with quality and precision just for you!</p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ptCCnT",
+        "text_XxeLzC"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/110M_12.png",
+        "image_2": "shopify://shop_images/Image.png",
+        "height": "adapt",
+        "desktop_image_width": "large",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "es_featured_collection_RGkMJh": {
       "type": "es-featured-collection",
       "settings": {
@@ -202,6 +241,7 @@
   "order": [
     "es_image_banner_Qc9Nmz",
     "es_featured_blocks_zzkdqw",
+    "es_image_with_text_QiEqMH",
     "es_featured_collection_RGkMJh"
   ]
 }

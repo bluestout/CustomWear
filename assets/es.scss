@@ -197,14 +197,16 @@
 
     .esSwiper {
       @media (max-width: 768px) {
-        padding: 0 12px;
+        padding: 0 1.5rem;
       }
 
       .swiper-slide {
         .es-featured-blocks__item {
           img {
             max-width: 100%;
+            width: 100%;
             height: auto;
+            display: block;
           }
   
           .es-featured-blocks__item-title {
@@ -241,3 +243,62 @@
   }
 }
 
+.es-image-with-text {
+  .image-with-text {
+    .image-with-text__grid {
+      display: flex;
+      align-items: center;
+
+      .image-with-text__media-item {
+        display: flex;
+        gap: 10px;
+  
+        & > div {
+          flex: 1;
+        }
+
+        @media (max-width: 768px) {
+          gap: 2px;
+        }
+      }
+
+      &.image-with-text__grid--reverse {
+        .image-with-text__text-item {
+          .image-with-text__content {
+            padding: 16px 30px 16px 0;
+
+            @media (max-width: 768px) {
+              padding-right: 0;
+            }
+
+            .image-with-text__text {
+              &.subtitle {
+                color: black;
+                font-size: 40px;
+                font-family: "Inter", sans-serif;
+                font-weight: 400;
+                line-height: 52px;
+                word-wrap: break-word;
+                margin-top: 15px;
+
+                p {
+                  margin: 0;
+
+                  @media (max-width: 768px) {
+                    display: inline;
+                  }
+                }
+
+                @media (max-width: 768px) {
+                  font-size: 16px;
+                  line-height: 20.8px; 
+                  margin-top: 8px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
