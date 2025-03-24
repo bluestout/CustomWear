@@ -1,0 +1,153 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    --padding-top: {{ section.settings.padding_top }}px;
+    --padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+
+  @media (max-width: 768px) {
+    #shopify-section-{{ section.id }} {
+      --padding-top: {{ section.settings.padding_top | divided_by: 2 }}px;
+      --padding-bottom: {{ section.settings.padding_bottom | divided_by: 2 }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="container">
+  <div class="swiper">
+    <div class="es-testimonial__swiper">
+      <div class="swiper-wrapper">
+        {%- for block in section.blocks -%}
+          <div class="swiper-slide">
+            <div class="es-testimonial__item center">
+              <div class="es-testimonial__item-title">
+                {{ block.settings.title }}
+              </div>
+              {%- if block.settings.image != blank -%}
+                <div class="es-testimonial__item-image">
+                  <img
+                    src="{{ block.settings.image | image_url: width: 1000 }}"
+                    alt="{{ block.settings.title }}"
+                    width="{{ block.settings.image.width }}"
+                    height="{{ block.settings.image.height }}"
+                  >
+                </div>
+              {%- endif -%}
+              <div class="es-testimonial__item-text">
+                {{ block.settings.text }}
+              </div>
+              <div class="es-testimonial__item-created-at">
+                {{ block.settings.created_at }}
+              </div>
+              <div class="es-testimonial__item-name">
+                by {{ block.settings.name }}
+              </div>
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+      <div class="swiper-button-prev es-swiper-button">{%- render 'es-icon-arrow-right' -%}</div>
+      <div class="swiper-button-next es-swiper-button">{%- render 'es-icon-arrow-right' -%}</div>
+    </div>
+  </div>
+  <div class="es-swiper-border">
+    <div class="es-quote-symbol-wrapper">
+      {%- render 'es-quote-start' -%}
+      {%- render 'es-quote-end' -%}
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    new Swiper('#shopify-section-{{ section.id }} .es-testimonial__swiper', {
+      slidesPerView: 2.5,
+      loop: true,
+      centeredSlides: true,
+      navigation: {
+        nextEl: '#shopify-section-{{ section.id }} .swiper-button-next',
+        prevEl: '#shopify-section-{{ section.id }} .swiper-button-prev'
+      },
+      breakpoints: {
+        1024: {
+          slidesPerView: 2.5,
+        },
+        768: {
+          slidesPerView: 1.5,
+        },
+        320: {
+          slidesPerView: 1,
+        }
+      }
+    });
+  });
+</script>
+
+{%- schema -%}
+{
+  "name": "ES Testimonial",
+  "tag": "section",
+  "class": "section es-testimonial",
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Review",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "title",
+          "label": "Title",
+          "default": "Amazing Hats!"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>We designed some hats to give away to patients and promote the business.  The patients have loved them!  Thanks to Lisette in customer service who has made the process easy! Great Company and excellent service!</p>"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "created_at",
+          "label": "Created At",
+          "default": "Tue, Sep 01 2020"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "name",
+          "label": "Name",
+          "default": "Julie"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "ES Testimonial"
+    }
+  ]
+}
+{%- endschema -%}

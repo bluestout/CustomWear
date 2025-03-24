@@ -269,7 +269,88 @@
       ],
       "settings": {
         "title": "Shop By Top Products",
+        "hide_title_on_mobile": true,
         "padding_top": 40,
+        "padding_bottom": 40,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0,
+        "item_count_row": 2
+      }
+    },
+    "es_testimonial_xNiLtf": {
+      "type": "es-testimonial",
+      "blocks": {
+        "review_xxMRxP": {
+          "type": "review",
+          "settings": {
+            "title": "Amazing Hats!",
+            "image": "shopify://shop_images/Stars.svg",
+            "text": "<p>We designed some hats to give away to patients and promote the business.  The patients have loved them!  Thanks to Lisette in customer service who has made the process easy! Great Company and excellent service!</p>",
+            "created_at": "Tue, Sep 01 2020",
+            "name": "Julie"
+          }
+        },
+        "review_LNLbd3": {
+          "type": "review",
+          "settings": {
+            "title": "Perfect Hats!",
+            "image": "shopify://shop_images/Stars.svg",
+            "text": "<p>Our hats are awesome! Customers and employees alike are always asking for new ones!</p>",
+            "created_at": "Mon, Aug 31 2020",
+            "name": "Sarah M Dymond"
+          }
+        },
+        "review_h8GNw6": {
+          "type": "review",
+          "settings": {
+            "title": "Thanks Robin! Great Caps/Great Service",
+            "image": "shopify://shop_images/Stars.svg",
+            "text": "<p>Pleased as always with my recent order! Seamless and quality work. Thanks for all of your help Robin!</p>",
+            "created_at": "Tue, Oct 15 2024",
+            "name": "empowermentoutfitters@gmail.com"
+          }
+        },
+        "review_kf7iPz": {
+          "type": "review",
+          "settings": {
+            "title": "Amazing Hats!",
+            "image": "shopify://shop_images/Stars.svg",
+            "text": "<p>We designed some hats to give away to patients and promote the business.  The patients have loved them!  Thanks to Lisette in customer service who has made the process easy! Great Company and excellent service!</p>",
+            "created_at": "Tue, Sep 01 2020",
+            "name": "Julie"
+          }
+        },
+        "review_mBWtJC": {
+          "type": "review",
+          "settings": {
+            "title": "Perfect Hats!",
+            "image": "shopify://shop_images/Stars.svg",
+            "text": "<p>Our hats are awesome! Customers and employees alike are always asking for new ones!</p>",
+            "created_at": "Mon, Aug 31 2020",
+            "name": "Sarah M Dymond"
+          }
+        },
+        "review_LGegcN": {
+          "type": "review",
+          "settings": {
+            "title": "Thanks Robin! Great Caps/Great Service",
+            "image": "shopify://shop_images/Stars.svg",
+            "text": "<p>Pleased as always with my recent order! Seamless and quality work. Thanks for all of your help Robin!</p>",
+            "created_at": "Tue, Oct 15 2024",
+            "name": "empowermentoutfitters@gmail.com"
+          }
+        }
+      },
+      "block_order": [
+        "review_xxMRxP",
+        "review_LNLbd3",
+        "review_h8GNw6",
+        "review_kf7iPz",
+        "review_mBWtJC",
+        "review_LGegcN"
+      ],
+      "settings": {
+        "padding_top": 26,
         "padding_bottom": 40
       }
     },
@@ -307,6 +388,7 @@
     "es_featured_blocks_zzkdqw",
     "es_image_with_text_QiEqMH",
     "es_gallery_with_link_CGamDr",
+    "es_testimonial_xNiLtf",
     "es_featured_collection_RGkMJh"
   ]
 }
