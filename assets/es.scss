@@ -187,10 +187,117 @@
 }
 
 .es-featured-collection {
-  slider-component {
-    .slider-buttons {
-      .slider-counter {
-        display: none;
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-bottom);
+
+  .container {
+    .page-width {
+      @media (max-width: 768px) {
+        padding: 0;
+      }
+
+      .swiper {
+        @media (max-width: 768px) {
+          padding: 0 1.5rem;
+        }
+
+        .es-featured-collection__title-wrapper {
+          margin-bottom: 40px;
+          position: relative;
+
+          @media (max-width: 768px) {
+            margin-bottom: 20px;
+          }
+
+          h2.es-font-h2 {
+            margin: 0;
+          }
+
+          .es-featured-collection__navigation {
+            .es-swiper-button {
+              top: unset;
+              margin: 0;
+              bottom: 0;
+              width: 40px;
+              height: 40px;
+              padding: 0;
+
+              svg {
+                width: 100%;
+                height: 100%;
+              }
+
+              &.swiper-button-prev {
+                left: unset;
+                right: 44px;
+              }
+
+              &.swiper-button-next {
+                right: 0;
+              }
+            }
+          }
+        }
+
+        .product-card-wrapper {
+          .card__inner {
+            .card__media {
+              width: 100%;
+
+              .media {
+                height: 100%;
+
+                img {
+                  object-fit: contain;
+                }
+
+                &.media--hover-effect {
+                  img + img {
+                    display: none;
+                  }
+                }
+              }
+            }
+
+            .card__content {
+              display: none;
+            }
+          }
+
+          .card__content {
+            .card__information {
+              .card__heading {
+                .full-unstyled-link {
+                  color: black;
+                  font-size: 13px;
+                  font-family: Inter;
+                  font-weight: 400;
+                  line-height: 19.50px;
+                }
+              }
+
+              .price {
+                color: black;
+                font-size: 16px;
+                font-family: Inter;
+                font-weight: 600;
+                line-height: 20.80px;
+
+                @media (max-width: 768px) {
+                  font-size: 14px;
+                  line-height: 18.20px;
+                }
+              }
+            }
+          }
+
+          &:hover {
+            .card__inner .card__media .media.media--hover-effect img + img {
+              display: block;
+              opacity: 1;
+            }
+          }
+        }
       }
     }
   }
@@ -449,6 +556,7 @@
 .es-testimonial {
   padding-top: var(--padding-top);
   padding-bottom: var(--padding-bottom);
+  background: linear-gradient(to bottom, #FFF, rgba(217, 217, 217, 0.16));
 
   .container {
     position: relative;
