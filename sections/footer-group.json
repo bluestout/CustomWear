@@ -27,11 +27,21 @@
             "heading": "Help",
             "menu": "help"
           }
+        },
+        "brand_information_V94PiB": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true,
+            "headline": "Discover our brands",
+            "image": "shopify://shop_images/Group_1041.svg",
+            "image_2": "shopify://shop_images/logo_b2b8df43-0a8f-4e1e-8db1-a20c5d7e7907.svg"
+          }
         }
       },
       "block_order": [
         "link_list_iFqkVB",
-        "link_list_9eCptB"
+        "link_list_9eCptB",
+        "brand_information_V94PiB"
       ],
       "settings": {
         "color_scheme": "scheme-3",
@@ -44,8 +54,8 @@
         "payment_enable": true,
         "show_policy": true,
         "margin_top": 0,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 72,
+        "padding_bottom": 0
       }
     }
   },

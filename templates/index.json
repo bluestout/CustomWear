@@ -515,10 +515,10 @@
         "mobile_content_alignment": "center",
         "section_color_scheme": "",
         "color_scheme": "scheme-09348374-9048-4109-8e6d-ac33083b4bdd",
-        "padding_top": 36,
-        "padding_bottom": 36,
+        "padding_top": 40,
+        "padding_bottom": 80,
         "padding_top_mobile": 20,
-        "padding_bottom_mobile": 24
+        "padding_bottom_mobile": 40
       }
     }
   },
