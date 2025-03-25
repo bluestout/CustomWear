@@ -13,8 +13,28 @@
   "sections": {
     "footer": {
       "type": "footer",
+      "blocks": {
+        "link_list_iFqkVB": {
+          "type": "link_list",
+          "settings": {
+            "heading": "About",
+            "menu": "about"
+          }
+        },
+        "link_list_9eCptB": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Help",
+            "menu": "help"
+          }
+        }
+      },
+      "block_order": [
+        "link_list_iFqkVB",
+        "link_list_9eCptB"
+      ],
       "settings": {
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-3",
         "newsletter_enable": true,
         "newsletter_heading": "Subscribe to our emails",
         "enable_follow_on_shop": true,

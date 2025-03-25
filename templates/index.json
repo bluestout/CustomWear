@@ -268,6 +268,7 @@
         "item_t9qBbg"
       ],
       "settings": {
+        "scrollable": false,
         "title": "Shop By Top Products",
         "hide_title_on_mobile": true,
         "padding_top": 40,
@@ -366,8 +367,158 @@
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
+        "border_bottom": true,
         "padding_top": 56,
-        "padding_bottom": 56
+        "padding_bottom": 80
+      }
+    },
+    "es_featured_videos_zwxmNW": {
+      "type": "es-featured-videos",
+      "blocks": {
+        "video_azGMUG": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "featured_image": "shopify://shop_images/image_6.png"
+          }
+        },
+        "video_pyYEmP": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "featured_image": "shopify://shop_images/image_7.png"
+          }
+        },
+        "video_nQgbYm": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "featured_image": "shopify://shop_images/image_8.png"
+          }
+        }
+      },
+      "block_order": [
+        "video_azGMUG",
+        "video_pyYEmP",
+        "video_nQgbYm"
+      ],
+      "settings": {
+        "scrollable": true,
+        "title": "Customized Wear Techniques 101",
+        "description": "<p>Discover the best techniques for embroidering hats, washing caps & measuring your head for the perfect fit with ease!</p>",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
+    "es_gallery_with_link_XdFTjW": {
+      "type": "es-gallery-with-link",
+      "blocks": {
+        "item_EP8aGf": {
+          "type": "item",
+          "settings": {
+            "item_width": 4,
+            "image": "shopify://shop_images/Image_4d04158b-f2eb-40c3-86a4-2affdd8ee371.png",
+            "title": "",
+            "url": "",
+            "title_2": "Hat Style 2",
+            "url_2": ""
+          }
+        },
+        "item_Fp6UFz": {
+          "type": "item",
+          "settings": {
+            "item_width": 4,
+            "image": "shopify://shop_images/pexels-duc-anh-nguyen-63701176-8289795_1.png",
+            "title": "",
+            "url": "",
+            "title_2": "Hat Style 2",
+            "url_2": ""
+          }
+        },
+        "item_aJtUkE": {
+          "type": "item",
+          "settings": {
+            "item_width": 2,
+            "image": "shopify://shop_images/Dress_up_Flexfit_1.png",
+            "title": "",
+            "url": "",
+            "image_2": "shopify://shop_images/6006t_YP_1.png",
+            "title_2": "",
+            "url_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_EP8aGf",
+        "item_Fp6UFz",
+        "item_aJtUkE"
+      ],
+      "settings": {
+        "scrollable": true,
+        "title": "Featured work",
+        "hide_title_on_mobile": true,
+        "padding_top": 40,
+        "padding_bottom": 80,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20,
+        "item_count_row": 3
+      }
+    },
+    "es_image_with_text_kFT4Pw": {
+      "type": "es-image-with-text",
+      "blocks": {
+        "heading_NGVgUX": {
+          "type": "heading",
+          "settings": {
+            "heading": "CapWholesalers.com: Your Trusted Source for Quality Baseball Caps",
+            "heading_size": "h1"
+          }
+        },
+        "separator_KFgDcp": {
+          "type": "separator",
+          "settings": {
+            "color": "#990000",
+            "width": 100
+          }
+        },
+        "text_EXnEAX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>When it comes to top-notch, wholesale baseball caps, CapWholesalers.com is your go-to destination. With over 25 years of industry expertise, we’ve mastered the art of supplying high-quality headwear to businesses of all sizes.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_BKEWTb": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More",
+            "button_link": "shopify://collections/frontpage",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_NGVgUX",
+        "separator_KFgDcp",
+        "text_EXnEAX",
+        "button_BKEWTb"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Image_1.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "",
+        "color_scheme": "scheme-09348374-9048-4109-8e6d-ac33083b4bdd",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 24
       }
     }
   },
@@ -377,6 +528,9 @@
     "es_image_with_text_QiEqMH",
     "es_gallery_with_link_CGamDr",
     "es_testimonial_xNiLtf",
-    "es_featured_collection_RGkMJh"
+    "es_featured_collection_RGkMJh",
+    "es_featured_videos_zwxmNW",
+    "es_gallery_with_link_XdFTjW",
+    "es_image_with_text_kFT4Pw"
   ]
 }

@@ -119,6 +119,8 @@
                   <div class="image-with-text__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
                     {{ block.settings.text }}
                   </div>
+                {%- when 'separator' -%}
+                  <hr class="es-separator" style="background-color: {{ block.settings.color }}; width: {{ block.settings.width }}px;">
                 {%- when 'button' -%}
                   {%- if block.settings.button_label != blank -%}
                     <a
@@ -127,7 +129,7 @@
                       {% else %}
                         href="{{ block.settings.button_link }}"
                       {% endif %}
-                      class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+                      class="es-button link mt-auto {% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
                       {{ block.shopify_attributes }}
                     >
                       {{ block.settings.button_label | escape }}
@@ -420,6 +422,28 @@
           ],
           "default": "h1",
           "label": "t:sections.all.heading_size.label"
+        }
+      ]
+    },
+    {
+      "type": "separator",
+      "name": "Separator",
+      "settings": [
+        {
+          "type": "color",
+          "id": "color",
+          "label": "Color",
+          "default": "#990000"
+        },
+        {
+          "type": "range",
+          "id": "width",
+          "label": "Width",
+          "min": 0,
+          "max": 1000,
+          "step": 10,
+          "unit": "px",
+          "default": 100
         }
       ]
     },

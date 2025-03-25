@@ -1,0 +1,185 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    position: relative;
+    --padding-top: {{ section.settings.padding_top }}px;
+    --padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+
+  @media (max-width: 768px) {
+    #shopify-section-{{ section.id }} {
+      --padding-top: {{ section.settings.padding_top | divided_by: 2 }}px;
+      --padding-bottom: {{ section.settings.padding_bottom | divided_by: 2 }}px;
+    }
+  }
+{%- endstyle -%}
+
+{%- capture sizes -%}
+  {% if section.settings.full_width -%}
+    100vw
+  {%- else -%}
+    (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px)
+    calc(100vw - 10rem), 100vw
+  {%- endif %}
+{%- endcapture -%}
+
+<div class="container{% if section.settings.scrollable %} es-featured-videos--scrollable{% endif %}">
+  <div class="page-width">
+    <div class="es-featured-videos__title-wrapper">
+      <h2 class="es-font-h2">{{ section.settings.title }}</h2>
+      <div class="es-featured-videos__description">
+        {{ section.settings.description }}
+      </div>
+    </div>
+    <div class="es-featured-videos__videos">
+      {% for block in section.blocks %}
+        {% assign video = block.settings.video %}
+        {% assign poster = block.settings.featured_image %}
+        {% assign video_id = video.id %}
+        {% assign alt = video.alt %}
+        <div class="es-featured-videos__video">
+          <deferred-media
+            class="video-section__media deferred-media gradient global-media-settings{% if section.settings.full_width %} global-media-settings--full-width{% endif %}{% if fix_ratio %} media-fit-cover{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            data-media-id="{{ video_id }}"
+            {% if poster != null %}
+              style="--ratio-percent: {{ 1 | divided_by: poster.aspect_ratio | times: 100 }}%;"
+            {% endif %}
+          >
+            <button
+              id="Deferred-Poster-Modal-{{ video_id }}"
+              class="video-section__poster media deferred-media__poster media--landscape"
+              type="button"
+              aria-label="{{alt }}"
+            >
+              {%- if poster != null -%}
+                {{
+                  poster
+                  | image_url: width: 3840
+                  | image_tag: sizes: sizes, widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840', alt: alt
+                }}
+              {%- else -%}
+                {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+              {%- endif -%}
+              <span class="deferred-media__poster-button motion-reduce">
+                {% render 'es-icon-play' %}
+              </span>
+            </button>
+            <template>
+              {%- if section.settings.video == null and section.settings.video_url != null -%}
+                {%- liquid
+                  assign loop = ''
+                  if section.settings.enable_video_looping
+                    assign loop = '&loop=1&playlist=' | append: video_id
+                  endif
+                -%}
+                {%- if section.settings.video_url.type == 'youtube' -%}
+                  <iframe
+                    src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=1{{ loop }}"
+                    class="js-youtube"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen
+                    title="{{ section.settings.description | escape }}"
+                  ></iframe>
+                {%- else -%}
+                  <iframe
+                    src="https://player.vimeo.com/video/{{ video_id }}?autoplay=1{{ loop }}"
+                    class="js-vimeo"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen
+                    title="{{ section.settings.description | escape }}"
+                  ></iframe>
+                {%- endif -%}
+              {%- else -%}
+                {{
+                  section.settings.video
+                  | video_tag:
+                    image_size: '1100x',
+                    autoplay: true,
+                    loop: section.settings.enable_video_looping,
+                    controls: true,
+                    muted: false
+                }}
+              {%- endif -%}
+            </template>
+          </deferred-media>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{%- schema -%}
+{
+  "name": "ES Featured Videos",
+  "tag": "section",
+  "class": "section es-featured-videos",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "scrollable",
+      "label": "Scrollable",
+      "default": false
+    },
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Title",
+      "default": "Customized Wear Techniques 101"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Discover the best techniques for embroidering hats, washing caps & measuring your head for the perfect fit with ease!</p>"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "video",
+      "name": "Video",
+      "settings": [
+        {
+          "type": "video_url",
+          "id": "video_url",
+          "accept": ["youtube", "vimeo"],
+          "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+          "label": "t:sections.video.settings.video_url.label",
+          "info": "t:sections.video.settings.video_url.info"
+        },
+        {
+          "type": "image_picker",
+          "id": "featured_image",
+          "label": "Featured Image"
+        },
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Video"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "ES Featured Videos"
+    }
+  ]
+}
+{%- endschema -%}

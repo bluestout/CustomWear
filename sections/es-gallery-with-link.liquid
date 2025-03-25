@@ -12,12 +12,13 @@
   }
 {%- endstyle -%}
 
-<div class="container">
+<div class="container{% if section.settings.scrollable %} es-gallery-with-link--scrollable{% endif %}">
   <div class="page-width">
     <h2 class="es-gallery-with-link__title es-font-h2 center{% if section.settings.hide_title_on_mobile %} small-hide{% endif %}">{{ section.settings.title }}</h2>
     <div class="es-gallery-with-link__items">
       {%- for block in section.blocks -%}
-        <div class="es-gallery-with-link__item{% if block.settings.image_2 != blank and block.settings.image != blank %} es-gallery-with-link__item--two-images{% endif %}" style="--width: {{ block.settings.item_width | times: 10 }}%; --gap: {{ 10 | divided_by: section.settings.item_count_row }}px;">
+        {%- assign gap_count = section.settings.item_count_row | minus: 1 -%}
+        <div class="es-gallery-with-link__item{% if block.settings.image_2 != blank and block.settings.image != blank %} es-gallery-with-link__item--two-images{% endif %}" style="--width: {{ block.settings.item_width | times: 10 }}%; --gap: {{ 10.0 | times: gap_count | divided_by: section.settings.item_count_row }}px;">
           <div class="es-gallery-with-link__item-item" onclick="window.location.href = '{{ block.settings.url }}'">
             <div class="es-gallery-with-link__item-item-image">
               <img
@@ -58,6 +59,12 @@
   "tag": "section",
   "class": "section es-gallery-with-link",
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "scrollable",
+      "label": "Scrollable",
+      "default": false
+    },
     {
       "type": "inline_richtext",
       "id": "title",
