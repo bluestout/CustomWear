@@ -144,6 +144,16 @@
       }
     },
     "content_for_index": [],
+    "blocks": {
+      "14462631207257075589": {
+        "type": "shopify://apps/accesseaze/blocks/access_ease/bdf09e02-5b1c-43b5-b338-8f668ddea3a7",
+        "disabled": false,
+        "settings": {
+          "widget_title": "",
+          "custom_liquid": ""
+        }
+      }
+    },
     "color_schemes": {
       "scheme-1": {
         "settings": {
