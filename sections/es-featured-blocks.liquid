@@ -31,12 +31,14 @@
           <div class="swiper-slide">
             <div class="es-featured-blocks__item">
               <div class="es-featured-blocks__item-image">
-                <img
-                  src="{{ block.settings.image | image_url: width: 1000 }}"
-                  alt="{{ block.settings.title }}"
-                  width="{{ block.settings.image.width | divided_by: 2 }}"
-                  height="{{ block.settings.image.height | divided_by: 2 }}"
-                >
+                <a class="es-button link" href="{{ block.settings.url }}">
+                  <img
+                    src="{{ block.settings.image | image_url: width: 1000 }}"
+                    alt="{{ block.settings.title }}"
+                    width="{{ block.settings.image.width | divided_by: 2 }}"
+                    height="{{ block.settings.image.height | divided_by: 2 }}"
+                  >
+                </a>
               </div>
               <div class="es-featured-blocks__item-title">
                 <a class="es-button link" href="{{ block.settings.url }}">{{ block.settings.title }}</a>
