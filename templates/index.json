@@ -176,7 +176,7 @@
         "heading_ptCCnT": {
           "type": "heading",
           "settings": {
-            "heading": "Custom Embroidery",
+            "heading": "<p>Custom Embroidery</p>",
             "heading_size": "h1"
           }
         },
@@ -472,7 +472,7 @@
         "heading_NGVgUX": {
           "type": "heading",
           "settings": {
-            "heading": "CapWholesalers.com: Your Trusted Source for Quality Baseball Caps",
+            "heading": "<p>CapWholesalers.com:</p><p>Your Trusted Source for </p><p>Quality Baseball Caps</p>",
             "heading_size": "h1"
           }
         },
