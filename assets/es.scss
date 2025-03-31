@@ -423,7 +423,7 @@
               margin: 0;
             }
           }
-          
+
           .image-with-text__text {
             &.subtitle {
               color: black;
@@ -1031,7 +1031,12 @@
         
       }
     }
+  }
 
+  .footer__content-bottom {
+    border: 0;
+    background-color: #FFF;
+    padding: 22px 0;
     position: relative;
 
     &::after {
@@ -1044,12 +1049,6 @@
       bottom: 0;
       left: 0;
     }
-  }
-
-  .footer__content-bottom {
-    border: 0;
-    background-color: #FFF;
-    padding: 22px 0;
 
     .footer__content-bottom-wrapper {
       display: flex;
