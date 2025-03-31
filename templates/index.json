@@ -176,7 +176,7 @@
         "heading_ptCCnT": {
           "type": "heading",
           "settings": {
-            "heading": "Custom Embroidery",
+            "heading": "<p>Custom Embroidery</p>",
             "heading_size": "h1"
           }
         },
@@ -196,6 +196,7 @@
         "image": "shopify://shop_images/110M_12.png",
         "image_2": "shopify://shop_images/Image.png",
         "height": "adapt",
+        "hide_media_on_mobile": false,
         "desktop_image_width": "large",
         "layout": "text_first",
         "image_behavior": "none",
@@ -275,7 +276,8 @@
         "padding_bottom": 40,
         "padding_top_mobile": 0,
         "padding_bottom_mobile": 0,
-        "item_count_row": 2
+        "item_count_row": 2,
+        "show_gradient": true
       }
     },
     "es_testimonial_xNiLtf": {
@@ -456,12 +458,13 @@
       "settings": {
         "scrollable": true,
         "title": "Featured work",
-        "hide_title_on_mobile": true,
+        "hide_title_on_mobile": false,
         "padding_top": 40,
         "padding_bottom": 80,
         "padding_top_mobile": 20,
         "padding_bottom_mobile": 20,
-        "item_count_row": 3
+        "item_count_row": 3,
+        "show_gradient": false
       }
     },
     "es_image_with_text_kFT4Pw": {
@@ -470,7 +473,7 @@
         "heading_NGVgUX": {
           "type": "heading",
           "settings": {
-            "heading": "CapWholesalers.com: Your Trusted Source for Quality Baseball Caps",
+            "heading": "<p>CapWholesalers.com:</p><p>Your Trusted Source for Quality </p><p>Baseball Caps</p>",
             "heading_size": "h1"
           }
         },
@@ -506,6 +509,7 @@
       "settings": {
         "image": "shopify://shop_images/Image_1.png",
         "height": "adapt",
+        "hide_media_on_mobile": true,
         "desktop_image_width": "medium",
         "layout": "image_first",
         "image_behavior": "none",
@@ -517,7 +521,7 @@
         "color_scheme": "scheme-09348374-9048-4109-8e6d-ac33083b4bdd",
         "padding_top": 40,
         "padding_bottom": 80,
-        "padding_top_mobile": 20,
+        "padding_top_mobile": 0,
         "padding_bottom_mobile": 40
       }
     }
