@@ -33,8 +33,8 @@
             </div>
           </div>
           {%- if block.settings.image_2 != blank -%}
-            <div class="es-gallery-with-link__item-item{% if section.settings.show_gradient %} show-gradient{% endif %}" onclick="window.location.href = '{{ block.settings.url_2 }}'">
-              <div class="es-gallery-with-link__item-item-image">
+            <div class="es-gallery-with-link__item-item" onclick="window.location.href = '{{ block.settings.url_2 }}'">
+              <div class="es-gallery-with-link__item-item-image{% if section.settings.show_gradient %} show-gradient{% endif %}">
                 <img
                   src="{{ block.settings.image_2 | image_url: width: 1000 }}"
                   alt="{{ block.settings.title_2 }}"
