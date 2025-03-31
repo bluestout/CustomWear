@@ -521,7 +521,7 @@
         "color_scheme": "scheme-09348374-9048-4109-8e6d-ac33083b4bdd",
         "padding_top": 40,
         "padding_bottom": 80,
-        "padding_top_mobile": 20,
+        "padding_top_mobile": 0,
         "padding_bottom_mobile": 40
       }
     }
