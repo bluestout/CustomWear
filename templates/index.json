@@ -457,7 +457,7 @@
       "settings": {
         "scrollable": true,
         "title": "Featured work",
-        "hide_title_on_mobile": true,
+        "hide_title_on_mobile": false,
         "padding_top": 40,
         "padding_bottom": 80,
         "padding_top_mobile": 20,
