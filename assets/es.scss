@@ -418,6 +418,12 @@
 
       .image-with-text__text-item {
         .image-with-text__content {
+          .image-with-text__heading {
+            p {
+              margin: 0;
+            }
+          }
+          
           .image-with-text__text {
             &.subtitle {
               color: black;
