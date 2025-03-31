@@ -275,7 +275,8 @@
         "padding_bottom": 40,
         "padding_top_mobile": 0,
         "padding_bottom_mobile": 0,
-        "item_count_row": 2
+        "item_count_row": 2,
+        "show_gradient": true
       }
     },
     "es_testimonial_xNiLtf": {
@@ -461,7 +462,8 @@
         "padding_bottom": 80,
         "padding_top_mobile": 20,
         "padding_bottom_mobile": 20,
-        "item_count_row": 3
+        "item_count_row": 3,
+        "show_gradient": false
       }
     },
     "es_image_with_text_kFT4Pw": {
