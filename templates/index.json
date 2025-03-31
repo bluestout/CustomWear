@@ -196,6 +196,7 @@
         "image": "shopify://shop_images/110M_12.png",
         "image_2": "shopify://shop_images/Image.png",
         "height": "adapt",
+        "hide_media_on_mobile": false,
         "desktop_image_width": "large",
         "layout": "text_first",
         "image_behavior": "none",
@@ -508,6 +509,7 @@
       "settings": {
         "image": "shopify://shop_images/Image_1.png",
         "height": "adapt",
+        "hide_media_on_mobile": true,
         "desktop_image_width": "medium",
         "layout": "image_first",
         "image_behavior": "none",
