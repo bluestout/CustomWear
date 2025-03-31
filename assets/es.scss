@@ -434,6 +434,12 @@
               word-wrap: break-word;
               margin-top: 15px;
 
+              @media (max-width: 768px) {
+                strong {
+                  font-style: italic;
+                }
+              }
+
               p {
                 margin: 0;
 
