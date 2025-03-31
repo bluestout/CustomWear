@@ -18,7 +18,7 @@
     <div class="es-gallery-with-link__items">
       {%- for block in section.blocks -%}
         {%- assign gap_count = section.settings.item_count_row | minus: 1 -%}
-        <div class="es-gallery-with-link__item{% if block.settings.image_2 != blank and block.settings.image != blank %} es-gallery-with-link__item--two-images{% endif %}" style="--width: {{ block.settings.item_width | times: 10 }}%; --gap: {{ 10.0 | times: gap_count | divided_by: section.settings.item_count_row }}px;">
+        <div class="es-gallery-with-link__item{% if section.settings.show_gradient %} show-gradient{% endif %}{% if block.settings.image_2 != blank and block.settings.image != blank %} es-gallery-with-link__item--two-images{% endif %}" style="--width: {{ block.settings.item_width | times: 10 }}%; --gap: {{ 10.0 | times: gap_count | divided_by: section.settings.item_count_row }}px;">
           <div class="es-gallery-with-link__item-item" onclick="window.location.href = '{{ block.settings.url }}'">
             <div class="es-gallery-with-link__item-item-image">
               <img
@@ -33,7 +33,7 @@
             </div>
           </div>
           {%- if block.settings.image_2 != blank -%}
-            <div class="es-gallery-with-link__item-item" onclick="window.location.href = '{{ block.settings.url_2 }}'">
+            <div class="es-gallery-with-link__item-item{% if section.settings.show_gradient %} show-gradient{% endif %}" onclick="window.location.href = '{{ block.settings.url_2 }}'">
               <div class="es-gallery-with-link__item-item-image">
                 <img
                   src="{{ block.settings.image_2 | image_url: width: 1000 }}"
