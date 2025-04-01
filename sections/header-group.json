@@ -46,10 +46,20 @@
             "link_color": "#000000",
             "font_weight": 600
           }
+        },
+        "specific_link_iViyAt": {
+          "type": "specific_link",
+          "settings": {
+            "link_text": "5-Panel Golf Hats",
+            "custom_class": "",
+            "link_color": "#990000",
+            "font_weight": 400
+          }
         }
       },
       "block_order": [
-        "specific_link_98RPUj"
+        "specific_link_98RPUj",
+        "specific_link_iViyAt"
       ],
       "settings": {
         "logo_position": "middle-center",
