@@ -43,7 +43,7 @@
           "settings": {
             "link_text": "Shop All",
             "custom_class": "shop-all",
-            "link_color": "#990000",
+            "link_color": "#000000",
             "font_weight": 600
           }
         }
