@@ -652,6 +652,37 @@
   "blocks": [
     {
       "type": "@app"
+    },
+    {
+      "type": "specific_link",
+      "name": "Specific Link",
+      "settings": [
+        {
+          "type": "text",
+          "id": "link_text",
+          "label": "Link Text"
+        },
+        {
+          "type": "text",
+          "id": "custom_class",
+          "label": "Custom Class"
+        },
+        {
+          "type": "color",
+          "id": "link_color",
+          "label": "Link Color",
+          "default": "#990000"
+        },
+        {
+          "type": "range",
+          "id": "font_weight",
+          "label": "Font Weight",
+          "min": 100,
+          "max": 900,
+          "step": 100,
+          "default": 400
+        }
+      ]
     }
   ]
 }
