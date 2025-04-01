@@ -61,6 +61,9 @@
         "specific_link_98RPUj",
         "specific_link_iViyAt"
       ],
+      "custom_css": [
+        "@media (min-width: 768px) {.shop-all {margin-bottom: 30px;} }"
+      ],
       "settings": {
         "logo_position": "middle-center",
         "mobile_logo_position": "center",
