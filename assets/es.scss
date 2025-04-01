@@ -1146,3 +1146,30 @@
     }
   }
 }
+
+.header-wrapper {
+  .header {
+    .header__inline-menu {
+      .list-menu {
+        .header__menu-item {
+          color: black;
+          font-size: 15px;
+          font-family: 'Inter', sans-serif;
+          font-weight: 600;
+          text-transform: capitalize;
+          line-height: 19.50px;
+          word-wrap: break-word;
+          text-decoration: unset !important;
+
+          span {
+            text-decoration: unset !important;
+          }
+
+          &:hover {
+            color: #990000;
+          }
+        }
+      }
+    }
+  }
+}
