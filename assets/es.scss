@@ -1187,6 +1187,11 @@
         text-decoration: unset !important;
         padding: 0;
 
+        &.custom-link {
+          color: var(--color);
+          font-weight: var(--font-weight);
+        }
+
         &:hover {
           color: #990000;
         }
