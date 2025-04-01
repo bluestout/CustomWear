@@ -37,6 +37,20 @@
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "specific_link_98RPUj": {
+          "type": "specific_link",
+          "settings": {
+            "link_text": "Shop All",
+            "custom_class": "shop-all",
+            "link_color": "#990000",
+            "font_weight": 600
+          }
+        }
+      },
+      "block_order": [
+        "specific_link_98RPUj"
+      ],
       "settings": {
         "logo_position": "middle-center",
         "mobile_logo_position": "center",
