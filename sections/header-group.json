@@ -55,14 +55,24 @@
             "link_color": "#990000",
             "font_weight": 400
           }
+        },
+        "specific_link_9rhKQx": {
+          "type": "specific_link",
+          "settings": {
+            "link_text": "Customization",
+            "custom_class": "use-dropdown",
+            "link_color": "rgba(0,0,0,0)",
+            "font_weight": 400
+          }
         }
       },
       "block_order": [
         "specific_link_98RPUj",
-        "specific_link_iViyAt"
+        "specific_link_iViyAt",
+        "specific_link_9rhKQx"
       ],
       "custom_css": [
-        "@media (min-width: 768px) {.shop-all {margin-bottom: 30px;} }"
+        "@media (min-width: 768px) {.shop-all {margin-bottom: 30px; }}"
       ],
       "settings": {
         "logo_position": "middle-center",
