@@ -7,7 +7,7 @@
 
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
-    {%- for link in section.settings.menu.links -%}
+    {%- for link in section.settings.menu.links limit: separate_menu_limit offset: separate_menu_offset -%}
       {%- assign custom_class_0 = '' -%}
       {%- for specific_link in sepcific_links -%}
         {%- if specific_link.settings.link_text contains link.title -%}
