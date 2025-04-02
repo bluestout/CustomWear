@@ -1208,5 +1208,18 @@
         color: #990000;
       }
     }
+
+    .use-dropdown {
+      .mega-menu__content {
+        left: unset;
+        right: unset;
+        padding: 12px 0;
+        min-width: 190px;
+
+        .mega-menu__list {
+          padding: 0 20px;
+        }
+      }
+    }
   }
 }
