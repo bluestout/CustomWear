@@ -201,15 +201,21 @@
                           <div
                             class="footer-block__image-wrapper"
                           >
-                            {{
-                              block.settings.image
-                              | image_url: width: 1100
-                              | image_tag:
+                            {%- if block.settings.image_url != blank -%}
+                              <a href="{{ block.settings.image_url }}" target="_blank">
+                            {%- endif -%}
+                              {{
+                                block.settings.image
+                                | image_url: width: 1100
+                                | image_tag:
                                 loading: 'lazy',
                                 widths: '50, 100, 150, 200, 300, 400, 550, 800, 1100',
                                 height: brand_image_height,
                                 width: block.settings.image.width
-                            }}
+                              }}
+                            {%- if block.settings.image_url != blank -%}
+                              </a>
+                            {%- endif -%}
                           </div>
                         {%- endif -%}
                         {%- if block.settings.image_2 != blank -%}
@@ -219,6 +225,9 @@
                           <div
                             class="footer-block__image-wrapper"
                           >
+                            {%- if block.settings.image_url_2 != blank -%}
+                              <a href="{{ block.settings.image_url_2 }}" target="_blank">
+                            {%- endif -%}
                             {{
                               block.settings.image_2
                               | image_url: width: 1100
@@ -227,7 +236,10 @@
                                 widths: '50, 100, 150, 200, 300, 400, 550, 800, 1100',
                                 height: brand_image_height,
                                 width: block.settings.image.width
-                            }}
+                              }}
+                            {%- if block.settings.image_url_2 != blank -%}
+                              </a>
+                            {%- endif -%}
                           </div>
                         {%- endif -%}
                       </div>
@@ -516,9 +528,19 @@
           "label": "Image"
         },
         {
+          "type": "url",
+          "id": "image_url",
+          "label": "Image URL"
+        },
+        {
           "type": "image_picker",
           "id": "image_2",
           "label": "Image 2"
+        },
+        {
+          "type": "url",
+          "id": "image_url_2",
+          "label": "Image URL 2"
         }
       ]
     },
