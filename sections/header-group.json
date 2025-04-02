@@ -88,7 +88,8 @@
         "enable_customer_avatar": true,
         "margin_bottom": 0,
         "padding_top": 4,
-        "padding_bottom": 4
+        "padding_bottom": 4,
+        "phone_number": "+12010010001"
       }
     }
   },
