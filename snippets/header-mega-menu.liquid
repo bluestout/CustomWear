@@ -8,10 +8,17 @@
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
+      {%- assign custom_class_0 = '' -%}
+      {%- for specific_link in sepcific_links -%}
+        {%- if specific_link.settings.link_text contains link.title -%}
+          {%- capture custom_class_0 -%}custom-link {{ specific_link.settings.custom_class }}{%- endcapture -%}
+          {%- break -%}
+        {%- endif -%}
+      {%- endfor -%}
       <li>
         {%- if link.links != blank -%}
           <header-menu>
-            <details id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
+            <details id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu {{ custom_class_0 }}">
               <summary
                 id="HeaderMenu-{{ link.handle }}"
                 class="header__menu-item list-menu__item link focus-inset"
