@@ -287,6 +287,12 @@
         {%- endcase -%}
       {%- endfor -%}
 
+      {%- if section.settings.phone_number != blank -%}
+        <a href="tel:{{ section.settings.phone_number }}" class="header__icon header__icon--phone link focus-inset">
+          <span class="svg-wrapper">{{ 'icon-phone.svg' | inline_asset_content }}</span>
+        </a>
+      {%- endif -%}
+
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
         {% if cart == empty %}
           <span class="svg-wrapper">{{ 'icon-cart-empty.svg' | inline_asset_content }}</span>
@@ -649,6 +655,11 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 20
+    },
+    {
+      "type": "text",
+      "id": "phone_number",
+      "label": "Phone number"
     }
   ],
   "blocks": [
