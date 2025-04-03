@@ -2309,7 +2309,7 @@ input[type='checkbox'] {
 
 /* section-header */
 .section-header.shopify-section-group-header-group {
-  z-index: 3;
+  z-index: 999;
 }
 
 .shopify-section-header-sticky {
@@ -2566,6 +2566,7 @@ input[type='checkbox'] {
   content: '';
   top: 100%;
   left: 0;
+  z-index: -2;
   height: calc(var(--viewport-height, 100vh) - (var(--header-bottom-position, 100%)));
   width: 100%;
   display: block;
