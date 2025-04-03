@@ -9,6 +9,7 @@
 >
 
 {%- assign sepcific_links = section.blocks | where: 'type', 'specific_link' -%}
+{%- assign mobile_menu = section.blocks | where: 'type', 'mobile_menu' -%}
 
 {%- if settings.predictive_search_enabled -%}
   <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -140,7 +141,9 @@
   -%}
   <header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} page-width{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}{% if section.settings.menu != blank %} header--has-menu{% endif %}{% if has_app_block %} header--has-app{% endif %}{% if social_links %} header--has-social{% endif %}{% if shop.customer_accounts_enabled %} header--has-account{% endif %}{% if localization_forms %} header--has-localizations{% endif %}">
     {%- liquid
-      if section.settings.menu != blank
+      if mobile_menu != blank
+        render 'header-drawer', menu: mobile_menu.settings.menu
+      elsif section.settings.menu != blank
         render 'header-drawer'
       endif
 
@@ -732,6 +735,18 @@
           "max": 900,
           "step": 100,
           "default": 400
+        }
+      ]
+    },
+    {
+      "type": "mobile_menu",
+      "name": "Mobile Menu",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "Menu"
         }
       ]
     }
