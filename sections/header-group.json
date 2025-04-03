@@ -64,12 +64,19 @@
             "link_color": "rgba(0,0,0,0)",
             "font_weight": 600
           }
+        },
+        "mobile_menu_aLMmPP": {
+          "type": "mobile_menu",
+          "settings": {
+            "menu": "mobile-menu"
+          }
         }
       },
       "block_order": [
         "specific_link_98RPUj",
         "specific_link_iViyAt",
-        "specific_link_9rhKQx"
+        "specific_link_9rhKQx",
+        "mobile_menu_aLMmPP"
       ],
       "custom_css": [
         "@media (min-width: 768px) {.shop-all {margin-bottom: 30px; }}"
