@@ -16,6 +16,13 @@
           "type": "title",
           "settings": {}
         },
+        "text_Pb8kXM": {
+          "type": "text",
+          "settings": {
+            "text": "As low as <strong>$</strong><strong>{{ product.metafields.custom.as_low_as_price.value }}</strong><strong> USD</strong>",
+            "text_style": "body"
+          }
+        },
         "price": {
           "type": "price",
           "settings": {}
@@ -57,6 +64,7 @@
       },
       "block_order": [
         "title",
+        "text_Pb8kXM",
         "price",
         "live_product_options_app_block_mWfNhx",
         "variant_picker",
