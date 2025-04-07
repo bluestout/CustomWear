@@ -1229,12 +1229,6 @@
       }
     }
 
-    .mega-menu[open] {
-      .header__active-menu-item {
-        color: #990000;
-      }
-    }
-
     .use-dropdown {
       .mega-menu__content {
         left: unset;
@@ -1350,6 +1344,24 @@
         width: auto;
         padding: 0 2px;
       }
+    }
+  }
+}
+
+.mega-menu[open] {
+  .header__active-menu-item {
+    color: #990000;
+
+    &::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      display: block;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, .2);
+      z-index: -2;
     }
   }
 }
