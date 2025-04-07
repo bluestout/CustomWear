@@ -1329,5 +1329,27 @@
     .menu-drawer__utility-links {
       display: none;
     }
+
+    @media (max-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+
+      .header__heading-link {
+        margin-left: 10px;
+        margin-right: auto;
+      }
+    }
+
+    .header__icon--cart {
+      position: relative;
+
+      .cart-count-bubble {
+        position: absolute;
+        right: -8px;
+        min-width: 1.7rem;
+        width: auto;
+        padding: 0 2px;
+      }
+    }
   }
 }
