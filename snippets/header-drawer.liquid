@@ -61,10 +61,20 @@
                             {%- for childlink in link.links -%}
                               <li>
                                 {%- if childlink.links == blank -%}
+                                  {%- assign custom_class_2 = '' -%}
+                                  {%- assign custom_style_2 = '' -%}
+                                  {%- for specific_link in sepcific_links -%}
+                                    {%- if specific_link.settings.link_text contains childlink.title -%}
+                                      {%- capture custom_class_2 -%}custom-link {{ specific_link.settings.custom_class }}{%- endcapture -%}
+                                      {%- capture custom_style_2 -%}color: {{ specific_link.settings.link_color }}; font-weight: {{ specific_link.settings.font_weight }};{%- endcapture -%}
+                                      {%- break -%}
+                                    {%- endif -%}
+                                  {%- endfor -%}
                                   <a
                                     id="HeaderDrawer-{{ link.handle }}-{{ childlink.handle }}"
                                     href="{{ childlink.url }}"
-                                    class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if childlink.current %} menu-drawer__menu-item--active{% endif %}"
+                                    class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if childlink.current %} menu-drawer__menu-item--active{% endif %} {{ custom_class_2 }}"
+                                    style="{{ custom_style_2 }}"
                                     {% if childlink.current %}
                                       aria-current="page"
                                     {% endif %}
@@ -128,10 +138,20 @@
                       </div>
                     </details>
                   {%- else -%}
+                    {%- assign custom_class = '' -%}
+                    {%- assign custom_style = '' -%}
+                    {%- for specific_link in sepcific_links -%}
+                      {%- if specific_link.settings.link_text contains link.title -%}
+                        {%- capture custom_class -%}custom-link {{ specific_link.settings.custom_class }}{%- endcapture -%}
+                        {%- capture custom_style -%}color: {{ specific_link.settings.link_color }}; font-weight: {{ specific_link.settings.font_weight }};{%- endcapture -%}
+                        {%- break -%}
+                      {%- endif -%}
+                    {%- endfor -%}
                     <a
                       id="HeaderDrawer-{{ link.handle }}"
                       href="{{ link.url }}"
-                      class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.current %} menu-drawer__menu-item--active{% endif %}"
+                      class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.current %} menu-drawer__menu-item--active{% endif %} {{ custom_class }}"
+                      style="{{ custom_style }}"
                       {% if link.current %}
                         aria-current="page"
                       {% endif %}

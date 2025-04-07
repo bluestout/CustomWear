@@ -27,6 +27,11 @@
       },
       {
         "type": "image_picker",
+        "id": "logo_mobile",
+        "label": "Logo Mobile"
+      },
+      {
+        "type": "image_picker",
         "id": "favicon",
         "label": "t:settings_schema.logo.settings.favicon.label",
         "info": "t:settings_schema.logo.settings.favicon.info"

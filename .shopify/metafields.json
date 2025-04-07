@@ -130,16 +130,6 @@
       }
     },
     {
-      "key": "main_cat_id",
-      "namespace": "custom",
-      "name": "Main Cat ID",
-      "description": "",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
       "key": "queries",
       "namespace": "shopify--discovery--product_search_boost",
       "name": "Search product boosts",
@@ -177,6 +167,26 @@
       "type": {
         "name": "list.product_reference",
         "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "rating",
+      "namespace": "reviews",
+      "name": "Product rating",
+      "description": "Average rating from customers",
+      "type": {
+        "name": "rating",
+        "category": "RATING"
+      }
+    },
+    {
+      "key": "rating_count",
+      "namespace": "reviews",
+      "name": "Product rating count",
+      "description": "Total number of ratings from customers",
+      "type": {
+        "name": "number_integer",
+        "category": "NUMBER"
       }
     }
   ],
