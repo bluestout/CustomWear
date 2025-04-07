@@ -12,13 +12,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {}
@@ -26,6 +19,12 @@
         "price": {
           "type": "price",
           "settings": {}
+        },
+        "live_product_options_app_block_mWfNhx": {
+          "type": "shopify://apps/live-product-options/blocks/app-block/88bfdf40-5e27-4962-a966-70c8d1e87757",
+          "settings": {
+            "product": "{{product}}"
+          }
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -57,9 +56,9 @@
         }
       },
       "block_order": [
-        "vendor",
         "title",
         "price",
+        "live_product_options_app_block_mWfNhx",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
