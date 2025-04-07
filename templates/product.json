@@ -25,6 +25,7 @@
         },
         "price": {
           "type": "price",
+          "disabled": true,
           "settings": {}
         },
         "live_product_options_app_block_mWfNhx": {
