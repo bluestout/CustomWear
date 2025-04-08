@@ -1365,3 +1365,51 @@
     }
   }
 }
+
+.product {
+  .product__info-wrapper {
+    .product__info-container {
+      .product__title {
+        h1 {
+          color: black;
+          font-size: 20px;
+          font-family: 'Inter', sans-serif;
+          font-weight: 700;
+          line-height: 26px;
+
+          @media screen and (max-width: 768px) {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 21.12px;
+          }
+        }
+      }
+
+      .product__text {
+        color: black;
+        font-size: 15px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        line-height: 25.50px;
+
+        @media screen and (max-width: 768px) {
+          font-size: 14px;
+          line-height: 23.8px;
+        }
+
+        b,
+        strong {
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 20.80px;  
+
+          @media screen and (max-width: 768px) {
+            font-size: 14px;
+            line-height: 23.80px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
