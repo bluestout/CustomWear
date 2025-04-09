@@ -16,7 +16,7 @@
   >
     {%- for option in product.options_with_values -%}
       {%- liquid
-        assign swatch_count = option.values | map: 'color' | compact | size
+        assign swatch_count = option.values | map: 'swatch' | compact | size
         assign color_name = 'color, colour'
         assign option_name = option.name | downcase
         assign picker_type = block.settings.picker_type
@@ -28,14 +28,18 @@
             assign picker_type = 'swatch'
           endif
         endif
+
+        if color_name contains option_name
+          assign picker_type = 'swatch'
+        endif
       -%}
       {%- if picker_type == 'swatch' -%}
         <fieldset class="js product-form__input product-form__input--swatch">
           <legend class="form__label">
-            <span>Step {{ forloop.index }}:</span> {{ option.name }}:
-            <span data-selected-value>
+            <span>Step {{ forloop.index }}:</span> {{ option.name }}
+            {% comment %} <span data-selected-value>
               {{- option.selected_value -}}
-            </span>
+            </span> {% endcomment %}
           </legend>
           {% render 'product-variant-options',
             product: product,
