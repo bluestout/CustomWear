@@ -54,7 +54,17 @@
         },
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {}
+        },
+        "collapsible_tab_eM4Wkc": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Description",
+            "icon": "dairy",
+            "content": "",
+            "page": ""
+          }
         },
         "share": {
           "type": "share",
@@ -72,6 +82,7 @@
         "quantity_selector",
         "buy_buttons",
         "description",
+        "collapsible_tab_eM4Wkc",
         "share"
       ],
       "settings": {
