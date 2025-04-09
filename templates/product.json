@@ -61,8 +61,8 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Description",
-            "icon": "dairy",
-            "content": "",
+            "icon": "description",
+            "content": "{{ product.description }}",
             "page": ""
           }
         },
