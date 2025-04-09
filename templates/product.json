@@ -66,6 +66,31 @@
             "page": ""
           }
         },
+        "collapsible_tab_g7BVdP": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Details",
+            "icon": "details",
+            "content": "{{ product.description }}",
+            "page": ""
+          }
+        },
+        "popup_cKwkVJ": {
+          "type": "popup",
+          "settings": {
+            "text": "Size",
+            "image": "shopify://shop_images/ico_6.svg",
+            "page": ""
+          }
+        },
+        "popup_wP4nXf": {
+          "type": "popup",
+          "settings": {
+            "text": "What happens now?",
+            "image": "shopify://shop_images/icon_2.svg",
+            "page": ""
+          }
+        },
         "share": {
           "type": "share",
           "settings": {
@@ -83,6 +108,9 @@
         "buy_buttons",
         "description",
         "collapsible_tab_eM4Wkc",
+        "collapsible_tab_g7BVdP",
+        "popup_cKwkVJ",
+        "popup_wP4nXf",
         "share"
       ],
       "settings": {
