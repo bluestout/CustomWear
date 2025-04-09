@@ -1,0 +1,6 @@
+<svg class="icon icon-details" width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 8V1H1V16H9.5" stroke="black"/>
+<line x1="5" y1="5.5" x2="11" y2="5.5" stroke="black"/>
+<circle cx="13.5" cy="12.5" r="5" stroke="black"/>
+<path d="M18 15.5L20 17" stroke="black"/>
+</svg>
