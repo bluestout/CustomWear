@@ -22,6 +22,14 @@
   }
 }
 
+.es-font-h5 {
+  color: black;
+  font-size: 15px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 19.50px; 
+}
+
 .es-button {
   color: black;
   font-size: 13px;
@@ -1409,6 +1417,111 @@
             font-weight: 500;
           }
         }
+      }
+    }
+  }
+
+
+  .product-form__submit {
+    color: white;
+    font-size: 13px;
+    font-family: Inter;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 16.90px;
+    letter-spacing: 2px;
+    padding: 12px 25px;
+    background-color: #990000;
+    border-radius: 3px;
+
+    &::after,
+    &::before {
+      content: unset;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .accordion {
+    summary {
+      .svg-wrapper {
+        width: auto;
+        height: auto;
+        min-width: 22px;
+
+        svg {
+          width: auto;
+          height: auto;
+        }
+      }
+  
+      .icon-caret {
+        right: 0;
+      }
+    }
+
+    .accordion__content {
+      color: black;
+      font-size: 15px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      line-height: 25.50px;
+    }
+  }
+
+  .product-popup-modal__opener {
+    display: block;
+    margin: 0;
+
+    .product-popup-modal__button {
+      color: black;
+      font-size: 15px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      line-height: 19.50px;
+      text-decoration: unset;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 1.5rem 0;
+    }
+
+    & + .product-popup-modal__opener {
+      border-top: 1px solid #CCC;
+    }
+  }
+}
+
+.related-products {
+  .card__heading {
+    color: black;
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 19.50px;
+  }
+
+  .card__media {
+    .media {
+      img {
+        object-fit: contain !important;
+      }
+    }
+  }
+
+  .price {
+    .price__container {
+      color: black;
+      font-size: 16px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      line-height: 20.80px;
+
+      @media screen and (max-width: 768px) {
+        font-size: 14px;
+        line-height: 18.20px;
       }
     }
   }
