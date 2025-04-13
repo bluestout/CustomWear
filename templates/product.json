@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
@@ -19,7 +10,7 @@
         "text_Pb8kXM": {
           "type": "text",
           "settings": {
-            "text": "As low as <strong>$</strong><strong>{{ product.metafields.custom.as_low_as_price.value }}</strong><strong> USD</strong>",
+            "text": "As low as <strong>$<\/strong><strong>{{ product.metafields.custom.as_low_as_price.value }}<\/strong><strong> USD<\/strong>",
             "text_style": "body"
           }
         },
@@ -29,7 +20,7 @@
           "settings": {}
         },
         "live_product_options_app_block_mWfNhx": {
-          "type": "shopify://apps/live-product-options/blocks/app-block/88bfdf40-5e27-4962-a966-70c8d1e87757",
+          "type": "shopify:\/\/apps\/live-product-options\/blocks\/app-block\/88bfdf40-5e27-4962-a966-70c8d1e87757",
           "settings": {
             "product": "{{product}}"
           }
@@ -53,7 +44,7 @@
           }
         },
         "wishlist_hero_custom_product_button_fWqWW8": {
-          "type": "shopify://apps/wishlist-hero/blocks/custom-product-button/a9a5079b-59e8-47cb-b659-ecf1c60b9b72",
+          "type": "shopify:\/\/apps\/wishlist-hero\/blocks\/custom-product-button\/a9a5079b-59e8-47cb-b659-ecf1c60b9b72",
           "settings": {
             "displayButtonMode": "~",
             "contentAlignment": "center",
@@ -93,7 +84,7 @@
           "type": "popup",
           "settings": {
             "text": "Size",
-            "image": "shopify://shop_images/ico_6.svg",
+            "image": "shopify:\/\/shop_images\/ico_6.svg",
             "page": ""
           }
         },
@@ -101,7 +92,7 @@
           "type": "popup",
           "settings": {
             "text": "What happens now?",
-            "image": "shopify://shop_images/icon_2.svg",
+            "image": "shopify:\/\/shop_images\/icon_2.svg",
             "page": ""
           }
         },
@@ -112,7 +103,7 @@
           }
         },
         "wishlist_hero_custom_product_button_mPe8zB": {
-          "type": "shopify://apps/wishlist-hero/blocks/custom-product-button/a9a5079b-59e8-47cb-b659-ecf1c60b9b72",
+          "type": "shopify:\/\/apps\/wishlist-hero\/blocks\/custom-product-button\/a9a5079b-59e8-47cb-b659-ecf1c60b9b72",
           "settings": {
             "displayButtonMode": "~",
             "contentAlignment": "center",

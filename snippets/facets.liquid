@@ -49,7 +49,7 @@
             {% endif %}
           >
             {%- if filter_type == 'horizontal' and results.filters != empty -%}
-              <h2 class="facets__heading caption-large text-body" id="verticalTitle" tabindex="-1">
+              <h2 class="facets__heading caption-large text-body hidden" id="verticalTitle" tabindex="-1">
                 {{ 'products.facets.filter_by_label' | t }}
               </h2>
             {%- endif -%}
@@ -417,7 +417,7 @@
               </div>
             </div>
           {%- endif -%}
-          <div class="product-count light" role="status">
+          <div class="product-count hidden light" role="status">
             <h2 class="product-count__text text-body">
               <span id="ProductCountDesktop">
                 {%- if results.results_count -%}
@@ -489,6 +489,7 @@
                     {{ 'products.facets.filter_button' | t }}
                   {%- endif -%}
                 </h2>
+                
                 <p class="mobile-facets__count">
                   {%- if results.results_count -%}
                     {{ 'templates.search.results_with_count' | t: terms: results.terms, count: results.results_count }}
@@ -869,7 +870,7 @@
     </facet-filters-form>
   {%- endif -%}
   <div
-    class="product-count light{% if filter_type == 'vertical' or filter_type == 'horizontal' %} medium-hide large-up-hide{% endif %}"
+    class="product-count hidden light{% if filter_type == 'vertical' or filter_type == 'horizontal' %} medium-hide large-up-hide{% endif %}"
     role="status"
   >
     <h2 class="product-count__text text-body">
