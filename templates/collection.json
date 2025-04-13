@@ -34,16 +34,18 @@
       ],
       "settings": {
         "show_space": true,
+        "image": "shopify://shop_images/Rectangle.jpg",
+        "image_mobile": "shopify://shop_images/img_78135cd6-fabc-4c68-bd52-8981602b2e7e.png",
         "image_overlay_opacity": 0,
-        "image_height": "small",
+        "image_height": "adapt",
         "image_behavior": "none",
         "desktop_content_position": "middle-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": true,
+        "desktop_content_alignment": "left",
+        "show_text_box": false,
         "color_scheme": "",
-        "stack_images_on_mobile": true,
+        "stack_images_on_mobile": false,
         "mobile_content_alignment": "center",
-        "show_text_below": true
+        "show_text_below": false
       }
     },
     "product-grid": {
