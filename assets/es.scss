@@ -1561,6 +1561,42 @@
   .facets-container {
     @media (max-width: 768px) {
       padding-bottom: 1rem;
+
+      .mobile-facets__header-inner {
+        .mobile-facets__heading {
+          color: black;
+          font-size: 15px;
+          font-family: 'Inter', sans-serif;
+          font-weight: 600;
+          line-height: 25.50px;
+        }
+
+        .mobile-facets__count {
+          color: black;
+          font-size: 13px;
+          font-family: 'Inter', sans-serif;
+          font-weight: 400;
+          line-height: 19.50px;
+        }
+      }
+
+      .mobile-facets__summary {
+        color: black;
+        font-size: 13px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        line-height: 19.50px;
+      }
+
+      .select {
+        select {
+          color: black;
+          font-size: 15px;
+          font-family: 'Inter', sans-serif;
+          font-weight: 400;
+          line-height: 25.50px;
+        }
+      }
     }
 
     .mobile-facets__open-label {

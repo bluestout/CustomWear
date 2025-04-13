@@ -23,6 +23,12 @@
   margin-right: 1rem;
 }
 
+@media (max-width: 768px) {
+  .pagination__list > li:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
 .pagination__item {
   color: rgb(var(--color-foreground));
   display: inline-flex;
