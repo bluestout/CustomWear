@@ -23,6 +23,14 @@
 {%- for value in option.values -%}
   {%- liquid
     assign swatch_focal_point = null
+    assign variant_image = ""
+
+    for variant in product.variants
+      if variant.title contains value
+        assign variant_image = variant.image | image_url: width: 150
+      endif
+    endfor
+    
     if value.swatch.image
       assign image_url = value.swatch.image | image_url: width: 50
       assign swatch_value = 'url(' | append: image_url | append: ')'
@@ -60,7 +68,7 @@
 
   {%- if picker_type == 'swatch' -%}
     {%- capture help_text -%}
-      <span class="visually-hidden">{{ value | escape }}</span>
+      <span class="visually-hidden" style="--background-image: url('{{ variant_image }}')">{{ value | escape }}</span>
       {{ label_unavailable }}
     {%- endcapture -%}
     {%
@@ -69,6 +77,7 @@
       name: input_name,
       value: value | escape,
       swatch: value.swatch,
+      image: variant_image,
       product_form_id: product_form_id,
       checked: value.selected,
       visually_disabled: option_disabled,

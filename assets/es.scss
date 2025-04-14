@@ -1503,6 +1503,102 @@
       border-top: 1px solid #CCC;
     }
   }
+
+  variant-selects {
+    .product-form__input {
+      .form__label {
+        color: black;
+        font-size: 16px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        line-height: 20.80px;
+
+        span {
+          color: #990000;
+        }
+      }
+    }
+  }
+
+  .shopify-app-block {
+    .cl-po--wrapper {
+      .cl-po--options {
+        border-bottom: 1px solid #CCC;
+
+        .cl-po--option {
+          .cl-po--label {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            line-height: 25.50px;
+            gap: 2px;
+            margin-bottom: 10px;
+          }
+
+          .cl-po--swatch {
+            color: black;
+            font-size: 14px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            line-height: 21px; 
+          }
+
+          input[type=radio]:checked + .cl-po--swatch {
+            color: #000 !important;
+            outline-width: 1px !important;
+            border-width: 0 !important;
+          }
+
+          &[data-option="Size"],
+          &[data-option="Customize Your Hat"] {
+            .cl-po--label {
+              color: black !important;
+              font-size: 16px;
+              font-family: 'Inter', sans-serif;
+              font-weight: 600;
+              line-height: 20.80px;
+            }
+          }
+
+          &[data-option="Size"] {
+            .cl-po--label {
+              &::before {
+                content: var(--before-content, "Step 2: ");
+                color: #990000;
+              }
+            }
+          }
+
+          &[data-option="Customize Your Hat"] {
+            .cl-po--label {
+              &::before {
+                content: var(--before-content, "Step 3: ");
+                color: #990000;
+              }
+            }
+          }
+
+          &[data-option="Size"] {
+            .cl-po--swatch {
+              border-radius: 3px !important;
+            }
+          }
+        }
+
+        .cl-po--option:nth-child(n + 3) {
+          background-color: #FFF;
+          margin: 0 !important;
+          padding: 20px;
+          border: 1px solid #CCC;
+          border-bottom: 0;
+        }
+
+        .cl-po--option:nth-child(n + 3) + .cl-po--option {
+          padding-top: 0;
+          border-top: 0;
+        }
+      }
+    }
+  }
 }
 
 .related-products {
