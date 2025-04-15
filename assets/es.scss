@@ -1531,7 +1531,7 @@
             font-weight: 700;
             line-height: 25.50px;
             gap: 2px;
-            margin-bottom: 10px;
+            margin-bottom: 10px !important;
           }
 
           .cl-po--swatch {
@@ -1556,6 +1556,22 @@
               font-family: 'Inter', sans-serif;
               font-weight: 600;
               line-height: 20.80px;
+            }
+          }
+
+          &[data-option="Lettering Location"] {
+            .cl-po--swatch-container {
+              justify-content: space-between;
+
+              .cl-po--swatch-item {
+                .cl-po--swatch {
+                  width: 110px !important;
+                  height: 110px !important;
+                  border: 0 !important;
+                  outline: unset !important;
+                  background-color: #FFF !important;
+                }
+              }
             }
           }
 
