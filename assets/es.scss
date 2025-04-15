@@ -1824,3 +1824,67 @@
     }
   }
 }
+
+#main-collection-filters {
+  display: none;
+}
+
+#cloud_search_filters_root {
+  .cloud-search-page-controls {
+    .cloud-search-page-controls__filters-container {
+      .cloud-search-page-controls__filters {
+        width: 100%;
+
+        .cloud-search-filter {
+          margin-left: 0;
+          margin-right: 0;
+
+          .cloud-search-filter__name {
+            color: black;
+            font-size: 15px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            line-height: 25.50px;
+
+            &::after {
+              border-width: 0 2px 2px 0;
+              border-color: #990000;
+            }
+          }
+        }
+
+        .cloud-search-filter[data-filter-name="Sort by"] {
+          margin-left: auto;
+          display: flex;
+          align-items: center;
+          gap: 20px;
+
+          &::before {
+            content: 'Sort By:';
+            color: black;
+            font-size: 15px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            line-height: 25.50px;
+          }
+
+          .cloud-search-filter__name {
+            font-size: 0;
+            border: 1px solid #CCC;
+            border-radius: 0;
+            padding: 8px 24px;
+
+            .cloud-search-applied-filter__text {
+              font-size: 15px;
+              margin-right: 24px;
+
+              & > span:first-child {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
