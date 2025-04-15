@@ -1830,7 +1830,38 @@
 }
 
 #cloud_search_filters_root {
+  @media (max-width: 1200px) {
+    display: block;
+    margin-left: -1.5rem;
+    padding: 0 1.5rem;
+    width: calc(100% + 3rem);
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #CCC;
+  }
+  
   .cloud-search-page-controls {
+    @media (max-width: 1200px) {
+      margin: 0 !important;
+
+      .cloud-search-page-controls__filters-container {
+        justify-content: flex-start;
+
+        .cloud-search-page-controls__filters-link {
+          display: flex;
+          color: black;
+          font-size: 15px;
+          font-family: 'Inter', sans-serif;
+          font-weight: 600;
+          line-height: 16px;
+          margin-bottom: 16px;
+        }
+  
+        .cloud-search-page-controls__filters {
+          display: none;
+        }
+      }
+    }
+
     .cloud-search-page-controls__filters-container {
       .cloud-search-page-controls__filters {
         width: 100%;
