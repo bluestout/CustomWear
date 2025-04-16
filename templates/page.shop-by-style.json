@@ -65,13 +65,63 @@
             "title_2": "Hat Style 2",
             "url_2": ""
           }
+        },
+        "item_8iXADG": {
+          "type": "item",
+          "settings": {
+            "item_width": 6,
+            "image": "shopify://shop_images/bg.png",
+            "title": "Ladies Caps",
+            "url": "shopify://products/sn20w-kati-sportcap-specialty-licensed-camo-unstru",
+            "title_2": "Hat Style 2",
+            "url_2": ""
+          }
+        },
+        "item_iMUfVt": {
+          "type": "item",
+          "settings": {
+            "item_width": 4,
+            "image": "shopify://shop_images/bg_1.png",
+            "title": "Flexfit",
+            "url": "shopify://collections/all",
+            "image_2": "shopify://shop_images/img_1.png",
+            "title_2": "Get Your Patch On!",
+            "url_2": "shopify://products/12-inch-safety-color-beanie-w-reflective-threads"
+          }
+        },
+        "item_JdB3Gf": {
+          "type": "item",
+          "settings": {
+            "item_width": 4,
+            "image": "shopify://shop_images/Mask_group_1.png",
+            "title": "Performance",
+            "url": "shopify://products/5-panel-high-profile-structured-acrylicpolyester-t",
+            "image_2": "shopify://shop_images/Mask_group.png",
+            "title_2": "FlatBilled",
+            "url_2": "shopify://products/5-panel-mid-profile-structured-cotton-poly-blend-cap"
+          }
+        },
+        "item_RGEwRy": {
+          "type": "item",
+          "settings": {
+            "item_width": 6,
+            "image": "shopify://shop_images/bg_3.png",
+            "title": "Trucker Mash Back",
+            "url": "shopify://products/6-panel-unstructured-pigment-dyed-heavy-cotton-twi",
+            "title_2": "Hat Style 2",
+            "url_2": ""
+          }
         }
       },
       "block_order": [
         "item_qXenJt",
         "item_7rAx4D",
         "item_ayUTCT",
-        "item_t9qBbg"
+        "item_t9qBbg",
+        "item_8iXADG",
+        "item_iMUfVt",
+        "item_JdB3Gf",
+        "item_RGEwRy"
       ],
       "settings": {
         "scrollable": false,
