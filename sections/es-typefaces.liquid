@@ -25,9 +25,10 @@
 
       <div class="grid">
         {%- for block in section.blocks -%}
-          {%- assign color_text = block.settings.text | downcase -%}
           <div class="grid__item">
-            <div class="grid__item-color{% if color_text contains 'white' %} is-border{% endif %}" style="--background-color: {{ block.settings.color }}"></div>
+            <div class="grid__item-media">
+              <img src="{{ block.settings.image | img_url: 'master' }}" width="{{ block.settings.image.width }}" height="{{ block.settings.image.height }}">
+            </div>
             <div class="grid__item-text">{{ block.settings.text }}</div>
           </div>
         {%- endfor -%}
@@ -39,9 +40,9 @@
 
 {% schema %}
 {
-  "name": "ES Color List",
+  "name": "ES Typefaces",
   "tag": "section",
-  "class": "section es-color-list",
+  "class": "section es-typefaces",
   "disabled_on": {
     "groups": ["header", "footer"]
   },
@@ -185,13 +186,13 @@
   ],
   "blocks": [
     {
-      "type": "color",
-      "name": "Color",
+      "type": "image",
+      "name": "Image",
       "settings": [
         {
-          "type": "color",
-          "id": "color",
-          "label": "Background Color"
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
         },
         {
           "type": "inline_richtext",
@@ -203,7 +204,7 @@
   ],
   "presets": [
     {
-      "name": "ES Color List"
+      "name": "ES Typefaces"
     }
   ]
 }
