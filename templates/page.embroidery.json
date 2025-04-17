@@ -32,7 +32,6 @@
       "block_order": [
         "heading_Jxq4Qf"
       ],
-      "name": "ES Image Banner",
       "settings": {
         "show_space": false,
         "image": "shopify://shop_images/Image_adf9f057-f284-4858-85e1-512190c02935.png",
@@ -410,7 +409,6 @@
         "collapsible_row_zqzW9j",
         "collapsible_row_tDqFr7"
       ],
-      "name": "t:sections.collapsible_content.presets.name",
       "settings": {
         "caption": "",
         "heading": "Embroidery Q&A",
@@ -568,13 +566,30 @@
         "color_BkJWAJ",
         "color_VCmx6E"
       ],
-      "name": "ES Color List",
       "settings": {
+        "tab_section": true,
+        "hide_section": false,
         "custom_id": "tabColorList",
         "heading": "Thread Colors",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "row",
+        "container_color_scheme": "",
+        "color_scheme": "scheme-2",
+        "padding_top": 52,
+        "padding_bottom": 80
+      }
+    },
+    "es_typefaces_FeBxcz": {
+      "type": "es-typefaces",
+      "settings": {
+        "tab_section": true,
+        "hide_section": false,
+        "custom_id": "tabTypefaces",
+        "heading": "Embroidery Typefaces",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
         "container_color_scheme": "",
         "color_scheme": "scheme-2",
         "padding_top": 52,
@@ -586,6 +601,7 @@
     "main",
     "es_image_banner_AXNKXn",
     "collapsible_content_grGaaG",
-    "es_color_list_CA6xez"
+    "es_color_list_CA6xez",
+    "es_typefaces_FeBxcz"
   ]
 }
