@@ -11,13 +11,52 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "es_image_banner_AXNKXn": {
+      "type": "es-image-banner",
+      "blocks": {
+        "heading_Jxq4Qf": {
+          "type": "heading",
+          "settings": {
+            "subheading": "",
+            "heading": "How it works: Embroidery",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Jxq4Qf"
+      ],
+      "name": "ES Image Banner",
+      "settings": {
+        "show_space": false,
+        "image": "shopify://shop_images/Image_adf9f057-f284-4858-85e1-512190c02935.png",
+        "image_mobile": "shopify://shop_images/Image_1_bd7e40f7-17be-4e16-84b8-671339bcd7fe.png",
+        "image_overlay_opacity": 100,
+        "opacity_type": "gradient",
+        "opacity_direction": "horizontal",
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
+        "stack_images_on_mobile": false,
+        "mobile_content_position": "bottom",
+        "mobile_content_alignment": "center",
+        "opacity_direct_on_mobile": "vertical",
+        "image_height_on_mobile": "adapt",
+        "show_text_below": false
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "es_image_banner_AXNKXn"
   ]
 }
