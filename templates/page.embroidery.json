@@ -428,13 +428,153 @@
     },
     "es_color_list_CA6xez": {
       "type": "es-color-list",
+      "blocks": {
+        "color_gV7qRi": {
+          "type": "color",
+          "settings": {
+            "color": "#37a328",
+            "text": "Lt. Green"
+          }
+        },
+        "color_Mkegc3": {
+          "type": "color",
+          "settings": {
+            "color": "#195816",
+            "text": "Spruce"
+          }
+        },
+        "color_W6AhLL": {
+          "type": "color",
+          "settings": {
+            "color": "#209c91",
+            "text": "Teal"
+          }
+        },
+        "color_wp8MCA": {
+          "type": "color",
+          "settings": {
+            "color": "#0d7bbc",
+            "text": "Lt. Blue"
+          }
+        },
+        "color_tDea6M": {
+          "type": "color",
+          "settings": {
+            "color": "#001eb2",
+            "text": "Royal"
+          }
+        },
+        "color_JJk6Gm": {
+          "type": "color",
+          "settings": {
+            "color": "#041157",
+            "text": "Navy"
+          }
+        },
+        "color_rLzyE6": {
+          "type": "color",
+          "settings": {
+            "color": "#760977",
+            "text": "Purple"
+          }
+        },
+        "color_iQUKQj": {
+          "type": "color",
+          "settings": {
+            "color": "#8f121a",
+            "text": "Maroon"
+          }
+        },
+        "color_aidFDQ": {
+          "type": "color",
+          "settings": {
+            "color": "#bc0c1c",
+            "text": "Red"
+          }
+        },
+        "color_hYha7D": {
+          "type": "color",
+          "settings": {
+            "color": "#fc656a",
+            "text": "Pink"
+          }
+        },
+        "color_9W3EJT": {
+          "type": "color",
+          "settings": {
+            "color": "#fc531c",
+            "text": "Orange"
+          }
+        },
+        "color_PatGFt": {
+          "type": "color",
+          "settings": {
+            "color": "#ffbc24",
+            "text": "Yellow"
+          }
+        },
+        "color_xDWpkx": {
+          "type": "color",
+          "settings": {
+            "color": "#d9b373",
+            "text": "Tan"
+          }
+        },
+        "color_jrTrja": {
+          "type": "color",
+          "settings": {
+            "color": "#4f0006",
+            "text": "Brown"
+          }
+        },
+        "color_yLfMji": {
+          "type": "color",
+          "settings": {
+            "color": "#898989",
+            "text": "Gray"
+          }
+        },
+        "color_BkJWAJ": {
+          "type": "color",
+          "settings": {
+            "color": "#000000",
+            "text": "Black"
+          }
+        },
+        "color_VCmx6E": {
+          "type": "color",
+          "settings": {
+            "color": "#ffffff",
+            "text": "White"
+          }
+        }
+      },
+      "block_order": [
+        "color_gV7qRi",
+        "color_Mkegc3",
+        "color_W6AhLL",
+        "color_wp8MCA",
+        "color_tDea6M",
+        "color_JJk6Gm",
+        "color_rLzyE6",
+        "color_iQUKQj",
+        "color_aidFDQ",
+        "color_hYha7D",
+        "color_9W3EJT",
+        "color_PatGFt",
+        "color_xDWpkx",
+        "color_jrTrja",
+        "color_yLfMji",
+        "color_BkJWAJ",
+        "color_VCmx6E"
+      ],
       "name": "ES Color List",
       "settings": {
         "custom_id": "tabColorList",
         "heading": "Thread Colors",
         "heading_size": "h1",
         "heading_alignment": "center",
-        "layout": "none",
+        "layout": "section",
         "container_color_scheme": "",
         "color_scheme": "scheme-2",
         "open_first_collapsible_row": false,
