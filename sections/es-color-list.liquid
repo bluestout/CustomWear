@@ -1,0 +1,244 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div id="{{ section.settings.custom_id }}" class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="{% if section.settings.layout == 'section' %} page-width{% elsif section.settings.layout == 'none' %} content-container content-container--full-width{% endif %}">
+    <div class="section-{{ section.id }}-padding{% if section.settings.layout == 'section' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}">
+      {%- if section.settings.heading != blank -%}
+        <h2 class="es-font-h2 inline-richtext {{ section.settings.heading_size }}">
+          {{ section.settings.heading }}
+        </h2>
+      {%- else -%}
+        <h2 class="visually-hidden">{{ 'accessibility.collapsible_content_title' | t }}</h2>
+      {% endif %}
+
+      <div class="grid">
+        {%- for block in section.blocks -%}
+          <div class="grid__item">
+            <div class="grid__item-color" style="--background-color: {{ block.settings.color }}"></div>
+            <div class="grid__item-text">{{ block.settings.text }}</div>
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "ES Color List",
+  "tag": "section",
+  "class": "section es-color-list",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "custom_id",
+      "label": "Custom ID",
+      "default": "tabColorList"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "t:sections.collapsible_content.settings.heading.label",
+      "default": "t:sections.collapsible_content.settings.heading.default"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        },
+        {
+          "value": "hxl",
+          "label": "t:sections.all.heading_size.options__4.label"
+        },
+        {
+          "value": "hxxl",
+          "label": "t:sections.all.heading_size.options__5.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment",
+      "label": "t:sections.collapsible_content.settings.heading_alignment.label",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.collapsible_content.settings.heading_alignment.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.collapsible_content.settings.heading_alignment.options__2.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.collapsible_content.settings.heading_alignment.options__3.label"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.collapsible_content.settings.layout_header.content"
+    },    
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "t:sections.collapsible_content.settings.layout.label",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:sections.collapsible_content.settings.layout.options__1.label"
+        },
+        {
+          "value": "row",
+          "label": "t:sections.collapsible_content.settings.layout.options__2.label"
+        },
+        {
+          "value": "section",
+          "label": "t:sections.collapsible_content.settings.layout.options__3.label"
+        }
+      ],
+      "default": "none"
+    },
+    {
+      "type": "color_scheme",
+      "id": "container_color_scheme",
+      "label": "t:sections.collapsible_content.settings.container_color_scheme.label",
+      "default": "scheme-2"
+    },    
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.collapsible_content.settings.section_color_scheme.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "checkbox",
+      "id": "open_first_collapsible_row",
+      "default": false,
+      "label": "t:sections.collapsible_content.settings.open_first_collapsible_row.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.collapsible_content.settings.header.content"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:sections.collapsible_content.settings.image.label"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "t:sections.collapsible_content.settings.image_ratio.options__1.label"
+        },
+        {
+          "value": "small",
+          "label": "t:sections.collapsible_content.settings.image_ratio.options__2.label"
+        },
+        {
+          "value": "large",
+          "label": "t:sections.collapsible_content.settings.image_ratio.options__3.label"
+        }
+      ],
+      "default": "adapt",
+      "label": "t:sections.collapsible_content.settings.image_ratio.label"
+    },
+    {
+      "type": "select",
+      "id": "desktop_layout",
+      "options": [
+        {
+          "value": "image_first",
+          "label": "t:sections.collapsible_content.settings.desktop_layout.options__1.label"
+        },
+        {
+          "value": "image_second",
+          "label": "t:sections.collapsible_content.settings.desktop_layout.options__2.label"
+        }
+      ],
+      "default": "image_second",
+      "label": "t:sections.collapsible_content.settings.desktop_layout.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "color",
+      "name": "Color",
+      "settings": [
+        {
+          "type": "color",
+          "id": "color",
+          "label": "Background Color"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "ES Color List"
+    }
+  ]
+}
+{% endschema %}

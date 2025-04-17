@@ -1921,21 +1921,80 @@
 }
 
 .collapsible-content {
-  .accordion {
-    .accordion__title {
-      color: black;
-      font-size: 16px;
-      font-family: 'Inter', sans-serif;
-      font-weight: 600;
-      line-height: 20.80px; 
-    }
+  .collapsible-content__wrapper {
+    .collapsible-content-wrapper-narrow {
+      max-width: 82rem;
 
-    .accordion__content {
-      color: black;
-      font-size: 15px;
-      font-family: 'Inter', sans-serif;
-      font-weight: 400;
-      line-height: 25.50px;
+      .grid {
+        background-color: #FFF;
+        padding: 0 2rem;
+        border: 1px solid #CCC;
+
+        .accordion {
+          &:first-child {
+            border-top: 0;
+          }
+
+          &:last-child {
+            border-bottom: 0;
+          }
+
+          details {
+            summary {
+              justify-content: space-between;
+              align-items: center;
+              padding: 3rem 0;
+
+              @media (max-width: 750px) {
+                padding: 2rem 0;
+              }
+
+              .accordion__title {
+                color: black;
+                font-size: 16px;
+                font-family: 'Inter', sans-serif;
+                font-weight: 600;
+                line-height: 20.80px; 
+
+                @media (max-width: 750px) {
+                  max-width: calc(100% - 3rem);
+                }
+              }
+
+              .icon-close {
+                display: none;
+              }
+            }
+
+            &[open] {
+              summary {
+                padding: 2rem 0;
+
+                .icon-close {
+                  display: block;
+                }
+                .icon-plus {
+                  display: none;
+                }
+              }
+            }
+
+            .accordion__content {
+              color: black;
+              font-size: 15px;
+              font-family: 'Inter', sans-serif;
+              font-weight: 400;
+              line-height: 25.50px;
+
+              a {
+                text-decoration: unset;
+                color: #990000;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
