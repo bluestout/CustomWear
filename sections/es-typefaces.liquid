@@ -24,8 +24,7 @@
       {% endif %}
 
       <div class="grid">
-        {{ shop.metaobjects.typefaces }}
-        {%- for metaobject in shop.metaobjects.typefaces -%}
+        {%- for metaobject in section.settings.typefaces_group.typefaces.value -%}
           <div class="grid__item">
             <div class="grid__item-media">
               <img src="{{ metaobject.image | img_url: 'master' }}" width="{{ metaobject.image.width }}" height="{{ metaobject.image.height }}">
@@ -75,6 +74,12 @@
       "id": "heading",
       "label": "t:sections.collapsible_content.settings.heading.label",
       "default": "t:sections.collapsible_content.settings.heading.default"
+    },
+    {
+      "type": "metaobject",
+      "id": "typefaces_group",
+      "label": "Typefaces Group",
+      "metaobject_type": "typefaces_group"
     },
     {
       "type": "select",
