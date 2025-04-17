@@ -587,6 +587,7 @@
         "hide_section": false,
         "custom_id": "tabColorList",
         "heading": "Collapsible content",
+        "typefaces_group": "embroidery",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
