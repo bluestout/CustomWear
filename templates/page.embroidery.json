@@ -579,29 +579,12 @@
         "padding_top": 52,
         "padding_bottom": 80
       }
-    },
-    "es_typefaces_FeBxcz": {
-      "type": "es-typefaces",
-      "settings": {
-        "tab_section": true,
-        "hide_section": false,
-        "custom_id": "tabTypefaces",
-        "heading": "Embroidery Typefaces",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "none",
-        "container_color_scheme": "",
-        "color_scheme": "scheme-2",
-        "padding_top": 52,
-        "padding_bottom": 80
-      }
     }
   },
   "order": [
     "main",
     "es_image_banner_AXNKXn",
     "collapsible_content_grGaaG",
-    "es_color_list_CA6xez",
-    "es_typefaces_FeBxcz"
+    "es_color_list_CA6xez"
   ]
 }
