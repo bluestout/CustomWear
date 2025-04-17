@@ -24,12 +24,13 @@
       {% endif %}
 
       <div class="grid">
-        {%- for block in section.blocks -%}
+        {{ shop.metaobjects.typefaces }}
+        {%- for metaobject in shop.metaobjects.typefaces -%}
           <div class="grid__item">
             <div class="grid__item-media">
-              <img src="{{ block.settings.image | img_url: 'master' }}" width="{{ block.settings.image.width }}" height="{{ block.settings.image.height }}">
+              <img src="{{ metaobject.image | img_url: 'master' }}" width="{{ metaobject.image.width }}" height="{{ metaobject.image.height }}">
             </div>
-            <div class="grid__item-text">{{ block.settings.text }}</div>
+            <div class="grid__item-text">{{ metaobject.text }}</div>
           </div>
         {%- endfor -%}
       </div>
@@ -182,24 +183,6 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
-    }
-  ],
-  "blocks": [
-    {
-      "type": "typeface",
-      "name": "Typeface",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        },
-        {
-          "type": "inline_richtext",
-          "id": "text",
-          "label": "Text"
-        }
-      ]
     }
   ],
   "presets": [
