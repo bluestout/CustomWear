@@ -2,6 +2,12 @@
 .es-font-inter { font-family: "Inter", sans-serif }
 .mt-auto { margin-top: auto }
 
+.page-width--small {
+  max-width: 82rem;
+  padding: 0 1.5rem;
+  margin: auto;
+}
+
 .es-text-uppercase { text-transform: uppercase }
 
 .es-font-h2 {
