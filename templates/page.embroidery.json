@@ -579,12 +579,29 @@
         "padding_top": 52,
         "padding_bottom": 80
       }
+    },
+    "es_typefaces_aPPrxr": {
+      "type": "es-typefaces",
+      "settings": {
+        "tab_section": false,
+        "hide_section": false,
+        "custom_id": "tabColorList",
+        "heading": "Collapsible content",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "es_image_banner_AXNKXn",
     "collapsible_content_grGaaG",
-    "es_color_list_CA6xez"
+    "es_color_list_CA6xez",
+    "es_typefaces_aPPrxr"
   ]
 }
