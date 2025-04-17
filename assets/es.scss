@@ -1919,3 +1919,23 @@
     }
   }
 }
+
+.collapsible-content {
+  .accordion {
+    .accordion__title {
+      color: black;
+      font-size: 16px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      line-height: 20.80px; 
+    }
+
+    .accordion__content {
+      color: black;
+      font-size: 15px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      line-height: 25.50px;
+    }
+  }
+}
