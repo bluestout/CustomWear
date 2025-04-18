@@ -606,7 +606,7 @@
       "settings": {
         "tab_section": true,
         "hide_section": true,
-        "custom_id": "tabColorList",
+        "custom_id": "embroideryTypefaces",
         "heading": "Thread Colors",
         "heading_size": "h1",
         "heading_alignment": "center",
