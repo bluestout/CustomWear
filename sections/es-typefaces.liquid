@@ -24,14 +24,18 @@
       {% endif %}
 
       <div class="grid">
-        {%- for metaobject in section.settings.typefaces_group.typefaces.value -%}
-          <div class="grid__item">
-            <div class="grid__item-media">
-              <img src="{{ metaobject.image | img_url: 'master' }}" width="{{ metaobject.image.width }}" height="{{ metaobject.image.height }}">
+        {% comment %} {%- paginate section.settings.typefaces_group.typefaces.value by 100 -%} {% endcomment %}
+        {%- for i in (1..3) -%}
+          {%- for metaobject in section.settings.typefaces_group.typefaces.value -%}
+            <div class="grid__item">
+              <div class="grid__item-media">
+                <img src="{{ metaobject.image | img_url: 'master' }}" width="{{ metaobject.image.width }}" height="{{ metaobject.image.height }}">
+              </div>
+              <div class="grid__item-text">{{ metaobject.title }}</div>
             </div>
-            <div class="grid__item-text">{{ metaobject.text }}</div>
-          </div>
+          {%- endfor -%}
         {%- endfor -%}
+        {% comment %} {%- endpaginate -%} {% endcomment %}
       </div>
     </div>
   </div>
