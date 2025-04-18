@@ -1,7 +1,6 @@
 {%- style -%}
   #shopify-section-{{ section.id }} {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    padding: 20px 10px;
   }
 
   @media screen and (min-width: 750px) {
@@ -13,30 +12,36 @@
 {%- endstyle -%}
 
 <div class="container">
-  <div class="row">
+  <div class="row small-hide">
     {%- for block in section.blocks %}
-      <a href="javascript:void(0);" class="button{% if forloop.first %} active{% endif %}" data-target="{{ block.settings.target }}">{{ block.settings.text }}</a>
+      {% comment %} <a href="javascript:void(0);" class="button{% if forloop.first %} active{% endif %}" data-target="{{ block.settings.target }}">{{ block.settings.text }}</a> {% endcomment %}
+      <label for="tab-radio-{{ block.id }}">
+        <input type="radio" id="tab-radio-{{ block.id }}" name="tab-radio" value="{{ block.settings.target }}"{% if forloop.first %} checked{% endif %}>
+        <span>{{ block.settings.text }}</span>
+      </label>
     {%- endfor -%}
+  </div>
+  <div class="row medium-hide large-up-hide">
+    <select name="tab-radio">
+      {%- for block in section.blocks -%}
+        <option value="{{ block.settings.target }}"{% if forloop.first %} selected{% endif %}>{{ block.settings.text }}</option>
+      {%- endfor -%}
+    </select>
   </div>
 </div>
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {
-    const buttons = document.querySelectorAll(".es-tab-buttons .container .row .button");
+    const buttons = document.querySelectorAll(".es-tab-buttons [name='tab-radio']");
     const sections = document.querySelectorAll(".tab-section");
 
     buttons.forEach(button => {
-      button.addEventListener("click", function () {
+      button.addEventListener("change", function () {
         sections.forEach(section => {
           section.classList.add('hidden');
         });
 
-        buttons.forEach(b => {
-          b.classList.remove('active');
-        });
-
-        button.classList.add('active');
-        document.querySelector(`${this.dataset.target}`)?.classList.remove("hidden");
+        document.querySelector(`${this.value}`)?.classList.remove("hidden");
       })  
     })
   })

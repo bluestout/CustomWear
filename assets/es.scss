@@ -2125,30 +2125,58 @@
       justify-content: center;
       gap: 10px;
 
-      .button {
-        border-top-left-radius: 3px;
-        border-top-right-radius: 3px;
-        color: white;
-        font-size: 13px;
-        font-family: Inter;
-        font-weight: 800;
-        text-transform: uppercase;
-        line-height: 16.90px;
-        letter-spacing: 2px;
-        background-color: #000;
-        padding: 20px;
-        transition: .3s ease;
+      label {
+        input {
+          display: none;
+        }
 
-        &.active,
-        &:hover {
+        span {
+          border-top-left-radius: 3px;
+          border-top-right-radius: 3px;
+          color: white;
+          font-size: 13px;
+          font-family: Inter;
+          font-weight: 800;
+          text-transform: uppercase;
+          line-height: 16.90px;
+          letter-spacing: 2px;
+          background-color: #000;
+          padding: 20px;
+          transition: .3s ease;
+          cursor: pointer;
+          display: block;
+  
+          &:hover {
+            color: #000;
+            background-color: #FAFAFA;
+          }
+  
+          &::before,
+          &::after {
+            content: unset;
+          }
+        }
+
+        input:checked + span {
           color: #000;
           background-color: #FAFAFA;
         }
+      }
 
-        &::before,
-        &::after {
-          content: unset;
-        }
+      select {
+        width: 100%;
+        display: block;
+        padding: 12px 20px;
+        border-radius: 0;
+        border: 1px solid #CCC;
+        font-size: 15px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        line-height: 25.50px;
+        appearance: none;
+        background-image: url('https://cdn.shopify.com/s/files/1/0728/5784/6001/files/Union_5.svg?v=1744987058');
+        background-position: calc(100% - 20px) center;
+        background-repeat: no-repeat;
       }
     }
   }
