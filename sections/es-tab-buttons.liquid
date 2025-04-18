@@ -20,6 +20,28 @@
   </div>
 </div>
 
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll(".es-tab-buttons .container .row .button");
+    const sections = document.querySelectorAll(".tab-section");
+
+    buttons.forEach(button => {
+      button.addEventListener("click", function () {
+        sections.forEach(section => {
+          section.classList.add('hidden');
+        });
+
+        buttons.forEach(b => {
+          b.classList.remove('active');
+        });
+
+        button.classList.add('active');
+        document.querySelector(`${this.dataset.target}`)?.classList.remove("hidden");
+      })  
+    })
+  })
+</script>
+
 {% schema %}
 {
   "name": "ES Tab Buttons",
