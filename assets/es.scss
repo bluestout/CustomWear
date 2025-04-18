@@ -2181,3 +2181,23 @@
     }
   }
 }
+
+.es-price {
+  display: flex;
+  color: black;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  line-height: 20.80px;
+  align-items: baseline;
+  gap: 2px;
+
+  sup {
+    color: #990000;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    line-height: 18.2px;
+  }
+}
