@@ -53,6 +53,41 @@
         "show_text_below": false
       }
     },
+    "es_tab_buttons_6H7Fdx": {
+      "type": "es-tab-buttons",
+      "blocks": {
+        "button_38DRWc": {
+          "type": "button",
+          "settings": {
+            "text": "Embroidery Q&A",
+            "target": "#embroideryQA"
+          }
+        },
+        "button_FkBWzQ": {
+          "type": "button",
+          "settings": {
+            "text": "Thread colors",
+            "target": "#threadColors"
+          }
+        },
+        "button_iVYQw8": {
+          "type": "button",
+          "settings": {
+            "text": "Embroidery Typefaces",
+            "target": "#embroideryTypefaces"
+          }
+        }
+      },
+      "block_order": [
+        "button_38DRWc",
+        "button_FkBWzQ",
+        "button_iVYQw8"
+      ],
+      "settings": {
+        "padding_top": 32,
+        "padding_bottom": 0
+      }
+    },
     "collapsible_content_grGaaG": {
       "type": "collapsible-content",
       "blocks": {
@@ -601,6 +636,7 @@
   "order": [
     "main",
     "es_image_banner_AXNKXn",
+    "es_tab_buttons_6H7Fdx",
     "collapsible_content_grGaaG",
     "es_color_list_CA6xez",
     "es_typefaces_aPPrxr"
