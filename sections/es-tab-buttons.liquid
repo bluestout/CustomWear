@@ -15,7 +15,7 @@
 <div class="container">
   <div class="row">
     {%- for block in section.blocks %}
-      <a href="javascript:void(0);" class="button" data-target="{{ block.settings.target }}">{{ block.settings.text }}</a>
+      <a href="javascript:void(0);" class="button{% if forloop.first %} active{% endif %}" data-target="{{ block.settings.target }}">{{ block.settings.text }}</a>
     {%- endfor -%}
   </div>
 </div>
