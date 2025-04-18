@@ -447,6 +447,7 @@
       "settings": {
         "tab_section": true,
         "hide_section": false,
+        "custom_id": "embroideryQA",
         "caption": "",
         "heading": "Embroidery Q&A",
         "heading_size": "h1",
@@ -606,7 +607,7 @@
       "settings": {
         "tab_section": true,
         "hide_section": true,
-        "custom_id": "embroideryTypefaces",
+        "custom_id": "threadColors",
         "heading": "Thread Colors",
         "heading_size": "h1",
         "heading_alignment": "center",
@@ -622,7 +623,7 @@
       "settings": {
         "tab_section": true,
         "hide_section": true,
-        "custom_id": "tabColorList",
+        "custom_id": "embroideryTypefaces",
         "heading": "Embroidery Typefaces",
         "typefaces_group": "embroidery",
         "heading_size": "h1",
