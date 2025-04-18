@@ -568,7 +568,7 @@
       ],
       "settings": {
         "tab_section": true,
-        "hide_section": false,
+        "hide_section": true,
         "custom_id": "tabColorList",
         "heading": "Thread Colors",
         "heading_size": "h1",
@@ -583,8 +583,8 @@
     "es_typefaces_aPPrxr": {
       "type": "es-typefaces",
       "settings": {
-        "tab_section": false,
-        "hide_section": false,
+        "tab_section": true,
+        "hide_section": true,
         "custom_id": "tabColorList",
         "heading": "Embroidery Typefaces",
         "typefaces_group": "embroidery",
