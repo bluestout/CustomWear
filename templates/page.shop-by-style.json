@@ -17,6 +17,42 @@
         "padding_bottom": 28
       }
     },
+    "es_image_banner_RjY6ic": {
+      "type": "es-image-banner",
+      "blocks": {
+        "heading_rRbi8j": {
+          "type": "heading",
+          "settings": {
+            "subheading": "",
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_rRbi8j"
+      ],
+      "settings": {
+        "show_space": false,
+        "image": "shopify://shop_images/Mask_group_1_f921e045-73ef-4400-b9f9-04b557a965b1.png",
+        "image_mobile": "shopify://shop_images/Mask_group_2.png",
+        "image_overlay_opacity": 0,
+        "opacity_type": "normal",
+        "opacity_direction": "vertical",
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
+        "stack_images_on_mobile": false,
+        "mobile_content_position": "middle",
+        "mobile_content_alignment": "left",
+        "opacity_direct_on_mobile": "horizontal",
+        "image_height_on_mobile": "adapt",
+        "show_text_below": false
+      }
+    },
     "es_gallery_with_link_CGamDr": {
       "type": "es-gallery-with-link",
       "blocks": {
@@ -128,7 +164,7 @@
         "title": "",
         "hide_title_on_mobile": true,
         "padding_top": 40,
-        "padding_bottom": 40,
+        "padding_bottom": 80,
         "padding_top_mobile": 20,
         "padding_bottom_mobile": 40,
         "item_count_row": 2,
@@ -138,6 +174,7 @@
   },
   "order": [
     "main",
+    "es_image_banner_RjY6ic",
     "es_gallery_with_link_CGamDr"
   ]
 }
