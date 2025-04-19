@@ -57,6 +57,8 @@
         "image": "shopify://shop_images/Rectangle_94.jpg",
         "image_mobile": "shopify://shop_images/Rectangle_94.png",
         "image_overlay_opacity": 0,
+        "opacity_type": "normal",
+        "opacity_direction": "vertical",
         "image_height": "adapt",
         "image_behavior": "none",
         "desktop_content_position": "middle-left",
@@ -64,7 +66,10 @@
         "show_text_box": false,
         "color_scheme": "",
         "stack_images_on_mobile": false,
+        "mobile_content_position": "middle",
         "mobile_content_alignment": "left",
+        "opacity_direct_on_mobile": "vertical",
+        "image_height_on_mobile": "square",
         "show_text_below": false
       }
     },
@@ -270,7 +275,7 @@
       ],
       "settings": {
         "scrollable": false,
-        "title": "Shop By Top Products",
+        "title": "Shop By Top Selling Brands",
         "hide_title_on_mobile": true,
         "padding_top": 40,
         "padding_bottom": 40,
