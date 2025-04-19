@@ -1979,6 +1979,12 @@
               .icon-close {
                 display: none;
               }
+
+              @media (max-width: 768px) {
+                &:hover {
+                  background-color: #FFF;
+                }  
+              }
             }
 
             &[open] {
