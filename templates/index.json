@@ -57,6 +57,8 @@
         "image": "shopify://shop_images/Rectangle_94.jpg",
         "image_mobile": "shopify://shop_images/Rectangle_94.png",
         "image_overlay_opacity": 0,
+        "opacity_type": "normal",
+        "opacity_direction": "vertical",
         "image_height": "adapt",
         "image_behavior": "none",
         "desktop_content_position": "middle-left",
@@ -64,7 +66,10 @@
         "show_text_box": false,
         "color_scheme": "",
         "stack_images_on_mobile": false,
+        "mobile_content_position": "middle",
         "mobile_content_alignment": "left",
+        "opacity_direct_on_mobile": "vertical",
+        "image_height_on_mobile": "square",
         "show_text_below": false
       }
     },
@@ -74,16 +79,16 @@
         "collection_rthtNn": {
           "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/Group_247.png",
-            "title": "Imperial",
+            "image": "shopify://shop_images/256_Cardinal-White_520_x_376px.jpg",
+            "title": "premium 5 Panel Golf Hats",
             "url": "shopify://collections/frontpage"
           }
         },
         "collection_3tFD4j": {
           "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/img.png",
-            "title": "Premium 5-Panel Golf",
+            "image": "shopify://shop_images/112_Tri-White-Aluminum-Black__520_x_376px.jpg",
+            "title": "Trucker Mesh Hats",
             "url": "#"
           }
         },
@@ -219,8 +224,8 @@
           "type": "item",
           "settings": {
             "item_width": 6,
-            "image": "shopify://shop_images/bg.png",
-            "title": "Ladies Caps",
+            "image": "shopify://shop_images/America_s_Favorite_cap.png",
+            "title": "Richardson",
             "url": "shopify://products/sn20w-kati-sportcap-specialty-licensed-camo-unstru",
             "title_2": "Hat Style 2",
             "url_2": ""
@@ -233,8 +238,8 @@
             "image": "shopify://shop_images/bg_1.png",
             "title": "Flexfit",
             "url": "shopify://collections/all",
-            "image_2": "shopify://shop_images/img_1.png",
-            "title_2": "Get Your Patch On!",
+            "image_2": "shopify://shop_images/OC-main-herov2.jpg",
+            "title_2": "Outdoor Cap",
             "url_2": "shopify://products/12-inch-safety-color-beanie-w-reflective-threads"
           }
         },
@@ -245,8 +250,8 @@
             "image": "shopify://shop_images/Mask_group_1.png",
             "title": "Performance",
             "url": "shopify://products/5-panel-high-profile-structured-acrylicpolyester-t",
-            "image_2": "shopify://shop_images/Mask_group.png",
-            "title_2": "FlatBilled",
+            "image_2": "shopify://shop_images/Decky_1160_590px.jpg",
+            "title_2": "Decky Hats",
             "url_2": "shopify://products/5-panel-mid-profile-structured-cotton-poly-blend-cap"
           }
         },
@@ -255,7 +260,7 @@
           "settings": {
             "item_width": 6,
             "image": "shopify://shop_images/bg_3.png",
-            "title": "Trucker Mash Back",
+            "title": "Otto Hats",
             "url": "shopify://products/6-panel-unstructured-pigment-dyed-heavy-cotton-twi",
             "title_2": "Hat Style 2",
             "url_2": ""
@@ -270,7 +275,7 @@
       ],
       "settings": {
         "scrollable": false,
-        "title": "Shop By Top Products",
+        "title": "Shop By Top Selling Brands",
         "hide_title_on_mobile": true,
         "padding_top": 40,
         "padding_bottom": 40,
