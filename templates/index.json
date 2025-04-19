@@ -88,7 +88,7 @@
           "type": "collection",
           "settings": {
             "image": "shopify://shop_images/img.png",
-            "title": "<strong>Trucker Mesh Hats</strong>",
+            "title": "Trucker Mesh Hats",
             "url": "#"
           }
         },
