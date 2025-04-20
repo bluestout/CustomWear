@@ -24,9 +24,8 @@
       {% endif %}
 
       <div class="mySwiper swiper">
-        {% comment %} {%- paginate section.settings.typefaces_group.typefaces.value by 100 -%} {% endcomment %}
         <div class="swiper-wrapper">
-          {%- for i in (1..3) -%}
+          {%- paginate section.settings.typefaces_group.typefaces.value by 100 -%}
             {%- for metaobject in section.settings.typefaces_group.typefaces.value -%}
               <div class="grid__item swiper-slide">
                 <div class="grid__item-media">
@@ -35,13 +34,12 @@
                 <div class="grid__item-text">{{ metaobject.title }}</div>
               </div>
             {%- endfor -%}
-          {%- endfor -%}
+          {%- endpaginate -%}
         </div>
         <div class="swiper-navigation">
           <div class="swiper-button-prev">{%- render 'es-icon-arrow-right' -%}</div>
           <div class="swiper-button-next">{%- render 'es-icon-arrow-right' -%}</div>
         </div>
-        {% comment %} {%- endpaginate -%} {% endcomment %}
       </div>
     </div>
   </div>
