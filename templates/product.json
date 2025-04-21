@@ -42,6 +42,7 @@
         },
         "price": {
           "type": "price",
+          "disabled": true,
           "settings": {}
         },
         "buy_buttons": {
