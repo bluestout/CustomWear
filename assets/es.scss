@@ -2163,6 +2163,7 @@
               @media (max-width: 768px) {
                 &:hover {
                   background-color: #FFF;
+                  text-decoration: unset !important;
                 }  
               }
             }
@@ -2363,6 +2364,8 @@
         background-image: url('https://cdn.shopify.com/s/files/1/0728/5784/6001/files/Union_5.svg?v=1744987058');
         background-position: calc(100% - 20px) center;
         background-repeat: no-repeat;
+        color: #000;
+        background-color: #FFF;
       }
     }
   }
