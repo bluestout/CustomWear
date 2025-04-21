@@ -454,21 +454,78 @@
         "padding_bottom": 80
       }
     },
-    "es_typefaces_aPPrxr": {
-      "type": "es-typefaces",
+    "es_patches_dXUgxp": {
+      "type": "es-patches",
+      "blocks": {
+        "card_M6m7bf": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/2_6.png",
+            "title": "Embroidered Patches",
+            "text": "<p>In dapibus fringilla orci, ut posuere magna dictum ac. Nulla nisl massa, pharetra id vestibulum non, semper nec nulla. Curabitur semper mi id sem ornare, consectetur mattis metus volutpat. Sed molestie vel lorem quis lacinia. Nam pulvinar quam non facilisis dapibus. Quisque vehicula, augue sit amet consequat viverra, nisl risus gravida felis, sed gravida sem tortor at erat.</p>"
+          }
+        },
+        "card_gff6Di": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/2_6.png",
+            "title": "Embroidered Patches",
+            "text": "<p>In dapibus fringilla orci, ut posuere magna dictum ac. Nulla nisl massa, pharetra id vestibulum non, semper nec nulla. Curabitur semper mi id sem ornare, consectetur mattis metus volutpat. Sed molestie vel lorem quis lacinia. Nam pulvinar quam non facilisis dapibus. Quisque vehicula, augue sit amet consequat viverra, nisl risus gravida felis, sed gravida sem tortor at erat.</p>"
+          }
+        },
+        "card_kXpR4p": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/2_6.png",
+            "title": "Embroidered Patches",
+            "text": "<p>In dapibus fringilla orci, ut posuere magna dictum ac. Nulla nisl massa, pharetra id vestibulum non, semper nec nulla. Curabitur semper mi id sem ornare, consectetur mattis metus volutpat. Sed molestie vel lorem quis lacinia. Nam pulvinar quam non facilisis dapibus. Quisque vehicula, augue sit amet consequat viverra, nisl risus gravida felis, sed gravida sem tortor at erat.</p>"
+          }
+        },
+        "card_tHUVnm": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/2_6.png",
+            "title": "Embroidered Patches",
+            "text": "<p>In dapibus fringilla orci, ut posuere magna dictum ac. Nulla nisl massa, pharetra id vestibulum non, semper nec nulla. Curabitur semper mi id sem ornare, consectetur mattis metus volutpat. Sed molestie vel lorem quis lacinia. Nam pulvinar quam non facilisis dapibus. Quisque vehicula, augue sit amet consequat viverra, nisl risus gravida felis, sed gravida sem tortor at erat.</p>"
+          }
+        },
+        "card_EJzV6f": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/2_6.png",
+            "title": "Embroidered Patches",
+            "text": "<p>In dapibus fringilla orci, ut posuere magna dictum ac. Nulla nisl massa, pharetra id vestibulum non, semper nec nulla. Curabitur semper mi id sem ornare, consectetur mattis metus volutpat. Sed molestie vel lorem quis lacinia. Nam pulvinar quam non facilisis dapibus. Quisque vehicula, augue sit amet consequat viverra, nisl risus gravida felis, sed gravida sem tortor at erat.</p>"
+          }
+        },
+        "card_zqUnnX": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/2_6.png",
+            "title": "Embroidered Patches",
+            "text": "<p>In dapibus fringilla orci, ut posuere magna dictum ac. Nulla nisl massa, pharetra id vestibulum non, semper nec nulla. Curabitur semper mi id sem ornare, consectetur mattis metus volutpat. Sed molestie vel lorem quis lacinia. Nam pulvinar quam non facilisis dapibus. Quisque vehicula, augue sit amet consequat viverra, nisl risus gravida felis, sed gravida sem tortor at erat.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "card_M6m7bf",
+        "card_gff6Di",
+        "card_kXpR4p",
+        "card_tHUVnm",
+        "card_EJzV6f",
+        "card_zqUnnX"
+      ],
       "settings": {
-        "tab_section": true,
-        "hide_section": true,
-        "custom_id": "embroideryTypefaces",
-        "heading": "Embroidery Typefaces",
-        "typefaces_group": "embroidery",
+        "tab_section": false,
+        "hide_section": false,
+        "custom_id": "Patches",
+        "heading": "Type of Patches",
         "heading_size": "h1",
         "heading_alignment": "center",
-        "layout": "section",
+        "layout": "none",
         "container_color_scheme": "",
         "color_scheme": "scheme-2",
-        "padding_top": 52,
-        "padding_bottom": 80
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
@@ -477,6 +534,6 @@
     "es_image_banner_AXNKXn",
     "es_tab_buttons_6H7Fdx",
     "collapsible_content_grGaaG",
-    "es_typefaces_aPPrxr"
+    "es_patches_dXUgxp"
   ]
 }
