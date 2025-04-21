@@ -49,6 +49,7 @@
         "mobile_content_position": "bottom",
         "mobile_content_alignment": "center",
         "opacity_direct_on_mobile": "vertical",
+        "opacity_height_on_mobile": "large",
         "image_height_on_mobile": "adapt",
         "show_text_below": false
       }
