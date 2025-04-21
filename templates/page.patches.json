@@ -35,7 +35,7 @@
       "settings": {
         "show_space": false,
         "image": "shopify://shop_images/Image.jpg",
-        "image_mobile": "shopify://shop_images/Image.jpg",
+        "image_mobile": "shopify://shop_images/Image_20.png",
         "image_overlay_opacity": 100,
         "opacity_type": "gradient",
         "opacity_direction": "horizontal",
