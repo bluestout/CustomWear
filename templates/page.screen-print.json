@@ -24,7 +24,7 @@
           "type": "heading",
           "settings": {
             "subheading": "",
-            "heading": "Image banner",
+            "heading": "How it works: Screen Print",
             "heading_size": "h1"
           }
         }
@@ -34,8 +34,8 @@
       ],
       "settings": {
         "show_space": false,
-        "image": "shopify://shop_images/Mask_group_1_f921e045-73ef-4400-b9f9-04b557a965b1.png",
-        "image_mobile": "shopify://shop_images/Mask_group_2.png",
+        "image": "shopify://shop_images/allenburt_94637_a_cinematic_photo_and_A_promotional_piece_for_c46a5914-7d3d-4dfd-a240-5fb5d9c5dc96_1_1.jpg",
+        "image_mobile": "shopify://shop_images/allenburt_94637_a_cinematic_photo_and_A_promotional_piece_for_c46a5914-7d3d-4dfd-a240-5fb5d9c5dc96_1_1.png",
         "image_overlay_opacity": 0,
         "opacity_type": "normal",
         "opacity_direction": "vertical",
