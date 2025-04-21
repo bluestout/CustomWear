@@ -24,7 +24,7 @@
           "type": "heading",
           "settings": {
             "subheading": "",
-            "heading": "How it works: Embroidery",
+            "heading": "How it works: Patches",
             "heading_size": "h1"
           }
         }
@@ -34,8 +34,8 @@
       ],
       "settings": {
         "show_space": false,
-        "image": "shopify://shop_images/Image_adf9f057-f284-4858-85e1-512190c02935.png",
-        "image_mobile": "shopify://shop_images/Image_1_bd7e40f7-17be-4e16-84b8-671339bcd7fe.png",
+        "image": "shopify://shop_images/Image.jpg",
+        "image_mobile": "shopify://shop_images/Image.jpg",
         "image_overlay_opacity": 100,
         "opacity_type": "gradient",
         "opacity_direction": "horizontal",
@@ -63,13 +63,6 @@
             "target": "#embroideryQA"
           }
         },
-        "button_FkBWzQ": {
-          "type": "button",
-          "settings": {
-            "text": "Thread colors",
-            "target": "#threadColors"
-          }
-        },
         "button_iVYQw8": {
           "type": "button",
           "settings": {
@@ -80,7 +73,6 @@
       },
       "block_order": [
         "button_38DRWc",
-        "button_FkBWzQ",
         "button_iVYQw8"
       ],
       "settings": {
@@ -449,7 +441,7 @@
         "hide_section": false,
         "custom_id": "embroideryQA",
         "caption": "",
-        "heading": "Embroidery Q&A",
+        "heading": "Patches Q&A",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
@@ -458,162 +450,6 @@
         "open_first_collapsible_row": true,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
-        "padding_top": 52,
-        "padding_bottom": 80
-      }
-    },
-    "es_color_list_CA6xez": {
-      "type": "es-color-list",
-      "blocks": {
-        "color_gV7qRi": {
-          "type": "color",
-          "settings": {
-            "color": "#37a328",
-            "text": "Lt. Green"
-          }
-        },
-        "color_Mkegc3": {
-          "type": "color",
-          "settings": {
-            "color": "#195816",
-            "text": "Spruce"
-          }
-        },
-        "color_W6AhLL": {
-          "type": "color",
-          "settings": {
-            "color": "#209c91",
-            "text": "Teal"
-          }
-        },
-        "color_wp8MCA": {
-          "type": "color",
-          "settings": {
-            "color": "#0d7bbc",
-            "text": "Lt. Blue"
-          }
-        },
-        "color_tDea6M": {
-          "type": "color",
-          "settings": {
-            "color": "#001eb2",
-            "text": "Royal"
-          }
-        },
-        "color_JJk6Gm": {
-          "type": "color",
-          "settings": {
-            "color": "#041157",
-            "text": "Navy"
-          }
-        },
-        "color_rLzyE6": {
-          "type": "color",
-          "settings": {
-            "color": "#760977",
-            "text": "Purple"
-          }
-        },
-        "color_iQUKQj": {
-          "type": "color",
-          "settings": {
-            "color": "#8f121a",
-            "text": "Maroon"
-          }
-        },
-        "color_aidFDQ": {
-          "type": "color",
-          "settings": {
-            "color": "#bc0c1c",
-            "text": "Red"
-          }
-        },
-        "color_hYha7D": {
-          "type": "color",
-          "settings": {
-            "color": "#fc656a",
-            "text": "Pink"
-          }
-        },
-        "color_9W3EJT": {
-          "type": "color",
-          "settings": {
-            "color": "#fc531c",
-            "text": "Orange"
-          }
-        },
-        "color_PatGFt": {
-          "type": "color",
-          "settings": {
-            "color": "#ffbc24",
-            "text": "Yellow"
-          }
-        },
-        "color_xDWpkx": {
-          "type": "color",
-          "settings": {
-            "color": "#d9b373",
-            "text": "Tan"
-          }
-        },
-        "color_jrTrja": {
-          "type": "color",
-          "settings": {
-            "color": "#4f0006",
-            "text": "Brown"
-          }
-        },
-        "color_yLfMji": {
-          "type": "color",
-          "settings": {
-            "color": "#898989",
-            "text": "Gray"
-          }
-        },
-        "color_BkJWAJ": {
-          "type": "color",
-          "settings": {
-            "color": "#000000",
-            "text": "Black"
-          }
-        },
-        "color_VCmx6E": {
-          "type": "color",
-          "settings": {
-            "color": "#ffffff",
-            "text": "White"
-          }
-        }
-      },
-      "block_order": [
-        "color_gV7qRi",
-        "color_Mkegc3",
-        "color_W6AhLL",
-        "color_wp8MCA",
-        "color_tDea6M",
-        "color_JJk6Gm",
-        "color_rLzyE6",
-        "color_iQUKQj",
-        "color_aidFDQ",
-        "color_hYha7D",
-        "color_9W3EJT",
-        "color_PatGFt",
-        "color_xDWpkx",
-        "color_jrTrja",
-        "color_yLfMji",
-        "color_BkJWAJ",
-        "color_VCmx6E"
-      ],
-      "settings": {
-        "tab_section": true,
-        "hide_section": true,
-        "custom_id": "threadColors",
-        "heading": "Thread Colors",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "row",
-        "container_color_scheme": "",
-        "color_scheme": "scheme-2",
         "padding_top": 52,
         "padding_bottom": 80
       }
@@ -641,7 +477,6 @@
     "es_image_banner_AXNKXn",
     "es_tab_buttons_6H7Fdx",
     "collapsible_content_grGaaG",
-    "es_color_list_CA6xez",
     "es_typefaces_aPPrxr"
   ]
 }
