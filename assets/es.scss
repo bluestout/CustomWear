@@ -2154,6 +2154,10 @@
                 @media (max-width: 750px) {
                   max-width: calc(100% - 3rem);
                 }
+
+                &:hover {
+                  text-decoration: unset !important;
+                }
               }
 
               .icon-close {
@@ -2164,6 +2168,10 @@
                 &:hover {
                   background-color: #FFF;
                   text-decoration: unset !important;
+
+                  .accordion__title {
+                    text-decoration: unset !important;
+                  }
                 }  
               }
             }
