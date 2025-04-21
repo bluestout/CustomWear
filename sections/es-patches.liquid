@@ -23,14 +23,17 @@
         <h2 class="visually-hidden">{{ 'accessibility.collapsible_content_title' | t }}</h2>
       {% endif %}
 
-      <div class="container">
+      <div class="patches-container">
         {%- for block in section.blocks -%}
-          <div class="grid__item swiper-slide">
-            <div class="grid__item-media">
-              <img src="{{ block.settings.image | img_url: 'master' }}" width="{{ block.settings.image.width }}" height="{{ block.settings.image.height }}">
+          <div class="patches-card">
+            <div class="patches-media">
+              <div class="image">
+                <img src="{{ block.settings.image | img_url: 'master' }}" width="{{ block.settings.image.width | divided_by: 2 }}" height="{{ block.settings.image.height | divided_by: 2 }}">
+              </div>
+              <h3 class="font-h3 short-border medium-hide large-up-hide">{{ block.settings.title }}</h3>
             </div>
-            <div class="grid__item-text">
-              <h3 class="font-h3">{{ block.settings.title }}</h3>
+            <div class="patches-text">
+              <h3 class="font-h3 short-border small-hide">{{ block.settings.title }}</h3>
               <div class="font-body">{{ block.settings.text }}</div>
             </div>
           </div>
