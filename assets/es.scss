@@ -1766,6 +1766,18 @@
         }
       }
     }
+
+    .es-wishlist-cta {
+      button {
+        color: black !important;
+        font-size: 13px;
+        font-family: Inter;
+        font-weight: 800;
+        text-transform: uppercase;
+        line-height: 16.90px;
+        letter-spacing: 2px;
+      }
+    }
   }
 
   select.cl-po--input,
@@ -2445,7 +2457,7 @@ body {
           }
         }
       }
-      
+
       .font-h3 {
         padding-bottom: 20px;
 
