@@ -370,7 +370,7 @@
                       </price-per-item>
                     {%- endif -%}
                   </div>
-                  <div class="quantity__rules caption" id="Quantity-Rules-{{ section.id }}">
+                  {% comment %} <div class="quantity__rules caption" id="Quantity-Rules-{{ section.id }}">
                     {%- if product.selected_or_first_available_variant.quantity_rule.increment > 1 -%}
                       <span class="divider">
                         {{-
@@ -395,7 +395,7 @@
                         -}}
                       </span>
                     {%- endif -%}
-                  </div>
+                  </div> {% endcomment %}
                   {%- if product.quantity_price_breaks_configured? -%}
                     <volume-pricing class="parent-display" id="Volume-{{ section.id }}">
                       {%- if product.selected_or_first_available_variant.quantity_price_breaks.size > 0 -%}
@@ -439,6 +439,11 @@
                       {%- endif -%}
                     </volume-pricing>
                   {%- endif -%}
+
+                  <div class="sub-total-price">
+                    <span class="sub-total-price-title">Total: </span>
+                    <span class="sub-total-price-value"></span>
+                  </div>
                 </div>
               {%- when 'popup' -%}
                 <modal-opener
@@ -726,6 +731,33 @@
     </script>
   </div>
 </product-info>
+
+<script>
+  const changePrice = newPrice => {
+    document.querySelector('.sub-total-price-value').textContent = newPrice;
+  }
+  document.addEventListener("LPO:ready", function () {
+    var defaultPrice = document.querySelector('.cl-po--radio-item input[name="_Buy more and save!"]:checked')?.nextElementSibling?.querySelector("._price")?.textContent;
+    var radios = document.querySelectorAll('.cl-po--radio-item input[name="_Buy more and save!"]');
+
+    if (defaultPrice) {
+      changePrice(defaultPrice);
+    }
+
+    document.querySelector('.product .quantity input[name="quantity"]').addEventListener("change", function () {
+      console.log(this.value);
+    })
+
+    radios.forEach(radio => {
+      radio.addEventListener("change", function () {
+        var currentPrice = this.nextElementSibling?.querySelector("._price")?.textContent;
+        if (currentPrice) {
+          changePrice(currentPrice);
+        }
+      });
+    })
+  })
+</script>
 
 {% schema %}
 {
