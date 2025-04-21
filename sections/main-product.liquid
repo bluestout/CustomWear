@@ -241,14 +241,14 @@
                   {% # theme-check-enable %}
                   <label class="quantity__label form__label" for="Quantity-{{ section.id }}">
                     {{ 'products.product.quantity.label' | t }}
-                    <span class="quantity__rules-cart{% if cart_qty == 0 %} hidden{% endif %}">
+                    {% comment %} <span class="quantity__rules-cart{% if cart_qty == 0 %} hidden{% endif %}">
                       {%- render 'loading-spinner' -%}
                       <span
                         >(
                         {{- 'products.product.quantity.in_cart_html' | t: quantity: cart_qty -}}
                         )</span
                       >
-                    </span>
+                    </span> {% endcomment %}
                   </label>
                   <div class="price-per-item__container">
                     <quantity-input class="quantity" data-url="{{ product.url }}" data-section="{{ section.id }}">
@@ -266,14 +266,14 @@
                         name="quantity"
                         id="Quantity-{{ section.id }}"
                         data-cart-quantity="{{ cart_qty }}"
-                        data-min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
-                        min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
+                        data-min="{{ product.metafields.custom.qty_cw | minus: 0 }}"
+                        min="{{ product.metafields.custom.qty_cw | minus: 0 }}"
                         {% if product.selected_or_first_available_variant.quantity_rule.max != null %}
                           data-max="{{ product.selected_or_first_available_variant.quantity_rule.max }}"
                           max="{{ product.selected_or_first_available_variant.quantity_rule.max }}"
                         {% endif %}
                         step="{{ product.selected_or_first_available_variant.quantity_rule.increment }}"
-                        value="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
+                        value="{{ product.metafields.custom.qty_cw | minus: 0 }}"
                         form="{{ product_form_id }}"
                       >
                       <button class="quantity__button" name="plus" type="button">
@@ -287,7 +287,7 @@
                     </quantity-input>
                     {%- liquid
                       assign volume_pricing_array = product.selected_or_first_available_variant.quantity_price_breaks | sort: 'quantity' | reverse
-                      assign current_qty_for_volume_pricing = cart_qty | plus: product.selected_or_first_available_variant.quantity_rule.min
+                      assign current_qty_for_volume_pricing = cart_qty | plus: product.metafields.custom.qty_cw
                       if cart_qty > 0
                         assign current_qty_for_volume_pricing = cart_qty | plus: product.selected_or_first_available_variant.quantity_rule.increment
                       endif
@@ -379,11 +379,11 @@
                         -}}
                       </span>
                     {%- endif -%}
-                    {%- if product.selected_or_first_available_variant.quantity_rule.min > 1 -%}
+                    {%- if product.metafields.custom.qty_cw > 1 -%}
                       <span class="divider">
                         {{-
                           'products.product.quantity.minimum_of'
-                          | t: quantity: product.selected_or_first_available_variant.quantity_rule.min
+                          | t: quantity: product.metafields.custom.qty_cw
                         -}}
                       </span>
                     {%- endif -%}
@@ -402,7 +402,7 @@
                         <span class="caption-large">{{ 'products.product.volume_pricing.title' | t }}</span>
                         <ul class="list-unstyled">
                           <li>
-                            <span>{{ product.selected_or_first_available_variant.quantity_rule.min }}+</span>
+                            <span>{{ product.metafields.custom.qty_cw }}+</span>
                             {%- assign price = product.selected_or_first_available_variant.price
                               | money_with_currency
                             -%}

@@ -1535,11 +1535,43 @@
     }
   }
 
+  .product-form__input {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    .quantity__label {
+      color: black;
+      font-size: 16px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      line-height: 20.80px;
+    }
+
+    .quantity {
+      border: 1px solid #CCC;
+  
+      .quantity__input {
+        color: black;
+        font-size: 15px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        line-height: 25.50px;
+      }
+
+      .quantity__button {
+        filter: grayscale(1);
+      }
+
+      &::after {
+        content: unset;
+      }
+    }
+  }
+
   .shopify-app-block {
     .cl-po--wrapper {
       .cl-po--options {
-        border-bottom: 1px solid #CCC;
-
         .cl-po--option {
           .cl-po--label {
             font-family: 'Inter', sans-serif;
@@ -1613,21 +1645,122 @@
               border-radius: 3px !important;
             }
           }
-        }
 
-        .cl-po--option:nth-child(n + 3) {
-          background-color: #FFF;
-          margin: 0 !important;
-          padding: 20px;
-          border: 1px solid #CCC;
-          border-bottom: 0;
-        }
+          &:nth-child(n + 3) {
+            background-color: #FFF;
+            margin: 0 !important;
+            padding: 20px;
+            border: 1px solid #CCC;
+            border-bottom: 0;
+          }
 
-        .cl-po--option:nth-child(n + 3) + .cl-po--option {
-          padding-top: 0;
-          border-top: 0;
+          &:nth-child(n + 3) + .cl-po--option {
+            padding-top: 0;
+            border-top: 0;
+          } 
+
+          &[data-option="Buy more and save!"] {
+            border: 0 !important;
+            border-top: 1px solid #CCC !important;
+            background-color: transparent;
+            padding: 30px 0 !important;
+
+            .cl-po--label {
+              color: black !important;
+              font-size: 16px;
+              font-family: 'Inter', sans-serif;
+              font-weight: 600;
+              line-height: 20.80px;
+
+              &::before {
+                content: 'Step 4:';
+                color: #990000;
+                margin-right: 4px;
+              }
+
+              .cl-po--info {
+                background-image: url("https://cdn.shopify.com/s/files/1/0728/5784/6001/files/0e17a53162a56d8cf9794ffeeb9326c1.svg?v=1745213717");
+                background-color: #E9E9E9 !important;
+                width: 18px !important;
+                height: 18px !important;
+              }
+            }
+
+            .cl-po--discount-text {
+              color: black;
+              font-size: 15px;
+              font-family: 'Inter', sans-serif;
+              font-weight: 400;
+              line-height: 25.50px;
+
+              ._quantity {
+                font-weight: 400;
+                min-width: 100px;
+              }
+
+              ._save {
+                background-color: #000;
+                color: #FFF;
+                font-size: 11px;
+                min-width: 60px;
+              }
+
+              ._price {
+                margin-left: 30px;
+                color: #000;
+                text-align: left;
+              }
+            }
+          }
+
+          &[data-option="Thread Color"] {
+            .cl-po--swatch-item {
+              width: 20px;
+              height: 20px;
+              
+              .cl-po--swatch {
+                width: 100%;
+                border-width: 0 !important;
+                border-radius: 50% !important;
+    
+                &[data-tippy-content="FFF"] {
+                  border: 1px solid #ccc !important;
+                }
+              }
+            }
+          }
+
+          &[data-option="Case"] {
+            .cl-po--swatch-item {
+              .cl-po--swatch {
+                border: 0;
+                border-radius: 3px !important;
+              }
+            }
+          }
         }
       }
+    }
+  }
+
+  select.cl-po--input,
+  div[data-type="select-one"] {
+    .choices__inner {
+      color: black;
+      font-size: 15px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      line-height: 25.50px;
+      padding: 12px 18px;
+      appearance: none;
+      background-image: url('https://cdn.shopify.com/s/files/1/0728/5784/6001/files/Union_5.svg?v=1744987058');
+      background-position: calc(100% - 20px) center;
+      background-repeat: no-repeat;
+      background-size: 12px auto;
+    }
+
+    &::after {
+      content: unset;
     }
   }
 }
@@ -2210,4 +2343,36 @@
 
 .shopify-pc__banner__dialog {
   z-index: 200000000000 !important;
+}
+
+body {
+  .tippy-box {
+    background-color: #FFF;
+    box-shadow: 0px 3px 13.199999809265137px rgba(0, 0, 0, 0.10);
+    padding: 16px;
+    color: black;
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 19.50px;
+    position: relative;
+
+    &::after {
+      content: '';
+      border: 10px solid transparent;
+      width: 0;
+      height: 0;
+      display: block;
+      border-top: 8px solid #fff;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 100%);
+    }
+
+    .tippy-content {
+      padding: 0;
+    }
+  }
 }
