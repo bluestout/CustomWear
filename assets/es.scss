@@ -2346,33 +2346,35 @@
 }
 
 body {
-  .tippy-box {
-    background-color: #FFF;
-    box-shadow: 0px 3px 13.199999809265137px rgba(0, 0, 0, 0.10);
-    padding: 16px;
-    color: black;
-    font-size: 13px;
-    font-family: 'Inter', sans-serif;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 19.50px;
-    position: relative;
-
-    &::after {
-      content: '';
-      border: 10px solid transparent;
-      width: 0;
-      height: 0;
-      display: block;
-      border-top: 8px solid #fff;
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translate(-50%, 100%);
-    }
-
-    .tippy-content {
-      padding: 0;
+  #tippy-29 {
+    .tippy-box {
+      background-color: #FFF;
+      box-shadow: 0px 3px 13.199999809265137px rgba(0, 0, 0, 0.10);
+      padding: 16px;
+      color: black;
+      font-size: 13px;
+      font-family: 'Inter', sans-serif;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 19.50px;
+      position: relative;
+  
+      &::after {
+        content: '';
+        border: 10px solid transparent;
+        width: 0;
+        height: 0;
+        display: block;
+        border-top: 8px solid #fff;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 100%);
+      }
+  
+      .tippy-content {
+        padding: 0;
+      }
     }
   }
 }
