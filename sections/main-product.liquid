@@ -266,15 +266,16 @@
                         name="quantity"
                         id="Quantity-{{ section.id }}"
                         data-cart-quantity="{{ cart_qty }}"
-                        data-min="{{ product.metafields.custom.qty_cw | minus: 0 }}"
-                        min="{{ product.metafields.custom.qty_cw | minus: 0 }}"
+                        data-min="{{ product.metafields.custom.qty_cw.value | minus: 0 }}"
+                        min="{{ product.metafields.custom.qty_cw.value | minus: 0 }}"
                         {% if product.selected_or_first_available_variant.quantity_rule.max != null %}
                           data-max="{{ product.selected_or_first_available_variant.quantity_rule.max }}"
                           max="{{ product.selected_or_first_available_variant.quantity_rule.max }}"
                         {% endif %}
                         step="{{ product.selected_or_first_available_variant.quantity_rule.increment }}"
-                        value="{{ product.metafields.custom.qty_cw | minus: 0 }}"
+                        value="{{ product.metafields.custom.qty_cw.value | minus: 0 }}"
                         form="{{ product_form_id }}"
+                        required
                       >
                       <button class="quantity__button" name="plus" type="button">
                         <span class="visually-hidden">
@@ -745,7 +746,15 @@
     }
 
     document.querySelector('.product .quantity input[name="quantity"]').addEventListener("change", function () {
-      console.log(this.value);
+      console.log({
+        value: parseInt(this.value),
+        min: parseInt(this.dataset.min)
+      })
+      if (parseInt(this.value) < parseInt(this.dataset.min)) {
+        document.querySelector(".product-form__buttons button[name='add']")?.setAttribute("disabled", true);
+      } else {
+        document.querySelector(".product-form__buttons button[name='add']")?.removeAttribute("disabled");
+      }
     })
 
     radios.forEach(radio => {
