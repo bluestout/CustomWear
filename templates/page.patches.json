@@ -66,8 +66,8 @@
         "button_iVYQw8": {
           "type": "button",
           "settings": {
-            "text": "Embroidery Typefaces",
-            "target": "#embroideryTypefaces"
+            "text": "Types of Patches",
+            "target": "#Patches"
           }
         }
       },
@@ -515,17 +515,17 @@
         "card_zqUnnX"
       ],
       "settings": {
-        "tab_section": false,
-        "hide_section": false,
+        "tab_section": true,
+        "hide_section": true,
         "custom_id": "Patches",
         "heading": "Type of Patches",
         "heading_size": "h1",
         "heading_alignment": "center",
-        "layout": "none",
+        "layout": "row",
         "container_color_scheme": "",
         "color_scheme": "scheme-2",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 52,
+        "padding_bottom": 80
       }
     }
   },
