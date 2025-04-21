@@ -23,11 +23,6 @@
             "text_style": "body"
           }
         },
-        "price": {
-          "type": "price",
-          "disabled": true,
-          "settings": {}
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -43,6 +38,10 @@
         },
         "quantity_selector": {
           "type": "quantity_selector",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
           "settings": {}
         },
         "buy_buttons": {
@@ -129,10 +128,10 @@
       "block_order": [
         "title",
         "text_Pb8kXM",
-        "price",
         "variant_picker",
         "live_product_options_app_block_mWfNhx",
         "quantity_selector",
+        "price",
         "buy_buttons",
         "wishlist_hero_custom_product_button_fWqWW8",
         "description",
