@@ -53,10 +53,28 @@
         "image_height_on_mobile": "adapt",
         "show_text_below": false
       }
+    },
+    "es_galleries_HqnbFV": {
+      "type": "es-galleries",
+      "settings": {
+        "tab_section": false,
+        "hide_section": false,
+        "custom_id": "",
+        "heading": "Embroidery Samples",
+        "typefaces_group": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
-    "es_image_banner_jmKH9E"
+    "es_image_banner_jmKH9E",
+    "es_galleries_HqnbFV"
   ]
 }
