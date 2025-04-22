@@ -2040,6 +2040,7 @@
 
       .cloud-search-page-controls__filters-container {
         justify-content: flex-start;
+        align-items: center;
 
         .cloud-search-page-controls__filters-link {
           display: flex;
@@ -2053,6 +2054,11 @@
   
         .cloud-search-page-controls__filters {
           display: none;
+        }
+
+        .cloud-search-page-controls__sort {
+          height: auto;
+          padding: 8px 0;
         }
       }
     }
@@ -2110,6 +2116,47 @@
             }
           }
         }
+      }
+    }
+  }
+
+  .cloud-search-page-controls__sort {
+    @media (max-width: 768px) {
+      
+    }
+
+    .cloud-search-sort-label {
+      color: black;
+      font-size: 15px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      line-height: 25.50px;
+      margin-right: 20px;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    .cloud-search-sort-select {
+      padding: 8px 24px;
+      border: 1px solid #CCC;
+      border-radius: 0;
+      appearance: none;
+      color: black;
+      font-size: 15px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      line-height: 25.50px;
+      background-color: #FFF;
+      background-image: url('https://cdn.shopify.com/s/files/1/0728/5784/6001/files/Union_5.svg?v=1744987058');
+      background-position: calc(100% - 20px) center;
+      background-repeat: no-repeat;
+      background-size: 12px auto;
+
+      @media (max-width: 768px) {
+        padding: 6px 16px;
+        background-position: calc(100% - 10px) center;
       }
     }
   }
