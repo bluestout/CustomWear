@@ -27,19 +27,21 @@
         <div class="mySwiper swiper">
           <div class="swiper-wrapper">
             {%- paginate section.settings.galleries.images.value by 100 -%}
-              {%- for image in section.settings.galleries.images.value -%}
-                <div class="grid__item swiper-slide">
-                  <div class="grid__item-media">
-                    <img src="{{ image | img_url: 'master' }}" width="{{ image.width }}" height="{{ image.height }}">
+              {%- for i in (1..24) -%}
+                {%- for image in section.settings.galleries.images.value -%}
+                  <div class="grid__item swiper-slide">
+                    <div class="grid__item-media">
+                      <img src="{{ image | img_url: 'master' }}" width="{{ image.width }}" height="{{ image.height }}">
+                    </div>
                   </div>
-                </div>
+                {%- endfor -%}
               {%- endfor -%}
             {%- endpaginate -%}
           </div>
           <div class="swiper-navigation">
-            <div class="swiper-button-prev">{%- render 'es-icon-arrow-right' -%}</div>
-            
-            <div class="swiper-button-next">{%- render 'es-icon-arrow-right' -%}</div>
+            <div class="swiper-button-prev" style="--swiper-navigation-size: 12px;">{%- render 'es-arrow-right-1' -%}</div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next" style="--swiper-navigation-size: 12px;">{%- render 'es-arrow-right-1' -%}</div>
           </div>
         </div>
       {%- endif -%}
@@ -59,6 +61,13 @@
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      renderBullet: (index, className) => {
+        return '<span class="' + className + '">' + (index + 1) + '</span>';
+      }
     },
     breakpoints: {
       0: {
@@ -84,7 +93,7 @@
 {
   "name": "ES Galleries",
   "tag": "section",
-  "class": "section es-typefaces",
+  "class": "section es-galleries",
   "disabled_on": {
     "groups": ["header", "footer"]
   },
