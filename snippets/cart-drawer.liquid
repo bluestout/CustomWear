@@ -302,8 +302,8 @@
                                     value="{{ item.quantity }}"
                                     {% # theme-check-disable %}
                                     data-cart-quantity="{{ cart | item_count_for_variant: item.variant.id }}"
-                                    min="0"
-                                    data-min="{{ item.variant.quantity_rule.min }}"
+                                    min="{{ item.product.metafields.custom.qty_cw.value | minus: 0 }}"
+                                    data-min="{{ item.product.metafields.custom.qty_cw.value | minus: 0 }}"
                                     {% if item.variant.quantity_rule.max != null %}
                                       max="{{ item.variant.quantity_rule.max }}"
                                     {% endif %}
