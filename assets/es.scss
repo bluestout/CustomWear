@@ -1657,6 +1657,15 @@
             }
           }
 
+          &[data-option="Skip Logo"] {
+            .cl-po--swatch-item {
+              .cl-po--swatch {
+                border: 0;
+                border-radius: 3px !important;
+              }
+            }
+          }
+
           &[data-option="Size"] {
             .cl-po--label {
               &::before {
