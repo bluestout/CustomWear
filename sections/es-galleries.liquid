@@ -23,24 +23,26 @@
         <h2 class="visually-hidden">{{ 'accessibility.collapsible_content_title' | t }}</h2>
       {% endif %}
 
-      <div class="mySwiper swiper">
-        <div class="swiper-wrapper">
-          {%- paginate section.settings.typefaces_group.typefaces.value by 100 -%}
-            {%- for metaobject in section.settings.typefaces_group.typefaces.value -%}
-              <div class="grid__item swiper-slide">
-                <div class="grid__item-media">
-                  <img src="{{ metaobject.image | img_url: 'master' }}" width="{{ metaobject.image.width }}" height="{{ metaobject.image.height }}">
+      {%- if section.settings.galleries != blank -%}
+        <div class="mySwiper swiper">
+          <div class="swiper-wrapper">
+            {%- paginate section.settings.galleries.images.value by 100 -%}
+              {%- for image in section.settings.galleries.images.value -%}
+                <div class="grid__item swiper-slide">
+                  <div class="grid__item-media">
+                    <img src="{{ image | img_url: 'master' }}" width="{{ image.width }}" height="{{ image.height }}">
+                  </div>
                 </div>
-                <div class="grid__item-text">{{ metaobject.title }}</div>
-              </div>
-            {%- endfor -%}
-          {%- endpaginate -%}
+              {%- endfor -%}
+            {%- endpaginate -%}
+          </div>
+          <div class="swiper-navigation">
+            <div class="swiper-button-prev">{%- render 'es-icon-arrow-right' -%}</div>
+            
+            <div class="swiper-button-next">{%- render 'es-icon-arrow-right' -%}</div>
+          </div>
         </div>
-        <div class="swiper-navigation">
-          <div class="swiper-button-prev">{%- render 'es-icon-arrow-right' -%}</div>
-          <div class="swiper-button-next">{%- render 'es-icon-arrow-right' -%}</div>
-        </div>
-      </div>
+      {%- endif -%}
     </div>
   </div>
 </div>
@@ -117,9 +119,9 @@
     },
     {
       "type": "metaobject",
-      "id": "typefaces_group",
-      "label": "Typefaces Group",
-      "metaobject_type": "typefaces_group"
+      "id": "galleries",
+      "label": "Gallery",
+      "metaobject_type": "galleries"
     },
     {
       "type": "select",
