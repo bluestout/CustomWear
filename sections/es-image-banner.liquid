@@ -44,6 +44,9 @@
   #Banner-{{ section.id }}.opacity-gradient.opacity-horizontal.md-up-opacity-weight--heavy::after {
     background: linear-gradient(90deg, black 0%, rgba(0, 0, 0, 0) 100%);
   }
+  #Banner-{{ section.id }}.opacity-gradient.opacity-horizontal.opacity-color--secondary {
+    background: linear-gradient(90deg, #553300 0%, rgba(85, 51, 0, 0) 100%);
+  }
 
   @media (max-width: 768px) {
     #Banner-{{ section.id }}.opacity-gradient.sm-opacity-vertical::after {
@@ -51,6 +54,9 @@
     }
     #Banner-{{ section.id }}.opacity-gradient.sm-opacity-vertical.sm-opacity-height-large::after {
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+    #Banner-{{ section.id }}.opacity-gradient.sm-opacity-vertical.opacity-color--secondary {
+      background: linear-gradient(0deg, #553300 0%, rgba(85, 51, 0, 0) 100%);
     }
   }
 {%- endstyle -%}
@@ -80,7 +86,7 @@
 
 <div
   id="Banner-{{ section.id }}"
-  class="banner {% if section.settings.show_space %} banner--space{% endif %} banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.image_height == 'adapt' and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %} opacity-{{ section.settings.opacity_type }} opacity-{{ section.settings.opacity_direction }} sm-opacity-{{ section.settings.opacity_direct_on_mobile }} sm-opacity-height-{{ section.settings.opacity_height_on_mobile }} sm-banner--{{ section.settings.image_height_on_mobile }} md-up-opacity-weight--{{ section.settings.opacity_weight_on_desktop }}"
+  class="banner {% if section.settings.show_space %} banner--space{% endif %} banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.image_height == 'adapt' and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %} opacity-{{ section.settings.opacity_type }} opacity-{{ section.settings.opacity_direction }} sm-opacity-{{ section.settings.opacity_direct_on_mobile }} sm-opacity-height-{{ section.settings.opacity_height_on_mobile }} sm-banner--{{ section.settings.image_height_on_mobile }} md-up-opacity-weight--{{ section.settings.opacity_weight_on_desktop }} opacity-color--{{ section.settings.opacity_color }}"
 >
   {%- if section.settings.image != blank -%}
     <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
@@ -268,6 +274,22 @@
       ],
       "label": "Opacity Type",
       "default": "normal"
+    },
+    {
+      "type": "select",
+      "id": "opacity_color",
+      "options": [
+        {
+          "label": "Primary",
+          "value": "primary"
+        },
+        {
+          "label": "Secondary",
+          "value": "secondary"
+        }
+      ],
+      "label": "Opacity Color",
+      "default": "primary"
     },
     {
       "type": "select",
