@@ -38,6 +38,7 @@
         "image_mobile": "shopify://shop_images/allenburt_94637_Create_a_collection_of_beautiful_business_and_bdaa3d16-0340-4d24-be75-89caa2c3c065_1_1.png",
         "image_overlay_opacity": 100,
         "opacity_type": "gradient",
+        "opacity_weight_on_desktop": "heavy",
         "opacity_direction": "horizontal",
         "image_height": "adapt",
         "image_behavior": "none",
