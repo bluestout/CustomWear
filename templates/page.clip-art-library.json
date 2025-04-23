@@ -38,6 +38,7 @@
         "image_mobile": "shopify://shop_images/Image_25.png",
         "image_overlay_opacity": 100,
         "opacity_type": "gradient",
+        "opacity_color": "secondary",
         "opacity_weight_on_desktop": "light",
         "opacity_direction": "horizontal",
         "image_height": "adapt",
