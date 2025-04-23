@@ -24,7 +24,7 @@
           "type": "heading",
           "settings": {
             "subheading": "",
-            "heading": "How it works: Embroidery",
+            "heading": "Clip Art Library",
             "heading_size": "h1"
           }
         }
@@ -34,10 +34,11 @@
       ],
       "settings": {
         "show_space": false,
-        "image": "shopify://shop_images/Image_adf9f057-f284-4858-85e1-512190c02935.png",
-        "image_mobile": "shopify://shop_images/Image_1_bd7e40f7-17be-4e16-84b8-671339bcd7fe.png",
+        "image": "shopify://shop_images/Image_1.jpg",
+        "image_mobile": "shopify://shop_images/Image_25.png",
         "image_overlay_opacity": 100,
         "opacity_type": "gradient",
+        "opacity_weight_on_desktop": "light",
         "opacity_direction": "horizontal",
         "image_height": "adapt",
         "image_behavior": "none",
