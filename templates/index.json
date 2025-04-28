@@ -100,7 +100,7 @@
           "settings": {
             "image": "shopify://shop_images/Group_248.png",
             "title": "Sport",
-            "url": "#"
+            "url": "shopify://collections/kati-sportsman"
           }
         },
         "collection_EmE39w": {
@@ -108,7 +108,7 @@
           "settings": {
             "image": "shopify://shop_images/Group_249.png",
             "title": "Flexfit",
-            "url": "#"
+            "url": "shopify://collections/flexfit-hats"
           }
         },
         "collection_fraWam": {
