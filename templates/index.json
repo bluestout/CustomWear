@@ -116,7 +116,7 @@
           "settings": {
             "image": "shopify://shop_images/Group_251.png",
             "title": "Trucker Mesh",
-            "url": "#"
+            "url": "shopify://collections/trucker-mesh-hats"
           }
         },
         "collection_TGYUpq": {
@@ -124,7 +124,7 @@
           "settings": {
             "image": "shopify://shop_images/Group_247.png",
             "title": "Imperial",
-            "url": "shopify://collections/frontpage"
+            "url": "shopify://collections/imperial-hats"
           }
         },
         "collection_nfmcKf": {
@@ -132,7 +132,7 @@
           "settings": {
             "image": "shopify://shop_images/img.png",
             "title": "Premium 5-Panel Golf",
-            "url": "#"
+            "url": "shopify://collections/5-panel-golf-hats"
           }
         },
         "collection_epykX9": {
@@ -140,7 +140,7 @@
           "settings": {
             "image": "shopify://shop_images/Group_248.png",
             "title": "Sport",
-            "url": "#"
+            "url": "shopify://collections/kati-sportsman"
           }
         },
         "collection_LgkCT4": {
@@ -148,7 +148,7 @@
           "settings": {
             "image": "shopify://shop_images/Group_249.png",
             "title": "Flexfit",
-            "url": "#"
+            "url": "shopify://collections/flexfit-hats"
           }
         },
         "collection_tzd3HU": {
@@ -156,7 +156,7 @@
           "settings": {
             "image": "shopify://shop_images/Group_251.png",
             "title": "Trucker Mesh",
-            "url": "#"
+            "url": "shopify://collections/trucker-mesh-hats"
           }
         }
       },
