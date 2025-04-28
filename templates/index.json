@@ -32,7 +32,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Customize",
-            "button_link_1": "shopify://collections/frontpage",
+            "button_link_1": "shopify://products/5-panel-brushed-wflag-sandwiched-bill",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -58,6 +58,8 @@
         "image_mobile": "shopify://shop_images/Rectangle_94.png",
         "image_overlay_opacity": 0,
         "opacity_type": "normal",
+        "opacity_color": "primary",
+        "opacity_weight_on_desktop": "light",
         "opacity_direction": "vertical",
         "image_height": "adapt",
         "image_behavior": "none",
@@ -69,6 +71,7 @@
         "mobile_content_position": "middle",
         "mobile_content_alignment": "left",
         "opacity_direct_on_mobile": "vertical",
+        "opacity_height_on_mobile": "small",
         "image_height_on_mobile": "square",
         "show_text_below": false
       }
@@ -81,7 +84,7 @@
           "settings": {
             "image": "shopify://shop_images/256_Cardinal-White_520_x_376px.jpg",
             "title": "premium 5 Panel Golf Hats",
-            "url": "shopify://collections/frontpage"
+            "url": "shopify://collections/5-panel-golf-hats"
           }
         },
         "collection_3tFD4j": {
