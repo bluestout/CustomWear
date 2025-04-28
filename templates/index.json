@@ -229,7 +229,7 @@
             "item_width": 6,
             "image": "shopify://shop_images/America_s_Favorite_cap.png",
             "title": "Richardson",
-            "url": "shopify://products/sn20w-kati-sportcap-specialty-licensed-camo-unstru",
+            "url": "shopify://collections/112-hats-best-sellers",
             "title_2": "Hat Style 2",
             "url_2": ""
           }
@@ -240,7 +240,7 @@
             "item_width": 4,
             "image": "shopify://shop_images/bg_1.png",
             "title": "Flexfit",
-            "url": "shopify://collections/all",
+            "url": "shopify://collections/flexfit-hats",
             "image_2": "shopify://shop_images/OC-main-herov2.jpg",
             "title_2": "Outdoor Cap",
             "url_2": "shopify://products/12-inch-safety-color-beanie-w-reflective-threads"
@@ -252,7 +252,7 @@
             "item_width": 4,
             "image": "shopify://shop_images/Mask_group_1.png",
             "title": "Performance",
-            "url": "shopify://products/5-panel-high-profile-structured-acrylicpolyester-t",
+            "url": "shopify://collections/performance-hats",
             "image_2": "shopify://shop_images/Decky_1160_590px.jpg",
             "title_2": "Decky Hats",
             "url_2": "shopify://products/5-panel-mid-profile-structured-cotton-poly-blend-cap"
@@ -264,7 +264,7 @@
             "item_width": 6,
             "image": "shopify://shop_images/bg_3.png",
             "title": "Otto Hats",
-            "url": "shopify://products/6-panel-unstructured-pigment-dyed-heavy-cotton-twi",
+            "url": "shopify://collections/otto-hats",
             "title_2": "Hat Style 2",
             "url_2": ""
           }
