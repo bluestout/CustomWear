@@ -289,6 +289,14 @@
             "title": "FLEX Textured (Detailed color and textures)",
             "text": ""
           }
+        },
+        "card_NChGGj": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/2_6.png",
+            "title": "FLEX Dome (Shiny finish with 3D bubble effect)",
+            "text": ""
+          }
         }
       },
       "block_order": [
@@ -300,7 +308,8 @@
         "card_zqUnnX",
         "card_8jhEak",
         "card_TUxNME",
-        "card_i8wGnH"
+        "card_i8wGnH",
+        "card_NChGGj"
       ],
       "settings": {
         "tab_section": true,
