@@ -24,6 +24,7 @@
   {%- liquid
     assign swatch_focal_point = null
     assign variant_image = ""
+    assign option_title = option.name | downcase
 
     for variant in product.variants
       if variant.title contains value
@@ -68,7 +69,7 @@
 
   {%- if picker_type == 'swatch' -%}
     {%- capture help_text -%}
-      <span class="visually-hidden" style="--background-image: url('{{ variant_image }}')">{{ value | escape }}</span>
+      <span class="{% if option_title contains 'color' or option_title contains 'colour' %}tool-tip{% else %}visually-hidden{% endif %}" style="--background-image: url('{{ variant_image }}')">{{ value | escape }}</span>
       {{ label_unavailable }}
     {%- endcapture -%}
     {%
