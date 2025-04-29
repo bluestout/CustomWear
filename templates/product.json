@@ -75,15 +75,17 @@
           "type": "collapsible_tab",
           "name": "Description",
           "settings": {
+            "default_open": true,
             "heading": "Description",
             "icon": "description",
-            "content": "{{ product.description }}",
+            "content": "<p>{{ product.description }}</p>",
             "page": ""
           }
         },
         "collapsible_tab_g7BVdP": {
           "type": "collapsible_tab",
           "settings": {
+            "default_open": false,
             "heading": "Details",
             "icon": "details",
             "content": "{{ product.description }}",
