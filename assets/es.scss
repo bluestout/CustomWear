@@ -1887,6 +1887,10 @@
     line-height: 19.50px;
   }
 
+  .full-unstyled-link {
+    text-decoration: unset !important;
+  }
+
   .card__media {
     .media {
       img {
@@ -1894,6 +1898,27 @@
       }
     }
   }
+
+  a.see-product {
+    color: black;
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 16.90px;
+    letter-spacing: 2px;
+    text-decoration: unset !important;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    padding: 20px 0;
+    border-top: 1px solid #CCC;
+    margin-top: 10px;
+
+    svg {
+      filter: grayscale(1);
+    }
+}
 
   .price {
     .price__container {
@@ -2794,4 +2819,8 @@ body {
       }
     }
   }
+}
+
+.cl-po--gallery-thumbnails.splide--nav>.splide__track>.splide__list>.splide__slide.is-active .cl-po--gallery-thumbnail {
+  border-color: rgba(0,0,0,.3) !important;
 }
