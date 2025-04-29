@@ -48,7 +48,7 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true,
+            "show_dynamic_checkout": false,
             "show_gift_card_recipient": true
           }
         },
@@ -73,6 +73,7 @@
         },
         "collapsible_tab_eM4Wkc": {
           "type": "collapsible_tab",
+          "name": "Description",
           "settings": {
             "heading": "Description",
             "icon": "description",
