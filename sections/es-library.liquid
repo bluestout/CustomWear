@@ -21,23 +21,31 @@
       <aside>
         <ul>
           {%- for block in section.blocks -%}
-            <li><a href="javascript:void();" data-target="ClipArt--{{ block.id }}">{{ block.settings.heading }}</a></li>
+            <li><a href="javascript:void(0);" data-target="ClipArt--{{ block.id }}" class="toggle-art-button {% if forloop.first %} active{% endif %}">{{ block.settings.heading }}</a></li>
           {%- endfor -%}
         </ul>
       </aside>
 
       <div class="library--container">
         {%- for block in section.blocks -%}
-          {%- if block.settings.galleries != blank -%}
+          {%- if block.settings.metaobject != blank -%}
             <div id="ClipArt--{{ block.id }}" class="library--item{% unless forloop.first %} hidden{% endunless %}">
+              <div class="library--description">
+                {{ block.settings.description }}
+              </div>
+
               <div class="mySwiper-{{ block.id }} swiper">
                 <div class="swiper-wrapper">
-                  {%- paginate block.settings.galleries.images.value by 100 -%}
+                  {%- paginate block.settings.metaobject.clip_arts.value by 100 -%}
                     {%- for i in (1..14) -%}
-                      {%- for image in section.settings.galleries.images.value -%}
+                      {%- for clip_art in block.settings.metaobject.clip_arts.value -%}
                         <div class="grid__item swiper-slide">
                           <div class="grid__item-media">
-                            <img src="{{ image | img_url: 'master' }}" width="{{ image.width }}" height="{{ image.height }}">
+                            <img src="{{ clip_art.image | img_url: 'master' }}" width="{{ clip_art.image.width }}" height="{{ clip_art.image.height }}">
+                          </div>
+                          <div class="grid__item-content center">
+                            <h4 class="es-font-h5">{{ clip_art.title }}</h4>
+                            <div class="grid__item-text">{{ clip_art.text }}</div>
                           </div>
                         </div>
                       {%- endfor -%}
@@ -63,21 +71,21 @@
 </div>
 
 <script>
-  const initSwiper = element => {
+  const initESSlider = element => {
     const sw = new Swiper(element, {
-      slidesPerView: 5,
-      slidesPerGroup: 5,
+      slidesPerView: 4,
+      slidesPerGroup: 4,
       grid: {
         rows: 8,
         fill: 'row',
       },
       spaceBetween: 10,
       navigation: {
-        nextEl: element.querySelector('.swiper-button-next'),
-        prevEl: element.querySelector('.swiper-button-prev'),
+        nextEl: element?.querySelector('.swiper-button-next'),
+        prevEl: element?.querySelector('.swiper-button-prev'),
       },
       pagination: {
-        el: element.querySelector('.swiper-pagination'),
+        el: element?.querySelector('.swiper-pagination'),
         clickable: true,
         renderBullet: (index, className) => {
           return '<span class="' + className + '">' + (index + 1) + '</span>';
@@ -92,8 +100,8 @@
           },
         },
         769: {
-          slidesPerView: 5,
-          slidesPerGroup: 5,
+          slidesPerView: 4,
+          slidesPerGroup: 4,
           grid: {
             rows: 8,
           },
@@ -104,7 +112,7 @@
 
   document.addEventListener("DOMContentLoaded", () => {
     {%- for block in section.blocks -%}
-      initSwiper("#shopify-section-{{ section.id }} .mySwiper--{{ block.id }}");
+      initESSlider(document.querySelector(".mySwiper-{{ block.id }}"));
     {%- endfor -%}
   })
 </script>
