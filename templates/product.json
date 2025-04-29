@@ -73,6 +73,7 @@
         },
         "collapsible_tab_eM4Wkc": {
           "type": "collapsible_tab",
+          "name": "Description",
           "settings": {
             "heading": "Description",
             "icon": "description",
