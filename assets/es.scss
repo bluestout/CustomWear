@@ -1885,7 +1885,7 @@
   }
 
   fieldset.product-form__input--pill {
-    input[type="radio"] + label {
+    input[type="radio"]+label {
       color: black;
       font-size: 14px;
       font-family: 'Inter', sans-serif;
@@ -1920,9 +1920,7 @@
     }
   }
 
-  .splide__pagination {
-
-  }
+  .splide__pagination {}
 }
 
 .related-products {
@@ -2898,7 +2896,8 @@ body {
     line-height: 25.50px;
   }
 
-  h3 {
+  h3,
+  h2 {
     color: black;
     font-size: 30px;
     font-family: 'Inter', sans-serif;
@@ -2908,6 +2907,76 @@ body {
     @media (max-width: 750px) {
       font-size: 18px;
       line-height: 23.4px;
+    }
+  }
+}
+
+.blog {
+  .blog__posts {
+    gap: 20px;
+    
+    .blog__post {
+      .article-card-wrapper {
+        .card {
+          .card__heading {
+            color: black;
+            font-size: 20px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            line-height: 26px;
+            margin-bottom: 30px;
+  
+            a {
+              margin-bottom: 10px;
+            }
+  
+            &::after {
+              content: '';
+              width: 35px;
+              height: 5px;
+              background-color: #990000;
+              display: block;
+            }
+  
+            @media (max-width: 750px) {
+              font-size: 18px;
+              line-height: 23.40px;
+            }
+          }
+  
+          .card__content {
+            .card__information {
+              color: black;
+              font-size: 15px;
+              font-family: 'Inter', sans-serif;
+              font-weight: 400;
+              line-height: 25.50px;
+              padding: 2rem 0;
+  
+              .article-card__excerpt {
+                margin-top: 0;
+              }
+  
+              .read-more {
+                color: black;
+                font-size: 13px;
+                font-family: 'Inter', sans-serif;
+                font-weight: 800;
+                text-transform: uppercase;
+                line-height: 16.90px;
+                letter-spacing: 2px;
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+  
+                svg {
+                  filter: grayscale(1);
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
