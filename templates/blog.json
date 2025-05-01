@@ -9,6 +9,46 @@
  */
 {
   "sections": {
+    "es_image_banner_9YXW4M": {
+      "type": "es-image-banner",
+      "blocks": {
+        "heading_gjGyYp": {
+          "type": "heading",
+          "settings": {
+            "subheading": "",
+            "heading": "Blog",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_gjGyYp"
+      ],
+      "name": "ES Image Banner",
+      "settings": {
+        "show_space": false,
+        "image": "shopify://shop_images/Image_1_cfa07ccc-96a8-4f41-85e6-d2b9ff9a14df.png",
+        "image_mobile": "shopify://shop_images/Image_2.png",
+        "image_overlay_opacity": 80,
+        "opacity_type": "gradient",
+        "opacity_color": "primary",
+        "opacity_weight_on_desktop": "light",
+        "opacity_direction": "horizontal",
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
+        "stack_images_on_mobile": false,
+        "mobile_content_position": "bottom",
+        "mobile_content_alignment": "center",
+        "opacity_direct_on_mobile": "vertical",
+        "opacity_height_on_mobile": "large",
+        "image_height_on_mobile": "adapt",
+        "show_text_below": false
+      }
+    },
     "main": {
       "type": "main-blog",
       "settings": {
@@ -23,6 +63,7 @@
     }
   },
   "order": [
+    "es_image_banner_9YXW4M",
     "main"
   ]
 }
