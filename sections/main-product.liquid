@@ -735,7 +735,7 @@
 
 <script>
   const changePrice = newPrice => {
-    document.querySelector('.sub-total-price-value').textContent = newPrice;
+    document.querySelector('.sub-total-price-value').textContent = newPrice + " USD";
   }
   document.addEventListener("LPO:ready", function () {
     var defaultPrice = document.querySelector('.cl-po--radio-item input[name="_Buy more and save!"]:checked')?.nextElementSibling?.querySelector("._price")?.textContent;
