@@ -27,14 +27,12 @@
         <div class="mySwiper swiper">
           <div class="swiper-wrapper">
             {%- paginate section.settings.galleries.images.value by 100 -%}
-              {%- for i in (1..24) -%}
-                {%- for image in section.settings.galleries.images.value -%}
-                  <div class="grid__item swiper-slide">
-                    <div class="grid__item-media">
-                      <img src="{{ image | img_url: 'master' }}" width="{{ image.width }}" height="{{ image.height }}">
-                    </div>
+              {%- for image in section.settings.galleries.images.value -%}
+                <div class="grid__item swiper-slide">
+                  <div class="grid__item-media">
+                    <img src="{{ image | img_url: 'master' }}" width="{{ image.width }}" height="{{ image.height }}">
                   </div>
-                {%- endfor -%}
+                </div>
               {%- endfor -%}
             {%- endpaginate -%}
           </div>
