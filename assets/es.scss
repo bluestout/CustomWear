@@ -3107,6 +3107,11 @@ body {
     .customer {
       text-align: left !important;
 
+      @media (max-width: 750px) {
+        text-align: center !important;
+        max-width: unset !important;
+      }
+
       h1 {
         color: black;
         font-size: 30px;
@@ -3122,6 +3127,11 @@ body {
           display: block;
           background-color: #990000;
           margin-top: 10px;
+
+          @media (max-width: 750px) {
+            margin-left: auto;
+            margin-right: auto;
+          }
         }
       }
 
@@ -3166,6 +3176,11 @@ body {
         line-height: 25.50px;
         margin-top: 10px;
         text-decoration: unset;
+
+        @media (max-width: 750px) {
+          margin-left: auto;
+          margin-right: auto;
+        }
       }
 
       .sign-up {
@@ -3176,11 +3191,19 @@ body {
         line-height: 25.50px;
         display: flex;
 
+        @media (max-width: 750px) {
+          justify-content: center;
+        }
+
         a {
           color: #990000;
           font-weight: 600;
           margin-left: 2px;
           text-decoration: unset;
+
+          @media (max-width: 750px) {
+            margin-right: 0;
+          }
         }
       }
     }
