@@ -23,11 +23,15 @@
         Recent posts
       </h1>
       <div class="main-blog__count">
-        {{ blog.articles.size }}
+        {%- assign current_page_count = paginate.current_page | times: 6 -%}
+        {%- if current_page_count > blog.articles_count %}
+          {%- assign current_page_count = blog.articles_count -%}
+        {%- endif -%}
+        Showing {{ current_page_count }} of {{ blog.articles_count }} articles
       </div>
     </div>
 
-    <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
+    <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}" data-next-url="{{ paginate.next.url }}">
       {%- for article in blog.articles -%}
         <div
           class="blog-articles__article article{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
@@ -49,11 +53,58 @@
       {%- endfor -%}
     </div>
 
+    <div class="load-more">
+      <a href="javascript:void(0);" class="load-more_btn btn">Load More {%- render 'es-arrow-right-1' -%}</a>
+      <div class="load-more_spinner"></div>
+    </div>
+{% comment %} 
     {%- if paginate.pages > 1 -%}
       {%- render 'pagination', paginate: paginate -%}
-    {%- endif -%}
+    {%- endif -%} {% endcomment %}
   </div>
 {%- endpaginate -%}
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const productsOnPage = document.querySelector('.blog-articles');
+    let nextUrl = productsOnPage.dataset.nextUrl;
+    
+    const loadMoreBtn = document.querySelector('.load-more_btn');
+    const loadMoreSpinner = document.querySelector('.load-more_spinner');
+    
+    function loadMoreProducts() {
+      loadMoreBtn.style.display = 'none';
+      loadMoreSpinner.style.display = 'block';
+    
+      fetch(nextUrl)
+        .then(response => response.text())
+        .then(html => {
+          loadMoreSpinner.style.display = 'none';
+    
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(html, 'text/html');
+          const newProducts = doc.querySelector('.blog-articles');
+    
+          const newUrl = newProducts?.dataset.nextUrl;
+          if (newUrl) {
+            loadMoreBtn.style.display = 'block';
+            nextUrl = newUrl;
+          }
+    
+          productsOnPage.insertAdjacentHTML('beforeend', newProducts.innerHTML);
+        })
+        .catch(error => {
+          console.error('Error loading more products:', error);
+          loadMoreSpinner.style.display = 'none';
+        });
+    }    
+
+    loadMoreBtn.addEventListener("click", function () {
+      console.log("0000");
+      loadMoreProducts();
+    })
+  })
+</script>
 
 {% schema %}
 {
