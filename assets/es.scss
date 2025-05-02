@@ -2934,6 +2934,9 @@ body {
 
       a {
         margin-bottom: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
 
       &::after {
@@ -2958,6 +2961,8 @@ body {
         font-weight: 400;
         line-height: 25.50px;
         padding: 2rem 0;
+        display: flex;
+        flex-direction: column;
 
         .article-card__excerpt {
           margin-top: 0;
@@ -2974,6 +2979,7 @@ body {
           display: flex;
           align-items: center;
           gap: 2rem;
+          margin-top: auto;
 
           svg {
             filter: grayscale(1);
