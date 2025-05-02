@@ -3075,3 +3075,114 @@ body {
     }
   }
 }
+
+.customer-wrapper {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  background-color: #FAFAFA;
+
+  @media (max-width: 750px) {
+    flex-direction: column;
+  }
+
+  .customer-banner,
+  .customer-form__wrapper {
+    max-width: 50%;
+    width: 50%;
+
+    @media (max-width: 750px) {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .customer-banner__media {
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .customer {
+      text-align: left !important;
+
+      h1 {
+        color: black;
+        font-size: 30px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        line-height: 39px;
+        margin-bottom: 10px;
+
+        &::after {
+          content: '';
+          width: 70px;
+          height: 5px;
+          display: block;
+          background-color: #990000;
+          margin-top: 10px;
+        }
+      }
+
+      input,
+      label {
+        color: #545454;
+        font-size: 15px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        line-height: 25.50px;
+      }
+
+      .field::after {
+        box-shadow: 0 0 0 var(--inputs-border-width) #CCC;
+      }
+
+      button {
+        margin-top: 20px;
+        padding: 12px 20px;
+        border-radius: 3px;
+        color: white;
+        font-size: 13px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 800;
+        text-transform: uppercase;
+        line-height: 16.90px;
+        letter-spacing: 2px;
+        width: 100%;
+        background-color: #990000;
+
+        &::after,
+        &::before {
+          content: unset;
+        }
+      }
+
+      a[href="#recover"] {
+        color: #990000;
+        font-size: 15px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        line-height: 25.50px;
+        margin-top: 10px;
+        text-decoration: unset;
+      }
+
+      .sign-up {
+        color: black;
+        font-size: 15px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        line-height: 25.50px;
+        display: flex;
+
+        a {
+          color: #990000;
+          font-weight: 600;
+          margin-left: 2px;
+          text-decoration: unset;
+        }
+      }
+    }
+  }
+}
