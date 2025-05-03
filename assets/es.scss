@@ -2932,6 +2932,10 @@ body {
       line-height: 26px;
       margin-bottom: 30px;
 
+      @media (max-width: 750px) {
+        margin-bottom: 20px;
+      }
+
       a {
         margin-bottom: 10px;
         white-space: nowrap;
@@ -3003,6 +3007,12 @@ body {
       font-family: 'Inter', sans-serif;
       font-weight: 700;
       line-height: 39px;
+
+      @media (max-width: 750px) {
+        font-size: 20px;
+        line-height: 26px;
+        margin: 0;
+      }
     }
 
     .main-blog__count {
@@ -3020,15 +3030,35 @@ body {
     justify-content: space-between;
     row-gap: 50px !important;
 
+    @media (max-width: 750px) {
+      row-gap: 30px !important;
+    }
+
     .article {
       max-width: calc(33.33% - 8px * 2 / 3);
       width: calc(33.33% - 8px * 2 / 3);
+
+      @media (max-width: 750px) {
+        max-width: 100%;
+        width: 100%;
+      }
     }
   }
 
   .load-more {
     text-align: center;
     margin-top: 45px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      border-top: 1px solid #CCC;
+      display: block;
+    }
   }
 
   .load-more_spinner {
@@ -3066,8 +3096,11 @@ body {
     justify-content: center;
     width: max-content;
     margin: auto;
-    gap: 8px;
+    gap: 16px;
     text-decoration: unset;
+    padding: 4px 12px;
+    background-color: #FFF;
+    position: relative;
 
     svg {
       transform: rotate(90deg);
