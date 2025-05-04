@@ -80,7 +80,8 @@
       ],
       "settings": {
         "padding_top": 32,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "sm_select_show": false
       }
     },
     "es_library_DKnDgn": {
