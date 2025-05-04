@@ -394,7 +394,6 @@
         },
         "video_pyYEmP": {
           "type": "video",
-          "disabled": true,
           "settings": {
             "video_url": "https://youtu.be/ViyWxaebVmA",
             "featured_image": "shopify://shop_images/image_7.png"
@@ -402,7 +401,6 @@
         },
         "video_nQgbYm": {
           "type": "video",
-          "disabled": true,
           "settings": {
             "video_url": "https://youtu.be/axfsK2KEtuk",
             "featured_image": "shopify://shop_images/image_8.png"
