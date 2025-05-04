@@ -2514,7 +2514,18 @@
       justify-content: center;
       gap: 10px;
 
+      @media (max-width: 750px) {
+        &.hidden-select {
+          overflow: auto;
+          justify-content: flex-start;
+        }
+      }
+
       label {
+        @media (max-width: 750px) {
+          min-width: max-content;
+        }
+
         input {
           display: none;
         }
@@ -2786,12 +2797,19 @@ body {
 }
 
 .es-library {
+  @media (max-width: 750px) {
+    .page-width {
+      padding: 0 1rem;
+    }  
+  }
+  
   .content-container {
     display: flex;
     gap: 20px;
 
     @media (max-width: 750px) {
       flex-direction: column;
+      padding-top: 20px;
     }
 
     aside {
@@ -2860,6 +2878,10 @@ body {
 
     .library--container {
       max-width: calc(100% - 230px);
+
+      @media (max-width: 750px) {
+        max-width: 100%;
+      }
 
       .library--description {
         color: black;
