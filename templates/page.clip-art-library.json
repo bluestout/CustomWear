@@ -81,6 +81,8 @@
       "settings": {
         "padding_top": 32,
         "padding_bottom": 0,
+        "sm_padding_top": 20,
+        "sm_padding_bottom": 0,
         "sm_select_show": false
       }
     },
