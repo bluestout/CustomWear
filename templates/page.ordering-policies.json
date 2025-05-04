@@ -33,6 +33,7 @@
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
+        "border_bottom": true,
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "scheme-2",
@@ -183,7 +184,7 @@
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "padding_top": 40,
-        "padding_bottom": 36
+        "padding_bottom": 80
       }
     }
   },
