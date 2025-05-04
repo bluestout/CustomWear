@@ -1,3 +1,6 @@
+{{ 'video-section.css' | asset_url | stylesheet_tag }}
+{{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
+
 {%- style -%}
   #shopify-section-{{ section.id }} {
     position: relative;
@@ -30,12 +33,21 @@
         {{ section.settings.description }}
       </div>
     </div>
-    <div class="es-featured-videos__videos">
+    <div class="es-featured-videos__videos video-section isolate">
       {% for block in section.blocks %}
-        {% assign video = block.settings.video %}
-        {% assign poster = block.settings.featured_image %}
-        {% assign video_id = video.id %}
-        {% assign alt = video.alt %}
+        {%- liquid
+          assign video_id = block.settings.video.id | default: block.settings.video_url.id
+          assign video_alt = block.settings.video.alt | default: block.settings.description
+          assign alt = 'sections.video.load_video' | t: description: video_alt | escape
+          assign poster = block.settings.video.preview_image | default: block.settings.featured_image
+        
+          if block.settings.video != null
+            assign ratio_diff = block.settings.video.aspect_ratio | minus: poster.aspect_ratio | abs
+            if ratio_diff < 0.01 and ratio_diff > 0
+              assign fix_ratio = true
+            endif
+          endif
+        -%}
         <div class="es-featured-videos__video">
           <deferred-media
             class="video-section__media deferred-media gradient global-media-settings{% if section.settings.full_width %} global-media-settings--full-width{% endif %}{% if fix_ratio %} media-fit-cover{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
@@ -48,7 +60,7 @@
               id="Deferred-Poster-Modal-{{ video_id }}"
               class="video-section__poster media deferred-media__poster media--landscape"
               type="button"
-              aria-label="{{alt }}"
+              aria-label="{{ alt }}"
             >
               {%- if poster != null -%}
                 {{
@@ -60,24 +72,26 @@
                 {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
               {%- endif -%}
               <span class="deferred-media__poster-button motion-reduce">
-                {% render 'es-icon-play' %}
+                <span class="svg-wrapper">
+                  {{- 'icon-play.svg' | inline_asset_content -}}
+                </span>
               </span>
             </button>
             <template>
-              {%- if section.settings.video == null and section.settings.video_url != null -%}
+              {%- if block.settings.video == null and block.settings.video_url != null -%}
                 {%- liquid
                   assign loop = ''
-                  if section.settings.enable_video_looping
+                  if block.settings.enable_video_looping
                     assign loop = '&loop=1&playlist=' | append: video_id
                   endif
                 -%}
-                {%- if section.settings.video_url.type == 'youtube' -%}
+                {%- if block.settings.video_url.type == 'youtube' -%}
                   <iframe
                     src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=1{{ loop }}"
                     class="js-youtube"
                     allow="autoplay; encrypted-media"
                     allowfullscreen
-                    title="{{ section.settings.description | escape }}"
+                    title="{{ block.settings.description | escape }}"
                   ></iframe>
                 {%- else -%}
                   <iframe
@@ -85,16 +99,16 @@
                     class="js-vimeo"
                     allow="autoplay; encrypted-media"
                     allowfullscreen
-                    title="{{ section.settings.description | escape }}"
+                    title="{{ block.settings.description | escape }}"
                   ></iframe>
                 {%- endif -%}
               {%- else -%}
                 {{
-                  section.settings.video
+                  block.settings.video
                   | video_tag:
                     image_size: '1100x',
                     autoplay: true,
-                    loop: section.settings.enable_video_looping,
+                    loop: block.settings.enable_video_looping,
                     controls: true,
                     muted: false
                 }}
@@ -172,6 +186,24 @@
           "type": "video",
           "id": "video",
           "label": "Video"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_video_looping",
+          "label": "t:sections.video.settings.enable_video_looping.label",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "full_width",
+          "label": "t:sections.video.settings.full_width.label",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "t:sections.video.settings.description.label",
+          "info": "t:sections.video.settings.description.info"
         }
       ]
     }

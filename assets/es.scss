@@ -983,6 +983,7 @@
 
             .deferred-media__poster-button {
               display: block;
+              z-index: 3;
 
               svg {
                 position: absolute;
