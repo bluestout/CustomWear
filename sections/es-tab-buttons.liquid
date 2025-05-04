@@ -12,7 +12,7 @@
 {%- endstyle -%}
 
 <div class="container">
-  <div class="row small-hide">
+  <div class="row{% if section.settings.sm_select_show %} small-hide{% endif %}">
     {%- for block in section.blocks %}
       {% comment %} <a href="javascript:void(0);" class="button{% if forloop.first %} active{% endif %}" data-target="{{ block.settings.target }}">{{ block.settings.text }}</a> {% endcomment %}
       <label for="tab-radio-{{ block.id }}">
@@ -21,7 +21,7 @@
       </label>
     {%- endfor -%}
   </div>
-  <div class="row medium-hide large-up-hide">
+  <div class="row{% if section.settings.sm_select_show %} medium-hide large-up-hide{% endif %}">
     <select name="tab-radio">
       {%- for block in section.blocks -%}
         <option value="{{ block.settings.target }}"{% if forloop.first %} selected{% endif %}>{{ block.settings.text }}</option>
@@ -75,6 +75,12 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type": "checkbox",
+      "id": "sm_select_show",
+      "label": "Select on Mobile",
+      "default": true
     }
   ],
   "blocks": [

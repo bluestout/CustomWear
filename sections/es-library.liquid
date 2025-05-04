@@ -19,11 +19,20 @@
   <div class="{% if section.settings.layout == 'row' %}page-width--small{% elsif section.settings.layout == 'section' %} page-width{% elsif section.settings.layout == 'none' %} content-container content-container--full-width{% endif %}">
     <div class="section-{{ section.id }}-padding{% if section.settings.layout == 'section' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}">
       <aside>
-        <ul>
+        <ul class="small-hide">
           {%- for block in section.blocks -%}
-            <li><a href="javascript:void(0);" data-target="ClipArt--{{ block.id }}" class="toggle-art-button {% if forloop.first %} active{% endif %}">{{ block.settings.heading }}</a></li>
+            <li>
+              <label>
+                <input type="radio" name="galleryCategory" value="#ClipArt--{{ block.id }}" {% if forloop.first %} checked{% endif %}> <span>{{ block.settings.heading }}</span>
+              </label>
+            </li>
           {%- endfor -%}
         </ul>
+        <select name="galleryCategory" class="medium-hide large-up-hide">
+          {%- for block in section.blocks -%}
+            <option value="#ClipArt--{{ block.id }}">{{ block.settings.heading }}</option>
+          {%- endfor -%}
+        </select>
       </aside>
 
       <div class="library--container">
@@ -114,6 +123,18 @@
     {%- for block in section.blocks -%}
       initESSlider(document.querySelector(".mySwiper-{{ block.id }}"));
     {%- endfor -%}
+
+    var libraryItems = document.querySelectorAll('.library--item');
+
+    document.querySelectorAll('[name="galleryCategory"]')?.forEach(input => {
+      input.addEventListener("change", function () {
+        libraryItems.forEach(item => {
+          item.classList.add("hidden");
+        });
+
+        document.querySelector(`${this.value}`)?.classList.remove('hidden');
+      });
+    });
   })
 </script>
 
