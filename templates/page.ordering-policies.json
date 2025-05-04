@@ -17,33 +17,154 @@
         "padding_bottom": 28
       }
     },
-    "rich_text_37Xtm8": {
-      "type": "rich-text",
+    "collapsible_content_cYz6ny": {
+      "type": "collapsible-content",
       "blocks": {
-        "heading_8wA7ir": {
-          "type": "heading",
+        "collapsible_row_FG3mcw": {
+          "type": "collapsible_row",
           "settings": {
-            "heading": "{{ page.title }}",
-            "heading_size": "h0"
+            "heading": "Customer agreement after placing a blank or custom order",
+            "icon": "none",
+            "row_content": "<p>On occasion when shipping so many orders on a daily basis, errors may occur. If you are shipped more merchandise than what you ordered or merchandise that was not ordered by you, it's your responsibility to notify us at 877-984-2277 to let us know within 24 hours of receipt of goods. You must return any items that were shipped but not ordered by you or that you were not billed for.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_YJXA64": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you offer rush delivery?",
+            "icon": "none",
+            "row_content": "<p>On occasion when shipping so many orders on a daily basis, errors may occur. If you are shipped more merchandise than what you ordered or merchandise that was not ordered by you, it's your responsibility to notify us at 877-984-2277 to let us know within 24 hours of receipt of goods. You must return any items that were shipped but not ordered by you or that you were not billed for.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_JD7UxP": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "When can I expect to receive my order?",
+            "icon": "none",
+            "row_content": "<p>On occasion when shipping so many orders on a daily basis, errors may occur. If you are shipped more merchandise than what you ordered or merchandise that was not ordered by you, it's your responsibility to notify us at 877-984-2277 to let us know within 24 hours of receipt of goods. You must return any items that were shipped but not ordered by you or that you were not billed for.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_BFtyRk": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "International orders delivery time:",
+            "icon": "none",
+            "row_content": "<p>On occasion when shipping so many orders on a daily basis, errors may occur. If you are shipped more merchandise than what you ordered or merchandise that was not ordered by you, it's your responsibility to notify us at 877-984-2277 to let us know within 24 hours of receipt of goods. You must return any items that were shipped but not ordered by you or that you were not billed for.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_DhFXP9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Shipping methods",
+            "icon": "none",
+            "row_content": "<p>On occasion when shipping so many orders on a daily basis, errors may occur. If you are shipped more merchandise than what you ordered or merchandise that was not ordered by you, it's your responsibility to notify us at 877-984-2277 to let us know within 24 hours of receipt of goods. You must return any items that were shipped but not ordered by you or that you were not billed for.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_MMQcVd": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Shipping policies",
+            "icon": "none",
+            "row_content": "<p>On occasion when shipping so many orders on a daily basis, errors may occur. If you are shipped more merchandise than what you ordered or merchandise that was not ordered by you, it's your responsibility to notify us at 877-984-2277 to let us know within 24 hours of receipt of goods. You must return any items that were shipped but not ordered by you or that you were not billed for.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_M4bNYp": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Standard ground shipping rates for customized caps (excludes HI, PR or AK)",
+            "icon": "none",
+            "row_content": "<p>On occasion when shipping so many orders on a daily basis, errors may occur. If you are shipped more merchandise than what you ordered or merchandise that was not ordered by you, it's your responsibility to notify us at 877-984-2277 to let us know within 24 hours of receipt of goods. You must return any items that were shipped but not ordered by you or that you were not billed for.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_LRVaTJ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Payment",
+            "icon": "none",
+            "row_content": "<p>On occasion when shipping so many orders on a daily basis, errors may occur. If you are shipped more merchandise than what you ordered or merchandise that was not ordered by you, it's your responsibility to notify us at 877-984-2277 to let us know within 24 hours of receipt of goods. You must return any items that were shipped but not ordered by you or that you were not billed for.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_R78dFx": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Returns",
+            "icon": "none",
+            "row_content": "<p>On occasion when shipping so many orders on a daily basis, errors may occur. If you are shipped more merchandise than what you ordered or merchandise that was not ordered by you, it's your responsibility to notify us at 877-984-2277 to let us know within 24 hours of receipt of goods. You must return any items that were shipped but not ordered by you or that you were not billed for.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_fTh47b": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Cancellations",
+            "icon": "none",
+            "row_content": "<p>On occasion when shipping so many orders on a daily basis, errors may occur. If you are shipped more merchandise than what you ordered or merchandise that was not ordered by you, it's your responsibility to notify us at 877-984-2277 to let us know within 24 hours of receipt of goods. You must return any items that were shipped but not ordered by you or that you were not billed for.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_gmfqrt": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Backorders",
+            "icon": "none",
+            "row_content": "<p>On occasion when shipping so many orders on a daily basis, errors may occur. If you are shipped more merchandise than what you ordered or merchandise that was not ordered by you, it's your responsibility to notify us at 877-984-2277 to let us know within 24 hours of receipt of goods. You must return any items that were shipped but not ordered by you or that you were not billed for.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_RNHtza": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Prices on our website",
+            "icon": "none",
+            "row_content": "<p>On occasion when shipping so many orders on a daily basis, errors may occur. If you are shipped more merchandise than what you ordered or merchandise that was not ordered by you, it's your responsibility to notify us at 877-984-2277 to let us know within 24 hours of receipt of goods. You must return any items that were shipped but not ordered by you or that you were not billed for.</p>",
+            "page": ""
           }
         }
       },
       "block_order": [
-        "heading_8wA7ir"
+        "collapsible_row_FG3mcw",
+        "collapsible_row_YJXA64",
+        "collapsible_row_JD7UxP",
+        "collapsible_row_BFtyRk",
+        "collapsible_row_DhFXP9",
+        "collapsible_row_MMQcVd",
+        "collapsible_row_M4bNYp",
+        "collapsible_row_LRVaTJ",
+        "collapsible_row_R78dFx",
+        "collapsible_row_fTh47b",
+        "collapsible_row_gmfqrt",
+        "collapsible_row_RNHtza"
       ],
-      "name": "t:sections.rich-text.presets.name",
+      "name": "t:sections.collapsible_content.presets.name",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
+        "tab_section": false,
+        "hide_section": false,
+        "custom_id": "embroideryQA",
+        "caption": "",
+        "heading": "Ordering, Shipping, and Return Policies",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "",
         "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
   "order": [
     "main",
-    "rich_text_37Xtm8"
+    "collapsible_content_cYz6ny"
   ]
 }
