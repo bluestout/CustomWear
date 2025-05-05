@@ -69,6 +69,7 @@
         "mobile_content_position": "middle",
         "mobile_content_alignment": "left",
         "opacity_direct_on_mobile": "vertical",
+        "opacity_height_on_mobile": "small",
         "image_height_on_mobile": "square",
         "show_text_below": false
       }
@@ -79,7 +80,7 @@
         "collection_rthtNn": {
           "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/256_Cardinal-White_520_x_376px.jpg",
+            "image": "shopify://shop_images/255_berry_5_Panel_1__520_x_376px.jpg",
             "title": "premium 5 Panel Golf Hats",
             "url": "shopify://collections/frontpage"
           }
@@ -87,7 +88,7 @@
         "collection_3tFD4j": {
           "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/112_Tri-White-Aluminum-Black__520_x_376px.jpg",
+            "image": "shopify://shop_images/112_Tri-White-Aluminum-Black-520_x_376px.jpg",
             "title": "Trucker Mesh Hats",
             "url": "#"
           }
@@ -95,7 +96,7 @@
         "collection_J89ex6": {
           "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/Group_248.png",
+            "image": "shopify://shop_images/Sport_Perform_Dk_Green_3__520_x_376px.jpg",
             "title": "Sport",
             "url": "#"
           }
@@ -103,7 +104,7 @@
         "collection_EmE39w": {
           "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/Group_249.png",
+            "image": "shopify://shop_images/Flexfit_4__520_x_376px.jpg",
             "title": "Flexfit",
             "url": "#"
           }
