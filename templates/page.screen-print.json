@@ -70,11 +70,19 @@
             "text": "Thread colors",
             "target": "#threadColors"
           }
+        },
+        "button_CaAMcf": {
+          "type": "button",
+          "settings": {
+            "text": "LETTERING FONTS",
+            "target": "#embroideryTypefaces"
+          }
         }
       },
       "block_order": [
         "button_38DRWc",
-        "button_FkBWzQ"
+        "button_FkBWzQ",
+        "button_CaAMcf"
       ],
       "settings": {
         "padding_top": 32,
