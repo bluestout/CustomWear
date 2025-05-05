@@ -435,17 +435,17 @@
             "featured_image": "shopify://shop_images/image_8.png"
           }
         },
-        "video_azGMUG": {
-          "type": "video",
-          "settings": {
-            "video_url": "https://youtu.be/Nl9YJBWvrco"
-          }
-        },
         "video_pyYEmP": {
           "type": "video",
           "settings": {
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_url": "https://youtu.be/ViyWxaebVmA",
             "featured_image": "shopify://shop_images/image_7.png"
+          }
+        },
+        "video_azGMUG": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://youtu.be/ViyWxaebVmA"
           }
         },
         "video_rXCkzw": {
@@ -458,8 +458,8 @@
       },
       "block_order": [
         "video_nQgbYm",
-        "video_azGMUG",
         "video_pyYEmP",
+        "video_azGMUG",
         "video_rXCkzw"
       ],
       "settings": {
