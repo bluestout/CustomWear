@@ -442,7 +442,7 @@
       "guest_title": "Continue as a guest",
       "password": "Password",
       "title": "Log in",
-      "sign_in": "Sign in",
+      "sign_in": "Continue",
       "submit": "Submit",
       "alternate_provider_separator": "or"
     },
@@ -488,12 +488,12 @@
       "success": "We've sent you an email with a link to update your password."
     },
     "register": {
-      "title": "Create account",
+      "title": "Sign up now",
       "first_name": "First name",
       "last_name": "Last name",
       "email": "Email",
       "password": "Password",
-      "submit": "Create"
+      "submit": "Create an Account"
     },
     "reset_password": {
       "title": "Reset account password",
