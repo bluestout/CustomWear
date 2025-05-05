@@ -74,8 +74,8 @@
         "button_CaAMcf": {
           "type": "button",
           "settings": {
-            "text": "LETTERING FONTS",
-            "target": "#embroideryTypefaces"
+            "text": "SCREENPRINT LETTERING FONTS",
+            "target": ""
           }
         }
       },
