@@ -419,6 +419,34 @@
         "color_xkDJU9": {
           "type": "color",
           "settings": {
+            "color": "#3ab2d4",
+            "text": "60650 Contact Blue"
+          }
+        },
+        "color_tH84VQ": {
+          "type": "color",
+          "settings": {
+            "color": "#ffffff",
+            "text": "White"
+          }
+        },
+        "color_kfTYPf": {
+          "type": "color",
+          "settings": {
+            "color": "#ffffff",
+            "text": "White"
+          }
+        },
+        "color_7rHDjR": {
+          "type": "color",
+          "settings": {
+            "color": "#ffffff",
+            "text": "White"
+          }
+        },
+        "color_rUddEm": {
+          "type": "color",
+          "settings": {
             "color": "#ffffff",
             "text": "White"
           }
@@ -445,7 +473,11 @@
         "color_cihRMz",
         "color_KRjmGP",
         "color_YBNcf3",
-        "color_xkDJU9"
+        "color_xkDJU9",
+        "color_tH84VQ",
+        "color_kfTYPf",
+        "color_7rHDjR",
+        "color_rUddEm"
       ],
       "settings": {
         "tab_section": true,
