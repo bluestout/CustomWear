@@ -527,13 +527,6 @@
             "color": "#ffa1b3",
             "text": "Panther Pink"
           }
-        },
-        "color_9U37Ya": {
-          "type": "color",
-          "settings": {
-            "color": "#ffffff",
-            "text": "White"
-          }
         }
       },
       "block_order": [
@@ -572,8 +565,7 @@
         "color_TnzMn6",
         "color_kDDdFt",
         "color_F3X8Ef",
-        "color_Kppgnz",
-        "color_9U37Ya"
+        "color_Kppgnz"
       ],
       "settings": {
         "tab_section": true,
