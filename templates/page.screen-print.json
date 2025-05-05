@@ -489,11 +489,32 @@
         "color_QgDd9n": {
           "type": "color",
           "settings": {
+            "color": "#9a9a9a",
+            "text": "14600 Dark Gray"
+          }
+        },
+        "color_w387XE": {
+          "type": "color",
+          "settings": {
+            "color": "#fed1a4",
+            "text": "12600 Rebel Flesh"
+          }
+        },
+        "color_TnzMn6": {
+          "type": "color",
+          "settings": {
             "color": "#ffffff",
             "text": "White"
           }
         },
-        "color_w387XE": {
+        "color_kDDdFt": {
+          "type": "color",
+          "settings": {
+            "color": "#ffffff",
+            "text": "White"
+          }
+        },
+        "color_F3X8Ef": {
           "type": "color",
           "settings": {
             "color": "#ffffff",
@@ -533,7 +554,10 @@
         "color_wTgkPd",
         "color_zPxTMz",
         "color_QgDd9n",
-        "color_w387XE"
+        "color_w387XE",
+        "color_TnzMn6",
+        "color_kDDdFt",
+        "color_F3X8Ef"
       ],
       "settings": {
         "tab_section": true,
