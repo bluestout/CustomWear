@@ -377,8 +377,8 @@
         "color_yLfMji": {
           "type": "color",
           "settings": {
-            "color": "#898989",
-            "text": "Gray"
+            "color": "#8a649d",
+            "text": "50200 Purple"
           }
         },
         "color_BkJWAJ": {
@@ -389,6 +389,34 @@
           }
         },
         "color_VCmx6E": {
+          "type": "color",
+          "settings": {
+            "color": "#ffffff",
+            "text": "White"
+          }
+        },
+        "color_cihRMz": {
+          "type": "color",
+          "settings": {
+            "color": "#ffffff",
+            "text": "White"
+          }
+        },
+        "color_KRjmGP": {
+          "type": "color",
+          "settings": {
+            "color": "#ffffff",
+            "text": "White"
+          }
+        },
+        "color_YBNcf3": {
+          "type": "color",
+          "settings": {
+            "color": "#ffffff",
+            "text": "White"
+          }
+        },
+        "color_xkDJU9": {
           "type": "color",
           "settings": {
             "color": "#ffffff",
@@ -413,7 +441,11 @@
         "color_jrTrja",
         "color_yLfMji",
         "color_BkJWAJ",
-        "color_VCmx6E"
+        "color_VCmx6E",
+        "color_cihRMz",
+        "color_KRjmGP",
+        "color_YBNcf3",
+        "color_xkDJU9"
       ],
       "settings": {
         "tab_section": true,
