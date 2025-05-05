@@ -510,11 +510,25 @@
         "color_kDDdFt": {
           "type": "color",
           "settings": {
+            "color": "#c6d4f1",
+            "text": "PMS 658 (Lt Blue)"
+          }
+        },
+        "color_F3X8Ef": {
+          "type": "color",
+          "settings": {
+            "color": "#d4b773",
+            "text": "PMS 466 (Lt Khaki)"
+          }
+        },
+        "color_Kppgnz": {
+          "type": "color",
+          "settings": {
             "color": "#ffffff",
             "text": "White"
           }
         },
-        "color_F3X8Ef": {
+        "color_9U37Ya": {
           "type": "color",
           "settings": {
             "color": "#ffffff",
@@ -557,7 +571,9 @@
         "color_w387XE",
         "color_TnzMn6",
         "color_kDDdFt",
-        "color_F3X8Ef"
+        "color_F3X8Ef",
+        "color_Kppgnz",
+        "color_9U37Ya"
       ],
       "settings": {
         "tab_section": true,
