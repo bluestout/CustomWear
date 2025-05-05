@@ -418,7 +418,7 @@
       "settings": {
         "tab_section": true,
         "hide_section": true,
-        "custom_id": "inkColors",
+        "custom_id": "inkcolors",
         "heading": "Ink Colors",
         "heading_size": "h1",
         "heading_alignment": "center",
