@@ -170,7 +170,7 @@
           "settings": {
             "image": "shopify://shop_images/R75_Red_Budget_12-520px_x_372px.jpg",
             "title": "Budget Hats",
-            "url": "#"
+            "url": "shopify://collections/budget-hats"
           }
         },
         "collection_dzDCb6": {
