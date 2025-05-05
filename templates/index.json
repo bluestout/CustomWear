@@ -82,7 +82,7 @@
           "settings": {
             "image": "shopify://shop_images/255_berry_5_Panel_1__520_x_376px.jpg",
             "title": "Premium 5 Panel Golf",
-            "url": "shopify://collections/frontpage"
+            "url": "shopify://collections/5-panel-golf-hats"
           }
         },
         "collection_3tFD4j": {
@@ -321,7 +321,7 @@
       ],
       "settings": {
         "scrollable": false,
-        "title": "Shop By Top Selling Brands",
+        "title": "Shop By Top Products",
         "hide_title_on_mobile": true,
         "padding_top": 40,
         "padding_bottom": 40,
