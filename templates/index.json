@@ -106,7 +106,7 @@
           "settings": {
             "image": "shopify://shop_images/Flexfit_4__520_x_376px.jpg",
             "title": "Flexfit Hats",
-            "url": "#"
+            "url": "shopify://collections/flexfit-hats"
           }
         },
         "collection_fraWam": {
