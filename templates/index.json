@@ -178,7 +178,7 @@
           "settings": {
             "image": "shopify://shop_images/810_Royal_Bucket_Hat_13-520px_x_372px.jpg",
             "title": "Bucket & Sun Hats",
-            "url": "#"
+            "url": "shopify://collections/bucket-sun-hats"
           }
         },
         "collection_V4CjNL": {
