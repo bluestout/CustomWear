@@ -428,6 +428,24 @@
         "padding_top": 52,
         "padding_bottom": 80
       }
+    },
+    "es_typefaces_nhH3BE": {
+      "type": "es-typefaces",
+      "name": "ES Typefaces",
+      "settings": {
+        "tab_section": true,
+        "hide_section": true,
+        "custom_id": "ScreenprintLetteringFonts",
+        "heading": "Collapsible content",
+        "typefaces_group": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -435,6 +453,7 @@
     "es_image_banner_AXNKXn",
     "es_tab_buttons_6H7Fdx",
     "collapsible_content_grGaaG",
-    "es_color_list_CA6xez"
+    "es_color_list_CA6xez",
+    "es_typefaces_nhH3BE"
   ]
 }
