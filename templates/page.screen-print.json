@@ -75,7 +75,7 @@
           "type": "button",
           "settings": {
             "text": "SCREENPRINT LETTERING FONTS",
-            "target": "ES Typefaces"
+            "target": "#ScreenprintLetteringFonts"
           }
         }
       },
