@@ -418,8 +418,8 @@
       "settings": {
         "tab_section": true,
         "hide_section": true,
-        "custom_id": "threadColors",
-        "heading": "Thread Colors",
+        "custom_id": "inkColors",
+        "heading": "Ink Colors",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "row",
