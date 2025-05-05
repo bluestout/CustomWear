@@ -148,6 +148,98 @@
             "title_2": "Hat Style 2",
             "url_2": ""
           }
+        },
+        "item_dxiBGx": {
+          "type": "item",
+          "settings": {
+            "item_width": 6,
+            "image": "shopify://shop_images/bg.png",
+            "title": "Ladies Hats",
+            "url": "shopify://collections/ladies-hats",
+            "title_2": "Hat Style 2",
+            "url_2": ""
+          }
+        },
+        "item_GJQ6Bc": {
+          "type": "item",
+          "settings": {
+            "item_width": 4,
+            "image": "shopify://shop_images/bg_1.png",
+            "title": "Military Hats",
+            "url": "shopify://collections/military-hats",
+            "image_2": "shopify://shop_images/img_1.png",
+            "title_2": "Patriotic & Novelty Hats",
+            "url_2": "shopify://collections/patriotic-novelty-hats"
+          }
+        },
+        "item_WqGL6N": {
+          "type": "item",
+          "settings": {
+            "item_width": 4,
+            "image": "shopify://shop_images/Mask_group_1.png",
+            "title": "Patterned Hats",
+            "url": "shopify://collections/patterned",
+            "image_2": "shopify://shop_images/Mask_group.png",
+            "title_2": "Performance Hats",
+            "url_2": "shopify://collections/performance-hats"
+          }
+        },
+        "item_qTQxKz": {
+          "type": "item",
+          "settings": {
+            "item_width": 6,
+            "image": "shopify://shop_images/bg_3.png",
+            "title": "Relaxed Dad Hats",
+            "url": "shopify://collections/relaxed-dad-hats",
+            "title_2": "Hat Style 2",
+            "url_2": ""
+          }
+        },
+        "item_tkjKai": {
+          "type": "item",
+          "settings": {
+            "item_width": 6,
+            "image": "shopify://shop_images/bg.png",
+            "title": "Roped Hats",
+            "url": "shopify://collections/roped-hats",
+            "title_2": "Hat Style 2",
+            "url_2": ""
+          }
+        },
+        "item_w4eKDW": {
+          "type": "item",
+          "settings": {
+            "item_width": 4,
+            "image": "shopify://shop_images/bg_1.png",
+            "title": "Snapback Caps",
+            "url": "shopify://collections/snapback-caps",
+            "image_2": "shopify://shop_images/img_1.png",
+            "title_2": "Sun Visors",
+            "url_2": "shopify://collections/sun-visors"
+          }
+        },
+        "item_q4Qadh": {
+          "type": "item",
+          "settings": {
+            "item_width": 4,
+            "image": "shopify://shop_images/Mask_group_1.png",
+            "title": "Trucker Mesh Hats",
+            "url": "shopify://collections/trucker-mesh-hats",
+            "image_2": "shopify://shop_images/Mask_group.png",
+            "title_2": "Umpire Hats",
+            "url_2": "shopify://collections/umpire-hats"
+          }
+        },
+        "item_9pMaYJ": {
+          "type": "item",
+          "settings": {
+            "item_width": 6,
+            "image": "shopify://shop_images/bg_3.png",
+            "title": "USA Made Hats",
+            "url": "shopify://collections/usa-made-hats",
+            "title_2": "Hat Style 2",
+            "url_2": ""
+          }
         }
       },
       "block_order": [
@@ -158,7 +250,15 @@
         "item_8iXADG",
         "item_iMUfVt",
         "item_JdB3Gf",
-        "item_RGEwRy"
+        "item_RGEwRy",
+        "item_dxiBGx",
+        "item_GJQ6Bc",
+        "item_WqGL6N",
+        "item_qTQxKz",
+        "item_tkjKai",
+        "item_w4eKDW",
+        "item_q4Qadh",
+        "item_9pMaYJ"
       ],
       "settings": {
         "scrollable": false,
