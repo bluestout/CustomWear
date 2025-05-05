@@ -186,7 +186,7 @@
           "settings": {
             "image": "shopify://shop_images/160_Navy_Sun_Visor_14__520_x_376px.jpg",
             "title": "Visors",
-            "url": "#"
+            "url": "shopify://collections/sun-visors"
           }
         },
         "collection_4wKRNX": {
@@ -194,7 +194,7 @@
           "settings": {
             "image": "shopify://shop_images/220_White_Ladies_15__520_x_376px.jpg",
             "title": "Ladies Hats",
-            "url": "#"
+            "url": "shopify://collections/ladies-hats"
           }
         }
       },
