@@ -447,6 +447,34 @@
         "color_rUddEm": {
           "type": "color",
           "settings": {
+            "color": "#009950",
+            "text": "70500 Dallas Green"
+          }
+        },
+        "color_qUxQTT": {
+          "type": "color",
+          "settings": {
+            "color": "#ffffff",
+            "text": "White"
+          }
+        },
+        "color_kCcnLV": {
+          "type": "color",
+          "settings": {
+            "color": "#ffffff",
+            "text": "White"
+          }
+        },
+        "color_978LVU": {
+          "type": "color",
+          "settings": {
+            "color": "#ffffff",
+            "text": "White"
+          }
+        },
+        "color_wTgkPd": {
+          "type": "color",
+          "settings": {
             "color": "#ffffff",
             "text": "White"
           }
@@ -477,7 +505,11 @@
         "color_tH84VQ",
         "color_kfTYPf",
         "color_7rHDjR",
-        "color_rUddEm"
+        "color_rUddEm",
+        "color_qUxQTT",
+        "color_kCcnLV",
+        "color_978LVU",
+        "color_wTgkPd"
       ],
       "settings": {
         "tab_section": true,
