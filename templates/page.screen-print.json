@@ -67,8 +67,8 @@
         "button_FkBWzQ": {
           "type": "button",
           "settings": {
-            "text": "Thread colors",
-            "target": "#threadColors"
+            "text": "INK COLORS",
+            "target": "#inkcolors"
           }
         },
         "button_CaAMcf": {
