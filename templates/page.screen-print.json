@@ -475,6 +475,27 @@
         "color_wTgkPd": {
           "type": "color",
           "settings": {
+            "color": "#432d00",
+            "text": "20100 Dark Brown"
+          }
+        },
+        "color_zPxTMz": {
+          "type": "color",
+          "settings": {
+            "color": "#ffffff",
+            "text": "White"
+          }
+        },
+        "color_QgDd9n": {
+          "type": "color",
+          "settings": {
+            "color": "#ffffff",
+            "text": "White"
+          }
+        },
+        "color_w387XE": {
+          "type": "color",
+          "settings": {
             "color": "#ffffff",
             "text": "White"
           }
@@ -509,7 +530,10 @@
         "color_qUxQTT",
         "color_kCcnLV",
         "color_978LVU",
-        "color_wTgkPd"
+        "color_wTgkPd",
+        "color_zPxTMz",
+        "color_QgDd9n",
+        "color_w387XE"
       ],
       "settings": {
         "tab_section": true,
