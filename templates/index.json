@@ -97,7 +97,7 @@
           "type": "collection",
           "settings": {
             "image": "shopify://shop_images/Sport_Perform_Dk_Green_3__520_x_376px.jpg",
-            "title": "Sport",
+            "title": "Sport Performance Hats",
             "url": "#"
           }
         },
@@ -105,7 +105,7 @@
           "type": "collection",
           "settings": {
             "image": "shopify://shop_images/Flexfit_4__520_x_376px.jpg",
-            "title": "Flexfit",
+            "title": "Flexfit Hats",
             "url": "#"
           }
         },
@@ -113,7 +113,7 @@
           "type": "collection",
           "settings": {
             "image": "shopify://shop_images/Group_251.png",
-            "title": "Trucker Mesh",
+            "title": "Snapback Hats",
             "url": "#"
           }
         },
@@ -121,7 +121,7 @@
           "type": "collection",
           "settings": {
             "image": "shopify://shop_images/Group_247.png",
-            "title": "Imperial",
+            "title": "Flat Billed Hats",
             "url": "shopify://collections/frontpage"
           }
         },
@@ -129,7 +129,7 @@
           "type": "collection",
           "settings": {
             "image": "shopify://shop_images/img.png",
-            "title": "Premium 5-Panel Golf",
+            "title": "Rope Hats",
             "url": "#"
           }
         },
@@ -137,7 +137,7 @@
           "type": "collection",
           "settings": {
             "image": "shopify://shop_images/Group_248.png",
-            "title": "Sport",
+            "title": "Camo Hats",
             "url": "#"
           }
         },
@@ -145,7 +145,7 @@
           "type": "collection",
           "settings": {
             "image": "shopify://shop_images/Group_249.png",
-            "title": "Flexfit",
+            "title": "Dad Relaxed Hats",
             "url": "#"
           }
         },
@@ -153,7 +153,47 @@
           "type": "collection",
           "settings": {
             "image": "shopify://shop_images/Group_251.png",
-            "title": "Trucker Mesh",
+            "title": "6 Panel Baseball",
+            "url": "#"
+          }
+        },
+        "collection_bJiTmG": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/Group_251.png",
+            "title": "7 Panel Hats",
+            "url": "#"
+          }
+        },
+        "collection_tJzK7C": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/Group_251.png",
+            "title": "Budget Hats",
+            "url": "#"
+          }
+        },
+        "collection_dzDCb6": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/Group_251.png",
+            "title": "Bucket & Sun Hats",
+            "url": "#"
+          }
+        },
+        "collection_V4CjNL": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/Group_251.png",
+            "title": "Visors",
+            "url": "#"
+          }
+        },
+        "collection_4wKRNX": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/Group_251.png",
+            "title": "Ladies Hats",
             "url": "#"
           }
         }
@@ -168,7 +208,12 @@
         "collection_nfmcKf",
         "collection_epykX9",
         "collection_LgkCT4",
-        "collection_tzd3HU"
+        "collection_tzd3HU",
+        "collection_bJiTmG",
+        "collection_tJzK7C",
+        "collection_dzDCb6",
+        "collection_V4CjNL",
+        "collection_4wKRNX"
       ],
       "settings": {
         "title": "Shop By Hat Style",
