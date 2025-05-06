@@ -68,6 +68,7 @@
   document.addEventListener("DOMContentLoaded", function () {
     const productsOnPage = document.querySelector('.blog-articles');
     let nextUrl = productsOnPage.dataset.nextUrl;
+    const blogCounts = document.querySelector('.main-blog__count');
     
     const loadMoreBtn = document.querySelector('.load-more_btn');
     const loadMoreSpinner = document.querySelector('.load-more_spinner');
@@ -84,6 +85,9 @@
           const parser = new DOMParser();
           const doc = parser.parseFromString(html, 'text/html');
           const newProducts = doc.querySelector('.blog-articles');
+          const newBlogCounts = doc.querySelector('.main-blog__count');
+
+          blogCounts.innerHTML = newBlogCounts.innerHTML;
     
           const newUrl = newProducts?.dataset.nextUrl;
           if (newUrl) {
