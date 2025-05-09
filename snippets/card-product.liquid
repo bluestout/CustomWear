@@ -207,7 +207,7 @@
             {%- endif -%}
 
             <div class="loox-rating" data-id="{{ card_product.id }}" data-rating="{{ card_product.metafields.loox.avg_rating }}" data-raters="{{ card_product.metafields.loox.num_reviews }}"></div>
-{% comment %} {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %} {% endcomment %}
+            {% comment %} {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %} {% endcomment %}
             {% render 'es-price', product: card_product %}
             {%- if card_product.quantity_price_breaks_configured? -%}
               {% if card_product.variants_count == 1 and quick_add == 'bulk' %}
@@ -291,6 +291,9 @@
               {% endif %}
             {%- endif -%}
           </div>
+          {%- if show_see_product -%}
+            <a href="{{ product.url }}" class="see-product">See Product {% render 'es-arrow-right-1' %}</a>
+          {%- endif -%}
         </div>
         {% assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id %}
         {% if quick_add == 'standard' %}
@@ -624,6 +627,9 @@
             {% comment %} {% render 'price', placeholder: placeholder, show_compare_at_price: true %} {% endcomment %}
             {% render 'es-price', product: card_product %}
           </div>
+          {%- if show_see_product -%}
+            <a href="{{ product.url }}" class="see-product">See Product {% render 'es-icon-arrow-right' %}</a>
+          {%- endif -%}
         </div>
       </div>
     </div>

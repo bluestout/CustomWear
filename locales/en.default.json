@@ -435,14 +435,14 @@
     "log_out": "Log out",
     "login_page": {
       "cancel": "Cancel",
-      "create_account": "Create account",
+      "create_account": "Sign up here",
       "email": "Email",
       "forgot_password": "Forgot your password?",
       "guest_continue": "Continue",
       "guest_title": "Continue as a guest",
       "password": "Password",
-      "title": "Login",
-      "sign_in": "Sign in",
+      "title": "Log in",
+      "sign_in": "Continue",
       "submit": "Submit",
       "alternate_provider_separator": "or"
     },
@@ -488,12 +488,12 @@
       "success": "We've sent you an email with a link to update your password."
     },
     "register": {
-      "title": "Create account",
+      "title": "Sign up now",
       "first_name": "First name",
       "last_name": "Last name",
       "email": "Email",
       "password": "Password",
-      "submit": "Create"
+      "submit": "Create an Account"
     },
     "reset_password": {
       "title": "Reset account password",

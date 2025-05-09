@@ -32,7 +32,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Customize",
-            "button_link_1": "shopify://collections/frontpage",
+            "button_link_1": "shopify://products/5-panel-brushed-wflag-sandwiched-bill",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -58,6 +58,8 @@
         "image_mobile": "shopify://shop_images/Rectangle_94.png",
         "image_overlay_opacity": 0,
         "opacity_type": "normal",
+        "opacity_color": "primary",
+        "opacity_weight_on_desktop": "light",
         "opacity_direction": "vertical",
         "image_height": "adapt",
         "image_behavior": "none",
@@ -82,7 +84,7 @@
           "settings": {
             "image": "shopify://shop_images/256_Cardinal-White_520_x_376px.jpg",
             "title": "premium 5 Panel Golf Hats",
-            "url": "shopify://collections/frontpage"
+            "url": "shopify://collections/5-panel-golf-hats"
           }
         },
         "collection_3tFD4j": {
@@ -90,7 +92,7 @@
           "settings": {
             "image": "shopify://shop_images/112_Tri-White-Aluminum-Black__520_x_376px.jpg",
             "title": "Trucker Mesh Hats",
-            "url": "#"
+            "url": "shopify://collections/trucker-mesh-hats"
           }
         },
         "collection_J89ex6": {
@@ -98,7 +100,7 @@
           "settings": {
             "image": "shopify://shop_images/Group_248.png",
             "title": "Sport",
-            "url": "#"
+            "url": "shopify://collections/kati-sportsman"
           }
         },
         "collection_EmE39w": {
@@ -106,7 +108,7 @@
           "settings": {
             "image": "shopify://shop_images/Group_249.png",
             "title": "Flexfit",
-            "url": "#"
+            "url": "shopify://collections/flexfit-hats"
           }
         },
         "collection_fraWam": {
@@ -114,7 +116,7 @@
           "settings": {
             "image": "shopify://shop_images/Group_251.png",
             "title": "Trucker Mesh",
-            "url": "#"
+            "url": "shopify://collections/trucker-mesh-hats"
           }
         },
         "collection_TGYUpq": {
@@ -122,7 +124,7 @@
           "settings": {
             "image": "shopify://shop_images/Group_247.png",
             "title": "Imperial",
-            "url": "shopify://collections/frontpage"
+            "url": "shopify://collections/imperial-hats"
           }
         },
         "collection_nfmcKf": {
@@ -130,7 +132,7 @@
           "settings": {
             "image": "shopify://shop_images/img.png",
             "title": "Premium 5-Panel Golf",
-            "url": "#"
+            "url": "shopify://collections/5-panel-golf-hats"
           }
         },
         "collection_epykX9": {
@@ -138,7 +140,7 @@
           "settings": {
             "image": "shopify://shop_images/Group_248.png",
             "title": "Sport",
-            "url": "#"
+            "url": "shopify://collections/kati-sportsman"
           }
         },
         "collection_LgkCT4": {
@@ -146,7 +148,7 @@
           "settings": {
             "image": "shopify://shop_images/Group_249.png",
             "title": "Flexfit",
-            "url": "#"
+            "url": "shopify://collections/flexfit-hats"
           }
         },
         "collection_tzd3HU": {
@@ -154,7 +156,7 @@
           "settings": {
             "image": "shopify://shop_images/Group_251.png",
             "title": "Trucker Mesh",
-            "url": "#"
+            "url": "shopify://collections/trucker-mesh-hats"
           }
         }
       },
@@ -227,7 +229,7 @@
             "item_width": 6,
             "image": "shopify://shop_images/alaska2.jpg",
             "title": "Richardson",
-            "url": "shopify://products/sn20w-kati-sportcap-specialty-licensed-camo-unstru",
+            "url": "shopify://collections/112-hats-best-sellers",
             "title_2": "Hat Style 2",
             "url_2": ""
           }
@@ -238,7 +240,7 @@
             "item_width": 4,
             "image": "shopify://shop_images/bg_1.png",
             "title": "Flexfit",
-            "url": "shopify://collections/all",
+            "url": "shopify://collections/flexfit-hats",
             "image_2": "shopify://shop_images/OC-main-herov2.jpg",
             "title_2": "Outdoor Cap",
             "url_2": "shopify://products/12-inch-safety-color-beanie-w-reflective-threads"
@@ -386,21 +388,21 @@
         "video_azGMUG": {
           "type": "video",
           "settings": {
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_url": "https://youtu.be/Nl9YJBWvrco",
             "featured_image": "shopify://shop_images/image_6.png"
           }
         },
         "video_pyYEmP": {
           "type": "video",
           "settings": {
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_url": "https://youtu.be/ViyWxaebVmA",
             "featured_image": "shopify://shop_images/image_7.png"
           }
         },
         "video_nQgbYm": {
           "type": "video",
           "settings": {
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_url": "https://youtu.be/axfsK2KEtuk",
             "featured_image": "shopify://shop_images/image_8.png"
           }
         }

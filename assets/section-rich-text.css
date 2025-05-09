@@ -37,7 +37,7 @@
 
 @media screen and (min-width: 990px) {
   .rich-text__blocks {
-    max-width: 78rem;
+    max-width: 80rem;
   }
 }
 
@@ -83,4 +83,8 @@
 
 .rich-text__blocks.right .rich-text__buttons {
   justify-content: flex-end;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #CCC;
 }
