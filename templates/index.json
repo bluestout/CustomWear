@@ -201,8 +201,8 @@
         "text_XxeLzC"
       ],
       "settings": {
-        "image": "shopify://shop_images/110M_12.png",
-        "image_2": "shopify://shop_images/Image.png",
+        "image": "shopify://shop_images/need_editing_112_-_Edited.png",
+        "image_2": "shopify://shop_images/needs_edit_112_golf_-_Edited.png",
         "height": "adapt",
         "hide_media_on_mobile": false,
         "desktop_image_width": "large",
@@ -227,7 +227,7 @@
           "type": "item",
           "settings": {
             "item_width": 6,
-            "image": "shopify://shop_images/America_s_Favorite_cap.png",
+            "image": "shopify://shop_images/alaska2.jpg",
             "title": "Richardson",
             "url": "shopify://collections/112-hats-best-sellers",
             "title_2": "Hat Style 2",
@@ -250,10 +250,10 @@
           "type": "item",
           "settings": {
             "item_width": 4,
-            "image": "shopify://shop_images/Mask_group_1.png",
-            "title": "Performance",
-            "url": "shopify://collections/performance-hats",
-            "image_2": "shopify://shop_images/Decky_1160_590px.jpg",
+            "image": "shopify://shop_images/6089m.png",
+            "title": "YP Classic",
+            "url": "shopify://products/5-panel-high-profile-structured-acrylicpolyester-t",
+            "image_2": "shopify://shop_images/Adobe_Express_-_file_1.png",
             "title_2": "Decky Hats",
             "url_2": "shopify://products/5-panel-mid-profile-structured-cotton-poly-blend-cap"
           }
@@ -262,9 +262,9 @@
           "type": "item",
           "settings": {
             "item_width": 6,
-            "image": "shopify://shop_images/bg_3.png",
-            "title": "Otto Hats",
-            "url": "shopify://collections/otto-hats",
+            "image": "shopify://shop_images/decky_test.png",
+            "title": "Pacific Hats",
+            "url": "shopify://products/6-panel-unstructured-pigment-dyed-heavy-cotton-twi",
             "title_2": "Hat Style 2",
             "url_2": ""
           }
