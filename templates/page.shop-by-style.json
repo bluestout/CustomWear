@@ -24,7 +24,7 @@
           "type": "heading",
           "settings": {
             "subheading": "",
-            "heading": "Image banner",
+            "heading": "Shop by Style",
             "heading_size": "h1"
           }
         }
@@ -49,6 +49,7 @@
         "mobile_content_position": "middle",
         "mobile_content_alignment": "left",
         "opacity_direct_on_mobile": "horizontal",
+        "opacity_height_on_mobile": "small",
         "image_height_on_mobile": "adapt",
         "show_text_below": false
       }
@@ -61,8 +62,8 @@
           "settings": {
             "item_width": 6,
             "image": "shopify://shop_images/bg.png",
-            "title": "Ladies Caps",
-            "url": "shopify://products/sn20w-kati-sportcap-specialty-licensed-camo-unstru",
+            "title": "5-Panel Golf Hats",
+            "url": "shopify://collections/5-panel-golf-hats",
             "title_2": "Hat Style 2",
             "url_2": ""
           }
@@ -72,11 +73,11 @@
           "settings": {
             "item_width": 4,
             "image": "shopify://shop_images/bg_1.png",
-            "title": "Flexfit",
-            "url": "shopify://collections/all",
+            "title": "6-Panel Baseball Caps",
+            "url": "shopify://collections/6-panel-baseball-caps",
             "image_2": "shopify://shop_images/img_1.png",
-            "title_2": "Get Your Patch On!",
-            "url_2": "shopify://products/12-inch-safety-color-beanie-w-reflective-threads"
+            "title_2": "7-Panel Hats",
+            "url_2": "shopify://collections/7-panel-hats"
           }
         },
         "item_ayUTCT": {
@@ -84,11 +85,11 @@
           "settings": {
             "item_width": 4,
             "image": "shopify://shop_images/Mask_group_1.png",
-            "title": "Performance",
-            "url": "shopify://products/5-panel-high-profile-structured-acrylicpolyester-t",
+            "title": "Bucket & Sun Hats",
+            "url": "shopify://collections/bucket-sun-hats",
             "image_2": "shopify://shop_images/Mask_group.png",
-            "title_2": "FlatBilled",
-            "url_2": "shopify://products/5-panel-mid-profile-structured-cotton-poly-blend-cap"
+            "title_2": "Budget Hats",
+            "url_2": "shopify://collections/budget-hats"
           }
         },
         "item_t9qBbg": {
@@ -96,8 +97,8 @@
           "settings": {
             "item_width": 6,
             "image": "shopify://shop_images/bg_3.png",
-            "title": "Trucker Mash Back",
-            "url": "shopify://products/6-panel-unstructured-pigment-dyed-heavy-cotton-twi",
+            "title": "Camo Hats",
+            "url": "shopify://collections/camo-hats",
             "title_2": "Hat Style 2",
             "url_2": ""
           }
@@ -107,8 +108,8 @@
           "settings": {
             "item_width": 6,
             "image": "shopify://shop_images/bg.png",
-            "title": "Ladies Caps",
-            "url": "shopify://products/sn20w-kati-sportcap-specialty-licensed-camo-unstru",
+            "title": "Eco-Sustainable & Organic Hats",
+            "url": "shopify://collections/eco-sustainable-organic-hats",
             "title_2": "Hat Style 2",
             "url_2": ""
           }
@@ -118,11 +119,11 @@
           "settings": {
             "item_width": 4,
             "image": "shopify://shop_images/bg_1.png",
-            "title": "Flexfit",
-            "url": "shopify://collections/all",
+            "title": "Flat Bill Hats",
+            "url": "shopify://collections/flat-bill-hats",
             "image_2": "shopify://shop_images/img_1.png",
-            "title_2": "Get Your Patch On!",
-            "url_2": "shopify://products/12-inch-safety-color-beanie-w-reflective-threads"
+            "title_2": "Flexfit Hats",
+            "url_2": "shopify://collections/flexfit-hats"
           }
         },
         "item_JdB3Gf": {
@@ -130,11 +131,11 @@
           "settings": {
             "item_width": 4,
             "image": "shopify://shop_images/Mask_group_1.png",
-            "title": "Performance",
-            "url": "shopify://products/5-panel-high-profile-structured-acrylicpolyester-t",
+            "title": "Foam Mesh Hats",
+            "url": "shopify://collections/foam-mesh-hats",
             "image_2": "shopify://shop_images/Mask_group.png",
-            "title_2": "FlatBilled",
-            "url_2": "shopify://products/5-panel-mid-profile-structured-cotton-poly-blend-cap"
+            "title_2": "Knit Beanies",
+            "url_2": "shopify://collections/knit-beanies"
           }
         },
         "item_RGEwRy": {
@@ -142,8 +143,100 @@
           "settings": {
             "item_width": 6,
             "image": "shopify://shop_images/bg_3.png",
-            "title": "Trucker Mash Back",
-            "url": "shopify://products/6-panel-unstructured-pigment-dyed-heavy-cotton-twi",
+            "title": "Kids Hats",
+            "url": "shopify://collections/kids-hats",
+            "title_2": "Hat Style 2",
+            "url_2": ""
+          }
+        },
+        "item_dxiBGx": {
+          "type": "item",
+          "settings": {
+            "item_width": 6,
+            "image": "shopify://shop_images/bg.png",
+            "title": "Ladies Hats",
+            "url": "shopify://collections/ladies-hats",
+            "title_2": "Hat Style 2",
+            "url_2": ""
+          }
+        },
+        "item_GJQ6Bc": {
+          "type": "item",
+          "settings": {
+            "item_width": 4,
+            "image": "shopify://shop_images/bg_1.png",
+            "title": "Military Hats",
+            "url": "shopify://collections/military-hats",
+            "image_2": "shopify://shop_images/img_1.png",
+            "title_2": "Patriotic & Novelty Hats",
+            "url_2": "shopify://collections/patriotic-novelty-hats"
+          }
+        },
+        "item_WqGL6N": {
+          "type": "item",
+          "settings": {
+            "item_width": 4,
+            "image": "shopify://shop_images/Mask_group_1.png",
+            "title": "Patterned Hats",
+            "url": "shopify://collections/patterned",
+            "image_2": "shopify://shop_images/Mask_group.png",
+            "title_2": "Performance Hats",
+            "url_2": "shopify://collections/performance-hats"
+          }
+        },
+        "item_qTQxKz": {
+          "type": "item",
+          "settings": {
+            "item_width": 6,
+            "image": "shopify://shop_images/bg_3.png",
+            "title": "Relaxed Dad Hats",
+            "url": "shopify://collections/relaxed-dad-hats",
+            "title_2": "Hat Style 2",
+            "url_2": ""
+          }
+        },
+        "item_tkjKai": {
+          "type": "item",
+          "settings": {
+            "item_width": 6,
+            "image": "shopify://shop_images/bg.png",
+            "title": "Roped Hats",
+            "url": "shopify://collections/roped-hats",
+            "title_2": "Hat Style 2",
+            "url_2": ""
+          }
+        },
+        "item_w4eKDW": {
+          "type": "item",
+          "settings": {
+            "item_width": 4,
+            "image": "shopify://shop_images/bg_1.png",
+            "title": "Snapback Caps",
+            "url": "shopify://collections/snapback-caps",
+            "image_2": "shopify://shop_images/img_1.png",
+            "title_2": "Sun Visors",
+            "url_2": "shopify://collections/sun-visors"
+          }
+        },
+        "item_q4Qadh": {
+          "type": "item",
+          "settings": {
+            "item_width": 4,
+            "image": "shopify://shop_images/Mask_group_1.png",
+            "title": "Trucker Mesh Hats",
+            "url": "shopify://collections/trucker-mesh-hats",
+            "image_2": "shopify://shop_images/Mask_group.png",
+            "title_2": "Umpire Hats",
+            "url_2": "shopify://collections/umpire-hats"
+          }
+        },
+        "item_9pMaYJ": {
+          "type": "item",
+          "settings": {
+            "item_width": 6,
+            "image": "shopify://shop_images/bg_3.png",
+            "title": "USA Made Hats",
+            "url": "shopify://collections/usa-made-hats",
             "title_2": "Hat Style 2",
             "url_2": ""
           }
@@ -157,7 +250,15 @@
         "item_8iXADG",
         "item_iMUfVt",
         "item_JdB3Gf",
-        "item_RGEwRy"
+        "item_RGEwRy",
+        "item_dxiBGx",
+        "item_GJQ6Bc",
+        "item_WqGL6N",
+        "item_qTQxKz",
+        "item_tkjKai",
+        "item_w4eKDW",
+        "item_q4Qadh",
+        "item_9pMaYJ"
       ],
       "settings": {
         "scrollable": false,
