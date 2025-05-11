@@ -138,7 +138,7 @@
           {%- endfor -%}
         {%- endif -%}
       </ul>
-      {%- if posts_exceed_limit -%}
+      {% comment %} {%- if posts_exceed_limit -%}
         <div class="slider-buttons{% if section.settings.post_limit < 3 %} medium-hide{% endif %}{% if section.settings.post_limit < 2 %} small-hide{% endif %}">
           <button
             type="button"
@@ -167,7 +167,7 @@
             </span>
           </button>
         </div>
-      {%- endif -%}
+      {%- endif -%} {% endcomment %}
     </slider-component>
 
     {%- if section.settings.show_view_all and section.settings.post_limit < section.settings.blog.articles_count -%}

@@ -32,7 +32,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Customize",
-            "button_link_1": "shopify://collections/frontpage",
+            "button_link_1": "shopify://products/5-panel-brushed-wflag-sandwiched-bill",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -58,6 +58,8 @@
         "image_mobile": "shopify://shop_images/Rectangle_94.png",
         "image_overlay_opacity": 0,
         "opacity_type": "normal",
+        "opacity_color": "primary",
+        "opacity_weight_on_desktop": "light",
         "opacity_direction": "vertical",
         "image_height": "adapt",
         "image_behavior": "none",
@@ -244,8 +246,8 @@
         "text_XxeLzC"
       ],
       "settings": {
-        "image": "shopify://shop_images/110M_12.png",
-        "image_2": "shopify://shop_images/Image.png",
+        "image": "shopify://shop_images/need_editing_112_-_Edited.png",
+        "image_2": "shopify://shop_images/needs_edit_112_golf_-_Edited.png",
         "height": "adapt",
         "hide_media_on_mobile": false,
         "desktop_image_width": "large",
@@ -283,7 +285,7 @@
             "item_width": 4,
             "image": "shopify://shop_images/bg_1.png",
             "title": "Flexfit",
-            "url": "shopify://collections/all",
+            "url": "shopify://collections/flexfit-hats",
             "image_2": "shopify://shop_images/OC-main-herov2.jpg",
             "title_2": "Outdoor Cap",
             "url_2": "shopify://products/12-inch-safety-color-beanie-w-reflective-threads"
@@ -293,10 +295,10 @@
           "type": "item",
           "settings": {
             "item_width": 4,
-            "image": "shopify://shop_images/Mask_group_1.png",
-            "title": "Performance",
+            "image": "shopify://shop_images/6089m.png",
+            "title": "YP Classic",
             "url": "shopify://products/5-panel-high-profile-structured-acrylicpolyester-t",
-            "image_2": "shopify://shop_images/Decky_1160_590px.jpg",
+            "image_2": "shopify://shop_images/Adobe_Express_-_file_1.png",
             "title_2": "Decky Hats",
             "url_2": "shopify://products/5-panel-mid-profile-structured-cotton-poly-blend-cap"
           }
@@ -305,8 +307,8 @@
           "type": "item",
           "settings": {
             "item_width": 6,
-            "image": "shopify://shop_images/bg_3.png",
-            "title": "Otto Hats",
+            "image": "shopify://shop_images/decky_test.png",
+            "title": "Pacific Hats",
             "url": "shopify://products/6-panel-unstructured-pigment-dyed-heavy-cotton-twi",
             "title_2": "Hat Style 2",
             "url_2": ""

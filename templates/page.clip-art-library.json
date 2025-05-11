@@ -1,0 +1,324 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "es_image_banner_AXNKXn": {
+      "type": "es-image-banner",
+      "blocks": {
+        "heading_Jxq4Qf": {
+          "type": "heading",
+          "settings": {
+            "subheading": "",
+            "heading": "Clip Art Library",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Jxq4Qf"
+      ],
+      "settings": {
+        "show_space": false,
+        "image": "shopify://shop_images/Image_1.jpg",
+        "image_mobile": "shopify://shop_images/Image_25.png",
+        "image_overlay_opacity": 100,
+        "opacity_type": "gradient",
+        "opacity_color": "secondary",
+        "opacity_weight_on_desktop": "light",
+        "opacity_direction": "horizontal",
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
+        "stack_images_on_mobile": false,
+        "mobile_content_position": "bottom",
+        "mobile_content_alignment": "center",
+        "opacity_direct_on_mobile": "vertical",
+        "opacity_height_on_mobile": "large",
+        "image_height_on_mobile": "adapt",
+        "show_text_below": false
+      }
+    },
+    "es_tab_buttons_6H7Fdx": {
+      "type": "es-tab-buttons",
+      "blocks": {
+        "button_38DRWc": {
+          "type": "button",
+          "settings": {
+            "text": "Embroidery Stock Designs",
+            "target": "#EmbroideryStockDesigns"
+          }
+        },
+        "button_FkBWzQ": {
+          "type": "button",
+          "settings": {
+            "text": "Screen Print Stock Designs",
+            "target": "#ScreenPrintStockDesigns"
+          }
+        }
+      },
+      "block_order": [
+        "button_38DRWc",
+        "button_FkBWzQ"
+      ],
+      "settings": {
+        "padding_top": 32,
+        "padding_bottom": 0,
+        "sm_padding_top": 20,
+        "sm_padding_bottom": 0,
+        "sm_select_show": false
+      }
+    },
+    "es_library_DKnDgn": {
+      "type": "es-library",
+      "blocks": {
+        "library_BjaiNn": {
+          "type": "library",
+          "settings": {
+            "heading": "Aircrafts",
+            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
+            "metaobject": "aircrafts"
+          }
+        },
+        "library_nACpkm": {
+          "type": "library",
+          "settings": {
+            "heading": "Bugs & Insects",
+            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
+            "metaobject": "bugs-insects"
+          }
+        },
+        "library_7BwtJP": {
+          "type": "library",
+          "settings": {
+            "heading": "Children",
+            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
+            "metaobject": "children"
+          }
+        },
+        "library_XjhXp7": {
+          "type": "library",
+          "settings": {
+            "heading": "Christmas",
+            "description": "",
+            "metaobject": ""
+          }
+        },
+        "library_jpaBqx": {
+          "type": "library",
+          "settings": {
+            "heading": "Countries & Flags",
+            "description": "",
+            "metaobject": ""
+          }
+        },
+        "library_yhxeDm": {
+          "type": "library",
+          "settings": {
+            "heading": "Dog & Cat",
+            "description": "",
+            "metaobject": ""
+          }
+        },
+        "library_MktMtX": {
+          "type": "library",
+          "settings": {
+            "heading": "Equipment",
+            "description": "",
+            "metaobject": ""
+          }
+        },
+        "library_mGw4tD": {
+          "type": "library",
+          "settings": {
+            "heading": "Fire & Rescue",
+            "description": "",
+            "metaobject": ""
+          }
+        },
+        "library_zNeLzV": {
+          "type": "library",
+          "settings": {
+            "heading": "Fishing & Aquatic",
+            "description": "",
+            "metaobject": ""
+          }
+        },
+        "library_fWCTq3": {
+          "type": "library",
+          "settings": {
+            "heading": "Floral",
+            "description": "",
+            "metaobject": ""
+          }
+        },
+        "library_YRf9AP": {
+          "type": "library",
+          "settings": {
+            "heading": "Food",
+            "description": "",
+            "metaobject": ""
+          }
+        },
+        "library_mGbwLr": {
+          "type": "library",
+          "settings": {
+            "heading": "Holiday",
+            "description": "",
+            "metaobject": ""
+          }
+        },
+        "library_dGRnMc": {
+          "type": "library",
+          "settings": {
+            "heading": "Horse & Western",
+            "description": "",
+            "metaobject": ""
+          }
+        },
+        "library_mEkBAx": {
+          "type": "library",
+          "settings": {
+            "heading": "Hunting & Wildlife",
+            "description": "",
+            "metaobject": ""
+          }
+        },
+        "library_feMMMk": {
+          "type": "library",
+          "settings": {
+            "heading": "Team Sport Mascots",
+            "description": "",
+            "metaobject": ""
+          }
+        },
+        "library_PN8hLf": {
+          "type": "library",
+          "settings": {
+            "heading": "Corporate logos",
+            "description": "",
+            "metaobject": ""
+          }
+        },
+        "library_TwTkTk": {
+          "type": "library",
+          "settings": {
+            "heading": "Military",
+            "description": "",
+            "metaobject": ""
+          }
+        },
+        "library_aPGnAw": {
+          "type": "library",
+          "settings": {
+            "heading": "Miscellaneous",
+            "description": "",
+            "metaobject": ""
+          }
+        },
+        "library_AyXRL4": {
+          "type": "library",
+          "settings": {
+            "heading": "Music",
+            "description": "",
+            "metaobject": ""
+          }
+        },
+        "library_7X6df7": {
+          "type": "library",
+          "settings": {
+            "heading": "Nautical",
+            "description": "",
+            "metaobject": ""
+          }
+        },
+        "library_XhMa4m": {
+          "type": "library",
+          "settings": {
+            "heading": "Occupation",
+            "description": "",
+            "metaobject": ""
+          }
+        },
+        "library_4fYVEk": {
+          "type": "library",
+          "settings": {
+            "heading": "Sports",
+            "description": "",
+            "metaobject": ""
+          }
+        },
+        "library_fHQfVq": {
+          "type": "library",
+          "settings": {
+            "heading": "Wheels",
+            "description": "",
+            "metaobject": ""
+          }
+        }
+      },
+      "block_order": [
+        "library_BjaiNn",
+        "library_nACpkm",
+        "library_7BwtJP",
+        "library_XjhXp7",
+        "library_jpaBqx",
+        "library_yhxeDm",
+        "library_MktMtX",
+        "library_mGw4tD",
+        "library_zNeLzV",
+        "library_fWCTq3",
+        "library_YRf9AP",
+        "library_mGbwLr",
+        "library_dGRnMc",
+        "library_mEkBAx",
+        "library_feMMMk",
+        "library_PN8hLf",
+        "library_TwTkTk",
+        "library_aPGnAw",
+        "library_AyXRL4",
+        "library_7X6df7",
+        "library_XhMa4m",
+        "library_4fYVEk",
+        "library_fHQfVq"
+      ],
+      "settings": {
+        "tab_section": true,
+        "hide_section": false,
+        "custom_id": "EmbroideryStockDesigns",
+        "heading": "",
+        "galleries": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "section",
+        "container_color_scheme": "",
+        "color_scheme": "scheme-2",
+        "padding_top": 52,
+        "padding_bottom": 80
+      }
+    }
+  },
+  "order": [
+    "main",
+    "es_image_banner_AXNKXn",
+    "es_tab_buttons_6H7Fdx",
+    "es_library_DKnDgn"
+  ]
+}

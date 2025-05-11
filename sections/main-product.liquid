@@ -211,7 +211,7 @@
                 {{ block.settings.custom_liquid }}
               {%- when 'collapsible_tab' -%}
                 <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
-                  <details id="Details-{{ block.id }}-{{ section.id }}">
+                  <details id="Details-{{ block.id }}-{{ section.id }}"{% if block.settings.default_open %} open{% endif %}>
                     <summary>
                       <div class="summary__title">
                         {% render 'icon-accordion', icon: block.settings.icon %}
@@ -735,7 +735,7 @@
 
 <script>
   const changePrice = newPrice => {
-    document.querySelector('.sub-total-price-value').textContent = newPrice;
+    document.querySelector('.sub-total-price-value').textContent = newPrice + " USD";
   }
   document.addEventListener("LPO:ready", function () {
     var defaultPrice = document.querySelector('.cl-po--radio-item input[name="_Buy more and save!"]:checked')?.nextElementSibling?.querySelector("._price")?.textContent;
@@ -992,6 +992,12 @@
       "type": "collapsible_tab",
       "name": "t:sections.main-product.blocks.collapsible_tab.name",
       "settings": [
+        {
+          "type": "checkbox",
+          "id": "default_open",
+          "label": "Default Open",
+          "default": false
+        },
         {
           "type": "text",
           "id": "heading",

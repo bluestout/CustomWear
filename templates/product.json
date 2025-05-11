@@ -48,7 +48,7 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true,
+            "show_dynamic_checkout": false,
             "show_gift_card_recipient": true
           }
         },
@@ -73,16 +73,19 @@
         },
         "collapsible_tab_eM4Wkc": {
           "type": "collapsible_tab",
+          "name": "Description",
           "settings": {
+            "default_open": true,
             "heading": "Description",
             "icon": "description",
-            "content": "{{ product.description }}",
+            "content": "<p>{{ product.description }}</p>",
             "page": ""
           }
         },
         "collapsible_tab_g7BVdP": {
           "type": "collapsible_tab",
           "settings": {
+            "default_open": false,
             "heading": "Details",
             "icon": "details",
             "content": "{{ product.description }}",
@@ -107,6 +110,7 @@
         },
         "share": {
           "type": "share",
+          "disabled": true,
           "settings": {
             "share_label": "Share"
           }
