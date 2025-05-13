@@ -1,16 +1,25 @@
 <style type="text/css">
+  #shopify-section-{{ section.id }} {
+    background-color: #FAFAFA;
+    padding: 100px 0;
+  }
+  
   .template-404 .title + * {
     margin-top: 1rem;
   }
 
   @media screen and (min-width: 750px) {
+    #shopify-section-{{ section.id }} {
+      padding: 50px 0;
+    }
+
     .template-404 .title + * {
       margin-top: 2rem;
     }
   }
 </style>
 
-<div class="template-404 page-width page-margin center">
+<div class="template-404 page-width center">
   <h1 class="title">
     {{ 'templates.404.title' | t }}
   </h1>

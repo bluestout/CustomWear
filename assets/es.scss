@@ -3427,6 +3427,12 @@ body {
     font-family: "Inter", sans-serif;
     font-weight: 700;
     line-height: 130px;
+    margin-top: 0;
+
+    @media (max-width: 750px) {
+      font-size: 60px;
+      line-height: 60px;
+    }
   }
 
   .description {
@@ -3448,11 +3454,19 @@ body {
     align-items: center;
     justify-content: center;
 
+    @media (max-width: 750px) {
+      flex-direction: column;
+    }
+
     a {
       max-width: max-content;
+      padding: 30px;
+      background-color: #FAFAFA;
 
-      & + a {
-        border-left: 1px solid #CCC;
+      @media (min-width: 751px) {
+        & + a {
+          border-left: 1px solid #CCC;
+        }  
       }
     }
   }
