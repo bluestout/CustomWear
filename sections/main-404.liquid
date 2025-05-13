@@ -25,7 +25,7 @@
   </h1>
   <div class="description">{{ section.settings.text }}</div>
   <div class="button--group">
-    <a href="{{ section.settings.button_link_1 | default: routes.all_products_collection_url }}" class="es-button">
+    <a href="{{ section.settings.button_link_1 | default: '/' }}" class="es-button">
       {{ section.settings.button_1 }}
     </a>
     <a href="{{ section.settings.button_link_2 }}" class="es-button">
