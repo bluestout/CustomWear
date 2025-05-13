@@ -23,7 +23,7 @@
       "type": "es-featured-collection",
       "name": "ES Featured Collection",
       "settings": {
-        "title": "Shop By Hat Style",
+        "title": "You may also like",
         "collection": "best-sellers",
         "products_to_show": 4,
         "image_ratio": "square",
