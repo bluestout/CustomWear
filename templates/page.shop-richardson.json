@@ -24,7 +24,7 @@
           "type": "heading",
           "settings": {
             "subheading": "",
-            "heading": "Shop by Style",
+            "heading": "Shop Richardson Hats",
             "heading_size": "h1"
           }
         }
@@ -38,6 +38,8 @@
         "image_mobile": "shopify://shop_images/Mask_group_2.png",
         "image_overlay_opacity": 0,
         "opacity_type": "normal",
+        "opacity_color": "primary",
+        "opacity_weight_on_desktop": "light",
         "opacity_direction": "vertical",
         "image_height": "adapt",
         "image_behavior": "none",
@@ -62,8 +64,8 @@
           "settings": {
             "item_width": 6,
             "image": "shopify://shop_images/bg.png",
-            "title": "5-Panel Golf Hats",
-            "url": "shopify://collections/5-panel-golf-hats",
+            "title": "112 Hats: Best Sellers",
+            "url": "shopify://collections/112-hats-best-sellers",
             "title_2": "Hat Style 2",
             "url_2": ""
           }
@@ -73,11 +75,11 @@
           "settings": {
             "item_width": 4,
             "image": "shopify://shop_images/bg_1.png",
-            "title": "6-Panel Baseball Caps",
-            "url": "shopify://collections/6-panel-baseball-caps",
+            "title": "5 Panel Baseball Hats",
+            "url": "shopify://collections/5-panel-baseball-hats",
             "image_2": "shopify://shop_images/img_1.png",
-            "title_2": "7-Panel Hats",
-            "url_2": "shopify://collections/7-panel-hats"
+            "title_2": "6 Panel Baseball Hats",
+            "url_2": "shopify://collections/6-panel-baseball-caps"
           }
         },
         "item_ayUTCT": {
@@ -85,11 +87,11 @@
           "settings": {
             "item_width": 4,
             "image": "shopify://shop_images/Mask_group_1.png",
-            "title": "Bucket & Sun Hats",
-            "url": "shopify://collections/bucket-sun-hats",
+            "title": "7 Panels",
+            "url": "shopify://collections/7-panel-hats",
             "image_2": "shopify://shop_images/Mask_group.png",
-            "title_2": "Budget Hats",
-            "url_2": "shopify://collections/budget-hats"
+            "title_2": "Beanies",
+            "url_2": "shopify://collections/beanies"
           }
         },
         "item_t9qBbg": {
@@ -97,8 +99,8 @@
           "settings": {
             "item_width": 6,
             "image": "shopify://shop_images/bg_3.png",
-            "title": "Camo Hats",
-            "url": "shopify://collections/camo-hats",
+            "title": "Bucket Hats",
+            "url": "shopify://collections/bucket-straw-hats",
             "title_2": "Hat Style 2",
             "url_2": ""
           }
@@ -108,8 +110,8 @@
           "settings": {
             "item_width": 6,
             "image": "shopify://shop_images/bg.png",
-            "title": "Eco-Sustainable & Organic Hats",
-            "url": "shopify://collections/eco-sustainable-organic-hats",
+            "title": "Camo",
+            "url": "shopify://collections/richardson-camo",
             "title_2": "Hat Style 2",
             "url_2": ""
           }
@@ -119,11 +121,11 @@
           "settings": {
             "item_width": 4,
             "image": "shopify://shop_images/bg_1.png",
-            "title": "Flat Bill Hats",
-            "url": "shopify://collections/flat-bill-hats",
+            "title": "Flat Billed",
+            "url": "shopify://collections/flat-billed",
             "image_2": "shopify://shop_images/img_1.png",
-            "title_2": "Flexfit Hats",
-            "url_2": "shopify://collections/flexfit-hats"
+            "title_2": "Relaxed Dad Hats",
+            "url_2": "shopify://collections/richardson-relaxed-dad-hats"
           }
         },
         "item_JdB3Gf": {
@@ -131,11 +133,11 @@
           "settings": {
             "item_width": 4,
             "image": "shopify://shop_images/Mask_group_1.png",
-            "title": "Foam Mesh Hats",
-            "url": "shopify://collections/foam-mesh-hats",
+            "title": "R-Flex & Sized",
+            "url": "shopify://collections/r-flex-sized",
             "image_2": "shopify://shop_images/Mask_group.png",
-            "title_2": "Knit Beanies",
-            "url_2": "shopify://collections/knit-beanies"
+            "title_2": "Snapback",
+            "url_2": "shopify://collections/snapback"
           }
         },
         "item_RGEwRy": {
@@ -143,8 +145,8 @@
           "settings": {
             "item_width": 6,
             "image": "shopify://shop_images/bg_3.png",
-            "title": "Kids Hats",
-            "url": "shopify://collections/kids-hats",
+            "title": "Sport Performance",
+            "url": "shopify://collections/richardson-sport-performance",
             "title_2": "Hat Style 2",
             "url_2": ""
           }
@@ -154,8 +156,8 @@
           "settings": {
             "item_width": 6,
             "image": "shopify://shop_images/bg.png",
-            "title": "Ladies Hats",
-            "url": "shopify://collections/ladies-hats",
+            "title": "Sun Visors",
+            "url": "shopify://collections/richardson-sun-visors",
             "title_2": "Hat Style 2",
             "url_2": ""
           }
@@ -165,80 +167,11 @@
           "settings": {
             "item_width": 4,
             "image": "shopify://shop_images/bg_1.png",
-            "title": "Military Hats",
-            "url": "shopify://collections/military-hats",
+            "title": "Trucker Mesh",
+            "url": "shopify://collections/trucker-mesh",
             "image_2": "shopify://shop_images/img_1.png",
-            "title_2": "Patriotic & Novelty Hats",
-            "url_2": "shopify://collections/patriotic-novelty-hats"
-          }
-        },
-        "item_WqGL6N": {
-          "type": "item",
-          "settings": {
-            "item_width": 4,
-            "image": "shopify://shop_images/Mask_group_1.png",
-            "title": "Patterned Hats",
-            "url": "shopify://collections/patterned",
-            "image_2": "shopify://shop_images/Mask_group.png",
-            "title_2": "Performance Hats",
-            "url_2": "shopify://collections/performance-hats"
-          }
-        },
-        "item_qTQxKz": {
-          "type": "item",
-          "settings": {
-            "item_width": 6,
-            "image": "shopify://shop_images/bg_3.png",
-            "title": "Relaxed Dad Hats",
-            "url": "shopify://collections/relaxed-dad-hats",
-            "title_2": "Hat Style 2",
-            "url_2": ""
-          }
-        },
-        "item_tkjKai": {
-          "type": "item",
-          "settings": {
-            "item_width": 6,
-            "image": "shopify://shop_images/bg.png",
-            "title": "Roped Hats",
-            "url": "shopify://collections/roped-hats",
-            "title_2": "Hat Style 2",
-            "url_2": ""
-          }
-        },
-        "item_w4eKDW": {
-          "type": "item",
-          "settings": {
-            "item_width": 4,
-            "image": "shopify://shop_images/bg_1.png",
-            "title": "Snapback Caps",
-            "url": "shopify://collections/snapback-caps",
-            "image_2": "shopify://shop_images/img_1.png",
-            "title_2": "Sun Visors",
-            "url_2": "shopify://collections/sun-visors"
-          }
-        },
-        "item_q4Qadh": {
-          "type": "item",
-          "settings": {
-            "item_width": 4,
-            "image": "shopify://shop_images/Mask_group_1.png",
-            "title": "Trucker Mesh Hats",
-            "url": "shopify://collections/trucker-mesh-hats",
-            "image_2": "shopify://shop_images/Mask_group.png",
-            "title_2": "Umpire Hats",
-            "url_2": "shopify://collections/umpire-hats"
-          }
-        },
-        "item_9pMaYJ": {
-          "type": "item",
-          "settings": {
-            "item_width": 6,
-            "image": "shopify://shop_images/bg_3.png",
-            "title": "USA Made Hats",
-            "url": "shopify://collections/usa-made-hats",
-            "title_2": "Hat Style 2",
-            "url_2": ""
+            "title_2": "Umpire/Official Hats",
+            "url_2": "shopify://collections/umpire-official-hats"
           }
         }
       },
@@ -252,13 +185,7 @@
         "item_JdB3Gf",
         "item_RGEwRy",
         "item_dxiBGx",
-        "item_GJQ6Bc",
-        "item_WqGL6N",
-        "item_qTQxKz",
-        "item_tkjKai",
-        "item_w4eKDW",
-        "item_q4Qadh",
-        "item_9pMaYJ"
+        "item_GJQ6Bc"
       ],
       "settings": {
         "scrollable": false,
