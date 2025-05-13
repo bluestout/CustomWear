@@ -14,7 +14,9 @@
       "settings": {
         "text": "<p>Looks like the page you're looking for no longer exists.</p><p>Try going back to the previous page or to the pages below.</p>",
         "button_1": "GO TO THE HOME PAGE",
-        "button_2": "Continue shopping"
+        "button_link_1": "",
+        "button_2": "Continue shopping",
+        "button_link_2": "shopify://collections"
       }
     }
   },
