@@ -3460,10 +3460,12 @@ body {
 
     a {
       max-width: max-content;
-      padding: 30px;
+      padding: 15px;
       background-color: #FAFAFA;
 
       @media (min-width: 751px) {
+        padding: 30px;
+
         & + a {
           border-left: 1px solid #CCC;
         }  
