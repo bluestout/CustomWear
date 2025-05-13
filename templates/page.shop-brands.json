@@ -65,7 +65,7 @@
             "item_width": 6,
             "image": "shopify://shop_images/bg.png",
             "title": "Richardson Hats: All Styles",
-            "url": "shopify://collections/5-panel-golf-hats",
+            "url": "shopify://collections/112-hats-best-sellers",
             "title_2": "Hat Style 2",
             "url_2": ""
           }
@@ -75,10 +75,10 @@
           "settings": {
             "item_width": 4,
             "image": "shopify://shop_images/bg_1.png",
-            "title": "6-Panel Baseball Caps",
+            "title": "Adams Headwear",
             "url": "shopify://collections/6-panel-baseball-caps",
             "image_2": "shopify://shop_images/img_1.png",
-            "title_2": "7-Panel Hats",
+            "title_2": "Imperial Hats",
             "url_2": "shopify://collections/7-panel-hats"
           }
         },
