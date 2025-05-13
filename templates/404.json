@@ -18,9 +18,28 @@
         "button_2": "Continue shopping",
         "button_link_2": "shopify://collections"
       }
+    },
+    "es_featured_collection_eYjT4U": {
+      "type": "es-featured-collection",
+      "name": "ES Featured Collection",
+      "settings": {
+        "title": "Shop By Hat Style",
+        "collection": "best-sellers",
+        "products_to_show": 4,
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "border_bottom": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "es_featured_collection_eYjT4U"
   ]
 }
