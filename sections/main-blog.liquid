@@ -57,10 +57,11 @@
       <a href="javascript:void(0);" class="load-more_btn btn">VIEW ALL {%- render 'es-arrow-right-1' -%}</a>
       <div class="load-more_spinner"></div>
     </div>
-{% comment %} 
-    {%- if paginate.pages > 1 -%}
-      {%- render 'pagination', paginate: paginate -%}
-    {%- endif -%} {% endcomment %}
+    {% comment %} 
+      {%- if paginate.pages > 1 -%}
+        {%- render 'pagination', paginate: paginate -%}
+      {%- endif -%}
+    {% endcomment %}
   </div>
 {%- endpaginate -%}
 

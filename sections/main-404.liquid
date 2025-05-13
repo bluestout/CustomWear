@@ -11,9 +11,6 @@
 </style>
 
 <div class="template-404 page-width page-margin center">
-  <p>
-    {{ 'templates.404.subtext' | t }}
-  </p>
   <h1 class="title">
     {{ 'templates.404.title' | t }}
   </h1>
@@ -21,3 +18,32 @@
     {{ 'general.continue_shopping' | t }}
   </a>
 </div>
+
+{%- schema -%}
+{
+  "name": "Main 404",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "text",
+      "id": "button_1",
+      "label": "Button 1"
+    },
+    {
+      "type": "text",
+      "id": "button_2",
+      "label": "Button 2"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Main 404"
+    }
+  ]
+}
+{%- endschema -%}
