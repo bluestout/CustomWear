@@ -14,9 +14,15 @@
   <h1 class="title">
     {{ 'templates.404.title' | t }}
   </h1>
-  <a href="{{ routes.all_products_collection_url }}" class="button">
-    {{ 'general.continue_shopping' | t }}
-  </a>
+  <div class="description">{{ section.settings.text }}</div>
+  <div class="button--group">
+    <a href="{{ section.settings.button_link_1 | default: routes.all_products_collection_url }}" class="es-button">
+      {{ section.settings.button_1 }}
+    </a>
+    <a href="{{ section.settings.button_link_2 }}" class="es-button">
+      {{ section.settings.button_2 }}
+    </a>
+  </div>
 </div>
 
 {%- schema -%}
