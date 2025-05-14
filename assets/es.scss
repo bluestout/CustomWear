@@ -152,6 +152,18 @@
   }
 }
 
+.cart__ctas button::after {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 10px;
+  background: url('https://cdn.shopify.com/s/files/1/0728/5784/6001/files/Group_268.svg?v=1742691514') no-repeat center center;
+  background-size: contain;
+  border: 0;
+  box-shadow: unset;
+  position: static;
+}
+
 .announcement-bar-section {
   .page-width {
     @media (max-width: 768px) {
@@ -3485,4 +3497,16 @@ body {
 
 .wishlist-hero-items-count {
   display: none !important;
+}
+
+.product-option {
+  color: #545454;
+  font-size: 13px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 19.50px;
+
+  dt {
+    font-weight: 600;
+  }
 }
