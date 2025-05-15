@@ -406,6 +406,7 @@
     "es_featured_collection_RGkMJh": {
       "type": "es-featured-collection",
       "settings": {
+        "border_top": false,
         "title": "Best Sellers By Brand",
         "collection": "frontpage",
         "products_to_show": 15,
@@ -445,6 +446,7 @@
         },
         "video_azGMUG": {
           "type": "video",
+          "disabled": true,
           "settings": {
             "video_url": "https://youtu.be/axfsK2KEtuk",
             "featured_image": "shopify://shop_images/Screen_Shot_2025-05-04_at_22.05.28.png",
