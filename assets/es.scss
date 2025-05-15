@@ -152,16 +152,23 @@
   }
 }
 
-.cart__ctas button::after {
-  content: '';
-  display: block;
-  width: 6px;
-  height: 10px;
-  background: url('https://cdn.shopify.com/s/files/1/0728/5784/6001/files/Group_268.svg?v=1742691514') no-repeat center center;
-  background-size: contain;
-  border: 0;
-  box-shadow: unset;
-  position: static;
+.cart__ctas button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 10px;
+    background: url('https://cdn.shopify.com/s/files/1/0728/5784/6001/files/Union_61538aff-f613-4aba-a6c6-73aad9428699.svg?v=1747305965') no-repeat center center;
+    background-size: contain;
+    border: 0;
+    box-shadow: unset;
+    position: static;
+  }
 }
 
 .announcement-bar-section {
@@ -3508,5 +3515,25 @@ body {
 
   dt {
     font-weight: 600;
+  }
+}
+
+cart-items {
+  .cart-item__price-wrapper {
+    * {
+      color: black;
+      font-size: 15px !important;
+      font-family: "Inter", sans-serif;
+      font-weight: 600 !important;
+      line-height: 25.50px !important;
+    }
+  }
+
+  .cart-quantity {
+    .quantity__button {
+      svg {
+        filter: grayscale(1);
+      }
+    }
   }
 }
