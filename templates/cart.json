@@ -70,6 +70,7 @@
       "type": "es-featured-collection",
       "name": "ES Featured Collection",
       "settings": {
+        "border_top": true,
         "title": "You may also like",
         "collection": "best-sellers",
         "products_to_show": 4,
