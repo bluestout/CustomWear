@@ -36,6 +36,7 @@
       "settings": {
         "show_space": false,
         "image": "shopify://shop_images/allenburt_94637_httpss.mj.runlwhUVcnLWIY_Professional_studio__665c3873-514c-42a1-b908-a04b8f7ff395_0_1.jpg",
+        "image_mobile": "shopify://shop_images/allenburt_94637_httpss.mj.runlwhUVcnLWIY_Professional_studio__665c3873-514c-42a1-b908-a04b8f7ff395_0_1.png",
         "image_overlay_opacity": 100,
         "opacity_type": "gradient",
         "opacity_color": "primary",
