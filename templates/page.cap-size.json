@@ -111,7 +111,7 @@
         "heading_size": "h1",
         "heading_alignment": "center",
         "text": "<p>Use this chart of hat sizes below to determine your size. If your head size falls in between two sizes, you should choose the next larger size.</p>",
-        "layout": "none",
+        "layout": "section",
         "container_color_scheme": "",
         "color_scheme": "scheme-2",
         "padding_top": 52,
