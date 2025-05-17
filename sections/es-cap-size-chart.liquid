@@ -23,7 +23,17 @@
         <h2 class="visually-hidden">{{ 'accessibility.collapsible_content_title' | t }}</h2>
       {% endif %}
 
-
+      <div class="size-chart">
+        {%- for block in section.blocks -%}
+          <div class="size-chart__item">
+            {%- if block.settings.page != blank -%}
+              <div class="size-chart__item-content">
+                {{ block.settings.page.content }}
+              </div>
+            {%- endif -%}
+          </div>
+        {%- endfor -%}
+      </div>
     </div>
   </div>
 </div>
