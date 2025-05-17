@@ -93,6 +93,7 @@
       "blocks": {
         "page_tF8Wfd": {
           "type": "page",
+          "name": "Size Table 1",
           "settings": {
             "page": "size-table-1"
           }
