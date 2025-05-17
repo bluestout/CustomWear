@@ -56,10 +56,42 @@
         "image_height_on_mobile": "adapt",
         "show_text_below": false
       }
+    },
+    "es_tab_buttons_pGgW6r": {
+      "type": "es-tab-buttons",
+      "blocks": {
+        "button_RkGQV4": {
+          "type": "button",
+          "settings": {
+            "text": "Caps Size Chart",
+            "target": ""
+          }
+        },
+        "button_QVWpgF": {
+          "type": "button",
+          "settings": {
+            "text": "Cap Definitions",
+            "target": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_RkGQV4",
+        "button_QVWpgF"
+      ],
+      "name": "ES Tab Buttons",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 0,
+        "sm_padding_top": 20,
+        "sm_padding_bottom": 20,
+        "sm_select_show": true
+      }
     }
   },
   "order": [
     "main",
-    "es_image_banner_BNEHrk"
+    "es_image_banner_BNEHrk",
+    "es_tab_buttons_pGgW6r"
   ]
 }
