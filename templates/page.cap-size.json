@@ -16,9 +16,49 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "es_image_banner_BNEHrk": {
+      "type": "es-image-banner",
+      "blocks": {
+        "heading_XjRwRT": {
+          "type": "heading",
+          "settings": {
+            "subheading": "",
+            "heading": "Cap Size Charts & Definitions",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_XjRwRT"
+      ],
+      "name": "ES Image Banner",
+      "settings": {
+        "show_space": false,
+        "image": "shopify://shop_images/allenburt_94637_httpss.mj.runlwhUVcnLWIY_Professional_studio__665c3873-514c-42a1-b908-a04b8f7ff395_0_1.jpg",
+        "image_overlay_opacity": 100,
+        "opacity_type": "gradient",
+        "opacity_color": "primary",
+        "opacity_weight_on_desktop": "light",
+        "opacity_direction": "horizontal",
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
+        "stack_images_on_mobile": false,
+        "mobile_content_position": "bottom",
+        "mobile_content_alignment": "center",
+        "opacity_direct_on_mobile": "vertical",
+        "opacity_height_on_mobile": "large",
+        "image_height_on_mobile": "adapt",
+        "show_text_below": false
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "es_image_banner_BNEHrk"
   ]
 }
