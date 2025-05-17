@@ -87,11 +87,41 @@
         "sm_padding_bottom": 20,
         "sm_select_show": true
       }
+    },
+    "es_cap_size_chart_WQNGYc": {
+      "type": "es-cap-size-chart",
+      "blocks": {
+        "page_tF8Wfd": {
+          "type": "page",
+          "settings": {
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "page_tF8Wfd"
+      ],
+      "name": "ES Size Chart",
+      "settings": {
+        "tab_section": false,
+        "hide_section": false,
+        "custom_id": "tabColorList",
+        "heading": "Caps Size Chart",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "text": "<p>Use this chart of hat sizes below to determine your size. If your head size falls in between two sizes, you should choose the next larger size.</p>",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "scheme-2",
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
     "es_image_banner_BNEHrk",
-    "es_tab_buttons_pGgW6r"
+    "es_tab_buttons_pGgW6r",
+    "es_cap_size_chart_WQNGYc"
   ]
 }
