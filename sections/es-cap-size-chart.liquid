@@ -31,7 +31,7 @@
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'page' -%}
-              <div class="size-chart__item">
+              <div class="size-chart__item{% if block.settings.responsive == 'desktop' %} small-hide{% elsif block.settings.responsive == 'mobile' %} medium-hide large-up-hide collapsable-item{% endif %}">
                 {%- if block.settings.page != blank -%}
                   <div class="size-chart__item-content">
                     {{ block.settings.page.content }}
@@ -43,7 +43,7 @@
                 {%- if block.settings.image != blank -%}
                   <div class="size-chart__item-content">
                     <div class="size-chart__item-image">
-                      {{ block.settings.image | image_url: width: 340 | image_tag: class: 'size-chart__item-image' }}
+                      {{ block.settings.image | image_url: width: 720 | image_tag: class: 'size-chart__item-image' }}
                     </div>
                     <div class="size-chart__item-text">
                       {{ block.settings.text }}
@@ -97,6 +97,24 @@
     </div>
   </div>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const collapsableItems = document.querySelectorAll('.collapsable-item table');
+
+    collapsableItems.forEach(item => {
+      item.querySelector('caption').addEventListener('click', function() {
+        {% comment %} if (this.nextElementSibling.style.display == 'table-row-group') {
+          this.nextElementSibling.style.display = 'none';
+        } else {
+          this.nextElementSibling.style.display = 'table-row-group';
+        } {% endcomment %}
+
+        this.classList.toggle("is-active");
+      });
+    });
+  });
+</script>
 
 {% schema %}
 {

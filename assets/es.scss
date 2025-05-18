@@ -3567,6 +3567,41 @@ cart-items {
           margin-top: 10px;
         }
 
+        @media (max-width: 750px) {
+          &.collapsable-item {
+            border: 1px solid #CCC;
+
+            .size-chart__item-content {
+              padding-top: 10px;
+              padding-bottom: 0;
+
+              table {
+                border-bottom: 1px solid #CCC;
+                
+                tbody {
+                  display: none;
+                }
+
+                &:last-child {
+                  border-bottom: 0;
+
+                  caption {
+                    border-bottom: 0;
+                  }
+                }
+
+                caption.is-active {
+                  border-bottom: 1px solid #CCC;
+
+                  & + tbody {
+                    display: table-row-group;
+                  }
+                }
+              }
+            }
+          }
+        }
+
         .size-chart__item-content {
           padding: 20px;
           background-color: #FFF;
@@ -3586,15 +3621,59 @@ cart-items {
               td:nth-child(1) {
                 text-align: right;
                 width: 250px !important;
+
+                @media (max-width: 750px) {
+                  width: 205px !important;
+                  font-weight: 600;
+                }
               }
 
-              td:nth-child(n + 1) {
-                width: 15% !important;
+              td:nth-child(n + 2) {
+                @media (min-width: 751px) {
+                  width: 15% !important;
+                }
               }
 
-              &:nth-child(3) {
-                td:nth-child(n + 1) {
-                  background-color: #FAFAFA;
+              @media (min-width: 751px) {
+                &:nth-child(3) {
+                  td:nth-child(n + 2) {
+                    background-color: #FAFAFA;
+                  }
+                }
+              }
+
+              td {
+                @media (max-width: 750px) {
+                  padding: 10px 4px;
+                }
+              }
+            }
+
+            caption {
+              @media (max-width: 750px) {
+                color: black;
+                font-size: 15px;
+                font-family: "Inter", sans-serif;
+                font-weight: 600;
+                line-height: 25.50px;
+                text-align: left;
+                position: relative;
+                padding: 12px 0;
+                border-bottom: 1px solid #CCC;
+
+                &::after {
+                  content: '';
+                  background-image: url('https://cdn.shopify.com/s/files/1/0728/5784/6001/files/Union_1.svg?v=1747604099');
+                  background-size: contain;
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  width: 15px;
+                  height: 15px;
+                  display: block;
+                  position: absolute;
+                  top: 50%;
+                  right: 0;
+                  transform: translateY(-50%);
                 }
               }
             }
@@ -3615,8 +3694,16 @@ cart-items {
             display: flex;
             gap: 20px;
 
+            @media (max-width: 750px) {
+              flex-direction: column;
+            }
+
             .size-chart__item-image {
               min-width: 170px;
+
+              @media (max-width: 750px) {
+                max-width: 100%;
+              }
             }
 
             .size-chart__item-text {
