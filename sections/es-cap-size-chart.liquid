@@ -51,6 +51,46 @@
                   </div>
                 {%- endif -%}
               </div>
+            {%- when 'metaobject' -%}
+              {%- assign title_array = "Head size in inches,Head size in centimeters,Fitted hat size,Hat size" | split: "," -%}
+              <div class="size-chart__item">
+                {%- if block.settings.metaobject_list != blank -%}
+                  <div class="size-chart__item-content">
+                    <table>
+                      <tbody>
+                        {%- for title in title_array -%}
+                          {%- liquid 
+                            assign handled_title = title | handleize | replace: "-", "_" 
+                            assign previous_value = blank
+                            if forloop.index == 3
+                              assign strong_tag = true
+                            else
+                              assign strong_tag = false
+                            endif
+                          -%}
+                          <tr>
+                            <th>
+                              {{ title }}
+                            </th>
+                            {%- for metaobject in block.settings.metaobject_list -%}
+                              {%- unless strong_tag and previous_value == metaobject[handled_title] -%}
+                                <td{% if strong_tag and metaobject[handled_title] != "XS" %} colspan="2"{% endif %}>
+                                  {%- if strong_tag -%}
+                                    <strong>{{ metaobject[handled_title] }}</strong>
+                                  {%- else -%}
+                                    {{ metaobject[handled_title] }}
+                                  {%- endif -%}
+                                </td>
+                              {%- endunless -%}
+                              {%- assign previous_value = metaobject[handled_title] -%}
+                            {%- endfor -%}
+                          </tr>
+                        {%- endfor -%}
+                      </tbody>
+                    </table>
+                  </div>
+                {%- endif -%}
+              </div>
           {%- endcase -%}
         {%- endfor -%}
       </div>
