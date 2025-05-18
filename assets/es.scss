@@ -3599,6 +3599,49 @@ cart-items {
               }
             }
           }
+
+          .size-chart__item-image {
+            max-width: 170px;
+
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+
+        &.size-chart__item--image-with-text {
+          .size-chart__item-content {
+            display: flex;
+            gap: 20px;
+
+            .size-chart__item-image {
+              min-width: 170px;
+            }
+
+            .size-chart__item-text {
+              color: black;
+              font-size: 15px;
+              font-family: "Inter", sans-serif;
+              font-weight: 400;
+              line-height: 25.50px;
+
+              p {
+                margin: 0;
+
+                &:empty {
+                  display: block;
+                  margin: 20px 0;
+                }
+              }
+
+              a {
+                color: #990000;
+                font-weight: 600;
+                text-decoration: unset;
+              }
+            }
+          }
         }
       }
     }

@@ -39,11 +39,11 @@
                 {%- endif -%}
               </div>
             {%- when 'image_with_text' -%}
-              <div class="size-chart__item">
+              <div class="size-chart__item size-chart__item--image-with-text">
                 {%- if block.settings.image != blank -%}
                   <div class="size-chart__item-content">
                     <div class="size-chart__item-image">
-                      {{ block.settings.image | image_url: width: 1000 | image_tag: class: 'size-chart__item-image' }}
+                      {{ block.settings.image | image_url: width: 340 | image_tag: class: 'size-chart__item-image' }}
                     </div>
                     <div class="size-chart__item-text">
                       {{ block.settings.text }}
@@ -234,6 +234,19 @@
           "type": "richtext",
           "id": "text",
           "label": "Text"
+        }
+      ]
+    },
+    {
+      "type": "metaobject",
+      "name": "Metaobject",
+      "settings": [
+        {
+          "type": "metaobject_list",
+          "id": "metaobject_list",
+          "label": "Metaobject list",
+          "info": "Select the metaobject to display in the size chart.",
+          "metaobject_type": "cap_size_chart"
         }
       ]
     }
