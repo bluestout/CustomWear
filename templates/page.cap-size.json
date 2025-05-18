@@ -64,7 +64,7 @@
           "type": "button",
           "settings": {
             "text": "Caps Size Chart",
-            "target": ""
+            "target": "#tabCapsSizeChart"
           }
         },
         "button_QVWpgF": {
@@ -122,7 +122,7 @@
       "settings": {
         "tab_section": false,
         "hide_section": false,
-        "custom_id": "tabColorList",
+        "custom_id": "tabCapsSizeChart",
         "heading": "Caps Size Chart",
         "heading_size": "h1",
         "heading_alignment": "center",
