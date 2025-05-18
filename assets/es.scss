@@ -77,6 +77,14 @@
   }
 }
 
+.font-p {
+  color: black;
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 26px;
+}
+
 .font-h3 {
   color: black;
   font-size: 20px;
@@ -3537,3 +3545,63 @@ cart-items {
     }
   }
 }
+
+.es-size-chart {
+  .page-width--small {
+    max-width: 1000px;
+
+    .font-p {
+      max-width: 750px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 10px 0 24px;
+  
+      p {
+        margin: 0;
+      }
+    }
+  
+    .size-chart {
+      .size-chart__item {
+        & + div {
+          margin-top: 10px;
+        }
+
+        .size-chart__item-content {
+          padding: 20px;
+          background-color: #FFF;
+  
+          table {
+            box-shadow: unset;
+            color: black;
+            font-size: 15px;
+            font-family: "Inter", sans-serif;
+            font-weight: 400;
+            line-height: 25.50px;
+            text-align: center;
+            width: 100%;
+
+            tr {
+              th,
+              td:nth-child(1) {
+                text-align: right;
+                width: 250px !important;
+              }
+
+              td:nth-child(n + 1) {
+                width: 15% !important;
+              }
+
+              &:nth-child(3) {
+                td:nth-child(n + 1) {
+                  background-color: #FAFAFA;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
