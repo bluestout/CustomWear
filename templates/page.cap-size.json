@@ -97,10 +97,18 @@
           "settings": {
             "page": "size-table-1"
           }
+        },
+        "page_ULq7wc": {
+          "type": "page",
+          "name": "Size Table 2",
+          "settings": {
+            "page": "size-table-2"
+          }
         }
       },
       "block_order": [
-        "page_tF8Wfd"
+        "page_tF8Wfd",
+        "page_ULq7wc"
       ],
       "name": "ES Size Chart",
       "settings": {
