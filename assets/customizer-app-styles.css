@@ -159,4 +159,14 @@
     text-align: center!important;
 }
 
+.cl-po--option[data-option="Patches - Child - 3D Embroidered"] {
+    padding: 0px!important;
+}
+
+.cl-po--option .cl-po--option {
+    border: none!important;
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+}
+
 
