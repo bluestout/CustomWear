@@ -36,15 +36,23 @@
     box-shadow: none!important;
 }
 
-.cl-po--option[data-option="Logo Location"] .cl-po--swatch-container {
+.product .cl-po--option[data-option="Logo Location"] .cl-po--swatch-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
 
-.cl-po--option[data-option="Logo Location"] .cl-po--swatch.cl-po--large {
+.product .cl-po--option[data-option="Logo Location"] .cl-po--swatch.cl-po--large {
     width: 100%;
     height: 100%;
     padding: 10px;
     border: none;
 }
+
+.product .cl-po--option[data-option="Custom Logo"],
+.product .cl-po--option[data-option="Thread Color"]{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    border: none !important;
+}
+
