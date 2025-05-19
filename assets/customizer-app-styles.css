@@ -64,3 +64,9 @@
 .product .cl-po--options {
     border-bottom: 1px solid #CCC;
 }
+
+.product .cl-po--option[data-option="Location"]{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    border: none !important;
+}
