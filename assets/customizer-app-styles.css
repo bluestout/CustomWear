@@ -29,7 +29,8 @@
 }
 
 .product .cl-po--option[data-option="Logo Location"],
-.product .cl-po--option[data-option="Location"]{
+.product .cl-po--option[data-option="Location"],
+.product .cl-po--option[data-option="Lettering Location"]{
     padding-top: 0px!important;
     padding-left: 0px!important;
     padding-right: 0px!important;
@@ -215,4 +216,9 @@
     height: 20px!important;
     position: relative;
     top: 5px;
+}
+
+.product .shopify-app-block .cl-po--wrapper .cl-po--options .cl-po--option[data-option="Lettering Location"] .cl-po--swatch-container .cl-po--swatch-item .cl-po--swatch {
+    width: 100% !important;
+    height: 100% !important;
 }
