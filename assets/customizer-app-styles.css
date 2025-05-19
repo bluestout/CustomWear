@@ -211,10 +211,7 @@
 }
 
 .cl-po--font-selector .choices__item .o--img {
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 20px!important;
     position: relative;
     top: 5px;
 }
