@@ -201,7 +201,7 @@
 [data-option="Screen Print - Customization Type"] label.cl-po--radio-item,
 [data-option="Customization Type"] label.cl-po--radio-item,
 [data-option="Additional Logo Position"] label.cl-po--checkbox-item,
-[data-option="Screen Print - Ink Color Method"] label.cl-po--checkbox-item{
+[data-option="Screen Print - Ink Color Method"] .cl-po--radio-item {
     border: 1px solid #ccc;
     padding: 5px 15px;
     display: flex!important;
