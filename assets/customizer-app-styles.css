@@ -215,6 +215,7 @@
     justify-content: center;
     align-items: center;
     transition: all .2s ease;
+    border-radius: 3px;
 }
 
 [data-option="Leather or Faux Leather"] .cl-po--radio-item:has(input[type="radio"]:checked),
