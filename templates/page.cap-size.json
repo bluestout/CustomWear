@@ -155,7 +155,7 @@
         "heading_size": "h1",
         "heading_alignment": "center",
         "text": "",
-        "layout": "none",
+        "layout": "row",
         "container_color_scheme": "",
         "color_scheme": "scheme-2",
         "padding_top": 36,
