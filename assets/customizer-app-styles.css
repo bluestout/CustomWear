@@ -174,7 +174,7 @@
 [data-option="Screen Print - Customization Type"] label.cl-po--radio-item input,
 [data-option="Customization Type"] label.cl-po--radio-item input,
 [data-option="Screen Print - Ink Color Method"] label.cl-po--radio-item input,
-[data-option="Additional Lettering Location"] label.cl-po--radio-item input,
+[data-option="Additional Lettering Location"] label.cl-po--checkbox-item input,
 [data-option="Additional Logo Position"] label.cl-po--checkbox-item input{
   visibility: hidden;
   width: 0px!important;
@@ -206,9 +206,9 @@
 [data-option="Leather or Faux Leather"] label.cl-po--radio-item,
 [data-option="Screen Print - Customization Type"] label.cl-po--radio-item,
 [data-option="Customization Type"] label.cl-po--radio-item,
-[data-option="Additional Logo Position"] label.cl-po--checkbox-item,
 [data-option="Screen Print - Ink Color Method"] .cl-po--radio-item,
-[data-option="Additional Lettering Location"] .cl-po--radio-item{
+[data-option="Additional Logo Position"] label.cl-po--checkbox-item,
+[data-option="Additional Lettering Location"] label.cl-po--checkbox-item{
     border: 1px solid #ccc;
     padding: 5px 15px;
     display: flex!important;
@@ -221,7 +221,7 @@
 [data-option="Screen Print - Customization Type"] .cl-po--radio-item:has(input[type="radio"]:checked),
 [data-option="Customization Type"] .cl-po--radio-item:has(input[type="radio"]:checked),
 [data-option="Screen Print - Ink Color Method"] .cl-po--radio-item:has(input[type="radio"]:checked),
-[data-option="Additional Lettering Location"] .cl-po--radio-item:has(input[type="radio"]:checked),
+[data-option="Additional Lettering Location"] .cl-po--radio-item:has(input[type="checkbox"]:checked),
 [data-option="Additional Logo Position"] .cl-po--checkbox-item:has(input[type="checkbox"]:checked){
     border-color: black;
 }
