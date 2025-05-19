@@ -130,7 +130,7 @@
       ],
       "name": "ES Size Chart",
       "settings": {
-        "tab_section": false,
+        "tab_section": true,
         "hide_section": false,
         "custom_id": "tabCapsSizeChart",
         "heading": "Caps Size Chart",
