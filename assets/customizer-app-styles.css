@@ -57,3 +57,6 @@
     border: none !important;
 }
 
+ .product .cl-po--option[data-option="Additional Logo Position"]{
+   padding-bottom: 0px!important;
+ }
