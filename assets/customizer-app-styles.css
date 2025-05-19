@@ -257,8 +257,8 @@
 }
 
 .cl-po--option[data-option="Additional instructions"] textarea {
-    background: #FAFAFA;
-    border-radius: 0px;
+    background: #FAFAFA!important;
+    border-radius: 0px!important;
 }
 
 .cl-po--option[data-option="Print Stitch - Fabric Color"],
