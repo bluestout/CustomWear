@@ -60,3 +60,7 @@
  .product .cl-po--option[data-option="Additional Logo Position"]{
    padding-bottom: 0px!important;
  }
+
+.product .cl-po--options {
+    border-bottom: 1px solid #CCC;
+}
