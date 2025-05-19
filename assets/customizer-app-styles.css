@@ -111,11 +111,11 @@
 
 .cl-po--option[data-option="Screen Print - Main Options"] {
     padding-bottom: 0px!important;
+    padding-top: 20px!important;
 }
 
 .cl-po--option[data-option="Screen Print - Customization Type"] {
     border-top: none!important;
-    padding-top: 0px!important;
 }
 
 .cl-po--option[data-option="Screen Print - Customization Type"] {
