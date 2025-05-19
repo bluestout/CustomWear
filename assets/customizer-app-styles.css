@@ -4,3 +4,7 @@
     padding-right: 0px!important;
     background: var(--gradient-background)!important;
 }
+
+.product .cl-po--option[data-option="Customization Method"] .choices__item,  {
+    padding-left: 10px!important;
+}
