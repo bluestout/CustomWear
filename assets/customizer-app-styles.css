@@ -155,7 +155,7 @@
     padding-top: 0px!important;
 }
 
-.cl-po--swatch[data-option="Flex Patch - Color Options"] .cl-po--swatch img{
+.cl-po--option[data-option="Flex Patch - Color Options"] .cl-po--swatch img{
   max-width:unset !important;
 }
 
