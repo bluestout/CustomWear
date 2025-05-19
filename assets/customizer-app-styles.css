@@ -144,6 +144,9 @@
     padding-top: 0px!important;
 }
 
+.cl-po--option textarea {
+    min-height: 120px!important;
+}
 
 
 
