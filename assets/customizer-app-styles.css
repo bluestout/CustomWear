@@ -165,7 +165,8 @@
   align-items: center!important;
 }
 
-[data-option="Leather or Faux Leather"] label.cl-po--radio-item input {
+[data-option="Leather or Faux Leather"] label.cl-po--radio-item input,
+[data-option="Screen Print - Customization Type"] label.cl-po--radio-item input{
   visibility: hidden;
   width: 0px!important;
   height: 0px!important;
@@ -173,17 +174,20 @@
   min-width: 0px!important;
 }
 
-.cl-po--option[data-option="Leather or Faux Leather"] {
+.cl-po--option[data-option="Leather or Faux Leather"],
+.cl-po--option[data-option="Screen Print - Customization Type"]{
     display: flex;
     flex-wrap: wrap;
     column-gap: 8px;
 }
 
-[data-option="Leather or Faux Leather"] .cl-po--label {
+[data-option="Leather or Faux Leather"] .cl-po--label,
+[data-option="Screen Print - Customization Type"] .cl-po--label{
     width: 100%;
 }
 
-[data-option="Leather or Faux Leather"] label.cl-po--radio-item {
+[data-option="Leather or Faux Leather"] label.cl-po--radio-item,
+[data-option="Screen Print - Customization Type"] label.cl-po--radio-item{
     border: 1px solid #ccc;
     padding: 5px 15px;
     display: flex!important;
@@ -191,7 +195,8 @@
     align-items: center;
 }
 
-[data-option="Leather or Faux Leather"] .cl-po--radio-item:has(input[type="radio"]:checked) {
+[data-option="Leather or Faux Leather"] .cl-po--radio-item:has(input[type="radio"]:checked),
+[data-option="Screen Print - Customization Type"] .cl-po--radio-item:has(input[type="radio"]:checked){
     border-color: black;
 }
 
