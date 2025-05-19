@@ -1,0 +1,6 @@
+.product .cl-po--option[data-option="Customization Method"] {
+    border: none!important;
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+    background: var(--gradient-background)!important;
+}
