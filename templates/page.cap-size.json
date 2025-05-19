@@ -154,6 +154,13 @@
             "text": "<p>A baseball cap profile refers to the structure or crown on the front of the cap above the brim. There are generally four types of baseball cap profiles:</p><ul><li>(A) Structured–Standard high pro-crown profile</li><li>(B) Mid crown profile</li><li>(C) Mid to Low crown profile</li><li>(D) Unstructured – Low crown profile</li><li>(E) Pro round - round upper panels</li></ul>"
           }
         },
+        "content_XiAWz3": {
+          "type": "content",
+          "settings": {
+            "heading": "Crown options",
+            "text": ""
+          }
+        },
         "image_with_text_XGdhJU": {
           "type": "image_with_text",
           "settings": {
@@ -370,6 +377,7 @@
       },
       "block_order": [
         "content_kbRhL9",
+        "content_XiAWz3",
         "image_with_text_XGdhJU",
         "image_with_text_hHdWDG",
         "image_with_text_DMLV8b",
