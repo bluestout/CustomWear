@@ -56,6 +56,9 @@
           class="product-variant-id"
         >
 
+        <input type="hidden" name="properties[SKU]" value="{{ product.selected_or_first_available_variant.sku }}">
+        <input type="hidden" name="properties[Brand]" value="{{ product.vendor }}">
+
         {%- if gift_card_recipient_feature_active -%}
           {%- render 'gift-card-recipient-form', product: product, form: form, section: section -%}
         {%- endif -%}
