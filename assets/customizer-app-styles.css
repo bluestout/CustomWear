@@ -78,3 +78,7 @@
     padding-top: 0px !important;
     padding-bottom: 0px !important;
 }
+
+.cl-po--option[data-option="Patches - Main options"] {
+    padding-top: 20px !important;
+}
