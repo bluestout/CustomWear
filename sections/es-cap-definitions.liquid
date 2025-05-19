@@ -23,7 +23,7 @@
         <h2 class="visually-hidden">{{ 'accessibility.collapsible_content_title' | t }}</h2>
       {% endif %}
 
-      <div class="font-p">
+      <div class="font-small">
         {{ section.settings.text }}
       </div>
 
@@ -33,8 +33,8 @@
             {%- when 'content' -%}
               <div class="size-chart__item">
                 <div class="size-chart__item-content">
-                  <h3 class="font-h3 is-border">{{ block.settings.heading }}</h3>
-                  <div class="font-p">{{ block.settings.text }}</div>
+                  <h3 class="font-h3 es-border-bottom">{{ block.settings.heading }}</h3>
+                  <div class="font-small size-chart__item-content-text">{{ block.settings.text }}</div>
                 </div>
               </div>
             {%- when 'image_with_text' -%}
