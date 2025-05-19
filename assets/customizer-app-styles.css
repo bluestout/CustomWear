@@ -121,6 +121,9 @@
     border: none!important;
 }
 
+.cl-po--option[data-option="Screen Print - Customization Type"] {
+    border-top: none!important;
+}
 
 
 
