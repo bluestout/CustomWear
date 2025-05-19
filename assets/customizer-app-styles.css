@@ -156,7 +156,7 @@
 }
 
 .cl-po--swatch img{
-  margin: 0px!important;
+  max-width:unset !important;
 }
 
 .cl-po--option .cl-po--swatch {
