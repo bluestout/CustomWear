@@ -158,3 +158,9 @@
 .cl-po--swatch img{
   margin: 0px!important;
 }
+
+.cl-po--option .cl-po--swatch {
+  display: flex!important;
+  justify-content: center!important;
+  align-items: center!important;
+}
