@@ -32,6 +32,7 @@
     padding-left: 0px!important;
     padding-right: 0px!important;
     border: none!important;
+    box-shadow: none!important;
 }
 
 .cl-po--option[data-option="Logo Location"] .cl-po--swatch-container {
