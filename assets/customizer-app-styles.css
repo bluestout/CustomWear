@@ -221,7 +221,7 @@
 [data-option="Screen Print - Customization Type"] .cl-po--radio-item:has(input[type="radio"]:checked),
 [data-option="Customization Type"] .cl-po--radio-item:has(input[type="radio"]:checked),
 [data-option="Screen Print - Ink Color Method"] .cl-po--radio-item:has(input[type="radio"]:checked),
-[data-option="Additional Lettering Location"] .cl-po--radio-item:has(input[type="checkbox"]:checked),
+[data-option="Additional Lettering Location"] .cl-po--checkbox-item:has(input[type="checkbox"]:checked),
 [data-option="Additional Logo Position"] .cl-po--checkbox-item:has(input[type="checkbox"]:checked){
     border-color: black;
 }
