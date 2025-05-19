@@ -8,3 +8,7 @@
 .product .cl-po--option[data-option="Customization Method"] .choices__item  {
     padding-left: 10px!important;
 }
+
+.product .cl-po--option[data-option="Customization Method"] .choices__list .choices__item  {
+    padding-left: 20px!important;
+}
