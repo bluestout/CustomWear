@@ -170,7 +170,7 @@
 [data-option="Leather or Faux Leather"] label.cl-po--radio-item input,
 [data-option="Screen Print - Customization Type"] label.cl-po--radio-item input,
 [data-option="Customization Type"] label.cl-po--radio-item input,
-[data-option="Additional Logo Position"] label.cl-po--radio-item input{
+[data-option="Additional Logo Position"] label.cl-po--checkbox-item input{
   visibility: hidden;
   width: 0px!important;
   height: 0px!important;
@@ -197,7 +197,7 @@
 [data-option="Leather or Faux Leather"] label.cl-po--radio-item,
 [data-option="Screen Print - Customization Type"] label.cl-po--radio-item,
 [data-option="Customization Type"] label.cl-po--radio-item,
-[data-option="Additional Logo Position"] label.cl-po--radio-item{
+[data-option="Additional Logo Position"] label.cl-po--checkbox-item{
     border: 1px solid #ccc;
     padding: 5px 15px;
     display: flex!important;
@@ -209,7 +209,7 @@
 [data-option="Leather or Faux Leather"] .cl-po--radio-item:has(input[type="radio"]:checked),
 [data-option="Screen Print - Customization Type"] .cl-po--radio-item:has(input[type="radio"]:checked),
 [data-option="Customization Type"] .cl-po--radio-item:has(input[type="radio"]:checked),
-[data-option="Additional Logo Position"] .cl-po--radio-item:has(input[type="checkbox"]:checked){
+[data-option="Additional Logo Position"] .cl-po--checkbox-item:has(input[type="checkbox"]:checked){
     border-color: black;
 }
 
