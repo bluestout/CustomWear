@@ -71,7 +71,7 @@
           "type": "button",
           "settings": {
             "text": "Cap Definitions",
-            "target": ""
+            "target": "#tabCapDefinitions"
           }
         }
       },
@@ -143,12 +143,31 @@
         "padding_top": 52,
         "padding_bottom": 52
       }
+    },
+    "es_cap_definitions_Ww3Hba": {
+      "type": "es-cap-definitions",
+      "name": "ES Cap Definitions",
+      "settings": {
+        "tab_section": false,
+        "hide_section": false,
+        "custom_id": "tabCapDefinitions",
+        "heading": "Cap Definitions",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "text": "",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "scheme-2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "es_image_banner_BNEHrk",
     "es_tab_buttons_pGgW6r",
-    "es_cap_size_chart_WQNGYc"
+    "es_cap_size_chart_WQNGYc",
+    "es_cap_definitions_Ww3Hba"
   ]
 }
