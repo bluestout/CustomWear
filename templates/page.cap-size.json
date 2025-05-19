@@ -392,8 +392,8 @@
       ],
       "name": "ES Cap Definitions",
       "settings": {
-        "tab_section": false,
-        "hide_section": false,
+        "tab_section": true,
+        "hide_section": true,
         "custom_id": "tabCapDefinitions",
         "heading": "Cap Definitions",
         "heading_size": "h1",
