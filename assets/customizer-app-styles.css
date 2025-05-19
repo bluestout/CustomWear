@@ -33,3 +33,16 @@
     padding-right: 0px!important;
     border: none!important;
 }
+
+.cl-po--option[data-option="Logo Location"] .cl-po--swatch-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.cl-po--option[data-option="Logo Location"] .cl-po--swatch.cl-po--large {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: none;
+}
