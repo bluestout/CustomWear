@@ -148,7 +148,15 @@
     min-height: 120px!important;
 }
 
+.cl-po--upload .cl-po--upload-wrap {
+    width: 100%!important;
+    justify-content: center;
+    align-items: center;
+}
 
-
+.cl-po--upload-wrap .cl-po--input {
+    width: 100%;
+    text-align: center!important;
+}
 
 
