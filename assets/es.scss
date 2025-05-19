@@ -3755,9 +3755,21 @@ cart-items {
 
     .size-chart__item {
       &.size-chart__item--image-with-text {
-        display: flex;
-        align-items: center;
-        gap: 20px;
+        .size-chart__item-content {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+
+          .size-chart__item-image {
+            min-width: 110px;
+            width: 110px;
+
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
       }
 
       .font-h3 {
