@@ -268,6 +268,104 @@
             "padding_top": 0,
             "padding_bottom": 0
           }
+        },
+        "image_with_text_WVB4UJ": {
+          "type": "image_with_text",
+          "settings": {
+            "heading": "",
+            "description": "",
+            "image": "shopify://shop_images/1566316851-caps-good_1_4.png",
+            "left_text": "",
+            "text": "<p>Tuck strap with buckle or snap buckle</p>",
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
+        },
+        "image_with_text_WDyGap": {
+          "type": "image_with_text",
+          "settings": {
+            "heading": "",
+            "description": "",
+            "image": "shopify://shop_images/1566316851-caps-good_1_7.png",
+            "left_text": "",
+            "text": "<p>D-Fit®</p>",
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
+        },
+        "image_with_text_hPYbW8": {
+          "type": "image_with_text",
+          "settings": {
+            "heading": "",
+            "description": "",
+            "image": "shopify://shop_images/1566316851-caps-good_1_6.png",
+            "left_text": "",
+            "text": "<p>Nylon strap with plastic buckle</p>",
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
+        },
+        "content_L9gwdC": {
+          "type": "content",
+          "settings": {
+            "heading": "Fitted caps are not adjustable",
+            "text": "<p>Fitted caps are not adjustable, since they are fitted to head sizes, and therefore do not have closure types, the back of a fitted cap is closed.</p>"
+          }
+        },
+        "image_with_text_yc9r6L": {
+          "type": "image_with_text",
+          "settings": {
+            "heading": "",
+            "description": "",
+            "left_text": "Panels:",
+            "text": "<p>Panels are different pieces of fabric that make up the top of the cap, there are usually five or six panels in a baseball cap.</p>",
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
+        },
+        "image_with_text_xxqzDq": {
+          "type": "image_with_text",
+          "settings": {
+            "heading": "",
+            "description": "",
+            "left_text": "Fabric Material:",
+            "text": "<p>Baseball caps are generally made of cotton, cotton blends, jersey mesh, wool, acrylic/wool blends, and moisture wicking fabric.</p>",
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
+        },
+        "image_with_text_kFwBGP": {
+          "type": "image_with_text",
+          "settings": {
+            "heading": "",
+            "description": "",
+            "left_text": "Brim:",
+            "text": "<p>Also known as bill or visor. The brim of the cap is the piece that protects your face from the sun. It is usually made of plastic which is sewn inside the fabric.</p>",
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
+        },
+        "image_with_text_PPAJhM": {
+          "type": "image_with_text",
+          "settings": {
+            "heading": "",
+            "description": "",
+            "left_text": "Eyelets:",
+            "text": "<p>Eyelets are small holes at the top of the cap that allow your head to breathe. They can either be metal or reinforced stitching.</p>",
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
+        },
+        "image_with_text_NP9Afj": {
+          "type": "image_with_text",
+          "settings": {
+            "heading": "",
+            "description": "",
+            "left_text": "Buckram:",
+            "text": "<p>The buckram of a baseball cap is the mesh liner inside of the front of the cap that provides the structure and form. Structured caps have buckram and unstructured caps have no buckram, giving them the more casual, lower profile.</p>",
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
         }
       },
       "block_order": [
@@ -281,7 +379,16 @@
         "image_with_text_JUHi4T",
         "image_with_text_JeGrBH",
         "image_with_text_m3A6fx",
-        "image_with_text_JXKrVa"
+        "image_with_text_JXKrVa",
+        "image_with_text_WVB4UJ",
+        "image_with_text_WDyGap",
+        "image_with_text_hPYbW8",
+        "content_L9gwdC",
+        "image_with_text_yc9r6L",
+        "image_with_text_xxqzDq",
+        "image_with_text_kFwBGP",
+        "image_with_text_PPAJhM",
+        "image_with_text_NP9Afj"
       ],
       "name": "ES Cap Definitions",
       "settings": {
