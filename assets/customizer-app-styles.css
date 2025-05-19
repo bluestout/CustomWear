@@ -46,7 +46,8 @@
 }
 
 .product .cl-po--option[data-option="Logo Location"] .cl-po--swatch.cl-po--large,
-.product .cl-po--option[data-option="Location"] .cl-po--swatch.cl-po--large{
+.product .cl-po--option[data-option="Location"] .cl-po--swatch.cl-po--large,
+.product .cl-po--option[data-option="Lettering Location"] .cl-po--swatch.cl-po--large{
     width: 100%;
     height: 100%;
     padding: 10px;
