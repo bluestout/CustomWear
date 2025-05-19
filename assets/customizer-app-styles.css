@@ -51,6 +51,9 @@
     height: 100%;
     padding: 10px;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .product .cl-po--option[data-option="Custom Logo"],
