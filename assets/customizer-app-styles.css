@@ -93,7 +93,8 @@
     padding-bottom: 0px ! Important;
 }
 
-.cl-po--option[data-option="Patches  - Child - Embroidered"] {
-    padding-left: 0px!important;
-    padding-right: 0px!important;
+.cl-po--option[data-option="Patches - Child - Embroidered"] {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    border: none !important;
 }
