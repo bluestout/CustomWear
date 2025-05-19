@@ -170,7 +170,7 @@
 [data-option="Leather or Faux Leather"] label.cl-po--radio-item input,
 [data-option="Screen Print - Customization Type"] label.cl-po--radio-item input,
 [data-option="Customization Type"] label.cl-po--radio-item input,
-[data-option="Screen Print - Ink Color Method"]label.cl-po--radio-item input,
+[data-option="Screen Print - Ink Color Method"] label.cl-po--radio-item input,
 [data-option="Additional Logo Position"] label.cl-po--checkbox-item input{
   visibility: hidden;
   width: 0px!important;
