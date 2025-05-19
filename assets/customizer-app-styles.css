@@ -28,7 +28,8 @@
     border: none!important;
 }
 
-.product .cl-po--option[data-option="Logo Location"] {
+.product .cl-po--option[data-option="Logo Location"],
+.product .cl-po--option[data-option="Location"]{
     padding-top: 0px!important;
     padding-left: 0px!important;
     padding-right: 0px!important;
