@@ -38,7 +38,7 @@
 }
 
 .product .cl-po--option[data-option="Logo Location"] .cl-po--swatch-container,
-.product .cl-po--option[data-option="Location"] .cl-po--swatch-container,{
+.product .cl-po--option[data-option="Location"] .cl-po--swatch-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
