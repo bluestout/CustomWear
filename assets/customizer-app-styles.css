@@ -191,6 +191,7 @@
     align-items: center;
 }
 
-[data-option="Leather or Faux Leather"] .cl-po--input:checked ~ .cl-po--radio-item {
+[data-option="Leather or Faux Leather"] .cl-po--radio-item:has(input[type="radio"]:checked) {
     border-color: black;
 }
+
