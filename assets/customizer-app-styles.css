@@ -139,6 +139,11 @@
     border: none!important;
 }
 
+.cl-po--option[data-option="Lettering - Logo Location"] {
+    border-top: none!important;
+    padding-top: 0px!important;
+}
+
 
 
 
