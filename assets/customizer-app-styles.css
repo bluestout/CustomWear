@@ -164,3 +164,33 @@
   justify-content: center!important;
   align-items: center!important;
 }
+
+label.cl-po--radio-item input {
+  visibility: hidden;
+  width: 0px!important;
+  height: 0px!important;
+  margin: 0px!important;
+  min-width: 0px!important;
+}
+
+.cl-po--option[data-option="Leather or Faux Leather"] {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 8px;
+}
+
+[data-option="Leather or Faux Leather"] .cl-po--label {
+    width: 100%;
+}
+
+label.cl-po--radio-item {
+    border: 1px solid #ccc;
+    padding: 5px 15px;
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+}
+
+.cl-po--input:checked ~ .cl-po--radio-item {
+    border-color: black;
+}
