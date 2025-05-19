@@ -146,6 +146,143 @@
     },
     "es_cap_definitions_Ww3Hba": {
       "type": "es-cap-definitions",
+      "blocks": {
+        "content_kbRhL9": {
+          "type": "content",
+          "settings": {
+            "heading": "Profile or Crown",
+            "text": "<p>A baseball cap profile refers to the structure or crown on the front of the cap above the brim. There are generally four types of baseball cap profiles:</p><ul><li>(A) Structured–Standard high pro-crown profile</li><li>(B) Mid crown profile</li><li>(C) Mid to Low crown profile</li><li>(D) Unstructured – Low crown profile</li><li>(E) Pro round - round upper panels</li></ul>"
+          }
+        },
+        "image_with_text_XGdhJU": {
+          "type": "image_with_text",
+          "settings": {
+            "heading": "Crown options",
+            "description": "",
+            "image": "shopify://shop_images/1566253557-cap1_1.png",
+            "left_text": "",
+            "text": "<h4>PRO HIGH (A)</h4><p>It has a structured, steep profile and is typically featured with a flat visor.</p>",
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
+        },
+        "image_with_text_hHdWDG": {
+          "type": "image_with_text",
+          "settings": {
+            "heading": "",
+            "description": "",
+            "image": "shopify://shop_images/1566253810-cap4_1.png",
+            "left_text": "",
+            "text": "<h4>PRO MID (B)</h4><p>Often thought of as the traditional baseball cap, it is usually structured, but has a slightly lower profile.</p>",
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
+        },
+        "image_with_text_DMLV8b": {
+          "type": "image_with_text",
+          "settings": {
+            "heading": "",
+            "description": "",
+            "image": "shopify://shop_images/1566253729-cap3_1.png",
+            "left_text": "",
+            "text": "<h4>MID TO LOW (C)</h4><p>It is slightly less slanted and shallower than the Pro Mid but can be structured or unstructured.</p>",
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
+        },
+        "image_with_text_3DGK9H": {
+          "type": "image_with_text",
+          "settings": {
+            "heading": "",
+            "description": "",
+            "image": "shopify://shop_images/1566253810-cap4_1.png",
+            "left_text": "",
+            "text": "<h4>LOW (D)</h4><p>It is either unstructured or lightly structured to lie closely to the head and is paired with a pre-curved visor.</p>",
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
+        },
+        "image_with_text_ywJpAM": {
+          "type": "image_with_text",
+          "settings": {
+            "heading": "",
+            "description": "",
+            "image": "shopify://shop_images/1566253865-screen-shot-2019-08-19-at-3.30.45-pm_1.png",
+            "left_text": "",
+            "text": "<h4>PRO ROUND (E)</h4><p>It has premium dual-tone buckram and rounded upper panels that contour to rest securely on your head. It is featured with a slight pre-curved visor.</p>",
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
+        },
+        "content_ccJ48Y": {
+          "type": "content",
+          "settings": {
+            "heading": "Closure type - For adjustable caps",
+            "text": "<p>Adjustable baseball caps have closures on the back of the caps that allow you to adjust the size.</p>"
+          }
+        },
+        "image_with_text_JUHi4T": {
+          "type": "image_with_text",
+          "settings": {
+            "heading": "",
+            "description": "",
+            "image": "shopify://shop_images/1566316851-caps-good_1.png",
+            "left_text": "",
+            "text": "<p>Plastic snap</p>",
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
+        },
+        "image_with_text_JeGrBH": {
+          "type": "image_with_text",
+          "settings": {
+            "heading": "",
+            "description": "",
+            "image": "shopify://shop_images/1566316851-caps-good_1_1.png",
+            "left_text": "",
+            "text": "<p>Double plastic snap</p>",
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
+        },
+        "image_with_text_m3A6fx": {
+          "type": "image_with_text",
+          "settings": {
+            "heading": "",
+            "description": "",
+            "image": "shopify://shop_images/1566316851-caps-good_1_2.png",
+            "left_text": "",
+            "text": "<p>Hook/Loop tape</p>",
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
+        },
+        "image_with_text_JXKrVa": {
+          "type": "image_with_text",
+          "settings": {
+            "heading": "",
+            "description": "",
+            "image": "shopify://shop_images/1566316851-caps-good_1_3.png",
+            "left_text": "",
+            "text": "<p>Tuck strap with slide</p>",
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "content_kbRhL9",
+        "image_with_text_XGdhJU",
+        "image_with_text_hHdWDG",
+        "image_with_text_DMLV8b",
+        "image_with_text_3DGK9H",
+        "image_with_text_ywJpAM",
+        "content_ccJ48Y",
+        "image_with_text_JUHi4T",
+        "image_with_text_JeGrBH",
+        "image_with_text_m3A6fx",
+        "image_with_text_JXKrVa"
+      ],
       "name": "ES Cap Definitions",
       "settings": {
         "tab_section": false,
