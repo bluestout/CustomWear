@@ -183,7 +183,7 @@ label.cl-po--radio-item input {
     width: 100%;
 }
 
-label.cl-po--radio-item {
+[data-option="Leather or Faux Leather"] label.cl-po--radio-item {
     border: 1px solid #ccc;
     padding: 5px 15px;
     display: flex!important;
@@ -191,6 +191,6 @@ label.cl-po--radio-item {
     align-items: center;
 }
 
-.cl-po--input:checked ~ .cl-po--radio-item {
+[data-option="Leather or Faux Leather"] .cl-po--input:checked ~ .cl-po--radio-item {
     border-color: black;
 }
