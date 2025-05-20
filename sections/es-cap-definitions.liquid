@@ -37,22 +37,25 @@
                   <div class="font-small size-chart__item-content-text">{{ block.settings.text }}</div>
                 </div>
               </div>
+
             {%- when 'image_with_text' -%}
               <div class="size-chart__item size-chart__item--image-with-text">
-                {%- if block.settings.heading != blank -%}
-
-                {%- endif -%}
-                {%- if block.settings.image != blank -%}
-                  <div class="size-chart__item-content">
-                    <div class="size-chart__item-image">
+                <div class="size-chart__item-content{% if block.settings.sm_column %} sm-column{% endif %}">
+                  <div class="size-chart__item-image">
+                    {%- if block.settings.image != blank -%}
                       {{ block.settings.image | image_url: width: 720 | image_tag: class: 'size-chart__item-image' }}
-                    </div>
-                    <div class="size-chart__item-text">
-                      {{ block.settings.text }}
-                    </div>
+                    {%- elsif block.settings.left_text != blank %}
+                      <div>{{ block.settings.left_text }}</div>
+                    {%- endif -%}
                   </div>
-                {%- endif -%}
+                  <div class="size-chart__item-text">
+                    {{ block.settings.text }}
+                  </div>
+                </div>
               </div>
+
+            {%- when 'space' -%}
+              <div class="size-chart__item size-chart__item-spacer"></div>
           {%- endcase -%}
         {%- endfor -%}
       </div>
@@ -230,6 +233,12 @@
       "name": "Image with text",
       "settings": [
         {
+          "type": "checkbox",
+          "id": "sm_column",
+          "label": "Mobile Grid Column",
+          "default": false
+        },
+        {
           "type": "inline_richtext",
           "id": "heading",
           "label": "Heading"
@@ -276,6 +285,10 @@
           "step": 1
         }
       ]
+    },
+    {
+      "type": "space",
+      "name": "Space"
     }
   ],
   "presets": [

@@ -3696,6 +3696,12 @@ cart-items {
               height: auto;
             }
           }
+
+          &.sm-column {
+            @media (max-width: 768px) {
+              flex-direction: column;
+            }
+          }
         }
 
         &.size-chart__item--image-with-text {
@@ -3769,11 +3775,22 @@ cart-items {
           .size-chart__item-image {
             min-width: 110px;
             width: 110px;
+            align-self: flex-start;
 
             img {
               width: 100%;
               height: auto;
               display: block;
+            }
+
+            div {
+              color: #990000;
+              font-size: 15px;
+              font-family: "Inter", sans-serif;
+              font-weight: 700;
+              line-height: 25.50px;
+              min-width: 124px;
+              text-align: right;
             }
           }
 
@@ -3806,6 +3823,11 @@ cart-items {
         }
       }
     }
+  }
+
+  .size-chart__item-spacer {
+    margin: 20px 0;
+    display: block;
   }
 }
 
