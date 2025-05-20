@@ -3826,8 +3826,12 @@ cart-items {
   }
 
   .size-chart__item-spacer {
-    margin: 20px 0;
+    padding: 10px 0;
     display: block;
+
+    @media (max-width: 750px) {
+      padding: 5px 0;
+    }
   }
 }
 
