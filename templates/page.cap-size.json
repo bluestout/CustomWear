@@ -346,7 +346,7 @@
         "image_with_text_yc9r6L": {
           "type": "image_with_text",
           "settings": {
-            "sm_column": false,
+            "sm_column": true,
             "heading": "",
             "description": "",
             "left_text": "Panels:",
@@ -358,7 +358,7 @@
         "image_with_text_xxqzDq": {
           "type": "image_with_text",
           "settings": {
-            "sm_column": false,
+            "sm_column": true,
             "heading": "",
             "description": "",
             "left_text": "Fabric Material:",
@@ -370,7 +370,7 @@
         "image_with_text_kFwBGP": {
           "type": "image_with_text",
           "settings": {
-            "sm_column": false,
+            "sm_column": true,
             "heading": "",
             "description": "",
             "left_text": "Brim:",
@@ -382,7 +382,7 @@
         "image_with_text_PPAJhM": {
           "type": "image_with_text",
           "settings": {
-            "sm_column": false,
+            "sm_column": true,
             "heading": "",
             "description": "",
             "left_text": "Eyelets:",
@@ -394,7 +394,7 @@
         "image_with_text_NP9Afj": {
           "type": "image_with_text",
           "settings": {
-            "sm_column": false,
+            "sm_column": true,
             "heading": "",
             "description": "",
             "left_text": "Buckram:",
