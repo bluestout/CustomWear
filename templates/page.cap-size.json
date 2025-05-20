@@ -154,6 +154,10 @@
             "text": "<p>A baseball cap profile refers to the structure or crown on the front of the cap above the brim. There are generally four types of baseball cap profiles:</p><ul><li>(A) Structured–Standard high pro-crown profile</li><li>(B) Mid crown profile</li><li>(C) Mid to Low crown profile</li><li>(D) Unstructured – Low crown profile</li><li>(E) Pro round - round upper panels</li></ul>"
           }
         },
+        "space_MN8Byz": {
+          "type": "space",
+          "settings": {}
+        },
         "content_XiAWz3": {
           "type": "content",
           "settings": {
@@ -164,6 +168,7 @@
         "image_with_text_XGdhJU": {
           "type": "image_with_text",
           "settings": {
+            "sm_column": false,
             "heading": "Crown options",
             "description": "",
             "image": "shopify://shop_images/1566253557-cap1_1.png",
@@ -176,6 +181,7 @@
         "image_with_text_hHdWDG": {
           "type": "image_with_text",
           "settings": {
+            "sm_column": false,
             "heading": "",
             "description": "",
             "image": "shopify://shop_images/1566253810-cap4_1.png",
@@ -188,6 +194,7 @@
         "image_with_text_DMLV8b": {
           "type": "image_with_text",
           "settings": {
+            "sm_column": false,
             "heading": "",
             "description": "",
             "image": "shopify://shop_images/1566253729-cap3_1.png",
@@ -200,6 +207,7 @@
         "image_with_text_3DGK9H": {
           "type": "image_with_text",
           "settings": {
+            "sm_column": false,
             "heading": "",
             "description": "",
             "image": "shopify://shop_images/1566253810-cap4_1.png",
@@ -212,6 +220,7 @@
         "image_with_text_ywJpAM": {
           "type": "image_with_text",
           "settings": {
+            "sm_column": false,
             "heading": "",
             "description": "",
             "image": "shopify://shop_images/1566253865-screen-shot-2019-08-19-at-3.30.45-pm_1.png",
@@ -220,6 +229,10 @@
             "padding_top": 0,
             "padding_bottom": 0
           }
+        },
+        "space_Jhy3br": {
+          "type": "space",
+          "settings": {}
         },
         "content_ccJ48Y": {
           "type": "content",
@@ -231,6 +244,7 @@
         "image_with_text_JUHi4T": {
           "type": "image_with_text",
           "settings": {
+            "sm_column": false,
             "heading": "",
             "description": "",
             "image": "shopify://shop_images/1566316851-caps-good_1.png",
@@ -243,6 +257,7 @@
         "image_with_text_JeGrBH": {
           "type": "image_with_text",
           "settings": {
+            "sm_column": false,
             "heading": "",
             "description": "",
             "image": "shopify://shop_images/1566316851-caps-good_1_1.png",
@@ -255,6 +270,7 @@
         "image_with_text_m3A6fx": {
           "type": "image_with_text",
           "settings": {
+            "sm_column": false,
             "heading": "",
             "description": "",
             "image": "shopify://shop_images/1566316851-caps-good_1_2.png",
@@ -267,6 +283,7 @@
         "image_with_text_JXKrVa": {
           "type": "image_with_text",
           "settings": {
+            "sm_column": false,
             "heading": "",
             "description": "",
             "image": "shopify://shop_images/1566316851-caps-good_1_3.png",
@@ -279,6 +296,7 @@
         "image_with_text_WVB4UJ": {
           "type": "image_with_text",
           "settings": {
+            "sm_column": false,
             "heading": "",
             "description": "",
             "image": "shopify://shop_images/1566316851-caps-good_1_4.png",
@@ -291,6 +309,7 @@
         "image_with_text_WDyGap": {
           "type": "image_with_text",
           "settings": {
+            "sm_column": false,
             "heading": "",
             "description": "",
             "image": "shopify://shop_images/1566316851-caps-good_1_7.png",
@@ -303,6 +322,7 @@
         "image_with_text_hPYbW8": {
           "type": "image_with_text",
           "settings": {
+            "sm_column": false,
             "heading": "",
             "description": "",
             "image": "shopify://shop_images/1566316851-caps-good_1_6.png",
@@ -311,6 +331,10 @@
             "padding_top": 0,
             "padding_bottom": 0
           }
+        },
+        "space_qVyg4J": {
+          "type": "space",
+          "settings": {}
         },
         "content_L9gwdC": {
           "type": "content",
@@ -322,6 +346,7 @@
         "image_with_text_yc9r6L": {
           "type": "image_with_text",
           "settings": {
+            "sm_column": false,
             "heading": "",
             "description": "",
             "left_text": "Panels:",
@@ -333,6 +358,7 @@
         "image_with_text_xxqzDq": {
           "type": "image_with_text",
           "settings": {
+            "sm_column": false,
             "heading": "",
             "description": "",
             "left_text": "Fabric Material:",
@@ -344,6 +370,7 @@
         "image_with_text_kFwBGP": {
           "type": "image_with_text",
           "settings": {
+            "sm_column": false,
             "heading": "",
             "description": "",
             "left_text": "Brim:",
@@ -355,6 +382,7 @@
         "image_with_text_PPAJhM": {
           "type": "image_with_text",
           "settings": {
+            "sm_column": false,
             "heading": "",
             "description": "",
             "left_text": "Eyelets:",
@@ -366,6 +394,7 @@
         "image_with_text_NP9Afj": {
           "type": "image_with_text",
           "settings": {
+            "sm_column": false,
             "heading": "",
             "description": "",
             "left_text": "Buckram:",
@@ -377,12 +406,14 @@
       },
       "block_order": [
         "content_kbRhL9",
+        "space_MN8Byz",
         "content_XiAWz3",
         "image_with_text_XGdhJU",
         "image_with_text_hHdWDG",
         "image_with_text_DMLV8b",
         "image_with_text_3DGK9H",
         "image_with_text_ywJpAM",
+        "space_Jhy3br",
         "content_ccJ48Y",
         "image_with_text_JUHi4T",
         "image_with_text_JeGrBH",
@@ -391,6 +422,7 @@
         "image_with_text_WVB4UJ",
         "image_with_text_WDyGap",
         "image_with_text_hPYbW8",
+        "space_qVyg4J",
         "content_L9gwdC",
         "image_with_text_yc9r6L",
         "image_with_text_xxqzDq",
