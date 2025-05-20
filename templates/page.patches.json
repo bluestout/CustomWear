@@ -266,6 +266,7 @@
         },
         "card_zqUnnX": {
           "type": "card",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/2_6.png",
             "title": "FLEX Premium 3D Embellishment",
@@ -282,6 +283,7 @@
         },
         "card_TUxNME": {
           "type": "card",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/2_6.png",
             "title": "FLEX Flat (Shiny 3D finish with a flatter appearance)",
