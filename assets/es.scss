@@ -3684,6 +3684,10 @@ cart-items {
                   right: 0;
                   transform: translateY(-50%);
                 }
+
+                &.is-active::after {
+                  transform: translateY(-50%) rotate(45deg);
+                }
               }
             }
           }
