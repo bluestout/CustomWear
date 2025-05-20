@@ -3794,6 +3794,19 @@ cart-items {
             }
           }
 
+          @media (max-width: 750px) {
+            &.sm-column {
+              flex-direction: column;
+              gap: 10px;
+  
+              .size-chart__item-image {
+                div {
+                  text-align: left;
+                }
+              }
+            }
+          }
+
           .size-chart__item-text {
             color: black;
             font-size: 15px;
