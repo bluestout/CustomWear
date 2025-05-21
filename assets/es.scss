@@ -77,6 +77,22 @@
   }
 }
 
+.font-p {
+  color: black;
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.font-small {
+  color: black;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 25.50px;
+}
+
 .font-h3 {
   color: black;
   font-size: 20px;
@@ -149,6 +165,25 @@
       height: 100%;
       display: block;
     }
+  }
+}
+
+.cart__ctas button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 10px;
+    background: url('https://cdn.shopify.com/s/files/1/0728/5784/6001/files/Union_61538aff-f613-4aba-a6c6-73aad9428699.svg?v=1747305965') no-repeat center center;
+    background-size: contain;
+    border: 0;
+    box-shadow: unset;
+    position: static;
   }
 }
 
@@ -1426,10 +1461,11 @@
 
       .cart-count-bubble {
         position: absolute;
-        right: -8px;
+        right: -5px;
         min-width: 1.7rem;
         width: auto;
         padding: 0 2px;
+        bottom: 1.6rem;
       }
     }
   }
@@ -2891,6 +2927,7 @@ body {
         font-weight: 400;
         line-height: 25.50px;
         margin-bottom: 30px;
+        padding-top: 14px;
 
         p {
           margin: 0;
@@ -3418,4 +3455,414 @@ body {
       }
     }
   }
+}
+
+.template-404 {
+  .title {
+    color: black;
+    font-size: 100px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    line-height: 130px;
+    margin-top: 0;
+
+    @media (max-width: 750px) {
+      font-size: 60px;
+      line-height: 60px;
+    }
+  }
+
+  .description {
+    color: black;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+    max-width: 700px;
+    margin: 0 auto 50px;
+
+    @media (max-width: 750px) {
+      margin-bottom: 35px;
+    }
+
+    p {
+      margin: 0;
+
+      @media (max-width: 750px) {
+        display: inline;
+      }
+    }
+  }
+
+  .button--group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 750px) {
+      flex-direction: column;
+    }
+
+    a {
+      max-width: max-content;
+      padding: 15px;
+      background-color: #FAFAFA;
+
+      @media (min-width: 751px) {
+        padding: 30px;
+
+        & + a {
+          border-left: 1px solid #CCC;
+        }  
+      }
+    }
+  }
+}
+
+.wishlist-hero-items-count {
+  display: none !important;
+}
+
+.product-option {
+  color: #545454;
+  font-size: 13px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 19.50px;
+
+  dt {
+    font-weight: 600;
+  }
+}
+
+cart-items {
+  .cart-item__price-wrapper {
+    * {
+      color: black;
+      font-size: 15px !important;
+      font-family: "Inter", sans-serif;
+      font-weight: 600 !important;
+      line-height: 25.50px !important;
+    }
+  }
+
+  .cart-quantity {
+    .quantity__button {
+      svg {
+        filter: grayscale(1);
+      }
+    }
+  }
+}
+
+.es-size-chart {
+  .page-width--small {
+    max-width: 1000px;
+
+    .font-p {
+      max-width: 750px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 10px 0 24px;
+  
+      p {
+        margin: 0;
+      }
+    }
+  
+    .size-chart {
+      .size-chart__item {
+        & + div {
+          margin-top: 10px;
+        }
+
+        @media (max-width: 750px) {
+          &.collapsable-item {
+            border: 1px solid #CCC;
+
+            .size-chart__item-content {
+              padding-top: 10px;
+              padding-bottom: 0;
+
+              table {
+                border-bottom: 1px solid #CCC;
+
+                tbody {
+                  display: none;
+                }
+
+                &:last-child {
+                  border-bottom: 0;
+
+                  caption {
+                    border-bottom: 0;
+                  }
+                }
+
+                caption.is-active {
+                  border-bottom: 1px solid #CCC;
+
+                  & + tbody {
+                    display: table-row-group;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .size-chart__item-content {
+          padding: 20px;
+          background-color: #FFF;
+  
+          table {
+            box-shadow: unset;
+            color: black;
+            font-size: 15px;
+            font-family: "Inter", sans-serif;
+            font-weight: 400;
+            line-height: 25.50px;
+            text-align: center;
+            width: 100%;
+
+            tr {
+              th,
+              td:nth-child(1) {
+                text-align: right;
+                width: 250px !important;
+
+                @media (max-width: 750px) {
+                  width: 205px !important;
+                  font-weight: 600;
+                }
+              }
+
+              td:nth-child(n + 2) {
+                @media (min-width: 751px) {
+                  width: 15% !important;
+                }
+              }
+
+              @media (min-width: 751px) {
+                &:nth-child(3) {
+                  td:nth-child(n + 2) {
+                    background-color: #FAFAFA;
+                  }
+                }
+              }
+
+              td {
+                @media (max-width: 750px) {
+                  padding: 10px 4px;
+                }
+              }
+            }
+
+            caption {
+              @media (max-width: 750px) {
+                color: black;
+                font-size: 15px;
+                font-family: "Inter", sans-serif;
+                font-weight: 600;
+                line-height: 25.50px;
+                text-align: left;
+                position: relative;
+                padding: 12px 0;
+                border-bottom: 1px solid #CCC;
+
+                &::after {
+                  content: '';
+                  background-image: url('https://cdn.shopify.com/s/files/1/0728/5784/6001/files/Union_1.svg?v=1747604099');
+                  background-size: contain;
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  width: 15px;
+                  height: 15px;
+                  display: block;
+                  position: absolute;
+                  top: 50%;
+                  right: 0;
+                  transform: translateY(-50%);
+                }
+
+                &.is-active::after {
+                  transform: translateY(-50%) rotate(45deg);
+                }
+              }
+            }
+          }
+
+          .size-chart__item-image {
+            max-width: 170px;
+
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+
+          &.sm-column {
+            @media (max-width: 768px) {
+              flex-direction: column;
+            }
+          }
+        }
+
+        &.size-chart__item--image-with-text {
+          .size-chart__item-content {
+            display: flex;
+            gap: 20px;
+
+            @media (max-width: 750px) {
+              flex-direction: column;
+            }
+
+            .size-chart__item-image {
+              min-width: 170px;
+
+              @media (max-width: 750px) {
+                max-width: 100%;
+              }
+            }
+
+            .size-chart__item-text {
+              color: black;
+              font-size: 15px;
+              font-family: "Inter", sans-serif;
+              font-weight: 400;
+              line-height: 25.50px;
+
+              p {
+                margin: 0;
+
+                &:empty {
+                  display: block;
+                  margin: 20px 0;
+                }
+              }
+
+              a {
+                color: #990000;
+                font-weight: 600;
+                text-decoration: unset;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.es-cap-definitions {
+  .es-font-h2 {
+    margin-bottom: 30px;
+  }
+
+  .size-chart {
+    background-color: #FFF;
+    padding: 20px;
+
+    .size-chart__item {
+      p,
+      ul,
+      h1, h2, h3, h4, h5, h6 {
+        margin: 0;
+      }
+
+      &.size-chart__item--image-with-text {
+        .size-chart__item-content {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+
+          .size-chart__item-image {
+            min-width: 110px;
+            width: 110px;
+            align-self: flex-start;
+
+            img {
+              width: 100%;
+              height: auto;
+              display: block;
+            }
+
+            div {
+              color: #990000;
+              font-size: 15px;
+              font-family: "Inter", sans-serif;
+              font-weight: 700;
+              line-height: 25.50px;
+              min-width: 124px;
+              text-align: right;
+            }
+          }
+
+          @media (max-width: 750px) {
+            &.sm-column {
+              flex-direction: column;
+              gap: 10px;
+  
+              .size-chart__item-image {
+                div {
+                  text-align: left;
+                }
+              }
+            }
+          }
+
+          .size-chart__item-text {
+            color: black;
+            font-size: 15px;
+            font-family: "Inter", sans-serif;
+            font-weight: 400;
+            line-height: 25.50px;
+
+            h4 {
+              color: #990000;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+
+      & + div {
+        margin-top: 20px;
+      }
+
+      .font-h3 {
+        margin-bottom: 20px;
+      }
+
+      .size-chart__item-content-text {
+        & > * + * {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+
+  .size-chart__item-spacer {
+    padding: 10px 0;
+    display: block;
+
+    @media (max-width: 750px) {
+      padding: 5px 0;
+    }
+  }
+}
+
+.es-border-bottom {
+  &::after {
+    content: '';
+    width: 50px;
+    height: 1px;
+    background-color: #990000;
+    display: block;
+    margin-top: 20px;
+  }
+}
+
+.swiper-grid-column > .swiper-wrapper {
+  flex-direction: row !important;
 }

@@ -38,6 +38,8 @@
         "image_mobile": "shopify://shop_images/Image_20.png",
         "image_overlay_opacity": 100,
         "opacity_type": "gradient",
+        "opacity_color": "primary",
+        "opacity_weight_on_desktop": "light",
         "opacity_direction": "horizontal",
         "image_height": "adapt",
         "image_behavior": "none",
@@ -78,7 +80,10 @@
       ],
       "settings": {
         "padding_top": 32,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "sm_padding_top": 20,
+        "sm_padding_bottom": 20,
+        "sm_select_show": true
       }
     },
     "collapsible_content_grGaaG": {
@@ -228,6 +233,7 @@
         },
         "card_gff6Di": {
           "type": "card",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/2_6.png",
             "title": "3D Embroidered Patches",
@@ -260,6 +266,7 @@
         },
         "card_zqUnnX": {
           "type": "card",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/2_6.png",
             "title": "FLEX Premium 3D Embellishment",
@@ -276,6 +283,7 @@
         },
         "card_TUxNME": {
           "type": "card",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/2_6.png",
             "title": "FLEX Flat (Shiny 3D finish with a flatter appearance)",

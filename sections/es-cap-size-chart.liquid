@@ -23,74 +23,97 @@
         <h2 class="visually-hidden">{{ 'accessibility.collapsible_content_title' | t }}</h2>
       {% endif %}
 
-      {%- if section.settings.galleries != blank -%}
-        <div class="mySwiper swiper">
-          <div class="swiper-wrapper">
-            {%- paginate section.settings.galleries.images.value by 100 -%}
-              {%- for image in section.settings.galleries.images.value -%}
-                <div class="grid__item swiper-slide">
-                  <div class="grid__item-media">
-                    <img src="{{ image | img_url: 'master' }}" width="{{ image.width }}" height="{{ image.height }}">
+      <div class="font-p">
+        {{ section.settings.text }}
+      </div>
+
+      <div class="size-chart">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'page' -%}
+              <div class="size-chart__item{% if block.settings.responsive == 'desktop' %} small-hide{% elsif block.settings.responsive == 'mobile' %} medium-hide large-up-hide collapsable-item{% endif %}">
+                {%- if block.settings.page != blank -%}
+                  <div class="size-chart__item-content">
+                    {{ block.settings.page.content }}
                   </div>
-                </div>
-              {%- endfor -%}
-            {%- endpaginate -%}
-          </div>
-          <div class="swiper-navigation">
-            <div class="swiper-button-prev" style="--swiper-navigation-size: 12px;">{%- render 'es-arrow-right-1' -%}</div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-next" style="--swiper-navigation-size: 12px;">{%- render 'es-arrow-right-1' -%}</div>
-          </div>
-        </div>
-      {%- endif -%}
+                {%- endif -%}
+              </div>
+            {%- when 'image_with_text' -%}
+              <div class="size-chart__item size-chart__item--image-with-text">
+                {%- if block.settings.image != blank -%}
+                  <div class="size-chart__item-content">
+                    <div class="size-chart__item-image">
+                      {{ block.settings.image | image_url: width: 720 | image_tag: class: 'size-chart__item-image' }}
+                    </div>
+                    <div class="size-chart__item-text">
+                      {{ block.settings.text }}
+                    </div>
+                  </div>
+                {%- endif -%}
+              </div>
+            {%- when 'metaobject' -%}
+              {%- assign title_array = "Head size in inches,Head size in centimeters,Fitted hat size,Hat size" | split: "," -%}
+              <div class="size-chart__item">
+                {%- if block.settings.metaobject_list != blank -%}
+                  <div class="size-chart__item-content">
+                    <table>
+                      <tbody>
+                        {%- for title in title_array -%}
+                          {%- liquid 
+                            assign handled_title = title | handleize | replace: "-", "_" 
+                            assign previous_value = blank
+                            if forloop.index == 3
+                              assign strong_tag = true
+                            else
+                              assign strong_tag = false
+                            endif
+                          -%}
+                          <tr>
+                            <th>
+                              {{ title }}
+                            </th>
+                            {%- for metaobject in block.settings.metaobject_list -%}
+                              {%- unless strong_tag and previous_value == metaobject[handled_title] -%}
+                                <td{% if strong_tag and metaobject[handled_title] != "XS" %} colspan="2"{% endif %}>
+                                  {%- if strong_tag -%}
+                                    <strong>{{ metaobject[handled_title] }}</strong>
+                                  {%- else -%}
+                                    {{ metaobject[handled_title] }}
+                                  {%- endif -%}
+                                </td>
+                              {%- endunless -%}
+                              {%- assign previous_value = metaobject[handled_title] -%}
+                            {%- endfor -%}
+                          </tr>
+                        {%- endfor -%}
+                      </tbody>
+                    </table>
+                  </div>
+                {%- endif -%}
+              </div>
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
     </div>
   </div>
 </div>
 
 <script>
-  const sw = new Swiper("#shopify-section-{{ section.id }} .mySwiper", {
-    slidesPerView: 5,
-    slidesPerGroup: 5,
-    grid: {
-      rows: 8 ,
-      fill: 'column',
-    },
-    spaceBetween: 10,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-      renderBullet: (index, className) => {
-        return '<span class="' + className + '">' + (index + 1) + '</span>';
-      }
-    },
-    breakpoints: {
-      0: {
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-        grid: {
-          rows: 8,
-        },
-      },
-      769: {
-        slidesPerView: 5,
-        slidesPerGroup: 5,
-        grid: {
-          rows: 8,
-        },
-      }
-    }
+  document.addEventListener('DOMContentLoaded', function() {
+    const collapsableItems = document.querySelectorAll('.collapsable-item table');
+    collapsableItems.forEach(item => {
+      item.querySelector('caption').addEventListener('click', function() {
+        this.classList.toggle("is-active");
+      });
+    });
   });
 </script>
 
 {% schema %}
 {
-  "name": "ES Galleries",
+  "name": "ES Size Chart",
   "tag": "section",
-  "class": "section es-galleries",
+  "class": "section es-size-chart",
   "disabled_on": {
     "groups": ["header", "footer"]
   },
@@ -122,12 +145,6 @@
       "id": "heading",
       "label": "t:sections.collapsible_content.settings.heading.label",
       "default": "t:sections.collapsible_content.settings.heading.default"
-    },
-    {
-      "type": "metaobject",
-      "id": "galleries",
-      "label": "Gallery",
-      "metaobject_type": "galleries"
     },
     {
       "type": "select",
@@ -176,6 +193,11 @@
         }
       ],
       "default": "center"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text"
     },
     {
       "type": "header",
@@ -238,9 +260,71 @@
       "default": 36
     }
   ],
+  "blocks": [
+    {
+      "type": "page",
+      "name": "Page",
+      "settings": [
+        {
+          "type": "page",
+          "id": "page",
+          "label": "Page"
+        },
+        {
+          "type": "select",
+          "id": "responsive",
+          "label": "Responsive",
+          "options": [
+            {
+              "value": "desktop",
+              "label": "Desktop"
+            },
+            {
+              "value": "mobile",
+              "label": "Mobile"
+            },
+            {
+              "value": "both",
+              "label": "Both"
+            }
+          ],
+          "default": "both"
+        }
+      ]
+    },
+    {
+      "type": "image_with_text",
+      "name": "Image with text",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "type": "metaobject",
+      "name": "Metaobject",
+      "settings": [
+        {
+          "type": "metaobject_list",
+          "id": "metaobject_list",
+          "label": "Metaobject list",
+          "info": "Select the metaobject to display in the size chart.",
+          "metaobject_type": "cap_size_chart"
+        }
+      ]
+    }
+  ],
   "presets": [
     {
-      "name": "ES Galleries"
+      "name": "ES Size Chart"
     }
   ]
 }

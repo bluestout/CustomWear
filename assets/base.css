@@ -775,6 +775,11 @@ summary::-webkit-details-marker {
 
 .title-wrapper-with-link .title {
   margin: 0;
+  color: black;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  line-height: 26px;
 }
 
 .title .link {
@@ -1894,7 +1899,7 @@ input[type='checkbox'] {
   left: var(--inputs-border-width);
   border: 0.1rem solid transparent;
   border-radius: var(--inputs-radius);
-  box-shadow: 0 0 0 var(--inputs-border-width) rgba(var(--color-foreground), var(--inputs-border-opacity));
+  box-shadow: 0 0 0 var(--inputs-border-width) #CCC;
   transition: box-shadow var(--duration-short) ease;
   z-index: 1;
 }

@@ -38,22 +38,15 @@
             "button_link_2": "",
             "button_style_secondary_2": false
           }
-        },
-        "image_BUmNa8": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_95.png"
-          }
         }
       },
       "block_order": [
         "heading_bkYrfC",
         "text_E6czfE",
-        "buttons_Ck37kr",
-        "image_BUmNa8"
+        "buttons_Ck37kr"
       ],
       "settings": {
-        "show_space": true,
+        "show_space": false,
         "image": "shopify://shop_images/Rectangle_94.jpg",
         "image_mobile": "shopify://shop_images/Rectangle_94.png",
         "image_overlay_opacity": 0,
@@ -413,6 +406,7 @@
     "es_featured_collection_RGkMJh": {
       "type": "es-featured-collection",
       "settings": {
+        "border_top": false,
         "title": "Best Sellers By Brand",
         "collection": "frontpage",
         "products_to_show": 15,
@@ -434,28 +428,41 @@
           "type": "video",
           "settings": {
             "video_url": "https://youtu.be/Nl9YJBWvrco",
-            "featured_image": "shopify://shop_images/image_8.png"
+            "featured_image": "shopify://shop_images/image_8.png",
+            "enable_video_looping": false,
+            "full_width": false,
+            "description": ""
           }
         },
         "video_pyYEmP": {
           "type": "video",
           "settings": {
             "video_url": "https://youtu.be/ViyWxaebVmA",
-            "featured_image": "shopify://shop_images/image_7.png"
+            "featured_image": "shopify://shop_images/image_7.png",
+            "enable_video_looping": false,
+            "full_width": false,
+            "description": ""
           }
         },
         "video_azGMUG": {
           "type": "video",
+          "disabled": true,
           "settings": {
             "video_url": "https://youtu.be/axfsK2KEtuk",
-            "featured_image": "shopify://shop_images/Screen_Shot_2025-05-04_at_22.05.28.png"
+            "featured_image": "shopify://shop_images/Screen_Shot_2025-05-04_at_22.05.28.png",
+            "enable_video_looping": false,
+            "full_width": false,
+            "description": ""
           }
         },
         "video_rXCkzw": {
           "type": "video",
           "settings": {
             "video_url": "https://youtu.be/D0r6cdG9QDQ",
-            "featured_image": "shopify://shop_images/Screen_Shot_2025-05-04_at_22.08.28.png"
+            "featured_image": "shopify://shop_images/Screen_Shot_2025-05-04_at_22.08.28.png",
+            "enable_video_looping": false,
+            "full_width": false,
+            "description": ""
           }
         }
       },
