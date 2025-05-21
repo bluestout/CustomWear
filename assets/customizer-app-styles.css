@@ -272,7 +272,21 @@
 
 
 
+.cl-po--discount-text {
+  justify-content: space-between;
+}
 
+.cl-po--discount-text ._save {
+    min-width: 85px;
+}
+
+.cl-po--discount-text ._quantity {
+    min-width: 85px;
+}
+
+.cl-po--option[data-option="Faux Leather - Buy more and save!"] {
+    max-width: 350px;
+}
 
 
 
