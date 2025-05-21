@@ -24,7 +24,7 @@
           "type": "heading",
           "settings": {
             "subheading": "",
-            "heading": "Shop Richardson Hats",
+            "heading": "Shop Hat Brands",
             "heading_size": "h1"
           }
         }
@@ -64,8 +64,8 @@
           "settings": {
             "item_width": 6,
             "image": "shopify://shop_images/bg.png",
-            "title": "112 Hats: Best Sellers",
-            "url": "shopify://collections/112-hats-best-sellers",
+            "title": "Adams headwear",
+            "url": "shopify://collections/adams-headwear",
             "title_2": "Hat Style 2",
             "url_2": ""
           }
@@ -75,11 +75,11 @@
           "settings": {
             "item_width": 4,
             "image": "shopify://shop_images/bg_1.png",
-            "title": "5 Panel Baseball Hats",
-            "url": "shopify://collections/5-panel-baseball-hats",
+            "title": "Cobra Caps",
+            "url": "shopify://collections/cobra-hats",
             "image_2": "shopify://shop_images/img_1.png",
-            "title_2": "6 Panel Baseball Hats",
-            "url_2": "shopify://collections/6-panel-baseball-caps"
+            "title_2": "Decky Hats",
+            "url_2": "shopify://collections/decky-hats"
           }
         },
         "item_ayUTCT": {
@@ -87,11 +87,11 @@
           "settings": {
             "item_width": 4,
             "image": "shopify://shop_images/Mask_group_1.png",
-            "title": "7 Panels",
-            "url": "shopify://collections/7-panel-hats",
+            "title": "Flexfit Hats",
+            "url": "shopify://collections/flexfit-hats",
             "image_2": "shopify://shop_images/Mask_group.png",
-            "title_2": "Beanies",
-            "url_2": "shopify://collections/beanies"
+            "title_2": "Imperial hats",
+            "url_2": "shopify://collections/imperial-hats"
           }
         },
         "item_t9qBbg": {
@@ -99,10 +99,10 @@
           "settings": {
             "item_width": 6,
             "image": "shopify://shop_images/bg_3.png",
-            "title": "Bucket Hats",
-            "url": "shopify://collections/bucket-straw-hats",
-            "title_2": "Hat Style 2",
-            "url_2": ""
+            "title": "Kati Sportcap",
+            "url": "shopify://collections/kati-sportcap",
+            "title_2": "",
+            "url_2": "shopify://collections/kati-sportsman"
           }
         },
         "item_8iXADG": {
@@ -110,8 +110,8 @@
           "settings": {
             "item_width": 6,
             "image": "shopify://shop_images/bg.png",
-            "title": "Camo",
-            "url": "shopify://collections/richardson-camo",
+            "title": "Kati/Sportsman",
+            "url": "shopify://collections/kati-sportsman",
             "title_2": "Hat Style 2",
             "url_2": ""
           }
@@ -121,11 +121,11 @@
           "settings": {
             "item_width": 4,
             "image": "shopify://shop_images/bg_1.png",
-            "title": "Flat Billed",
-            "url": "shopify://collections/flat-billed",
+            "title": "Legacy Headwear",
+            "url": "shopify://collections/legacy-headwear",
             "image_2": "shopify://shop_images/img_1.png",
-            "title_2": "Relaxed Dad Hats",
-            "url_2": "shopify://collections/richardson-relaxed-dad-hats"
+            "title_2": "Mega Hats",
+            "url_2": "shopify://collections/mega-hats"
           }
         },
         "item_JdB3Gf": {
@@ -133,11 +133,11 @@
           "settings": {
             "item_width": 4,
             "image": "shopify://shop_images/Mask_group_1.png",
-            "title": "R-Flex & Sized",
-            "url": "shopify://collections/r-flex-sized",
+            "title": "Otto Hats",
+            "url": "shopify://collections/otto-hats",
             "image_2": "shopify://shop_images/Mask_group.png",
-            "title_2": "Snapback",
-            "url_2": "shopify://collections/snapback"
+            "title_2": "Outdoor Caps",
+            "url_2": "shopify://collections/outdoor-caps"
           }
         },
         "item_RGEwRy": {
@@ -145,8 +145,8 @@
           "settings": {
             "item_width": 6,
             "image": "shopify://shop_images/bg_3.png",
-            "title": "Sport Performance",
-            "url": "shopify://collections/richardson-sport-performance",
+            "title": "Pacific Headwear Augusta",
+            "url": "shopify://collections/pacific-headwear-augusta",
             "title_2": "Hat Style 2",
             "url_2": ""
           }
@@ -156,8 +156,8 @@
           "settings": {
             "item_width": 6,
             "image": "shopify://shop_images/bg.png",
-            "title": "Sun Visors",
-            "url": "shopify://collections/richardson-sun-visors",
+            "title": "Richardson Hats",
+            "url": "shopify://collections/richardson-hats",
             "title_2": "Hat Style 2",
             "url_2": ""
           }
@@ -167,11 +167,11 @@
           "settings": {
             "item_width": 4,
             "image": "shopify://shop_images/bg_1.png",
-            "title": "Trucker Mesh",
-            "url": "shopify://collections/trucker-mesh",
+            "title": "YP Classic Yupoong Hats",
+            "url": "shopify://collections/yp-classic-yupoong-hats",
             "image_2": "shopify://shop_images/img_1.png",
-            "title_2": "Umpire/Official Hats",
-            "url_2": "shopify://collections/umpire-official-hats"
+            "title_2": "Zapped Hats",
+            "url_2": "shopify://collections/zapped-hats"
           }
         }
       },
