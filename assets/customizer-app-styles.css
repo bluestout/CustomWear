@@ -270,8 +270,6 @@
     padding-top: 0px!important;
 }
 
-
-
 .cl-po--discount-text {
   justify-content: space-between;
 }
@@ -280,10 +278,6 @@
     min-width: 85px;
     background: black!important;
     border-radius: 5px!important;
-}
-
-.cl-po--discount-text ._quantity {
-    min-width: 85px!important;
 }
 
 .cl-po--option[data-option="Faux Leather - Buy more and save!"] {
