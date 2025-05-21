@@ -284,10 +284,6 @@
   color: black!important;
 }
 
-.cl-po--option[data-option="Faux Leather - Buy more and save!"] {
-    max-width: 350px;
-}
-
 
 .cl-po--option[data-option="Patches - Buy more and save!"] .cl-po--label:before,
 .cl-po--option[data-option="Screen Print - Buy more and save!"] .cl-po--label:before {
@@ -296,12 +292,16 @@
     margin-right: 4px;
 }
 
-.cl-po--option[data-option="Patches - Buy more and save!"] {
+.cl-po--option[data-option="Patches - Buy more and save!"],
+.cl-po--option[data-option="Screen Print - Buy more and save!"]
+{
     background: var(--gradient-background)!important;
+    max-width: 350px!important;
 }
 
 .cl-po--option[data-option="Buy More Save More"] {
     padding: 0px!important;
     border: none!important;
     border-top: 1px solid #d8d8d8!Important;
+    background: var(--gradient-background)!important;
 }
