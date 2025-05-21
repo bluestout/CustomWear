@@ -278,7 +278,7 @@
 
 .cl-po--discount-text ._save {
     min-width: 85px;
-    background: black;
+    background: black!important;
     border-radius: 5px!important;
 }
 
