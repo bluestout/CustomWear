@@ -280,6 +280,10 @@
     border-radius: 5px!important;
 }
 
+.cl-po--discount-text ._price{
+  color: black!important;
+}
+
 .cl-po--option[data-option="Faux Leather - Buy more and save!"] {
     max-width: 350px;
 }
