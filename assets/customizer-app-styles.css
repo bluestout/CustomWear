@@ -279,7 +279,7 @@
 .cl-po--discount-text ._save {
     min-width: 85px;
     background: black;
-    border-radius: 5px;
+    border-radius: 5px!important;
 }
 
 .cl-po--discount-text ._quantity {
