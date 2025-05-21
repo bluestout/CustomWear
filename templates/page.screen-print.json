@@ -38,6 +38,8 @@
         "image_mobile": "shopify://shop_images/allenburt_94637_a_cinematic_photo_and_A_promotional_piece_for_c46a5914-7d3d-4dfd-a240-5fb5d9c5dc96_1_1.png",
         "image_overlay_opacity": 100,
         "opacity_type": "gradient",
+        "opacity_color": "primary",
+        "opacity_weight_on_desktop": "light",
         "opacity_direction": "horizontal",
         "image_height": "adapt",
         "image_behavior": "none",
@@ -86,7 +88,10 @@
       ],
       "settings": {
         "padding_top": 32,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "sm_padding_top": 20,
+        "sm_padding_bottom": 20,
+        "sm_select_show": true
       }
     },
     "collapsible_content_grGaaG": {
@@ -592,9 +597,9 @@
         "typefaces_group": "screenprint",
         "heading_size": "h1",
         "heading_alignment": "center",
-        "layout": "none",
+        "layout": "section",
         "container_color_scheme": "",
-        "color_scheme": "",
+        "color_scheme": "scheme-2",
         "padding_top": 36,
         "padding_bottom": 36
       }
