@@ -289,8 +289,8 @@
 }
 
 
-product .shopify-app-block .cl-po--wrapper .cl-po--options .cl-po--option[data-option="Patches - Buy more and save!"] .cl-po--label:before,
-product .shopify-app-block .cl-po--wrapper .cl-po--options .cl-po--option[data-option="Screen Print - Buy more and save!"] .cl-po--label:before{
+.cl-po--option[data-option="Patches - Buy more and save!"] .cl-po--label:before,
+.cl-po--option[data-option="Screen Print - Buy more and save!"] .cl-po--label:before {
     content: "Step 4:";
     color: #900;
     margin-right: 4px;
