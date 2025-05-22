@@ -50,7 +50,7 @@
         "show_text_box": false,
         "color_scheme": "scheme-3",
         "stack_images_on_mobile": false,
-        "mobile_content_position": "bottom",
+        "mobile_content_position": "middle",
         "mobile_content_alignment": "center",
         "opacity_direct_on_mobile": "vertical",
         "opacity_height_on_mobile": "large",
