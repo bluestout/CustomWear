@@ -9,8 +9,47 @@
  */
 {
   "sections": {
+    "es_image_banner_CJWMWf": {
+      "type": "es-image-banner",
+      "blocks": {
+        "heading_NgReDB": {
+          "type": "heading",
+          "settings": {
+            "subheading": "",
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_NgReDB"
+      ],
+      "name": "ES Image Banner",
+      "settings": {
+        "show_space": false,
+        "image_overlay_opacity": 0,
+        "opacity_type": "normal",
+        "opacity_color": "primary",
+        "opacity_weight_on_desktop": "light",
+        "opacity_direction": "vertical",
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_position": "middle",
+        "mobile_content_alignment": "center",
+        "opacity_direct_on_mobile": "vertical",
+        "opacity_height_on_mobile": "small",
+        "image_height_on_mobile": "square",
+        "show_text_below": true
+      }
+    },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 36,
         "padding_bottom": 36
@@ -29,6 +68,7 @@
     }
   },
   "order": [
+    "es_image_banner_CJWMWf",
     "main",
     "form"
   ]
