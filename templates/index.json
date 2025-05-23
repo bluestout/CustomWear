@@ -227,7 +227,7 @@
           "type": "item",
           "settings": {
             "item_width": 6,
-            "image": "shopify://shop_images/alaska2.jpg",
+            "image": "shopify://shop_images/Richardson_Best_Seller_1500_x_1200_CW.png",
             "title": "Richardson",
             "url": "shopify://collections/112-hats-best-sellers",
             "title_2": "Hat Style 2",
@@ -389,21 +389,30 @@
           "type": "video",
           "settings": {
             "video_url": "https://youtu.be/Nl9YJBWvrco",
-            "featured_image": "shopify://shop_images/image_6.png"
+            "featured_image": "shopify://shop_images/image_6.png",
+            "enable_video_looping": false,
+            "full_width": false,
+            "description": ""
           }
         },
         "video_pyYEmP": {
           "type": "video",
           "settings": {
             "video_url": "https://youtu.be/ViyWxaebVmA",
-            "featured_image": "shopify://shop_images/image_7.png"
+            "featured_image": "shopify://shop_images/image_7.png",
+            "enable_video_looping": false,
+            "full_width": false,
+            "description": ""
           }
         },
         "video_nQgbYm": {
           "type": "video",
           "settings": {
             "video_url": "https://youtu.be/axfsK2KEtuk",
-            "featured_image": "shopify://shop_images/image_8.png"
+            "featured_image": "shopify://shop_images/image_8.png",
+            "enable_video_looping": false,
+            "full_width": false,
+            "description": ""
           }
         }
       },
