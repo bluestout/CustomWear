@@ -1,0 +1,81 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "es_image_banner_jmKH9E": {
+      "type": "es-image-banner",
+      "blocks": {
+        "heading_gbky39": {
+          "type": "heading",
+          "settings": {
+            "subheading": "",
+            "heading": "Inspiration Gallery",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_gbky39"
+      ],
+      "settings": {
+        "show_space": false,
+        "image": "shopify://shop_images/Rectangle_1.jpg",
+        "image_mobile": "shopify://shop_images/allenburt_94637_Create_a_collection_of_beautiful_business_and_bdaa3d16-0340-4d24-be75-89caa2c3c065_1_1.png",
+        "image_overlay_opacity": 100,
+        "opacity_type": "gradient",
+        "opacity_weight_on_desktop": "heavy",
+        "opacity_direction": "horizontal",
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
+        "stack_images_on_mobile": false,
+        "mobile_content_position": "bottom",
+        "mobile_content_alignment": "center",
+        "opacity_direct_on_mobile": "vertical",
+        "opacity_height_on_mobile": "large",
+        "image_height_on_mobile": "adapt",
+        "show_text_below": false
+      }
+    },
+    "es_galleries_HqnbFV": {
+      "type": "es-galleries",
+      "settings": {
+        "tab_section": false,
+        "hide_section": false,
+        "custom_id": "",
+        "heading": "Embroidery Samples",
+        "galleries": "embroidery",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "section",
+        "container_color_scheme": "",
+        "color_scheme": "scheme-2",
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "es_image_banner_jmKH9E",
+    "es_galleries_HqnbFV"
+  ]
+}
