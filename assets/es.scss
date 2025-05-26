@@ -2779,6 +2779,12 @@ body {
 }
 
 .es-galleries {
+  .grid__item-media {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
   .es-font-h2 {
     margin-bottom: 52px;
 
