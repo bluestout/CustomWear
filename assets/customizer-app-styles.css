@@ -312,3 +312,7 @@
     width: 20px!important;
     height: 20px!important;
 }
+
+.cl-po--swatch-color[data-tippy-content="White"].cl-po--swatch-color[data-tippy-content="White"] {
+    border: 1px solid #ccc !important;
+}
