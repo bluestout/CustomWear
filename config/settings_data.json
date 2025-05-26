@@ -187,6 +187,11 @@
           "extraHTMLToAppend": "",
           "disableAutomaticButtonAddition": false
         }
+      },
+      "11212335281082087862": {
+        "type": "shopify://apps/sk-form-builder/blocks/app/f3e35b58-5874-4ef2-8e03-c92cda6e49eb",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
