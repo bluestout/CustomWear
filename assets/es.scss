@@ -1828,15 +1828,6 @@
             }
           }
 
-          &[data-option="Customize Your Hat"] {
-            .cl-po--label {
-              &::before {
-                content: var(--before-content, "Step 3: ");
-                color: #990000;
-              }
-            }
-          }
-
           &[data-option="Size"] {
             .cl-po--swatch {
               border-radius: 3px !important;
