@@ -9,48 +9,45 @@
  */
 {
   "sections": {
-    "es_image_banner_CJWMWf": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "es_image_banner_jmKH9E": {
       "type": "es-image-banner",
       "blocks": {
-        "heading_NgReDB": {
+        "heading_gbky39": {
           "type": "heading",
           "settings": {
             "subheading": "",
-            "heading": "Contact Us",
-            "heading_size": "hxxl"
-          }
-        },
-        "text_WHkNyh": {
-          "type": "text",
-          "settings": {
-            "max_width": 820,
-            "text": "Would you prefer to speak with a live representative?",
-            "text_style": "body"
+            "heading": "Inspiration Gallery",
+            "heading_size": "h1"
           }
         }
       },
       "block_order": [
-        "heading_NgReDB",
-        "text_WHkNyh"
+        "heading_gbky39"
       ],
-      "name": "ES Image Banner",
       "settings": {
         "show_space": false,
-        "image": "shopify://shop_images/allenburt_94637_front_view_of_a_navy_color_trucker_mesh_back__1437e6c4-5721-479b-ac11-dd2e092d9b9e_1_1.jpg",
-        "image_mobile": "shopify://shop_images/allenburt_94637_front_view_of_a_navy_color_trucker_mesh_back__1437e6c4-5721-479b-ac11-dd2e092d9b9e_1_1.png",
-        "image_overlay_opacity": 60,
+        "image": "shopify://shop_images/Rectangle_1.jpg",
+        "image_mobile": "shopify://shop_images/allenburt_94637_Create_a_collection_of_beautiful_business_and_bdaa3d16-0340-4d24-be75-89caa2c3c065_1_1.png",
+        "image_overlay_opacity": 100,
         "opacity_type": "gradient",
-        "opacity_color": "primary",
-        "opacity_weight_on_desktop": "light",
+        "opacity_weight_on_desktop": "heavy",
         "opacity_direction": "horizontal",
-        "image_height": "small",
+        "image_height": "adapt",
         "image_behavior": "none",
         "desktop_content_position": "middle-left",
         "desktop_content_alignment": "left",
         "show_text_box": false,
         "color_scheme": "scheme-3",
         "stack_images_on_mobile": false,
-        "mobile_content_position": "middle",
+        "mobile_content_position": "bottom",
         "mobile_content_alignment": "center",
         "opacity_direct_on_mobile": "vertical",
         "opacity_height_on_mobile": "large",
@@ -58,17 +55,27 @@
         "show_text_below": false
       }
     },
-    "main": {
-      "type": "main-page",
-      "disabled": true,
+    "es_galleries_HqnbFV": {
+      "type": "es-galleries",
       "settings": {
-        "padding_top": 36,
-        "padding_bottom": 36
+        "tab_section": false,
+        "hide_section": false,
+        "custom_id": "",
+        "heading": "Embroidery Samples",
+        "galleries": "embroidery",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "section",
+        "container_color_scheme": "",
+        "color_scheme": "scheme-2",
+        "padding_top": 52,
+        "padding_bottom": 52
       }
     }
   },
   "order": [
-    "es_image_banner_CJWMWf",
-    "main"
+    "main",
+    "es_image_banner_jmKH9E",
+    "es_galleries_HqnbFV"
   ]
 }

@@ -102,7 +102,7 @@
           "settings": {
             "heading": "Can I order a blank sample before customizing my hats?",
             "icon": "none",
-            "row_content": "<p>Absolutely! We recommend ordering blank hats before placing a custom embroidery order. This lets you make sure you love the style, fit, and color before adding your logo.<br/>→ Order blank hats here: <a href=\"#\" title=\"#\">www.capwholesalers.com</a></p>",
+            "row_content": "<p>Absolutely! We recommend ordering blank hats before placing a custom embroidery order. This lets you make sure you love the style, fit, and color before adding your logo.<br/>→ Order blank hats here: <a href=\"https://www.capwholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\">www.capwholesalers.com</a></p>",
             "page": ""
           }
         },
