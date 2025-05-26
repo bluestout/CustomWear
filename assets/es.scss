@@ -1923,6 +1923,11 @@
                 &[data-tippy-content="White"] {
                   border: 1px solid #ccc !important;
                 }
+                .cl-po--swatch {
+                  &[data-tippy-content="White"] {
+                  border: 1px solid #ccc !important;
+                }
+                }
               }
             }
           }
