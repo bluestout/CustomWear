@@ -306,7 +306,7 @@
     background: var(--gradient-background)!important;
 }
 
-.cl-po--option .cl-po--swatch {
+.cl-po--option .cl-po--swatch.cl-po--swatch-color {
     border-width: 0 !important;
     border-radius: 50% !important;
     width: 20px!important;
