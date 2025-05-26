@@ -305,3 +305,10 @@
     border-top: 1px solid #d8d8d8!Important;
     background: var(--gradient-background)!important;
 }
+
+.cl-po--option .cl-po--swatch {
+    border-width: 0 !important;
+    border-radius: 50% !important;
+    width: 20px;
+    height: 20px;
+}
