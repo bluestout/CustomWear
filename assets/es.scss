@@ -3899,3 +3899,23 @@ cart-items {
 // .swiper-grid-column > .swiper-wrapper {
 //   flex-direction: row !important;
 // }
+
+.rich-text__wrapper {
+  .rich-text__text {
+    color: black;
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 25.50px;
+
+    a {
+      color: #990000;
+      font-weight: 600;
+      text-decoration: unset !important;
+
+      span {
+        text-decoration: unset !important;
+      }
+    }
+  }
+}
