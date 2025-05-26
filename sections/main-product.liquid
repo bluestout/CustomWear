@@ -1,3 +1,29 @@
+{%  comment  %} START - DYNAMIC STYLES FOR CUSTOMIZER APP {% endcomment %}
+{%- style -%}
+  {%- if product.options.size == 1 -%}
+    .cl-po--option[data-option="Customize Your Hat"] .cl-po--label::before{
+      content: var(--before-content, "Step 1: ");
+      color: #990000;
+    }
+    {% elsif product.options.size == 2 %}
+    .cl-po--option[data-option="Customize Your Hat"] .cl-po--label::before{
+      content: var(--before-content, "Step 3: ");
+      color: #990000;
+    }
+  {%- elsif product.options.size == 3 -%}
+    .cl-po--option[data-option="Customize Your Hat"] .cl-po--label::before{
+      content: var(--before-content, "Step 4: ");
+      color: #990000;
+    }
+  {%- else -%}
+    .cl-po--option[data-option="Customize Your Hat"] .cl-po--label::before{
+      content: var(--before-content, "Step 1: ");
+      color: #990000;
+    }
+  {%- endif -%}
+{%- endstyle -%}
+{% comment %} END - DYNAMIC STYLES FOR CUSTOMIZER APP {% endcomment %}
+
 <product-info
   id="MainProduct-{{ section.id }}"
   class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}"
