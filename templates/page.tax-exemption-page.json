@@ -11,13 +11,33 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "1748286443642325bb": {
+      "type": "apps",
+      "blocks": {
+        "sk_form_builder_form_fpzJ7U": {
+          "type": "shopify://apps/sk-form-builder/blocks/form/f3e35b58-5874-4ef2-8e03-c92cda6e49eb",
+          "settings": {
+            "show_form": true,
+            "form_token": "https://uupdump.net/selectlang.php?id=4b198c0a-71de-4f6f-b7e1-831729d92c77"
+          }
+        }
+      },
+      "block_order": [
+        "sk_form_builder_form_fpzJ7U"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1748286443642325bb"
   ]
 }
