@@ -28,7 +28,7 @@
           <div class="swiper-wrapper">
             {%- paginate section.settings.galleries.images.value by 100 -%}
               {%- for image in section.settings.galleries.images.value -%}
-                <div class="grid__item swiper-slide">
+                <div class="swiper-slide">
                   <div class="grid__item-media">
                     <img src="{{ image | img_url: 'master' }}" width="{{ image.width }}" height="{{ image.height }}">
                   </div>
