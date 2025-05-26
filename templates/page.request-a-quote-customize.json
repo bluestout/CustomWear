@@ -42,125 +42,34 @@
         "padding_bottom": 52
       }
     },
-    "collapsible_content_cYz6ny": {
-      "type": "collapsible-content",
+    "rich_text_9kKh7M": {
+      "type": "rich-text",
       "blocks": {
-        "collapsible_row_FG3mcw": {
-          "type": "collapsible_row",
+        "text_PyzBcC": {
+          "type": "text",
           "settings": {
-            "heading": "Order Processing Time",
-            "icon": "none",
-            "row_content": "<p>Custom Decorated Merchandise:<br/>Design Creation: 5–8 business days to develop and finalize your logo on the selected product.<br/>Production: Once the design is approved, production and shipping preparation typically take an additional 5–8 business days.<br/><br/>Important: Large quantity orders may require additional lead time.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_YJXA64": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Shipping Information",
-            "icon": "none",
-            "row_content": "<p>Domestic Shipping (U.S.):<br/>Once shipped most orders are typically delivered within 5–7 business days after shipping.<br/>Shipped via UPS or FedEx Ground.<br/>You will be notified within 24 hours Monday to Friday if an item is out of stock.<br/>Customers may use their FedEx or UPS accounts if the billing name matches the account name with the carrier.<br/><br/>International Shipping:<br/>International orders may be available. Please email info@customizedwear.com with the subject line \"International Order\" and include your specific request and destination address.<br/>Customs delays, duties, and import taxes are the responsibility of the recipient.<br/>Most international shipments are sent via USPS Air Parcel Post or International Priority Mail (4–12 business days).<br/>For Canadian orders, we use USPS, UPS, or FedEx Ground. If a preferred customs broker is required, specify before shipment. Broker changes cannot be made once an order has shipped out.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_JD7UxP": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Shipping Policies",
-            "icon": "none",
-            "row_content": "<p>Standard UPS or FedEx Ground is our primary shipping method.<br/>Shipping rates may vary if items are shipped from multiple locations. You will be notified of any cost adjustments.<br/>Express or Air Shipping will receive a custom freight quote, pending approval.<br/>International orders will receive a custom freight quote. We are not responsible for customs and duty fees.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_BFtyRk": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Standard Ground Shipping Rates:",
-            "icon": "none",
-            "row_content": "<p>Shipping is calculated at checkout.<br/>Orders exceeding 576 units will receive a shipping quote for approval.<br/>(Excludes HI, PR, AK – subject to change)</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_DhFXP9": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Payment Methods",
-            "icon": "none",
-            "row_content": "<p>Visa, MasterCard, Discover, American Express<br/>Apple Pay, PayPal, Zelle, Pre-paid money orders, Cashier’s checks<br/>Company checks (must clear before processing)<br/>Wire transfers for international orders<br/><br/>Note:<br/>No CODs.<br/>Credit cards issued outside the U.S. are not accepted.<br/>Schools & government agencies: Purchase orders are no longer accepted.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_MMQcVd": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Custom Decorated Items",
-            "icon": "none",
-            "row_content": "<p>Once style, color, and quantity are confirmed, no changes or cancellations are allowed.<br/>All designs must be approved before production begins.<br/>No returns on custom patches, embroidered, or screen-printed merchandise once production has started.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_M4bNYp": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Cancellations and Changes",
-            "icon": "none",
-            "row_content": "<p>Cancellations after artwork approval may incur fees for digitizing, setup, and freight.<br/>Decorated items cannot be returned or exchanged.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_LRVaTJ": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Backorders",
-            "icon": "none",
-            "row_content": "<p>If an item is unavailable, you will be notified to choose an alternative or wait for the estimated restock date.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_R78dFx": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Pricing Notice",
-            "icon": "none",
-            "row_content": "<p>All prices are subject to change without notice.</p>",
-            "page": ""
+            "text": "<p><strong>📞 Get in Touch with CustomizedWear</strong></p><p>We’d love to hear from you! Whether you're ready to start your custom hat order or just have a few questions, we're here to help.</p><p>Feel free to call, email, or fill out the form below. We respond to most messages within <strong>24 hours</strong>.</p><p>For more information about our services, production, and policies, check out our (Please link FAQ to this) Please link shipping info page.</p><p></p><p></p><p><strong>📱 Contact Information</strong></p><p><strong>Toll-Free:</strong> 877-984-2277<br/><br/></p><p></p><p></p><p><strong>📧 Email Contacts</strong></p><ul><li><strong>General Inquiries & Support</strong><br/>✉️ <a href=\"mailto:info@customizedwear.com\"><span style=\"text-decoration:underline\">info@customizedwear.com</span></a></li><li><strong>Free Quotes & Sales Requests</strong><br/>✉️ <a href=\"mailto:info@customizedwear.com\"><span style=\"text-decoration:underline\">info@customizedwear.com</span></a> <em>(Subject: Quotes)</em></li><li><strong>Embroidery & Custom Product Inquiries</strong><br/>✉️ <a href=\"mailto:sales@customizedwear.com\"><span style=\"text-decoration:underline\">sales@customizedwear.com</span></a> <em>(Subject: Custom)</em></li><li><strong>Sales Tax & Resale Certificates</strong><br/>✉️ <a href=\"mailto:info@customizedwear.com\"><span style=\"text-decoration:underline\">info@customizedwear.com</span></a> <em>(Subject: Resale Sales Tax)</em></li><li><strong>Website or Tech Support</strong><br/>✉️ <a href=\"mailto:info@customizedwear.com\"><span style=\"text-decoration:underline\">info@customizedwear.com</span></a> <em>(Subject: IT)</em></li></ul><p></p><p></p><p><strong>🕘 Business Hours</strong></p><p>Monday – Friday: <strong>9:00 a.m. – 5:00 p.m. EST</strong><br/><em>We are closed on weekends and holidays.</em></p><p></p><p></p><p><strong>📬 Mailing Address</strong></p><p><strong>Hatco International</strong></p><p><strong>CustomizedWear</strong><br/>12530 Wiles Rd</p><p>Coral Springs, FL 33076</p>"
           }
         }
       },
       "block_order": [
-        "collapsible_row_FG3mcw",
-        "collapsible_row_YJXA64",
-        "collapsible_row_JD7UxP",
-        "collapsible_row_BFtyRk",
-        "collapsible_row_DhFXP9",
-        "collapsible_row_MMQcVd",
-        "collapsible_row_M4bNYp",
-        "collapsible_row_LRVaTJ",
-        "collapsible_row_R78dFx"
+        "text_PyzBcC"
       ],
-      "name": "t:sections.collapsible_content.presets.name",
+      "name": "t:sections.rich-text.presets.name",
       "settings": {
-        "tab_section": false,
-        "hide_section": false,
-        "custom_id": "embroideryQA",
-        "caption": "",
-        "heading": "",
-        "heading_size": "hxl",
-        "heading_alignment": "center",
-        "layout": "none",
-        "container_color_scheme": "",
+        "border_bottom": true,
+        "desktop_content_position": "center",
+        "content_alignment": "left",
         "color_scheme": "",
-        "open_first_collapsible_row": true,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
+        "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 80
+        "padding_bottom": 52
       }
     }
   },
   "order": [
     "main",
     "rich_text_VfJ8w9",
-    "collapsible_content_cYz6ny"
+    "rich_text_9kKh7M"
   ]
 }
