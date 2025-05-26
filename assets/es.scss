@@ -1708,7 +1708,8 @@
   .product-form__input {
     display: flex;
     align-items: center;
-    gap: 25px;
+    flex-wrap: wrap;
+    /* gap: 25px; */
     max-width: 100%;
 
     .quantity__label {
@@ -1960,6 +1961,7 @@
       padding: 11px 10px;
       border-radius: 3px;
       background-color: transparent;
+      min-width: 70px;
     }
   }
 
