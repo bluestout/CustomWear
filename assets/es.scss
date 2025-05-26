@@ -2785,6 +2785,13 @@ body {
       height: auto;
     }
   }
+
+  .swiper-grid-column {
+    .swiper-wrapper {
+      width: 100% !important;
+    }
+  }
+  
   .es-font-h2 {
     margin-bottom: 52px;
 
