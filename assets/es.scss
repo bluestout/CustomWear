@@ -3915,15 +3915,21 @@ cart-items {
 }
 
 .cs-contact-us{
-  max-width: 1440px;
-  padding: 0 170px;
-  margin: 0 auto;
+  .grid {
+    .grid__item:nth-child(1) {
+      margin-top: -86px;
+
+      sk-form {
+        position: relative;
+      }
+    }
+  }
 
   .flex{
     display: flex;
     align-items: flex-start;
   }
-  
+
   .grid__item--icon-with-text{
     gap: 7px;
     margin-top: 22px;
