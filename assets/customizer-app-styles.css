@@ -1,180 +1,195 @@
 .product .cl-po--option[data-option="Customization Method"] {
-    border: none!important;
-    padding-left: 0px!important;
-    padding-right: 0px!important;
-    background: var(--gradient-background)!important;
-    margin-bottom: 0px;
-    padding-bottom: 0px!important;
+  border: none !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  background: var(--gradient-background) !important;
+  margin-bottom: 0px;
+  padding-bottom: 0px !important;
 }
 
-.product .cl-po--option[data-option="Customization Method"] .choices__inner{
-  border-radius: 0px!important;
+.product .cl-po--option[data-option="Customization Method"] .choices__inner {
+  border-radius: 0px !important;
 }
 
-.product .cl-po--option[data-option="Customization Method"] .choices__item  {
-    padding-left: 10px!important;
+.product .cl-po--option[data-option="Customization Method"] .choices__item {
+  padding-left: 10px !important;
 }
 
-.product .cl-po--option[data-option="Customization Method"] .choices__list.choices__list--dropdown .choices__item  {
-    padding-left: 15px!important;
+.product
+  .cl-po--option[data-option="Customization Method"]
+  .choices__list.choices__list--dropdown
+  .choices__item {
+  padding-left: 15px !important;
 }
 
 .product .cl-po--option[data-option="Customization Method"] .cl-po--label {
-    font-size: 16px!important;
+  font-size: 16px !important;
 }
 
 .product .cl-po--option[data-option="Customization Type"] {
-    padding: 0px !important;
-    border: none!important;
+  padding: 0px !important;
+  border: none !important;
 }
 
 .product .cl-po--option[data-option="Logo Location"],
 .product .cl-po--option[data-option="Embroidery Logo Location"],
 .product .cl-po--option[data-option="Embroidery Lettering Location"],
 .product .cl-po--option[data-option="Location"],
-.product .cl-po--option[data-option="Lettering Location"]{
-    padding-top: 0px!important;
-    padding-left: 0px!important;
-    padding-right: 0px!important;
-    border: none!important;
-    box-shadow: none!important;
+.product .cl-po--option[data-option="Lettering Location"] {
+  padding-top: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 .product .cl-po--option[data-option="Logo Location"] .cl-po--swatch-container,
-.product .cl-po--option[data-option="Embroidery Logo Location"] .cl-po--swatch-container,
-.product .cl-po--option[data-option="Embroidery Lettering Location"] .cl-po--swatch-container,
+.product
+  .cl-po--option[data-option="Embroidery Logo Location"]
+  .cl-po--swatch-container,
+.product
+  .cl-po--option[data-option="Embroidery Lettering Location"]
+  .cl-po--swatch-container,
 .product .cl-po--option[data-option="Location"] .cl-po--swatch-container,
-.product .cl-po--option[data-option="Lettering Location"] .cl-po--swatch-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+.product
+  .cl-po--option[data-option="Lettering Location"]
+  .cl-po--swatch-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
-.product .cl-po--option[data-option="Logo Location"] .cl-po--swatch.cl-po--large,
-.product .cl-po--option[data-option="Embroidery Logo Location"] .cl-po--swatch.cl-po--large,
-.product .cl-po--option[data-option="Embroidery Lettering Location"] .cl-po--swatch.cl-po--large,
+.product
+  .cl-po--option[data-option="Logo Location"]
+  .cl-po--swatch.cl-po--large,
+.product
+  .cl-po--option[data-option="Embroidery Logo Location"]
+  .cl-po--swatch.cl-po--large,
+.product
+  .cl-po--option[data-option="Embroidery Lettering Location"]
+  .cl-po--swatch.cl-po--large,
 .product .cl-po--option[data-option="Location"] .cl-po--swatch.cl-po--large,
-.product .cl-po--option[data-option="Lettering Location"] .cl-po--swatch.cl-po--large{
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.product
+  .cl-po--option[data-option="Lettering Location"]
+  .cl-po--swatch.cl-po--large {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .product .cl-po--option[data-option="Custom Logo"],
 .product .cl-po--option[data-option="Thread Color"],
-.product .cl-po--option[data-option="Additional Logo Position"]{
-    padding-left: 0px !important;
-    padding-right: 0px !important;
-    border: none !important;
+.product .cl-po--option[data-option="Additional Logo Position"] {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  border: none !important;
 }
 
- .product .cl-po--option[data-option="Additional Logo Position"]{
-   padding-bottom: 0px!important;
- }
+.product .cl-po--option[data-option="Additional Logo Position"] {
+  padding-bottom: 0px !important;
+}
 
 .product .cl-po--options {
-    border-bottom: 1px solid #CCC;
+  border-bottom: 1px solid #ccc;
 }
 
-.product .cl-po--option[data-option="Location"]{
-    padding-left: 0px !important;
-    padding-right: 0px !important;
-    border: none !important;
+.product .cl-po--option[data-option="Location"] {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  border: none !important;
 }
 
 .product .cl-po--option[data-option="Embroidery - Child - Logo"] {
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
 }
 
 .cl-po--option[data-option="Patches - Main options"] {
-    padding-top: 20px !important;
+  padding-top: 20px !important;
 }
 
 .cl-po--option[data-option="Leather or Faux Leather"] {
-    padding-left: 0px!important;
-    padding-right: 0px!important;
-    border: none!important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  border: none !important;
 }
 
 .cl-po--option[data-option="Leather or Faux Leather"] {
-    padding-bottom: 0px ! Important;
+  padding-bottom: 0px !important;
 }
 
 .cl-po--option[data-option="Patches  - Child - Embroidered"] {
-    padding-bottom: 0px!important;
+  padding-bottom: 0px !important;
 }
 
 .cl-po--option[data-option="Embroidered - Fabric Color"] {
-    border-top: 0px!important;
-    padding-top: 0px!important;
+  border-top: 0px !important;
+  padding-top: 0px !important;
 }
-
 
 .cl-po--option[data-option="Screen Print - Main Options"] {
-    padding-bottom: 0px!important;
+  padding-bottom: 0px !important;
 }
 
 .cl-po--option[data-option="Screen Print - Customization Type"] {
-    border-top: none!important;
+  border-top: none !important;
 }
 
 .cl-po--option[data-option="Screen Print - Customization Type"] {
-    border-top: none!important;
+  border-top: none !important;
 }
 
 .cl-po--option[data-option="Screen Print - Logo Location"] {
-    border-top: none!important;
-    padding-top: 0px!important;
+  border-top: none !important;
+  padding-top: 0px !important;
 }
 
 .cl-po--option[data-option="Lettering - Logo Location"] {
-    border-top: none!important;
-    padding-top: 0px!important;
+  border-top: none !important;
+  padding-top: 0px !important;
 }
 
 .cl-po--option textarea {
-    min-height: 120px!important;
+  min-height: 120px !important;
 }
 
 .cl-po--upload .cl-po--upload-wrap {
-    width: 100%!important;
-    justify-content: center;
-    align-items: center;
+  width: 100% !important;
+  justify-content: center;
+  align-items: center;
 }
 
 .cl-po--upload-wrap .cl-po--input {
-    width: 100%!important;
-    text-align: center!important;
-    border-radius: 0px!important;
+  width: 100% !important;
+  text-align: center !important;
+  border-radius: 0px !important;
 }
 
-
 .cl-po--option .cl-po--option {
-    border: none!important;
-    padding-left: 0px!important;
-    padding-right: 0px!important;
+  border: none !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
 
 .cl-po--option[data-option="Lettering Location"],
 .cl-po--option[data-option="3D Embroidered - Logo"],
 .cl-po--option[data-option="Patches - Leather Color"],
-.cl-po--option[data-option="Faux Leather - Color Option"]{
-    padding-top: 0px!important;
+.cl-po--option[data-option="Faux Leather - Color Option"] {
+  padding-top: 0px !important;
 }
 
-.cl-po--option[data-option="Flex Patch - Color Options"] .cl-po--swatch img{
-  max-width:unset !important;
+.cl-po--option[data-option="Flex Patch - Color Options"] .cl-po--swatch img {
+  max-width: unset !important;
 }
 
 .cl-po--option .cl-po--swatch {
-  display: flex!important;
-  justify-content: center!important;
-  align-items: center!important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 [data-option="Leather or Faux Leather"] label.cl-po--radio-item input,
@@ -182,12 +197,12 @@
 [data-option="Customization Type"] label.cl-po--radio-item input,
 [data-option="Screen Print - Ink Color Method"] label.cl-po--radio-item input,
 [data-option="Additional Lettering Location"] label.cl-po--checkbox-item input,
-[data-option="Additional Logo Position"] label.cl-po--checkbox-item input{
+[data-option="Additional Logo Position"] label.cl-po--checkbox-item input {
   visibility: hidden;
-  width: 0px!important;
-  height: 0px!important;
-  margin: 0px!important;
-  min-width: 0px!important;
+  width: 0px !important;
+  height: 0px !important;
+  margin: 0px !important;
+  min-width: 0px !important;
 }
 
 .cl-po--option[data-option="Leather or Faux Leather"],
@@ -195,10 +210,10 @@
 .cl-po--option[data-option="Customization Type"],
 .cl-po--option[data-option="Additional Logo Position"],
 .cl-po--option[data-option="Additional Lettering Location"],
-.cl-po--option[data-option="Screen Print - Ink Color Method"]{
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 8px;
+.cl-po--option[data-option="Screen Print - Ink Color Method"] {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 8px;
 }
 
 [data-option="Leather or Faux Leather"] .cl-po--label,
@@ -206,8 +221,8 @@
 [data-option="Customization Type"] .cl-po--label,
 [data-option="Additional Logo Position"] .cl-po--label,
 [data-option="Additional Lettering Location"] .cl-po--label,
-[data-option="Screen Print - Ink Color Method"] .cl-po--label{
-    width: 100%;
+[data-option="Screen Print - Ink Color Method"] .cl-po--label {
+  width: 100%;
 }
 
 [data-option="Leather or Faux Leather"] label.cl-po--radio-item,
@@ -215,65 +230,78 @@
 [data-option="Customization Type"] label.cl-po--radio-item,
 [data-option="Screen Print - Ink Color Method"] .cl-po--radio-item,
 [data-option="Additional Logo Position"] label.cl-po--checkbox-item,
-[data-option="Additional Lettering Location"] label.cl-po--checkbox-item{
-    border: 1px solid #ccc;
-    padding: 5px 15px;
-    display: flex!important;
-    justify-content: center;
-    align-items: center;
-    transition: all .2s ease;
-    border-radius: 3px;
-    background: #F3F3F3;
-    color: black;
+[data-option="Additional Lettering Location"] label.cl-po--checkbox-item {
+  border: 1px solid #ccc;
+  padding: 5px 15px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+  border-radius: 3px;
+  background: #f3f3f3;
+  color: black;
 }
 
-[data-option="Leather or Faux Leather"] .cl-po--radio-item:has(input[type="radio"]:checked),
-[data-option="Screen Print - Customization Type"] .cl-po--radio-item:has(input[type="radio"]:checked),
-[data-option="Customization Type"] .cl-po--radio-item:has(input[type="radio"]:checked),
-[data-option="Screen Print - Ink Color Method"] .cl-po--radio-item:has(input[type="radio"]:checked),
-[data-option="Additional Lettering Location"] .cl-po--checkbox-item:has(input[type="checkbox"]:checked),
-[data-option="Additional Logo Position"] .cl-po--checkbox-item:has(input[type="checkbox"]:checked){
-    border-color: black;
-    background: white;
+[data-option="Leather or Faux Leather"]
+  .cl-po--radio-item:has(input[type="radio"]:checked),
+[data-option="Screen Print - Customization Type"]
+  .cl-po--radio-item:has(input[type="radio"]:checked),
+[data-option="Customization Type"]
+  .cl-po--radio-item:has(input[type="radio"]:checked),
+[data-option="Screen Print - Ink Color Method"]
+  .cl-po--radio-item:has(input[type="radio"]:checked),
+[data-option="Additional Lettering Location"]
+  .cl-po--checkbox-item:has(input[type="checkbox"]:checked),
+[data-option="Additional Logo Position"]
+  .cl-po--checkbox-item:has(input[type="checkbox"]:checked) {
+  border-color: black;
+  background: white;
 }
 
 .cl-po--label {
-    font-size: 16px!important;
+  font-size: 16px !important;
 }
 
 .cl-po--font-selector .choices__item .o--img {
-    height: 20px!important;
-    position: relative;
-    top: 5px;
+  height: 20px !important;
+  position: relative;
+  top: 5px;
 }
 
-.product .shopify-app-block .cl-po--wrapper .cl-po--options .cl-po--option[data-option="Lettering Location"] .cl-po--swatch-container .cl-po--swatch-item .cl-po--swatch.cl-po--swatch.cl-po--swatch {
-    width: 100% !important;
-    height: 100% !important;
+.product
+  .shopify-app-block
+  .cl-po--wrapper
+  .cl-po--options
+  .cl-po--option[data-option="Lettering Location"]
+  .cl-po--swatch-container
+  .cl-po--swatch-item
+  .cl-po--swatch.cl-po--swatch.cl-po--swatch {
+  width: 100% !important;
+  height: 100% !important;
 }
 
 .cl-po--option[data-option="Embroidery - Child - Both"] {
-    padding-top: 0px!important;
-    padding-bottom: 0px!important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
 }
 
 .cl-po--option[data-option="Embroidery - Child - Lettering"] {
-    padding-top: 0px!important;
-    padding-bottom: 0px!important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
 }
 
 .cl-po--option[data-option="Additional instructions"] textarea {
-    background: #FAFAFA!important;
-    border-radius: 0px!important;
+  background: #fafafa !important;
+  border-radius: 0px !important;
 }
 
 .cl-po--option[data-option="Print Stitch - Fabric Color"],
-.cl-po--option[data-option="Flex Patch - Custom Logo"]{
-  padding-top: 0px!important;
+.cl-po--option[data-option="Flex Patch - Custom Logo"] {
+  padding-top: 0px !important;
 }
 
 .cl-po--option[data-option="Customization Method"] {
-    padding-top: 0px!important;
+  padding-top: 0px !important;
 }
 
 .cl-po--discount-text {
@@ -281,46 +309,45 @@
 }
 
 .cl-po--discount-text ._save {
-    min-width: 85px;
-    background: black!important;
-    border-radius: 5px!important;
+  min-width: 85px;
+  background: black !important;
+  border-radius: 5px !important;
 }
 
-.cl-po--discount-text ._price{
-  color: black!important;
+.cl-po--discount-text ._price {
+  color: black !important;
 }
-
 
 .cl-po--option[data-option="Patches - Buy more and save!"] .cl-po--label:before,
-.cl-po--option[data-option="Screen Print - Buy more and save!"] .cl-po--label:before {
-    content: "Step 4:";
-    color: #900;
-    margin-right: 4px;
+.cl-po--option[data-option="Screen Print - Buy more and save!"]
+  .cl-po--label:before {
+  content: "Step 4:";
+  color: #900;
+  margin-right: 4px;
 }
 
 .cl-po--option[data-option="Patches - Buy more and save!"],
-.cl-po--option[data-option="Screen Print - Buy more and save!"]
-{
-    background: var(--gradient-background)!important;
-    max-width: 350px!important;
+.cl-po--option[data-option="Screen Print - Buy more and save!"] {
+  background: var(--gradient-background) !important;
+  max-width: 350px !important;
 }
 
 .cl-po--option[data-option="Buy More Save More"] {
-    padding: 0px!important;
-    border: none!important;
-    border-top: 1px solid #d8d8d8!Important;
-    background: var(--gradient-background)!important;
+  padding: 0px !important;
+  border: none !important;
+  border-top: 1px solid #d8d8d8 !important;
+  background: var(--gradient-background) !important;
 }
 
 .cl-po--option .cl-po--swatch.cl-po--swatch-color {
-    border-width: 0 !important;
-    border-radius: 50% !important;
-    width: 20px!important;
-    height: 20px!important;
+  border-width: 0 !important;
+  border-radius: 50% !important;
+  width: 20px !important;
+  height: 20px !important;
 }
 
 .cl-po--swatch-color[data-tippy-content="White"].cl-po--swatch-color[data-tippy-content="White"] {
-    border: 1px solid #ccc !important;
+  border: 1px solid #ccc !important;
 }
 
 .cl-po--option[data-option="Additional Lettering Location"],
@@ -339,10 +366,40 @@
 .cl-po--option[data-option="Screen Print - Child - Lettering"],
 .cl-po--option[data-option="Lettering - Ink Color"],
 .cl-po--option[data-option="Lettering - Text"] {
-    padding-bottom: 0px!important;
+  padding-bottom: 0px !important;
 }
 
-.cl-po--option[data-option="Screen Print - Ink Color"]{
-    padding-top: 10px!important;
-    padding-bottom: 0px!important;
+.cl-po--option[data-option="Screen Print - Ink Color"] {
+  padding-top: 10px !important;
+  padding-bottom: 0px !important;
+}
+
+product-form.product-form {
+  padding-top: 20px !important;
+}
+
+.product-form__input.product-form__quantity {
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .related-products .product-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 15px;
+  }
+
+  .related-products .see-product {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+  }
+
+  .related-products .card__information {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    padding-bottom: 80px;
+  }
 }
