@@ -1,0 +1,114 @@
+{%- style -%}
+  .container-media-info {
+    margin-top: 60px;
+  }
+
+  .container-media-info .section:first-child {
+    margin-bottom: 50px;
+  }
+
+  .container-media-info .section-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    color: #000000;
+  }
+
+  .container-media-info .section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 1px;
+    background-color: #dc2626;
+    margin-top: 13px;
+  }
+
+  .container-media-info p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+  }
+
+  .container-media-info a {
+    color: #dc2626;
+    text-decoration: none;
+  }
+
+  .container-media-info a:hover {
+    text-decoration: underline;
+  }
+
+  .container-media-info .note {
+    font-weight: 600;
+    color: black;
+  }
+
+  .container-media-info .website-link {
+    color: #dc2626;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .container-media-info .website-link:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 750px) {
+    .container-media-info .section {
+      margin-bottom: 30px;
+    }
+
+    .desktop-only {
+      display: none;
+    }
+
+    .container-media-info.mobile-only {
+      margin-top: 0px;
+      padding: 0px 15px;
+    }
+
+    .container-media-info.mobile-only .section:first-child {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (min-width: 750px) {
+    .container-media-info.mobile-only {
+      display: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .container-media-info .section {
+      margin-bottom: 25px;
+    }
+  }
+{%- endstyle -%}
+
+{%- for block in section.blocks -%}
+  {%- if block.type == 'additional-text' -%}
+    <div class="container-media-info {{ to_show }}" {{ block.shopify_attributes }}>
+      <div class="section">
+        {%- if block.settings.title_1 != blank -%}
+          <h1 class="section-title">{{ block.settings.title_1 }}</h1>
+        {%- endif -%}
+        {%- if block.settings.text_1 != blank -%}
+          {{ block.settings.text_1 }}
+        {%- endif -%}
+      </div>
+
+      <div class="section">
+        {%- if block.settings.title_2 != blank -%}
+          <h2 class="section-title">{{ block.settings.title_2 }}</h2>
+        {%- endif -%}
+        {%- if block.settings.text_2 != blank -%}
+          {{ block.settings.text_2 }}
+        {%- endif -%}
+      </div>
+    </div>
+  {%- endif -%}
+{%- endfor -%}
