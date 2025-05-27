@@ -562,8 +562,8 @@
         "button_BKEWTb": {
           "type": "button",
           "settings": {
-            "button_label": "Learn More",
-            "button_link": "shopify://collections/frontpage",
+            "button_label": "Go to page",
+            "button_link": "https://www.capswholesalers.com",
             "button_style_secondary": false
           }
         }
