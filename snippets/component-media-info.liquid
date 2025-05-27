@@ -89,9 +89,22 @@
   }
 {%- endstyle -%}
 
+{% assign special_content = false %}
+{%- if product.handle contains 'richardson' or product.handle contains 'decky' or product.handle contains 'zapped' -%}
+  {%- style -%}
+    .container-media-info.special-content .second-section p:last-child {
+      display: none;
+    }
+  {%- endstyle -%}
+  {%- assign special_content = true -%}
+{% endif %}
+
 {%- for block in section.blocks -%}
   {%- if block.type == 'additional-text' -%}
-    <div class="container-media-info {{ to_show }}" {{ block.shopify_attributes }}>
+    <div
+      class="container-media-info {{ to_show }} {% if special_content %}special-content{% endif %}"
+      {{ block.shopify_attributes }}
+    >
       <div class="section">
         {%- if block.settings.title_1 != blank -%}
           <h1 class="section-title">{{ block.settings.title_1 }}</h1>
@@ -101,7 +114,7 @@
         {%- endif -%}
       </div>
 
-      <div class="section">
+      <div class="section second-section">
         {%- if block.settings.title_2 != blank -%}
           <h2 class="section-title">{{ block.settings.title_2 }}</h2>
         {%- endif -%}
