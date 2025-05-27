@@ -405,7 +405,7 @@ product-form.product-form {
 }
 
 textarea.cl-po--input::placeholder {
-    color: black;
-    font-size: 15px;
-    font-family: 'Inter';
+    color: black!important;
+    font-size: 15px!important;
+    font-family: 'Inter'!important;
 }
