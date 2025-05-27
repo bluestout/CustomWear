@@ -160,17 +160,10 @@
             "url": "shopify://collections/7-panel-hats"
           }
         },
-        "collection_4WEpAW": {
-          "type": "collection",
-          "settings": {
-            "title": "Hat Style",
-            "url": ""
-          }
-        },
         "collection_tJzK7C": {
           "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/R75_Red_Budget_12-520px_x_372px.jpg",
+            "image": "shopify://shop_images/R75_Red_Budget_12-520px_x_372px_1.jpg",
             "title": "Budget Hats",
             "url": "shopify://collections/budget-hats"
           }
@@ -212,7 +205,6 @@
         "collection_LgkCT4",
         "collection_tzd3HU",
         "collection_bJiTmG",
-        "collection_4WEpAW",
         "collection_tJzK7C",
         "collection_dzDCb6",
         "collection_V4CjNL",
