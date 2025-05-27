@@ -403,3 +403,9 @@ product-form.product-form {
     padding-bottom: 80px;
   }
 }
+
+textarea.cl-po--input::placeholder {
+    color: black;
+    font-size: 15px;
+    font-family: 'Inter';
+}
