@@ -3911,3 +3911,41 @@ cart-items {
     }
   }
 }
+
+.cs-contact-us{
+  max-width: 1440px;
+  padding: 0 170px;
+  margin: 0 auto;
+
+  .flex{
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .grid__item--icon-with-text{
+    gap: 7px;
+    margin-top: 22px;
+  }
+
+  .grid__item--icon-with-text_text {
+    p{
+      margin: 0;
+    }
+
+    strong{
+      color: #990000;
+      font-weight: 600;
+    }
+  }
+}
+
+.sk-btn.sk-btn-success{
+  color: white;
+  font-size: 13px;
+  font-family: Inter;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 22.10px;
+  letter-spacing: 2px;
+  word-wrap: break-word
+} 

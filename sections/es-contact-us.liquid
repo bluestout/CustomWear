@@ -13,7 +13,7 @@
 {%- endstyle -%}
 
 <div id="{{ section.settings.custom_id }}" class="color-{{ section.settings.color_scheme }} gradient{% if section.settings.tab_section %} tab-section{% endif %}{% if section.settings.hide_section %} hidden{% endif %}">
-  <div class="{% if section.settings.layout == 'row' %}page-width--small{% elsif section.settings.layout == 'section' %} page-width{% elsif section.settings.layout == 'none' %} content-container content-container--full-width{% endif %}">
+  <div class="cs-contact-us {% if section.settings.layout == 'row' %}page-width--small{% elsif section.settings.layout == 'section' %} page-width{% elsif section.settings.layout == 'none' %} content-container content-container--full-width{% endif %}">
     <div class="section-{{ section.id }}-padding{% if section.settings.layout == 'section' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}">
       <div class="grid grid--2-col">
         <div class="grid__item">
@@ -31,10 +31,14 @@
                 <div class="grid__item--text font-p">
                   {{ block.settings.text }}
                 </div>
+              {%- when 'small_text' -%}
+                <div class="grid__item--text font-small">
+                  {{ block.settings.text }}
+                </div>
 
               {%- when 'icon_with_text' -%}
-                <div class="grid__item--icon-with-text">
-                  <div class="grid__item--icon-with-text_media">
+                <div class="grid__item--icon-with-text flex">
+                  <div class="grid__item--icon-with-text_media flex">
                     <img src="{{ block.settings.image | img_url: 'master' }}">
                   </div>
                   <div class="grid__item--icon-with-text_text font-small">
@@ -102,6 +106,17 @@
     {
       "type": "text",
       "name": "Text",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "type": "small_text",
+      "name": "Small Text",
       "settings": [
         {
           "type": "richtext",
