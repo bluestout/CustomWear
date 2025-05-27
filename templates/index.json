@@ -155,9 +155,16 @@
         "collection_bJiTmG": {
           "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/1168_grey_blk_7_Panel_11-520px_x_372px.jpg",
+            "image": "shopify://shop_images/1168_grey_blk_7_Panel_11-520px_x_372px_1.jpg",
             "title": "7 Panel Hats",
             "url": "shopify://collections/7-panel-hats"
+          }
+        },
+        "collection_4WEpAW": {
+          "type": "collection",
+          "settings": {
+            "title": "Hat Style",
+            "url": ""
           }
         },
         "collection_tJzK7C": {
@@ -205,6 +212,7 @@
         "collection_LgkCT4",
         "collection_tzd3HU",
         "collection_bJiTmG",
+        "collection_4WEpAW",
         "collection_tJzK7C",
         "collection_dzDCb6",
         "collection_V4CjNL",
