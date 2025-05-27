@@ -469,7 +469,7 @@
 
                   <div class="sub-total-price">
                     <span class="sub-total-price-title">Total: </span>
-                    <span class="sub-total-price-value"></span>
+                    <span class="sub-total-price-value" data-live-price="{{ product.id }}">{{ product.selected_or_first_available_variant.price | money_with_currency }}</span>
                   </div>
                 </div>
               {%- when 'popup' -%}
