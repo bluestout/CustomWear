@@ -128,10 +128,11 @@
       ],
       "name": "ES Contact US",
       "settings": {
+        "layout": "section",
         "container_color_scheme": "",
-        "color_scheme": "",
+        "color_scheme": "scheme-2",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 80
       }
     }
   },
