@@ -133,15 +133,6 @@
             "addedCssClassNames": "",
             "addedContainerStyles": ""
           }
-        },
-        "additional_text_DzyPi9": {
-          "type": "additional-text",
-          "settings": {
-            "title_1": "Your logo",
-            "text_1": "<p>Submit \"YOUR LOGO\" now or skip and finish checkout. Please email </p><p>to <a href=\"mailto:logos@customizedwear.com\" target=\"_blank\" title=\"mailto:logos@customizedwear.com\">logos@customizedwear.com</a></p><p></p><p><strong>NOTE:</strong> Orders should be one decoration type with the same logo design. If you have multiple logos, please place your orders separately.</p>",
-            "title_2": "After checkout",
-            "text_2": "<p>Your order will be assigned to one of our decoration specialists. They will be handling your order personally throughout the whole process, from start to finish.</p><p></p><p><strong>Want to order a blank sample first? Find this item on </strong><a href=\"https://capswholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\"><strong>Capswholesalers.com</strong></a></p>"
-          }
         }
       },
       "block_order": [
@@ -159,8 +150,7 @@
         "popup_cKwkVJ",
         "popup_wP4nXf",
         "share",
-        "wishlist_hero_custom_product_button_mPe8zB",
-        "additional_text_DzyPi9"
+        "wishlist_hero_custom_product_button_mPe8zB"
       ],
       "settings": {
         "enable_sticky_info": true,
