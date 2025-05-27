@@ -29,6 +29,8 @@
 }
 
 .product .cl-po--option[data-option="Logo Location"],
+.product .cl-po--option[data-option="Embroidery Logo Location"],
+.product .cl-po--option[data-option="Embroidery Lettering Location"],
 .product .cl-po--option[data-option="Location"],
 .product .cl-po--option[data-option="Lettering Location"]{
     padding-top: 0px!important;
@@ -39,6 +41,8 @@
 }
 
 .product .cl-po--option[data-option="Logo Location"] .cl-po--swatch-container,
+.product .cl-po--option[data-option="Embroidery Logo Location"] .cl-po--swatch-container,
+.product .cl-po--option[data-option="Embroidery Lettering Location"] .cl-po--swatch-container,
 .product .cl-po--option[data-option="Location"] .cl-po--swatch-container,
 .product .cl-po--option[data-option="Lettering Location"] .cl-po--swatch-container{
     display: grid;
@@ -47,6 +51,8 @@
 }
 
 .product .cl-po--option[data-option="Logo Location"] .cl-po--swatch.cl-po--large,
+.product .cl-po--option[data-option="Embroidery Logo Location"] .cl-po--swatch.cl-po--large,
+.product .cl-po--option[data-option="Embroidery Lettering Location"] .cl-po--swatch.cl-po--large,
 .product .cl-po--option[data-option="Location"] .cl-po--swatch.cl-po--large,
 .product .cl-po--option[data-option="Lettering Location"] .cl-po--swatch.cl-po--large{
     width: 100%;
@@ -315,4 +321,28 @@
 
 .cl-po--swatch-color[data-tippy-content="White"].cl-po--swatch-color[data-tippy-content="White"] {
     border: 1px solid #ccc !important;
+}
+
+.cl-po--option[data-option="Additional Lettering Location"],
+.cl-po--option[data-option="Lettering Thread Color"],
+.cl-po--option[data-option="Embroidered - Custom Logo"],
+.cl-po--option[data-option="Patches - Custom Logo"],
+.cl-po--option[data-option="Faux Leather - Custom Logo"],
+.cl-po--option[data-option="Patches - Child - Faux Leather"],
+.cl-po--option[data-option="Patches - Child - Leather"],
+.cl-po--option[data-option="Patches  - Child - Print Stitch"],
+.cl-po--option[data-option="Print Stitch - Custom logo"],
+.cl-po--option[data-option="Patches - Child - Flex Patch"],
+.cl-po--option[data-option="Flex Patch - Color Options"],
+.cl-po--option[data-option="Screen Print - Child - Logo"],
+.cl-po--option[data-option="Screen Print - Ink Color Method"],
+.cl-po--option[data-option="Screen Print - Child - Lettering"],
+.cl-po--option[data-option="Lettering - Ink Color"],
+.cl-po--option[data-option="Lettering - Text"] {
+    padding-bottom: 0px!important;
+}
+
+.cl-po--option[data-option="Screen Print - Ink Color"]{
+    padding-top: 10px!important;
+    padding-bottom: 0px!important;
 }

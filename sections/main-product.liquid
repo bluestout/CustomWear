@@ -759,6 +759,12 @@
   </div>
 </product-info>
 
+
+{% comment %} START - ADDITIONAL INFO UNDER MEDIA GALLERY {% endcomment %}
+{% render 'component-media-info', to_show: 'mobile-only', section: section %}
+{% comment %} END - ADDITIONAL INFO UNDER MEDIA GALLERY {% endcomment %}
+
+
 <script>
   const changePrice = newPrice => {
     document.querySelector('.sub-total-price-value').textContent = newPrice + " USD";
@@ -2159,6 +2165,39 @@
           "default": "t:sections.main-product.blocks.icon_with_text.settings.heading_3.default",
           "label": "t:sections.main-product.blocks.icon_with_text.settings.heading_3.label",
           "info": "t:sections.main-product.blocks.icon_with_text.settings.heading.info"
+        }
+      ]
+    },
+    {
+      "type": "additional-text",
+      "name": "Additional Text",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "header",
+          "content": "Will be displayed under media and Product info"
+        },
+        {
+          "type": "text",
+          "id": "title_1",
+          "label": "Title 1",
+          "default": "Your logo"
+        },
+        {
+          "type": "richtext",
+          "id": "text_1",
+          "label": "Text 1"
+        },
+        {
+          "type": "text",
+          "id": "title_2",
+          "label": "Title 2",
+          "default": "After checkout"
+        },
+        {
+          "type": "richtext",
+          "id": "text_2",
+          "label": "Text 2"
         }
       ]
     }
