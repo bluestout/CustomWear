@@ -65,10 +65,79 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "es_contact_us_7yegjM": {
+      "type": "es-contact-us",
+      "blocks": {
+        "sk_form_builder_form_nF4A66": {
+          "type": "shopify://apps/sk-form-builder/blocks/form/f3e35b58-5874-4ef2-8e03-c92cda6e49eb",
+          "settings": {
+            "show_form": true,
+            "form_token": "414b6a5658774570"
+          }
+        },
+        "text_6W8Lhe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you need a quote for customization and can't find a price on our website, please email us your questions at:</p>"
+          }
+        },
+        "icon_with_text_BUGg48": {
+          "type": "icon_with_text",
+          "settings": {
+            "image": "shopify://shop_images/iconamoon_email-light.svg",
+            "text": "<p>info@customizedwear.com</p>"
+          }
+        },
+        "text_DD6jKb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our Customer Service Department is open:</p>"
+          }
+        },
+        "icon_with_text_BbVPB9": {
+          "type": "icon_with_text",
+          "settings": {
+            "image": "shopify://shop_images/material-symbols-light_calendar-today-outline-sharp.svg",
+            "text": "<p>Monday - Friday9:00 AM - 5:00 PM (EST)</p>"
+          }
+        },
+        "icon_with_text_7MJUwE": {
+          "type": "icon_with_text",
+          "settings": {
+            "image": "shopify://shop_images/Ico.svg",
+            "text": "<p><strong>CapWholesalers.com & CustomizedWear.com</strong></p><p>12530 Wiles Rd, Coral Springs, FL 33076</p>"
+          }
+        },
+        "icon_with_text_9AHdyH": {
+          "type": "icon_with_text",
+          "settings": {
+            "image": "shopify://shop_images/Vector.svg",
+            "text": "<p>For Order Status, Returns or Exchanges, you can reach ustoll-fee at: 877-984-2277 (CAPS)</p>"
+          }
+        }
+      },
+      "block_order": [
+        "sk_form_builder_form_nF4A66",
+        "text_6W8Lhe",
+        "icon_with_text_BUGg48",
+        "text_DD6jKb",
+        "icon_with_text_BbVPB9",
+        "icon_with_text_7MJUwE",
+        "icon_with_text_9AHdyH"
+      ],
+      "name": "ES Contact US",
+      "settings": {
+        "container_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "es_image_banner_CJWMWf",
-    "main"
+    "main",
+    "es_contact_us_7yegjM"
   ]
 }
