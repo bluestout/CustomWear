@@ -31,10 +31,6 @@
                 <div class="grid__item--text font-p">
                   {{ block.settings.text }}
                 </div>
-              {%- when 'small_text' -%}
-                <div class="grid__item--text font-small">
-                  {{ block.settings.text }}
-                </div>
 
               {%- when 'icon_with_text' -%}
                 <div class="grid__item--icon-with-text flex">
@@ -44,7 +40,7 @@
                     </div>
                   {% endif %}
                   <div class="grid__item--icon-with-text_text font-small">
-                    {{ block.settings.text }} 
+                    {{ block.settings.text }}
                   </div>
                 </div>
             {%- endcase %}
@@ -132,17 +128,6 @@
     {
       "type": "text",
       "name": "Text",
-      "settings": [
-        {
-          "type": "richtext",
-          "id": "text",
-          "label": "Text"
-        }
-      ]
-    },
-    {
-      "type": "small_text",
-      "name": "Small Text",
       "settings": [
         {
           "type": "richtext",

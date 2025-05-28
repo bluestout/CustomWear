@@ -3915,6 +3915,9 @@ cart-items {
 }
 
 .cs-contact-us{
+  @media (max-width: 750px) {
+    padding: 0;
+  }
   .grid {
     .grid__item {
       @media (min-width: 751px) {
@@ -3938,20 +3941,25 @@ cart-items {
     align-items: flex-start;
   }
 
-  .grid__item--icon-with-text{
+  .grid__item--icon-with-text {
     gap: 7px;
     margin-top: 22px;
   }
 
   .grid__item--icon-with-text_text {
-    p{
+    p {
       margin: 0;
     }
 
-    strong{
+    a {
       color: #990000;
       font-weight: 600;
+      text-decoration: unset;
     }
+  }
+
+  .grid__item--icon-with-text_media {
+    min-width: 30px;
   }
 }
 
