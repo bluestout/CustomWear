@@ -558,12 +558,14 @@
 
         {%- if settings.additional_info_text != blank -%}
           <div class="additional-information">
-            {%- if settings.additional_info_image != blank -%}
-              <div class="additional-information-image">
-                <img src="{{ settings.additional_info_image | img_url: 'master' }}">
-              </div>
-            {%- endif -%}
-            <div class="additional-information-image">{{ settings.additional_info_text }}</div>
+            <a href="{{ settings.additional_info_url }}">
+              {%- if settings.additional_info_image != blank -%}
+                <div class="additional-information-image">
+                  <img src="{{ settings.additional_info_image | img_url: 'master' }}">
+                </div>
+              {%- endif -%}
+              <div class="additional-information-image">{{ settings.additional_info_text }}</div>
+            </a>
           </div>
         {%- endif -%}
       </div>
