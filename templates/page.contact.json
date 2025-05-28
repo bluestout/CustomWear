@@ -112,7 +112,7 @@
           "type": "icon_with_text",
           "settings": {
             "image": "shopify://shop_images/Vector.svg",
-            "text": "<p>For Order Status, Returns or Exchanges, you can reach ustoll-fee at: 877-984-2277 (CAPS)</p>"
+            "text": "<p>For Order Status, Returns or Exchanges, you can reach ustoll-fee at: <a href=\"tel:+18779842277\" title=\"tel:+18779842277\">877-984-2277 (CAPS)</a></p>"
           }
         }
       },
