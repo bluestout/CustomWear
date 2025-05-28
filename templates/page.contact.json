@@ -33,7 +33,6 @@
         "heading_NgReDB",
         "text_WHkNyh"
       ],
-      "name": "ES Image Banner",
       "settings": {
         "show_space": false,
         "image": "shopify://shop_images/allenburt_94637_front_view_of_a_navy_color_trucker_mesh_back__1437e6c4-5721-479b-ac11-dd2e092d9b9e_1_1.jpg",
@@ -86,11 +85,11 @@
           "type": "icon_with_text",
           "settings": {
             "image": "shopify://shop_images/iconamoon_email-light.svg",
-            "text": "<p>info@customizedwear.com</p>"
+            "text": "<p><a href=\"mailto:info@customizedwear.com\" title=\"mailto:info@customizedwear.com\">info@customizedwear.com</a></p>"
           }
         },
-        "text_DD6jKb": {
-          "type": "text",
+        "icon_with_text_Xn86nc": {
+          "type": "icon_with_text",
           "settings": {
             "text": "<p>Our Customer Service Department is open:</p>"
           }
@@ -106,7 +105,7 @@
           "type": "icon_with_text",
           "settings": {
             "image": "shopify://shop_images/Ico.svg",
-            "text": "<p><strong>CapWholesalers.com & CustomizedWear.com</strong></p><p>12530 Wiles Rd, Coral Springs, FL 33076</p>"
+            "text": "<p><a href=\"https://CapWholesalers.com\" title=\"https://CapWholesalers.com\">CapWholesalers.com</a> & <a href=\"https://CustomizedWear.com\" title=\"https://CustomizedWear.com\">CustomizedWear.com</a></p><p>12530 Wiles Rd, Coral Springs, FL 33076</p>"
           }
         },
         "icon_with_text_9AHdyH": {
@@ -121,12 +120,11 @@
         "sk_form_builder_form_nF4A66",
         "text_6W8Lhe",
         "icon_with_text_BUGg48",
-        "text_DD6jKb",
+        "icon_with_text_Xn86nc",
         "icon_with_text_BbVPB9",
         "icon_with_text_7MJUwE",
         "icon_with_text_9AHdyH"
       ],
-      "name": "ES Contact US",
       "settings": {
         "layout": "section",
         "container_color_scheme": "",
