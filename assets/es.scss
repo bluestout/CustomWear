@@ -3973,3 +3973,33 @@ cart-items {
   letter-spacing: 2px;
   word-wrap: break-word
 } 
+
+.cart-drawer {
+  .drawer__inner {
+    .drawer__cart-items-wrapper {
+      table {
+        thead {
+          display: none;
+        }
+      }
+    }
+
+    cart-drawer-items {
+      padding: 0 1.5rem;
+
+      .cart-item__quantity {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .cart-item__error {
+          margin: 0;
+        }
+      }
+    }
+
+    .drawer__footer {
+      padding: 0 1.5rem 1.5rem;
+    }
+  }
+}
