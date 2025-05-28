@@ -98,7 +98,7 @@
           "type": "icon_with_text",
           "settings": {
             "image": "shopify://shop_images/material-symbols-light_calendar-today-outline-sharp.svg",
-            "text": "<p>Monday - Friday9:00 AM - 5:00 PM (EST)</p>"
+            "text": "<p>Monday - Friday</p><p>9:00 AM - 5:00 PM (EST)</p>"
           }
         },
         "icon_with_text_7MJUwE": {
