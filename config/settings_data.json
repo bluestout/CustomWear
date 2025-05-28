@@ -130,6 +130,9 @@
     "show_cart_note": false,
     "cart_drawer_collection": "",
     "cart_color_scheme": "scheme-1",
+    "additional_info_image": "shopify://shop_images/icon_a4268948-8d2b-48d8-970c-27fce3b8dbb2.svg",
+    "additional_info_text": "What happens now?",
+    "additional_info_url": "#",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
