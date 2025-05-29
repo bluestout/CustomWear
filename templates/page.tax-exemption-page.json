@@ -41,21 +41,20 @@
         "text_78apVg": {
           "type": "text",
           "settings": {
-            "text": "<p>SALES TAX & TAX-Exemption<br/>We are required by law to collect sales tax on orders shipping to the following states: AZ, CO, FL, GA, NC, OK, TX.<br/>If you need to place your order immediately, please contact us after submitting the form at<a href=\"mailto:info@customizedwear.com.com\" target=\"_blank\">info@customizedwear.com.com</a>or give us a call about your order at 1-877-984-2277.</p>"
+            "text": "<p>SALES TAX & TAX-Exemption<br/>We are required by law to collect sales tax on orders shipping to the following states: AZ, CO, FL, GA, NC, OK, TX.<br/>If you need to place your order immediately, please contact us after submitting the form at <a href=\"mailto:info@customizedwear.com.com\" target=\"_blank\">info@customizedwear.com </a>or give us a call about your order at 1-877-984-2277.</p>"
           }
         }
       },
       "block_order": [
         "text_78apVg"
       ],
-      "name": "t:sections.rich-text.presets.name",
       "settings": {
         "border_bottom": true,
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
-        "padding_top": 40,
+        "padding_top": 0,
         "padding_bottom": 100
       }
     }
