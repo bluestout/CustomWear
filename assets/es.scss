@@ -3958,6 +3958,11 @@ cart-items {
     }
   }
 
+  .grid__item:last-child {
+    @media (max-width: 750px) {
+      padding: 0 1.5rem;
+    }
+  }
   .grid__item--icon-with-text_media {
     min-width: 30px;
   }
@@ -4028,6 +4033,28 @@ cart-items {
           }
         }
       }
+    }
+  }
+
+  .cart-item__price-wrapper {
+    * {
+      color: black;
+      font-size: 13px;
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      line-height: 22.10px;
+    }
+  }
+
+  quantity-input {
+    filter: grayscale(1);
+
+    .quantity__input {
+      color: black;
+      font-size: 15px;
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      line-height: 120%;
     }
   }
 }

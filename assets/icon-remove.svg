@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-remove" viewBox="0 0 16 16"><path fill="currentColor" d="M14 3h-3.53a3.07 3.07 0 0 0-.6-1.65C9.44.82 8.8.5 8 .5s-1.44.32-1.87.85A3.06 3.06 0 0 0 5.53 3H2a.5.5 0 0 0 0 1h1.25v10c0 .28.22.5.5.5h8.5a.5.5 0 0 0 .5-.5V4H14a.5.5 0 0 0 0-1M6.91 1.98c.23-.29.58-.48 1.09-.48s.85.19 1.09.48c.2.24.3.6.36 1.02h-2.9c.05-.42.17-.78.36-1.02m4.84 11.52h-7.5V4h7.5z"/><path fill="currentColor" d="M6.55 5.25a.5.5 0 0 0-.5.5v6a.5.5 0 0 0 1 0v-6a.5.5 0 0 0-.5-.5m2.9 0a.5.5 0 0 0-.5.5v6a.5.5 0 0 0 1 0v-6a.5.5 0 0 0-.5-.5"/></svg>
+<svg class="icon icon-remove" width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.4434 4.5L11.252 15.5H1.74805L0.556641 4.5H12.4434Z" stroke="black"/>
+<line x1="6.4082" y1="7.90918" x2="6.4082" y2="11.4546" stroke="black"/>
+<line x1="4.04492" y1="7.90918" x2="4.04492" y2="11.4546" stroke="black"/>
+<line x1="8.77344" y1="7.90918" x2="8.77344" y2="11.4546" stroke="black"/>
+<line x1="6.4082" y1="0.818359" x2="6.4082" y2="2.00018" stroke="black"/>
+<line y1="2.68213" x2="13" y2="2.68213" stroke="black"/>
+</svg>
