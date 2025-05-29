@@ -63,11 +63,30 @@
         "padding_top": 40,
         "padding_bottom": 100
       }
+    },
+    "1748534454dff846db": {
+      "type": "apps",
+      "blocks": {
+        "sk_form_builder_form_DiWr4W": {
+          "type": "shopify://apps/sk-form-builder/blocks/form/f3e35b58-5874-4ef2-8e03-c92cda6e49eb",
+          "settings": {
+            "show_form": true,
+            "form_token": "414b6a5658774570"
+          }
+        }
+      },
+      "block_order": [
+        "sk_form_builder_form_DiWr4W"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
     "rich_text_VfJ8w9",
-    "rich_text_9kKh7M"
+    "rich_text_9kKh7M",
+    "1748534454dff846db"
   ]
 }
