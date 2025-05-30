@@ -467,9 +467,13 @@
                     </volume-pricing>
                   {%- endif -%}
 
+                  {% assign live_price_quantity = product.metafields.custom.qty_cw.value | minus: 0 %}
+                  {% assign live_price = product.selected_or_first_available_variant.price %}
+                  {% assign total_price = live_price | times: live_price_quantity %}
+
                   <div class="sub-total-price">
                     <span class="sub-total-price-title">Total: </span>
-                    <span class="sub-total-price-value" data-live-price="{{ product.id }}">{{ product.selected_or_first_available_variant.price | money_with_currency }}</span>
+                    <span class="sub-total-price-value" data-live-price-quantity="{{ product.id }}">{{ total_price | money_with_currency }}</span>
                   </div>
                 </div>
               {%- when 'popup' -%}
