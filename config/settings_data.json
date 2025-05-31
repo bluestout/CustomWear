@@ -200,6 +200,11 @@
         "type": "shopify://apps/urgency-all-in-one-fomo-app/blocks/app-embed/9f1fd920-d273-490f-83fe-0f8188671817",
         "disabled": false,
         "settings": {}
+      },
+      "4275615285897611771": {
+        "type": "shopify://apps/fera/blocks/embed/2fbfcfa7-8a04-479f-89a8-0621fa099c51",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
