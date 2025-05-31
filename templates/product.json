@@ -202,8 +202,8 @@
         "fera_product_reviews_9zYAAA": {
           "type": "shopify://apps/fera/blocks/product_reviews/2fbfcfa7-8a04-479f-89a8-0621fa099c51",
           "settings": {
-            "heading": "Product Reviews",
-            "layout": "masonry",
+            "heading": "Customer Reviews",
+            "layout": "list",
             "star_color": "#000000",
             "when_no_reviews": "show_from_related"
           }
@@ -219,7 +219,7 @@
   },
   "order": [
     "main",
-    "related-products",
-    "174869335437931505"
+    "174869335437931505",
+    "related-products"
   ]
 }
