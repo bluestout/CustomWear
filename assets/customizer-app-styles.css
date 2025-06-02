@@ -383,7 +383,7 @@
 }
 
 [data-option="Customer phone number"] .cl-po--input{
-  margin-bottom:10px;
+  margin-bottom:10px!important;
 }
 
 product-form.product-form {
