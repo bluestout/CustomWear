@@ -1492,3 +1492,12 @@ a.product__text {
     border: none;
   }
 }
+
+/* CUSTOM PRODUCT STYLES */
+.product__title.proudct_sku-wrapper {
+    margin-bottom: 0px!important;
+}
+
+.product__text {
+    margin-top: 0px!important;
+}
