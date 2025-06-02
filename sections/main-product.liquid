@@ -124,9 +124,11 @@
                 </p>
               {%- when 'title' -%}
                 <div class="product__title" {{ block.shopify_attributes }}>
-                  <span>{{ product.title | escape }}</span>
+                  <h1>{{ product.title | escape }}</h1>
                   <a href="{{ product.url }}" class="product__title">
-                    <span>{{ product.title | escape }}</span>
+                    <h2 class="h1">
+                      {{ product.title | escape }}
+                    </h2>
                   </a>
                 </div>
               {%- when 'price' -%}
@@ -222,15 +224,15 @@
                   </div>
                 {%- endif -%}
               {%- when 'sku' -%}
-                <div class="product__title proudct_sku-wrapper">
-                <h1
+                <p
                   class="product__sku{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.sku.size == 0 %} visibility-hidden{% endif %}"
                   id="Sku-{{ section.id }}"
                   role="status"
                   {{ block.shopify_attributes }}
-                >{{- product.selected_or_first_available_variant.sku -}}
-                </h1>
-                </div>
+                >
+                  <span class="visually-hidden">{{ 'products.product.sku' | t }}:</span>
+                  {{- product.selected_or_first_available_variant.sku -}}
+                </p>
               {%- when 'custom_liquid' -%}
                 {{ block.settings.custom_liquid }}
               {%- when 'collapsible_tab' -%}
