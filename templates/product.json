@@ -28,11 +28,9 @@
             "emptyRatingWidget": true
           }
         },
-        "sku_zdxYpC": {
-          "type": "sku",
-          "settings": {
-            "text_style": "subtitle"
-          }
+        "title": {
+          "type": "title",
+          "settings": {}
         },
         "text_tnN9k9": {
           "type": "text",
@@ -41,9 +39,11 @@
             "text_style": "subtitle"
           }
         },
-        "title": {
-          "type": "title",
-          "settings": {}
+        "sku_zdxYpC": {
+          "type": "sku",
+          "settings": {
+            "text_style": "body"
+          }
         },
         "text_Pb8kXM": {
           "type": "text",
@@ -160,9 +160,9 @@
       },
       "block_order": [
         "loox_reviews_loox_rating_cNEJze",
-        "sku_zdxYpC",
-        "text_tnN9k9",
         "title",
+        "text_tnN9k9",
+        "sku_zdxYpC",
         "text_Pb8kXM",
         "variant_picker",
         "live_product_options_app_block_mWfNhx",
