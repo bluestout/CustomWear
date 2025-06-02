@@ -382,8 +382,14 @@
     padding-bottom: 0px!important;
 }
 
-[data-option="Customer phone number"] .cl-po--input{
+.cl-po--option[data-option="Customer phone number"] .cl-po--input{
   margin-bottom:10px!important;
+}
+
+.cl-po--option[data-option="Customer phone number"] .cl-po--input::-webkit-outer-spin-button,
+.cl-po--option[data-option="Customer phone number"] .cl-po--input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 product-form.product-form {
