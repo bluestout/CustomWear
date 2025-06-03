@@ -69,6 +69,63 @@
         "show_text_below": false
       }
     },
+    "slideshow_P78ati": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_dxrCHH": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/allenburt_94637_front_view_of_a_navy_color_trucker_mesh_back__1437e6c4-5721-479b-ac11-dd2e092d9b9e_1_1.jpg",
+            "image_overlay_opacity": 0,
+            "sub_heading": "customize",
+            "heading": "Any Product",
+            "heading_size": "h1",
+            "subheading": "Design your perfect hat – customize colors, fonts for a unique look!",
+            "button_label": "Customize",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-left",
+            "text_alignment": "left",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_BneVkH": {
+          "type": "slide",
+          "settings": {
+            "image_overlay_opacity": 0,
+            "sub_heading": "",
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_dxrCHH",
+        "slide_BneVkH"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
     "es_featured_blocks_zzkdqw": {
       "type": "es-featured-blocks",
       "blocks": {
@@ -596,6 +653,7 @@
   },
   "order": [
     "es_image_banner_Qc9Nmz",
+    "slideshow_P78ati",
     "es_featured_blocks_zzkdqw",
     "es_image_with_text_QiEqMH",
     "es_gallery_with_link_CGamDr",
