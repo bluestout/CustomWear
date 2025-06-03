@@ -45,6 +45,7 @@
         "text_E6czfE",
         "buttons_Ck37kr"
       ],
+      "disabled": true,
       "settings": {
         "show_space": false,
         "image": "shopify://shop_images/Rectangle_94.jpg",
@@ -67,6 +68,44 @@
         "opacity_height_on_mobile": "small",
         "image_height_on_mobile": "square",
         "show_text_below": false
+      }
+    },
+    "slideshow_P78ati": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_dxrCHH": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_94.jpg",
+            "image_overlay_opacity": 0,
+            "sub_heading": "customize",
+            "heading": "Any Product",
+            "heading_size": "h1",
+            "subheading": "Design your perfect hat – customize colors, fonts for a unique look!",
+            "button_label": "Customize",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-left",
+            "text_alignment": "left",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_dxrCHH"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
       }
     },
     "es_featured_blocks_zzkdqw": {
@@ -265,9 +304,9 @@
           "type": "item",
           "settings": {
             "item_width": 6,
-            "image": "shopify://shop_images/America_s_Favorite_cap.png",
-            "title": "Ladies Caps",
-            "url": "shopify://products/sn20w-kati-sportcap-specialty-licensed-camo-unstru",
+            "image": "shopify://shop_images/Richardson_Best_Seller_1500_x_1200_CW.png",
+            "title": "Richardson",
+            "url": "shopify://collections/112-hats-best-sellers",
             "title_2": "Hat Style 2",
             "url_2": ""
           }
@@ -300,8 +339,8 @@
           "type": "item",
           "settings": {
             "item_width": 6,
-            "image": "shopify://shop_images/decky_test.png",
-            "title": "Pacific Hats",
+            "image": "shopify://shop_images/Top_Brands_Otto_1500_x_1200-Photoroom.png",
+            "title": "Otto Hats",
             "url": "shopify://products/6-panel-unstructured-pigment-dyed-heavy-cotton-twi",
             "title_2": "Hat Style 2",
             "url_2": ""
@@ -428,7 +467,7 @@
           "type": "video",
           "settings": {
             "video_url": "https://youtu.be/Nl9YJBWvrco",
-            "featured_image": "shopify://shop_images/image_8.png",
+            "featured_image": "shopify://shop_images/image_6.png",
             "enable_video_looping": false,
             "full_width": false,
             "description": ""
@@ -449,17 +488,7 @@
           "disabled": true,
           "settings": {
             "video_url": "https://youtu.be/axfsK2KEtuk",
-            "featured_image": "shopify://shop_images/Screen_Shot_2025-05-04_at_22.05.28.png",
-            "enable_video_looping": false,
-            "full_width": false,
-            "description": ""
-          }
-        },
-        "video_rXCkzw": {
-          "type": "video",
-          "settings": {
-            "video_url": "https://youtu.be/D0r6cdG9QDQ",
-            "featured_image": "shopify://shop_images/Screen_Shot_2025-05-04_at_22.08.28.png",
+            "featured_image": "shopify://shop_images/image_8.png",
             "enable_video_looping": false,
             "full_width": false,
             "description": ""
@@ -469,8 +498,7 @@
       "block_order": [
         "video_nQgbYm",
         "video_pyYEmP",
-        "video_azGMUG",
-        "video_rXCkzw"
+        "video_azGMUG"
       ],
       "settings": {
         "scrollable": true,
@@ -538,13 +566,6 @@
     "es_image_with_text_kFT4Pw": {
       "type": "es-image-with-text",
       "blocks": {
-        "heading_NGVgUX": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Capwholesalers.com: Your trusted source for quality baseball caps</p>",
-            "heading_size": "h1"
-          }
-        },
         "separator_KFgDcp": {
           "type": "separator",
           "settings": {
@@ -552,10 +573,17 @@
             "width": 100
           }
         },
+        "heading_NGVgUX": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>CapWholesalers.com and browse our latest arrivals and exclusive deals<br/><br/>Your Trusted Source for Quality Caps</p>",
+            "heading_size": "h1"
+          }
+        },
         "text_EXnEAX": {
           "type": "text",
           "settings": {
-            "text": "<p>With over 33 years of experience, CustomizedWear.com is your trusted source for top-quality custom hats, embroidered caps, and branded headwear that stand out. We’ve spent decades perfecting the art of customization — from leather patch hats and 3D puff embroidery to screen printed and faux leather caps, all from the most trusted hat brands. Whether you're outfitting your team, promoting your business, or launching your own merch line, we make it easy, fast, and fun. When it comes to custom headwear, nobody wears it better than us! 🧢</p>",
+            "text": "<p>When it comes to top-notch, wholesale blank baseball caps, CapWholesalers.com is your go-to destination. With over 33 years of industry expertise, we’ve mastered the art of supplying high-quality headwear to businesses of all sizes.</p>",
             "text_style": "body"
           }
         },
@@ -569,8 +597,8 @@
         }
       },
       "block_order": [
-        "heading_NGVgUX",
         "separator_KFgDcp",
+        "heading_NGVgUX",
         "text_EXnEAX",
         "button_BKEWTb"
       ],
@@ -587,15 +615,16 @@
         "mobile_content_alignment": "center",
         "section_color_scheme": "",
         "color_scheme": "scheme-09348374-9048-4109-8e6d-ac33083b4bdd",
-        "padding_top": 40,
-        "padding_bottom": 80,
-        "padding_top_mobile": 0,
+        "padding_top": 4,
+        "padding_bottom": 16,
+        "padding_top_mobile": 16,
         "padding_bottom_mobile": 40
       }
     }
   },
   "order": [
     "es_image_banner_Qc9Nmz",
+    "slideshow_P78ati",
     "es_featured_blocks_zzkdqw",
     "es_image_with_text_QiEqMH",
     "es_gallery_with_link_CGamDr",

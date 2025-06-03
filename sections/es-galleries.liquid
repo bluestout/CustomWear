@@ -19,16 +19,20 @@
         <h2 class="es-font-h2 inline-richtext {{ section.settings.heading_size }} {{ section.settings.heading_alignment }}">
           {{ section.settings.heading }}
         </h2>
-      {%- else -%}
-        <h2 class="visually-hidden">{{ 'accessibility.collapsible_content_title' | t }}</h2>
       {% endif %}
+
+      {%- if section.settings.description != blank -%}
+        <div class="es-font-p">
+          {{ section.settings.description }}
+        </div>
+      {%- endif -%}
 
       {%- if section.settings.galleries != blank -%}
         <div class="mySwiper swiper">
           <div class="swiper-wrapper">
             {%- paginate section.settings.galleries.images.value by 100 -%}
               {%- for image in section.settings.galleries.images.value -%}
-                <div class="grid__item swiper-slide">
+                <div class="swiper-slide">
                   <div class="grid__item-media">
                     <img src="{{ image | img_url: 'master' }}" width="{{ image.width }}" height="{{ image.height }}">
                   </div>
@@ -43,6 +47,14 @@
           </div>
         </div>
       {%- endif -%}
+
+      {%- if section.blocks.size > 0 -%}
+        <div class="es-button-container">
+          {%- for block in section.blocks -%}
+            <a href="{{ block.settings.button_link }}" class="es-button">{{ block.settings.button_text }}</a>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
     </div>
   </div>
 </div>
@@ -53,7 +65,7 @@
     slidesPerGroup: 5,
     grid: {
       rows: 8 ,
-      fill: 'column',
+      fill: 'row',
     },
     spaceBetween: 10,
     navigation: {
@@ -122,6 +134,11 @@
       "id": "heading",
       "label": "t:sections.collapsible_content.settings.heading.label",
       "default": "t:sections.collapsible_content.settings.heading.default"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
     },
     {
       "type": "metaobject",
@@ -236,6 +253,24 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "button",
+      "name": "Button",
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
+        }
+      ]
     }
   ],
   "presets": [

@@ -127,9 +127,12 @@
     "currency_code_enabled": true,
     "cart_type": "drawer",
     "show_vendor": false,
-    "show_cart_note": false,
+    "show_cart_note": true,
     "cart_drawer_collection": "",
     "cart_color_scheme": "scheme-1",
+    "additional_info_image": "shopify://shop_images/icon_a4268948-8d2b-48d8-970c-27fce3b8dbb2.svg",
+    "additional_info_text": "What happens now?",
+    "additional_info_url": "#",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
@@ -187,6 +190,21 @@
           "extraHTMLToAppend": "",
           "disableAutomaticButtonAddition": false
         }
+      },
+      "11212335281082087862": {
+        "type": "shopify://apps/sk-form-builder/blocks/app/f3e35b58-5874-4ef2-8e03-c92cda6e49eb",
+        "disabled": false,
+        "settings": {}
+      },
+      "16973212098894713329": {
+        "type": "shopify://apps/urgency-all-in-one-fomo-app/blocks/app-embed/9f1fd920-d273-490f-83fe-0f8188671817",
+        "disabled": false,
+        "settings": {}
+      },
+      "4275615285897611771": {
+        "type": "shopify://apps/fera/blocks/embed/2fbfcfa7-8a04-479f-89a8-0621fa099c51",
+        "disabled": true,
+        "settings": {}
       }
     },
     "color_schemes": {

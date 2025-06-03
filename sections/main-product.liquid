@@ -1,3 +1,29 @@
+{%  comment  %} START - DYNAMIC STYLES FOR CUSTOMIZER APP {% endcomment %}
+{%- style -%}
+  {%- if product.options.size == 1 -%}
+    .cl-po--option[data-option="Customize Your Hat"] .cl-po--label::before{
+      content: var(--before-content, "Step 1: ");
+      color: #990000;
+    }
+    {% elsif product.options.size == 2 %}
+    .cl-po--option[data-option="Customize Your Hat"] .cl-po--label::before{
+      content: var(--before-content, "Step 3: ");
+      color: #990000;
+    }
+  {%- elsif product.options.size == 3 -%}
+    .cl-po--option[data-option="Customize Your Hat"] .cl-po--label::before{
+      content: var(--before-content, "Step 4: ");
+      color: #990000;
+    }
+  {%- else -%}
+    .cl-po--option[data-option="Customize Your Hat"] .cl-po--label::before{
+      content: var(--before-content, "Step 1: ");
+      color: #990000;
+    }
+  {%- endif -%}
+{%- endstyle -%}
+{% comment %} END - DYNAMIC STYLES FOR CUSTOMIZER APP {% endcomment %}
+
 <product-info
   id="MainProduct-{{ section.id }}"
   class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}"
@@ -441,9 +467,13 @@
                     </volume-pricing>
                   {%- endif -%}
 
+                  {% assign live_price_quantity = product.metafields.custom.qty_cw.value | minus: 0 %}
+                  {% assign live_price = product.selected_or_first_available_variant.price %}
+                  {% assign total_price = live_price | times: live_price_quantity %}
+
                   <div class="sub-total-price">
                     <span class="sub-total-price-title">Total: </span>
-                    <span class="sub-total-price-value"></span>
+                    <span class="sub-total-price-value" data-live-price-quantity="{{ product.id }}">{{ total_price | money_with_currency }}</span>
                   </div>
                 </div>
               {%- when 'popup' -%}
@@ -732,6 +762,12 @@
     </script>
   </div>
 </product-info>
+
+
+{% comment %} START - ADDITIONAL INFO UNDER MEDIA GALLERY {% endcomment %}
+{% render 'component-media-info', to_show: 'mobile-only', section: section %}
+{% comment %} END - ADDITIONAL INFO UNDER MEDIA GALLERY {% endcomment %}
+
 
 <script>
   const changePrice = newPrice => {
@@ -2133,6 +2169,39 @@
           "default": "t:sections.main-product.blocks.icon_with_text.settings.heading_3.default",
           "label": "t:sections.main-product.blocks.icon_with_text.settings.heading_3.label",
           "info": "t:sections.main-product.blocks.icon_with_text.settings.heading.info"
+        }
+      ]
+    },
+    {
+      "type": "additional-text",
+      "name": "Additional Text",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "header",
+          "content": "Will be displayed under media and Product info"
+        },
+        {
+          "type": "text",
+          "id": "title_1",
+          "label": "Title 1",
+          "default": "Your logo"
+        },
+        {
+          "type": "richtext",
+          "id": "text_1",
+          "label": "Text 1"
+        },
+        {
+          "type": "text",
+          "id": "title_2",
+          "label": "Title 2",
+          "default": "After checkout"
+        },
+        {
+          "type": "richtext",
+          "id": "text_2",
+          "label": "Text 2"
         }
       ]
     }
