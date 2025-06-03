@@ -1,23 +1,75 @@
 <style type="text/css">
+  #shopify-section-{{ section.id }} {
+    background-color: #FAFAFA;
+    padding: 50px 0;
+    border-bottom: 1px solid #CCC;
+  }
+
   .template-404 .title + * {
     margin-top: 1rem;
   }
 
   @media screen and (min-width: 750px) {
+    #shopify-section-{{ section.id }} {
+      padding: 100px 0;
+    }
+
     .template-404 .title + * {
       margin-top: 2rem;
     }
   }
 </style>
 
-<div class="template-404 page-width page-margin center">
-  <p>
-    {{ 'templates.404.subtext' | t }}
-  </p>
+<div class="template-404 page-width center">
   <h1 class="title">
     {{ 'templates.404.title' | t }}
   </h1>
-  <a href="{{ routes.all_products_collection_url }}" class="button">
-    {{ 'general.continue_shopping' | t }}
-  </a>
+  <div class="description">{{ section.settings.text }}</div>
+  <div class="button--group">
+    <a href="{{ section.settings.button_link_1 | default: '/' }}" class="es-button">
+      {{ section.settings.button_1 }}
+    </a>
+    <a href="{{ section.settings.button_link_2 }}" class="es-button">
+      {{ section.settings.button_2 }}
+    </a>
+  </div>
 </div>
+
+{%- schema -%}
+{
+  "name": "Main 404",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "text",
+      "id": "button_1",
+      "label": "Button 1"
+    },
+    {
+      "type": "url",
+      "id": "button_link_1",
+      "label": "Button Link 1"
+    },
+    {
+      "type": "text",
+      "id": "button_2",
+      "label": "Button 2"
+    },
+    {
+      "type": "url",
+      "id": "button_link_2",
+      "label": "Button Link 2"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Main 404"
+    }
+  ]
+}
+{%- endschema -%}

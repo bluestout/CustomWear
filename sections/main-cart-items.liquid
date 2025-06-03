@@ -29,14 +29,14 @@
   <div class="page-width">
     <div class="title-wrapper-with-link">
       <h1 class="title title--primary">{{ 'sections.cart.title' | t }}</h1>
-      <a href="{{ routes.all_products_collection_url }}" class="underlined-link">
+      <a href="{{ routes.all_products_collection_url }}" class="es-button underlined-link">
         {{- 'general.continue_shopping' | t -}}
       </a>
     </div>
 
     <div class="cart__warnings">
       <h1 class="cart__empty-text">{{ 'sections.cart.empty' | t }}</h1>
-      <a href="{{ routes.all_products_collection_url }}" class="button">
+      <a href="{{ routes.all_products_collection_url }}" class="es-button">
         {{ 'general.continue_shopping' | t }}
       </a>
 
@@ -58,20 +58,20 @@
               </caption>
               <thead>
                 <tr>
-                  <th class="caption-with-letter-spacing" colspan="2" scope="col">
+                  <th class="" colspan="2" scope="col">
                     {{ 'sections.cart.headings.product' | t }}
                   </th>
-                  <th class="medium-hide large-up-hide right caption-with-letter-spacing" colspan="1" scope="col">
+                  <th class="medium-hide large-up-hide right " colspan="1" scope="col">
                     {{ 'sections.cart.headings.total' | t }}
                   </th>
                   <th
-                    class="cart-items__heading--wide cart-items__heading--quantity small-hide caption-with-letter-spacing"
+                    class="cart-items__heading--wide cart-items__heading--quantity small-hide "
                     colspan="1"
                     scope="col"
                   >
                     {{ 'sections.cart.headings.quantity' | t }}
                   </th>
-                  <th class="small-hide right caption-with-letter-spacing" colspan="1" scope="col">
+                  <th class="small-hide right " colspan="1" scope="col">
                     {{ 'sections.cart.headings.total' | t }}
                   </th>
                 </tr>
@@ -99,7 +99,7 @@
 
                     <td class="cart-item__details">
                       {%- if settings.show_vendor -%}
-                        <p class="caption-with-letter-spacing">{{ item.product.vendor }}</p>
+                        <p class="">{{ item.product.vendor }}</p>
                       {%- endif -%}
 
                       <a href="{{ item.url }}" class="cart-item__name h4 break">{{ item.product.title | escape }}</a>
@@ -181,26 +181,26 @@
                             </dt>
                             <dd>
                               <s class="cart-item__old-price price price--end">
-                                {{ item.original_line_price | money }}
+                                {{ item.original_line_price | money_with_currency }}
                               </s>
                             </dd>
                             <dt class="visually-hidden">
                               {{ 'products.product.price.sale_price' | t }}
                             </dt>
                             <dd class="price price--end">
-                              {{ item.final_line_price | money }}
+                              {{ item.final_line_price | money_with_currency }}
                             </dd>
                           </dl>
                         {%- else -%}
                           <span class="price price--end">
-                            {{ item.original_line_price | money }}
+                            {{ item.original_line_price | money_with_currency }}
                           </span>
                         {%- endif -%}
 
                         {%- if item.variant.available and item.unit_price_measurement -%}
                           <div class="unit-price caption">
                             <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>
-                            {{ item.unit_price | money }}
+                            {{ item.unit_price | money_with_currency }}
                             <span aria-hidden="true">/</span>
                             <span class="visually-hidden"
                               >&nbsp;{{ 'accessibility.unit_price_separator' | t }}&nbsp;</span

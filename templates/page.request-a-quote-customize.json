@@ -1,0 +1,92 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_VfJ8w9": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_8Uwxfk": {
+          "type": "heading",
+          "settings": {
+            "heading": "Request a Quote customized wear",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_8Uwxfk"
+      ],
+      "settings": {
+        "border_bottom": true,
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_9kKh7M": {
+      "type": "rich-text",
+      "blocks": {
+        "text_PyzBcC": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>📞 Get in Touch with CustomizedWear</strong></p><p>We’d love to hear from you! Whether you're ready to start your custom hat order or just have a few questions, we're here to help.</p><p>Feel free to call, email, or fill out the form below. We respond to most messages within <strong>24 hours</strong>.</p><p>For more information about our services, production, and policies, check out our <a href=\"/pages/ordering-shipping-and-return-policies\" title=\"Ordering, Shipping, and Return Policies\">FAQ and Shipping Page</a>.</p><p></p><p><strong>📱 Contact Information</strong></p><p><strong>Toll-Free:</strong> 877-984-2277<br/><br/></p><p><strong>📧 Email Contacts</strong></p><ul><li><strong>General Inquiries & Support</strong><br/>✉️ <a href=\"mailto:info@customizedwear.com\"><span style=\"text-decoration:underline\">info@customizedwear.com</span></a></li><li><strong>Free Quotes & Sales Requests</strong><br/>✉️ <a href=\"mailto:info@customizedwear.com\"><span style=\"text-decoration:underline\">info@customizedwear.com</span></a> <em>(Subject: Quotes)</em></li><li><strong>Embroidery & Custom Product Inquiries</strong><br/>✉️ <a href=\"mailto:sales@customizedwear.com\"><span style=\"text-decoration:underline\">sales@customizedwear.com</span></a> <em>(Subject: Custom)</em></li><li><strong>Sales Tax & Resale Certificates</strong><br/>✉️ <a href=\"mailto:info@customizedwear.com\"><span style=\"text-decoration:underline\">info@customizedwear.com</span></a> <em>(Subject: Resale Sales Tax)</em></li><li><strong>Website or Tech Support</strong><br/>✉️ <a href=\"mailto:info@customizedwear.com\"><span style=\"text-decoration:underline\">info@customizedwear.com</span></a> <em>(Subject: IT)</em></li></ul><p> </p><p> .</p><p><strong>🕘 Business Hours</strong></p><p>Monday – Friday: <strong>9:00 a.m. – 5:00 p.m. EST</strong><br/><em>We are closed on weekends and holidays.</em></p><p></p><p><strong>📬 Mailing Address<br/>Hatco International<br/>CustomizedWear</strong><br/>12530 Wiles Rd<br/>Coral Springs, FL 33076</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_PyzBcC"
+      ],
+      "settings": {
+        "border_bottom": true,
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 100
+      }
+    },
+    "1748534454dff846db": {
+      "type": "apps",
+      "blocks": {
+        "sk_form_builder_form_DiWr4W": {
+          "type": "shopify://apps/sk-form-builder/blocks/form/f3e35b58-5874-4ef2-8e03-c92cda6e49eb",
+          "settings": {
+            "show_form": true,
+            "form_token": "4e73625577744244"
+          }
+        }
+      },
+      "block_order": [
+        "sk_form_builder_form_DiWr4W"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_VfJ8w9",
+    "rich_text_9kKh7M",
+    "1748534454dff846db"
+  ]
+}

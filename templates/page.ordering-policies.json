@@ -48,108 +48,81 @@
         "collapsible_row_FG3mcw": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Customer agreement after placing a blank or custom order",
+            "heading": "Order Processing Time",
             "icon": "none",
-            "row_content": "<p>On occasion when shipping so many orders on a daily basis, errors may occur. If you are shipped more merchandise than what you ordered or merchandise that was not ordered by you, it's your responsibility to notify us at 877-984-2277 to let us know within 24 hours of receipt of goods. You must return any items that were shipped but not ordered by you or that you were not billed for.</p>",
+            "row_content": "<p>Custom Decorated Merchandise:<br/>Design Creation: 5–8 business days to develop and finalize your logo on the selected product.<br/>Production: Once the design is approved, production and shipping preparation typically take an additional 5–8 business days.<br/><br/>Important: Large quantity orders may require additional lead time.</p>",
             "page": ""
           }
         },
         "collapsible_row_YJXA64": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Do you offer rush delivery?",
+            "heading": "Shipping Information",
             "icon": "none",
-            "row_content": "<p>On occasion when shipping so many orders on a daily basis, errors may occur. If you are shipped more merchandise than what you ordered or merchandise that was not ordered by you, it's your responsibility to notify us at 877-984-2277 to let us know within 24 hours of receipt of goods. You must return any items that were shipped but not ordered by you or that you were not billed for.</p>",
+            "row_content": "<p>Domestic Shipping (U.S.):<br/>Once shipped most orders are typically delivered within 5–7 business days after shipping.<br/>Shipped via UPS or FedEx Ground.<br/>You will be notified within 24 hours Monday to Friday if an item is out of stock.<br/>Customers may use their FedEx or UPS accounts if the billing name matches the account name with the carrier.<br/><br/>International Shipping:<br/>International orders may be available. Please email info@customizedwear.com with the subject line \"International Order\" and include your specific request and destination address.<br/>Customs delays, duties, and import taxes are the responsibility of the recipient.<br/>Most international shipments are sent via USPS Air Parcel Post or International Priority Mail (4–12 business days).<br/>For Canadian orders, we use USPS, UPS, or FedEx Ground. If a preferred customs broker is required, specify before shipment. Broker changes cannot be made once an order has shipped out.</p>",
             "page": ""
           }
         },
         "collapsible_row_JD7UxP": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "When can I expect to receive my order?",
+            "heading": "Shipping Policies",
             "icon": "none",
-            "row_content": "<p>On occasion when shipping so many orders on a daily basis, errors may occur. If you are shipped more merchandise than what you ordered or merchandise that was not ordered by you, it's your responsibility to notify us at 877-984-2277 to let us know within 24 hours of receipt of goods. You must return any items that were shipped but not ordered by you or that you were not billed for.</p>",
+            "row_content": "<p>Standard UPS or FedEx Ground is our primary shipping method.<br/>Shipping rates may vary if items are shipped from multiple locations. You will be notified of any cost adjustments.<br/>Express or Air Shipping will receive a custom freight quote, pending approval.<br/>International orders will receive a custom freight quote. We are not responsible for customs and duty fees.</p>",
             "page": ""
           }
         },
         "collapsible_row_BFtyRk": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "International orders delivery time:",
+            "heading": "Standard Ground Shipping Rates:",
             "icon": "none",
-            "row_content": "<p>On occasion when shipping so many orders on a daily basis, errors may occur. If you are shipped more merchandise than what you ordered or merchandise that was not ordered by you, it's your responsibility to notify us at 877-984-2277 to let us know within 24 hours of receipt of goods. You must return any items that were shipped but not ordered by you or that you were not billed for.</p>",
+            "row_content": "<p>Shipping is calculated at checkout.<br/>Orders exceeding 576 units will receive a shipping quote for approval.<br/>(Excludes HI, PR, AK – subject to change)</p>",
             "page": ""
           }
         },
         "collapsible_row_DhFXP9": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Shipping methods",
+            "heading": "Payment Methods",
             "icon": "none",
-            "row_content": "<p>On occasion when shipping so many orders on a daily basis, errors may occur. If you are shipped more merchandise than what you ordered or merchandise that was not ordered by you, it's your responsibility to notify us at 877-984-2277 to let us know within 24 hours of receipt of goods. You must return any items that were shipped but not ordered by you or that you were not billed for.</p>",
+            "row_content": "<p>Visa, MasterCard, Discover, American Express<br/>Apple Pay, PayPal, Zelle, Pre-paid money orders, Cashier’s checks<br/>Company checks (must clear before processing)<br/>Wire transfers for international orders<br/><br/>Note:<br/>No CODs.<br/>Credit cards issued outside the U.S. are not accepted.<br/>Schools & government agencies: Purchase orders are no longer accepted.</p>",
             "page": ""
           }
         },
         "collapsible_row_MMQcVd": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Shipping policies",
+            "heading": "Custom Decorated Items",
             "icon": "none",
-            "row_content": "<p>On occasion when shipping so many orders on a daily basis, errors may occur. If you are shipped more merchandise than what you ordered or merchandise that was not ordered by you, it's your responsibility to notify us at 877-984-2277 to let us know within 24 hours of receipt of goods. You must return any items that were shipped but not ordered by you or that you were not billed for.</p>",
+            "row_content": "<p>Once style, color, and quantity are confirmed, no changes or cancellations are allowed.<br/>All designs must be approved before production begins.<br/>No returns on custom patches, embroidered, or screen-printed merchandise once production has started.</p>",
             "page": ""
           }
         },
         "collapsible_row_M4bNYp": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Standard ground shipping rates for customized caps (excludes HI, PR or AK)",
+            "heading": "Cancellations and Changes",
             "icon": "none",
-            "row_content": "<p>On occasion when shipping so many orders on a daily basis, errors may occur. If you are shipped more merchandise than what you ordered or merchandise that was not ordered by you, it's your responsibility to notify us at 877-984-2277 to let us know within 24 hours of receipt of goods. You must return any items that were shipped but not ordered by you or that you were not billed for.</p>",
+            "row_content": "<p>Cancellations after artwork approval may incur fees for digitizing, setup, and freight.<br/>Decorated items cannot be returned or exchanged.</p>",
             "page": ""
           }
         },
         "collapsible_row_LRVaTJ": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Payment",
+            "heading": "Backorders",
             "icon": "none",
-            "row_content": "<p>On occasion when shipping so many orders on a daily basis, errors may occur. If you are shipped more merchandise than what you ordered or merchandise that was not ordered by you, it's your responsibility to notify us at 877-984-2277 to let us know within 24 hours of receipt of goods. You must return any items that were shipped but not ordered by you or that you were not billed for.</p>",
+            "row_content": "<p>If an item is unavailable, you will be notified to choose an alternative or wait for the estimated restock date.</p>",
             "page": ""
           }
         },
         "collapsible_row_R78dFx": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Returns",
+            "heading": "Pricing Notice",
             "icon": "none",
-            "row_content": "<p>On occasion when shipping so many orders on a daily basis, errors may occur. If you are shipped more merchandise than what you ordered or merchandise that was not ordered by you, it's your responsibility to notify us at 877-984-2277 to let us know within 24 hours of receipt of goods. You must return any items that were shipped but not ordered by you or that you were not billed for.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_fTh47b": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Cancellations",
-            "icon": "none",
-            "row_content": "<p>On occasion when shipping so many orders on a daily basis, errors may occur. If you are shipped more merchandise than what you ordered or merchandise that was not ordered by you, it's your responsibility to notify us at 877-984-2277 to let us know within 24 hours of receipt of goods. You must return any items that were shipped but not ordered by you or that you were not billed for.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_gmfqrt": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Backorders",
-            "icon": "none",
-            "row_content": "<p>On occasion when shipping so many orders on a daily basis, errors may occur. If you are shipped more merchandise than what you ordered or merchandise that was not ordered by you, it's your responsibility to notify us at 877-984-2277 to let us know within 24 hours of receipt of goods. You must return any items that were shipped but not ordered by you or that you were not billed for.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_RNHtza": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Prices on our website",
-            "icon": "none",
-            "row_content": "<p>On occasion when shipping so many orders on a daily basis, errors may occur. If you are shipped more merchandise than what you ordered or merchandise that was not ordered by you, it's your responsibility to notify us at 877-984-2277 to let us know within 24 hours of receipt of goods. You must return any items that were shipped but not ordered by you or that you were not billed for.</p>",
+            "row_content": "<p>All prices are subject to change without notice.</p>",
             "page": ""
           }
         }
@@ -163,10 +136,7 @@
         "collapsible_row_MMQcVd",
         "collapsible_row_M4bNYp",
         "collapsible_row_LRVaTJ",
-        "collapsible_row_R78dFx",
-        "collapsible_row_fTh47b",
-        "collapsible_row_gmfqrt",
-        "collapsible_row_RNHtza"
+        "collapsible_row_R78dFx"
       ],
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {

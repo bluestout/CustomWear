@@ -34,10 +34,12 @@
       ],
       "settings": {
         "show_space": false,
-        "image": "shopify://shop_images/allenburt_94637_a_cinematic_photo_and_A_promotional_piece_for_c46a5914-7d3d-4dfd-a240-5fb5d9c5dc96_1_1.jpg",
+        "image": "shopify://shop_images/CW_How_it_works_Screen_Ptg_1_color_2880_x_580.png",
         "image_mobile": "shopify://shop_images/allenburt_94637_a_cinematic_photo_and_A_promotional_piece_for_c46a5914-7d3d-4dfd-a240-5fb5d9c5dc96_1_1.png",
         "image_overlay_opacity": 100,
         "opacity_type": "gradient",
+        "opacity_color": "primary",
+        "opacity_weight_on_desktop": "light",
         "opacity_direction": "horizontal",
         "image_height": "adapt",
         "image_behavior": "none",
@@ -60,33 +62,36 @@
         "button_38DRWc": {
           "type": "button",
           "settings": {
-            "text": "Embroidery Q&A",
-            "target": "#embroideryQA"
+            "text": "Screenprinting Q&A",
+            "target": "#screenprintingQA"
           }
         },
         "button_FkBWzQ": {
           "type": "button",
           "settings": {
-            "text": "Thread colors",
-            "target": "#threadColors"
+            "text": "INK COLORS",
+            "target": "#inkcolors"
           }
         },
-        "button_iVYQw8": {
+        "button_CaAMcf": {
           "type": "button",
           "settings": {
-            "text": "Embroidery Typefaces",
-            "target": "#embroideryTypefaces"
+            "text": "SCREENPRINT LETTERING FONTS",
+            "target": "#ScreenprintLetteringFonts"
           }
         }
       },
       "block_order": [
         "button_38DRWc",
         "button_FkBWzQ",
-        "button_iVYQw8"
+        "button_CaAMcf"
       ],
       "settings": {
         "padding_top": 32,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "sm_padding_top": 20,
+        "sm_padding_bottom": 20,
+        "sm_select_show": true
       }
     },
     "collapsible_content_grGaaG": {
@@ -95,315 +100,144 @@
         "collapsible_row_CqVCww": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Can I get a \"BLANK\" sample before I place my custom order?",
+            "heading": "What is the ordering process for custom screen printed caps?",
             "icon": "none",
-            "row_content": "<p>We highly recommend ordering a blank hat/apparel sample before starting a custom order. Once the caps are chosen, they cannot be changed after they are decorated. We suggest ordering a few blank caps or shirts that you may be interested in having us embroider or print for you. We cannot be responsible if product colors are not exactly as shown on the website because dye lots change and material is purchased from various factories. This way you are sure that you like that particular item. You can place your order through our other website; <a href=\"https://www.capwholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\">www.capwholesalers.com</a>.</p>",
+            "row_content": "<p>Browse our collection and choose the styles, colors, and quantities you need. Place your order through our website. A 40% deposit is charged upfront, and the remaining balance is collected after you approve the emailed sample of your custom logo.</p>",
             "page": ""
           }
         },
         "collapsible_row_n4dPix": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Can I have my logo in 3D (puffed or raised)?",
+            "heading": "How do I send my logo for screen printing on caps?",
             "icon": "none",
-            "row_content": "<p>We highly recommend ordering a blank hat/apparel sample before starting a custom order. Once the caps are chosen, they cannot be changed after they are decorated. We suggest ordering a few blank caps or shirts that you may be interested in having us embroider or print for you. We cannot be responsible if product colors are not exactly as shown on the website because dye lots change and material is purchased from various factories. This way you are sure that you like that particular item. You can place your order through our other website; <a href=\"https://www.capwholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\">www.capwholesalers.com</a>.</p>",
+            "row_content": "<p>If you didn’t upload your logo on the product page, please email it to: logos@customizedwear.com.</p>",
             "page": ""
           }
         },
         "collapsible_row_TBAhxE": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "I need a Marlin's cap. Can you do it?",
+            "heading": "How are screen printing prices determined?",
             "icon": "none",
-            "row_content": "<p>We highly recommend ordering a blank hat/apparel sample before starting a custom order. Once the caps are chosen, they cannot be changed after they are decorated. We suggest ordering a few blank caps or shirts that you may be interested in having us embroider or print for you. We cannot be responsible if product colors are not exactly as shown on the website because dye lots change and material is purchased from various factories. This way you are sure that you like that particular item. You can place your order through our other website; <a href=\"https://www.capwholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\">www.capwholesalers.com</a>.</p>",
+            "row_content": "<p>Prices listed include one-color screen printing, setup, and screen charges, provided you order at least 12 pieces per color, style, and size. Quantity discounts apply when the same logo or text is printed on all items. Price breaks occur at: 12, 24, 48, 72, 96, 144, 288, 576, 1008, and 1500 pieces. Shipping is additional and shown at checkout. Need a large order? Contact us for a custom quote.</p>",
             "page": ""
           }
         },
         "collapsible_row_6eqxz9": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "If I do not have a logo, what can I do?",
+            "heading": "Can I mix styles and colors?",
             "icon": "none",
-            "row_content": "<p>We highly recommend ordering a blank hat/apparel sample before starting a custom order. Once the caps are chosen, they cannot be changed after they are decorated. We suggest ordering a few blank caps or shirts that you may be interested in having us embroider or print for you. We cannot be responsible if product colors are not exactly as shown on the website because dye lots change and material is purchased from various factories. This way you are sure that you like that particular item. You can place your order through our other website; <a href=\"https://www.capwholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\">www.capwholesalers.com</a>.</p>",
+            "row_content": "<p>Yes, if the same logo or lettering is used across all items. You may combine different styles, sizes, and colors in 12-piece increments. Note: We can only screen print one ink color on caps.</p>",
             "page": ""
           }
         },
         "collapsible_row_hFM7if": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "What is the difference between a logo and lettering?",
+            "heading": "What is the minimum order quantity for screen printed hats?",
             "icon": "none",
-            "row_content": "<p>We highly recommend ordering a blank hat/apparel sample before starting a custom order. Once the caps are chosen, they cannot be changed after they are decorated. We suggest ordering a few blank caps or shirts that you may be interested in having us embroider or print for you. We cannot be responsible if product colors are not exactly as shown on the website because dye lots change and material is purchased from various factories. This way you are sure that you like that particular item. You can place your order through our other website; <a href=\"https://www.capwholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\">www.capwholesalers.com</a>.</p>",
+            "row_content": "<p>A 12-piece minimum is required for screen printed caps due to the setup and production process.</p>",
             "page": ""
           }
         },
         "collapsible_row_cQDbaU": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "What is the ordering process for custom embroidered caps and shirts?",
+            "heading": "Will my logo fit on a cap?",
             "icon": "none",
-            "row_content": "<p>We highly recommend ordering a blank hat/apparel sample before starting a custom order. Once the caps are chosen, they cannot be changed after they are decorated. We suggest ordering a few blank caps or shirts that you may be interested in having us embroider or print for you. We cannot be responsible if product colors are not exactly as shown on the website because dye lots change and material is purchased from various factories. This way you are sure that you like that particular item. You can place your order through our other website; <a href=\"https://www.capwholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\">www.capwholesalers.com</a>.</p>",
+            "row_content": "<p>Max design height: 2.25\" on most caps; 1.25\" high x 4\" wide on sun visors<br/>Max width: Up to 4.5\", depending on cap style<br/>Minimum text size: 0.25\" high for legibility<br/>Placement: Standard is front center; optional lower left/right near the bill; back printing is possible with simple one-color text</p>",
             "page": ""
           }
         },
         "collapsible_row_rQtNKz": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Do you have a \"RUSH\"  service available for promotional caps?",
+            "heading": "Can all hats be screen printed?",
             "icon": "none",
-            "row_content": "<p>We highly recommend ordering a blank hat/apparel sample before starting a custom order. Once the caps are chosen, they cannot be changed after they are decorated. We suggest ordering a few blank caps or shirts that you may be interested in having us embroider or print for you. We cannot be responsible if product colors are not exactly as shown on the website because dye lots change and material is purchased from various factories. This way you are sure that you like that particular item. You can place your order through our other website; <a href=\"https://www.capwholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\">www.capwholesalers.com</a>.</p>",
+            "row_content": "<p>Not all caps are suitable for screen printing. We prefer 5-panel caps without a front seam. Some logos may be too detailed. After reviewing your artwork, we’ll let you know if it's a good fit.</p>",
             "page": ""
           }
         },
         "collapsible_row_4QRrkg": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "How do I send my logo to you?",
+            "heading": "Can I change the ink color on my caps?",
             "icon": "none",
-            "row_content": "<p>We highly recommend ordering a blank hat/apparel sample before starting a custom order. Once the caps are chosen, they cannot be changed after they are decorated. We suggest ordering a few blank caps or shirts that you may be interested in having us embroider or print for you. We cannot be responsible if product colors are not exactly as shown on the website because dye lots change and material is purchased from various factories. This way you are sure that you like that particular item. You can place your order through our other website; <a href=\"https://www.capwholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\">www.capwholesalers.com</a>.</p>",
+            "row_content": "<p>Yes, for a $18 fee per color change.</p>",
             "page": ""
           }
         },
         "collapsible_row_6p4m9m": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "How long does it take after I place my order for custom embroidered items?",
+            "heading": "How do I select ink colors for my custom hat design?",
             "icon": "none",
-            "row_content": "<p>We highly recommend ordering a blank hat/apparel sample before starting a custom order. Once the caps are chosen, they cannot be changed after they are decorated. We suggest ordering a few blank caps or shirts that you may be interested in having us embroider or print for you. We cannot be responsible if product colors are not exactly as shown on the website because dye lots change and material is purchased from various factories. This way you are sure that you like that particular item. You can place your order through our other website; <a href=\"https://www.capwholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\">www.capwholesalers.com</a>.</p>",
+            "row_content": "<p>You can select from our available ink colors on the product page. If your logo includes specific colors not listed, we’ll match them as closely as possible. Provide your PMS color code in the order notes if needed.</p>",
             "page": ""
           }
         },
         "collapsible_row_46mHGj": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "How are the prices determined?",
+            "heading": "What font styles can I use?",
             "icon": "none",
-            "row_content": "<p>We highly recommend ordering a blank hat/apparel sample before starting a custom order. Once the caps are chosen, they cannot be changed after they are decorated. We suggest ordering a few blank caps or shirts that you may be interested in having us embroider or print for you. We cannot be responsible if product colors are not exactly as shown on the website because dye lots change and material is purchased from various factories. This way you are sure that you like that particular item. You can place your order through our other website; <a href=\"https://www.capwholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\">www.capwholesalers.com</a>.</p>",
+            "row_content": "<p>Choose from our screen printing font selection. Alternatively, send us your preferred lettering and layout.</p>",
             "page": ""
           }
         },
         "collapsible_row_DrtUtT": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "What if my logo requires more than the standard stitch count?",
+            "heading": "Can I order blank samples to check the comfort and quality?",
             "icon": "none",
-            "row_content": "<p>We highly recommend ordering a blank hat/apparel sample before starting a custom order. Once the caps are chosen, they cannot be changed after they are decorated. We suggest ordering a few blank caps or shirts that you may be interested in having us embroider or print for you. We cannot be responsible if product colors are not exactly as shown on the website because dye lots change and material is purchased from various factories. This way you are sure that you like that particular item. You can place your order through our other website; <a href=\"https://www.capwholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\">www.capwholesalers.com</a>.</p>",
+            "row_content": "<p>Yes! Visit our sister site CapWholesalers.com to order blank caps for review. Some brands may not offer individual units due to manufacturer restrictions.</p>",
             "page": ""
           }
         },
         "collapsible_row_hmfpQV": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Will I get a free custom sample to approve?",
+            "heading": "What if I need my custom screen printed hats faster?",
             "icon": "none",
-            "row_content": "<p>We highly recommend ordering a blank hat/apparel sample before starting a custom order. Once the caps are chosen, they cannot be changed after they are decorated. We suggest ordering a few blank caps or shirts that you may be interested in having us embroider or print for you. We cannot be responsible if product colors are not exactly as shown on the website because dye lots change and material is purchased from various factories. This way you are sure that you like that particular item. You can place your order through our other website; <a href=\"https://www.capwholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\">www.capwholesalers.com</a>.</p>",
+            "row_content": "<p>Rush service may be available depending on our production schedule. Orders must be submitted by 1 PM EST. Additional rush or express shipping fees may apply. Contact us in advance to confirm availability.</p>",
             "page": ""
           }
         },
         "collapsible_row_kRRjc8": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Can I mix up the styles and colors?",
+            "heading": "What is the production time for custom printed caps?",
             "icon": "none",
-            "row_content": "<p>We highly recommend ordering a blank hat/apparel sample before starting a custom order. Once the caps are chosen, they cannot be changed after they are decorated. We suggest ordering a few blank caps or shirts that you may be interested in having us embroider or print for you. We cannot be responsible if product colors are not exactly as shown on the website because dye lots change and material is purchased from various factories. This way you are sure that you like that particular item. You can place your order through our other website; <a href=\"https://www.capwholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\">www.capwholesalers.com</a>.</p>",
+            "row_content": "<p>Sample: 5-10 business days<br/>After approval: 7-10 business days<br/>Total time: 12-15 business days (may vary for large orders)</p>",
             "page": ""
           }
         },
         "collapsible_row_qkMbJj": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "What if I do not want to order 12-piece minimum?",
+            "heading": "Can I cancel or change my order?",
             "icon": "none",
-            "row_content": "<p>We highly recommend ordering a blank hat/apparel sample before starting a custom order. Once the caps are chosen, they cannot be changed after they are decorated. We suggest ordering a few blank caps or shirts that you may be interested in having us embroider or print for you. We cannot be responsible if product colors are not exactly as shown on the website because dye lots change and material is purchased from various factories. This way you are sure that you like that particular item. You can place your order through our other website; <a href=\"https://www.capwholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\">www.capwholesalers.com</a>.</p>",
+            "row_content": "<p>Changes or cancellations after placing a custom order may incur fees for screens, setup, or shipping. Decorated items are non-returnable. If no response is received within 10 days of sample delivery, you may forfeit your deposit.</p>",
             "page": ""
           }
         },
         "collapsible_row_PFitQ7": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Will my logo fit on a cap or shirt?",
+            "heading": "Will I get to approve my screen printed logo before production?",
             "icon": "none",
-            "row_content": "<p>We highly recommend ordering a blank hat/apparel sample before starting a custom order. Once the caps are chosen, they cannot be changed after they are decorated. We suggest ordering a few blank caps or shirts that you may be interested in having us embroider or print for you. We cannot be responsible if product colors are not exactly as shown on the website because dye lots change and material is purchased from various factories. This way you are sure that you like that particular item. You can place your order through our other website; <a href=\"https://www.capwholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\">www.capwholesalers.com</a>.</p>",
+            "row_content": "<p>Yes! Once we receive your order and 40% deposit, we’ll email a sample photo of your logo printed on a cap at no charge. If adjustments are needed, we’ll revise it at no extra cost. Significant design changes after approval may incur a $35 editing fee. Want the actual physical sample? We can ship it for an additional $25.</p>",
             "page": ""
           }
         },
         "collapsible_row_Y4zCQL": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Can I have different thread colors on different items?",
+            "heading": "Will my order arrive with exact quantities?",
             "icon": "none",
-            "row_content": "<p>We highly recommend ordering a blank hat/apparel sample before starting a custom order. Once the caps are chosen, they cannot be changed after they are decorated. We suggest ordering a few blank caps or shirts that you may be interested in having us embroider or print for you. We cannot be responsible if product colors are not exactly as shown on the website because dye lots change and material is purchased from various factories. This way you are sure that you like that particular item. You can place your order through our other website; <a href=\"https://www.capwholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\">www.capwholesalers.com</a>.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_zLeUp7": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "How many thread colors can I use?",
-            "icon": "none",
-            "row_content": "<p>We highly recommend ordering a blank hat/apparel sample before starting a custom order. Once the caps are chosen, they cannot be changed after they are decorated. We suggest ordering a few blank caps or shirts that you may be interested in having us embroider or print for you. We cannot be responsible if product colors are not exactly as shown on the website because dye lots change and material is purchased from various factories. This way you are sure that you like that particular item. You can place your order through our other website; <a href=\"https://www.capwholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\">www.capwholesalers.com</a>.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_76Ky44": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "How do I choose my thread colors?",
-            "icon": "none",
-            "row_content": "<p>We highly recommend ordering a blank hat/apparel sample before starting a custom order. Once the caps are chosen, they cannot be changed after they are decorated. We suggest ordering a few blank caps or shirts that you may be interested in having us embroider or print for you. We cannot be responsible if product colors are not exactly as shown on the website because dye lots change and material is purchased from various factories. This way you are sure that you like that particular item. You can place your order through our other website; <a href=\"https://www.capwholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\">www.capwholesalers.com</a>.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_aMR8bz": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "What lettering (font) styles can I use and how many letters?",
-            "icon": "none",
-            "row_content": "<p>We highly recommend ordering a blank hat/apparel sample before starting a custom order. Once the caps are chosen, they cannot be changed after they are decorated. We suggest ordering a few blank caps or shirts that you may be interested in having us embroider or print for you. We cannot be responsible if product colors are not exactly as shown on the website because dye lots change and material is purchased from various factories. This way you are sure that you like that particular item. You can place your order through our other website; <a href=\"https://www.capwholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\">www.capwholesalers.com</a>.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_qNPG4j": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Will I see a sample of my embroidery after I place my order?",
-            "icon": "none",
-            "row_content": "<p>We highly recommend ordering a blank hat/apparel sample before starting a custom order. Once the caps are chosen, they cannot be changed after they are decorated. We suggest ordering a few blank caps or shirts that you may be interested in having us embroider or print for you. We cannot be responsible if product colors are not exactly as shown on the website because dye lots change and material is purchased from various factories. This way you are sure that you like that particular item. You can place your order through our other website; <a href=\"https://www.capwholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\">www.capwholesalers.com</a>.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_yMYycA": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Can I also add embroidery another location once I choose a patch?",
-            "icon": "none",
-            "row_content": "<p>We highly recommend ordering a blank hat/apparel sample before starting a custom order. Once the caps are chosen, they cannot be changed after they are decorated. We suggest ordering a few blank caps or shirts that you may be interested in having us embroider or print for you. We cannot be responsible if product colors are not exactly as shown on the website because dye lots change and material is purchased from various factories. This way you are sure that you like that particular item. You can place your order through our other website; <a href=\"https://www.capwholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\">www.capwholesalers.com</a>.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_3tAEhc": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Do you offer patches",
-            "icon": "none",
-            "row_content": "<p>We highly recommend ordering a blank hat/apparel sample before starting a custom order. Once the caps are chosen, they cannot be changed after they are decorated. We suggest ordering a few blank caps or shirts that you may be interested in having us embroider or print for you. We cannot be responsible if product colors are not exactly as shown on the website because dye lots change and material is purchased from various factories. This way you are sure that you like that particular item. You can place your order through our other website; <a href=\"https://www.capwholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\">www.capwholesalers.com</a>.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_AWXANp": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "How are the prices determined for custom patches?",
-            "icon": "none",
-            "row_content": "<p>We highly recommend ordering a blank hat/apparel sample before starting a custom order. Once the caps are chosen, they cannot be changed after they are decorated. We suggest ordering a few blank caps or shirts that you may be interested in having us embroider or print for you. We cannot be responsible if product colors are not exactly as shown on the website because dye lots change and material is purchased from various factories. This way you are sure that you like that particular item. You can place your order through our other website; <a href=\"https://www.capwholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\">www.capwholesalers.com</a>.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_d3YAin": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "How long to get my custom patches on caps?",
-            "icon": "none",
-            "row_content": "<p>We highly recommend ordering a blank hat/apparel sample before starting a custom order. Once the caps are chosen, they cannot be changed after they are decorated. We suggest ordering a few blank caps or shirts that you may be interested in having us embroider or print for you. We cannot be responsible if product colors are not exactly as shown on the website because dye lots change and material is purchased from various factories. This way you are sure that you like that particular item. You can place your order through our other website; <a href=\"https://www.capwholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\">www.capwholesalers.com</a>.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_7GzTNX": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "How much does it cost to apply the patch on the cap?",
-            "icon": "none",
-            "row_content": "<p>We highly recommend ordering a blank hat/apparel sample before starting a custom order. Once the caps are chosen, they cannot be changed after they are decorated. We suggest ordering a few blank caps or shirts that you may be interested in having us embroider or print for you. We cannot be responsible if product colors are not exactly as shown on the website because dye lots change and material is purchased from various factories. This way you are sure that you like that particular item. You can place your order through our other website; <a href=\"https://www.capwholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\">www.capwholesalers.com</a>.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_B7yMwp": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "How will my patch look on the cap I like?",
-            "icon": "none",
-            "row_content": "<p>We highly recommend ordering a blank hat/apparel sample before starting a custom order. Once the caps are chosen, they cannot be changed after they are decorated. We suggest ordering a few blank caps or shirts that you may be interested in having us embroider or print for you. We cannot be responsible if product colors are not exactly as shown on the website because dye lots change and material is purchased from various factories. This way you are sure that you like that particular item. You can place your order through our other website; <a href=\"https://www.capwholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\">www.capwholesalers.com</a>.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_3dxG6n": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Patches changes or cancellations",
-            "icon": "none",
-            "row_content": "<p>We highly recommend ordering a blank hat/apparel sample before starting a custom order. Once the caps are chosen, they cannot be changed after they are decorated. We suggest ordering a few blank caps or shirts that you may be interested in having us embroider or print for you. We cannot be responsible if product colors are not exactly as shown on the website because dye lots change and material is purchased from various factories. This way you are sure that you like that particular item. You can place your order through our other website; <a href=\"https://www.capwholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\">www.capwholesalers.com</a>.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_GT6HnD": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "What if I don't need 48 caps with patches",
-            "icon": "none",
-            "row_content": "<p>We highly recommend ordering a blank hat/apparel sample before starting a custom order. Once the caps are chosen, they cannot be changed after they are decorated. We suggest ordering a few blank caps or shirts that you may be interested in having us embroider or print for you. We cannot be responsible if product colors are not exactly as shown on the website because dye lots change and material is purchased from various factories. This way you are sure that you like that particular item. You can place your order through our other website; <a href=\"https://www.capwholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\">www.capwholesalers.com</a>.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_TewymY": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "What if I want different colored caps with my custom patches",
-            "icon": "none",
-            "row_content": "<p>We highly recommend ordering a blank hat/apparel sample before starting a custom order. Once the caps are chosen, they cannot be changed after they are decorated. We suggest ordering a few blank caps or shirts that you may be interested in having us embroider or print for you. We cannot be responsible if product colors are not exactly as shown on the website because dye lots change and material is purchased from various factories. This way you are sure that you like that particular item. You can place your order through our other website; <a href=\"https://www.capwholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\">www.capwholesalers.com</a>.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_QqrtpE": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "How do I pay for my order?",
-            "icon": "none",
-            "row_content": "<p>We highly recommend ordering a blank hat/apparel sample before starting a custom order. Once the caps are chosen, they cannot be changed after they are decorated. We suggest ordering a few blank caps or shirts that you may be interested in having us embroider or print for you. We cannot be responsible if product colors are not exactly as shown on the website because dye lots change and material is purchased from various factories. This way you are sure that you like that particular item. You can place your order through our other website; <a href=\"https://www.capwholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\">www.capwholesalers.com</a>.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_KTDFnm": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Why won't you ship my order to the ship address I requested?",
-            "icon": "none",
-            "row_content": "<p>We highly recommend ordering a blank hat/apparel sample before starting a custom order. Once the caps are chosen, they cannot be changed after they are decorated. We suggest ordering a few blank caps or shirts that you may be interested in having us embroider or print for you. We cannot be responsible if product colors are not exactly as shown on the website because dye lots change and material is purchased from various factories. This way you are sure that you like that particular item. You can place your order through our other website; <a href=\"https://www.capwholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\">www.capwholesalers.com</a>.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_pGVFz8": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Over runs/Under runs and imperfections",
-            "icon": "none",
-            "row_content": "<p>We highly recommend ordering a blank hat/apparel sample before starting a custom order. Once the caps are chosen, they cannot be changed after they are decorated. We suggest ordering a few blank caps or shirts that you may be interested in having us embroider or print for you. We cannot be responsible if product colors are not exactly as shown on the website because dye lots change and material is purchased from various factories. This way you are sure that you like that particular item. You can place your order through our other website; <a href=\"https://www.capwholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\">www.capwholesalers.com</a>.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_tRU4qb": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Quality Embroidery when matching your logo",
-            "icon": "none",
-            "row_content": "<p>We highly recommend ordering a blank hat/apparel sample before starting a custom order. Once the caps are chosen, they cannot be changed after they are decorated. We suggest ordering a few blank caps or shirts that you may be interested in having us embroider or print for you. We cannot be responsible if product colors are not exactly as shown on the website because dye lots change and material is purchased from various factories. This way you are sure that you like that particular item. You can place your order through our other website; <a href=\"https://www.capwholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\">www.capwholesalers.com</a>.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_zqzW9j": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Cancellations or Changes?",
-            "icon": "none",
-            "row_content": "<p>We highly recommend ordering a blank hat/apparel sample before starting a custom order. Once the caps are chosen, they cannot be changed after they are decorated. We suggest ordering a few blank caps or shirts that you may be interested in having us embroider or print for you. We cannot be responsible if product colors are not exactly as shown on the website because dye lots change and material is purchased from various factories. This way you are sure that you like that particular item. You can place your order through our other website; <a href=\"https://www.capwholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\">www.capwholesalers.com</a>.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_tDqFr7": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Satisfaction Shipping and Delivery Policy",
-            "icon": "none",
-            "row_content": "<p>We highly recommend ordering a blank hat/apparel sample before starting a custom order. Once the caps are chosen, they cannot be changed after they are decorated. We suggest ordering a few blank caps or shirts that you may be interested in having us embroider or print for you. We cannot be responsible if product colors are not exactly as shown on the website because dye lots change and material is purchased from various factories. This way you are sure that you like that particular item. You can place your order through our other website; <a href=\"https://www.capwholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\">www.capwholesalers.com</a>.</p>",
+            "row_content": "<p>We do our best to ship exact quantities, but a standard 5% overrun or underrun may occur due to printing adjustments.</p>",
             "page": ""
           }
         }
@@ -424,31 +258,12 @@
         "collapsible_row_kRRjc8",
         "collapsible_row_qkMbJj",
         "collapsible_row_PFitQ7",
-        "collapsible_row_Y4zCQL",
-        "collapsible_row_zLeUp7",
-        "collapsible_row_76Ky44",
-        "collapsible_row_aMR8bz",
-        "collapsible_row_qNPG4j",
-        "collapsible_row_yMYycA",
-        "collapsible_row_3tAEhc",
-        "collapsible_row_AWXANp",
-        "collapsible_row_d3YAin",
-        "collapsible_row_7GzTNX",
-        "collapsible_row_B7yMwp",
-        "collapsible_row_3dxG6n",
-        "collapsible_row_GT6HnD",
-        "collapsible_row_TewymY",
-        "collapsible_row_QqrtpE",
-        "collapsible_row_KTDFnm",
-        "collapsible_row_pGVFz8",
-        "collapsible_row_tRU4qb",
-        "collapsible_row_zqzW9j",
-        "collapsible_row_tDqFr7"
+        "collapsible_row_Y4zCQL"
       ],
       "settings": {
         "tab_section": true,
         "hide_section": false,
-        "custom_id": "embroideryQA",
+        "custom_id": "screenprintingQA",
         "caption": "",
         "heading": "Screen Printing Q&A",
         "heading_size": "h1",
@@ -469,120 +284,253 @@
         "color_gV7qRi": {
           "type": "color",
           "settings": {
-            "color": "#37a328",
-            "text": "Lt. Green"
+            "color": "#f8d350",
+            "text": "81000 Lemon Yellow"
           }
         },
         "color_Mkegc3": {
           "type": "color",
           "settings": {
-            "color": "#195816",
-            "text": "Spruce"
+            "color": "#f9c81c",
+            "text": "82500 Yellow"
           }
         },
         "color_W6AhLL": {
           "type": "color",
           "settings": {
-            "color": "#209c91",
-            "text": "Teal"
+            "color": "#f9b205",
+            "text": "80100 Light Gold"
           }
         },
         "color_wp8MCA": {
           "type": "color",
           "settings": {
-            "color": "#0d7bbc",
-            "text": "Lt. Blue"
+            "color": "#fbac02",
+            "text": "80000 Gold"
           }
         },
         "color_tDea6M": {
           "type": "color",
           "settings": {
-            "color": "#001eb2",
-            "text": "Royal"
+            "color": "#f18417",
+            "text": "30400 Dolphin Orange"
           }
         },
         "color_JJk6Gm": {
           "type": "color",
           "settings": {
-            "color": "#041157",
-            "text": "Navy"
+            "color": "#f1700e",
+            "text": "30200 Bright Orange"
           }
         },
         "color_rLzyE6": {
           "type": "color",
           "settings": {
-            "color": "#760977",
-            "text": "Purple"
+            "color": "#e94513",
+            "text": "485CSB Pantone485C"
           }
         },
         "color_iQUKQj": {
           "type": "color",
           "settings": {
-            "color": "#8f121a",
-            "text": "Maroon"
+            "color": "#db1f02",
+            "text": "40000 Scarlet"
           }
         },
         "color_aidFDQ": {
           "type": "color",
           "settings": {
-            "color": "#bc0c1c",
-            "text": "Red"
+            "color": "#cd0631",
+            "text": "43000 National Red"
           }
         },
         "color_hYha7D": {
           "type": "color",
           "settings": {
-            "color": "#fc656a",
-            "text": "Pink"
+            "color": "#c20239",
+            "text": "42000 Dallas Scarlet"
           }
         },
         "color_9W3EJT": {
           "type": "color",
           "settings": {
-            "color": "#fc531c",
-            "text": "Orange"
+            "color": "#b20244",
+            "text": "45800 Russel Cardinal"
           }
         },
         "color_PatGFt": {
           "type": "color",
           "settings": {
-            "color": "#ffbc24",
-            "text": "Yellow"
+            "color": "#89013e",
+            "text": "48600 Burgundy"
           }
         },
         "color_xDWpkx": {
           "type": "color",
           "settings": {
-            "color": "#d9b373",
-            "text": "Tan"
+            "color": "#550129",
+            "text": "45400 Maroon"
           }
         },
         "color_jrTrja": {
           "type": "color",
           "settings": {
-            "color": "#4f0006",
-            "text": "Brown"
+            "color": "#ca5b99",
+            "text": "47600 Brandywine"
           }
         },
         "color_yLfMji": {
           "type": "color",
           "settings": {
-            "color": "#898989",
-            "text": "Gray"
+            "color": "#8a649d",
+            "text": "50200 Purple"
           }
         },
         "color_BkJWAJ": {
           "type": "color",
           "settings": {
-            "color": "#000000",
-            "text": "Black"
+            "color": "#3c005a",
+            "text": "50400 Russell Purple"
           }
         },
         "color_VCmx6E": {
           "type": "color",
           "settings": {
-            "color": "#ffffff",
-            "text": "White"
+            "color": "#002155",
+            "text": "60000 Navy Blue"
+          }
+        },
+        "color_cihRMz": {
+          "type": "color",
+          "settings": {
+            "color": "#004270",
+            "text": "66100 Bear's Navy"
+          }
+        },
+        "color_KRjmGP": {
+          "type": "color",
+          "settings": {
+            "color": "#22539d",
+            "text": "62100 Light Royal"
+          }
+        },
+        "color_YBNcf3": {
+          "type": "color",
+          "settings": {
+            "color": "#01358c",
+            "text": "60420 Deacon Blue"
+          }
+        },
+        "color_xkDJU9": {
+          "type": "color",
+          "settings": {
+            "color": "#3ab2d4",
+            "text": "60650 Contact Blue"
+          }
+        },
+        "color_tH84VQ": {
+          "type": "color",
+          "settings": {
+            "color": "#4c9ec2",
+            "text": "68500 Winter Blue"
+          }
+        },
+        "color_kfTYPf": {
+          "type": "color",
+          "settings": {
+            "color": "#4bbeb7",
+            "text": "75300 Turquoise"
+          }
+        },
+        "color_7rHDjR": {
+          "type": "color",
+          "settings": {
+            "color": "#008d88",
+            "text": "67800 Deep Aqua"
+          }
+        },
+        "color_rUddEm": {
+          "type": "color",
+          "settings": {
+            "color": "#009950",
+            "text": "70500 Dallas Green"
+          }
+        },
+        "color_qUxQTT": {
+          "type": "color",
+          "settings": {
+            "color": "#00704e",
+            "text": "7000 Kelly Green"
+          }
+        },
+        "color_kCcnLV": {
+          "type": "color",
+          "settings": {
+            "color": "#77e264",
+            "text": "75900 Black Light Green"
+          }
+        },
+        "color_978LVU": {
+          "type": "color",
+          "settings": {
+            "color": "#ac7502",
+            "text": "23800 Spice Brown"
+          }
+        },
+        "color_wTgkPd": {
+          "type": "color",
+          "settings": {
+            "color": "#432d00",
+            "text": "20100 Dark Brown"
+          }
+        },
+        "color_zPxTMz": {
+          "type": "color",
+          "settings": {
+            "color": "#cccccc",
+            "text": "13300 Russell Gray"
+          }
+        },
+        "color_QgDd9n": {
+          "type": "color",
+          "settings": {
+            "color": "#9a9a9a",
+            "text": "14600 Dark Gray"
+          }
+        },
+        "color_w387XE": {
+          "type": "color",
+          "settings": {
+            "color": "#fed1a4",
+            "text": "12600 Rebel Flesh"
+          }
+        },
+        "color_TnzMn6": {
+          "type": "color",
+          "settings": {
+            "color": "#fed1df",
+            "text": "PMS 217 (Lt Pink)"
+          }
+        },
+        "color_kDDdFt": {
+          "type": "color",
+          "settings": {
+            "color": "#c6d4f1",
+            "text": "PMS 658 (Lt Blue)"
+          }
+        },
+        "color_F3X8Ef": {
+          "type": "color",
+          "settings": {
+            "color": "#d4b773",
+            "text": "PMS 466 (Lt Khaki)"
+          }
+        },
+        "color_Kppgnz": {
+          "type": "color",
+          "settings": {
+            "color": "#ffa1b3",
+            "text": "Panther Pink"
           }
         }
       },
@@ -603,13 +551,32 @@
         "color_jrTrja",
         "color_yLfMji",
         "color_BkJWAJ",
-        "color_VCmx6E"
+        "color_VCmx6E",
+        "color_cihRMz",
+        "color_KRjmGP",
+        "color_YBNcf3",
+        "color_xkDJU9",
+        "color_tH84VQ",
+        "color_kfTYPf",
+        "color_7rHDjR",
+        "color_rUddEm",
+        "color_qUxQTT",
+        "color_kCcnLV",
+        "color_978LVU",
+        "color_wTgkPd",
+        "color_zPxTMz",
+        "color_QgDd9n",
+        "color_w387XE",
+        "color_TnzMn6",
+        "color_kDDdFt",
+        "color_F3X8Ef",
+        "color_Kppgnz"
       ],
       "settings": {
         "tab_section": true,
         "hide_section": true,
-        "custom_id": "threadColors",
-        "heading": "Thread Colors",
+        "custom_id": "inkcolors",
+        "heading": "Ink Colors",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "row",
@@ -619,21 +586,22 @@
         "padding_bottom": 80
       }
     },
-    "es_typefaces_aPPrxr": {
+    "es_typefaces_nhH3BE": {
       "type": "es-typefaces",
+      "name": "ES Typefaces",
       "settings": {
         "tab_section": true,
         "hide_section": true,
-        "custom_id": "embroideryTypefaces",
-        "heading": "Embroidery Typefaces",
-        "typefaces_group": "embroidery",
+        "custom_id": "ScreenprintLetteringFonts",
+        "heading": "Screenprint Lettering Fonts",
+        "typefaces_group": "screenprint",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "section",
         "container_color_scheme": "",
         "color_scheme": "scheme-2",
-        "padding_top": 52,
-        "padding_bottom": 80
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
@@ -643,6 +611,6 @@
     "es_tab_buttons_6H7Fdx",
     "collapsible_content_grGaaG",
     "es_color_list_CA6xez",
-    "es_typefaces_aPPrxr"
+    "es_typefaces_nhH3BE"
   ]
 }

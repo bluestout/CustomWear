@@ -11,10 +11,35 @@
   "sections": {
     "main": {
       "type": "main-404",
-      "settings": {}
+      "settings": {
+        "text": "<p>Looks like the page you're looking for no longer exists.</p><p>Try going back to the previous page or to the pages below.</p>",
+        "button_1": "GO TO THE HOME PAGE",
+        "button_link_1": "",
+        "button_2": "Continue shopping",
+        "button_link_2": "shopify://collections"
+      }
+    },
+    "es_featured_collection_eYjT4U": {
+      "type": "es-featured-collection",
+      "name": "ES Featured Collection",
+      "settings": {
+        "title": "You may also like",
+        "collection": "best-sellers",
+        "products_to_show": 12,
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "border_bottom": true,
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "es_featured_collection_eYjT4U"
   ]
 }

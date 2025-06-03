@@ -1,0 +1,457 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "es_image_banner_BNEHrk": {
+      "type": "es-image-banner",
+      "blocks": {
+        "heading_XjRwRT": {
+          "type": "heading",
+          "settings": {
+            "subheading": "",
+            "heading": "Cap Size Charts & Definitions",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_XjRwRT"
+      ],
+      "name": "ES Image Banner",
+      "settings": {
+        "show_space": false,
+        "image": "shopify://shop_images/allenburt_94637_httpss.mj.runlwhUVcnLWIY_Professional_studio__665c3873-514c-42a1-b908-a04b8f7ff395_0_1.jpg",
+        "image_mobile": "shopify://shop_images/allenburt_94637_httpss.mj.runlwhUVcnLWIY_Professional_studio__665c3873-514c-42a1-b908-a04b8f7ff395_0_1.png",
+        "image_overlay_opacity": 100,
+        "opacity_type": "gradient",
+        "opacity_color": "primary",
+        "opacity_weight_on_desktop": "light",
+        "opacity_direction": "horizontal",
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
+        "stack_images_on_mobile": false,
+        "mobile_content_position": "bottom",
+        "mobile_content_alignment": "center",
+        "opacity_direct_on_mobile": "vertical",
+        "opacity_height_on_mobile": "large",
+        "image_height_on_mobile": "adapt",
+        "show_text_below": false
+      }
+    },
+    "es_tab_buttons_pGgW6r": {
+      "type": "es-tab-buttons",
+      "blocks": {
+        "button_RkGQV4": {
+          "type": "button",
+          "settings": {
+            "text": "Caps Size Chart",
+            "target": "#tabCapsSizeChart"
+          }
+        },
+        "button_QVWpgF": {
+          "type": "button",
+          "settings": {
+            "text": "Cap Definitions",
+            "target": "#tabCapDefinitions"
+          }
+        }
+      },
+      "block_order": [
+        "button_RkGQV4",
+        "button_QVWpgF"
+      ],
+      "name": "ES Tab Buttons",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 0,
+        "sm_padding_top": 20,
+        "sm_padding_bottom": 20,
+        "sm_select_show": true
+      }
+    },
+    "es_cap_size_chart_WQNGYc": {
+      "type": "es-cap-size-chart",
+      "blocks": {
+        "page_tF8Wfd": {
+          "type": "page",
+          "name": "Size Table 1",
+          "settings": {
+            "page": "size-table-1",
+            "responsive": "desktop"
+          }
+        },
+        "page_ULq7wc": {
+          "type": "page",
+          "name": "Size Table 2",
+          "settings": {
+            "page": "size-table-2",
+            "responsive": "desktop"
+          }
+        },
+        "page_tC9qd7": {
+          "type": "page",
+          "settings": {
+            "page": "size-chart-for-mobile",
+            "responsive": "mobile"
+          }
+        },
+        "image_with_text_aV9RAk": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/1600203478-size-cap-measurement_1.png",
+            "text": "<p><strong>Note:</strong> if your head measurement came out to be 22 1/4 inches, you would move up to the 22 1/2 column (the blue one above). Following it down, you would find you are a size M (Medium), or a 7 1/8 hat size.</p><p></p><p><strong>FITTED HAT SIZES FOR FLEX-FIT HATS</strong></p><p> Flex-fit hats have a range of sizes, such as <a href=\"#\" title=\"#\">S/M</a> (Small through Medium). So a S/M hat would fit heads with measurements of 21 inches to 22 1/2 inches, or hat sizes 6 3/4 to 7 1/8. A L/XL (Large through Extra Large) hat would fit measurements just over 22 1/2 up to 24 inches, or hat size 7 1/4 to 7 5/8.<br/><br/></p><p><strong>ONE SIZE FITS MOST</strong> </p><p>If a hat does not list sizes, it is a 'one-size-fits-most' hat. It will fit sizes from hat size 6 3/4 up to 7 5/8.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "page_tF8Wfd",
+        "page_ULq7wc",
+        "page_tC9qd7",
+        "image_with_text_aV9RAk"
+      ],
+      "name": "ES Size Chart",
+      "settings": {
+        "tab_section": true,
+        "hide_section": false,
+        "custom_id": "tabCapsSizeChart",
+        "heading": "Caps Size Chart",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "text": "<p>Use this chart of hat sizes below to determine your size. If your head size falls in between two sizes, you should choose the next larger size.</p>",
+        "layout": "row",
+        "container_color_scheme": "",
+        "color_scheme": "scheme-2",
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "es_cap_definitions_Ww3Hba": {
+      "type": "es-cap-definitions",
+      "blocks": {
+        "content_kbRhL9": {
+          "type": "content",
+          "settings": {
+            "heading": "Profile or Crown",
+            "text": "<p>A baseball cap profile refers to the structure or crown on the front of the cap above the brim. There are generally four types of baseball cap profiles:</p><ul><li>(A) Structured–Standard high pro-crown profile</li><li>(B) Mid crown profile</li><li>(C) Mid to Low crown profile</li><li>(D) Unstructured – Low crown profile</li><li>(E) Pro round - round upper panels</li></ul>"
+          }
+        },
+        "space_MN8Byz": {
+          "type": "space",
+          "settings": {}
+        },
+        "content_XiAWz3": {
+          "type": "content",
+          "settings": {
+            "heading": "Crown options",
+            "text": ""
+          }
+        },
+        "image_with_text_XGdhJU": {
+          "type": "image_with_text",
+          "settings": {
+            "sm_column": false,
+            "heading": "Crown options",
+            "description": "",
+            "image": "shopify://shop_images/1566253557-cap1_1.png",
+            "left_text": "",
+            "text": "<h4>PRO HIGH (A)</h4><p>It has a structured, steep profile and is typically featured with a flat visor.</p>",
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
+        },
+        "image_with_text_hHdWDG": {
+          "type": "image_with_text",
+          "settings": {
+            "sm_column": false,
+            "heading": "",
+            "description": "",
+            "image": "shopify://shop_images/1566253810-cap4_1.png",
+            "left_text": "",
+            "text": "<h4>PRO MID (B)</h4><p>Often thought of as the traditional baseball cap, it is usually structured, but has a slightly lower profile.</p>",
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
+        },
+        "image_with_text_DMLV8b": {
+          "type": "image_with_text",
+          "settings": {
+            "sm_column": false,
+            "heading": "",
+            "description": "",
+            "image": "shopify://shop_images/1566253729-cap3_1.png",
+            "left_text": "",
+            "text": "<h4>MID TO LOW (C)</h4><p>It is slightly less slanted and shallower than the Pro Mid but can be structured or unstructured.</p>",
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
+        },
+        "image_with_text_3DGK9H": {
+          "type": "image_with_text",
+          "settings": {
+            "sm_column": false,
+            "heading": "",
+            "description": "",
+            "image": "shopify://shop_images/1566253810-cap4_1.png",
+            "left_text": "",
+            "text": "<h4>LOW (D)</h4><p>It is either unstructured or lightly structured to lie closely to the head and is paired with a pre-curved visor.</p>",
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
+        },
+        "image_with_text_ywJpAM": {
+          "type": "image_with_text",
+          "settings": {
+            "sm_column": false,
+            "heading": "",
+            "description": "",
+            "image": "shopify://shop_images/1566253865-screen-shot-2019-08-19-at-3.30.45-pm_1.png",
+            "left_text": "",
+            "text": "<h4>PRO ROUND (E)</h4><p>It has premium dual-tone buckram and rounded upper panels that contour to rest securely on your head. It is featured with a slight pre-curved visor.</p>",
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
+        },
+        "space_Jhy3br": {
+          "type": "space",
+          "settings": {}
+        },
+        "content_ccJ48Y": {
+          "type": "content",
+          "settings": {
+            "heading": "Closure type - For adjustable caps",
+            "text": "<p>Adjustable baseball caps have closures on the back of the caps that allow you to adjust the size.</p>"
+          }
+        },
+        "image_with_text_JUHi4T": {
+          "type": "image_with_text",
+          "settings": {
+            "sm_column": false,
+            "heading": "",
+            "description": "",
+            "image": "shopify://shop_images/1566316851-caps-good_1.png",
+            "left_text": "",
+            "text": "<p>Plastic snap</p>",
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
+        },
+        "image_with_text_JeGrBH": {
+          "type": "image_with_text",
+          "settings": {
+            "sm_column": false,
+            "heading": "",
+            "description": "",
+            "image": "shopify://shop_images/1566316851-caps-good_1_1.png",
+            "left_text": "",
+            "text": "<p>Double plastic snap</p>",
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
+        },
+        "image_with_text_m3A6fx": {
+          "type": "image_with_text",
+          "settings": {
+            "sm_column": false,
+            "heading": "",
+            "description": "",
+            "image": "shopify://shop_images/1566316851-caps-good_1_2.png",
+            "left_text": "",
+            "text": "<p>Hook/Loop tape</p>",
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
+        },
+        "image_with_text_JXKrVa": {
+          "type": "image_with_text",
+          "settings": {
+            "sm_column": false,
+            "heading": "",
+            "description": "",
+            "image": "shopify://shop_images/1566316851-caps-good_1_3.png",
+            "left_text": "",
+            "text": "<p>Tuck strap with slide</p>",
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
+        },
+        "image_with_text_WVB4UJ": {
+          "type": "image_with_text",
+          "settings": {
+            "sm_column": false,
+            "heading": "",
+            "description": "",
+            "image": "shopify://shop_images/1566316851-caps-good_1_4.png",
+            "left_text": "",
+            "text": "<p>Tuck strap with buckle or snap buckle</p>",
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
+        },
+        "image_with_text_WDyGap": {
+          "type": "image_with_text",
+          "settings": {
+            "sm_column": false,
+            "heading": "",
+            "description": "",
+            "image": "shopify://shop_images/1566316851-caps-good_1_7.png",
+            "left_text": "",
+            "text": "<p>D-Fit®</p>",
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
+        },
+        "image_with_text_hPYbW8": {
+          "type": "image_with_text",
+          "settings": {
+            "sm_column": false,
+            "heading": "",
+            "description": "",
+            "image": "shopify://shop_images/1566316851-caps-good_1_6.png",
+            "left_text": "",
+            "text": "<p>Nylon strap with plastic buckle</p>",
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
+        },
+        "space_qVyg4J": {
+          "type": "space",
+          "settings": {}
+        },
+        "content_L9gwdC": {
+          "type": "content",
+          "settings": {
+            "heading": "Fitted caps are not adjustable",
+            "text": "<p>Fitted caps are not adjustable, since they are fitted to head sizes, and therefore do not have closure types, the back of a fitted cap is closed.</p>"
+          }
+        },
+        "image_with_text_yc9r6L": {
+          "type": "image_with_text",
+          "settings": {
+            "sm_column": true,
+            "heading": "",
+            "description": "",
+            "left_text": "Panels:",
+            "text": "<p>Panels are different pieces of fabric that make up the top of the cap, there are usually five or six panels in a baseball cap.</p>",
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
+        },
+        "image_with_text_xxqzDq": {
+          "type": "image_with_text",
+          "settings": {
+            "sm_column": true,
+            "heading": "",
+            "description": "",
+            "left_text": "Fabric Material:",
+            "text": "<p>Baseball caps are generally made of cotton, cotton blends, jersey mesh, wool, acrylic/wool blends, and moisture wicking fabric.</p>",
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
+        },
+        "image_with_text_kFwBGP": {
+          "type": "image_with_text",
+          "settings": {
+            "sm_column": true,
+            "heading": "",
+            "description": "",
+            "left_text": "Brim:",
+            "text": "<p>Also known as bill or visor. The brim of the cap is the piece that protects your face from the sun. It is usually made of plastic which is sewn inside the fabric.</p>",
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
+        },
+        "image_with_text_PPAJhM": {
+          "type": "image_with_text",
+          "settings": {
+            "sm_column": true,
+            "heading": "",
+            "description": "",
+            "left_text": "Eyelets:",
+            "text": "<p>Eyelets are small holes at the top of the cap that allow your head to breathe. They can either be metal or reinforced stitching.</p>",
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
+        },
+        "image_with_text_NP9Afj": {
+          "type": "image_with_text",
+          "settings": {
+            "sm_column": true,
+            "heading": "",
+            "description": "",
+            "left_text": "Buckram:",
+            "text": "<p>The buckram of a baseball cap is the mesh liner inside of the front of the cap that provides the structure and form. Structured caps have buckram and unstructured caps have no buckram, giving them the more casual, lower profile.</p>",
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "content_kbRhL9",
+        "space_MN8Byz",
+        "content_XiAWz3",
+        "image_with_text_XGdhJU",
+        "image_with_text_hHdWDG",
+        "image_with_text_DMLV8b",
+        "image_with_text_3DGK9H",
+        "image_with_text_ywJpAM",
+        "space_Jhy3br",
+        "content_ccJ48Y",
+        "image_with_text_JUHi4T",
+        "image_with_text_JeGrBH",
+        "image_with_text_m3A6fx",
+        "image_with_text_JXKrVa",
+        "image_with_text_WVB4UJ",
+        "image_with_text_WDyGap",
+        "image_with_text_hPYbW8",
+        "space_qVyg4J",
+        "content_L9gwdC",
+        "image_with_text_yc9r6L",
+        "image_with_text_xxqzDq",
+        "image_with_text_kFwBGP",
+        "image_with_text_PPAJhM",
+        "image_with_text_NP9Afj"
+      ],
+      "name": "ES Cap Definitions",
+      "settings": {
+        "tab_section": true,
+        "hide_section": true,
+        "custom_id": "tabCapDefinitions",
+        "heading": "Cap Definitions",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "text": "",
+        "layout": "row",
+        "container_color_scheme": "",
+        "color_scheme": "scheme-2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "es_image_banner_BNEHrk",
+    "es_tab_buttons_pGgW6r",
+    "es_cap_size_chart_WQNGYc",
+    "es_cap_definitions_Ww3Hba"
+  ]
+}

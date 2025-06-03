@@ -38,22 +38,15 @@
             "button_link_2": "",
             "button_style_secondary_2": false
           }
-        },
-        "image_BUmNa8": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_95.png"
-          }
         }
       },
       "block_order": [
         "heading_bkYrfC",
         "text_E6czfE",
-        "buttons_Ck37kr",
-        "image_BUmNa8"
+        "buttons_Ck37kr"
       ],
       "settings": {
-        "show_space": true,
+        "show_space": false,
         "image": "shopify://shop_images/Rectangle_94.jpg",
         "image_mobile": "shopify://shop_images/Rectangle_94.png",
         "image_overlay_opacity": 0,
@@ -76,21 +69,59 @@
         "show_text_below": false
       }
     },
+    "slideshow_P78ati": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_dxrCHH": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/allenburt_94637_front_view_of_a_navy_color_trucker_mesh_back__1437e6c4-5721-479b-ac11-dd2e092d9b9e_1_1.jpg",
+            "image_overlay_opacity": 0,
+            "sub_heading": "customize",
+            "heading": "Any Product",
+            "heading_size": "h1",
+            "subheading": "Design your perfect hat – customize colors, fonts for a unique look!",
+            "button_label": "Customize",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-left",
+            "text_alignment": "left",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_dxrCHH"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
     "es_featured_blocks_zzkdqw": {
       "type": "es-featured-blocks",
       "blocks": {
         "collection_rthtNn": {
           "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/256_Cardinal-White_520_x_376px.jpg",
-            "title": "premium 5 Panel Golf Hats",
+            "image": "shopify://shop_images/255_berry_5_Panel_1__520_x_376px_2.jpg",
+            "title": "Premium 5 Panel Golf",
             "url": "shopify://collections/5-panel-golf-hats"
           }
         },
         "collection_3tFD4j": {
           "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/112_Tri-White-Aluminum-Black__520_x_376px.jpg",
+            "image": "shopify://shop_images/112_Tri-White-Aluminum-Black-520_x_376px_1.jpg",
             "title": "Trucker Mesh Hats",
             "url": "shopify://collections/trucker-mesh-hats"
           }
@@ -98,65 +129,105 @@
         "collection_J89ex6": {
           "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/Group_248.png",
-            "title": "Sport",
-            "url": "shopify://collections/kati-sportsman"
+            "image": "shopify://shop_images/Sport_Perform_Dk_Green_3__520_x_376px_1.jpg",
+            "title": "Sport Performance Hats",
+            "url": "shopify://collections/richardson-sport-performance"
           }
         },
         "collection_EmE39w": {
           "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/Group_249.png",
-            "title": "Flexfit",
+            "image": "shopify://shop_images/Flexfit_4__520_x_376px_1.jpg",
+            "title": "Flexfit Hats",
             "url": "shopify://collections/flexfit-hats"
           }
         },
         "collection_fraWam": {
           "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/Group_251.png",
-            "title": "Trucker Mesh",
-            "url": "shopify://collections/trucker-mesh-hats"
+            "image": "shopify://shop_images/213_Snapback_5__520_x_376px_3.jpg",
+            "title": "Snapback Hats",
+            "url": "shopify://collections/snapback-caps"
           }
         },
         "collection_TGYUpq": {
           "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/Group_247.png",
-            "title": "Imperial",
-            "url": "shopify://collections/imperial-hats"
+            "image": "shopify://shop_images/6006_Char_5_Panel_Golf_1-__520_x_376px_1.jpg",
+            "title": "Flat Billed Hats",
+            "url": "shopify://collections/flat-bill-hats"
           }
         },
         "collection_nfmcKf": {
           "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/img.png",
-            "title": "Premium 5-Panel Golf",
-            "url": "shopify://collections/5-panel-golf-hats"
+            "image": "shopify://shop_images/decky_6032_rope_hat_Hat_Style_7-__520_x_376px_1.jpg",
+            "title": "Rope Hats",
+            "url": "shopify://collections/roped-hats"
           }
         },
         "collection_epykX9": {
           "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/Group_248.png",
-            "title": "Sport",
-            "url": "shopify://collections/kati-sportsman"
+            "image": "shopify://shop_images/840_Realtree_Camo_8__520_x_376px_1.jpg",
+            "title": "Camo Hats",
+            "url": "shopify://collections/camo-hats"
           }
         },
         "collection_LgkCT4": {
           "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/Group_249.png",
-            "title": "Flexfit",
-            "url": "shopify://collections/flexfit-hats"
+            "image": "shopify://shop_images/938_LegionBlue_Dads_Relax_9__520_x_376px_1.jpg",
+            "title": "Dad Relaxed Hats",
+            "url": "shopify://collections/relaxed-dad-hats"
           }
         },
         "collection_tzd3HU": {
           "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/Group_251.png",
-            "title": "Trucker Mesh",
-            "url": "shopify://collections/trucker-mesh-hats"
+            "image": "shopify://shop_images/514_Gry_Blk_6_Panel_Baseball_10-520_x_376px_1.jpg",
+            "title": "6 Panel Baseball",
+            "url": "shopify://collections/6-panel-baseball-caps"
+          }
+        },
+        "collection_bJiTmG": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/1168_grey_blk_7_Panel_11-520px_x_372px_1.jpg",
+            "title": "7 Panel Hats",
+            "url": "shopify://collections/7-panel-hats"
+          }
+        },
+        "collection_tJzK7C": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/R75_Red_Budget_12-520px_x_372px_1.jpg",
+            "title": "Budget Hats",
+            "url": "shopify://collections/budget-hats"
+          }
+        },
+        "collection_dzDCb6": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/810_Royal_Bucket_Hat_13-520px_x_372px_1.jpg",
+            "title": "Bucket & Sun Hats",
+            "url": "shopify://collections/bucket-sun-hats"
+          }
+        },
+        "collection_V4CjNL": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/160_Navy_Sun_Visor_14__520_x_376px_1.jpg",
+            "title": "Visors",
+            "url": "shopify://collections/sun-visors"
+          }
+        },
+        "collection_4wKRNX": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/220_White_Ladies_15__520_x_376px_1.jpg",
+            "title": "Ladies Hats",
+            "url": "shopify://collections/ladies-hats"
           }
         }
       },
@@ -170,7 +241,12 @@
         "collection_nfmcKf",
         "collection_epykX9",
         "collection_LgkCT4",
-        "collection_tzd3HU"
+        "collection_tzd3HU",
+        "collection_bJiTmG",
+        "collection_tJzK7C",
+        "collection_dzDCb6",
+        "collection_V4CjNL",
+        "collection_4wKRNX"
       ],
       "settings": {
         "title": "Shop By Hat Style",
@@ -278,7 +354,7 @@
       ],
       "settings": {
         "scrollable": false,
-        "title": "Shop By Top Selling Brands",
+        "title": "Shop By Top Products",
         "hide_title_on_mobile": true,
         "padding_top": 40,
         "padding_bottom": 40,
@@ -368,6 +444,7 @@
     "es_featured_collection_RGkMJh": {
       "type": "es-featured-collection",
       "settings": {
+        "border_top": false,
         "title": "Best Sellers By Brand",
         "collection": "frontpage",
         "products_to_show": 15,
@@ -385,7 +462,7 @@
     "es_featured_videos_zwxmNW": {
       "type": "es-featured-videos",
       "blocks": {
-        "video_azGMUG": {
+        "video_nQgbYm": {
           "type": "video",
           "settings": {
             "video_url": "https://youtu.be/Nl9YJBWvrco",
@@ -405,8 +482,9 @@
             "description": ""
           }
         },
-        "video_nQgbYm": {
+        "video_azGMUG": {
           "type": "video",
+          "disabled": true,
           "settings": {
             "video_url": "https://youtu.be/axfsK2KEtuk",
             "featured_image": "shopify://shop_images/image_8.png",
@@ -417,9 +495,10 @@
         }
       },
       "block_order": [
-        "video_azGMUG",
+        "video_nQgbYm",
         "video_pyYEmP",
-        "video_nQgbYm"
+        "video_azGMUG",
+        "video_rXCkzw"
       ],
       "settings": {
         "scrollable": true,
@@ -511,8 +590,8 @@
         "button_BKEWTb": {
           "type": "button",
           "settings": {
-            "button_label": "Learn More",
-            "button_link": "shopify://collections/frontpage",
+            "button_label": "Learn more",
+            "button_link": "https://www.capswholesalers.com",
             "button_style_secondary": false
           }
         }
@@ -545,6 +624,7 @@
   },
   "order": [
     "es_image_banner_Qc9Nmz",
+    "slideshow_P78ati",
     "es_featured_blocks_zzkdqw",
     "es_image_with_text_QiEqMH",
     "es_gallery_with_link_CGamDr",

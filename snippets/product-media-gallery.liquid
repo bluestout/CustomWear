@@ -42,12 +42,12 @@
   endif
 -%}
 
+{% if section.settings.enable_sticky_info %}
+  <div class="product__column-sticky">
+  {% endif %}
 <media-gallery
   id="MediaGallery-{{ section.id }}"
   role="region"
-  {% if section.settings.enable_sticky_info %}
-    class="product__column-sticky"
-  {% endif %}
   aria-label="{{ 'products.product.media.gallery_viewer' | t }}"
   data-desktop-layout="{{ section.settings.gallery_layout }}"
 >
@@ -329,4 +329,14 @@
       </button>
     </slider-component>
   {%- endif -%}
+
 </media-gallery>
+
+
+{% comment %} START - ADDITIONAL INFO UNDER MEDIA GALLERY {% endcomment %}
+{% render 'component-media-info', to_show: 'desktop-only', section: section %}
+{% comment %} END - ADDITIONAL INFO UNDER MEDIA GALLERY {% endcomment %}
+
+{% if section.settings.enable_sticky_info %}
+</div>
+{% endif %}

@@ -38,8 +38,6 @@
         "image_mobile": "shopify://shop_images/Mask_group_2.png",
         "image_overlay_opacity": 0,
         "opacity_type": "normal",
-        "opacity_color": "primary",
-        "opacity_weight_on_desktop": "light",
         "opacity_direction": "vertical",
         "image_height": "adapt",
         "image_behavior": "none",
@@ -86,10 +84,10 @@
           "type": "item",
           "settings": {
             "item_width": 4,
-            "image": "shopify://shop_images/Bucket_hat_CW_1160_x_590-Photoroom.png",
+            "image": "shopify://shop_images/Mask_group_1.png",
             "title": "Bucket & Sun Hats",
             "url": "shopify://collections/bucket-sun-hats",
-            "image_2": "shopify://shop_images/budget_1690_x_590_cw-Photoroom.png",
+            "image_2": "shopify://shop_images/Mask_group.png",
             "title_2": "Budget Hats",
             "url_2": "shopify://collections/budget-hats"
           }
@@ -98,7 +96,7 @@
           "type": "item",
           "settings": {
             "item_width": 6,
-            "image": "shopify://shop_images/camo_caps_1500_x_1200_cw-Photoroom.png",
+            "image": "shopify://shop_images/bg_3.png",
             "title": "Camo Hats",
             "url": "shopify://collections/camo-hats",
             "title_2": "Hat Style 2",
@@ -109,7 +107,7 @@
           "type": "item",
           "settings": {
             "item_width": 6,
-            "image": "shopify://shop_images/ECO_1500_x_1200_CW.png",
+            "image": "shopify://shop_images/bg.png",
             "title": "Eco-Sustainable & Organic Hats",
             "url": "shopify://collections/eco-sustainable-organic-hats",
             "title_2": "Hat Style 2",
@@ -120,10 +118,10 @@
           "type": "item",
           "settings": {
             "item_width": 4,
-            "image": "shopify://shop_images/flat_billed_1160_x_590_cw-Photoroom.png",
+            "image": "shopify://shop_images/bg_1.png",
             "title": "Flat Bill Hats",
             "url": "shopify://collections/flat-bill-hats",
-            "image_2": "shopify://shop_images/Flexfit_1160_x_590_CW.png",
+            "image_2": "shopify://shop_images/img_1.png",
             "title_2": "Flexfit Hats",
             "url_2": "shopify://collections/flexfit-hats"
           }
@@ -132,7 +130,7 @@
           "type": "item",
           "settings": {
             "item_width": 4,
-            "image": "shopify://shop_images/foam_mesh_1160_x_590_CW-Photoroom.png",
+            "image": "shopify://shop_images/Mask_group_1.png",
             "title": "Foam Mesh Hats",
             "url": "shopify://collections/foam-mesh-hats",
             "image_2": "shopify://shop_images/Mask_group.png",
@@ -144,7 +142,7 @@
           "type": "item",
           "settings": {
             "item_width": 6,
-            "image": "shopify://shop_images/Kids_CW_1500_x_1200.png",
+            "image": "shopify://shop_images/bg_3.png",
             "title": "Kids Hats",
             "url": "shopify://collections/kids-hats",
             "title_2": "Hat Style 2",
@@ -155,7 +153,7 @@
           "type": "item",
           "settings": {
             "item_width": 6,
-            "image": "shopify://shop_images/Ladies_Hats_CW_1500_x_1200.jpg",
+            "image": "shopify://shop_images/bg.png",
             "title": "Ladies Hats",
             "url": "shopify://collections/ladies-hats",
             "title_2": "Hat Style 2",

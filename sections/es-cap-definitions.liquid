@@ -19,93 +19,55 @@
         <h2 class="es-font-h2 inline-richtext {{ section.settings.heading_size }} {{ section.settings.heading_alignment }}">
           {{ section.settings.heading }}
         </h2>
+      {%- else -%}
+        <h2 class="visually-hidden">{{ 'accessibility.collapsible_content_title' | t }}</h2>
       {% endif %}
 
-      {%- if section.settings.description != blank -%}
-        <div class="es-font-p">
-          {{ section.settings.description }}
-        </div>
-      {%- endif -%}
+      <div class="font-small">
+        {{ section.settings.text }}
+      </div>
 
-      {%- if section.settings.galleries != blank -%}
-        <div class="mySwiper swiper">
-          <div class="swiper-wrapper">
-            {%- paginate section.settings.galleries.images.value by 100 -%}
-              {%- for image in section.settings.galleries.images.value -%}
-                <div class="swiper-slide">
-                  <div class="grid__item-media">
-                    <img src="{{ image | img_url: 'master' }}" width="{{ image.width }}" height="{{ image.height }}">
+      <div class="size-chart">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'content' -%}
+              <div class="size-chart__item">
+                <div class="size-chart__item-content">
+                  <h3 class="font-h3 es-border-bottom">{{ block.settings.heading }}</h3>
+                  <div class="font-small size-chart__item-content-text">{{ block.settings.text }}</div>
+                </div>
+              </div>
+
+            {%- when 'image_with_text' -%}
+              <div class="size-chart__item size-chart__item--image-with-text">
+                <div class="size-chart__item-content{% if block.settings.sm_column %} sm-column{% endif %}">
+                  <div class="size-chart__item-image">
+                    {%- if block.settings.image != blank -%}
+                      {{ block.settings.image | image_url: width: 720 | image_tag: class: 'size-chart__item-image' }}
+                    {%- elsif block.settings.left_text != blank %}
+                      <div>{{ block.settings.left_text }}</div>
+                    {%- endif -%}
+                  </div>
+                  <div class="size-chart__item-text">
+                    {{ block.settings.text }}
                   </div>
                 </div>
-              {%- endfor -%}
-            {%- endpaginate -%}
-          </div>
-          <div class="swiper-navigation">
-            <div class="swiper-button-prev" style="--swiper-navigation-size: 12px;">{%- render 'es-arrow-right-1' -%}</div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-next" style="--swiper-navigation-size: 12px;">{%- render 'es-arrow-right-1' -%}</div>
-          </div>
-        </div>
-      {%- endif -%}
+              </div>
 
-      {%- if section.blocks.size > 0 -%}
-        <div class="es-button-container">
-          {%- for block in section.blocks -%}
-            <a href="{{ block.settings.button_link }}" class="es-button">{{ block.settings.button_text }}</a>
-          {%- endfor -%}
-        </div>
-      {%- endif -%}
+            {%- when 'space' -%}
+              <div class="size-chart__item size-chart__item-spacer"></div>
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
     </div>
   </div>
 </div>
 
-<script>
-  const sw = new Swiper("#shopify-section-{{ section.id }} .mySwiper", {
-    slidesPerView: 5,
-    slidesPerGroup: 5,
-    grid: {
-      rows: 8 ,
-      fill: 'row',
-    },
-    spaceBetween: 10,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-      renderBullet: (index, className) => {
-        return '<span class="' + className + '">' + (index + 1) + '</span>';
-      }
-    },
-    breakpoints: {
-      0: {
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-        grid: {
-          rows: 8,
-        },
-      },
-      769: {
-        slidesPerView: 5,
-        slidesPerGroup: 5,
-        grid: {
-          rows: 8,
-        },
-      }
-    }
-  });
-</script>
-
 {% schema %}
 {
-  "name": "ES Galleries",
+  "name": "ES Cap Definitions",
   "tag": "section",
-  "class": "section es-galleries",
-  "disabled_on": {
-    "groups": ["header", "footer"]
-  },
+  "class": "section es-cap-definitions",
   "settings": [
     {
       "type": "header",
@@ -134,17 +96,6 @@
       "id": "heading",
       "label": "t:sections.collapsible_content.settings.heading.label",
       "default": "t:sections.collapsible_content.settings.heading.default"
-    },
-    {
-      "type": "richtext",
-      "id": "description",
-      "label": "Description"
-    },
-    {
-      "type": "metaobject",
-      "id": "galleries",
-      "label": "Gallery",
-      "metaobject_type": "galleries"
     },
     {
       "type": "select",
@@ -193,6 +144,11 @@
         }
       ],
       "default": "center"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text"
     },
     {
       "type": "header",
@@ -257,25 +213,87 @@
   ],
   "blocks": [
     {
-      "type": "button",
-      "name": "Button",
+      "type": "content",
+      "name": "Content",
       "settings": [
         {
-          "type": "text",
-          "id": "button_text",
-          "label": "Button Text"
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "Heading"
         },
         {
-          "type": "url",
-          "id": "button_link",
-          "label": "Button Link"
+          "type": "richtext",
+          "id": "text",
+          "label": "Text"
         }
       ]
+    },
+    {
+      "type": "image_with_text",
+      "name": "Image with text",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "sm_column",
+          "label": "Mobile Grid Column",
+          "default": false
+        },
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "left_text",
+          "label": "Left Text",
+          "info": "This is used instead of the image."
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "range",
+          "id": "padding_top",
+          "label": "Padding Top",
+          "min": 0,
+          "max": 100,
+          "default": 0,
+          "unit": "px",
+          "step": 1
+        },
+        {
+          "type": "range",
+          "id": "padding_bottom",
+          "label": "Padding Bottom",
+          "min": 0,
+          "max": 100,
+          "default": 0,
+          "unit": "px",
+          "step": 1
+        }
+      ]
+    },
+    {
+      "type": "space",
+      "name": "Space"
     }
   ],
   "presets": [
     {
-      "name": "ES Galleries"
+      "name": "ES Cap Definitions"
     }
   ]
 }

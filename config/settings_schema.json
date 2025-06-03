@@ -1454,6 +1454,25 @@
         "id": "cart_color_scheme",
         "label": "t:sections.all.colors.label",
         "default": "scheme-1"
+      },
+      {
+        "type": "header",
+        "content": "Additional Information"
+      },
+      {
+        "type": "image_picker",
+        "id": "additional_info_image",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "additional_info_text",
+        "label": "Text"
+      },
+      {
+        "type": "url",
+        "id": "additional_info_url",
+        "label": "URL"
       }
     ]
   }
