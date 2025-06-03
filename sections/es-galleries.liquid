@@ -19,9 +19,13 @@
         <h2 class="es-font-h2 inline-richtext {{ section.settings.heading_size }} {{ section.settings.heading_alignment }}">
           {{ section.settings.heading }}
         </h2>
-      {%- else -%}
-        <h2 class="visually-hidden">{{ 'accessibility.collapsible_content_title' | t }}</h2>
       {% endif %}
+
+      {%- if section.settings.description != blank -%}
+        <div class="es-font-p">
+          {{ section.settings.description }}
+        </div>
+      {%- endif -%}
 
       {%- if section.settings.galleries != blank -%}
         <div class="mySwiper swiper">
@@ -122,6 +126,11 @@
       "id": "heading",
       "label": "t:sections.collapsible_content.settings.heading.label",
       "default": "t:sections.collapsible_content.settings.heading.default"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
     },
     {
       "type": "metaobject",
