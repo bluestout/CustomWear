@@ -2885,6 +2885,10 @@ body {
       padding: 0 1rem;
     }  
   }
+
+  .swiper-grid-column>.swiper-wrapper {
+    flex-direction: row;
+  }
   
   .content-container {
     display: flex;
