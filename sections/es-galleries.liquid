@@ -47,6 +47,14 @@
           </div>
         </div>
       {%- endif -%}
+
+      {%- if section.blocks.size > 0 -%}
+        <div class="es-button-container">
+          {%- for block in section.blocks -%}
+            <a href="{{ block.settings.button_link }}" class="es-button">{{ block.settings.button_text }}</a>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
     </div>
   </div>
 </div>
@@ -245,6 +253,24 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "button",
+      "name": "Button",
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
+        }
+      ]
     }
   ],
   "presets": [
