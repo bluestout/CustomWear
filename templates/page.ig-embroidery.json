@@ -38,6 +38,7 @@
         "image_mobile": "shopify://shop_images/allenburt_94637_Create_a_collection_of_beautiful_business_and_bdaa3d16-0340-4d24-be75-89caa2c3c065_1_1.png",
         "image_overlay_opacity": 100,
         "opacity_type": "gradient",
+        "opacity_color": "primary",
         "opacity_weight_on_desktop": "heavy",
         "opacity_direction": "horizontal",
         "image_height": "adapt",
@@ -57,12 +58,24 @@
     },
     "es_galleries_HqnbFV": {
       "type": "es-galleries",
+      "blocks": {
+        "button_dniMkJ": {
+          "type": "button",
+          "settings": {
+            "button_text": "Inspirational Gallery Embroidery",
+            "button_link": "shopify://pages/inspirational-gallery-embroidery"
+          }
+        }
+      },
+      "block_order": [
+        "button_dniMkJ"
+      ],
       "settings": {
         "tab_section": false,
         "hide_section": false,
         "custom_id": "",
         "heading": "Embroidery Samples",
-        "galleries": "embroidery",
+        "galleries": "",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "section",
