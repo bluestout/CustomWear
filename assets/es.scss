@@ -4070,3 +4070,27 @@ cart-items {
     }
   }
 }
+
+.fera-reviews-widget#reviews {
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 25.50px;
+  border-top: 1px solid #CCC;
+  padding-top: 40px;
+
+  @media (max-width: 768px) {
+    padding-top: 20px;
+  }
+
+  h1[data-fera-widget-heading] {
+    font-size: 30px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    line-height: 130%;
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+}
