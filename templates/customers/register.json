@@ -12,8 +12,8 @@
     "main": {
       "type": "main-register",
       "settings": {
-        "image": "shopify://shop_images/allenburt_94637_woman_baseball_hat_color_bege_-_ar_169_--chao_0b64fe3b-d80a-479b-9645-591cedbcbbc4_0_1.png",
-        "sm_image": "shopify://shop_images/allenburt_94637_woman_baseball_hat_color_bege_-_ar_169_--chao_0b64fe3b-d80a-479b-9645-591cedbcbbc4_0_1_1.png",
+        "image": "shopify://shop_images/Sign_Up_CW_1440_x_1668.png",
+        "sm_image": "shopify://shop_images/Sign_Up_CW_1440_x_1668.png",
         "padding_top": 36,
         "padding_bottom": 36
       }
