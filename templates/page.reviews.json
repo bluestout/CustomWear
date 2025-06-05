@@ -11,13 +11,76 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "es_image_banner_Yxapgc": {
+      "type": "es-image-banner",
+      "blocks": {
+        "heading_xe9Rb7": {
+          "type": "heading",
+          "settings": {
+            "subheading": "",
+            "heading": "Reviews",
+            "heading_size": "hxxl"
+          }
+        }
+      },
+      "block_order": [
+        "heading_xe9Rb7"
+      ],
+      "name": "ES Image Banner",
+      "settings": {
+        "show_space": false,
+        "image": "shopify://shop_images/Image_5_b5505766-717c-472f-a517-c5c0be5b8992.png",
+        "image_mobile": "shopify://shop_images/allenburt_94637_Create_a_high-quality_realistic_photograph_of_9ceb4a64-a7b1-47d4-9ea7-e1eac63e8562_1_1.png",
+        "image_overlay_opacity": 100,
+        "opacity_type": "gradient",
+        "opacity_color": "primary",
+        "opacity_weight_on_desktop": "light",
+        "opacity_direction": "horizontal",
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "top-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
+        "stack_images_on_mobile": false,
+        "mobile_content_position": "middle",
+        "mobile_content_alignment": "center",
+        "opacity_direct_on_mobile": "vertical",
+        "opacity_height_on_mobile": "large",
+        "image_height_on_mobile": "adapt",
+        "show_text_below": false
+      }
+    },
+    "174908984389baebcc": {
+      "type": "apps",
+      "blocks": {
+        "fera_all_reviews_rLeDyf": {
+          "type": "shopify://apps/fera/blocks/all_reviews/2fbfcfa7-8a04-479f-89a8-0621fa099c51",
+          "settings": {
+            "heading": "",
+            "layout": "list",
+            "star_color": "#990000",
+            "types_to_show": "both"
+          }
+        }
+      },
+      "block_order": [
+        "fera_all_reviews_rLeDyf"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "es_image_banner_Yxapgc",
+    "174908984389baebcc"
   ]
 }
