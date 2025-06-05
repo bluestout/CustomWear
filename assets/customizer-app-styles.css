@@ -430,3 +430,7 @@ textarea.cl-po--input::placeholder {
   color: #900;
   margin-right: 4px;
 }
+
+.product-form__input .quantity__input{
+  pointer-events: none;
+}
