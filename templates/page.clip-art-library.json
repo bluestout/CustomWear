@@ -313,12 +313,44 @@
         "padding_top": 52,
         "padding_bottom": 80
       }
+    },
+    "es_library_mbAd7L": {
+      "type": "es-library",
+      "blocks": {
+        "library_hddiAq": {
+          "type": "library",
+          "settings": {
+            "heading": "",
+            "description": "",
+            "metaobject": ""
+          }
+        }
+      },
+      "block_order": [
+        "library_hddiAq"
+      ],
+      "name": "ES Library",
+      "settings": {
+        "tab_section": true,
+        "hide_section": true,
+        "custom_id": "ScreenPrintStockDesigns",
+        "heading": "Collapsible content",
+        "galleries": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "es_image_banner_AXNKXn",
     "es_tab_buttons_6H7Fdx",
-    "es_library_DKnDgn"
+    "es_library_DKnDgn",
+    "es_library_mbAd7L"
   ]
 }
