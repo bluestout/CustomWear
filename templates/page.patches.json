@@ -271,6 +271,14 @@
             "text": ""
           }
         },
+        "card_i8wGnH": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/2_6.png",
+            "title": "FLEX Textured (Detailed color and textures)",
+            "text": ""
+          }
+        },
         "card_8jhEak": {
           "type": "card",
           "disabled": true,
@@ -289,14 +297,6 @@
             "text": "<p>3D Embroidered Patches for Hats are perfect for adding custom dimensional designs and premium branding to any hat style. These high-quality Custom hat patches use raised embroidery to create bold, eye-catching logos with depth and texture. With a wide range of thread and background colors available, it’s easy to design a standout custom patch that fits your brand. All patches are heat sealed applied for a durable, professional finish. </p>"
           }
         },
-        "card_i8wGnH": {
-          "type": "card",
-          "settings": {
-            "image": "shopify://shop_images/2_6.png",
-            "title": "FLEX Textured (Detailed color and textures)",
-            "text": ""
-          }
-        },
         "card_NChGGj": {
           "type": "card",
           "settings": {
@@ -313,9 +313,9 @@
         "card_EJzV6f",
         "card_zqUnnX",
         "card_TUxNME",
+        "card_i8wGnH",
         "card_8jhEak",
         "card_gff6Di",
-        "card_i8wGnH",
         "card_NChGGj"
       ],
       "settings": {
