@@ -1,3 +1,4 @@
+// QUANTITY RULES
 const minQty = {
   Embroidery: 12,
   'Use What I’ve Already Created': 12,
