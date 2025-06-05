@@ -318,14 +318,6 @@
   color: black !important;
 }
 
-.cl-po--option[data-option="Patches - Buy more and save!"] .cl-po--label:before,
-.cl-po--option[data-option="Screen Print - Buy more and save!"]
-  .cl-po--label:before {
-  content: "Step 4:";
-  color: #900;
-  margin-right: 4px;
-}
-
 .cl-po--option[data-option="Patches - Buy more and save!"],
 .cl-po--option[data-option="Screen Print - Buy more and save!"] {
   background: var(--gradient-background) !important;
@@ -426,4 +418,15 @@ textarea.cl-po--input::placeholder {
     color: black!important;
     font-size: 15px!important;
     font-family: 'Inter'!important;
+}
+
+.cl-po--option[data-option="Buy More Save More"] .cl-po--option {
+  background: transparent!important;
+  max-width: 400px;
+}
+
+.cl-po--option[data-option="Buy More Save More"] .cl-po--label:before {
+  content: "Step 4:";
+  color: #900;
+  margin-right: 4px;
 }
