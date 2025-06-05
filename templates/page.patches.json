@@ -231,15 +231,6 @@
             "text": "<p>High-End Embroidered Patches for Hats offer a classic, textured look with slightly raised stitching that adds dimension to your design. Choose from a variety of standard shapes or create a custom embroidered patch cut to the exact shape of your logo for a perfect fit on any style of hat. These premium custom hat patches deliver a polished, professional finish that elevates your brand.</p>"
           }
         },
-        "card_gff6Di": {
-          "type": "card",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Print_Stitched_533_x_472.png",
-            "title": "3D Embroidered Patches",
-            "text": "<p>3D Embroidered Patches for Hats are perfect for adding custom dimensional designs and premium branding to any hat style. These high-quality Custom hat patches use raised embroidery to create bold, eye-catching logos with depth and texture. With a wide range of thread and background colors available, it’s easy to design a standout custom patch that fits your brand. All patches are heat sealed applied for a durable, professional finish. </p>"
-          }
-        },
         "card_kXpR4p": {
           "type": "card",
           "settings": {
@@ -290,6 +281,15 @@
             "text": ""
           }
         },
+        "card_gff6Di": {
+          "type": "card",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Print_Stitched_533_x_472.png",
+            "title": "3D Embroidered Patches",
+            "text": "<p>3D Embroidered Patches for Hats are perfect for adding custom dimensional designs and premium branding to any hat style. These high-quality Custom hat patches use raised embroidery to create bold, eye-catching logos with depth and texture. With a wide range of thread and background colors available, it’s easy to design a standout custom patch that fits your brand. All patches are heat sealed applied for a durable, professional finish. </p>"
+          }
+        },
         "card_i8wGnH": {
           "type": "card",
           "settings": {
@@ -309,13 +309,13 @@
       },
       "block_order": [
         "card_M6m7bf",
-        "card_gff6Di",
         "card_kXpR4p",
         "card_tHUVnm",
         "card_EJzV6f",
         "card_zqUnnX",
         "card_8jhEak",
         "card_TUxNME",
+        "card_gff6Di",
         "card_i8wGnH",
         "card_NChGGj"
       ],
