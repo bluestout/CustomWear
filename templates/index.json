@@ -565,18 +565,18 @@
     "es_image_with_text_kFT4Pw": {
       "type": "es-image-with-text",
       "blocks": {
+        "heading_NGVgUX": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>CapWholesalers.com and browse our latest arrivals and exclusive deals<br/>Your Trusted Source for Quality Caps</p>",
+            "heading_size": "h1"
+          }
+        },
         "separator_KFgDcp": {
           "type": "separator",
           "settings": {
             "color": "#990000",
             "width": 100
-          }
-        },
-        "heading_NGVgUX": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>CapWholesalers.com and browse our latest arrivals and exclusive deals<br/><br/>Your Trusted Source for Quality Caps</p>",
-            "heading_size": "h1"
           }
         },
         "text_EXnEAX": {
@@ -596,8 +596,8 @@
         }
       },
       "block_order": [
-        "separator_KFgDcp",
         "heading_NGVgUX",
+        "separator_KFgDcp",
         "text_EXnEAX",
         "button_BKEWTb"
       ],
