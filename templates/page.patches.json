@@ -273,6 +273,7 @@
         },
         "card_8jhEak": {
           "type": "card",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/2_6.png",
             "title": "FLEX Beveled (Beveled edges for a sharp, refined look)",
