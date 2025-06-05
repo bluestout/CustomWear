@@ -263,20 +263,19 @@
             "text": ""
           }
         },
+        "card_TUxNME": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/2_6.png",
+            "title": "FLEX Flat (Shiny 3D finish with a flatter appearance)",
+            "text": ""
+          }
+        },
         "card_8jhEak": {
           "type": "card",
           "settings": {
             "image": "shopify://shop_images/2_6.png",
             "title": "FLEX Beveled (Beveled edges for a sharp, refined look)",
-            "text": ""
-          }
-        },
-        "card_TUxNME": {
-          "type": "card",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/2_6.png",
-            "title": "FLEX Flat (Shiny 3D finish with a flatter appearance)",
             "text": ""
           }
         },
@@ -312,8 +311,8 @@
         "card_tHUVnm",
         "card_EJzV6f",
         "card_zqUnnX",
-        "card_8jhEak",
         "card_TUxNME",
+        "card_8jhEak",
         "card_gff6Di",
         "card_i8wGnH",
         "card_NChGGj"
