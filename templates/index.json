@@ -485,7 +485,6 @@
         },
         "video_azGMUG": {
           "type": "video",
-          "disabled": true,
           "settings": {
             "video_url": "https://youtu.be/axfsK2KEtuk",
             "featured_image": "shopify://shop_images/image_8.png",
