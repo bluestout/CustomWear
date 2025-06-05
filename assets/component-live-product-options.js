@@ -3,7 +3,7 @@ const minQty = {
   Embroidery: 12,
   'Use What I’ve Already Created': 12,
   Patches: 24,
-  'Screen Print': 24
+  'Screen Print': 12
 };
 
 const qtyInputSelector = '.product-form__input quantity-input';
