@@ -1567,7 +1567,7 @@
       display: block;
       min-width: max-content;
       left: 50%;
-      transform: translateX(-20%);
+      transform: translateX(-50%);
       color: white;
       font-size: 10px;
       font-family: Inter;
@@ -1577,6 +1577,10 @@
       padding: 5px 9px;
       border-radius: 30px;
       z-index: 9999;
+
+      @media(min-width:768px){
+        transform: translateX(-20%);
+      }
 
       &::after {
         content: '';
