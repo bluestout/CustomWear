@@ -124,7 +124,7 @@
           "settings": {
             "text": "What happens now?",
             "image": "shopify://shop_images/icon_2.svg",
-            "page": ""
+            "page": "what-happens-now"
           }
         },
         "share": {
