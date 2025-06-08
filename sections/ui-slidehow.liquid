@@ -1,0 +1,201 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    max-width: 100%;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div
+  id="{{ section.settings.custom_id }}"
+  class="color-{{ section.settings.color_scheme }} gradient{% if section.settings.tab_section %} tab-section{% endif %}{% if section.settings.hide_section %} hidden{% endif %}"
+>
+  <div class="{% if section.settings.layout == 'row' %}page-width--small{% elsif section.settings.layout == 'section' %} page-width{% elsif section.settings.layout == 'none' %} content-container content-container--full-width{% endif %}">
+    <div class="section-{{ section.id }}-padding{% if section.settings.layout == 'section' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}">
+      <div class="swiper ui-slideshow">
+        <div class="swiper-wrapper">
+          {%- for block in section.blocks -%}
+            <div class="swiper-slide">
+              <div class="ui-slideshow__media">
+                {%- if block.settings.image != blank -%}
+                  <div class="ui-slideshow__media-wrapper">
+                    <img
+                      src="{{ block.settings.image | img_url: '3840x' }}"
+                      class="{% if block.settings.sm_image != blank %}small-hide{% endif %}"
+                      width="{{ block.settings.image.width }}"
+                      height="{{ block.settings.image.height }}"
+                    >
+                    {%- if block.settings.sm_image != blank -%}
+                      <img
+                        src="{{ block.settings.sm_image | img_url: '720x' }}"
+                        class="medium-hide large-up-hide"
+                        width="{{ block.settings.sm_image.width }}"
+                        height="{{ block.settings.sm_image.height }}"
+                      >
+                    {%- endif -%}
+                  </div>
+                {%- endif -%}
+              </div>
+              <div class="ui-slideshow__content">
+                {%- if block.settings.heading != blank -%}
+                  <h1 class="es-font-h1 ui-slideshow__heading ui-first-font">{{ block.settings.heading }}</h1>
+                {%- endif -%}
+                {%- if block.settings.header_text != blank -%}
+                  <h1 class="es-font-h1 ui-slideshow__heading ui-second-font">{{ block.settings.header_text }}</h1>
+                {%- endif -%}
+                {%- if block.settings.description != blank -%}
+                  <div class="font-p ui-slideshow__description">{{ block.settings.description }}</div>
+                {%- endif -%}
+                {%- if block.settings.button_link != blank -%}
+                  <a href="{{ block.settings.button_link }}" class="es-button">{{ block.settings.button_text }}</a>
+                {%- endif -%}
+              </div>
+            </div>
+          {%- endfor -%}
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const sw = new Swiper('#shopify-section-{{ section.id }} .ui-slideshow', {
+        loop: true,
+      pagination: {
+        el: '#shopify-section-{{ section.id }} .ui-slideshow .swiper-pagination',
+        clickable: true,
+      },
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "ui-custom-header-slide",
+  "tag": "section",
+  "class": "section es-library",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.collapsible_content.settings.layout_header.content"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "t:sections.collapsible_content.settings.layout.label",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:sections.collapsible_content.settings.layout.options__1.label"
+        },
+        {
+          "value": "row",
+          "label": "t:sections.collapsible_content.settings.layout.options__2.label"
+        },
+        {
+          "value": "section",
+          "label": "t:sections.collapsible_content.settings.layout.options__3.label"
+        }
+      ],
+      "default": "none"
+    },
+    {
+      "type": "color_scheme",
+      "id": "container_color_scheme",
+      "label": "t:sections.collapsible_content.settings.container_color_scheme.label",
+      "default": "scheme-2"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.collapsible_content.settings.section_color_scheme.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide_item",
+      "name": "Slide Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "sm_image",
+          "label": "Mobile Image"
+        },
+        {
+            "type": "text",
+            "id": "header_text",
+            "label": "header-second-text"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "ui-custom-header-slide"
+    }
+  ]
+}
+{% endschema %}
