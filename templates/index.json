@@ -78,8 +78,8 @@
           "settings": {
             "image": "shopify://shop_images/Rectangle_94.jpg",
             "sm_image": "shopify://shop_images/Rectangle_94.png",
-            "header_text": "customize",
-            "heading": "Any Product",
+            "header_text": "Any Product",
+            "heading": "customize",
             "description": "<p>Design your perfect hat – customize colors, fonts for a unique look!</p>",
             "button_text": "Customize",
             "button_link": "#"
