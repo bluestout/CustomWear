@@ -84,10 +84,23 @@
             "button_text": "Customize",
             "button_link": "#"
           }
+        },
+        "slide_item_bUakze": {
+          "type": "slide_item",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_94.jpg",
+            "sm_image": "shopify://shop_images/Rectangle_94.png",
+            "header_text": "Any Product",
+            "heading": "customize",
+            "description": "<p>Design your perfect hat – customize colors, fonts for a unique look!</p>",
+            "button_text": "Customize",
+            "button_link": "#"
+          }
         }
       },
       "block_order": [
-        "slide_item_m6qqgh"
+        "slide_item_m6qqgh",
+        "slide_item_bUakze"
       ],
       "name": "ui-custom-header-slide",
       "settings": {
