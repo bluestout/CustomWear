@@ -500,6 +500,7 @@
 
 .card-information .caption {
   letter-spacing: 0.07rem;
+  display: none;
 }
 
 .card-article-info {
