@@ -280,6 +280,9 @@
         "heading_ptCCnT",
         "text_XxeLzC"
       ],
+      "custom_css": [
+        "@media (min-width: 751px) {.image-with-text__media-item {padding-left: 50px; }}"
+      ],
       "settings": {
         "image": "shopify://shop_images/need_editing_112_-_Edited.png",
         "image_2": "shopify://shop_images/needs_edit_112_golf_-_Edited.png",
