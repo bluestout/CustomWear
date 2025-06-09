@@ -946,6 +946,7 @@
           position: absolute;
           width: 64px;
           height: auto;
+          z-index: 9;
 
           @media screen and (max-width: 768px) {
             width: 32px;
