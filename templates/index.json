@@ -505,7 +505,7 @@
       "settings": {
         "scrollable": true,
         "title": "Customized Wear Techniques 101",
-        "description": "<p>Discover the best techniques for embroidering hats, washing caps & measuring your head for the perfect fit with ease!</p>",
+        "description": "<p>Discover the best techniques for embroidering hats, washing </p><p>caps & measuring your head for the perfect fit with ease!</p>",
         "padding_top": 80,
         "padding_bottom": 40
       }
