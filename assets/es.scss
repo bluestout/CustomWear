@@ -4377,12 +4377,12 @@ slideshow-component {
       }
     }
   }
-  .swiper-pagination{
+  .swiper-pagination {
     bottom: 40px;
-    .swiper-pagination-bullet-active{
+    .swiper-pagination-bullet-active {
       background-color: white !important;
     }
-    .swiper-pagination-bullet{
+    .swiper-pagination-bullet {
       border: 2px solid white;
       opacity: 1;
       background-color: transparent;
@@ -4390,12 +4390,35 @@ slideshow-component {
   }
 }
 
-.container{
-  .page-width{
-    .es-gallery-with-link__items{
-      .es-gallery-with-link__item{
+.container {
+  .page-width {
+    .es-gallery-with-link__items {
+      .es-gallery-with-link__item {
         max-height: 716px;
       }
+    }
+  }
+}
+
+.card__content {
+  .card__information {
+    .ui_card_sku {
+      color: black;
+      font-size: 15px;
+      font-family: Inter;
+      font-weight: 600;
+      line-height: 25.5px;
+      word-wrap: break-word;
+      margin-bottom: 0;
+    }
+    .ui_card__brand_name {
+      color: #414141;
+      font-size: 15px;
+      font-family: Inter;
+      font-weight: 400;
+      line-height: 25.5px;
+      word-wrap: break-word;
+      margin-top: 0;
     }
   }
 }
