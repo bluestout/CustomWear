@@ -18,7 +18,7 @@
 }
 
 .rating-star {
-  --color-rating-star: rgb(var(--color-foreground));
+  --color-rating-star: #990000;
   --percent: calc(
     (
         var(--rating) / var(--rating-max) + var(--rating-decimal) * var(--font-size) /
@@ -26,7 +26,7 @@
       ) * 100%
   );
   letter-spacing: calc(var(--letter-spacing) * 1rem);
-  font-size: calc(var(--font-size) * 1rem);
+  font-size: 20px;
   line-height: 1;
   display: inline-block;
   font-family: Times;
@@ -49,7 +49,7 @@
 }
 
 .rating-count {
-  display: inline-block;
+  display: none;
   margin: 0;
 }
 
