@@ -20,6 +20,11 @@ cart-items .title-wrapper-with-link {
 
 .cart-item__quantity-wrapper {
   display: flex;
+  align-items: center;
+}
+
+.cart-item__quantity-wrapper > a svg {
+  display: block;
 }
 
 .cart-item__totals {
