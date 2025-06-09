@@ -1073,10 +1073,20 @@
 
           .es-featured-videos__video {
             min-width: 300px;
+
+            @media (min-width: 750px) {
+              min-width: 50%;
+            }
           }
         }
       }
     }
+  }
+}
+
+.template-index {
+  #reviews {
+    display: none !important;
   }
 }
 
