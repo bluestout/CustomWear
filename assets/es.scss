@@ -4427,6 +4427,17 @@ slideshow-component {
   li{
     .card__content{
       max-width: 95%;
+      .card__information{
+        position: relative;
+        padding-top: 10px;
+        .rating{
+          position: absolute;
+          top: -20px;
+          span{
+            letter-spacing: 0;
+          }
+        }
+      }
     }
   }
 }
