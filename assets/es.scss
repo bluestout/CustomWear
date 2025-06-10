@@ -4422,3 +4422,11 @@ slideshow-component {
     }
   }
 }
+
+.ui-custom-column_gap{
+  li{
+    .card__content{
+      max-width: 95%;
+    }
+  }
+}
