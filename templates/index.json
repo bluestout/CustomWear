@@ -70,42 +70,45 @@
         "show_text_below": false
       }
     },
-    "slideshow_P78ati": {
-      "type": "slideshow",
+    "ui_slidehow_RXbyRd": {
+      "type": "ui-slidehow",
       "blocks": {
-        "slide_dxrCHH": {
-          "type": "slide",
+        "slide_item_m6qqgh": {
+          "type": "slide_item",
           "settings": {
             "image": "shopify://shop_images/Rectangle_94.jpg",
-            "image_overlay_opacity": 0,
-            "sub_heading": "customize",
-            "heading": "Any Product",
-            "heading_size": "h1",
-            "subheading": "Design your perfect hat – customize colors, fonts for a unique look!",
-            "button_label": "Customize",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-left",
-            "text_alignment": "left",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
+            "sm_image": "shopify://shop_images/Rectangle_94.png",
+            "header_text": "Any Product",
+            "heading": "customize",
+            "description": "<p>Design your perfect hat – customize colors, fonts for a unique look!</p>",
+            "button_text": "Customize",
+            "button_link": "#"
+          }
+        },
+        "slide_item_bUakze": {
+          "type": "slide_item",
+          "settings": {
+            "image": "shopify://shop_images/Richardson_Banner_2914_x_996_px_5061250b-aef0-4c4d-84be-f175fc2263de.png",
+            "sm_image": "shopify://shop_images/Richardson_Banner_2914_x_996_px_5061250b-aef0-4c4d-84be-f175fc2263de.png",
+            "header_text": "Any Product",
+            "heading": "customize",
+            "description": "<p>Design your perfect hat – customize colors, fonts for a unique look!</p>",
+            "button_text": "Customize",
+            "button_link": "#"
           }
         }
       },
       "block_order": [
-        "slide_dxrCHH"
+        "slide_item_m6qqgh",
+        "slide_item_bUakze"
       ],
-      "name": "t:sections.slideshow.presets.name",
+      "name": "ui-custom-header-slide",
       "settings": {
-        "layout": "full_bleed",
-        "slide_height": "adapt_image",
-        "slider_visual": "counter",
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "image_behavior": "none",
-        "show_text_below": false,
-        "accessibility_info": "Slideshow about our brand"
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "es_featured_blocks_zzkdqw": {
@@ -327,8 +330,8 @@
           "type": "item",
           "settings": {
             "item_width": 4,
-            "image": "shopify://shop_images/6089m.png",
-            "title": "YP Classic",
+            "image": "shopify://shop_images/Otto_1160_x_590-Photoroom.png",
+            "title": "Otto",
             "url": "shopify://products/5-panel-high-profile-structured-acrylicpolyester-t",
             "image_2": "shopify://shop_images/Adobe_Express_-_file_1.png",
             "title_2": "Decky Hats",
@@ -339,8 +342,8 @@
           "type": "item",
           "settings": {
             "item_width": 6,
-            "image": "shopify://shop_images/Top_Brands_Otto_1500_x_1200-Photoroom.png",
-            "title": "Otto Hats",
+            "image": "shopify://shop_images/YP_1500_x_1200_-Photoroom-Photoroom.png",
+            "title": "YP Classic",
             "url": "shopify://products/6-panel-unstructured-pigment-dyed-heavy-cotton-twi",
             "title_2": "Hat Style 2",
             "url_2": ""
@@ -514,7 +517,7 @@
           "type": "item",
           "settings": {
             "item_width": 4,
-            "image": "shopify://shop_images/Image_4d04158b-f2eb-40c3-86a4-2affdd8ee371.png",
+            "image": "shopify://shop_images/Feathure_Work_1032_x_1136-Photoroom.png",
             "title": "",
             "url": "",
             "title_2": "Hat Style 2",
@@ -525,7 +528,7 @@
           "type": "item",
           "settings": {
             "item_width": 4,
-            "image": "shopify://shop_images/pexels-duc-anh-nguyen-63701176-8289795_1.png",
+            "image": "shopify://shop_images/Featured_Work_1032_x_1046--Photoroom.png",
             "title": "",
             "url": "",
             "title_2": "Hat Style 2",
@@ -536,10 +539,10 @@
           "type": "item",
           "settings": {
             "item_width": 2,
-            "image": "shopify://shop_images/Dress_up_Flexfit_1.png",
+            "image": "shopify://shop_images/Featured_Work_654_x_514-Photoroom.png",
             "title": "",
             "url": "",
-            "image_2": "shopify://shop_images/6006t_YP_1.png",
+            "image_2": "shopify://shop_images/Featured_Work_654_x514-Photoroom-Photoroom.png",
             "title_2": "",
             "url_2": ""
           }
@@ -623,7 +626,7 @@
   },
   "order": [
     "es_image_banner_Qc9Nmz",
-    "slideshow_P78ati",
+    "ui_slidehow_RXbyRd",
     "es_featured_blocks_zzkdqw",
     "es_image_with_text_QiEqMH",
     "es_gallery_with_link_CGamDr",
