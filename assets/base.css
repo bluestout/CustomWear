@@ -2074,6 +2074,15 @@ input[type='checkbox'] {
   cursor: initial;
 }
 
+@media screen and (max-width: 420px) {
+  .quantity {
+    width: calc(10rem / var(--font-body-scale) + var(--inputs-border-width) * 2)!important;
+  }
+  .quantity__button{
+    width: calc(2.5rem / var(--font-body-scale))!important;
+  }
+}
+
 /* component-cart-count-bubble */
 .cart-count-bubble:empty {
   display: none;
