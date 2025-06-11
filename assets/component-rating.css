@@ -33,6 +33,12 @@
   margin: 0;
 }
 
+@media (max-width: 750px) {
+  .rating-star {
+    font-size: 15px;
+  }
+}
+
 .rating-star::before {
   content: '★★★★★';
   background: linear-gradient(

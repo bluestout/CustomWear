@@ -292,6 +292,9 @@
                               </span>
                             </a>
                           </cart-remove-button>
+                          <a href="{{ item.product.url }}">
+                            {%- render 'es-edit-icon' -%}
+                          </a>
                         </div>
                         {%- if has_qty_rules or has_vol_pricing -%}
                           <button

@@ -771,7 +771,7 @@ a.product__text {
 .product-popup-modal[open] {
   opacity: 1;
   visibility: visible;
-  z-index: 101;
+  z-index: 9999;
 }
 
 .product-popup-modal__content {
@@ -1491,4 +1491,19 @@ a.product__text {
   .recipient-form > input[type='checkbox']:checked + label .icon-checkmark {
     border: none;
   }
+}
+
+
+
+.product__tag {
+  background: #990000;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 50px;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }

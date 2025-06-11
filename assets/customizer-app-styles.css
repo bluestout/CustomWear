@@ -440,3 +440,22 @@ textarea.cl-po--input::placeholder {
     width: 100%!important;
   }
 }
+
+.cl-po--info {
+  background-image: url('https://cdn.shopify.com/s/files/1/0728/5784/6001/files/1.png?v=1749639752')!important;
+  background-color: #E9E9E9!important;
+  width: 20px!important;
+  height: 20px!important;
+  padding: 4px!important;
+}
+
+[data-option="Embroidery Logo Location"] .cl-po--swatch-item:nth-child(5) img,
+[data-option="Embroidery Logo Location"] .cl-po--swatch-item:nth-child(6) img,
+[data-option="Embroidery - Child - Lettering"] .cl-po--swatch-item:nth-child(5) img,
+[data-option="Embroidery - Child - Lettering"] .cl-po--swatch-item:nth-child(6) img,
+[data-option="Embroidery - Child - Both"] .cl-po--swatch-item:nth-child(5) img,
+[data-option="Embroidery - Child - Both"] .cl-po--swatch-item:nth-child(6) img,
+[data-option="Location"] .cl-po--swatch-item:nth-child(5) img,
+[data-option="Location"] .cl-po--swatch-item:nth-child(6) img{
+   scale:1.25!important;
+}
