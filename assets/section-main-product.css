@@ -1492,3 +1492,18 @@ a.product__text {
     border: none;
   }
 }
+
+
+
+.product__tag {
+  background: #990000;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 50px;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
