@@ -3607,3 +3607,15 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+
+/* PRODUCT RECOMMENDATIONS CUSTOM STYLING MOBILE */
+@media screen and (max-width: 768px) {
+  product-recommendations li.grid__item {
+    width: calc(40% - var(--grid-mobile-horizontal-spacing) / 2)!important;
+  }
+
+  product-recommendations {
+    padding-right: 0px!important;
+  } 
+}
