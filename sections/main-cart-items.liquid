@@ -132,7 +132,7 @@
                         <dl>
                           {%- if item.product.has_only_default_variant == false -%}
                             {%- for option in item.options_with_values -%}
-                              <div class="product-option">
+                              <div class="product-option" data-option-name="{{ option.name }}">
                                 <dt>{{ option.name }}:</dt>
                                 <dd>{{ option.value }}</dd>
                               </div>
@@ -142,7 +142,7 @@
                           {%- for property in item.properties -%}
                             {%- assign property_first_char = property.first | slice: 0 -%}
                             {%- if property.last != blank and property_first_char != '_' -%}
-                              <div class="product-option">
+                              <div class="product-option" data-option-name="{{ property.first }}">
                                 <dt>{{ property.first }}:</dt>
                                 <dd>
                                   {%- if property.last contains '/uploads/' -%}
@@ -292,7 +292,7 @@
                               </span>
                             </a>
                           </cart-remove-button>
-                          <a href="{{ item.product.url }}">
+                          <a class="cart-edit-button" href="{{ item.product.url }}">
                             {%- render 'es-edit-icon' -%}
                           </a>
                         </div>
@@ -400,19 +400,19 @@
                             </dt>
                             <dd>
                               <s class="cart-item__old-price price price--end">
-                                {{ item.original_line_price | money }}
+                                {{ item.original_line_price | money_with_currency }}
                               </s>
                             </dd>
                             <dt class="visually-hidden">
                               {{ 'products.product.price.sale_price' | t }}
                             </dt>
                             <dd class="price price--end">
-                              {{ item.final_line_price | money }}
+                              {{ item.final_line_price | money_with_currency }}
                             </dd>
                           </dl>
                         {%- else -%}
                           <span class="price price--end">
-                            {{ item.original_line_price | money }}
+                            {{ item.original_line_price | money_with_currency }}
                           </span>
                         {%- endif -%}
 

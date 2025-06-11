@@ -294,7 +294,7 @@ cart-remove-button .icon-remove {
 @media screen and (min-width: 750px) {
   .cart-items {
     border-spacing: 0;
-    border-collapse: separate;
+    border-collapse: collapse;
     box-shadow: none;
     width: 100%;
     display: table;
