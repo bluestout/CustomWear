@@ -54,8 +54,23 @@
     flex-wrap: wrap;
   }
 
+  summary a{
+    text-decoration: none;
+    color: #000;
+  }
+
   summary.list-menu__item {
     padding-right: 2.7rem;
+    position: relative;
+  }
+
+  summary.list-menu__item::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
   }
 
   .list-menu__item {

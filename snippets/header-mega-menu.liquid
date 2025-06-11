@@ -23,13 +23,13 @@
                 id="HeaderMenu-{{ link.handle }}"
                 class="header__menu-item list-menu__item link focus-inset"
               >
-                <span
+                <a href="{{ link.url }}"
                   {%- if link.child_active %}
                     class="header__active-menu-item"
                   {% endif %}
                 >
                   {{- link.title | escape -}}
-                </span>
+                </a>
                 {{- 'icon-caret.svg' | inline_asset_content -}}
               </summary>
               <div
@@ -121,3 +121,29 @@
     {%- endfor -%}
   </ul>
 </nav>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    console.log("@@@@@@@@")
+    const menuItems = document.querySelectorAll('header-menu > details');
+  
+    menuItems.forEach((menu) => {
+      const summary = menu.querySelector('summary');
+  
+      // Prevent native toggle on click
+      summary.addEventListener('click', (e) => {
+        e.preventDefault();
+      });
+  
+      // Open on mouse enter
+      menu.addEventListener('mouseenter', () => {
+        menu.setAttribute('open', '');
+      });
+  
+      // Close on mouse leave
+      menu.addEventListener('mouseleave', () => {
+        menu.removeAttribute('open');
+      });
+    });
+  });
+</script>
