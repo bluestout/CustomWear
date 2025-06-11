@@ -771,7 +771,7 @@ a.product__text {
 .product-popup-modal[open] {
   opacity: 1;
   visibility: visible;
-  z-index: 101;
+  z-index: 9999;
 }
 
 .product-popup-modal__content {
