@@ -32,6 +32,10 @@
           "type": "title",
           "settings": {}
         },
+        "product_tags_Uc7D3J": {
+          "type": "product_tags",
+          "settings": {}
+        },
         "text_tnN9k9": {
           "type": "text",
           "settings": {
@@ -161,6 +165,7 @@
       "block_order": [
         "loox_reviews_loox_rating_cNEJze",
         "title",
+        "product_tags_Uc7D3J",
         "text_tnN9k9",
         "sku_zdxYpC",
         "text_Pb8kXM",
