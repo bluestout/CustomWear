@@ -626,6 +626,7 @@
   font-weight: 400;
   line-height: 19.50px;
   word-wrap: break-word;
+  color: black;
 }
 
 .cart-drawer .product-option dt{
@@ -656,6 +657,10 @@
   word-wrap: break-word;
   color: black;
   text-decoration: unset;
+}
+
+.continue-shopping_link.drawer__close{
+  position: unset;
 }
 
 .continue-shopping_link svg{
@@ -690,4 +695,25 @@
 }
 .es-featured-collection .container .page-width .swiper .product-card-wrapper .card__inner {
   --ratio-percent: 60% !important;
+}
+
+#CartDrawer-CartItems .cart-item__details{
+  padding-bottom: 0px !important;
+}
+
+.cart-drawer-edit-button-wrapper{
+  padding-top: 0px !important;
+  margin-top: -11px;
+  margin-bottom: 3px;
+}
+
+.cart-drawer-edit-button{
+  font-size: 13px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 19.50px;
+  word-wrap: break-word;
+  color: #990000;
+  text-decoration: unset;
+  margin-left: 0;
 }

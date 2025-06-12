@@ -245,19 +245,19 @@ cart-items {
   }
 }
 
-.cart__contents .cart__checkout-button:not([disabled]):hover:after{
+.cart__footer .cart__checkout-button:not([disabled]):hover:after{
   box-shadow: unset !important;
 }
 
 .cart__contents .cart-edit-button{
-  margin-left: 1rem;
+  margin-left: 11px;
 }
 
 .cart__footer .cart_footer_wahat_happens_button_text {
   padding: 30px 15px;
 }
 
-.cart__footer .cart_footer_wahat_happens_button_text p{
+.cart__footer .cart_footer_wahat_happens_button_text a{
   color: black;
   font-size: 13px;
   font-family: Inter;
@@ -270,6 +270,7 @@ cart-items {
   align-items: center;
   justify-content: center;
   gap: 15px;
+  text-decoration: unset !important;
 }
 
 .cart__contents .cart-item__details{
@@ -282,7 +283,7 @@ cart-items {
   }
 
   .cart__contents .cart-item__details{
-    padding-bottom: 34px  !important;
+    padding-bottom: 14px  !important;
   }
 
   .cart__contents cart-items .title-wrapper-with-link{

@@ -25,11 +25,11 @@
   <div class="page-width">
     <div class="cart__footer isolate section-{{ section.id }}-padding">
       <div class="cart_footer_wahat_happens_button_text">
-        <p>{{ section.settings.heading }}
+        <a href="{{ section.settings.heading_url }}">{{ section.settings.heading }}
           <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M1.28033 8.97271C0.987437 9.26561 0.512563 9.26561 0.21967 8.97271C-0.073223 8.67982 -0.073223 8.20495 0.21967 7.91205L3.53549 4.59623L0.21967 1.28041C-0.073223 0.987513 -0.0732229 0.512638 0.21967 0.219746C0.512564 -0.0731478 0.987437 -0.0731478 1.28033 0.219746L5.12648 4.0659C5.41938 4.35879 5.41938 4.83367 5.12648 5.12656L1.28033 8.97271Z" fill="black"/>
           </svg>
-        </p>
+        </a>
       </div>
 
       {% comment %} {%- if settings.show_cart_note -%}
@@ -185,6 +185,11 @@
       "id": "heading",
       "label": "Heading",
       "default": "WHat happens now?"
+    },
+    {
+      "type": "url",
+      "id": "heading_url",
+      "label": "Heading URL"
     },
     {
       "type": "header",
