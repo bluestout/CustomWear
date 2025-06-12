@@ -130,10 +130,10 @@
     menuItems.forEach((menu) => {
       const summary = menu.querySelector('summary');
   
-      // Prevent native toggle on click
+      {% comment %} // Prevent native toggle on click
       summary.addEventListener('click', (e) => {
         e.preventDefault();
-      });
+      }); {% endcomment %}
   
       // Open on mouse enter
       menu.addEventListener('mouseenter', () => {

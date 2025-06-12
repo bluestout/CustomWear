@@ -688,3 +688,6 @@
 .cart-drawer .drawer__inner .drawer__footer .additional-information a{
   gap: 8px;
 }
+.es-featured-collection .container .page-width .swiper .product-card-wrapper .card__inner {
+  --ratio-percent: 60% !important;
+}
