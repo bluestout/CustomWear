@@ -316,8 +316,12 @@ cart-items {
   border-bottom: 1px solid #CCC;
 } */
 
-.cart__contents .cart-item:last-child{
+#main-cart-items .cart-item:last-child{
   border-bottom: 0px solid #CCC;
+}
+
+#main-cart-items .cart-item {
+  border-bottom: 1px solid #CCC;
 }
 
 .cart__contents .cart-item__details dl{

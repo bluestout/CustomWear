@@ -1,6 +1,6 @@
 .drawer {
   position: fixed;
-  z-index: 1000;
+  z-index: 1000000;
   left: 0;
   top: 0;
   width: 100vw;
@@ -129,6 +129,8 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
 .drawer__footer {
   border-top: 0.1rem solid rgba(var(--color-foreground), 0.2);
   padding: 1.5rem 0;
+
+  box-shadow: 0 53px 112px rgba(0, 0, 0, 0.2);
 }
 
 cart-drawer-items.is-empty + .drawer__footer {

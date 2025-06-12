@@ -183,10 +183,6 @@ cart-remove-button .button:not([disabled]):hover {
   color: rgb(var(--color-foreground));
 }
 
-#main-cart-items .cart-item {
-  border-bottom: 1px solid #CCC;
-}
-
 @media screen and (min-width: 750px) {
   cart-remove-button .button {
     min-width: 3.5rem;
@@ -261,7 +257,7 @@ cart-remove-button .icon-remove {
 } */
 @media screen and (max-width: 749px) {
   .cart-items thead {
-    display: none;
+    display: none !important;
   }
 }
 @media screen and (max-width: 749px) {
