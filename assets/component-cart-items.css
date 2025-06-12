@@ -111,9 +111,9 @@ cart-items .title-wrapper-with-link {
   line-height: 19.50px;
 }
 
-.cart-item__price-wrapper{
+/* .cart-item__price-wrapper{
   display: block !important;
-}
+} */
 
 .cart-item__discounted-prices * {
   color: #000;
@@ -183,7 +183,7 @@ cart-remove-button .button:not([disabled]):hover {
   color: rgb(var(--color-foreground));
 }
 
-.cart__contents .cart-item {
+#main-cart-items .cart-item {
   border-bottom: 1px solid #CCC;
 }
 

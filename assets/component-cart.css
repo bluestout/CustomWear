@@ -270,6 +270,7 @@ cart-items {
   align-items: center;
   justify-content: center;
   gap: 15px;
+  text-decoration: unset !important;
 }
 
 .cart__contents .cart-item__details{
