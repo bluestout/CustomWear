@@ -320,16 +320,132 @@
         "library_hddiAq": {
           "type": "library",
           "settings": {
-            "heading": "",
+            "heading": "Baker/Chef",
+            "description": "",
+            "metaobject": ""
+          }
+        },
+        "library_4KVUzp": {
+          "type": "library",
+          "settings": {
+            "heading": "Automotive/Service",
+            "description": "",
+            "metaobject": ""
+          }
+        },
+        "library_emELhi": {
+          "type": "library",
+          "settings": {
+            "heading": "Cleaning/Janitor",
+            "description": "",
+            "metaobject": ""
+          }
+        },
+        "library_MTEwcA": {
+          "type": "library",
+          "settings": {
+            "heading": "Computers",
+            "description": "",
+            "metaobject": ""
+          }
+        },
+        "library_Kt4idG": {
+          "type": "library",
+          "settings": {
+            "heading": "Construction",
+            "description": "",
+            "metaobject": ""
+          }
+        },
+        "library_CKkpg6": {
+          "type": "library",
+          "settings": {
+            "heading": "Electrician",
+            "description": "",
+            "metaobject": ""
+          }
+        },
+        "library_HbUxGQ": {
+          "type": "library",
+          "settings": {
+            "heading": "Occupational/Misc.",
+            "description": "",
+            "metaobject": ""
+          }
+        },
+        "library_rwDec7": {
+          "type": "library",
+          "settings": {
+            "heading": "Fire/Police",
+            "description": "",
+            "metaobject": ""
+          }
+        },
+        "library_Q3HURM": {
+          "type": "library",
+          "settings": {
+            "heading": "Landscaping",
+            "description": "",
+            "metaobject": ""
+          }
+        },
+        "library_cUgRHm": {
+          "type": "library",
+          "settings": {
+            "heading": "Painting",
+            "description": "",
+            "metaobject": ""
+          }
+        },
+        "library_jYx9Lz": {
+          "type": "library",
+          "settings": {
+            "heading": "Photography",
+            "description": "",
+            "metaobject": ""
+          }
+        },
+        "library_9cX44U": {
+          "type": "library",
+          "settings": {
+            "heading": "Plumber",
+            "description": "",
+            "metaobject": ""
+          }
+        },
+        "library_4k6wEW": {
+          "type": "library",
+          "settings": {
+            "heading": "Tools",
+            "description": "",
+            "metaobject": ""
+          }
+        },
+        "library_8QTdGj": {
+          "type": "library",
+          "settings": {
+            "heading": "Trucks/Heavy Equipment",
             "description": "",
             "metaobject": ""
           }
         }
       },
       "block_order": [
-        "library_hddiAq"
+        "library_hddiAq",
+        "library_4KVUzp",
+        "library_emELhi",
+        "library_MTEwcA",
+        "library_Kt4idG",
+        "library_CKkpg6",
+        "library_HbUxGQ",
+        "library_rwDec7",
+        "library_Q3HURM",
+        "library_cUgRHm",
+        "library_jYx9Lz",
+        "library_9cX44U",
+        "library_4k6wEW",
+        "library_8QTdGj"
       ],
-      "name": "ES Library",
       "settings": {
         "tab_section": true,
         "hide_section": true,
