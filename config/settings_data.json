@@ -133,6 +133,8 @@
     "additional_info_image": "shopify://shop_images/icon_a4268948-8d2b-48d8-970c-27fce3b8dbb2.svg",
     "additional_info_text": "What happens now?",
     "additional_info_url": "#",
+    "continue_shopping": "Continue shopping",
+    "continue_shopping_url": "shopify://products/5-panel-high-profile-structured-acrylicpolyester-t",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",

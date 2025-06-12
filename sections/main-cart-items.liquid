@@ -110,18 +110,18 @@
                             {{ 'products.product.price.regular_price' | t }}
                           </span>
                           <s class="cart-item__old-price product-option">
-                            {{- item.original_price | money -}}
+                            {{- item.original_price | money_with_currency -}}
                           </s>
                           <span class="visually-hidden">
                             {{ 'products.product.price.sale_price' | t }}
                           </span>
                           <strong class="cart-item__final-price product-option">
-                            {{ item.final_price | money }}
+                            {{ item.final_price | money_with_currency }}
                           </strong>
                         </div>
                       {%- else -%}
                         <div class="product-option">
-                          {{ item.original_price | money }}
+                          {{ item.original_price | money_with_currency }}
                         </div>
                       {%- endif -%}
 
@@ -171,7 +171,7 @@
                       </ul>
                     </td>
 
-                    <td class="cart-item__totals right medium-hide large-up-hide">
+                    <td class="cart-item__totals right medium-hide large-up-hide small-hide">
                       {%- render 'loading-spinner' -%}
                       <div class="cart-item__price-wrapper">
                         {%- if item.original_line_price != item.final_line_price -%}
@@ -277,6 +277,46 @@
                                 </span>
                               </button>
                             </quantity-input>
+
+                            <div class="cart-item__price-wrapper medium-hide large-up-hide">
+                              {%- if item.original_line_price != item.final_line_price -%}
+                                <dl class="cart-item__discounted-prices">
+                                  <dt class="visually-hidden">
+                                    {{ 'products.product.price.regular_price' | t }}
+                                  </dt>
+                                  <dd>
+                                    <s class="cart-item__old-price price price--end">
+                                      {{ item.original_line_price | money_with_currency }}
+                                    </s>
+                                  </dd>
+                                  <dt class="visually-hidden">
+                                    {{ 'products.product.price.sale_price' | t }}
+                                  </dt>
+                                  <dd class="price price--end">
+                                    {{ item.final_line_price | money_with_currency }}
+                                  </dd>
+                                </dl>
+                              {%- else -%}
+                                <span class="price price--end">
+                                  {{ item.original_line_price | money_with_currency }}
+                                </span>
+                              {%- endif -%}
+      
+                              {%- if item.variant.available and item.unit_price_measurement -%}
+                                <div class="unit-price caption">
+                                  <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>
+                                  {{ item.unit_price | money }}
+                                  <span aria-hidden="true">/</span>
+                                  <span class="visually-hidden"
+                                    >&nbsp;{{ 'accessibility.unit_price_separator' | t }}&nbsp;</span
+                                  >
+                                  {%- if item.unit_price_measurement.reference_value != 1 -%}
+                                    {{- item.unit_price_measurement.reference_value -}}
+                                  {%- endif -%}
+                                  {{ item.unit_price_measurement.reference_unit }}
+                                </div>
+                              {%- endif -%}
+                            </div>
                           </div>
                           <cart-remove-button
                             id="Remove-{{ item.index | plus: 1 }}"

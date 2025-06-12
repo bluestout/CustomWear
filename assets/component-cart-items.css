@@ -259,9 +259,15 @@ cart-remove-button .icon-remove {
 
   .cart-item {
     display: grid;
-    grid-template: repeat(2, auto) / repeat(4, 1fr);
+    /* grid-template: repeat(2, auto) / repeat(4, 1fr); */
     gap: 1.5rem;
     margin-bottom: 3.5rem;
+    border-bottom: 1px solid #CCC;
+  }
+
+  .cart__footer {
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .cart-item:last-child {
@@ -273,7 +279,7 @@ cart-remove-button .icon-remove {
   }
 
   .cart-item__details {
-    grid-column: 2 / 4;
+    grid-column: 2 / 5;
   }
 
   .cart-item__quantity {

@@ -61,6 +61,14 @@ cart-items {
   border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
 }
 
+@media (max-width: 768px) {
+  .cart__items {
+    position: relative;
+    padding-bottom: 0;
+    border-bottom: 0;
+  } 
+}
+
 .cart__items--disabled {
   pointer-events: none;
 }
@@ -74,7 +82,7 @@ cart-items {
 }
 
 .cart__footer > * + * {
-  margin-top: 6.5rem;
+  margin-top: 0;
 }
 
 .cart__footer .discounts {
@@ -83,7 +91,7 @@ cart-items {
 
 .cart__note {
   height: fit-content;
-  top: 2.5rem;
+  /* top: 2.5rem; */
 }
 
 .cart__note label {
@@ -237,15 +245,19 @@ cart-items {
   }
 }
 
-.cart__checkout-button:not([disabled]):hover:after{
+.cart__contents .cart__checkout-button:not([disabled]):hover:after{
   box-shadow: unset !important;
 }
 
-.cart-edit-button{
+.cart__contents .cart-edit-button{
   margin-left: 1rem;
 }
 
-.cart_footer_wahat_happens_button_text{
+.cart__footer .cart_footer_wahat_happens_button_text {
+  padding: 30px 15px;
+}
+
+.cart__footer .cart_footer_wahat_happens_button_text p{
   color: black;
   font-size: 13px;
   font-family: Inter;
@@ -253,65 +265,139 @@ cart-items {
   text-transform: uppercase;
   line-height: 16.90px;
   letter-spacing: 2px;
-  word-wrap: break-word
-}
-
-.cart_footer_wahat_happens_button_text p{
+  word-wrap: break-word;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 15px;
 }
 
-.cart-item__details{
-  border-bottom: 16px;
+.cart__contents .cart-item__details{
+  padding-bottom: 16px !important;
 }
 
-@media( max-width : 768px ){
-  .cart-edit-button{
+@media( max-width: 768px ){
+  .cart__contents .cart-edit-button{
     margin-left: 1.5rem;
   }
 
-  .cart-item__details{
-    border-bottom: 34px;
+  .cart__contents .cart-item__details{
+    padding-bottom: 34px  !important;
   }
 
-  cart-items .title-wrapper-with-link{
+  .cart__contents cart-items .title-wrapper-with-link{
     align-items: center;
   }
 
-  .title-wrapper-with-link .es-button{
+  .page-width > .title-wrapper-with-link {
+    align-items: center;
+  }
+
+  .page-width > .title-wrapper-with-link .es-button {
+    padding: 0;
+  } 
+
+  .cart__contents .title-wrapper-with-link .es-button{
     padding: 0;
   }
-}
 
-.cart-item{
+  .cart__footer .totals{
+    justify-content: space-between;
+  }
+
+  .cart__footer .tax-note{
+    text-align: left;
+    font-size: 12.5px;
+  }
+}
+/* 
+.cart__contents .cart-item{
   border-bottom: 1px solid #CCC;
-}
+} */
 
-.cart-item:last-child{
+.cart__contents .cart-item:last-child{
   border-bottom: 0px solid #CCC;
 }
 
-.cart-item__details dl{
+.cart__contents .cart-item__details dl{
   display: flex;
   flex-direction: column;
 }
 
-.product-option[data-option-name="SKU"] {
+.cart__contents .product-option[data-option-name="SKU"] {
   order: -2;
 }
 
-.product-option[data-option-name="Color"] {
+.cart__contents .product-option[data-option-name="Color"] {
   order: -4;
 }
 
-.product-option[data-option-name="Size"] {
+.cart__contents .product-option[data-option-name="Size"] {
   order: -3;
 }
 
-.product-option[data-option-name="Brand"]:nth-child(n+8) {
+.cart__contents .product-option[data-option-name="Brand"]:nth-child(n+8) {
   border-bottom: 1px solid #CCC;
   padding-bottom: 12px;
   margin-bottom: 12px;
   order: -1;
+}
+
+.cart__footer .cart__note label{
+  font-size: 13px;
+  font-family: Inter;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 16.90px;
+  letter-spacing: 2px;
+  word-wrap: break-word;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart_footer_wahat_happens_button_text p{
+  margin: 0;
+}
+
+#Details-Cartfooter{
+  border-top: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#Details-Cartfooter .summary__title{
+  font-size: 13px;
+  font-family: Inter;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 16.90px;
+  letter-spacing: 2px;
+  word-wrap: break-word;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#Details-Cartfooter[open] summary{
+  padding-bottom: 13px;
+}
+
+#Details-Cartfooter .summary__title .caret-icon{
+  transition: transform 0.3s ease;
+}
+
+#Details-Cartfooter[open] .summary__title .caret-icon{
+  transform: rotate(180deg);
+}
+
+.cart__blocks .js-contents{
+  margin-top: 30px
+}
+
+@media( max-width : 768px ){
+  #Details-Cartfooter .summary__title{
+    justify-content: center;
+  }
 }

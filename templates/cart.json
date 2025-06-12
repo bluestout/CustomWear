@@ -47,6 +47,10 @@
     "cart-footer": {
       "type": "main-cart-footer",
       "blocks": {
+        "order_special_NjqfY7": {
+          "type": "Order_special",
+          "settings": {}
+        },
         "subtotal": {
           "type": "subtotal",
           "settings": {}
@@ -57,11 +61,13 @@
         }
       },
       "block_order": [
+        "order_special_NjqfY7",
         "subtotal",
         "buttons"
       ],
       "settings": {
         "color_scheme": "scheme-1",
+        "heading": "WHat happens now?",
         "padding_top": 20,
         "padding_bottom": 40
       }
