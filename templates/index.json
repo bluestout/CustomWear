@@ -96,7 +96,6 @@
       "block_order": [
         "slide_dxrCHH"
       ],
-      "name": "t:sections.slideshow.presets.name",
       "settings": {
         "layout": "full_bleed",
         "slide_height": "adapt_image",
@@ -306,7 +305,7 @@
             "item_width": 6,
             "image": "shopify://shop_images/Richardson_Best_Seller_1500_x_1200_CW.png",
             "title": "Richardson",
-            "url": "shopify://collections/112-hats-best-sellers",
+            "url": "shopify://pages/shop-rirhcardson-hats",
             "title_2": "Hat Style 2",
             "url_2": ""
           }
@@ -329,7 +328,7 @@
             "item_width": 4,
             "image": "shopify://shop_images/6089m.png",
             "title": "YP Classic",
-            "url": "shopify://products/5-panel-high-profile-structured-acrylicpolyester-t",
+            "url": "shopify://collections/yp-classic-yupoong-hats",
             "image_2": "shopify://shop_images/Adobe_Express_-_file_1.png",
             "title_2": "Decky Hats",
             "url_2": "shopify://products/5-panel-mid-profile-structured-cotton-poly-blend-cap"
@@ -341,7 +340,7 @@
             "item_width": 6,
             "image": "shopify://shop_images/Top_Brands_Otto_1500_x_1200-Photoroom.png",
             "title": "Otto Hats",
-            "url": "shopify://products/6-panel-unstructured-pigment-dyed-heavy-cotton-twi",
+            "url": "shopify://collections/otto-hats",
             "title_2": "Hat Style 2",
             "url_2": ""
           }
