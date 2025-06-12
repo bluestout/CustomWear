@@ -492,12 +492,22 @@
             "full_width": false,
             "description": ""
           }
+        },
+        "video_GjWC6n": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://youtu.be/D0r6cdG9QDQ",
+            "enable_video_looping": false,
+            "full_width": false,
+            "description": ""
+          }
         }
       },
       "block_order": [
         "video_nQgbYm",
         "video_pyYEmP",
-        "video_azGMUG"
+        "video_azGMUG",
+        "video_GjWC6n"
       ],
       "settings": {
         "scrollable": true,
