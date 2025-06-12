@@ -698,7 +698,7 @@
 }
 
 .cart-drawer-edit-button-wrapper{
-  padding-top: 0px;
+  padding-top: 0px !important;
   margin-top: -11px;
   margin-bottom: 3px;
 }
