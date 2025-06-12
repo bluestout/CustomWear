@@ -138,11 +138,13 @@
       // Open on mouse enter
       menu.addEventListener('mouseenter', () => {
         menu.setAttribute('open', '');
+        document.querySelector(".section-header").classList.add("megamenu-open");
       });
   
       // Close on mouse leave
       menu.addEventListener('mouseleave', () => {
         menu.removeAttribute('open');
+        document.querySelector(".section-header").classList.remove("megamenu-open");
       });
     });
   });
