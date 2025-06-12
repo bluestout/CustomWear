@@ -4493,8 +4493,9 @@ slideshow-component {
       .card__information {
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
         .rating {
+          position: absolute;
+          transform: translateY(-100%);
           span {
             letter-spacing: 0;
           }
@@ -4515,5 +4516,22 @@ slideshow-component {
         margin-top: 0;
       }
     }
+  }
+}
+
+.megamenu-open {
+  sticky-header {
+    z-index: 2;
+  }
+  
+  &::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.2);
+    z-index: 1;
   }
 }
