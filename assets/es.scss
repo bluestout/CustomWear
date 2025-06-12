@@ -4493,8 +4493,9 @@ slideshow-component {
       .card__information {
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
         .rating {
+          position: absolute;
+          transform: translateY(-100%);
           span {
             letter-spacing: 0;
           }
