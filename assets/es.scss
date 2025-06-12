@@ -169,6 +169,12 @@
   }
 }
 
+@media( max-width : 768px ){
+  .es-button{
+    justify-content: center !important;
+  }
+}
+
 .cart__ctas button {
   display: flex;
   align-items: center;

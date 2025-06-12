@@ -658,6 +658,10 @@
   text-decoration: unset;
 }
 
+.continue-shopping_link.drawer__close{
+  position: unset;
+}
+
 .continue-shopping_link svg{
   margin-left: 6px;
 }
@@ -687,4 +691,25 @@
 
 .cart-drawer .drawer__inner .drawer__footer .additional-information a{
   gap: 8px;
+}
+
+#CartDrawer-CartItems .cart-item__details{
+  padding-bottom: 0px !important;
+}
+
+.cart-drawer-edit-button-wrapper{
+  padding-top: 0px;
+  margin-top: -11px;
+  margin-bottom: 3px;
+}
+
+.cart-drawer-edit-button{
+  font-size: 13px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 19.50px;
+  word-wrap: break-word;
+  color: #990000;
+  text-decoration: unset;
+  margin-left: 0;
 }

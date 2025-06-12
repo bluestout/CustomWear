@@ -126,9 +126,16 @@ quantity-popover .quantity__rules span:first-of-type {
   padding: 0.5rem 0.5rem 0.5rem 0;
 }
 
-#main-cart-items .quantity-popover-container {
+/* #main-cart-items .quantity-popover-container {
   width: 100%;
   justify-content: space-between;
+} */
+
+@media( max-width : 768px ){
+  #main-cart-items .quantity-popover-container {
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 
 .quantity-popover-container:not(.quantity-popover-container--hover) {

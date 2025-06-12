@@ -217,10 +217,14 @@ cart-drawer-items {
 
 .cart-drawer .cart-item {
   display: grid;
-  grid-template: repeat(2, auto) / repeat(4, 1fr);
+  /* grid-template: repeat(2, auto) / repeat(4, 1fr); */
   gap: 1rem;
   margin-bottom: 0;
   position: relative;
+}
+
+.cart-drawer .cart-item{
+  border-bottom: 0px solid #CCC;
 }
 
 .cart-drawer .cart-item:last-child {
@@ -286,7 +290,7 @@ cart-drawer-items {
 }
 
 .cart-drawer .cart-item__name {
-  padding-right: 20px;
+  padding-right: 35px;
 }
 
 .cart-drawer .cart-item__totals {
@@ -304,6 +308,8 @@ cart-drawer-items {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
+
+  margin-bottom: 14px;
 }
 
 .cart-drawer .unit-price {
