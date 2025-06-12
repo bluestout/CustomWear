@@ -245,11 +245,11 @@ cart-items {
   }
 }
 
-.cart__contents .cart__checkout-button:not([disabled]):hover:after{
+.cart__footer .cart__checkout-button:not([disabled]):hover:after{
   box-shadow: unset !important;
 }
 
-.cart__contents .cart-edit-button{
+.cart__footer .cart-edit-button{
   margin-left: 1rem;
 }
 
