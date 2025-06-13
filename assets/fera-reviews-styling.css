@@ -64,6 +64,9 @@ span.fera-star-rating {
     border-radius: 50px;
 }
 
+.fera-review:last-child {
+    border: none;
+}
 
 @media(max-width: 768px){
     .fera-reviews-header-row2 {
