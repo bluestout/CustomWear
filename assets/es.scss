@@ -120,7 +120,7 @@
   line-height: 16.9px;
   letter-spacing: 2px;
   word-wrap: break-word;
-  padding: 12px 0px 12px 25px;
+  padding: 12px 25px;
   border: 0;
   background-color: #fff;
   text-decoration: none;
@@ -4572,5 +4572,13 @@ slideshow-component {
     left: 0;
     background-color: rgba(0, 0, 0, .2);
     z-index: 1;
+  }
+}
+
+.cart-items {
+  .title-wrapper-with-link {
+    .es-button {
+      padding-right: 0;
+    }
   }
 }
