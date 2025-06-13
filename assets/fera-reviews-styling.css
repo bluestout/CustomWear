@@ -24,7 +24,7 @@
     margin-bottom: 10px;
 }
 
-.fera-ratingSummary-ratingItems {
+.fera-ratingSummary-ratingItems.fera-ratingSummary-ratingItems--fullWidth {
     max-width: 300px;
 }
 
@@ -34,7 +34,7 @@
         flex-direction: column;
         justify-content:center;
     }
-    .fera-ratingSummary-ratingItems {
+    ..fera-ratingSummary-ratingItems.fera-ratingSummary-ratingItems--fullWidth {
         max-width: 100%;
     }
     .fera-row.fera-reviews-header-summary-container{
