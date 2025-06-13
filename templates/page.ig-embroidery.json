@@ -77,35 +77,35 @@
           "type": "button",
           "settings": {
             "button_text": "Inspirational Gallery Embroidered Patches",
-            "button_link": ""
+            "button_link": "shopify://pages/inspirational-gallery-patches"
           }
         },
         "button_WT7cah": {
           "type": "button",
           "settings": {
             "button_text": "Inspirational Gallery Print Stitch Patches",
-            "button_link": "#"
+            "button_link": "shopify://pages/inspirational-gallery-print-stitch-patches"
           }
         },
         "button_rUpqJ7": {
           "type": "button",
           "settings": {
             "button_text": "Inspirational Gallery Faux Leather Patches",
-            "button_link": "#"
+            "button_link": "shopify://pages/inspirational-gallery-faux-leather-patches"
           }
         },
         "button_bg8dqV": {
           "type": "button",
           "settings": {
             "button_text": "Inspirational Gallery Leather Patches",
-            "button_link": "#"
+            "button_link": "shopify://pages/inspirational-gallery-leather-patches"
           }
         },
         "button_LPhxPN": {
           "type": "button",
           "settings": {
             "button_text": "Inspirational Gallery Flex Patches",
-            "button_link": "#"
+            "button_link": "shopify://pages/inspirational-gallery-flex-patches"
           }
         }
       },
