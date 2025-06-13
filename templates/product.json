@@ -106,7 +106,6 @@
         },
         "collapsible_tab_eM4Wkc": {
           "type": "collapsible_tab",
-          "name": "Description",
           "settings": {
             "default_open": true,
             "heading": "Description",
@@ -208,7 +207,7 @@
             "heading": "Customer Reviews",
             "layout": "list",
             "star_color": "#990000",
-            "when_no_reviews": "show"
+            "when_no_reviews": "hide"
           }
         }
       },
