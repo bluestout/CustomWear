@@ -33,7 +33,7 @@
                 </div>
 
               {%- when 'icon_with_text' -%}
-                <div class="grid__item--icon-with-text flex">
+                <div class="grid__item--icon-with-text flex" style="align-items: {{ block.settings.align_items }}">
                   {% if block.settings.image != blank %}
                     <div class="grid__item--icon-with-text_media flex">
                       <img src="{{ block.settings.image | img_url: 'master' }}" width="{{ block.settings.image.width }}" height="{{ block.settings.image.height }}">
@@ -149,6 +149,22 @@
           "type": "richtext",
           "id": "text",
           "label": "Text"
+        },
+        {
+          "type": "select",
+          "id": "align_items",
+          "label": "Align Items",
+          "options": [
+            {
+              "label": "Start",
+              "value": "flex-start"
+            },
+            {
+              "label": "Center",
+              "value": "center"
+            }
+          ],
+          "default": "flex-start"
         }
       ]
     }
