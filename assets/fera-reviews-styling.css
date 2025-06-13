@@ -29,6 +29,42 @@
 }
 
 
+.fera-customer-display-avatar.fera-customer-avatar {
+    display: none;
+}
+
+.fera-review.fera-review--for-product.fera-row {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.fera-col.fera-review-content-col.fera-review-content {
+    padding-left: 0px;
+}
+
+.fera-customer-display-text {
+    margin-bottom: 10px;
+}
+
+span.fera-star-bg {
+    display: none;
+}
+
+span.fera-star-rating {
+    display: none;
+}
+
+.fera-ratingSummary-ratingItem-histogram-bar-content {
+    border-radius: 50px;
+}
+
+.fera-ratingSummary-ratingItem-histogram-bar:before {
+    border-radius: 50px;
+}
+
+
 @media(max-width: 768px){
     .fera-reviews-header-row2 {
         flex-direction: column;
