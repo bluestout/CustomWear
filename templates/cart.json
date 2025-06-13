@@ -11,7 +11,6 @@
   "sections": {
     "es_image_banner_wJHgen": {
       "type": "es-image-banner",
-      "name": "ES Image Banner",
       "settings": {
         "show_space": false,
         "image": "shopify://shop_images/top.png",
@@ -32,7 +31,7 @@
         "mobile_content_alignment": "center",
         "opacity_direct_on_mobile": "vertical",
         "opacity_height_on_mobile": "small",
-        "image_height_on_mobile": "square",
+        "image_height_on_mobile": "adapt",
         "show_text_below": true
       }
     },
@@ -68,13 +67,13 @@
       "settings": {
         "color_scheme": "scheme-1",
         "heading": "WHat happens now?",
+        "heading_url": "",
         "padding_top": 20,
         "padding_bottom": 40
       }
     },
     "es_featured_collection_ytPkbT": {
       "type": "es-featured-collection",
-      "name": "ES Featured Collection",
       "settings": {
         "border_top": true,
         "title": "You may also like",

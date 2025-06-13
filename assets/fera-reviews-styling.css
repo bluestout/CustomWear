@@ -72,6 +72,10 @@ span.fera-star-rating {
     display: none;
 }
 
+.fera-ratingSummary-ratingItem-histogram-bar-content {
+    height: 12px;
+}
+
 @media(max-width: 768px){
     .fera-reviews-header-row2 {
         flex-direction: column;
