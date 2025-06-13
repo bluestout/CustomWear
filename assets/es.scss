@@ -116,12 +116,11 @@
   font-size: 13px;
   font-family: "Inter", sans-serif;
   font-weight: 800;
-  padding-right: 0px;
   text-transform: uppercase;
   line-height: 16.9px;
   letter-spacing: 2px;
   word-wrap: break-word;
-  padding: 12px 25px;
+  padding: 12px 0px 12px 25px;
   border: 0;
   background-color: #fff;
   text-decoration: none;
@@ -4070,7 +4069,7 @@ cart-items {
       padding: 1.5rem;
 
       .additional-information {
-        padding-top: 1rem;
+        // padding-top: 1rem;
 
         a {
           gap: 20px;

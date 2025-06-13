@@ -268,7 +268,7 @@ cart-items {
   word-wrap: break-word;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   gap: 15px;
   text-decoration: unset !important;
 }
@@ -309,6 +309,10 @@ cart-items {
   .cart__footer .tax-note{
     text-align: left;
     font-size: 12.5px;
+  }
+
+  .cart__footer .cart_footer_wahat_happens_button_text a{
+    justify-content: center;
   }
 }
 /* 
