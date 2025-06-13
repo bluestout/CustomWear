@@ -34,7 +34,7 @@
         flex-direction: column;
         justify-content:center;
     }
-    ..fera-ratingSummary-ratingItems.fera-ratingSummary-ratingItems--fullWidth {
+    .fera-ratingSummary-ratingItems.fera-ratingSummary-ratingItems--fullWidth {
         max-width: 100%;
     }
     .fera-row.fera-reviews-header-summary-container{
