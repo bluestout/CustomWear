@@ -691,6 +691,11 @@
 .cart-drawer .drawer__inner .drawer__footer .additional-information a{
   gap: 8px;
 }
+
+.drawer__footer .cart__checkout-button:not([disabled]):hover:after{
+  box-shadow: unset !important;
+}
+
 .es-featured-collection .container .page-width .swiper .product-card-wrapper .card__inner {
   --ratio-percent: 60% !important;
 }
