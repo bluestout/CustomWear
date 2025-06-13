@@ -1,0 +1,43 @@
+.fera-ratingSummary.fera-ratingSummary--expanded {
+    max-width: 100%;
+    width: 100%;
+    border-bottom: 0px!important;
+    justify-content: flex-end;
+}
+
+.fera-col[data-fera-actions-col] {
+    display: none;
+}
+
+.fera-row.fera-reviews-header-summary-container {
+    max-width: 100%;
+    width: 100%;
+    border-bottom: 0px;
+}
+
+.fera-reviews-header-row2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.fera-ratingSummary-ratingItems.fera-ratingSummary-ratingItems--fullWidth {
+    max-width: 300px;
+}
+
+
+@media(max-width: 768px){
+    .fera-reviews-header-row2 {
+        flex-direction: column;
+        justify-content:center;
+    }
+    .fera-ratingSummary-ratingItems.fera-ratingSummary-ratingItems--fullWidth {
+        max-width: 100%;
+    }
+    .fera-row.fera-reviews-header-summary-container{
+        justify-content: center;
+    }
+}
