@@ -94,7 +94,7 @@
           "settings": {
             "heading": "Can I order a blank caps sample before I order my custom patch order?",
             "icon": "none",
-            "row_content": "<p>Yes, please visit our blank cap store at https://www.CapWholesalers.com</p>",
+            "row_content": "<p>Yes, please visit our blank cap store at <a href=\"https://www.CapWholesalers.com\" target=\"_blank\" title=\"https://www.CapWholesalers.com\">https://www.CapWholesalers.com</a></p>",
             "page": ""
           }
         },
