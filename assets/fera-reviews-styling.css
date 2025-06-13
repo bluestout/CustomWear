@@ -68,6 +68,10 @@ span.fera-star-rating {
     border: none;
 }
 
+.fera-row.fera-reviews-body-top {
+    display: none;
+}
+
 @media(max-width: 768px){
     .fera-reviews-header-row2 {
         flex-direction: column;
