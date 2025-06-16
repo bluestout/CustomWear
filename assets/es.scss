@@ -2730,8 +2730,16 @@ body {
       }
 
       .patches-media {
-        img {
-          display: block;
+        .image {
+          min-width: 250px;
+          width: 100%;
+          padding: 20px;
+
+          img {
+            width: 100%;
+            height: auto;
+            display: block;
+          }
         }
 
         @media (max-width: 768px) {
