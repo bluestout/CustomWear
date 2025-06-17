@@ -1507,3 +1507,13 @@ a.product__text {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+
+
+.fera-reviews-widget#reviews {
+  margin-top: 0px;
+  border: none;
+}
+
+product-info {
+  border-bottom: 1px solid #ccc;
+}

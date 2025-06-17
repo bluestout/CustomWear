@@ -3916,6 +3916,9 @@ cart-items {
                     width: 205px !important;
                     font-weight: 600;
                   }
+                  @media (max-width: 500px) {
+                    width: 115px !important;
+                  }
                 }
 
                 td:nth-child(n + 2) {
