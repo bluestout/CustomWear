@@ -3846,8 +3846,6 @@ cart-items {
           & + div {
             margin-top: 10px;
           }
-
-          // Shared styles for mobile/tablet up to 1050px
           @media (max-width: 1050px) {
             &.collapsable-item {
               border: 1px solid #ccc;
@@ -4024,6 +4022,16 @@ cart-items {
         }
       }
     }
+  }
+  .medium-hide{
+    @media screen and (min-width: 1051px){
+     display: none; 
+    }
+  }
+  .small-hide{
+   @media screen and (max-width:1050px){
+     display: none;
+   } 
   }
 }
 
