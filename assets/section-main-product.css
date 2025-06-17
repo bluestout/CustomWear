@@ -824,13 +824,13 @@ a.product__text {
 }
 
 @media screen and (max-width: 749px) {
-  .product-popup-modal__content table {
+  /* .product-popup-modal__content table {
     display: block;
     max-width: fit-content;
     overflow-x: auto;
     white-space: nowrap;
     margin: 0;
-  }
+  } */
 
   .product-media-modal__dialog .global-media-settings,
   .product-media-modal__dialog .global-media-settings video,
