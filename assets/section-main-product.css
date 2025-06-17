@@ -824,13 +824,13 @@ a.product__text {
 }
 
 @media screen and (max-width: 749px) {
-  .product-popup-modal__content table {
+  /* .product-popup-modal__content table {
     display: block;
     max-width: fit-content;
     overflow-x: auto;
     white-space: nowrap;
     margin: 0;
-  }
+  } */
 
   .product-media-modal__dialog .global-media-settings,
   .product-media-modal__dialog .global-media-settings video,
@@ -861,7 +861,7 @@ a.product__text {
 }
 
 .product-popup-modal__content-info {
-  padding-right: 4.4rem;
+  padding-right: 1rem;
 }
 
 .product-popup-modal__content-info > * {
