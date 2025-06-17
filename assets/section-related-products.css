@@ -5,3 +5,9 @@
 .related-products__heading {
   margin: 0 0 3rem;
 }
+
+@media (max-width: 768px) {
+  .related-products__heading {
+    text-align: left;
+  }
+}
