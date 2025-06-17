@@ -3824,6 +3824,211 @@ cart-items {
   }
 }
 
+/* START - PRODUCT PAGE SIZE CHART */
+.product-popup-modal__content-info {
+  .es-size-chart {
+    .page-width--small {
+      max-width: 1000px;
+
+      .font-p {
+        max-width: 750px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 10px 0 24px;
+
+        p {
+          margin: 0;
+        }
+      }
+
+      .size-chart {
+        .size-chart__item {
+          & + div {
+            margin-top: 10px;
+          }
+
+          // Shared styles for mobile/tablet up to 1050px
+          @media (max-width: 1050px) {
+            &.collapsable-item {
+              border: 1px solid #ccc;
+
+              .size-chart__item-content {
+                padding-top: 10px;
+                padding-bottom: 0;
+
+                table {
+                  border-bottom: 1px solid #ccc;
+
+                  tbody {
+                    display: none;
+                  }
+
+                  &:last-child {
+                    border-bottom: 0;
+
+                    caption {
+                      border-bottom: 0;
+                    }
+                  }
+
+                  caption.is-active {
+                    border-bottom: 1px solid #ccc;
+
+                    & + tbody {
+                      display: table-row-group;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .size-chart__item-content {
+            padding: 20px;
+            background-color: #fff;
+
+            table {
+              box-shadow: unset;
+              color: black;
+              font-size: 15px;
+              font-family: "Inter", sans-serif;
+              font-weight: 400;
+              line-height: 25.5px;
+              text-align: center;
+              width: 100%;
+
+              tr {
+                th,
+                td:nth-child(1) {
+                  text-align: right;
+                  width: 250px !important;
+
+                  @media (max-width: 1050px) {
+                    width: 205px !important;
+                    font-weight: 600;
+                  }
+                }
+
+                td:nth-child(n + 2) {
+                  @media (min-width: 1051px) {
+                    width: 15% !important;
+                  }
+                }
+
+                @media (min-width: 1051px) {
+                  &:nth-child(3) {
+                    td:nth-child(n + 2) {
+                      background-color: #fafafa;
+                    }
+                  }
+                }
+
+                td {
+                  @media (max-width: 1050px) {
+                    padding: 10px 4px;
+                  }
+                }
+              }
+
+              caption {
+                @media (max-width: 1050px) {
+                  color: black;
+                  font-size: 15px;
+                  font-family: "Inter", sans-serif;
+                  font-weight: 600;
+                  line-height: 25.5px;
+                  text-align: left;
+                  position: relative;
+                  padding: 12px 0;
+                  border-bottom: 1px solid #ccc;
+
+                  &::after {
+                    content: "";
+                    background-image: url("https://cdn.shopify.com/s/files/1/0728/5784/6001/files/Union_1.svg?v=1747604099");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    width: 15px;
+                    height: 15px;
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    transform: translateY(-50%);
+                  }
+
+                  &.is-active::after {
+                    transform: translateY(-50%) rotate(45deg);
+                  }
+                }
+              }
+            }
+
+            .size-chart__item-image {
+              max-width: 170px;
+
+              img {
+                width: 100%;
+                height: auto;
+              }
+            }
+
+            &.sm-column {
+              @media (max-width: 1050px) {
+                flex-direction: column;
+              }
+            }
+          }
+
+          &.size-chart__item--image-with-text {
+            .size-chart__item-content {
+              display: flex;
+              gap: 20px;
+
+              @media (max-width: 1050px) {
+                flex-direction: column;
+              }
+
+              .size-chart__item-image {
+                min-width: 170px;
+
+                @media (max-width: 1050px) {
+                  max-width: 100%;
+                }
+              }
+
+              .size-chart__item-text {
+                color: black;
+                font-size: 15px;
+                font-family: "Inter", sans-serif;
+                font-weight: 400;
+                line-height: 25.5px;
+
+                p {
+                  margin: 0;
+
+                  &:empty {
+                    display: block;
+                    margin: 20px 0;
+                  }
+                }
+
+                a {
+                  color: #990000;
+                  font-weight: 600;
+                  text-decoration: unset;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* END - PRODUCT PAGE SIZE CHART */
+
 .es-cap-definitions {
   .es-font-h2 {
     margin-bottom: 30px;
