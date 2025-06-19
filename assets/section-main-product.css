@@ -1536,8 +1536,8 @@ product-info {
     background: none;
     color: #990000;
     font-weight: bold;
-    text-decoration: underline;
-    text-underline-offset: 2px;
+    border-bottom: 2px solid;
+    max-width: 25px;
 }
 
 .fera--clickable:not(.fera-btn):hover {
