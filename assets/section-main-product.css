@@ -1517,3 +1517,29 @@ a.product__text {
 product-info {
   border-bottom: 1px solid #ccc;
 }
+
+/* REVIEWS APP PAGINATION STYLING */
+.fera-icon-caret path {
+    stroke: #990000;
+    stroke-width: 2px;
+}
+
+.fera-icon-caret {
+    width: 22px!important;
+}
+
+.fera-pagination a:not(.fera-pagination-number--current):hover {
+    background: none;
+}
+
+.fera-pagination a.fera-pagination-number--current {
+    background: none;
+    color: #990000;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.fera--clickable:not(.fera-btn):hover {
+    text-decoration: none;
+}
