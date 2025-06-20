@@ -221,7 +221,8 @@
 [data-option="Leather or Faux Leather"] .cl-po--label,
 [data-option="Screen Print - Customization Type"] .cl-po--label,
 [data-option="Customization Type"] .cl-po--label,
-[data-option="Additional Logo Position"] .cl-po--label,
+[data-option="Additional Location "] .cl-po--label,
+[data-option="Additional Location"] .cl-po--label,
 [data-option="Additional Lettering Location"] .cl-po--label,
 [data-option="Screen Print - Ink Color Method"] .cl-po--label {
   width: 100%;
