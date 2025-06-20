@@ -255,8 +255,10 @@
   .cl-po--radio-item:has(input[type="radio"]:checked),
 [data-option="Additional Lettering Location"]
   .cl-po--checkbox-item:has(input[type="checkbox"]:checked),
-[data-option="Additional Logo Position"]
-  .cl-po--checkbox-item:has(input[type="checkbox"]:checked) {
+[data-option="Additional Location "]
+  .cl-po--checkbox-item:has(input[type="checkbox"]:checked),
+[data-option="Additional Location"]
+  .cl-po--checkbox-item:has(input[type="checkbox"]:checked){
   border-color: black;
   background: white;
 }
