@@ -5,7 +5,7 @@
   {% render 'header-mega-menu' %}
 {% endcomment %}
 
-<nav class="header__inline-menu">
+<nav class="header__inline-menu" aria-label="Primary navigation">
   <ul class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links limit: separate_menu_limit offset: separate_menu_offset -%}
       {%- assign custom_class_0 = '' -%}
@@ -22,14 +22,15 @@
               <summary
                 id="HeaderMenu-{{ link.handle }}"
                 class="header__menu-item list-menu__item link focus-inset"
+                onclick="window.location.href='{{ link.url }}'"
               >
-                <a href="{{ link.url }}"
+                {% comment %} <a href="{{ link.url }}"
                   {%- if link.child_active %}
                     class="header__active-menu-item"
                   {% endif %}
-                >
+                > {% endcomment %}
                   {{- link.title | escape -}}
-                </a>
+                {% comment %} </a> {% endcomment %}
                 {{- 'icon-caret.svg' | inline_asset_content -}}
               </summary>
               <div

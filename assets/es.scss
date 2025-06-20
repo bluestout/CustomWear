@@ -4418,6 +4418,9 @@ slideshow-component {
 
 .ui-slideshow {
   .swiper-wrapper {
+    .swiper-slide {
+      background-color: #fec600;
+    }
     .swiper-slide-next {
       .ui-slideshow__media {
         .ui-slideshow__media-wrapper {
@@ -4491,9 +4494,6 @@ slideshow-component {
   }
 
   .swiper-wrapper {
-    .swiper-slide {
-      background-color: yellow;
-    }
     .ui-slideshow__media {
       .ui-slideshow__media-wrapper {
         img {
