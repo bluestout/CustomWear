@@ -625,6 +625,16 @@
         "padding_top_mobile": 16,
         "padding_bottom_mobile": 40
       }
+    },
+    "custom_liquid_GUJdVq": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<script type=\"text/javascript\" src=\"https://birdeye.com/embed/v7/168546275175867/11/987654321301115351\" async></script><div id=\"bf-revz-widget-987654321301115351\" ></div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -637,6 +647,7 @@
     "es_featured_collection_RGkMJh",
     "es_featured_videos_zwxmNW",
     "es_gallery_with_link_XdFTjW",
-    "es_image_with_text_kFT4Pw"
+    "es_image_with_text_kFT4Pw",
+    "custom_liquid_GUJdVq"
   ]
 }
