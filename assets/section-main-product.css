@@ -1517,11 +1517,3 @@ a.product__text {
 product-info {
   border-bottom: 1px solid #ccc;
 }
-
-.card__information {position: relative;padding-bottom: 80px;width: 100%;}
-
-.card__information .see-product {
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-}

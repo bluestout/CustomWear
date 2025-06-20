@@ -11,3 +11,15 @@
     text-align: left;
   }
 }
+
+product-recommendations .card__information {
+  position: relative;
+  padding-bottom: 80px;
+  width: 100%;
+}
+
+product-recommendations .card__information .see-product {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
