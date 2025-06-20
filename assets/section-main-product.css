@@ -1529,3 +1529,11 @@ product-info {
     text-decoration: none;
     font-weight: 700;
 }
+
+.product-popup-modal__content[aria-label="What happens now?"] {
+    height: auto;
+}
+
+.product-popup-modal__content[aria-label="What happens now?"] .product-popup-modal__content-info {
+    margin-bottom: 40px;
+}
