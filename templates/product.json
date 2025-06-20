@@ -18,14 +18,14 @@
           "settings": {
             "contentSize": 16,
             "pattern": "[rating] ([count])",
-            "hideText": true,
+            "hideText": false,
             "alignment": "",
             "layout": "",
             "textColor": "",
             "starColor": "",
             "showAllReviews": true,
             "looxOpenFloatingWidget": false,
-            "emptyRatingWidget": true
+            "emptyRatingWidget": false
           }
         },
         "title": {
