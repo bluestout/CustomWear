@@ -199,7 +199,8 @@
 [data-option="Customization Type"] label.cl-po--radio-item input,
 [data-option="Screen Print - Ink Color Method"] label.cl-po--radio-item input,
 [data-option="Additional Lettering Location"] label.cl-po--checkbox-item input,
-[data-option="Additional Logo Position"] label.cl-po--checkbox-item input {
+[data-option="Additional Location "] label.cl-po--checkbox-item input
+[data-option="Additional Location"] label.cl-po--checkbox-item input{
   visibility: hidden;
   width: 0px !important;
   height: 0px !important;
@@ -210,7 +211,8 @@
 .cl-po--option[data-option="Leather or Faux Leather"],
 .cl-po--option[data-option="Screen Print - Customization Type"],
 .cl-po--option[data-option="Customization Type"],
-.cl-po--option[data-option="Additional Logo Position"],
+.cl-po--option[data-option="Additional Location "],
+.cl-po--option[data-option="Additional Location"],
 .cl-po--option[data-option="Additional Lettering Location"],
 .cl-po--option[data-option="Screen Print - Ink Color Method"] {
   display: flex;
