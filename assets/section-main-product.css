@@ -1517,3 +1517,9 @@ a.product__text {
 product-info {
   border-bottom: 1px solid #ccc;
 }
+
+.product__tags-rating-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
