@@ -1523,3 +1523,9 @@ product-info {
     align-items: center;
     gap: 30px;
 }
+
+.product-popup-modal__content-info a {
+    color: #990000;
+    text-decoration: none;
+    font-weight: 700;
+}
