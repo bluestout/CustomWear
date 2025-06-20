@@ -90,10 +90,10 @@
   border: none !important;
 }
 
-.product .cl-po--option[data-option="Additional Location "],
+/* .product .cl-po--option[data-option="Additional Location "],
 .product .cl-po--option[data-option="Additional Location"]{
   padding-bottom: 0px !important;
-}
+} */
 
 .product .cl-po--options {
   border-bottom: 1px solid #ccc;
