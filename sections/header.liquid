@@ -328,7 +328,7 @@
           </localization-form>
         {%- endif -%}
       </div>
-      <a href="#hero-wishlist" class="header__icon header__icon--wishlist link">{% render 'es-icon-heart' %}</a>
+      <a href="#hero-wishlist" class="header__icon header__icon--wishlist link"><span class="hidden" hidden>ADA</span>{% render 'es-icon-heart' %}</a>
       {% render 'header-search', input_id: 'Search-In-Modal' %}
 
       {%- if shop.customer_accounts_enabled -%}
@@ -369,6 +369,7 @@
 
       {%- if section.settings.phone_number != blank -%}
         <a href="tel:{{ section.settings.phone_number }}" class="header__icon header__icon--phone link focus-inset">
+          <span class="hidden" hidden>ADA</span>
           <span class="svg-wrapper">{{ 'icon-phone.svg' | inline_asset_content }}</span>
         </a>
       {%- endif -%}

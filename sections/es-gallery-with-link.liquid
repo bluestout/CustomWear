@@ -28,9 +28,11 @@
                 height="{{ block.settings.image.height }}"
               >
             </div>
-            <div class="es-gallery-with-link__item-item-title">
-              <a class="es-button link white" href="{{ block.settings.url }}">{{ block.settings.title }}</a>
-            </div>
+            {%- if block.settings.title != blank -%}
+              <div class="es-gallery-with-link__item-item-title">
+                <a class="es-button link white" href="{{ block.settings.url }}">{{ block.settings.title }}</a>
+              </div>
+            {%- endif -%}
           </div>
           {%- if block.settings.image_2 != blank -%}
             <div class="es-gallery-with-link__item-item{% if section.settings.show_gradient %} show-gradient{% endif %}" onclick="window.location.href = '{{ block.settings.url_2 }}'">
@@ -42,9 +44,11 @@
                   height="{{ block.settings.image_2.height }}"
                 >
               </div>
-              <div class="es-gallery-with-link__item-item-title">
-                <a class="es-button link white" href="{{ block.settings.url_2 }}">{{ block.settings.title_2 }}</a>
-              </div>
+              {%- if block.settings.title_2 != blank -%}
+                <div class="es-gallery-with-link__item-item-title">
+                  <a class="es-button link white" href="{{ block.settings.url_2 }}">{{ block.settings.title_2 }}</a>
+                </div>
+              {%- endif -%}
             </div>
           {%- endif -%}
         </div>

@@ -31,6 +31,7 @@
                       class="{% if block.settings.sm_image != blank %}small-hide{% endif %}"
                       width="{{ block.settings.image.width }}"
                       height="{{ block.settings.image.height }}"
+                      alt="{{ block.settings.image.alt | default: block.settings.image.title }}"
                     >
                     {%- if block.settings.sm_image != blank -%}
                       <img
@@ -38,6 +39,7 @@
                         class="medium-hide large-up-hide"
                         width="{{ block.settings.sm_image.width }}"
                         height="{{ block.settings.sm_image.height }}"
+                        alt="{{ block.settings.sm_image.alt | default: block.settings.sm_image.title }}"
                       >
                     {%- endif -%}
                   </div>
