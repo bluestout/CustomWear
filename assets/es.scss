@@ -1165,6 +1165,12 @@
     }
   }
 
+  .footer__payment {
+    .visually-hidden {
+      display: none;
+    }
+  }
+
   .footer-block__details-content {
     @media (max-width: 768px) {
       display: none;
@@ -4419,7 +4425,7 @@ slideshow-component {
 .ui-slideshow {
   .swiper-wrapper {
     .swiper-slide {
-      background-color: #fec600;
+      background-color: #767676;
     }
     .swiper-slide-next {
       .ui-slideshow__media {
