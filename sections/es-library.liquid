@@ -54,23 +54,21 @@
               <div class="mySwiper-{{ block.id }} swiper">
                 <div class="swiper-wrapper">
                   {%- paginate block.settings.metaobject.clip_arts.value by 100 -%}
-                    {%- for i in (1..14) -%}
-                      {%- for clip_art in block.settings.metaobject.clip_arts.value -%}
-                        <div class="grid__item swiper-slide">
-                          <div class="grid__item-media">
-                            <img
-                              src="{{ clip_art.image | img_url: 'master' }}"
-                              width="{{ clip_art.image.width }}"
-                              height="{{ clip_art.image.height }}"
-                              alt="{{ clip_art.image.alt | default: clip_art.image.id }}"
-                            >
-                          </div>
-                          <div class="grid__item-content center">
-                            <h4 class="es-font-h5">{{ clip_art.title }}</h4>
-                            <div class="grid__item-text">{{ clip_art.text }}</div>
-                          </div>
+                    {%- for clip_art in block.settings.metaobject.clip_arts.value -%}
+                      <div class="grid__item swiper-slide">
+                        <div class="grid__item-media">
+                          <img
+                            src="{{ clip_art.image | img_url: 'master' }}"
+                            width="{{ clip_art.image.width }}"
+                            height="{{ clip_art.image.height }}"
+                            alt="{{ clip_art.image.alt | default: clip_art.image.id }}"
+                          >
                         </div>
-                      {%- endfor -%}
+                        <div class="grid__item-content center">
+                          <h4 class="es-font-h5">{{ clip_art.title }}</h4>
+                          <div class="grid__item-text">{{ clip_art.text }}</div>
+                        </div>
+                      </div>
                     {%- endfor -%}
                   {%- endpaginate -%}
                 </div>
