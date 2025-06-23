@@ -14,7 +14,9 @@
 
 <div class="container{% if section.settings.scrollable %} es-gallery-with-link--scrollable{% endif %}">
   <div class="page-width">
-    <h2 class="es-gallery-with-link__title es-font-h2 center{% if section.settings.hide_title_on_mobile %} small-hide{% endif %}">{{ section.settings.title }}</h2>
+    {%- if section.settings.title != blank -%}
+      <h2 class="es-gallery-with-link__title es-font-h2 center{% if section.settings.hide_title_on_mobile %} small-hide{% endif %}">{{ section.settings.title }}</h2>
+    {%- endif -%}
     <div class="es-gallery-with-link__items">
       {%- for block in section.blocks -%}
         {%- assign gap_count = section.settings.item_count_row | minus: 1 -%}
