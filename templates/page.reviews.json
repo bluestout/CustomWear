@@ -25,6 +25,7 @@
           "settings": {
             "subheading": "",
             "heading": "Reviews",
+            "heading_tag": "h1",
             "heading_size": "hxxl"
           }
         }
