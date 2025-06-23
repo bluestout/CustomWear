@@ -15,6 +15,13 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  .cart__footer .product-popup-modal__opener{
+    display : flex !important;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+  }
 {%- endstyle -%}
 
 <div
@@ -24,13 +31,45 @@
 >
   <div class="page-width">
     <div class="cart__footer isolate section-{{ section.id }}-padding">
-      <div class="cart_footer_wahat_happens_button_text">
-        <a href="{{ section.settings.heading_url }}">{{ section.settings.heading }}
+      <modal-opener
+        class="product-popup-modal__opener quick-add-hidden cart_footer_wahat_happens_button_text"
+        data-modal="#PopupModal-{{ section.id }}"
+        {{ block.shopify_attributes }}
+      >
+        <button
+          id="ProductPopup-{{ section.id }}"
+          class="product-popup-modal__button link"
+          type="button"
+          aria-haspopup="dialog"
+        >
+          {{ section.settings.heading }}
           <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M1.28033 8.97271C0.987437 9.26561 0.512563 9.26561 0.21967 8.97271C-0.073223 8.67982 -0.073223 8.20495 0.21967 7.91205L3.53549 4.59623L0.21967 1.28041C-0.073223 0.987513 -0.0732229 0.512638 0.21967 0.219746C0.512564 -0.0731478 0.987437 -0.0731478 1.28033 0.219746L5.12648 4.0659C5.41938 4.35879 5.41938 4.83367 5.12648 5.12656L1.28033 8.97271Z" fill="black"/>
           </svg>
-        </a>
-      </div>
+        </button>
+      </modal-opener>
+      <modal-dialog id="PopupModal-{{ section.id }}" class="product-popup-modal" {{ block.shopify_attributes }}>
+        <div
+          role="dialog"
+          aria-label="{{ section.settings.text }}"
+          aria-modal="true"
+          class="product-popup-modal__content"
+          tabindex="-1"
+        >
+          <button
+            id="ModalClose-{{ section.id }}"
+            type="button"
+            class="product-popup-modal__toggle"
+            aria-label="{{ 'accessibility.close' | t }}"
+          >
+            {{- 'icon-close.svg' | inline_asset_content -}}
+          </button>
+          <div class="product-popup-modal__content-info">
+            {% comment %} <h1 class="h2">{{ section.settings.page.title | escape }}</h1> {% endcomment %}
+            {{ section.settings.page.content }}
+          </div>
+        </div>
+      </modal-dialog>
 
       {% comment %} {%- if settings.show_cart_note -%}
         <cart-note class="cart__note field">
@@ -195,6 +234,11 @@
       "type": "header",
       "content": "t:sections.all.padding.section_padding_heading"
     },    
+    {
+      "type": "page",
+      "id": "page",
+      "label": "t:sections.main-product.blocks.collapsible_tab.settings.page.label"
+    },
     {
       "type": "range",
       "id": "padding_top",

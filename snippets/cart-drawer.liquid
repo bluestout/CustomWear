@@ -15,6 +15,47 @@
   .drawer {
     visibility: hidden;
   }
+
+  .product-popup-modal[open]{
+    z-index: 9999999 !important;
+  }
+
+  .additional-information-image{
+    display: flex;
+    align-items: center;
+  }
+
+  .drawer__footer .product-popup-modal__opener{
+    display : flex !important;
+    align-items: center;
+    justify-content: center ;
+    gap: 10px;
+  }
+
+  .drawer__footer .product-popup-modal__content {
+    padding-right: 1.5rem;
+    margin-top: 10rem;
+    width: 90%;
+    padding: 0 3rem;
+  }
+
+  .drawer__footer .product-popup-modal__button{
+    color: black;
+    font-size: 15px;
+    font-family: Inter;
+    font-weight: 600;
+    text-decoration: underline;
+    line-height: 19.50px;
+  }
+
+  @media( max-width : 768px ){
+    .drawer__footer .product-popup-modal__opener{
+      display : flex !important;
+      align-items: center;
+      justify-content: center !important;
+      gap: 10px;
+    }
+  } 
 </style>
 
 <cart-drawer class="drawer{% if cart == empty %} is-empty{% endif %}">
@@ -586,14 +627,50 @@
 
         {%- if settings.additional_info_text != blank -%}
           <div class="additional-information">
-            <a href="{{ settings.additional_info_url }}">
+            <modal-opener
+              class="product-popup-modal__opener quick-add-hidden cart_footer_wahat_happens_button_text"
+              data-modal="#PopupModal-{{ section.id }}"
+              {{ block.shopify_attributes }}
+            >
               {%- if settings.additional_info_image != blank -%}
                 <div class="additional-information-image">
                   <img src="{{ settings.additional_info_image | img_url: 'master' }}">
                 </div>
               {%- endif -%}
-              <div class="additional-information-image">{{ settings.additional_info_text }}</div>
-            </a>
+              <button
+                id="ProductPopup-{{ section.id }}"
+                class="product-popup-modal__button link"
+                type="button"
+                aria-haspopup="dialog"
+              >
+                What happens now?
+                <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M1.28033 8.97271C0.987437 9.26561 0.512563 9.26561 0.21967 8.97271C-0.073223 8.67982 -0.073223 8.20495 0.21967 7.91205L3.53549 4.59623L0.21967 1.28041C-0.073223 0.987513 -0.0732229 0.512638 0.21967 0.219746C0.512564 -0.0731478 0.987437 -0.0731478 1.28033 0.219746L5.12648 4.0659C5.41938 4.35879 5.41938 4.83367 5.12648 5.12656L1.28033 8.97271Z" fill="black"/>
+                </svg>
+              </button>
+            </modal-opener>
+            <modal-dialog id="PopupModal-{{ section.id }}" class="product-popup-modal" {{ block.shopify_attributes }}>
+              <div
+                role="dialog"
+                aria-label="{{ section.settings.text }}"
+                aria-modal="true"
+                class="product-popup-modal__content"
+                tabindex="-1"
+              >
+                <button
+                  id="ModalClose-{{ section.id }}"
+                  type="button"
+                  class="product-popup-modal__toggle"
+                  aria-label="{{ 'accessibility.close' | t }}"
+                >
+                  {{- 'icon-close.svg' | inline_asset_content -}}
+                </button>
+                <div class="product-popup-modal__content-info">
+                  {% comment %} <h1 class="h2">{{ section.settings.page.title | escape }}</h1> {% endcomment %}
+                  {{ settings.page.content }}
+                </div>
+              </div>
+            </modal-dialog>
           </div>
         {%- endif -%}
       </div>

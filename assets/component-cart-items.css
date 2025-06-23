@@ -196,10 +196,10 @@ cart-remove-button .icon-remove {
 }
 
 .cart-item .loading__spinner {
-  top: 0;
+  /* top: 0; */
   left: auto;
   right: auto;
-  bottom: 0;
+  bottom: 4px !important;
   padding: 0;
 }
 

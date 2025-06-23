@@ -613,6 +613,13 @@
   order: -3;
 }
 
+.cart-drawer .product-option[data-option-name="Brand"]:nth-child(n+5) {
+  border-bottom: 1px solid #CCC;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  order: -1;
+}
+
 .cart-drawer .product-option[data-option-name="Brand"]:nth-child(n+8) {
   border-bottom: 1px solid #CCC;
   padding-bottom: 12px;

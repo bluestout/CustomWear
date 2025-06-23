@@ -1483,7 +1483,12 @@
         "type": "url",
         "id": "continue_shopping_url",
         "label": "Continue Shopping URL"
-      }
+      },    
+      {
+        "type": "page",
+        "id": "page",
+        "label": "t:sections.main-product.blocks.collapsible_tab.settings.page.label"
+      },
     ]
   }
 ]

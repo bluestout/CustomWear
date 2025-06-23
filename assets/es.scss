@@ -2731,12 +2731,9 @@ body {
 
       .patches-media {
         .image {
-          @media (min-width: 820px) {
-            min-width: 250px;
-            max-width: 250px;
-            width: 100%;
-            padding: 20px;  
-          }
+          min-width: 250px;
+          width: 100%;
+          padding: 20px;
 
           img {
             width: 100%;
@@ -2745,20 +2742,14 @@ body {
           }
         }
 
-        @media (max-width: 819px) {
+        @media (max-width: 768px) {
           display: flex;
           align-items: flex-start;
 
           .image {
-            min-width: 110px;
-            max-width: 110px;
-            width: 100%;
-            padding: 0 10px;
-
             img {
-              width: 100%;
+              width: 110px;
               height: auto;
-              display: block;
             }
           }
         }
@@ -3916,9 +3907,6 @@ cart-items {
                     width: 205px !important;
                     font-weight: 600;
                   }
-                  @media (max-width: 500px) {
-                    width: 115px !important;
-                  }
                 }
 
                 td:nth-child(n + 2) {
@@ -4283,7 +4271,14 @@ cart-items {
 
       .additional-information {
         // padding-top: 1rem;
-
+        button{
+          color: black;
+          font-size: 15px;
+          font-family: Inter;
+          font-weight: 600;
+          text-decoration: underline;
+          line-height: 19.50px;
+        }
         a {
           gap: 20px;
           display: flex;

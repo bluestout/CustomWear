@@ -130,7 +130,7 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
   border-top: 0.1rem solid rgba(var(--color-foreground), 0.2);
   padding: 1.5rem 0;
 
-  box-shadow: 0 53px 112px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 90px 166px #545454;
 }
 
 cart-drawer-items.is-empty + .drawer__footer {
