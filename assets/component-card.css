@@ -594,3 +594,136 @@
     clip-path: polygon(var(--shape--blob-5));
   }
 }
+
+/* custom cart drawer css */
+.cart-drawer .cart-item__details dl{
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-drawer .product-option[data-option-name="SKU"] {
+  order: -2;
+}
+
+.cart-drawer .product-option[data-option-name="Color"] {
+  order: -4;
+}
+
+.cart-drawer .product-option[data-option-name="Size"] {
+  order: -3;
+}
+
+.cart-drawer .product-option[data-option-name="Brand"]:nth-child(n+5) {
+  border-bottom: 1px solid #CCC;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  order: -1;
+}
+
+.cart-drawer .product-option[data-option-name="Brand"]:nth-child(n+8) {
+  border-bottom: 1px solid #CCC;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  order: -1;
+}
+
+.cart-drawer .product-option{
+  font-size: 13px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 19.50px;
+  word-wrap: break-word;
+  color: black;
+}
+
+.cart-drawer .product-option dt{
+  color: #545454;
+  font-weight: 600;
+}
+
+.cart-drawer .product-option dd{
+  color: #545454;
+  font-weight: 400;
+}
+
+.continue-shopping{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.continue-shopping_link{
+  font-size: 13px;
+  font-family: Inter;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 16.90px;
+  letter-spacing: 2px;
+  word-wrap: break-word;
+  color: black;
+  text-decoration: unset;
+}
+
+.continue-shopping_link.drawer__close{
+  position: unset;
+}
+
+.continue-shopping_link svg{
+  margin-left: 6px;
+}
+
+#Details-CartDrawer .summary__title{
+  color: black;
+  font-size: 13px;
+  font-family: Inter;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 16.90px;
+  letter-spacing: 2px;
+  word-wrap: break-word;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.drawer__footer > details .summary__title .caret-icon{
+  transition: transform 0.3s ease;
+}
+
+.drawer__footer > details[open] .summary__title .caret-icon{
+  transform: rotate(180deg);
+}
+
+.cart-drawer .drawer__inner .drawer__footer .additional-information a{
+  gap: 8px;
+}
+
+.drawer__footer .cart__checkout-button:not([disabled]):hover:after{
+  box-shadow: unset !important;
+}
+
+.es-featured-collection .container .page-width .swiper .product-card-wrapper .card__inner {
+  --ratio-percent: 60% !important;
+}
+
+#CartDrawer-CartItems .cart-item__details{
+  padding-bottom: 0px !important;
+}
+
+.cart-drawer-edit-button-wrapper{
+  padding-top: 0px !important;
+  margin-top: -11px;
+  margin-bottom: 3px;
+}
+
+.cart-drawer-edit-button{
+  font-size: 13px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 19.50px;
+  word-wrap: break-word;
+  color: #990000;
+  text-decoration: unset;
+  margin-left: 0;
+}

@@ -112,8 +112,8 @@
     "brand_description": "<p></p>",
     "brand_image": "shopify://shop_images/Group_1041.svg",
     "brand_image_width": 100,
-    "social_facebook_link": "https://facebook.com/shopify",
-    "social_instagram_link": "https://instagram.com/shopify",
+    "social_facebook_link": "https://facebook.com/Customizedwear",
+    "social_instagram_link": "https://www.instagram.com/customizedwear1/",
     "social_youtube_link": "",
     "social_tiktok_link": "",
     "social_twitter_link": "",
@@ -133,6 +133,8 @@
     "additional_info_image": "shopify://shop_images/icon_a4268948-8d2b-48d8-970c-27fce3b8dbb2.svg",
     "additional_info_text": "What happens now?",
     "additional_info_url": "#",
+    "continue_shopping": "Continue shopping",
+    "continue_shopping_url": "shopify://products/5-panel-high-profile-structured-acrylicpolyester-t",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
@@ -204,6 +206,11 @@
       "4275615285897611771": {
         "type": "shopify://apps/fera/blocks/embed/2fbfcfa7-8a04-479f-89a8-0621fa099c51",
         "disabled": false,
+        "settings": {}
+      },
+      "761129394445959922": {
+        "type": "shopify://apps/snap-noti/blocks/notification/81e20000-6e98-4f82-915f-531279817ade",
+        "disabled": true,
         "settings": {}
       }
     },

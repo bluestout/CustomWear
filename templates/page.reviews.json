@@ -32,7 +32,6 @@
       "block_order": [
         "heading_xe9Rb7"
       ],
-      "name": "ES Image Banner",
       "settings": {
         "show_space": false,
         "image": "shopify://shop_images/Image_5_b5505766-717c-472f-a517-c5c0be5b8992.png",
@@ -66,7 +65,7 @@
             "heading": "",
             "layout": "list",
             "star_color": "#990000",
-            "types_to_show": "both"
+            "types_to_show": "store"
           }
         }
       },

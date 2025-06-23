@@ -3608,6 +3608,9 @@ details-disclosure > details {
   }
 }
 
+.cart__dynamic-checkout-buttons{
+  display: none !important;
+}
 
 /* PRODUCT RECOMMENDATIONS CUSTOM STYLING MOBILE */
 @media screen and (max-width: 768px) {

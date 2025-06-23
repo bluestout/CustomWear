@@ -824,13 +824,13 @@ a.product__text {
 }
 
 @media screen and (max-width: 749px) {
-  .product-popup-modal__content table {
+  /* .product-popup-modal__content table {
     display: block;
     max-width: fit-content;
     overflow-x: auto;
     white-space: nowrap;
     margin: 0;
-  }
+  } */
 
   .product-media-modal__dialog .global-media-settings,
   .product-media-modal__dialog .global-media-settings video,
@@ -861,7 +861,7 @@ a.product__text {
 }
 
 .product-popup-modal__content-info {
-  padding-right: 4.4rem;
+  padding-right: 1rem;
 }
 
 .product-popup-modal__content-info > * {
@@ -1506,4 +1506,34 @@ a.product__text {
   line-height: 100%;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+
+.fera-reviews-widget#reviews {
+  margin-top: 0px;
+  border: none;
+}
+
+product-info {
+  border-bottom: 1px solid #ccc;
+}
+
+.product__tags-rating-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.product-popup-modal__content-info a {
+    color: #990000;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.product-popup-modal__content[aria-label="What happens now?"] {
+    height: auto;
+}
+
+.product-popup-modal__content[aria-label="What happens now?"] .product-popup-modal__content-info {
+    margin-bottom: 40px;
 }
