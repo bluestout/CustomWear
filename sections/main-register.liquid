@@ -18,10 +18,22 @@
   <div class="customer-banner">
     <div class="customer-banner__media">
       {%- if section.settings.image != blank -%}
-        <img src="{{ section.settings.image | img_url: '960x' }}" width="{{ section.settings.image.width }}" height="{{ section.settings.image.height }}" class="{% if section.settings.sm_image != blank %}small-hide{% endif %}">
+        <img
+          src="{{ section.settings.image | img_url: '960x' }}"
+          width="{{ section.settings.image.width }}"
+          height="{{ section.settings.image.height }}"
+          class="{% if section.settings.sm_image != blank %}small-hide{% endif %}"
+          alt="{{ section.settings.image.alt | default: section.settings.image.id }}"
+        >
       {%- endif -%}
       {%- if section.settings.sm_image != blank -%}
-        <img src="{{ section.settings.sm_image | img_url: '480x' }}" width="{{ section.settings.sm_image.width }}" height="{{ section.settings.sm_image.height }}" class="medium-hide large-up-hide">
+        <img
+          src="{{ section.settings.sm_image | img_url: '480x' }}"
+          width="{{ section.settings.sm_image.width }}"
+          height="{{ section.settings.sm_image.height }}"
+          class="medium-hide large-up-hide"
+          alt="{{ section.settings.sm_image.alt | default: section.settings.sm_image.id }}"
+        >
       {%- endif -%}
     </div>
   </div>
@@ -143,9 +155,7 @@
           {{ 'customer.register.submit' | t }}
         </button>
       {%- endform -%}
-      <div class="sign-up">
-        Already have an account? <a href="{{ routes.account_login_url }}">Log in here</a>
-      </div>
+      <div class="sign-up">Already have an account? <a href="{{ routes.account_login_url }}">Log in here</a></div>
     </div>
   </div>
 </div>

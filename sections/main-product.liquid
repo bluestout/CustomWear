@@ -133,14 +133,18 @@
                 </div>
               
               {%- when 'product_tags' -%}
-                <div class="product__tags" {{ block.shopify_attributes }}>
-                  {%- for tag in product.tags -%}
-                    {%- if tag contains 'badge_' -%}
-                      <span class="product__tag">{{ tag | remove: 'badge_' }}</span>
-                    {%- endif -%}
-                  {%- endfor -%}
+                <div class="product__tags-rating-wrapper">
+                  <div class="product__tags" {{ block.shopify_attributes }}>
+                    {%- for tag in product.tags -%}
+                      {%- if tag contains 'badge_' -%}
+                        <span class="product__tag">{{ tag | remove: 'badge_' }}</span>
+                      {%- endif -%}
+                    {%- endfor -%}
+                  </div>
+                  <div class="product-rating-wrapper">
+                    <div data-fera-container="product_reviews_summary" data-product-id="{{ product.id }}"></div>
+                  </div>
                 </div>
-              
               {%- when 'price' -%}
                 <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                   {%- render 'price',
@@ -862,7 +866,7 @@
     },
     {
       "type": "product_tags",
-      "name": "Product Tags",
+      "name": "Product Tags & Rating",
       "limit": 1
     },
     {

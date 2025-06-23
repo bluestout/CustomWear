@@ -718,6 +718,7 @@
             cursor: pointer;
             transition: 0.3s ease;
             height: 100%;
+            background-color: #000000;
 
             &.show-gradient::after {
               content: "";
@@ -1161,6 +1162,12 @@
           }
         }
       }
+    }
+  }
+
+  .footer__payment {
+    .visually-hidden {
+      display: none;
     }
   }
 
@@ -4412,6 +4419,9 @@ slideshow-component {
 
 .ui-slideshow {
   .swiper-wrapper {
+    .swiper-slide {
+      background-color: #767676;
+    }
     .swiper-slide-next {
       .ui-slideshow__media {
         .ui-slideshow__media-wrapper {

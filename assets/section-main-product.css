@@ -1517,3 +1517,23 @@ a.product__text {
 product-info {
   border-bottom: 1px solid #ccc;
 }
+
+.product__tags-rating-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.product-popup-modal__content-info a {
+    color: #990000;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.product-popup-modal__content[aria-label="What happens now?"] {
+    height: auto;
+}
+
+.product-popup-modal__content[aria-label="What happens now?"] .product-popup-modal__content-info {
+    margin-bottom: 40px;
+}
