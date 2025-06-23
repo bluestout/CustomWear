@@ -23,7 +23,15 @@
           {%- for block in section.blocks -%}
             <li>
               <label>
-                <input type="radio" name="galleryCategory" value="#ClipArt--{{ block.id }}" {% if forloop.first %} checked{% endif %}> <span>{{ block.settings.heading }}</span>
+                <input
+                  type="radio"
+                  name="galleryCategory"
+                  value="#ClipArt--{{ block.id }}"
+                  {% if forloop.first %}
+                    checked
+                  {% endif %}
+                >
+                <span>{{ block.settings.heading }}</span>
               </label>
             </li>
           {%- endfor -%}
@@ -50,7 +58,12 @@
                       {%- for clip_art in block.settings.metaobject.clip_arts.value -%}
                         <div class="grid__item swiper-slide">
                           <div class="grid__item-media">
-                            <img src="{{ clip_art.image | img_url: 'master' }}" width="{{ clip_art.image.width }}" height="{{ clip_art.image.height }}">
+                            <img
+                              src="{{ clip_art.image | img_url: 'master' }}"
+                              width="{{ clip_art.image.width }}"
+                              height="{{ clip_art.image.height }}"
+                              alt="{{ clip_art.image.alt | default: clip_art.image.id }}"
+                            >
                           </div>
                           <div class="grid__item-content center">
                             <h4 class="es-font-h5">{{ clip_art.title }}</h4>
