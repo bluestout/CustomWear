@@ -506,4 +506,5 @@ textarea.cl-po--input::placeholder {
 
 .cl-po--option[data-option="Additional instructions"] {
     padding-bottom: 0px!important;
+    padding-top: 0px!important;
 }
