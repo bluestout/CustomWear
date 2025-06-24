@@ -503,3 +503,7 @@ textarea.cl-po--input::placeholder {
 [data-option="Location"] .cl-po--swatch-item:nth-child(6) img{
    scale:1.25!important;
 }
+
+.cl-po--option[data-option="Additional instructions"] {
+    padding-bottom: 0px!important;
+}
