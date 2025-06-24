@@ -89,7 +89,8 @@ span.fera-star-rating {
     }
 }
 
-/* REVIEWS APP PAGINATION STYLING */More actions
+/* REVIEWS APP PAGINATION STYLING */
+
 .fera-icon-caret path {
     stroke: #990000;
     stroke-width: 2px;
@@ -118,4 +119,8 @@ span.fera-star-rating {
 .fera-pagination-number {
     max-width: 25px;
     margin-inline: 5px;
+}
+
+.fera-icon.fera-icon-caret path {
+  stroke: #900;
 }
