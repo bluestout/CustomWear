@@ -88,3 +88,34 @@ span.fera-star-rating {
         justify-content: center;
     }
 }
+
+/* REVIEWS APP PAGINATION STYLING */More actions
+.fera-icon-caret path {
+    stroke: #990000;
+    stroke-width: 2px;
+}
+
+.fera-icon-caret {
+    width: 22px!important;
+}
+
+.fera-pagination a:not(.fera-pagination-number--current):hover {
+    background: none;
+}
+
+.fera-pagination a.fera-pagination-number--current {
+    background: none;
+    color: #990000;
+    font-weight: bold;
+    border-bottom: 2px solid;
+    max-width: 25px;
+}
+
+.fera--clickable:not(.fera-btn):hover {
+    text-decoration: none;
+}
+
+.fera-pagination-number {
+    max-width: 25px;
+    margin-inline: 5px;
+}
