@@ -517,3 +517,7 @@ textarea.cl-po--input {
     max-width: 100% !important;
     max-height: 200px!important;
 }
+
+.cl-po--option[data-option="Customer phone number"] {
+    padding-bottom: 20px!important;
+}
