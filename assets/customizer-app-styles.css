@@ -519,6 +519,7 @@ textarea.cl-po--input {
 }
 
 .cl-po--option[data-option="Customer phone number"],
-.cl-po--option[data-option="Patches - Custom Logo"]{
+.cl-po--option[data-option="Patches - Custom Logo"],
+.cl-po--option[data-option="Flex Patch - Color Options"]{
     padding-bottom: 20px!important;
 }
