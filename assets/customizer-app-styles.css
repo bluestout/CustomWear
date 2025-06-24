@@ -511,3 +511,9 @@ textarea.cl-po--input::placeholder {
 .cl-po--option .choices__inner {
     border-radius: 0px!important;
 }
+
+textarea.cl-po--input {
+    min-width: 100% !important;
+    max-width: 100% !important;
+    max-height: 200px!important;
+}
