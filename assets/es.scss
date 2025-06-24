@@ -3854,7 +3854,6 @@ cart-items {
             margin-top: 10px;
           }
 
-          // Shared styles for mobile/tablet up to 1050px
           @media (max-width: 1050px) {
             &.collapsable-item {
               border: 1px solid #ccc;
@@ -3913,6 +3912,10 @@ cart-items {
                   @media (max-width: 1050px) {
                     width: 205px !important;
                     font-weight: 600;
+                  }
+
+                  @media (max-width: 480px) {
+                    width: 125px !important;
                   }
                 }
 
