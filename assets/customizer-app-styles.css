@@ -102,7 +102,7 @@
 } */
 
 .product .cl-po--options {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #d1d5db;
 }
 
 .product .cl-po--option[data-option="Location"] {
