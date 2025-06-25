@@ -17,6 +17,7 @@
           "settings": {
             "subheading": "customize",
             "heading": "Any Product",
+            "heading_tag": "h2",
             "heading_size": "h0"
           }
         },
@@ -45,6 +46,7 @@
         "text_E6czfE",
         "buttons_Ck37kr"
       ],
+      "disabled": true,
       "settings": {
         "show_space": false,
         "image": "shopify://shop_images/Rectangle_94.jpg",
@@ -69,42 +71,45 @@
         "show_text_below": false
       }
     },
-    "slideshow_P78ati": {
-      "type": "slideshow",
+    "ui_slidehow_RXbyRd": {
+      "type": "ui-slidehow",
       "blocks": {
-        "slide_dxrCHH": {
-          "type": "slide",
+        "slide_item_m6qqgh": {
+          "type": "slide_item",
           "settings": {
-            "image": "shopify://shop_images/Homepage_Banner_CW_2914_x_996-Photoroom.png",
-            "image_overlay_opacity": 0,
-            "sub_heading": "customize",
-            "heading": "Any Product",
-            "heading_size": "h1",
-            "subheading": "Design your perfect hat – customize colors, fonts for a unique look!",
-            "button_label": "Customize",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-left",
-            "text_alignment": "left",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
+            "image": "shopify://shop_images/Rectangle_94.jpg",
+            "sm_image": "shopify://shop_images/Rectangle_94.png",
+            "header_text": "Any Product",
+            "heading": "customize",
+            "description": "<p>Design your perfect hat – customize colors, fonts for a unique look!</p>",
+            "button_text": "Customize",
+            "button_link": "#"
+          }
+        },
+        "slide_item_bUakze": {
+          "type": "slide_item",
+          "settings": {
+            "image": "shopify://shop_images/Homepage_Banner_CW_2914_x_996-Photoroom_a30ebfa9-a32c-41d8-bc84-5b8f3d8df944.png",
+            "sm_image": "shopify://shop_images/Homepage_Banner_CW_2914_x_996-Photoroom_7b9b7e89-d28e-4d21-858e-f23890c3d8ed.png",
+            "header_text": "Any Product",
+            "heading": "customize",
+            "description": "<p>Design your perfect hat – customize colors, fonts for a unique look!</p>",
+            "button_text": "Customize",
+            "button_link": "#"
           }
         }
       },
       "block_order": [
-        "slide_dxrCHH"
+        "slide_item_m6qqgh",
+        "slide_item_bUakze"
       ],
-      "name": "t:sections.slideshow.presets.name",
+      "name": "ui-custom-header-slide",
       "settings": {
-        "layout": "full_bleed",
-        "slide_height": "adapt_image",
-        "slider_visual": "counter",
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "image_behavior": "none",
-        "show_text_below": false,
-        "accessibility_info": "Slideshow about our brand"
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "es_featured_blocks_zzkdqw": {
@@ -275,6 +280,9 @@
       "block_order": [
         "heading_ptCCnT",
         "text_XxeLzC"
+      ],
+      "custom_css": [
+        "@media (min-width: 751px) {.image-with-text__media-item {padding-left: 50px; }}"
       ],
       "settings": {
         "image": "shopify://shop_images/need_editing_112_-_Edited.png",
@@ -484,7 +492,6 @@
         },
         "video_azGMUG": {
           "type": "video",
-          "disabled": true,
           "settings": {
             "video_url": "https://youtu.be/axfsK2KEtuk",
             "featured_image": "shopify://shop_images/image_8.png",
@@ -502,7 +509,7 @@
       "settings": {
         "scrollable": true,
         "title": "Customized Wear Techniques 101",
-        "description": "<p>Discover the best techniques for embroidering hats, washing caps & measuring your head for the perfect fit with ease!</p>",
+        "description": "<p>Discover the best techniques for embroidering hats, washing </p><p>caps & measuring your head for the perfect fit with ease!</p>",
         "padding_top": 80,
         "padding_bottom": 40
       }
@@ -514,7 +521,7 @@
           "type": "item",
           "settings": {
             "item_width": 4,
-            "image": "shopify://shop_images/Image_4d04158b-f2eb-40c3-86a4-2affdd8ee371.png",
+            "image": "shopify://shop_images/Feathure_Work_1032_x_1136-Photoroom.png",
             "title": "",
             "url": "",
             "title_2": "Hat Style 2",
@@ -525,7 +532,7 @@
           "type": "item",
           "settings": {
             "item_width": 4,
-            "image": "shopify://shop_images/pexels-duc-anh-nguyen-63701176-8289795_1.png",
+            "image": "shopify://shop_images/Featured_Work_1032_x_1046--Photoroom.png",
             "title": "",
             "url": "",
             "title_2": "Hat Style 2",
@@ -536,10 +543,10 @@
           "type": "item",
           "settings": {
             "item_width": 2,
-            "image": "shopify://shop_images/Dress_up_Flexfit_1.png",
+            "image": "shopify://shop_images/Featured_Work_654_x_514-Photoroom.png",
             "title": "",
             "url": "",
-            "image_2": "shopify://shop_images/6006t_YP_1.png",
+            "image_2": "shopify://shop_images/Featured_Work_654_x514-Photoroom-Photoroom.png",
             "title_2": "",
             "url_2": ""
           }
@@ -565,18 +572,18 @@
     "es_image_with_text_kFT4Pw": {
       "type": "es-image-with-text",
       "blocks": {
+        "heading_NGVgUX": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>CapWholesalers.com and browse our latest arrivals and exclusive deals<br/>Your Trusted Source for Quality Caps</p>",
+            "heading_size": "h1"
+          }
+        },
         "separator_KFgDcp": {
           "type": "separator",
           "settings": {
             "color": "#990000",
             "width": 100
-          }
-        },
-        "heading_NGVgUX": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>CapWholesalers.com and browse our latest arrivals and exclusive deals<br/><br/>Your Trusted Source for Quality Caps</p>",
-            "heading_size": "h1"
           }
         },
         "text_EXnEAX": {
@@ -596,8 +603,8 @@
         }
       },
       "block_order": [
-        "separator_KFgDcp",
         "heading_NGVgUX",
+        "separator_KFgDcp",
         "text_EXnEAX",
         "button_BKEWTb"
       ],
@@ -615,7 +622,7 @@
         "section_color_scheme": "",
         "color_scheme": "scheme-09348374-9048-4109-8e6d-ac33083b4bdd",
         "padding_top": 4,
-        "padding_bottom": 16,
+        "padding_bottom": 88,
         "padding_top_mobile": 16,
         "padding_bottom_mobile": 40
       }
@@ -623,7 +630,7 @@
   },
   "order": [
     "es_image_banner_Qc9Nmz",
-    "slideshow_P78ati",
+    "ui_slidehow_RXbyRd",
     "es_featured_blocks_zzkdqw",
     "es_image_with_text_QiEqMH",
     "es_gallery_with_link_CGamDr",

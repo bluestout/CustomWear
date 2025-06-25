@@ -48,6 +48,10 @@
     background: linear-gradient(90deg, #553300 0%, rgba(85, 51, 0, 0) 100%);
   }
 
+  #Banner-{{ section.id }}.banner {
+    background-color: #676767;
+  }
+
   @media (max-width: 768px) {
     #Banner-{{ section.id }}.opacity-gradient.sm-opacity-vertical::after {
       background: linear-gradient(360deg, black 0%, rgba(0, 0, 0, 0) 20%);
@@ -58,6 +62,10 @@
     #Banner-{{ section.id }}.opacity-gradient.sm-opacity-vertical.opacity-color--secondary::after {
       background: linear-gradient(0deg, #553300 0%, rgba(85, 51, 0, 0) 100%);
     }
+
+    /* .banner__media.media{
+      max-height: 68px;
+    } */
   }
 {%- endstyle -%}
 
@@ -168,12 +176,12 @@
                 {{ block.settings.subheading }}
               </p>
             {%- endif -%}
-            <h2
+            <{{ block.settings.heading_tag }}
               class="banner__heading inline-richtext {{ block.settings.heading_size }}"
               {{ block.shopify_attributes }}
             >
               {{ block.settings.heading }}
-            </h2>
+            </{{ block.settings.heading_tag }}>
           {%- when 'text' -%}
             <div class="banner__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }} style="--max-width: {{ block.settings.max_width }}px;">
               <p>{{ block.settings.text }}</p>
@@ -584,6 +592,22 @@
           "id": "heading",
           "default": "t:sections.image-banner.blocks.heading.settings.heading.default",
           "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
+        },
+        {
+          "type": "select",
+          "id": "heading_tag",
+          "options": [
+            {
+              "value": "h2",
+              "label": "H2"
+            },
+            {
+              "value": "h1",
+              "label": "H1"
+            }
+          ],
+          "default": "h2",
+          "label": "Heading Tag"
         },
         {
           "type": "select",

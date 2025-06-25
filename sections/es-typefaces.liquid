@@ -12,7 +12,10 @@
   }
 {%- endstyle -%}
 
-<div id="{{ section.settings.custom_id }}" class="color-{{ section.settings.color_scheme }} gradient{% if section.settings.tab_section %} tab-section{% endif %}{% if section.settings.hide_section %} hidden{% endif %}">
+<div
+  id="{{ section.settings.custom_id }}"
+  class="color-{{ section.settings.color_scheme }} gradient{% if section.settings.tab_section %} tab-section{% endif %}{% if section.settings.hide_section %} hidden{% endif %}"
+>
   <div class="{% if section.settings.layout == 'row' %}page-width--small{% elsif section.settings.layout == 'section' %} page-width{% elsif section.settings.layout == 'none' %} content-container content-container--full-width{% endif %}">
     <div class="section-{{ section.id }}-padding{% if section.settings.layout == 'section' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}">
       {%- if section.settings.heading != blank -%}
@@ -29,7 +32,12 @@
             {%- for metaobject in section.settings.typefaces_group.typefaces.value -%}
               <div class="grid__item swiper-slide">
                 <div class="grid__item-media">
-                  <img src="{{ metaobject.image | img_url: 'master' }}" width="{{ metaobject.image.width }}" height="{{ metaobject.image.height }}">
+                  <img
+                    src="{{ metaobject.image | img_url: 'master' }}"
+                    width="{{ metaobject.image.width }}"
+                    height="{{ metaobject.image.height }}"
+                    alt="{{ metaobject.image.alt | default: metaobject.image.id }}"
+                  >
                 </div>
                 <div class="grid__item-text">{{ metaobject.title }}</div>
               </div>
@@ -46,7 +54,7 @@
 </div>
 
 <script>
-  const sw = new Swiper("#shopify-section-{{ section.id }} .mySwiper", {
+  const sw = new Swiper('#shopify-section-{{ section.id }} .mySwiper', {
     slidesPerView: 5,
     slidesPerGroup: 5,
     grid: {
@@ -72,10 +80,9 @@
         grid: {
           rows: 3,
         },
-      }
-    }
+      },
+    },
   });
-  
 </script>
 
 {% schema %}
@@ -172,7 +179,7 @@
     {
       "type": "header",
       "content": "t:sections.collapsible_content.settings.layout_header.content"
-    },    
+    },
     {
       "type": "select",
       "id": "layout",
@@ -198,7 +205,7 @@
       "id": "container_color_scheme",
       "label": "t:sections.collapsible_content.settings.container_color_scheme.label",
       "default": "scheme-2"
-    },    
+    },
     {
       "type": "color_scheme",
       "id": "color_scheme",

@@ -1,0 +1,126 @@
+.fera-ratingSummary.fera-ratingSummary--expanded {
+    max-width: 100%;
+    width: 100%;
+    border-bottom: 0px!important;
+    justify-content: flex-end;
+}
+
+.fera-col[data-fera-actions-col] {
+    display: none;
+}
+
+.fera-row.fera-reviews-header-summary-container {
+    max-width: 100%;
+    width: 100%;
+    border-bottom: 0px;
+}
+
+.fera-reviews-header-row2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.fera-ratingSummary-ratingItems.fera-ratingSummary-ratingItems--fullWidth {
+    max-width: 300px;
+}
+
+
+.fera-customer-display-avatar.fera-customer-avatar {
+    display: none;
+}
+
+.fera-review.fera-review--for-product.fera-row {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.fera-col.fera-review-content-col.fera-review-content {
+    padding-left: 0px;
+}
+
+.fera-customer-display-text {
+    margin-bottom: 10px;
+}
+
+span.fera-star-bg {
+    display: none;
+}
+
+span.fera-star-rating {
+    display: none;
+}
+
+.fera-ratingSummary-ratingItem-histogram-bar-content {
+    border-radius: 50px;
+}
+
+.fera-ratingSummary-ratingItem-histogram-bar:before {
+    border-radius: 50px;
+}
+
+.fera-review:last-child {
+    border: none;
+}
+
+.fera-row.fera-reviews-body-top {
+    display: none;
+}
+
+.fera-ratingSummary-ratingItem-histogram-bar-content {
+    height: 12px;
+}
+
+@media(max-width: 768px){
+    .fera-reviews-header-row2 {
+        flex-direction: column;
+        justify-content:center;
+    }
+    .fera-ratingSummary-ratingItems.fera-ratingSummary-ratingItems--fullWidth {
+        max-width: 100%;
+    }
+    .fera-row.fera-reviews-header-summary-container{
+        justify-content: center;
+    }
+}
+
+/* REVIEWS APP PAGINATION STYLING */
+
+.fera-icon-caret path {
+    stroke: #990000;
+    stroke-width: 2px;
+}
+
+.fera-icon-caret {
+    width: 22px!important;
+}
+
+.fera-pagination a:not(.fera-pagination-number--current):hover {
+    background: none;
+}
+
+.fera-pagination a.fera-pagination-number--current {
+    background: none;
+    color: #990000;
+    font-weight: bold;
+    border-bottom: 2px solid;
+    max-width: 25px;
+}
+
+.fera--clickable:not(.fera-btn):hover {
+    text-decoration: none;
+}
+
+.fera-pagination-number {
+    max-width: 25px;
+    margin-inline: 5px;
+}
+
+.fera-icon.fera-icon-caret path {
+  stroke: #900;
+}

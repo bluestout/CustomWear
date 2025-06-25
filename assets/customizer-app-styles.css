@@ -83,18 +83,26 @@
 
 .product .cl-po--option[data-option="Custom Logo"],
 .product .cl-po--option[data-option="Thread Color"],
-.product .cl-po--option[data-option="Additional Logo Position"] {
+.product .cl-po--option[data-option="Additional Location "],
+.product .cl-po--option[data-option="Additional Location"],
+.product .cl-po--option[data-option="Left - Customization Type"],
+.product .cl-po--option[data-option="Left - Customization Type "],
+.product .cl-po--option[data-option="Right - Customization Type"],
+.product .cl-po--option[data-option="Right - Customization Type "],
+.product .cl-po--option[data-option="Back - Customization Type"],
+.product .cl-po--option[data-option="Back - Customization Type "]{
   padding-left: 0px !important;
   padding-right: 0px !important;
   border: none !important;
 }
 
-.product .cl-po--option[data-option="Additional Logo Position"] {
+/* .product .cl-po--option[data-option="Additional Location "],
+.product .cl-po--option[data-option="Additional Location"]{
   padding-bottom: 0px !important;
-}
+} */
 
 .product .cl-po--options {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #d1d5db;
 }
 
 .product .cl-po--option[data-option="Location"] {
@@ -197,7 +205,14 @@
 [data-option="Customization Type"] label.cl-po--radio-item input,
 [data-option="Screen Print - Ink Color Method"] label.cl-po--radio-item input,
 [data-option="Additional Lettering Location"] label.cl-po--checkbox-item input,
-[data-option="Additional Logo Position"] label.cl-po--checkbox-item input {
+[data-option="Additional Location "] label.cl-po--checkbox-item input,
+[data-option="Additional Location"] label.cl-po--checkbox-item input,
+[data-option="Left - Customization Type "] label.cl-po--radio-item input,
+[data-option="Left - Customization Type"] label.cl-po--radio-item input,
+[data-option="Right - Customization Type "] label.cl-po--radio-item input,
+[data-option="Right - Customization Type"] label.cl-po--radio-item input,
+[data-option="Back - Customization Type "] label.cl-po--radio-item input,
+[data-option="Back - Customization Type"] label.cl-po--radio-item input{
   visibility: hidden;
   width: 0px !important;
   height: 0px !important;
@@ -208,7 +223,14 @@
 .cl-po--option[data-option="Leather or Faux Leather"],
 .cl-po--option[data-option="Screen Print - Customization Type"],
 .cl-po--option[data-option="Customization Type"],
-.cl-po--option[data-option="Additional Logo Position"],
+.cl-po--option[data-option="Additional Location "],
+.cl-po--option[data-option="Additional Location"],
+.product .cl-po--option[data-option="Left - Customization Type"],
+.product .cl-po--option[data-option="Left - Customization Type "],
+.product .cl-po--option[data-option="Right - Customization Type"],
+.product .cl-po--option[data-option="Right - Customization Type "],
+.product .cl-po--option[data-option="Back - Customization Type"],
+.product .cl-po--option[data-option="Back - Customization Type "],
 .cl-po--option[data-option="Additional Lettering Location"],
 .cl-po--option[data-option="Screen Print - Ink Color Method"] {
   display: flex;
@@ -219,7 +241,14 @@
 [data-option="Leather or Faux Leather"] .cl-po--label,
 [data-option="Screen Print - Customization Type"] .cl-po--label,
 [data-option="Customization Type"] .cl-po--label,
-[data-option="Additional Logo Position"] .cl-po--label,
+[data-option="Additional Location "] .cl-po--label,
+[data-option="Additional Location"] .cl-po--label,
+.product .cl-po--option[data-option="Left - Customization Type"] .cl-po--label,
+.product .cl-po--option[data-option="Left - Customization Type "] .cl-po--label,
+.product .cl-po--option[data-option="Right - Customization Type"] .cl-po--label,
+.product .cl-po--option[data-option="Right - Customization Type "] .cl-po--label,
+.product .cl-po--option[data-option="Back - Customization Type"] .cl-po--label,
+.product .cl-po--option[data-option="Back - Customization Type "] .cl-po--label,
 [data-option="Additional Lettering Location"] .cl-po--label,
 [data-option="Screen Print - Ink Color Method"] .cl-po--label {
   width: 100%;
@@ -229,7 +258,14 @@
 [data-option="Screen Print - Customization Type"] label.cl-po--radio-item,
 [data-option="Customization Type"] label.cl-po--radio-item,
 [data-option="Screen Print - Ink Color Method"] .cl-po--radio-item,
-[data-option="Additional Logo Position"] label.cl-po--checkbox-item,
+[data-option="Additional Location "] label.cl-po--checkbox-item,
+[data-option="Additional Location"] label.cl-po--checkbox-item,
+.product .cl-po--option[data-option="Left - Customization Type"] label.cl-po--radio-item,
+.product .cl-po--option[data-option="Left - Customization Type "] label.cl-po--radio-item,
+.product .cl-po--option[data-option="Right - Customization Type"] label.cl-po--radio-item,
+.product .cl-po--option[data-option="Right - Customization Type "] label.cl-po--radio-item,
+.product .cl-po--option[data-option="Back - Customization Type"] label.cl-po--radio-item,
+.product .cl-po--option[data-option="Back - Customization Type "] label.cl-po--radio-item,
 [data-option="Additional Lettering Location"] label.cl-po--checkbox-item {
   border: 1px solid #ccc;
   padding: 5px 15px;
@@ -252,8 +288,16 @@
   .cl-po--radio-item:has(input[type="radio"]:checked),
 [data-option="Additional Lettering Location"]
   .cl-po--checkbox-item:has(input[type="checkbox"]:checked),
-[data-option="Additional Logo Position"]
-  .cl-po--checkbox-item:has(input[type="checkbox"]:checked) {
+[data-option="Additional Location "]
+  .cl-po--checkbox-item:has(input[type="checkbox"]:checked),
+[data-option="Additional Location"]
+  .cl-po--checkbox-item:has(input[type="checkbox"]:checked),
+.product .cl-po--option[data-option="Left - Customization Type"] .cl-po--radio-item:has(input[type="radio"]:checked),
+.product .cl-po--option[data-option="Left - Customization Type "] .cl-po--radio-item:has(input[type="radio"]:checked),
+.product .cl-po--option[data-option="Right - Customization Type"] .cl-po--radio-item:has(input[type="radio"]:checked),
+.product .cl-po--option[data-option="Right - Customization Type "] .cl-po--radio-item:has(input[type="radio"]:checked),
+.product .cl-po--option[data-option="Back - Customization Type"] .cl-po--radio-item:has(input[type="radio"]:checked),
+.product .cl-po--option[data-option="Back - Customization Type "] .cl-po--radio-item:has(input[type="radio"]:checked){
   border-color: black;
   background: white;
 }
@@ -318,14 +362,6 @@
   color: black !important;
 }
 
-.cl-po--option[data-option="Patches - Buy more and save!"] .cl-po--label:before,
-.cl-po--option[data-option="Screen Print - Buy more and save!"]
-  .cl-po--label:before {
-  content: "Step 4:";
-  color: #900;
-  margin-right: 4px;
-}
-
 .cl-po--option[data-option="Patches - Buy more and save!"],
 .cl-po--option[data-option="Screen Print - Buy more and save!"] {
   background: var(--gradient-background) !important;
@@ -352,17 +388,12 @@
 
 .cl-po--option[data-option="Additional Lettering Location"],
 .cl-po--option[data-option="Lettering Thread Color"],
-.cl-po--option[data-option="Embroidered - Custom Logo"],
-.cl-po--option[data-option="Patches - Custom Logo"],
-.cl-po--option[data-option="Faux Leather - Custom Logo"],
 .cl-po--option[data-option="Patches - Child - Faux Leather"],
 .cl-po--option[data-option="Patches - Child - Leather"],
 .cl-po--option[data-option="Patches  - Child - Print Stitch"],
-.cl-po--option[data-option="Print Stitch - Custom logo"],
 .cl-po--option[data-option="Patches - Child - Flex Patch"],
 .cl-po--option[data-option="Flex Patch - Color Options"],
 .cl-po--option[data-option="Screen Print - Child - Logo"],
-.cl-po--option[data-option="Screen Print - Ink Color Method"],
 .cl-po--option[data-option="Screen Print - Child - Lettering"],
 .cl-po--option[data-option="Lettering - Ink Color"],
 .cl-po--option[data-option="Lettering - Text"] {
@@ -375,10 +406,6 @@
 }
 
 .cl-po--option[data-option="Use What I’ve Already Created"] {
-    padding-bottom: 0px!important;
-}
-
-.cl-po--option[data-option="Customer phone number"] {
     padding-bottom: 0px!important;
 }
 
@@ -426,4 +453,67 @@ textarea.cl-po--input::placeholder {
     color: black!important;
     font-size: 15px!important;
     font-family: 'Inter'!important;
+}
+
+.cl-po--option[data-option="Buy More Save More"] .cl-po--option {
+  background: transparent!important;
+  max-width: 400px;
+}
+
+.cl-po--option[data-option="Buy More Save More"] .cl-po--label:before {
+  content: "Step 4:";
+  color: #900;
+  margin-right: 4px;
+}
+
+.product-form__input .quantity__input{
+  pointer-events: none;
+}
+
+@media(max-width: 1024px){
+  table.MsoNormalTable {
+    width: 100%!important;
+  }
+}
+
+.cl-po--info {
+  background-image: url('https://cdn.shopify.com/s/files/1/0728/5784/6001/files/1.png?v=1749639752')!important;
+  background-color: #E9E9E9!important;
+  width: 20px!important;
+  height: 20px!important;
+  padding: 4px!important;
+}
+
+[data-option="Embroidery Logo Location"] .cl-po--swatch-item:nth-child(5) img,
+[data-option="Embroidery Logo Location"] .cl-po--swatch-item:nth-child(6) img,
+[data-option="Embroidery - Child - Lettering"] .cl-po--swatch-item:nth-child(5) img,
+[data-option="Embroidery - Child - Lettering"] .cl-po--swatch-item:nth-child(6) img,
+[data-option="Embroidery - Child - Both"] .cl-po--swatch-item:nth-child(5) img,
+[data-option="Embroidery - Child - Both"] .cl-po--swatch-item:nth-child(6) img,
+[data-option="Location"] .cl-po--swatch-item:nth-child(5) img,
+[data-option="Location"] .cl-po--swatch-item:nth-child(6) img{
+   scale:1.25!important;
+}
+
+.cl-po--option[data-option="Additional instructions"] {
+    padding-bottom: 0px!important;
+    padding-top: 0px!important;
+}
+
+.cl-po--option input,
+.cl-po--option .choices__inner {
+    border-radius: 0px!important;
+}
+
+textarea.cl-po--input {
+    min-width: 100% !important;
+    max-width: 100% !important;
+    max-height: 200px!important;
+}
+
+.cl-po--option[data-option="Patches - Custom Logo"],
+.cl-po--option[data-option="Flex Patch - Color Options",
+.cl-po--option[data-option="Faux Leather - Custom Logo"],
+.cl-po--option[data-option="Print Stitch - Custom logo"]{
+    padding-bottom: 20px!important;
 }

@@ -131,6 +131,20 @@
                     </h2>
                   </a>
                 </div>
+              
+              {%- when 'product_tags' -%}
+                <div class="product__tags-rating-wrapper">
+                  <div class="product__tags" {{ block.shopify_attributes }}>
+                    {%- for tag in product.tags -%}
+                      {%- if tag contains 'badge_' -%}
+                        <span class="product__tag">{{ tag | remove: 'badge_' }}</span>
+                      {%- endif -%}
+                    {%- endfor -%}
+                  </div>
+                  <div class="product-rating-wrapper">
+                    <div data-fera-container="product_reviews_summary" data-product-id="{{ product.id }}"></div>
+                  </div>
+                </div>
               {%- when 'price' -%}
                 <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                   {%- render 'price',
@@ -230,7 +244,7 @@
                   role="status"
                   {{ block.shopify_attributes }}
                 >
-                  <span class="visually-hidden">{{ 'products.product.sku' | t }}:</span>
+                  <strong>{{ 'products.product.sku' | t }}:</strong>
                   {{- product.selected_or_first_available_variant.sku -}}
                 </p>
               {%- when 'custom_liquid' -%}
@@ -848,6 +862,11 @@
     {
       "type": "title",
       "name": "t:sections.main-product.blocks.title.name",
+      "limit": 1
+    },
+    {
+      "type": "product_tags",
+      "name": "Product Tags & Rating",
       "limit": 1
     },
     {

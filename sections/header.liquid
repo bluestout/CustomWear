@@ -54,8 +54,27 @@
     flex-wrap: wrap;
   }
 
+  summary a{
+    text-decoration: none;
+    color: #000;
+  }
+
   summary.list-menu__item {
     padding-right: 2.7rem;
+    position: relative;
+  }
+
+  summary.list-menu__item::after{
+    content: "";
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+  }
+
+  summary.list-menu__item:hover:after{
+    display: block;
   }
 
   .list-menu__item {
@@ -309,7 +328,7 @@
           </localization-form>
         {%- endif -%}
       </div>
-      <a href="#hero-wishlist" class="header__icon header__icon--wishlist link">{% render 'es-icon-heart' %}</a>
+      <a href="#hero-wishlist" aria-label="hero-wishlist" class="header__icon header__icon--wishlist link"><span class="hidden" hidden>ADA</span>{% render 'es-icon-heart' %}</a>
       {% render 'header-search', input_id: 'Search-In-Modal' %}
 
       {%- if shop.customer_accounts_enabled -%}
@@ -349,7 +368,8 @@
       {%- endfor -%}
 
       {%- if section.settings.phone_number != blank -%}
-        <a href="tel:{{ section.settings.phone_number }}" class="header__icon header__icon--phone link focus-inset">
+        <a href="tel:{{ section.settings.phone_number }}" aria-label="tel:{{ section.settings.phone_number }}" class="header__icon header__icon--phone link focus-inset">
+          <span class="hidden" hidden>ADA</span>
           <span class="svg-wrapper">{{ 'icon-phone.svg' | inline_asset_content }}</span>
         </a>
       {%- endif -%}

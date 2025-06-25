@@ -25,6 +25,7 @@
           "settings": {
             "subheading": "",
             "heading": "Shop by Style",
+            "heading_tag": "h1",
             "heading_size": "h1"
           }
         }

@@ -1,21 +1,11 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "es_image_banner_wJHgen": {
       "type": "es-image-banner",
-      "name": "ES Image Banner",
       "settings": {
         "show_space": false,
-        "image": "shopify://shop_images/top.png",
-        "image_mobile": "shopify://shop_images/top_1.png",
+        "image": "shopify:\/\/shop_images\/top.png",
+        "image_mobile": "shopify:\/\/shop_images\/top_1.png",
         "image_overlay_opacity": 0,
         "opacity_type": "normal",
         "opacity_color": "primary",
@@ -32,7 +22,7 @@
         "mobile_content_alignment": "center",
         "opacity_direct_on_mobile": "vertical",
         "opacity_height_on_mobile": "small",
-        "image_height_on_mobile": "square",
+        "image_height_on_mobile": "adapt",
         "show_text_below": true
       }
     },
@@ -47,6 +37,10 @@
     "cart-footer": {
       "type": "main-cart-footer",
       "blocks": {
+        "order_special_NjqfY7": {
+          "type": "Order_special",
+          "settings": {}
+        },
         "subtotal": {
           "type": "subtotal",
           "settings": {}
@@ -57,18 +51,21 @@
         }
       },
       "block_order": [
+        "order_special_NjqfY7",
         "subtotal",
         "buttons"
       ],
       "settings": {
         "color_scheme": "scheme-1",
+        "heading": "WHat happens now?",
+        "heading_url": "",
+        "page": "what-happens-now",
         "padding_top": 20,
         "padding_bottom": 40
       }
     },
     "es_featured_collection_ytPkbT": {
       "type": "es-featured-collection",
-      "name": "ES Featured Collection",
       "settings": {
         "border_top": true,
         "title": "You may also like",

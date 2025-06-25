@@ -15,6 +15,13 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  .cart__footer .product-popup-modal__opener{
+    display : flex !important;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+  }
 {%- endstyle -%}
 
 <div
@@ -24,7 +31,47 @@
 >
   <div class="page-width">
     <div class="cart__footer isolate section-{{ section.id }}-padding">
-      {%- if settings.show_cart_note -%}
+      <modal-opener
+        class="product-popup-modal__opener quick-add-hidden cart_footer_wahat_happens_button_text"
+        data-modal="#PopupModal-{{ section.id }}"
+        {{ block.shopify_attributes }}
+      >
+        <button
+          id="ProductPopup-{{ section.id }}"
+          class="product-popup-modal__button link"
+          type="button"
+          aria-haspopup="dialog"
+        >
+          {{ section.settings.heading }}
+          <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.28033 8.97271C0.987437 9.26561 0.512563 9.26561 0.21967 8.97271C-0.073223 8.67982 -0.073223 8.20495 0.21967 7.91205L3.53549 4.59623L0.21967 1.28041C-0.073223 0.987513 -0.0732229 0.512638 0.21967 0.219746C0.512564 -0.0731478 0.987437 -0.0731478 1.28033 0.219746L5.12648 4.0659C5.41938 4.35879 5.41938 4.83367 5.12648 5.12656L1.28033 8.97271Z" fill="black"/>
+          </svg>
+        </button>
+      </modal-opener>
+      <modal-dialog id="PopupModal-{{ section.id }}" class="product-popup-modal" {{ block.shopify_attributes }}>
+        <div
+          role="dialog"
+          aria-label="{{ section.settings.text }}"
+          aria-modal="true"
+          class="product-popup-modal__content"
+          tabindex="-1"
+        >
+          <button
+            id="ModalClose-{{ section.id }}"
+            type="button"
+            class="product-popup-modal__toggle"
+            aria-label="{{ 'accessibility.close' | t }}"
+          >
+            {{- 'icon-close.svg' | inline_asset_content -}}
+          </button>
+          <div class="product-popup-modal__content-info">
+            {% comment %} <h1 class="h2">{{ section.settings.page.title | escape }}</h1> {% endcomment %}
+            {{ section.settings.page.content }}
+          </div>
+        </div>
+      </modal-dialog>
+
+      {% comment %} {%- if settings.show_cart_note -%}
         <cart-note class="cart__note field">
           <label for="Cart-note">{{ 'sections.cart.note' | t }}</label>
           <textarea
@@ -35,13 +82,42 @@
             placeholder="{{ 'sections.cart.note' | t }}"
           >{{ cart.note }}</textarea>
         </cart-note>
-      {%- endif -%}
+      {%- endif -%}  {% endcomment %}
 
       <div class="cart__blocks">
         {% for block in section.blocks %}
           {%- case block.type -%}
             {%- when '@app' -%}
               {% render block %}
+            {%- when 'Order_special' -%}
+              {%- if settings.show_cart_note -%}
+                <details id="Details-Cartfooter">
+                  <summary>
+                    <span class="summary__title">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                        <rect x="0.5" y="0.5" width="13" height="14" stroke="black"/>
+                        <line x1="4" y1="4.5" x2="10" y2="4.5" stroke="black"/>
+                        <line x1="4" y1="7.5" x2="10" y2="7.5" stroke="black"/>
+                        <line x1="4" y1="10.5" x2="10" y2="10.5" stroke="black"/>
+                      </svg>
+                      {{ 'sections.cart.note' | t }}
+                      <svg class="caret-icon " xmlns="http://www.w3.org/2000/svg" width="10" height="7" viewBox="0 0 10 7" fill="none">
+                        <path d="M0.21967 1.04795C-0.0732233 1.34084 -0.0732233 1.8156 0.21967 2.1085L4.05756 5.94639C4.06027 5.94918 4.06261 5.95242 4.06537 5.95518C4.10983 5.99962 4.16029 6.03457 4.21186 6.06553C4.23355 6.07855 4.25563 6.09004 4.27826 6.10068C4.29851 6.1102 4.31893 6.11847 4.33979 6.12607C4.36524 6.13536 4.3908 6.14307 4.41694 6.14951C4.43452 6.15384 4.45187 6.15819 4.46967 6.16123C4.50146 6.16666 4.53323 6.16967 4.56537 6.171C4.57909 6.17156 4.59267 6.17216 4.60639 6.17197C4.6415 6.1715 4.6761 6.16758 4.71088 6.16221C4.7226 6.16039 4.7344 6.15969 4.74604 6.15732C4.781 6.15022 4.81472 6.13918 4.84858 6.12705C4.85981 6.12302 4.87168 6.12089 4.88276 6.11631C4.91826 6.10163 4.95193 6.08297 4.98529 6.0626C4.99385 6.05737 5.00327 6.05355 5.01166 6.04795C5.01707 6.04434 5.02195 6.04 5.02729 6.03623C5.06176 6.01187 5.09604 5.98604 5.1269 5.95518L8.9726 2.1085L9.02338 2.05186C9.26386 1.75728 9.24723 1.32262 8.9726 1.04795C8.69801 0.773359 8.26327 0.755921 7.96869 0.996191L7.91205 1.04795L4.59565 4.36338L1.28022 1.04795C0.987324 0.755055 0.512563 0.755055 0.21967 1.04795Z" fill="black"/>
+                      </svg>
+                    </span>
+                  </summary>
+                  <cart-note class="cart__note field">
+                    {% comment %} <label class="visually-hidden" for="CartDrawer-Note">{{ 'sections.cart.note' | t }}</label> {% endcomment %}
+                    <textarea
+                      id="CartDrawer-Note"
+                      class="text-area text-area--resize-vertical field__input"
+                      name="note"
+                      aria-label="CartDrawer-Note"
+                      placeholder="{{ 'sections.cart.note' | t }}"
+                    >{{ cart.note }}</textarea>
+                  </cart-note>
+                </details>
+              {%- endif -%}
             {%- when 'subtotal' -%}
               <div class="js-contents" {{ block.shopify_attributes }}>
                 <div>
@@ -143,11 +219,27 @@
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
       "default": "scheme-1"
+    },    
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "WHat happens now?"
+    },
+    {
+      "type": "url",
+      "id": "heading_url",
+      "label": "Heading URL"
     },
     {
       "type": "header",
       "content": "t:sections.all.padding.section_padding_heading"
     },    
+    {
+      "type": "page",
+      "id": "page",
+      "label": "t:sections.main-product.blocks.collapsible_tab.settings.page.label"
+    },
     {
       "type": "range",
       "id": "padding_top",
@@ -170,6 +262,11 @@
     }
   ],
   "blocks": [
+    {
+      "type": "Order_special",
+      "name": "Order special",
+      "limit": 1
+    },
     {
       "type": "subtotal",
       "name": "t:sections.main-cart-footer.blocks.subtotal.name",
