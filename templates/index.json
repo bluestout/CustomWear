@@ -17,6 +17,7 @@
           "settings": {
             "subheading": "customize",
             "heading": "Any Product",
+            "heading_tag": "h2",
             "heading_size": "h0"
           }
         },
@@ -88,8 +89,8 @@
         "slide_item_bUakze": {
           "type": "slide_item",
           "settings": {
-            "image": "shopify://shop_images/Richardson_Banner_2914_x_996_px_5061250b-aef0-4c4d-84be-f175fc2263de.png",
-            "sm_image": "shopify://shop_images/Richardson_Banner_2914_x_996_px_5061250b-aef0-4c4d-84be-f175fc2263de.png",
+            "image": "shopify://shop_images/Homepage_Banner_CW_2914_x_996-Photoroom_a30ebfa9-a32c-41d8-bc84-5b8f3d8df944.png",
+            "sm_image": "shopify://shop_images/Homepage_Banner_CW_2914_x_996-Photoroom_7b9b7e89-d28e-4d21-858e-f23890c3d8ed.png",
             "header_text": "Any Product",
             "heading": "customize",
             "description": "<p>Design your perfect hat – customize colors, fonts for a unique look!</p>",
