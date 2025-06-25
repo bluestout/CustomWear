@@ -320,19 +320,6 @@
             "padding_bottom": 0
           }
         },
-        "image_with_text_hPYbW8": {
-          "type": "image_with_text",
-          "settings": {
-            "sm_column": false,
-            "heading": "",
-            "description": "",
-            "image": "shopify://shop_images/1566316851-caps-good_1_6.png",
-            "left_text": "",
-            "text": "<p>Nylon strap with plastic buckle</p>",
-            "padding_top": 0,
-            "padding_bottom": 0
-          }
-        },
         "space_qVyg4J": {
           "type": "space",
           "settings": {}
@@ -422,7 +409,6 @@
         "image_with_text_JXKrVa",
         "image_with_text_WVB4UJ",
         "image_with_text_WDyGap",
-        "image_with_text_hPYbW8",
         "space_qVyg4J",
         "content_L9gwdC",
         "image_with_text_yc9r6L",
