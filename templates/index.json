@@ -492,12 +492,24 @@
             "full_width": false,
             "description": ""
           }
+        },
+        "video_LC4fM8": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "video_url": "https://youtu.be/D0r6cdG9QDQ",
+            "featured_image": "shopify://shop_images/Screen_Shot_2025-06-25_at_18.50.49.png",
+            "enable_video_looping": false,
+            "full_width": false,
+            "description": ""
+          }
         }
       },
       "block_order": [
         "video_nQgbYm",
         "video_pyYEmP",
-        "video_azGMUG"
+        "video_azGMUG",
+        "video_LC4fM8"
       ],
       "settings": {
         "scrollable": true,
