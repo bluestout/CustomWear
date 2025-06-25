@@ -25,6 +25,7 @@
           "settings": {
             "subheading": "",
             "heading": "Shop Richardson Hats",
+            "heading_tag": "h1",
             "heading_size": "h1"
           }
         }

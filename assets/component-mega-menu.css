@@ -33,7 +33,7 @@
   color: #990000;
 }
 
-.mega-menu[open] .header__menu-item::before {
+/* .mega-menu[open] .header__menu-item::before {
   content: '';
   position: fixed;
   top: 0;
@@ -43,7 +43,7 @@
   bottom: 0;
   background: rgba(0, 0, 0, .2);
   z-index: -2;
-}
+} */
 
 .mega-menu[open] .mega-menu__content {
   opacity: 1;

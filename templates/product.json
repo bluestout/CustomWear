@@ -18,18 +18,22 @@
           "settings": {
             "contentSize": 16,
             "pattern": "[rating] ([count])",
-            "hideText": true,
+            "hideText": false,
             "alignment": "",
             "layout": "",
             "textColor": "",
             "starColor": "",
             "showAllReviews": true,
             "looxOpenFloatingWidget": false,
-            "emptyRatingWidget": true
+            "emptyRatingWidget": false
           }
         },
         "title": {
           "type": "title",
+          "settings": {}
+        },
+        "product_tags_Uc7D3J": {
+          "type": "product_tags",
           "settings": {}
         },
         "text_tnN9k9": {
@@ -102,7 +106,6 @@
         },
         "collapsible_tab_eM4Wkc": {
           "type": "collapsible_tab",
-          "name": "Description",
           "settings": {
             "default_open": true,
             "heading": "Description",
@@ -124,7 +127,7 @@
           "settings": {
             "text": "What happens now?",
             "image": "shopify://shop_images/icon_2.svg",
-            "page": ""
+            "page": "what-happens-now"
           }
         },
         "share": {
@@ -161,6 +164,7 @@
       "block_order": [
         "loox_reviews_loox_rating_cNEJze",
         "title",
+        "product_tags_Uc7D3J",
         "text_tnN9k9",
         "sku_zdxYpC",
         "text_Pb8kXM",
@@ -203,7 +207,7 @@
             "heading": "Customer Reviews",
             "layout": "list",
             "star_color": "#990000",
-            "when_no_reviews": "show"
+            "when_no_reviews": "hide"
           }
         }
       },

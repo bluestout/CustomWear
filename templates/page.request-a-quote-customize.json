@@ -61,7 +61,7 @@
         "color_scheme": "",
         "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 100
+        "padding_bottom": 32
       }
     },
     "1748534454dff846db": {
@@ -81,37 +81,12 @@
       "settings": {
         "include_margins": true
       }
-    },
-    "rich_text_B7ULCx": {
-      "type": "rich-text",
-      "blocks": {
-        "text_UUUwrX": {
-          "type": "text",
-          "settings": {
-            "text": "<p>By submitting this form, you agree to receive occasional updates and promotions from us. You can unsubscribe anytime by clicking the link in our emails or contacting <a href=\"mailto:info@customizedwear.com\"><span style=\"text-decoration:underline\">info@customizedwear.com</span></a>.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "text_UUUwrX"
-      ],
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "border_bottom": true,
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 100
-      }
     }
   },
   "order": [
     "main",
     "rich_text_VfJ8w9",
     "rich_text_9kKh7M",
-    "1748534454dff846db",
-    "rich_text_B7ULCx"
+    "1748534454dff846db"
   ]
 }

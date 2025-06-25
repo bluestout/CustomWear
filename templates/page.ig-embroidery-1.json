@@ -24,7 +24,7 @@
           "type": "heading",
           "settings": {
             "subheading": "",
-            "heading": "Inspiration Gallery",
+            "heading": "Inspirational Gallery Embroidery",
             "heading_size": "h1"
           }
         }
@@ -58,73 +58,13 @@
     },
     "es_galleries_HqnbFV": {
       "type": "es-galleries",
-      "blocks": {
-        "button_dniMkJ": {
-          "type": "button",
-          "settings": {
-            "button_text": "Inspirational Gallery Embroidery",
-            "button_link": "shopify://pages/inspirational-gallery-embroidery"
-          }
-        },
-        "button_Vi4brF": {
-          "type": "button",
-          "settings": {
-            "button_text": "Inspirational Gallery Screenprinting",
-            "button_link": "shopify://pages/inspirational-gallery-screenprinting"
-          }
-        },
-        "button_7qLWqg": {
-          "type": "button",
-          "settings": {
-            "button_text": "Inspirational Gallery Embroidered Patches",
-            "button_link": ""
-          }
-        },
-        "button_WT7cah": {
-          "type": "button",
-          "settings": {
-            "button_text": "Inspirational Gallery Print Stitch Patches",
-            "button_link": "#"
-          }
-        },
-        "button_rUpqJ7": {
-          "type": "button",
-          "settings": {
-            "button_text": "Inspirational Gallery Faux Leather Patches",
-            "button_link": "#"
-          }
-        },
-        "button_bg8dqV": {
-          "type": "button",
-          "settings": {
-            "button_text": "Inspirational Gallery Leather Patches",
-            "button_link": "#"
-          }
-        },
-        "button_LPhxPN": {
-          "type": "button",
-          "settings": {
-            "button_text": "Inspirational Gallery Flex Patches",
-            "button_link": "#"
-          }
-        }
-      },
-      "block_order": [
-        "button_dniMkJ",
-        "button_Vi4brF",
-        "button_7qLWqg",
-        "button_WT7cah",
-        "button_rUpqJ7",
-        "button_bg8dqV",
-        "button_LPhxPN"
-      ],
       "settings": {
         "tab_section": false,
         "hide_section": false,
         "custom_id": "",
-        "heading": "",
-        "description": "<p>Get inspired! Check out the cool custom patches and embroidery we've made for our clients.Warning: Our inspiration galleries may cause serious design envy!</p>",
-        "galleries": "",
+        "heading": "Inspirational Gallery Embroidery",
+        "description": "",
+        "galleries": "embroidery",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "section",

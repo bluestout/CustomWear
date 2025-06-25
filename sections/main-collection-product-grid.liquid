@@ -147,7 +147,7 @@
               id="product-grid"
               data-id="{{ section.id }}"
               class="
-                grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down
+                grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down  ui-custom-column_gap
                 grid--{{ section.settings.columns_desktop }}-col-desktop
                 {% if section.settings.quick_add == 'bulk' %} collection-quick-add-bulk{% endif %}
               "
@@ -175,7 +175,9 @@
                     lazy_load: lazy_load,
                     skip_styles: skip_card_product_styles,
                     quick_add: section.settings.quick_add,
-                    section_id: section.id
+                    section_id: section.id,
+                    sku: product.selected_or_first_available_variant.sku,
+                    brand_name: product.vendor
                   %}
                 </li>
                 {%- assign skip_card_product_styles = true -%}
@@ -233,7 +235,7 @@
           "label": "t:sections.main-collection-product-grid.settings.columns_mobile.options__2.label"
         }
       ]
-    },    
+    },
     {
       "type": "color_scheme",
       "id": "color_scheme",

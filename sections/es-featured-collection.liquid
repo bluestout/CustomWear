@@ -34,6 +34,14 @@
       --padding-top: {{ section.settings.padding_top | divided_by: 2 }}px;
       --padding-bottom: {{ section.settings.padding_bottom | divided_by: 2 }}px;
     }
+
+    #shopify-section-{{ section.id }}{
+      border-top: 0px solid #CCC;
+    }
+
+    .es-font-h2.center{
+      text-align: left;
+    }
   }
 {%- endstyle -%}
 

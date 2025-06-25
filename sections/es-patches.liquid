@@ -12,7 +12,10 @@
   }
 {%- endstyle -%}
 
-<div id="{{ section.settings.custom_id }}" class="color-{{ section.settings.color_scheme }} gradient{% if section.settings.tab_section %} tab-section{% endif %}{% if section.settings.hide_section %} hidden{% endif %}">
+<div
+  id="{{ section.settings.custom_id }}"
+  class="color-{{ section.settings.color_scheme }} gradient{% if section.settings.tab_section %} tab-section{% endif %}{% if section.settings.hide_section %} hidden{% endif %}"
+>
   <div class="{% if section.settings.layout == 'row' %}page-width--small{% elsif section.settings.layout == 'section' %} page-width{% elsif section.settings.layout == 'none' %} content-container content-container--full-width{% endif %}">
     <div class="section-{{ section.id }}-padding{% if section.settings.layout == 'section' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}">
       {%- if section.settings.heading != blank -%}
@@ -28,7 +31,12 @@
           <div class="patches-card">
             <div class="patches-media">
               <div class="image">
-                <img src="{{ block.settings.image | img_url: 'master' }}" width="{{ block.settings.image.width | divided_by: 2 }}" height="{{ block.settings.image.height | divided_by: 2 }}">
+                <img
+                  src="{{ block.settings.image | img_url: 'master' }}"
+                  width="{{ block.settings.image.width | divided_by: 2 }}"
+                  height="{{ block.settings.image.height | divided_by: 2 }}"
+                  alt="{{ block.settings.image.alt | default: block.settings.image.id }}"
+                >
               </div>
               <h3 class="font-h3 short-border medium-hide large-up-hide">{{ block.settings.title }}</h3>
             </div>
@@ -131,7 +139,7 @@
     {
       "type": "header",
       "content": "t:sections.collapsible_content.settings.layout_header.content"
-    },    
+    },
     {
       "type": "select",
       "id": "layout",
@@ -157,7 +165,7 @@
       "id": "container_color_scheme",
       "label": "t:sections.collapsible_content.settings.container_color_scheme.label",
       "default": "scheme-2"
-    },    
+    },
     {
       "type": "color_scheme",
       "id": "color_scheme",
