@@ -35,8 +35,8 @@
       ],
       "settings": {
         "show_space": false,
-        "image": "shopify://shop_images/Mask_group_1_f921e045-73ef-4400-b9f9-04b557a965b1.png",
-        "image_mobile": "shopify://shop_images/Mask_group_2.png",
+        "image": "shopify://shop_images/Shop_Hat_Brands_Directory_2880_x_388.jpg",
+        "image_mobile": "shopify://shop_images/Shop_Hat_Brands_Directory_2880_x_388.jpg",
         "image_overlay_opacity": 0,
         "opacity_type": "normal",
         "opacity_color": "primary",
@@ -64,7 +64,7 @@
           "type": "item",
           "settings": {
             "item_width": 6,
-            "image": "shopify://shop_images/bg.png",
+            "image": "shopify://shop_images/Adams_Brand_Directory_1500_x_1200.jpg",
             "title": "Adams headwear",
             "url": "shopify://collections/adams-headwear",
             "title_2": "Hat Style 2",
@@ -75,10 +75,10 @@
           "type": "item",
           "settings": {
             "item_width": 4,
-            "image": "shopify://shop_images/bg_1.png",
+            "image": "shopify://shop_images/Cobra_1160_x_590_CW.jpg",
             "title": "Cobra Caps",
             "url": "shopify://collections/cobra-hats",
-            "image_2": "shopify://shop_images/img_1.png",
+            "image_2": "shopify://shop_images/Decky_Brand_Directory_1160_x_590.jpg",
             "title_2": "Decky Hats",
             "url_2": "shopify://collections/decky-hats"
           }
@@ -87,10 +87,10 @@
           "type": "item",
           "settings": {
             "item_width": 4,
-            "image": "shopify://shop_images/Mask_group_1.png",
+            "image": "shopify://shop_images/Flexfit_Brand_Directory_1160_x_590.jpg",
             "title": "Flexfit Hats",
             "url": "shopify://collections/flexfit-hats",
-            "image_2": "shopify://shop_images/Mask_group.png",
+            "image_2": "shopify://shop_images/Imperial_Brand_Directory_CW_1160_x_590.png",
             "title_2": "Imperial hats",
             "url_2": "shopify://collections/imperial-hats"
           }
@@ -99,7 +99,7 @@
           "type": "item",
           "settings": {
             "item_width": 6,
-            "image": "shopify://shop_images/bg_3.png",
+            "image": "shopify://shop_images/Kati_Sportsman_Brand_Directory_1500_x_1200.jpg",
             "title": "Kati Sportcap",
             "url": "shopify://collections/kati-sportcap",
             "title_2": "",

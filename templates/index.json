@@ -17,6 +17,7 @@
           "settings": {
             "subheading": "customize",
             "heading": "Any Product",
+            "heading_tag": "h2",
             "heading_size": "h0"
           }
         },
@@ -88,8 +89,8 @@
         "slide_item_bUakze": {
           "type": "slide_item",
           "settings": {
-            "image": "shopify://shop_images/Richardson_Banner_2914_x_996_px_5061250b-aef0-4c4d-84be-f175fc2263de.png",
-            "sm_image": "shopify://shop_images/Richardson_Banner_2914_x_996_px_5061250b-aef0-4c4d-84be-f175fc2263de.png",
+            "image": "shopify://shop_images/Homepage_Banner_CW_2914_x_996-Photoroom_a30ebfa9-a32c-41d8-bc84-5b8f3d8df944.png",
+            "sm_image": "shopify://shop_images/Homepage_Banner_CW_2914_x_996-Photoroom_7b9b7e89-d28e-4d21-858e-f23890c3d8ed.png",
             "header_text": "Any Product",
             "heading": "customize",
             "description": "<p>Design your perfect hat – customize colors, fonts for a unique look!</p>",
@@ -333,9 +334,9 @@
           "type": "item",
           "settings": {
             "item_width": 4,
-            "image": "shopify://shop_images/Otto_1160_x_590-Photoroom.png",
-            "title": "Otto",
-            "url": "shopify://products/5-panel-high-profile-structured-acrylicpolyester-t",
+            "image": "shopify://shop_images/6089m.png",
+            "title": "YP Classic",
+            "url": "shopify://collections/yp-classic-yupoong-hats",
             "image_2": "shopify://shop_images/Adobe_Express_-_file_1.png",
             "title_2": "Decky Hats",
             "url_2": "shopify://products/5-panel-mid-profile-structured-cotton-poly-blend-cap"
@@ -345,9 +346,9 @@
           "type": "item",
           "settings": {
             "item_width": 6,
-            "image": "shopify://shop_images/YP_1500_x_1200_-Photoroom-Photoroom.png",
-            "title": "YP Classic",
-            "url": "shopify://products/6-panel-unstructured-pigment-dyed-heavy-cotton-twi",
+            "image": "shopify://shop_images/Top_Brands_Otto_1500_x_1200-Photoroom.png",
+            "title": "Otto Hats",
+            "url": "shopify://collections/otto-hats",
             "title_2": "Hat Style 2",
             "url_2": ""
           }
@@ -498,12 +499,24 @@
             "full_width": false,
             "description": ""
           }
+        },
+        "video_LC4fM8": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "video_url": "https://youtu.be/D0r6cdG9QDQ",
+            "featured_image": "shopify://shop_images/Screen_Shot_2025-06-25_at_18.50.49.png",
+            "enable_video_looping": false,
+            "full_width": false,
+            "description": ""
+          }
         }
       },
       "block_order": [
         "video_nQgbYm",
         "video_pyYEmP",
-        "video_azGMUG"
+        "video_azGMUG",
+        "video_LC4fM8"
       ],
       "settings": {
         "scrollable": true,
@@ -583,6 +596,13 @@
           "settings": {
             "color": "#990000",
             "width": 100
+          }
+        },
+        "heading_NGVgUX": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Capwholesalers.com: Your trusted source for quality blank baseball caps</p>",
+            "heading_size": "h1"
           }
         },
         "text_EXnEAX": {
