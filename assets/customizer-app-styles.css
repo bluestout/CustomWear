@@ -508,7 +508,7 @@ textarea.cl-po--input {
 }
 
 .cl-po--option[data-option="Patches - Custom Logo"],
-.cl-po--option[data-option="Flex Patch - Color Options",
+.cl-po--option[data-option="Flex Patch - Color Options"],
 .cl-po--option[data-option="Faux Leather - Custom Logo"],
 .cl-po--option[data-option="Print Stitch - Custom logo"]{
     padding-bottom: 20px!important;
