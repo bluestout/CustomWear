@@ -10,6 +10,10 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  .ui_grid__item{
+    flex-grow: 0;
+  }
 {%- endstyle -%}
 
 <div
@@ -55,7 +59,7 @@
                 <div class="swiper-wrapper">
                   {%- paginate block.settings.metaobject.clip_arts.value by 100 -%}
                     {%- for clip_art in block.settings.metaobject.clip_arts.value -%}
-                      <div class="grid__item swiper-slide">
+                      <div class="grid__item swiper-slide ui_grid__item">
                         <div class="grid__item-media">
                           <img
                             src="{{ clip_art.image | img_url: 'master' }}"
