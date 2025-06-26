@@ -513,3 +513,12 @@ textarea.cl-po--input {
 .cl-po--option[data-option="Print Stitch - Custom logo"]{
     padding-bottom: 20px!important;
 }
+
+.cl-po--upload .cl-po--upload-button>span:before {
+    content: "";
+    background: url('https://cdn.shopify.com/s/files/1/0728/5784/6001/files/icons8-upload-to-the-cloud-50.png?v=1750965356');
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    margin-right: 10px;
+}
