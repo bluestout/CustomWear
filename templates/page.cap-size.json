@@ -172,7 +172,7 @@
             "sm_column": false,
             "heading": "Crown options",
             "description": "",
-            "image": "shopify://shop_images/1566253557-cap1_1.png",
+            "image": "shopify://shop_images/255_biscuit_HIGH-Photoroom.jpg",
             "left_text": "",
             "text": "<h4>PRO HIGH (A)</h4><p>It has a structured, steep profile and is typically featured with a flat visor.</p>",
             "padding_top": 0,
@@ -185,7 +185,7 @@
             "sm_column": false,
             "heading": "",
             "description": "",
-            "image": "shopify://shop_images/1566253810-cap4_1.png",
+            "image": "shopify://shop_images/632_grey-MID-Photoroom.jpg",
             "left_text": "",
             "text": "<h4>PRO MID (B)</h4><p>Often thought of as the traditional baseball cap, it is usually structured, but has a slightly lower profile.</p>",
             "padding_top": 0,
@@ -198,7 +198,7 @@
             "sm_column": false,
             "heading": "",
             "description": "",
-            "image": "shopify://shop_images/1566253729-cap3_1.png",
+            "image": "shopify://shop_images/176__LOW-Photoroom.jpg",
             "left_text": "",
             "text": "<h4>MID TO LOW (C)</h4><p>It is slightly less slanted and shallower than the Pro Mid but can be structured or unstructured.</p>",
             "padding_top": 0,
@@ -211,7 +211,7 @@
             "sm_column": false,
             "heading": "",
             "description": "",
-            "image": "shopify://shop_images/1566253810-cap4_1.png",
+            "image": "shopify://shop_images/309_buck_LOW-Photoroom.jpg",
             "left_text": "",
             "text": "<h4>LOW (D)</h4><p>It is either unstructured or lightly structured to lie closely to the head and is paired with a pre-curved visor.</p>",
             "padding_top": 0,
@@ -224,9 +224,9 @@
             "sm_column": false,
             "heading": "",
             "description": "",
-            "image": "shopify://shop_images/1566253865-screen-shot-2019-08-19-at-3.30.45-pm_1.png",
+            "image": "shopify://shop_images/220_Stone_RELAXED-Photoroom.jpg",
             "left_text": "",
-            "text": "<h4>PRO ROUND (E)</h4><p>It has premium dual-tone buckram and rounded upper panels that contour to rest securely on your head. It is featured with a slight pre-curved visor.</p>",
+            "text": "<h4>RELAXED (E)</h4><p>This is an unstructured crown without backing. Also known as a Dads hat shape.</p>",
             "padding_top": 0,
             "padding_bottom": 0
           }
@@ -248,7 +248,7 @@
             "sm_column": false,
             "heading": "",
             "description": "",
-            "image": "shopify://shop_images/1566316851-caps-good_1.png",
+            "image": "shopify://shop_images/255_biscui_PLASTIC-Photoroom.jpg",
             "left_text": "",
             "text": "<p>Plastic snap</p>",
             "padding_top": 0,
@@ -261,9 +261,9 @@
             "sm_column": false,
             "heading": "",
             "description": "",
-            "image": "shopify://shop_images/1566316851-caps-good_1_1.png",
+            "image": "shopify://shop_images/220_Stone_HOOK_LOOP-Photoroom_1.jpg",
             "left_text": "",
-            "text": "<p>Double plastic snap</p>",
+            "text": "<p>Hook/Loop Velcro</p>",
             "padding_top": 0,
             "padding_bottom": 0
           }
@@ -274,9 +274,9 @@
             "sm_column": false,
             "heading": "",
             "description": "",
-            "image": "shopify://shop_images/1566316851-caps-good_1_2.png",
+            "image": "shopify://shop_images/203_Driftwood_STANDARD_VELCRO-Photoroom.jpg",
             "left_text": "",
-            "text": "<p>Hook/Loop tape</p>",
+            "text": "<p>Velcro</p>",
             "padding_top": 0,
             "padding_bottom": 0
           }
@@ -287,9 +287,9 @@
             "sm_column": false,
             "heading": "",
             "description": "",
-            "image": "shopify://shop_images/1566316851-caps-good_1_3.png",
+            "image": "shopify://shop_images/gwt-111_khaki_ClOTH_METAL_BUCKLE-Photoroom.jpg",
             "left_text": "",
-            "text": "<p>Tuck strap with slide</p>",
+            "text": "<p>Cloth with metal buckle</p>",
             "padding_top": 0,
             "padding_bottom": 0
           }
@@ -300,9 +300,9 @@
             "sm_column": false,
             "heading": "",
             "description": "",
-            "image": "shopify://shop_images/1566316851-caps-good_1_4.png",
+            "image": "shopify://shop_images/imper-Photoroom.jpg",
             "left_text": "",
-            "text": "<p>Tuck strap with buckle or snap buckle</p>",
+            "text": "<p>Leather strap with metal buckle</p>",
             "padding_top": 0,
             "padding_bottom": 0
           }
@@ -313,22 +313,9 @@
             "sm_column": false,
             "heading": "",
             "description": "",
-            "image": "shopify://shop_images/1566316851-caps-good_1_7.png",
+            "image": "shopify://shop_images/pts30cu_back_FLEX-Photoroom_1.jpg",
             "left_text": "",
-            "text": "<p>D-Fit®</p>",
-            "padding_top": 0,
-            "padding_bottom": 0
-          }
-        },
-        "image_with_text_hPYbW8": {
-          "type": "image_with_text",
-          "settings": {
-            "sm_column": false,
-            "heading": "",
-            "description": "",
-            "image": "shopify://shop_images/1566316851-caps-good_1_6.png",
-            "left_text": "",
-            "text": "<p>Nylon strap with plastic buckle</p>",
+            "text": "<p>No closure Flexfit fitted style</p>",
             "padding_top": 0,
             "padding_bottom": 0
           }
@@ -422,7 +409,6 @@
         "image_with_text_JXKrVa",
         "image_with_text_WVB4UJ",
         "image_with_text_WDyGap",
-        "image_with_text_hPYbW8",
         "space_qVyg4J",
         "content_L9gwdC",
         "image_with_text_yc9r6L",
