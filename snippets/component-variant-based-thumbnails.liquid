@@ -1,0 +1,101 @@
+<style>
+  .hide-media {
+    display: none;
+    width: 0;
+  }
+</style>
+<script>
+  const handle = 'products/' + '{{ product.handle }}' + '.js';
+
+  fetch(window.Shopify.routes.root + handle)
+    .then((response) => response.json())
+    .then((product) => {
+      const optionsToWatch = '{{settings.media_grouping_option}}'.split(',');
+      const colorOption = product.options.find((option) => optionsToWatch.includes(option.name)) || null;
+      if (!colorOption) {
+        console.log('No color options available for this product.');
+        return;
+      }
+      // Retrieve color values
+      const colorValues = colorOption.values;
+      // Build an object to store the starting image positions for each color
+      const colorImagePositions = {};
+
+      colorValues.forEach((color) => {
+        // Find the first variant of this color and get its featured image position
+        const variant = product.variants.find((variant) => variant.options[colorOption.position - 1] === color);
+
+        if (variant && variant.featured_media) {
+          colorImagePositions[color] = variant.featured_media.position;
+        }
+      });
+      // Sort colors based on their starting positions to calculate image ranges
+      const sortedColors = Object.entries(colorImagePositions).sort((a, b) => a[1] - b[1]);
+      // Calculate ranges and log the result
+      const colorImageRanges = {};
+      sortedColors.forEach((color, index) => {
+        const colorName = color[0];
+        const startPos = color[1];
+        const endPos = sortedColors[index + 1] ? sortedColors[index + 1][1] : null;
+
+        colorImageRanges[colorName] = endPos ? [startPos, endPos] : [startPos];
+      });
+      // Build an object to store image IDs grouped by color based on colorImageRanges
+      const colorImageIDs = {};
+      Object.entries(colorImageRanges).forEach(([color, range]) => {
+        const startPos = range[0];
+        const endPos = range[1] || product.media.length + 1; // If no end, assume range goes to the end of the images
+        // Find all images within the range for this color
+        const imageIDs = product.media
+          .filter((media, index) => {
+            const imagePosition = index + 1; // Adjust index to be position-based
+            return imagePosition >= startPos && imagePosition < endPos;
+          })
+          .map((media) => media.id); // Store the image ID
+
+        colorImageIDs[color] = imageIDs;
+      });
+      const mediaGallery = document.querySelector('media-gallery');
+      const productSection = document.querySelector('.product-variant-id');
+      const sectionID = '{{ section.id }}';
+      // Iterate over colorImageIDs to apply data-media-group based on the color ranges
+      Object.entries(colorImageIDs).forEach(([color, imageIDs]) => {
+        imageIDs.forEach((mediaID) => {
+          // Construct the selector for each media item using sectionID and media ID
+          const selector = `[data-media-id="${sectionID}-${mediaID}"], [data-target="${sectionID}-${mediaID}"]`;
+          // Find the image <li> and add the data-media-group attribute with the color
+          const mediaItems = mediaGallery.querySelectorAll(`li${selector}`);
+          mediaItems.forEach((mediaItem) => {
+            mediaItem.setAttribute('data-media-group', color);
+          });
+        });
+      });
+      const showVariantImage = () => {
+        const variantSelects = document.querySelector('variant-selects');
+        // Get the currently selected color
+        let currentValues = Array.from(
+          variantSelects.querySelectorAll('select option[selected], fieldset input:checked')
+        ).map((el) => el.value);
+
+        let selectedColor = currentValues.find((value) => colorImageRanges.hasOwnProperty(value));
+
+        // Show/Hide images based on selected color
+        mediaGallery.querySelectorAll('ul li[data-media-group]').forEach((mediaItem, index) => {
+          if (mediaItem.getAttribute('data-media-group') === selectedColor) {
+            mediaItem.classList.remove('hide-media');
+          } else {
+            mediaItem.classList.add('hide-media');
+          }
+        });
+
+        // Reinitialize the slider if needed
+        mediaGallery.querySelectorAll('slider-component').forEach((slider) => {
+          slider.initPages();
+        });
+      };
+      showVariantImage();
+      // Event listener to show/hide images based on the selected color
+      productSection.addEventListener('change', showVariantImage);
+    })
+    .catch((error) => console.error('Error fetching product data:', error));
+</script>
