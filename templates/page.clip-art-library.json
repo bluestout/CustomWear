@@ -25,6 +25,7 @@
           "settings": {
             "subheading": "",
             "heading": "Clip Art Library",
+            "heading_tag": "h2",
             "heading_size": "h1"
           }
         }
@@ -34,7 +35,7 @@
       ],
       "settings": {
         "show_space": false,
-        "image": "shopify://shop_images/Image_1.jpg",
+        "image": "shopify://shop_images/Clip_Art_2880_x_580_CW.png",
         "image_mobile": "shopify://shop_images/Image_25.png",
         "image_overlay_opacity": 100,
         "opacity_type": "gradient",
