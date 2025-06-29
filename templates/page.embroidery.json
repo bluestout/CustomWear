@@ -25,6 +25,7 @@
           "settings": {
             "subheading": "",
             "heading": "How it works: Embroidery",
+            "heading_tag": "h2",
             "heading_size": "h1"
           }
         }
@@ -34,7 +35,7 @@
       ],
       "settings": {
         "show_space": false,
-        "image": "shopify://shop_images/Image_adf9f057-f284-4858-85e1-512190c02935.png",
+        "image": "shopify://shop_images/Emb_2880_x_580-Photoroom.png",
         "image_mobile": "shopify://shop_images/Image_1_bd7e40f7-17be-4e16-84b8-671339bcd7fe.png",
         "image_overlay_opacity": 100,
         "opacity_type": "gradient",
