@@ -36,7 +36,7 @@
       ],
       "settings": {
         "show_space": false,
-        "image": "{{ collection.image }}",
+        "image": "shopify://shop_images/Patterned_2880_x_910_CW-Photoroom.png",
         "image_overlay_opacity": 100,
         "opacity_type": "gradient",
         "opacity_color": "primary",
