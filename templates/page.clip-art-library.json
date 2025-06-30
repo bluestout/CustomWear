@@ -25,6 +25,7 @@
           "settings": {
             "subheading": "",
             "heading": "Clip Art Library",
+            "heading_tag": "h2",
             "heading_size": "h1"
           }
         }
@@ -117,8 +118,8 @@
           "type": "library",
           "settings": {
             "heading": "Christmas",
-            "description": "",
-            "metaobject": ""
+            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
+            "metaobject": "christmas"
           }
         },
         "library_jpaBqx": {
