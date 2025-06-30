@@ -152,15 +152,6 @@
             "page": ""
           }
         },
-        "collapsible_row_rQtNKz": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Do you have a \"RUSH\"  service available for promotional caps?",
-            "icon": "none",
-            "row_content": "<p>We may be able to accommodate rush orders depending on your deadline. Please call us  877-984-2277.</p>",
-            "page": ""
-          }
-        },
         "collapsible_row_4QRrkg": {
           "type": "collapsible_row",
           "settings": {
@@ -286,7 +277,6 @@
         "collapsible_row_6eqxz9",
         "collapsible_row_hFM7if",
         "collapsible_row_cQDbaU",
-        "collapsible_row_rQtNKz",
         "collapsible_row_4QRrkg",
         "collapsible_row_6p4m9m",
         "collapsible_row_46mHGj",
