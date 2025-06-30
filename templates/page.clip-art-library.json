@@ -126,64 +126,64 @@
           "type": "library",
           "settings": {
             "heading": "Countries & Flags",
-            "description": "",
-            "metaobject": ""
+            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
+            "metaobject": "countries-flags"
           }
         },
         "library_yhxeDm": {
           "type": "library",
           "settings": {
             "heading": "Dog & Cat",
-            "description": "",
-            "metaobject": ""
+            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
+            "metaobject": "dog-cat"
           }
         },
         "library_MktMtX": {
           "type": "library",
           "settings": {
             "heading": "Equipment",
-            "description": "",
-            "metaobject": ""
+            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
+            "metaobject": "equipment"
           }
         },
         "library_mGw4tD": {
           "type": "library",
           "settings": {
             "heading": "Fire & Rescue",
-            "description": "",
-            "metaobject": ""
+            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
+            "metaobject": "fire-rescue"
           }
         },
         "library_zNeLzV": {
           "type": "library",
           "settings": {
             "heading": "Fishing & Aquatic",
-            "description": "",
-            "metaobject": ""
+            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
+            "metaobject": "fishing-aquatic"
           }
         },
         "library_fWCTq3": {
           "type": "library",
           "settings": {
             "heading": "Floral",
-            "description": "",
-            "metaobject": ""
+            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
+            "metaobject": "floral"
           }
         },
         "library_YRf9AP": {
           "type": "library",
           "settings": {
             "heading": "Food",
-            "description": "",
-            "metaobject": ""
+            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
+            "metaobject": "food"
           }
         },
         "library_mGbwLr": {
           "type": "library",
           "settings": {
             "heading": "Holiday",
-            "description": "",
-            "metaobject": ""
+            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
+            "metaobject": "holiday"
           }
         },
         "library_dGRnMc": {
