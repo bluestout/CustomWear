@@ -36,7 +36,7 @@
       ],
       "settings": {
         "show_space": false,
-        "image": "shopify://shop_images/Shop_all_2880_x_910.png",
+        "image": "{{ collection.image }}",
         "image_overlay_opacity": 100,
         "opacity_type": "gradient",
         "opacity_color": "primary",
