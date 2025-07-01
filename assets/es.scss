@@ -3248,8 +3248,8 @@ body {
   .blog-articles {
     display: flex !important;
     flex-wrap: wrap;
-    justify-content: space-between;
     row-gap: 50px !important;
+    column-gap: 8px;
 
     @media (max-width: 750px) {
       row-gap: 30px !important;

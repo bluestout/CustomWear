@@ -53,10 +53,12 @@
       {%- endfor -%}
     </div>
 
-    <div class="load-more">
-      <a href="javascript:void(0);" class="load-more_btn btn">VIEW ALL {%- render 'es-arrow-right-1' -%}</a>
-      <div class="load-more_spinner"></div>
-    </div>
+    {%- if paginate.pages > 1 -%}
+      <div class="load-more">
+        <a href="javascript:void(0);" class="load-more_btn btn">VIEW ALL {%- render 'es-arrow-right-1' -%}</a>
+        <div class="load-more_spinner"></div>
+      </div>
+    {%- endif -%}
     {% comment %} 
       {%- if paginate.pages > 1 -%}
         {%- render 'pagination', paginate: paginate -%}
@@ -105,7 +107,6 @@
     }    
 
     loadMoreBtn.addEventListener("click", function () {
-      console.log("0000");
       loadMoreProducts();
     })
   })
