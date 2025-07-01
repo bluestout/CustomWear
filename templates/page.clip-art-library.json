@@ -322,112 +322,112 @@
           "type": "library",
           "settings": {
             "heading": "Baker/Chef",
-            "description": "",
-            "metaobject": ""
+            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
+            "metaobject": "baker-chef"
           }
         },
         "library_4KVUzp": {
           "type": "library",
           "settings": {
             "heading": "Automotive/Service",
-            "description": "",
-            "metaobject": ""
+            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
+            "metaobject": "automotive-service"
           }
         },
         "library_emELhi": {
           "type": "library",
           "settings": {
             "heading": "Cleaning/Janitor",
-            "description": "",
-            "metaobject": ""
+            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
+            "metaobject": "cleaning-janitor"
           }
         },
         "library_MTEwcA": {
           "type": "library",
           "settings": {
             "heading": "Computers",
-            "description": "",
-            "metaobject": ""
+            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
+            "metaobject": "computers"
           }
         },
         "library_Kt4idG": {
           "type": "library",
           "settings": {
             "heading": "Construction",
-            "description": "",
-            "metaobject": ""
+            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
+            "metaobject": "construction"
           }
         },
         "library_CKkpg6": {
           "type": "library",
           "settings": {
             "heading": "Electrician",
-            "description": "",
-            "metaobject": ""
+            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
+            "metaobject": "electrician"
           }
         },
         "library_HbUxGQ": {
           "type": "library",
           "settings": {
             "heading": "Occupational/Misc.",
-            "description": "",
-            "metaobject": ""
+            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
+            "metaobject": "occupational-misc"
           }
         },
         "library_rwDec7": {
           "type": "library",
           "settings": {
             "heading": "Fire/Police",
-            "description": "",
-            "metaobject": ""
+            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
+            "metaobject": "fire-police"
           }
         },
         "library_Q3HURM": {
           "type": "library",
           "settings": {
             "heading": "Landscaping",
-            "description": "",
-            "metaobject": ""
+            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
+            "metaobject": "landscaping"
           }
         },
         "library_cUgRHm": {
           "type": "library",
           "settings": {
             "heading": "Painting",
-            "description": "",
-            "metaobject": ""
+            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
+            "metaobject": "painting"
           }
         },
         "library_jYx9Lz": {
           "type": "library",
           "settings": {
             "heading": "Photography",
-            "description": "",
-            "metaobject": ""
+            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
+            "metaobject": "photography"
           }
         },
         "library_9cX44U": {
           "type": "library",
           "settings": {
             "heading": "Plumber",
-            "description": "",
-            "metaobject": ""
+            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
+            "metaobject": "plumber"
           }
         },
         "library_4k6wEW": {
           "type": "library",
           "settings": {
             "heading": "Tools",
-            "description": "",
-            "metaobject": ""
+            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
+            "metaobject": "tools"
           }
         },
         "library_8QTdGj": {
           "type": "library",
           "settings": {
             "heading": "Trucks/Heavy Equipment",
-            "description": "",
-            "metaobject": ""
+            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
+            "metaobject": "trucks-heavy-equipment"
           }
         }
       },
