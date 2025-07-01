@@ -36,11 +36,11 @@
       "
       style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
     >
-      <h3 class="card__heading{% if show_excerpt %} h2{% endif %}">
+      <h2 class="card__heading{% if show_excerpt %} h2{% endif %}">
         <a href="{{ article.url }}" class="full-unstyled-link">
           {{ article.title | truncate: 50 | escape }}
         </a>
-      </h3>
+      </h2>
       <div
         class="card__inner {% if settings.blog_card_style == 'standard' %} color-{{ settings.blog_card_color_scheme }} gradient{% endif %}{% if article.image and show_image or settings.blog_card_style == 'standard' %} ratio{% endif %}"
         style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
