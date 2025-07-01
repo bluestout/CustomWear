@@ -24,7 +24,7 @@
           "type": "heading",
           "settings": {
             "subheading": "",
-            "heading": "Inspirational Gallery Embroidery",
+            "heading": "Inspirational Gallery",
             "heading_tag": "h2",
             "heading_size": "h1"
           }
@@ -63,7 +63,7 @@
         "tab_section": false,
         "hide_section": false,
         "custom_id": "",
-        "heading": "Inspirational Gallery Embroidery",
+        "heading": "<strong>Embroidery samples</strong>",
         "description": "",
         "galleries": "embroidery",
         "heading_size": "h1",
