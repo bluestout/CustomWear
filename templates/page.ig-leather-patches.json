@@ -24,7 +24,7 @@
           "type": "heading",
           "settings": {
             "subheading": "",
-            "heading": "Inspirational Gallery Leather Patches",
+            "heading": "Inspirational Gallery",
             "heading_tag": "h2",
             "heading_size": "h1"
           }
@@ -35,7 +35,7 @@
       ],
       "settings": {
         "show_space": false,
-        "image": "shopify://shop_images/Leather_Patch_2880_x_580.png",
+        "image": "shopify://shop_images/Leather_Patch_2880_x_580_c57db56d-c07b-4a25-94f3-2247944eb99e.png",
         "image_mobile": "shopify://shop_images/allenburt_94637_Create_a_collection_of_beautiful_business_and_bdaa3d16-0340-4d24-be75-89caa2c3c065_1_1.png",
         "image_overlay_opacity": 100,
         "opacity_type": "gradient",
@@ -63,7 +63,7 @@
         "tab_section": false,
         "hide_section": false,
         "custom_id": "",
-        "heading": "Inspirational Gallery Leather Patches",
+        "heading": "Leather Patches samples",
         "description": "",
         "galleries": "embroidery",
         "heading_size": "h1",
