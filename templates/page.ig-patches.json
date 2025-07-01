@@ -35,7 +35,7 @@
       ],
       "settings": {
         "show_space": false,
-        "image": "shopify://shop_images/Rectangle_1.jpg",
+        "image": "shopify://shop_images/Patches_Inspiration_2880_x_580.png",
         "image_mobile": "shopify://shop_images/allenburt_94637_Create_a_collection_of_beautiful_business_and_bdaa3d16-0340-4d24-be75-89caa2c3c065_1_1.png",
         "image_overlay_opacity": 100,
         "opacity_type": "gradient",
@@ -65,7 +65,7 @@
         "custom_id": "",
         "heading": "Embroidered patches samples",
         "description": "",
-        "galleries": "embroidery",
+        "galleries": "embroidered-patches",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "section",
