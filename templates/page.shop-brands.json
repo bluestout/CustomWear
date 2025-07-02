@@ -110,7 +110,7 @@
           "type": "item",
           "settings": {
             "item_width": 6,
-            "image": "shopify://shop_images/bg.png",
+            "image": "shopify://shop_images/Kati_Sportsman_Brand_Directory_1500_x_1200_1.jpg",
             "title": "Kati/Sportsman",
             "url": "shopify://collections/kati-sportsman",
             "title_2": "Hat Style 2",
@@ -121,10 +121,10 @@
           "type": "item",
           "settings": {
             "item_width": 4,
-            "image": "shopify://shop_images/bg_1.png",
+            "image": "shopify://shop_images/Legacy_Brand_Directory_1160_x_590_1.jpg",
             "title": "Legacy Headwear",
             "url": "shopify://collections/legacy-headwear",
-            "image_2": "shopify://shop_images/img_1.png",
+            "image_2": "shopify://shop_images/Mega_Brand_Directory_1160_x_590_CW.png",
             "title_2": "Mega Hats",
             "url_2": "shopify://collections/mega-hats"
           }
