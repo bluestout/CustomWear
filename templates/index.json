@@ -609,7 +609,8 @@
           "settings": {
             "button_label": "Learn more",
             "button_link": "https://www.capswholesalers.com",
-            "button_style_secondary": false
+            "button_style_secondary": false,
+            "open_new_tab": true
           }
         }
       },
