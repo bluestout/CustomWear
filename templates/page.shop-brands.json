@@ -145,7 +145,7 @@
           "type": "item",
           "settings": {
             "item_width": 6,
-            "image": "shopify://shop_images/bg_3.png",
+            "image": "shopify://shop_images/Pacific_Brand_Directory_1500_x_1200_2.jpg",
             "title": "Pacific Headwear Augusta",
             "url": "shopify://collections/pacific-headwear-augusta",
             "title_2": "Hat Style 2",
@@ -156,7 +156,7 @@
           "type": "item",
           "settings": {
             "item_width": 6,
-            "image": "shopify://shop_images/bg.png",
+            "image": "shopify://shop_images/Richardson_Brand_Directory_1500_x_1200_1.jpg",
             "title": "Richardson Hats",
             "url": "shopify://collections/richardson-hats",
             "title_2": "Hat Style 2",
@@ -167,10 +167,10 @@
           "type": "item",
           "settings": {
             "item_width": 4,
-            "image": "shopify://shop_images/bg_1.png",
+            "image": "shopify://shop_images/YP_Classic_Brand_Directory_1500_x_1200_1.jpg",
             "title": "YP Classic Yupoong Hats",
             "url": "shopify://collections/yp-classic-yupoong-hats",
-            "image_2": "shopify://shop_images/img_1.png",
+            "image_2": "shopify://shop_images/Zapped_Brand_Directory_1500_x_1200_CW.png",
             "title_2": "Zapped Hats",
             "url_2": "shopify://collections/zapped-hats"
           }
