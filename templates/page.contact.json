@@ -17,6 +17,7 @@
           "settings": {
             "subheading": "",
             "heading": "Contact Us",
+            "heading_tag": "h1",
             "heading_size": "hxxl"
           }
         },
@@ -85,34 +86,39 @@
           "type": "icon_with_text",
           "settings": {
             "image": "shopify://shop_images/iconamoon_email-light.svg",
-            "text": "<p><a href=\"mailto:info@customizedwear.com\" title=\"mailto:info@customizedwear.com\">info@customizedwear.com</a></p>"
+            "text": "<p><a href=\"mailto:info@customizedwear.com\" title=\"mailto:info@customizedwear.com\">info@customizedwear.com</a></p>",
+            "align_items": "flex-start"
           }
         },
         "icon_with_text_Xn86nc": {
           "type": "icon_with_text",
           "settings": {
-            "text": "<p>Our Customer Service Department is open:</p>"
+            "text": "<p>Our Customer Service Department is open:</p>",
+            "align_items": "flex-start"
           }
         },
         "icon_with_text_BbVPB9": {
           "type": "icon_with_text",
           "settings": {
             "image": "shopify://shop_images/material-symbols-light_calendar-today-outline-sharp.svg",
-            "text": "<p>Monday - Friday</p><p>9:00 AM - 5:00 PM (EST)</p>"
+            "text": "<p>Monday - Friday</p><p>9:00 AM - 5:00 PM (EST)</p>",
+            "align_items": "flex-start"
           }
         },
         "icon_with_text_7MJUwE": {
           "type": "icon_with_text",
           "settings": {
             "image": "shopify://shop_images/Ico.svg",
-            "text": "<p><a href=\"https://CapWholesalers.com\" title=\"https://CapWholesalers.com\">CapWholesalers.com</a> & <a href=\"https://CustomizedWear.com\" title=\"https://CustomizedWear.com\">CustomizedWear.com</a></p><p>12530 Wiles Rd, Coral Springs, FL 33076</p>"
+            "text": "<p><a href=\"https://CapWholesalers.com\" title=\"https://CapWholesalers.com\">CapWholesalers.com</a> & <a href=\"https://CustomizedWear.com\" title=\"https://CustomizedWear.com\">CustomizedWear.com</a></p><p>12530 Wiles Rd, Coral Springs, FL 33076</p>",
+            "align_items": "flex-start"
           }
         },
         "icon_with_text_9AHdyH": {
           "type": "icon_with_text",
           "settings": {
             "image": "shopify://shop_images/Vector.svg",
-            "text": "<p>For <strong>Order Status</strong>, <strong>Returns</strong> or <strong>Exchanges</strong>, you can reach us</p><p>toll-fee at: <a href=\"tel:+18779842277\" title=\"tel:+18779842277\">877-984-2277 (CAPS)</a></p>"
+            "text": "<p>For <strong>Order Status</strong>, <strong>Returns</strong> or <strong>Exchanges</strong>, you can reach us</p><p>toll-fee at: <a href=\"tel:+18779842277\" title=\"tel:+18779842277\">877-984-2277 (CAPS)</a></p>",
+            "align_items": "flex-start"
           }
         }
       },
