@@ -3159,9 +3159,10 @@ body {
 
       a {
         margin-bottom: 10px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+
+        @media (min-width: 750px) {
+          min-height: 52px;
+        }
       }
 
       &::after {

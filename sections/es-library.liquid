@@ -57,8 +57,7 @@
 
               <div class="mySwiper-{{ block.id }} swiper">
                 <div class="swiper-wrapper">
-                  {%- paginate block.settings.metaobject.clip_arts.value by 100 -%}
-                    {%- for clip_art in block.settings.metaobject.clip_arts.value -%}
+                  {%- for clip_art in block.settings.metaobject.clip_arts.value -%}
                       <div class="grid__item swiper-slide ui_grid__item">
                         <div class="grid__item-media">
                           <img
@@ -74,7 +73,6 @@
                         </div>
                       </div>
                     {%- endfor -%}
-                  {%- endpaginate -%}
                 </div>
                 <div class="swiper-navigation">
                   <div class="swiper-button-prev" style="--swiper-navigation-size: 12px;">
