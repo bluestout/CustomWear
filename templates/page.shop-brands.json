@@ -35,7 +35,7 @@
       ],
       "settings": {
         "show_space": false,
-        "image": "shopify://shop_images/Shop_Hat_Brands_Directory_2880_x_388.jpg",
+        "image": "shopify://shop_images/Shop_All_Brand_Directory_2880_x_388_CW_162894e5-6ebb-4fb7-bd60-b114763dc115.png",
         "image_mobile": "shopify://shop_images/Shop_Hat_Brands_Directory_2880_x_388.jpg",
         "image_overlay_opacity": 0,
         "opacity_type": "normal",
@@ -64,7 +64,7 @@
           "type": "item",
           "settings": {
             "item_width": 6,
-            "image": "shopify://shop_images/Adams_Brand_Directory_1500_x_1200.jpg",
+            "image": "shopify://shop_images/Adams_Brand_Directory_1500_x_1200_1.jpg",
             "title": "Adams headwear",
             "url": "shopify://collections/adams-headwear",
             "title_2": "Hat Style 2",
@@ -75,10 +75,10 @@
           "type": "item",
           "settings": {
             "item_width": 4,
-            "image": "shopify://shop_images/Cobra_1160_x_590_CW.jpg",
+            "image": "shopify://shop_images/Cobra_1160_x_590_CW.png",
             "title": "Cobra Caps",
             "url": "shopify://collections/cobra-hats",
-            "image_2": "shopify://shop_images/Decky_Brand_Directory_1160_x_590.jpg",
+            "image_2": "shopify://shop_images/Decky_Brand_Directory_1160_x_590_2.jpg",
             "title_2": "Decky Hats",
             "url_2": "shopify://collections/decky-hats"
           }
