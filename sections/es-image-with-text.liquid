@@ -129,6 +129,9 @@
                       {% else %}
                         href="{{ block.settings.button_link }}"
                       {% endif %}
+                      {% if block.settings.open_new_tab %}
+                        target="__blank"
+                      {% endif %}
                       class="es-button link mt-auto {% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
                       {{ block.shopify_attributes }}
                     >
@@ -553,6 +556,12 @@
           "id": "button_style_secondary",
           "default": false,
           "label": "t:sections.image-with-text.blocks.button.settings.outline_button.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "open_new_tab",
+          "label": "Open New Tab",
+          "default": false
         }
       ]
     }
