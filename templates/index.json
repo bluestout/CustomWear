@@ -502,7 +502,6 @@
         },
         "video_LC4fM8": {
           "type": "video",
-          "disabled": true,
           "settings": {
             "video_url": "https://youtu.be/D0r6cdG9QDQ",
             "featured_image": "shopify://shop_images/Screen_Shot_2025-06-25_at_18.50.49.png",
@@ -587,7 +586,7 @@
         "heading_NGVgUX": {
           "type": "heading",
           "settings": {
-            "heading": "<p>CapWholesalers.com and browse our latest arrivals and exclusive deals<br/>Your Trusted Source for Quality Caps</p>",
+            "heading": "<p>Capwholesalers.com: Your trusted source for quality blank baseball caps</p>",
             "heading_size": "h1"
           }
         },
@@ -596,13 +595,6 @@
           "settings": {
             "color": "#990000",
             "width": 100
-          }
-        },
-        "heading_NGVgUX": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Capwholesalers.com: Your trusted source for quality blank baseball caps</p>",
-            "heading_size": "h1"
           }
         },
         "text_EXnEAX": {
