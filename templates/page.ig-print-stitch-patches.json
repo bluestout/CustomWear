@@ -24,7 +24,8 @@
           "type": "heading",
           "settings": {
             "subheading": "",
-            "heading": "Inspirational Gallery Print Stitch Patches",
+            "heading": "Inspirational Gallery",
+            "heading_tag": "h2",
             "heading_size": "h1"
           }
         }
@@ -62,9 +63,9 @@
         "tab_section": false,
         "hide_section": false,
         "custom_id": "",
-        "heading": "Inspirational Gallery Print Stitch Patches",
+        "heading": "Print Stitch Patches samples",
         "description": "",
-        "galleries": "embroidery",
+        "galleries": "print-stitch",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "section",
