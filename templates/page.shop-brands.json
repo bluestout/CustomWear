@@ -133,10 +133,10 @@
           "type": "item",
           "settings": {
             "item_width": 4,
-            "image": "shopify://shop_images/Mask_group_1.png",
+            "image": "shopify://shop_images/Otto_Brand_Directory_1160_x_590_1.jpg",
             "title": "Otto Hats",
             "url": "shopify://collections/otto-hats",
-            "image_2": "shopify://shop_images/Mask_group.png",
+            "image_2": "shopify://shop_images/Outdoor_Cap_Brand_Directory_1160_x_590_1.jpg",
             "title_2": "Outdoor Caps",
             "url_2": "shopify://collections/outdoor-caps"
           }
