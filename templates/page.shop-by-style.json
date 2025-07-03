@@ -35,7 +35,7 @@
       ],
       "settings": {
         "show_space": false,
-        "image": "shopify://shop_images/Shop_Styles_CW_2880_x_388.png",
+        "image": "shopify://shop_images/Brand_Directory_2880_x_388_CW_c0cac31c-acad-4596-984a-3c7a0c0bc011.png",
         "image_mobile": "shopify://shop_images/Mask_group_2.png",
         "image_overlay_opacity": 0,
         "opacity_type": "normal",
@@ -237,7 +237,7 @@
           "type": "item",
           "settings": {
             "item_width": 6,
-            "image": "shopify://shop_images/bg_3.png",
+            "image": "shopify://shop_images/USA_Flag_Cap_CW_1500_x_1200-Photoroom_1.png",
             "title": "USA Made Hats",
             "url": "shopify://collections/usa-made-hats",
             "title_2": "Hat Style 2",

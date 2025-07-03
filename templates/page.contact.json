@@ -36,7 +36,7 @@
       ],
       "settings": {
         "show_space": false,
-        "image": "shopify://shop_images/allenburt_94637_front_view_of_a_navy_color_trucker_mesh_back__1437e6c4-5721-479b-ac11-dd2e092d9b9e_1_1.jpg",
+        "image": "shopify://shop_images/Contact_us_CW_2880_x_596-Photoroom.png",
         "image_mobile": "shopify://shop_images/allenburt_94637_front_view_of_a_navy_color_trucker_mesh_back__1437e6c4-5721-479b-ac11-dd2e092d9b9e_1_1.png",
         "image_overlay_opacity": 60,
         "opacity_type": "gradient",
@@ -132,7 +132,7 @@
         "icon_with_text_9AHdyH"
       ],
       "settings": {
-        "layout": "section",
+        "layout": "none",
         "container_color_scheme": "",
         "color_scheme": "scheme-2",
         "padding_top": 36,

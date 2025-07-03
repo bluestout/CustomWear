@@ -367,6 +367,7 @@
         },
         "library_HbUxGQ": {
           "type": "library",
+          "disabled": true,
           "settings": {
             "heading": "Occupational/Misc.",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
@@ -399,6 +400,7 @@
         },
         "library_jYx9Lz": {
           "type": "library",
+          "disabled": true,
           "settings": {
             "heading": "Photography",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",

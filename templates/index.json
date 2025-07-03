@@ -83,7 +83,7 @@
             "heading": "customize",
             "description": "<p>Design your perfect hat – customize colors, fonts for a unique look!</p>",
             "button_text": "Customize",
-            "button_link": "#"
+            "button_link": "https://customizedwear.myshopify.com/collections/shop-all"
           }
         },
         "slide_item_bUakze": {
@@ -95,7 +95,7 @@
             "heading": "customize",
             "description": "<p>Design your perfect hat – customize colors, fonts for a unique look!</p>",
             "button_text": "Customize",
-            "button_link": "#"
+            "button_link": "https://customizedwear.myshopify.com/collections/shop-all"
           }
         }
       },
@@ -327,28 +327,28 @@
             "url": "shopify://collections/flexfit-hats",
             "image_2": "shopify://shop_images/OC-main-herov2.jpg",
             "title_2": "Outdoor Cap",
-            "url_2": "shopify://products/12-inch-safety-color-beanie-w-reflective-threads"
+            "url_2": "shopify://collections/outdoor-caps"
           }
         },
         "item_ayUTCT": {
           "type": "item",
           "settings": {
             "item_width": 4,
-            "image": "shopify://shop_images/6089m.png",
-            "title": "YP Classic",
-            "url": "shopify://collections/yp-classic-yupoong-hats",
-            "image_2": "shopify://shop_images/Adobe_Express_-_file_1.png",
+            "image": "shopify://shop_images/top_selling_brands_Otto_1160_x_590_CW-Photoroom.png",
+            "title": "Otto",
+            "url": "shopify://collections/otto-hats",
+            "image_2": "shopify://shop_images/Girl_wearing_Decky_roped_hat_1160_x_590-Photoroom.png",
             "title_2": "Decky Hats",
-            "url_2": "shopify://products/5-panel-mid-profile-structured-cotton-poly-blend-cap"
+            "url_2": "shopify://collections/decky-hats"
           }
         },
         "item_t9qBbg": {
           "type": "item",
           "settings": {
             "item_width": 6,
-            "image": "shopify://shop_images/Top_Brands_Otto_1500_x_1200-Photoroom.png",
-            "title": "Otto Hats",
-            "url": "shopify://collections/otto-hats",
+            "image": "shopify://shop_images/Classic_YP_Cap_1500_x_1200_CW.png",
+            "title": "YP Classic",
+            "url": "shopify://collections/yp-classic-yupoong-hats",
             "title_2": "Hat Style 2",
             "url_2": ""
           }
@@ -454,7 +454,7 @@
       "settings": {
         "border_top": false,
         "title": "Best Sellers By Brand",
-        "collection": "frontpage",
+        "collection": "best-sellers-by-brand",
         "products_to_show": 15,
         "image_ratio": "rectangle",
         "image_shape": "default",
@@ -534,7 +534,7 @@
             "item_width": 4,
             "image": "shopify://shop_images/Feathure_Work_1032_x_1136-Photoroom.png",
             "title": "",
-            "url": "",
+            "url": "shopify://pages/inspiration-gallery",
             "title_2": "Hat Style 2",
             "url_2": ""
           }
@@ -545,7 +545,7 @@
             "item_width": 4,
             "image": "shopify://shop_images/Featured_Work_1032_x_1046--Photoroom.png",
             "title": "",
-            "url": "",
+            "url": "shopify://pages/inspiration-gallery",
             "title_2": "Hat Style 2",
             "url_2": ""
           }
@@ -556,10 +556,10 @@
             "item_width": 2,
             "image": "shopify://shop_images/Featured_Work_654_x_514-Photoroom.png",
             "title": "",
-            "url": "",
+            "url": "shopify://pages/inspiration-gallery",
             "image_2": "shopify://shop_images/Featured_Work_654_x514-Photoroom-Photoroom.png",
             "title_2": "",
-            "url_2": ""
+            "url_2": "shopify://pages/inspiration-gallery"
           }
         }
       },
