@@ -332,7 +332,7 @@
                               </span>
                             </a>
                           </cart-remove-button>
-                          <a class="cart-edit-button" href="{{ item.product.url }}">
+                          <a class="cart-edit-button" href="{{ item.url }}&item={{ item.key }}">
                             {%- render 'es-edit-icon' -%}
                           </a>
                         </div>
