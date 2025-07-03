@@ -454,7 +454,7 @@
       "settings": {
         "border_top": false,
         "title": "Best Sellers By Brand",
-        "collection": "frontpage",
+        "collection": "best-sellers-by-brand",
         "products_to_show": 15,
         "image_ratio": "rectangle",
         "image_shape": "default",
@@ -587,7 +587,7 @@
         "heading_NGVgUX": {
           "type": "heading",
           "settings": {
-            "heading": "<p>CapWholesalers.com and browse our latest arrivals and exclusive deals<br/>Your Trusted Source for Quality Caps</p>",
+            "heading": "<p>Capwholesalers.com: Your trusted source for quality blank baseball caps</p>",
             "heading_size": "h1"
           }
         },
@@ -596,13 +596,6 @@
           "settings": {
             "color": "#990000",
             "width": 100
-          }
-        },
-        "heading_NGVgUX": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Capwholesalers.com: Your trusted source for quality blank baseball caps</p>",
-            "heading_size": "h1"
           }
         },
         "text_EXnEAX": {
