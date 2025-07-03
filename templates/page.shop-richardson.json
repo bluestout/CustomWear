@@ -35,7 +35,7 @@
       ],
       "settings": {
         "show_space": false,
-        "image": "shopify://shop_images/Shop_Richardson_2880_x_388_px-Photoroom.png",
+        "image": "shopify://shop_images/Shop_All_Richardson_2880_x_388-Photoroom_007bece0-f24b-4a7b-b0e8-16ca10c76d95.png",
         "image_mobile": "shopify://shop_images/Mask_group_2.png",
         "image_overlay_opacity": 0,
         "opacity_type": "normal",
@@ -64,7 +64,7 @@
           "type": "item",
           "settings": {
             "item_width": 6,
-            "image": "shopify://shop_images/Richardson_112_Best_1500_x_1200-Photoroom_2.png",
+            "image": "shopify://shop_images/Richardson_112_Directory_1500_x_1200_CW-Photoroom_0d5aed42-90b8-41d8-970e-09a47df3bf4c.png",
             "title": "112 Hats: Best Sellers",
             "url": "shopify://collections/112-hats-best-sellers",
             "title_2": "Hat Style 2",
@@ -75,10 +75,10 @@
           "type": "item",
           "settings": {
             "item_width": 4,
-            "image": "shopify://shop_images/Richardson_5_Panel_1160_x_590_px.png",
+            "image": "shopify://shop_images/5_Panel_Richardson_1160_x_590_CW-Photoroom.png",
             "title": "5 Panel Baseball Hats",
             "url": "shopify://collections/5-panel-baseball-hats",
-            "image_2": "shopify://shop_images/Richardson_Baseball_1160_x_590_px.png",
+            "image_2": "shopify://shop_images/Richardson_6_Panel_1160_x_590_CW-Photoroom.png",
             "title_2": "6 Panel Baseball Hats",
             "url_2": "shopify://collections/6-panel-baseball-caps"
           }
@@ -87,10 +87,10 @@
           "type": "item",
           "settings": {
             "item_width": 4,
-            "image": "shopify://shop_images/Richardson_7_Panel_1160_x_590_px.png",
+            "image": "shopify://shop_images/Richardson_7_Panel_1160_x_590_CW-Photoroom.png",
             "title": "7 Panels",
             "url": "shopify://collections/7-panel-hats",
-            "image_2": "shopify://shop_images/BEANIE_Richardson_1160_x_590_px.png",
+            "image_2": "shopify://shop_images/Richardson_Knit_1160_x_590_CW-Photoroom.png",
             "title_2": "Beanies",
             "url_2": "shopify://collections/beanies"
           }
@@ -99,7 +99,7 @@
           "type": "item",
           "settings": {
             "item_width": 6,
-            "image": "shopify://shop_images/Bucket_1500_x_1200_px.png",
+            "image": "shopify://shop_images/Bucket_1500_x_1200_px_2.png",
             "title": "Bucket Hats",
             "url": "shopify://collections/bucket-straw-hats",
             "title_2": "Hat Style 2",
@@ -110,7 +110,7 @@
           "type": "item",
           "settings": {
             "item_width": 6,
-            "image": "shopify://shop_images/Camo_1500_x_1200_px.png",
+            "image": "shopify://shop_images/Richardson_Camo_1160_x_590_CW-Photoroom.png",
             "title": "Camo",
             "url": "shopify://collections/richardson-camo",
             "title_2": "Hat Style 2",
@@ -121,10 +121,10 @@
           "type": "item",
           "settings": {
             "item_width": 4,
-            "image": "shopify://shop_images/R_FLAT_BILLED_1160_x_590_px.png",
+            "image": "shopify://shop_images/Richardson_1160_x_590_Flat_Bill_CW-Photoroom.png",
             "title": "Flat Billed",
             "url": "shopify://collections/flat-billed",
-            "image_2": "shopify://shop_images/DADS_HATS_1160_x_590_px.png",
+            "image_2": "shopify://shop_images/Richardson_Dads_RElaxed_1160_x_590-Photoroom.png",
             "title_2": "Relaxed Dad Hats",
             "url_2": "shopify://collections/richardson-relaxed-dad-hats"
           }
@@ -133,10 +133,10 @@
           "type": "item",
           "settings": {
             "item_width": 4,
-            "image": "shopify://shop_images/R-FLEX_1160_x_590_px.png",
+            "image": "shopify://shop_images/R-Flex_Richardson_1160_x_590_CW_2-Photoroom.png",
             "title": "R-Flex & Sized",
             "url": "shopify://collections/r-flex-sized",
-            "image_2": "shopify://shop_images/SNAPBACK_1160_x_590_px.png",
+            "image_2": "shopify://shop_images/Richardson_Snap_back_1160_x_590_CW-Photoroom.png",
             "title_2": "Snapback",
             "url_2": "shopify://collections/snapback"
           }
@@ -145,7 +145,7 @@
           "type": "item",
           "settings": {
             "item_width": 6,
-            "image": "shopify://shop_images/Richardson_Performance_1500_x_1200-Photoroom_1.png",
+            "image": "shopify://shop_images/Richardson_Performnce1500_x_1200_CW_-Photoroom.png",
             "title": "Sport Performance",
             "url": "shopify://collections/richardson-sport-performance",
             "title_2": "Hat Style 2",
@@ -156,7 +156,7 @@
           "type": "item",
           "settings": {
             "item_width": 6,
-            "image": "shopify://shop_images/Richardson_Visor_1500_x_1200_CW-Photoroom.png",
+            "image": "shopify://shop_images/Richardson_Visor_1500_x_1200_CW.png",
             "title": "Sun Visors",
             "url": "shopify://collections/richardson-sun-visors",
             "title_2": "Hat Style 2",
@@ -167,10 +167,10 @@
           "type": "item",
           "settings": {
             "item_width": 4,
-            "image": "shopify://shop_images/Trucker_Richardson_1160_x_590-Photoroom.png",
+            "image": "shopify://shop_images/Richardson_Trucker_Mesh_1160_x_590_CW-Photoroom_1.png",
             "title": "Trucker Mesh",
             "url": "shopify://collections/trucker-mesh",
-            "image_2": "shopify://shop_images/UMPIRE_1160_x_590_px.png",
+            "image_2": "shopify://shop_images/Richardson_Umpire_1160_x_590_CW-Photoroom.png",
             "title_2": "Umpire/Official Hats",
             "url_2": "shopify://collections/umpire-official-hats"
           }

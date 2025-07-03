@@ -25,6 +25,7 @@
           "settings": {
             "subheading": "",
             "heading": "How it works: Embroidery",
+            "heading_tag": "h2",
             "heading_size": "h1"
           }
         }
@@ -34,7 +35,7 @@
       ],
       "settings": {
         "show_space": false,
-        "image": "shopify://shop_images/Image_adf9f057-f284-4858-85e1-512190c02935.png",
+        "image": "shopify://shop_images/Emb_2880_x_580-Photoroom.png",
         "image_mobile": "shopify://shop_images/Image_1_bd7e40f7-17be-4e16-84b8-671339bcd7fe.png",
         "image_overlay_opacity": 100,
         "opacity_type": "gradient",
@@ -146,15 +147,6 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "Do you offer rush service?",
-            "icon": "none",
-            "row_content": "<p>We may be able to accommodate rush orders depending on your deadline. Please call us  877-984-2277.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_rQtNKz": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Do you have a \"RUSH\"  service available for promotional caps?",
             "icon": "none",
             "row_content": "<p>We may be able to accommodate rush orders depending on your deadline. Please call us  877-984-2277.</p>",
             "page": ""
@@ -285,7 +277,6 @@
         "collapsible_row_6eqxz9",
         "collapsible_row_hFM7if",
         "collapsible_row_cQDbaU",
-        "collapsible_row_rQtNKz",
         "collapsible_row_4QRrkg",
         "collapsible_row_6p4m9m",
         "collapsible_row_46mHGj",

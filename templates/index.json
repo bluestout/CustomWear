@@ -454,7 +454,7 @@
       "settings": {
         "border_top": false,
         "title": "Best Sellers By Brand",
-        "collection": "frontpage",
+        "collection": "best-sellers-by-brand",
         "products_to_show": 15,
         "image_ratio": "rectangle",
         "image_shape": "default",
