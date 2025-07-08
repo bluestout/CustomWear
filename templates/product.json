@@ -214,6 +214,7 @@
       "block_order": [
         "fera_product_reviews_9zYAAA"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
       }
