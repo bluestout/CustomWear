@@ -57,25 +57,26 @@
 
               <div class="mySwiper-{{ block.id }} swiper">
                 <div class="swiper-wrapper">
-                  {%- assign metaobjects = block.settings.metaobject.clip_arts.value -%}
-                  {%- if block.settings.metaobject == blank and block.settings.metaobject_2 != blank -%}
-                    {%- assign metaobjects = block.settings.metaobject_2.clip_arts.value -%}
+                  {%- assign clip_metafield = block.settings.metaobject -%}
+                  {%- if block.settings.metaobject_2 != "" -%}
+                    {%- assign clip_metafield = block.settings.metaobject_2 -%}
                   {%- endif -%}
-                  {%- for clip_art in metaobjects -%}
-                      <div class="grid__item swiper-slide ui_grid__item">
-                        <div class="grid__item-media">
-                          <img
-                            src="{{ clip_art.image | img_url: 'master' }}"
-                            width="{{ clip_art.image.width }}"
-                            height="{{ clip_art.image.height }}"
-                            alt="{{ clip_art.image.alt | default: clip_art.image.id }}"
-                          >
-                        </div>
-                        <div class="grid__item-content center">
-                          <h4 class="es-font-h5">{{ clip_art.title }}</h4>
-                          <div class="grid__item-text">{{ clip_art.text }}</div>
-                        </div>
+
+                  {%- for clip_art in clip_metafield.clip_arts.value -%}
+                    <div class="grid__item swiper-slide ui_grid__item">
+                      <div class="grid__item-media">
+                        <img
+                          src="{{ clip_art.image | img_url: 'master' }}"
+                          width="{{ clip_art.image.width }}"
+                          height="{{ clip_art.image.height }}"
+                          alt="{{ clip_art.image.alt | default: clip_art.image.id }}"
+                        >
                       </div>
+                      <div class="grid__item-content center">
+                        <h4 class="es-font-h5">{{ clip_art.title }}</h4>
+                        <div class="grid__item-text">{{ clip_art.text }}</div>
+                      </div>
+                    </div>
                     {%- endfor -%}
                 </div>
                 <div class="swiper-navigation">
@@ -97,44 +98,6 @@
 </div>
 
 <script>
-  const initESSlider = element => {
-    const sw = new Swiper(element, {
-      slidesPerView: 4,
-      slidesPerGroup: 4,
-      grid: {
-        rows: 8,
-      },
-      spaceBetween: 10,
-      navigation: {
-        nextEl: element?.querySelector('.swiper-button-next'),
-        prevEl: element?.querySelector('.swiper-button-prev'),
-      },
-      pagination: {
-        el: element?.querySelector('.swiper-pagination'),
-        clickable: true,
-        renderBullet: (index, className) => {
-          return '<span class="' + className + '">' + (index + 1) + '</span>';
-        },
-      },
-      breakpoints: {
-        0: {
-          slidesPerView: 2,
-          slidesPerGroup: 2,
-          grid: {
-            rows: 8,
-          },
-        },
-        769: {
-          slidesPerView: 4,
-          slidesPerGroup: 4,
-          grid: {
-            rows: 8,
-          },
-        },
-      },
-    });
-  }
-
   document.addEventListener("DOMContentLoaded", () => {
     {%- for block in section.blocks -%}
       initESSlider(document.querySelector(".mySwiper-{{ block.id }}"));
@@ -330,7 +293,7 @@
         {
           "type": "metaobject",
           "id": "metaobject_2",
-          "label": "Metaobject",
+          "label": "Metaobject 2",
           "metaobject_type": "clip_art_library_2"
         }
       ]
