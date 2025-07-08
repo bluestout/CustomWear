@@ -2991,6 +2991,11 @@ body {
 
     .library--container {
       max-width: calc(100% - 230px);
+      width: 100%;
+
+      .swiper-wrapper {
+        width: 100% !important;
+      }
 
       @media (max-width: 750px) {
         max-width: 100%;
