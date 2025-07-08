@@ -49,7 +49,7 @@
 
       <div class="library--container">
         {%- for block in section.blocks -%}
-          {%- if block.settings.metaobject != blank -%}
+          {%- if block.settings.metaobject != blank or block.settings.metaobject_2 != blank -%}
             <div id="ClipArt--{{ block.id }}" class="library--item{% unless forloop.first %} hidden{% endunless %}">
               <div class="library--description">
                 {{ block.settings.description }}
@@ -57,7 +57,11 @@
 
               <div class="mySwiper-{{ block.id }} swiper">
                 <div class="swiper-wrapper">
-                  {%- for clip_art in block.settings.metaobject.clip_arts.value -%}
+                  {%- assign metaobjects = block.settings.metaobject.clip_arts.value -%}
+                  {%- if block.settings.metaobject == blank and block.settings.metaobject_2 != blank -%}
+                    {%- assign metaobjects = block.settings.metaobject_2.clip_arts.value -%}
+                  {%- endif -%}
+                  {%- for clip_art in metaobjects -%}
                       <div class="grid__item swiper-slide ui_grid__item">
                         <div class="grid__item-media">
                           <img
@@ -322,6 +326,12 @@
           "id": "metaobject",
           "label": "Metaobject",
           "metaobject_type": "clip_art_library"
+        },
+        {
+          "type": "metaobject",
+          "id": "metaobject_2",
+          "label": "Metaobject",
+          "metaobject_type": "clip_art_library_2"
         }
       ]
     }
