@@ -99,21 +99,23 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {
-    {%- for block in section.blocks -%}
-      initESSlider(document.querySelector(".mySwiper-{{ block.id }}"));
-    {%- endfor -%}
-
-    var libraryItems = document.querySelectorAll('.library--item');
-
-    document.querySelectorAll('[name="galleryCategory"]')?.forEach(input => {
-      input.addEventListener("change", function () {
-        libraryItems.forEach(item => {
-          item.classList.add("hidden");
+    (() => {
+      {%- for block in section.blocks -%}
+        initESSlider(document.querySelector(".mySwiper-{{ block.id }}"));
+      {%- endfor -%}
+  
+      var libraryItems = document.querySelectorAll('#shopify-section-{{ section.id }} .library--item');
+  
+      document.querySelectorAll('#shopify-section-{{ section.id }} [name="galleryCategory"]')?.forEach(input => {
+        input.addEventListener("change", function () {
+          libraryItems.forEach(item => {
+            item.classList.add("hidden");
+          });
+  
+          document.querySelector(`${this.value}`)?.classList.remove('hidden');
         });
-
-        document.querySelector(`${this.value}`)?.classList.remove('hidden');
       });
-    });
+    })();
   })
 </script>
 
