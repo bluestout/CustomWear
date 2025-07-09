@@ -23,7 +23,6 @@ observer.observe(document.body, { childList: true, subtree: true });
 const initESSlider = element => {
   const sw = new Swiper(element, {
     slidesPerView: 4,
-    slidesPerGroup: 4,
     grid: {
       rows: 8,
     },
