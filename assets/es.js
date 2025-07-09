@@ -27,7 +27,7 @@ const initESSlider = element => {
     grid: {
       rows: 8,
     },
-    spaceBetween: 10,
+    // spaceBetween: 10,
     navigation: {
       nextEl: element?.querySelector('.swiper-button-next'),
       prevEl: element?.querySelector('.swiper-button-prev'),
