@@ -1268,8 +1268,8 @@
 
       .footer__copyright {
         flex: 1;
-        color: #999999;
-        font-size: 13px;
+        color: #000;
+        font-size: 14px;
         font-family: "Inter", sans-serif;
         font-weight: 400;
         line-height: 19.5px;
@@ -4729,23 +4729,31 @@ slideshow-component {
 .card__content {
   .card__information {
     .ui_card_sku {
-      color: black;
+      color: black !important;
       font-size: 15px;
       font-family: Inter;
       font-weight: 600;
       line-height: 25.5px;
       word-wrap: break-word;
       margin: 0;
+
+      * {
+        color: black !important;
+      }
     }
 
     .ui_card__brand_name {
-      color: #414141;
+      color: #000 !important;
       font-size: 15px;
       font-family: Inter;
       font-weight: 400;
       line-height: 25.5px;
       word-wrap: break-word;
       margin-top: 0;
+
+      * {
+        color: black !important;
+      }
     }
   }
 }
