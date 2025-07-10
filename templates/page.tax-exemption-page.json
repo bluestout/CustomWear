@@ -17,6 +17,32 @@
         "padding_bottom": 28
       }
     },
+    "rich_text_VXj3KC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_hQ7twe": {
+          "type": "heading",
+          "settings": {
+            "heading": "Tax Exemption Form",
+            "heading_tag": "h1",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_hQ7twe"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "border_bottom": true,
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "1748286443642325bb": {
       "type": "apps",
       "blocks": {
@@ -61,6 +87,7 @@
   },
   "order": [
     "main",
+    "rich_text_VXj3KC",
     "1748286443642325bb",
     "rich_text_brANw4"
   ]
