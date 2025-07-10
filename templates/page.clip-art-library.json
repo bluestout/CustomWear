@@ -93,7 +93,7 @@
           "type": "library",
           "settings": {
             "heading": "Aircrafts",
-            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
+            "description": "<p>AAAA</p>",
             "metaobject": "aircrafts",
             "metaobject_2": ""
           }
