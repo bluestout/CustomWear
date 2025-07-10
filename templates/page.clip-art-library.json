@@ -93,9 +93,8 @@
           "type": "library",
           "settings": {
             "heading": "Aircrafts",
-            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "aircrafts",
-            "metaobject_2": ""
+            "description": "<p>Browse customizable hat clip art perfect for embroidered caps, leather patches, screen printing, and custom Richardson hats. Add your logo or use bold, ready-made graphics to enhance your design.</p>",
+            "metaobject": "aircrafts"
           }
         },
         "library_nACpkm": {
@@ -103,8 +102,7 @@
           "settings": {
             "heading": "Bugs & Insects",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "bugs-insects",
-            "metaobject_2": ""
+            "metaobject": "bugs-insects"
           }
         },
         "library_7BwtJP": {
@@ -112,8 +110,7 @@
           "settings": {
             "heading": "Children",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "children",
-            "metaobject_2": ""
+            "metaobject": "children"
           }
         },
         "library_XjhXp7": {
@@ -121,8 +118,7 @@
           "settings": {
             "heading": "Christmas",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "christmas",
-            "metaobject_2": ""
+            "metaobject": "christmas"
           }
         },
         "library_jpaBqx": {
@@ -130,8 +126,7 @@
           "settings": {
             "heading": "Countries & Flags",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "countries-flags",
-            "metaobject_2": ""
+            "metaobject": "countries-flags"
           }
         },
         "library_yhxeDm": {
@@ -139,8 +134,7 @@
           "settings": {
             "heading": "Dog & Cat",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "dog-cat",
-            "metaobject_2": ""
+            "metaobject": "dog-cat"
           }
         },
         "library_MktMtX": {
@@ -148,8 +142,7 @@
           "settings": {
             "heading": "Equipment",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "equipment",
-            "metaobject_2": ""
+            "metaobject": "equipment"
           }
         },
         "library_mGw4tD": {
@@ -157,8 +150,7 @@
           "settings": {
             "heading": "Fire & Rescue",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "fire-rescue",
-            "metaobject_2": ""
+            "metaobject": "fire-rescue"
           }
         },
         "library_zNeLzV": {
@@ -166,8 +158,7 @@
           "settings": {
             "heading": "Fishing & Aquatic",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "fishing-aquatic",
-            "metaobject_2": ""
+            "metaobject": "fishing-aquatic"
           }
         },
         "library_fWCTq3": {
@@ -175,8 +166,7 @@
           "settings": {
             "heading": "Floral",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "floral",
-            "metaobject_2": ""
+            "metaobject": "floral"
           }
         },
         "library_YRf9AP": {
@@ -184,8 +174,7 @@
           "settings": {
             "heading": "Food",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "food",
-            "metaobject_2": ""
+            "metaobject": "food"
           }
         },
         "library_mGbwLr": {
@@ -193,8 +182,7 @@
           "settings": {
             "heading": "Holiday",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "holiday",
-            "metaobject_2": ""
+            "metaobject": "holiday"
           }
         },
         "library_dGRnMc": {
@@ -202,8 +190,7 @@
           "settings": {
             "heading": "Horse & Western",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "horse-western",
-            "metaobject_2": ""
+            "metaobject": "horse-western"
           }
         },
         "library_mEkBAx": {
@@ -211,8 +198,7 @@
           "settings": {
             "heading": "Hunting & Wildlife",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "hunting-wildlife",
-            "metaobject_2": ""
+            "metaobject": "hunting-wildlife"
           }
         },
         "library_feMMMk": {
@@ -220,8 +206,7 @@
           "settings": {
             "heading": "Team Sport Mascots",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "team-sport-mascots",
-            "metaobject_2": ""
+            "metaobject": "team-sport-mascots"
           }
         },
         "library_PN8hLf": {
@@ -229,8 +214,7 @@
           "settings": {
             "heading": "Corporate logos",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "corporate-logos",
-            "metaobject_2": ""
+            "metaobject": "corporate-logos"
           }
         },
         "library_TwTkTk": {
@@ -238,8 +222,7 @@
           "settings": {
             "heading": "Military",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "military",
-            "metaobject_2": ""
+            "metaobject": "military"
           }
         },
         "library_aPGnAw": {
@@ -247,8 +230,7 @@
           "settings": {
             "heading": "Miscellaneous",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "miscellaneous",
-            "metaobject_2": ""
+            "metaobject": "miscellaneous"
           }
         },
         "library_AyXRL4": {
@@ -256,8 +238,7 @@
           "settings": {
             "heading": "Music",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "music",
-            "metaobject_2": ""
+            "metaobject": "music"
           }
         },
         "library_7X6df7": {
@@ -265,8 +246,7 @@
           "settings": {
             "heading": "Nautical",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "nautical",
-            "metaobject_2": ""
+            "metaobject": "nautical"
           }
         },
         "library_XhMa4m": {
@@ -274,8 +254,7 @@
           "settings": {
             "heading": "Occupation",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "occupation",
-            "metaobject_2": ""
+            "metaobject": "occupation"
           }
         },
         "library_4fYVEk": {
@@ -283,8 +262,7 @@
           "settings": {
             "heading": "Sports",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "sports",
-            "metaobject_2": ""
+            "metaobject": "sports"
           }
         },
         "library_fHQfVq": {
@@ -292,8 +270,7 @@
           "settings": {
             "heading": "Wheels",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "",
-            "metaobject_2": "wheels"
+            "metaobject": "wheels"
           }
         }
       },
@@ -345,8 +322,7 @@
           "settings": {
             "heading": "Baker/Chef",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "",
-            "metaobject_2": "baker-chef"
+            "metaobject": "baker-chef"
           }
         },
         "library_4KVUzp": {
@@ -354,8 +330,7 @@
           "settings": {
             "heading": "Automotive/Service",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "",
-            "metaobject_2": "automotive-service"
+            "metaobject": "automotive-service"
           }
         },
         "library_emELhi": {
@@ -363,8 +338,7 @@
           "settings": {
             "heading": "Cleaning/Janitor",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "",
-            "metaobject_2": "cleaning-janitor"
+            "metaobject": "cleaning-janitor"
           }
         },
         "library_MTEwcA": {
@@ -372,8 +346,7 @@
           "settings": {
             "heading": "Computers",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "",
-            "metaobject_2": "computers"
+            "metaobject": "computers"
           }
         },
         "library_Kt4idG": {
@@ -381,8 +354,7 @@
           "settings": {
             "heading": "Construction",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "",
-            "metaobject_2": "construction"
+            "metaobject": "construction"
           }
         },
         "library_CKkpg6": {
@@ -390,8 +362,7 @@
           "settings": {
             "heading": "Electrician",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "",
-            "metaobject_2": "electrician"
+            "metaobject": "electrician"
           }
         },
         "library_HbUxGQ": {
@@ -400,8 +371,7 @@
           "settings": {
             "heading": "Occupational/Misc.",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "occupational-misc",
-            "metaobject_2": ""
+            "metaobject": "occupational-misc"
           }
         },
         "library_rwDec7": {
@@ -409,8 +379,7 @@
           "settings": {
             "heading": "Fire/Police",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "",
-            "metaobject_2": "fire-police"
+            "metaobject": "fire-police"
           }
         },
         "library_Q3HURM": {
@@ -418,8 +387,7 @@
           "settings": {
             "heading": "Landscaping",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "",
-            "metaobject_2": "landscaping"
+            "metaobject": "landscaping"
           }
         },
         "library_cUgRHm": {
@@ -427,8 +395,7 @@
           "settings": {
             "heading": "Painting",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "",
-            "metaobject_2": "painting"
+            "metaobject": "painting"
           }
         },
         "library_jYx9Lz": {
@@ -437,8 +404,7 @@
           "settings": {
             "heading": "Photography",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "photography",
-            "metaobject_2": ""
+            "metaobject": "photography"
           }
         },
         "library_9cX44U": {
@@ -446,8 +412,7 @@
           "settings": {
             "heading": "Plumber",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "",
-            "metaobject_2": "plumber"
+            "metaobject": "plumber"
           }
         },
         "library_4k6wEW": {
@@ -455,8 +420,7 @@
           "settings": {
             "heading": "Tools",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "",
-            "metaobject_2": "tools"
+            "metaobject": "tools"
           }
         },
         "library_8QTdGj": {
@@ -464,8 +428,7 @@
           "settings": {
             "heading": "Trucks/Heavy Equipment",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "",
-            "metaobject_2": "trucks-heavy-equipment"
+            "metaobject": "trucks-heavy-equipment"
           }
         }
       },
