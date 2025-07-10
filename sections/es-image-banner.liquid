@@ -44,6 +44,9 @@
   #Banner-{{ section.id }}.opacity-gradient.opacity-horizontal.md-up-opacity-weight--heavy::after {
     background: linear-gradient(90deg, black 0%, rgba(0, 0, 0, 0) 100%);
   }
+  #Banner-{{ section.id }}.opacity-gradient.opacity-horizontal.md-up-opacity-weight--extra-heavy::after {
+    background: linear-gradient(90deg, black 12%, rgba(0, 0, 0, 0) 41%);
+  }
   #Banner-{{ section.id }}.opacity-gradient.opacity-horizontal.opacity-color--secondary::after {
     background: linear-gradient(90deg, #553300 0%, rgba(85, 51, 0, 0) 100%);
   }
@@ -310,6 +313,10 @@
         {
           "label": "Heavy",
           "value": "heavy"
+        },
+        {
+          "label": "Extra Heavy",
+          "value": "extra-heavy"
         }
       ],
       "label": "Opacity Height on Mobile",

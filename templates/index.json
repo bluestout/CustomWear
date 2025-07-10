@@ -534,7 +534,7 @@
             "item_width": 4,
             "image": "shopify://shop_images/Feathure_Work_1032_x_1136-Photoroom.png",
             "title": "",
-            "url": "",
+            "url": "shopify://pages/inspiration-gallery",
             "title_2": "Hat Style 2",
             "url_2": ""
           }
@@ -545,7 +545,7 @@
             "item_width": 4,
             "image": "shopify://shop_images/Featured_Work_1032_x_1046--Photoroom.png",
             "title": "",
-            "url": "",
+            "url": "shopify://pages/inspiration-gallery",
             "title_2": "Hat Style 2",
             "url_2": ""
           }
@@ -556,10 +556,10 @@
             "item_width": 2,
             "image": "shopify://shop_images/Featured_Work_654_x_514-Photoroom.png",
             "title": "",
-            "url": "",
+            "url": "shopify://pages/inspiration-gallery",
             "image_2": "shopify://shop_images/Featured_Work_654_x514-Photoroom-Photoroom.png",
             "title_2": "",
-            "url_2": ""
+            "url_2": "shopify://pages/inspiration-gallery"
           }
         }
       },

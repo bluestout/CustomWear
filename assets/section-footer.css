@@ -437,7 +437,7 @@
 }
 
 .copyright__content {
-  font-size: 1.1rem;
+  font-size: inherit;
 }
 
 .copyright__content a {
