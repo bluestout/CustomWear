@@ -151,12 +151,12 @@
             {{ form.errors.messages.password }}.
           </span>
         {%- endif -%}
-        <div class="font-p">{{ section.settings.richtext }}</div>
         <button>
           {{ 'customer.register.submit' | t }}
         </button>
       {%- endform -%}
       <div class="sign-up">Already have an account? <a href="{{ routes.account_login_url }}">Log in here</a></div>
+      <div class="font-small">{{ section.settings.richtext }}</div>
     </div>
   </div>
 </div>
