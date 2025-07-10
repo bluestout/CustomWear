@@ -14,6 +14,7 @@
       "settings": {
         "image": "shopify://shop_images/Sign_Up_CW_1440_x_1668.png",
         "sm_image": "shopify://shop_images/Sign_Up_CW_1440_x_1668.png",
+        "richtext": "<p>Sign up to streamline your experience with custom hats and personalized headwear. Your account makes it easy to upload logos, save order info, and reorder your favorite styles.</p><p>✔ Shop top hat brands: Richardson, Flexfit, Otto, Pacific Headwear, YP Classic</p><p>✔ Access your custom proofs and order history</p><p>✔ Fast reordering for leather patches, Flex patches, 3D embroidery, print stitch, and more</p><p>✔ Ideal for businesses, teams, schools, and resellers</p><p>Get started today and bring your brand to life with high-quality, custom-decorated hats.</p>",
         "padding_top": 36,
         "padding_bottom": 36
       }
