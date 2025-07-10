@@ -25,6 +25,7 @@
           "settings": {
             "subheading": "",
             "heading": "Inspiration Gallery",
+            "heading_tag": "h2",
             "heading_size": "h1"
           }
         }
@@ -63,49 +64,56 @@
           "type": "button",
           "settings": {
             "button_text": "Inspirational Gallery Embroidery",
-            "button_link": "shopify://pages/inspirational-gallery-embroidery"
+            "button_link": "shopify://pages/inspirational-gallery-embroidery",
+            "page_first_image": "shopify://shop_images/Aloha_Big_Kahuna_-602554-STEVE.jpg"
           }
         },
         "button_Vi4brF": {
           "type": "button",
           "settings": {
             "button_text": "Inspirational Gallery Screenprinting",
-            "button_link": "shopify://pages/inspirational-gallery-screenprinting"
+            "button_link": "shopify://pages/inspirational-gallery-screenprinting",
+            "page_first_image": "shopify://shop_images/Alohahaas_----591639-----STEVE_-_Edited.png"
           }
         },
         "button_7qLWqg": {
           "type": "button",
           "settings": {
             "button_text": "Inspirational Gallery Embroidered Patches",
-            "button_link": "shopify://pages/inspirational-gallery-patches"
+            "button_link": "shopify://pages/inspirational-gallery-patches",
+            "page_first_image": "shopify://shop_images/ANDERSON_INSTRUMENTATION_Embroidered_Patch_PO_600998_ZACH_-Photoroom.jpg"
           }
         },
         "button_WT7cah": {
           "type": "button",
           "settings": {
             "button_text": "Inspirational Gallery Print Stitch Patches",
-            "button_link": "shopify://pages/inspirational-gallery-print-stitch-patches"
+            "button_link": "shopify://pages/inspirational-gallery-print-stitch-patches",
+            "page_first_image": "shopify://shop_images/ABSOLUTE_PLUMBING_PO_600372_ZACH_FLEX_TEXTURED_PATCH-Photoroom.jpg"
           }
         },
         "button_rUpqJ7": {
           "type": "button",
           "settings": {
             "button_text": "Inspirational Gallery Faux Leather Patches",
-            "button_link": "shopify://pages/inspirational-gallery-faux-leather-patches"
+            "button_link": "shopify://pages/inspirational-gallery-faux-leather-patches",
+            "page_first_image": "shopify://shop_images/ALMOST_HEAVEN_HUNTING_CLUB---601200-----ZACK---FAUX_LEATHER--BUCKLE-Photoroom.jpg"
           }
         },
         "button_bg8dqV": {
           "type": "button",
           "settings": {
             "button_text": "Inspirational Gallery Leather Patches",
-            "button_link": "shopify://pages/inspirational-gallery-leather-patches"
+            "button_link": "shopify://pages/inspirational-gallery-leather-patches",
+            "page_first_image": "shopify://shop_images/5TH_ANNUAL_BUCKHORN_CAMPER_PO_593027_ZACH_FAUX_LEATH_-_Copy-Photoroom.jpg"
           }
         },
         "button_LPhxPN": {
           "type": "button",
           "settings": {
             "button_text": "Inspirational Gallery Flex Patches",
-            "button_link": "shopify://pages/inspirational-gallery-flex-patches"
+            "button_link": "shopify://pages/inspirational-gallery-flex-patches",
+            "page_first_image": "shopify://shop_images/1320_VIDEO-Domed.jpg"
           }
         }
       },
@@ -123,7 +131,7 @@
         "hide_section": false,
         "custom_id": "",
         "heading": "",
-        "description": "<p>Get inspired! Check out the cool custom patches and embroidery we've made for our clients.Warning: Our inspiration galleries may cause serious design envy!</p>",
+        "description": "<p>Get inspired! Check out the cool custom patches and embroidery we've made for our clients.<br/>Warning: Our inspiration galleries may cause serious design envy!</p>",
         "galleries": "",
         "heading_size": "h1",
         "heading_alignment": "center",
