@@ -2993,7 +2993,7 @@ body {
       width: 100%;
 
       .swiper-wrapper {
-        width: 100% !important;
+        // width: 100% !important;
       }
 
       @media (max-width: 750px) {
@@ -4834,4 +4834,8 @@ slideshow-component {
   .fera-col[data-fera-actions-col] {
     display: block !important;
   }
+}
+
+.accessease-widget-centerleft #accessease-icon {
+  top: 70% !important;
 }

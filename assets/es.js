@@ -42,7 +42,7 @@ const initESSlider = element => {
     },
     breakpoints: {
       0: {
-        slidesPerGroup: 4,
+        slidesPerGroup: 2,
         slidesPerView: 2,
         grid: {
           rows: 8,
