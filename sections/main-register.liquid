@@ -151,6 +151,7 @@
             {{ form.errors.messages.password }}.
           </span>
         {%- endif -%}
+        <div class="font-p">{{ section.settings.richtext }}</div>
         <button>
           {{ 'customer.register.submit' | t }}
         </button>
@@ -177,6 +178,11 @@
       "type": "image_picker",
       "label": "Mobile Image",
       "id": "sm_image"
+    },
+    {
+      "type": "richtext",
+      "id": "richtext",
+      "label": "RichText"
     },
     {
       "type": "range",
