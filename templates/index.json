@@ -105,6 +105,7 @@
       ],
       "name": "ui-custom-header-slide",
       "settings": {
+        "slide_btn": "shopify://shop_images/Button_1.svg",
         "layout": "none",
         "container_color_scheme": "",
         "color_scheme": "",
