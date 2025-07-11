@@ -45,6 +45,13 @@
             "menu": "help"
           }
         },
+        "link_list_JMH8wC": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Shop Custom Hats By Type",
+            "menu": "shop-custom-hats-by-type"
+          }
+        },
         "brand_information_V94PiB": {
           "type": "brand_information",
           "settings": {
@@ -61,6 +68,7 @@
         "text_CdmMQL",
         "link_list_iFqkVB",
         "link_list_9eCptB",
+        "link_list_JMH8wC",
         "brand_information_V94PiB"
       ],
       "settings": {
