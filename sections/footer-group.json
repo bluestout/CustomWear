@@ -28,7 +28,7 @@
           "type": "text",
           "settings": {
             "heading": "",
-            "subtext": "<p><strong>Custom Hats with: </strong></p><p><strong>L</strong><a href=\"/collections/leather-patch-hats\" title=\"/collections/leather-patch-hats\"><strong>eather patches</strong></a></p><p><strong>F</strong><a href=\"/collections/faux-leather-patch-hats\" title=\"/collections/faux-leather-patch-hats\"><strong>aux leather patch Hats</strong></a></p><p><strong>E</strong><a href=\"/collections/embroidered-hats\" title=\"/collections/embroidered-hats\"><strong>mbroidery Hats</strong></a></p><p><strong>P</strong><a href=\"/collections/print-stitch-patches\" title=\"/collections/print-stitch-patches\"><strong>rint stitch patch Hats</strong></a></p><p><strong>F</strong><a href=\"/collections/flex-patches\" title=\"/collections/flex-patches\"><strong>lex patched Hats</strong></a></p><p><strong>Sc</strong><a href=\"/collections/screen-printed-hats\" title=\"/collections/screen-printed-hats\"><strong>een printed Hats</strong></a></p><p><strong>Shop Top Hat Brands </strong></p><p><a href=\"/collections/richardson\" title=\"/collections/richardson\"><strong>Richardson & Otto Hats</strong></a></p><p><strong>Flexfit & YP Classics Hats</strong></p>"
+            "subtext": "<p><strong>Custom Hats with Premium Decoration Options</strong>   At CustomizedWear.com, we specialize in <a href=\"/collections/custom-hats\" title=\"/collections/custom-hats\">custom hats featuring</a> , <a href=\"/collections/leather-patch-hats\" title=\"/collections/leather-patch-hats\">leather patches</a>, <a href=\"/collections/faux-leather-patch-hats\" title=\"/collections/faux-leather-patch-hats\">faux leather patches</a>, <a href=\"/collections/embroidered-hats\" title=\"/collections/embroidered-hats\">embroidery</a>, <a href=\"/collections/print-stitch-patches\" title=\"/collections/print-stitch-patches\">print stitch patches</a>, <a href=\"/collections/flex-patches\" title=\"/collections/flex-patches\">flex patches</a>, and <a href=\"/collections/screen-printed-hats\" title=\"/collections/screen-printed-hats\">screen printing</a>. Shop top brands like <a href=\"/collections/richardson\" title=\"/collections/richardson\">Richardson</a>, Flexfit, Otto, and YP Classics—perfect for promoting your business, team, or event. </p>"
           }
         },
         "link_list_iFqkVB": {
@@ -43,6 +43,13 @@
           "settings": {
             "heading": "Help",
             "menu": "help"
+          }
+        },
+        "link_list_JMH8wC": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Shop Custom Hats By Type",
+            "menu": "shop-custom-hats-by-type"
           }
         },
         "brand_information_V94PiB": {
@@ -61,6 +68,7 @@
         "text_CdmMQL",
         "link_list_iFqkVB",
         "link_list_9eCptB",
+        "link_list_JMH8wC",
         "brand_information_V94PiB"
       ],
       "settings": {
