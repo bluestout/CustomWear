@@ -203,12 +203,12 @@
                             {%- if block.settings.image_url != blank -%}
                               <a href="{{ block.settings.image_url }}" target="_blank">
                             {%- endif -%}
-                              <img
-                                src="{{ block.settings.image | img_url: '1100x' }}"
-                                width="{{ block.settings.image.width }}"
-                                height="{{ block.settings.image.height }}"
-                                alt="{{ block.settings.image.alt | default: block.settings.image.id }}"
-                              >
+                            <img
+                              src="{{ block.settings.image | img_url: '1100x' }}"
+                              width="{{ block.settings.image.width }}"
+                              height="{{ block.settings.image.height }}"
+                              alt="{{ block.settings.image.alt | default: block.settings.image.id }}"
+                            >
                             {%- if block.settings.image_url != blank -%}
                               </a>
                             {%- endif -%}
@@ -224,12 +224,12 @@
                             {%- if block.settings.image_url_2 != blank -%}
                               <a href="{{ block.settings.image_url_2 }}" target="_blank">
                             {%- endif -%}
-                              <img
-                                src="{{ block.settings.image_2 | img_url: '1100x' }}"
-                                width="{{ block.settings.image_2.width }}"
-                                height="{{ block.settings.image_2.height }}"
-                                alt="{{ block.settings.image_2.alt | default: block.settings.image_2.id }}"
-                              >
+                            <img
+                              src="{{ block.settings.image_2 | img_url: '1100x' }}"
+                              width="{{ block.settings.image_2.width }}"
+                              height="{{ block.settings.image_2.height }}"
+                              alt="{{ block.settings.image_2.alt | default: block.settings.image_2.id }}"
+                            >
                             {%- if block.settings.image_url_2 != blank -%}
                               </a>
                             {%- endif -%}
