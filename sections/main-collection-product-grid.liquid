@@ -36,6 +36,27 @@
   }
 {%- endstyle -%}
 
+<style>
+  .product-state {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+    display: block;
+    background-color: #990000;
+    padding: 5px 11px;
+    color: white;
+    font-size: 10px;
+    font-family: Inter;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 10px;
+    letter-spacing: 1px;
+    word-wrap: break-word;
+    border-radius: 30px;
+  }
+</style>
+
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
   {%- paginate collection.products by section.settings.products_per_page -%}
     {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
@@ -165,6 +186,21 @@
                     style="--animation-order: {{ forloop.index }};"
                   {% endif %}
                 >
+                  {%- assign product_state = blank -%}
+                  {%- if product.tags contains 'New styles' -%}
+                    {%- assign product_state = 'New styles' -%}
+                  {%- elsif product.tags contains 'Selling fast' -%}
+                    {%- assign product_state = 'Selling fast' -%}
+                  {%- elsif product.tags contains 'best' -%}
+                    {%- assign product_state = 'Best selling' -%}
+                  {%- elsif product.compare_at_price > product.price -%}
+                    {%- assign product_state = 'Sale' -%}
+                  {%- endif -%}
+
+                  {%- if product_state != blank -%}
+                    <span class="product-state">{{ product_state }}</span>
+                  {%- endif -%}
+
                   {% render 'card-product',
                     card_product: product,
                     media_aspect_ratio: section.settings.image_ratio,
