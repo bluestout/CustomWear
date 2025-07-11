@@ -11,6 +11,16 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "custom_liquid_aHFcYC": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div class=\"footer-seo-text\" style=\"padding: 20px 0; text-align: left; font-size: 14px; line-height: 1.5;\">   <strong>Custom Hats with Premium Decoration Options</strong><br>   At CustomizedWear.com, we specialize in &lt;a href=&quot;/collections/custom-hats\">custom hats</a> featuring &lt;a href=&quot;/collections/leather-patch-hats\">leather patches</a>, &lt;a href=&quot;/collections/faux-leather-patch-hats\">faux leather patches</a>, &lt;a href=&quot;/collections/embroidered-hats\">embroidery</a>, &lt;a href=&quot;/collections/print-stitch-patches\">print stitch patches</a>, &lt;a href=&quot;/collections/flex-patches\">flex patches</a>, and &lt;a href=&quot;/collections/screen-printed-hats\">screen printing</a>. Shop top brands like &lt;a href=&quot;/collections/richardson\">Richardson</a>, Flexfit, Otto, and YP Classics—perfect for promoting your business, team, or event. </div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -62,6 +72,7 @@
     }
   },
   "order": [
+    "custom_liquid_aHFcYC",
     "footer"
   ]
 }
