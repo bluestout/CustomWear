@@ -129,18 +129,7 @@
   gap: 10px;
   transition: 0.3s ease;
 
-  &::after {
-    content: "";
-    display: block;
-    width: 6px;
-    height: 10px;
-    background: url("https://cdn.shopify.com/s/files/1/0728/5784/6001/files/Group_268.svg?v=1742691514") no-repeat center center;
-    background-size: contain;
-  }
-
-  &:hover {
-    opacity: 0.8;
-  }
+  &:hover {}
 
   &.link {
     padding: 0;
