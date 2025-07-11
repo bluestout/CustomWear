@@ -4839,3 +4839,9 @@ slideshow-component {
 .accessease-widget-centerleft #accessease-icon {
   top: 70% !important;
 }
+
+@media (max-width: 767px) {
+  .fera-row.fera-reviews-header-summary-container {
+    justify-content: space-between !important;
+  }
+}
