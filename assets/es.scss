@@ -1154,6 +1154,16 @@
     }
   }
 
+  .footer__blocks-wrapper {
+    .footer-block--text {
+      width: 100%;
+      font-size: 15px;
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      line-height: 120%;
+    }
+  }
+
   .footer__payment {
     .visually-hidden {
       display: none;
@@ -4829,9 +4839,14 @@ slideshow-component {
   top: 70% !important;
 }
 
-
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 480px) {
   .es-featured-videos .container .page-width .es-featured-videos__title-wrapper .es-font-h2 {
     font-size: 19px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .fera-row.fera-reviews-header-summary-container {
+    justify-content: space-between !important;
   }
 }
