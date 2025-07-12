@@ -4839,6 +4839,12 @@ slideshow-component {
   top: 70% !important;
 }
 
+@media screen and (max-width: 480px) {
+  .es-featured-videos .container .page-width .es-featured-videos__title-wrapper .es-font-h2 {
+    font-size: 19px !important;
+  }
+}
+
 @media (max-width: 767px) {
   .fera-row.fera-reviews-header-summary-container {
     justify-content: space-between !important;

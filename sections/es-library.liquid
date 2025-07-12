@@ -58,7 +58,7 @@
               <div class="mySwiper-{{ block.id }} swiper">
                 <div class="swiper-wrapper">
                   {%- assign clip_metafield = block.settings.metaobject -%}
-                  {%- if block.settings.metaobject_2 != "" -%}
+                  {%- if block.settings.metaobject_2 != '' -%}
                     {%- assign clip_metafield = block.settings.metaobject_2 -%}
                   {%- endif -%}
 
@@ -77,7 +77,7 @@
                         <div class="grid__item-text">{{ clip_art.text }}</div>
                       </div>
                     </div>
-                    {%- endfor -%}
+                  {%- endfor -%}
                 </div>
                 <div class="swiper-navigation">
                   <div class="swiper-button-prev" style="--swiper-navigation-size: 12px;">
@@ -96,6 +96,32 @@
     </div>
   </div>
 </div>
+
+<style>
+    #custom - paginated - grid {
+    display: flex;
+    flex - direction: column;
+    gap: 16px;
+  }
+  .custom - grid - row {
+    display: flex;
+    gap: 16px;
+  }
+  .custom - product - item {
+    flex: 1 0 0;
+    max - width: 25 %; /* 4 columns */
+    box - sizing: border - box;
+  }
+  #custom - pagination - controls {
+    margin - top: 20px;
+    text - align: center;
+  }
+  #custom - pagination - controls button.active {
+    font - weight: bold;
+    background: #222;
+    color: #fff;
+  }
+</style>
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {
@@ -117,6 +143,21 @@
       });
     })();
   })
+
+  {% comment %} document.addEventListener("DOMContentLoaded", () => {
+    setTimeout(() => {
+      const productCard = document.querySelectorAll(".library--item");
+      productCard.forEach((item) => {
+        if(item.classList.contains("hidden") == false) {
+          console.log(item.outerHTML, "Item without hidden class");
+        }
+      })
+      console.log(productCard, "🧨🦅🔥");
+      const pageBtn = document.querySelectorAll(".swiper-pagination-bullet.swiper-pagination-bullet-active");
+      const pageBtnText = pageBtn[0].textContent;
+      console.log(pageBtnText, "🤛⚡🐍")
+    }, 3000)  
+  }) {% endcomment %}
 </script>
 
 {% schema %}
