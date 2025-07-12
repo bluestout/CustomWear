@@ -13,36 +13,63 @@
 {%- endstyle -%}
 
 <style>
-  .pages-first-image {
-    height: 20px;
-    width: 25px;
+  .es-button {
+    width: 24%;
+    height: 100%;
   }
 
-  .grid__item-media {
+  @media screen and (max-width: 768px) {
+    .es-button {
+      width: 32%;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .es-button {
+      width: 48%;
+    }
+  }
+
+  .es-button-container {
+    flex-wrap: wrap;
+    margin: 50px 0px 30px 0px;
+  }
+
+  .es-galleries .es-button-container {
+    flex-direction: row !important;
+  }
+
+  .gallery-each-page-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .tooltip {
     position: relative;
     display: inline-block;
-    transition: all 0.3s;
   }
 
-  .gallery-tool-tip {
+  .tooltip .tooltiptext {
     visibility: hidden;
-    width: 120px;
+    width: 100%;
+    display: block;
     background-color: #555;
     color: #fff;
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
     position: absolute;
-    z-index: 10;
-    top: 5%;
-    text-transform: uppercase;
-    left: 50%;
-    margin-left: -60px;
-    opacity: 0;
+    z-index: 1;
+    top: -10%;
+    left: 0;
+    right: 0;
     transition: opacity 0.3s;
+    padding: 5px 10px;
+    max-width: fit-content;
+    opacity: 0;
   }
 
-  .gallery-tool-tip::after {
+  .tooltip .tooltiptext::after {
     content: '';
     position: absolute;
     top: 100%;
@@ -53,14 +80,9 @@
     border-color: #555 transparent transparent transparent;
   }
 
-  .grid__item-media:hover .gallery-tool-tip {
+  .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
-  }
-
-  .gallery-page-images {
-    width: 100%;
-    height: 100%;
   }
 </style>
 
@@ -97,7 +119,6 @@
                         alt="{{ image.height.alt | default: image.height.id }}"
                       >
                     </div>
-                    <span class="gallery-tool-tip">{{ section.settings.galleries }}</span>
                   </div>
                 </div>
               {%- endfor -%}
@@ -118,17 +139,23 @@
       {%- if section.blocks.size > 0 -%}
         <div class="es-button-container">
           {%- for block in section.blocks -%}
-            <a href="{{ block.settings.button_link }}" class="es-button">
+            <a href="{{ block.settings.button_link }}" class="es-button tooltip">
               {%- if block.settings.page_first_image -%}
-                <img
-                  class="pages-first-image"
-                  src="{{ block.settings.page_first_image | img_url: "master" }}"
-                  width="auto"
-                  height="auto"
-                  alt="{{ block.settings.button_text }}"
-                >
+                <div class="gallery-link">
+                  <img
+                    class="gallery-each-page-image"
+                    src="{{ block.settings.page_first_image | img_url: "master" }}"
+                    width="100%"
+                    height="100%"
+                    alt="{{ block.settings.button_text }}"
+                  >
+                </div>
               {%- endif -%}
-              {{ block.settings.button_text }}
+              {%- if block.settings.button_text != blank -%}
+                <span class="tooltiptext">
+                  {{ block.settings.button_text }}
+                </span>
+              {%- endif -%}
             </a>
           {%- endfor -%}
         </div>
