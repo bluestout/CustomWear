@@ -187,8 +187,8 @@
                   {% endif %}
                 >
                   {%- assign product_state = blank -%}
-                  {%- if product.tags contains 'New' -%}
-                    {%- assign product_state = 'New styles' -%}
+                  {%- if product.tags contains 'New' or product.tags contains 'New Styles' -%}
+                    {%- assign product_state = 'New Styles' -%}
                   {%- elsif product.tags contains 'Fast' -%}
                     {%- assign product_state = 'Selling fast' -%}
                   {%- elsif product.tags contains 'best' -%}
