@@ -4828,3 +4828,10 @@ slideshow-component {
 .accessease-widget-centerleft #accessease-icon {
   top: 70% !important;
 }
+
+
+@media screen and (max-width: 425px) {
+  .es-featured-videos .container .page-width .es-featured-videos__title-wrapper .es-font-h2 {
+    font-size: 19px !important;
+  }
+}

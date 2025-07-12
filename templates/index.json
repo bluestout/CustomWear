@@ -83,6 +83,7 @@
             "heading": "customize",
             "description": "<p>Design your perfect hat – customize colors, fonts for a unique look!</p>",
             "button_text": "Customize",
+            "mobile_btn_icon": "shopify://shop_images/Union_0c4ebc90-41ba-42c6-bdf4-117f201c3a59.svg",
             "button_link": "https://customizedwear.myshopify.com/collections/shop-all"
           }
         },
@@ -609,7 +610,7 @@
           "type": "button",
           "settings": {
             "button_label": "Learn more",
-            "button_link": "https://www.capswholesalers.com",
+            "button_link": "https://www.capwholesalers.com",
             "button_style_secondary": false,
             "open_new_tab": true
           }
