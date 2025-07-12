@@ -63,7 +63,7 @@
         "button_dniMkJ": {
           "type": "button",
           "settings": {
-            "button_text": "Inspirational Gallery Embroidery",
+            "button_text": "Embroidery",
             "button_link": "shopify://pages/inspirational-gallery-embroidery",
             "page_first_image": "shopify://shop_images/Aloha_Big_Kahuna_-602554-STEVE.jpg"
           }
@@ -71,7 +71,7 @@
         "button_Vi4brF": {
           "type": "button",
           "settings": {
-            "button_text": "Inspirational Gallery Screenprinting",
+            "button_text": "Screen print",
             "button_link": "shopify://pages/inspirational-gallery-screenprinting",
             "page_first_image": "shopify://shop_images/Alohahaas_----591639-----STEVE_-_Edited.png"
           }
@@ -79,7 +79,7 @@
         "button_7qLWqg": {
           "type": "button",
           "settings": {
-            "button_text": "Inspirational Gallery Embroidered Patches",
+            "button_text": "Embroidery patches",
             "button_link": "shopify://pages/inspirational-gallery-patches",
             "page_first_image": "shopify://shop_images/ANDERSON_INSTRUMENTATION_Embroidered_Patch_PO_600998_ZACH_-Photoroom.jpg"
           }
@@ -87,7 +87,7 @@
         "button_WT7cah": {
           "type": "button",
           "settings": {
-            "button_text": "Inspirational Gallery Print Stitch Patches",
+            "button_text": "Print stitch patches",
             "button_link": "shopify://pages/inspirational-gallery-print-stitch-patches",
             "page_first_image": "shopify://shop_images/ABSOLUTE_PLUMBING_PO_600372_ZACH_FLEX_TEXTURED_PATCH-Photoroom.jpg"
           }
@@ -95,7 +95,7 @@
         "button_rUpqJ7": {
           "type": "button",
           "settings": {
-            "button_text": "Inspirational Gallery Faux Leather Patches",
+            "button_text": "Faux leather patches",
             "button_link": "shopify://pages/inspirational-gallery-faux-leather-patches",
             "page_first_image": "shopify://shop_images/ALMOST_HEAVEN_HUNTING_CLUB---601200-----ZACK---FAUX_LEATHER--BUCKLE-Photoroom.jpg"
           }
@@ -103,7 +103,7 @@
         "button_bg8dqV": {
           "type": "button",
           "settings": {
-            "button_text": "Inspirational Gallery Leather Patches",
+            "button_text": "Leather patches",
             "button_link": "shopify://pages/inspirational-gallery-leather-patches",
             "page_first_image": "shopify://shop_images/5TH_ANNUAL_BUCKHORN_CAMPER_PO_593027_ZACH_FAUX_LEATH_-_Copy-Photoroom.jpg"
           }
@@ -111,7 +111,7 @@
         "button_LPhxPN": {
           "type": "button",
           "settings": {
-            "button_text": "Inspirational Gallery Flex Patches",
+            "button_text": "Flex patches",
             "button_link": "shopify://pages/inspirational-gallery-flex-patches",
             "page_first_image": "shopify://shop_images/1320_VIDEO-Domed.jpg"
           }
