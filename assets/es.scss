@@ -128,7 +128,7 @@
   align-items: center;
   gap: 10px;
   transition: 0.3s ease;
-  
+
   &::after {
     content: "";
     display: block;
@@ -4859,5 +4859,16 @@ slideshow-component {
 @media (max-width: 767px) {
   .fera-row.fera-reviews-header-summary-container {
     justify-content: space-between !important;
+  }
+}
+
+.es-button.tooltip::after {
+  display: none !important;
+}
+
+@media screen and (max-width: 480px) {
+  .section-sections--19417520799985__custom_liquid_aHFcYC-padding {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
   }
 }
