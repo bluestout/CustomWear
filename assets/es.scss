@@ -4872,3 +4872,22 @@ slideshow-component {
     padding-bottom: 0px !important;
   }
 }
+
+.product-state {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+  display: block;
+  background-color: #990000;
+  padding: 5px 11px;
+  color: white;
+  font-size: 10px;
+  font-family: Inter;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 10px;
+  letter-spacing: 1px;
+  word-wrap: break-word;
+  border-radius: 30px;
+}
