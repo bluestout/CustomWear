@@ -48,7 +48,21 @@
       assign ratio = 1
     endif
   -%}
-  <div class="card-wrapper product-card-wrapper underline-links-hover">
+  <div class="card-wrapper product-card-wrapper underline-links-hover" data-test>
+    {%- assign product_state = blank -%}
+    {%- if card_product.tags contains 'New' or card_product.tags contains 'New Styles' -%}
+      {%- assign product_state = 'New Styles' -%}
+    {%- elsif card_product.tags contains 'Fast' -%}
+      {%- assign product_state = 'Selling fast' -%}
+    {%- elsif card_product.tags contains 'best' -%}
+      {%- assign product_state = 'Best selling' -%}
+    {%- elsif card_product.compare_at_price > card_product.price -%}
+      {%- assign product_state = 'Sale' -%}
+    {%- endif -%}
+
+    {%- if product_state != blank -%}
+      <span class="product-state">{{ product_state }}</span>
+    {%- endif -%}
     <div
       class="
         card card--{{ settings.card_style }}
@@ -595,7 +609,21 @@
       assign ratio = 0.8
     endif
   -%}
-  <div class="card-wrapper product-card-wrapper underline-links-hover">
+  <div class="card-wrapper product-card-wrapper underline-links-hover" data-test>
+    {%- assign product_state = blank -%}
+    {%- if card_product.tags contains 'New' or card_product.tags contains 'New Styles' -%}
+      {%- assign product_state = 'New Styles' -%}
+    {%- elsif card_product.tags contains 'Fast' -%}
+      {%- assign product_state = 'Selling fast' -%}
+    {%- elsif card_product.tags contains 'best' -%}
+      {%- assign product_state = 'Best selling' -%}
+    {%- elsif card_product.compare_at_price > card_product.price -%}
+      {%- assign product_state = 'Sale' -%}
+    {%- endif -%}
+
+    {%- if product_state != blank -%}
+      <span class="product-state">{{ product_state }}</span>
+    {%- endif -%}
     <div
       class="
         card card--{{ settings.card_style }}
