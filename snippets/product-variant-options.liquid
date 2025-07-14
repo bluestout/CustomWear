@@ -28,7 +28,7 @@
 
     for variant in product.variants
       assign variant_title_color = variant.title | split: ' / ' | first | strip
-      if variant_title_color contains value
+      if variant_title_color == value
         assign variant_image = variant.image | image_url: width: 150
       endif
     endfor
