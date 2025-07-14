@@ -26,10 +26,8 @@
     assign variant_image = ""
     assign option_title = option.name | downcase
 
-    echo variant.title
-
     for variant in product.variants
-      if variant.title == value
+      if variant.title contains value
         assign variant_image = variant.image | image_url: width: 150
       endif
     endfor
