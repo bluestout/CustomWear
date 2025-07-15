@@ -209,6 +209,9 @@
                               height="{{ block.settings.image.height }}"
                               alt="{{ block.settings.image.alt | default: block.settings.image.id }}"
                             >
+                            {%- if block.settings.cap_text != blank -%}
+                              <span class="footer-image-link-text">{{ block.settings.cap_text }}</span>
+                            {%- endif -%}
                             {%- if block.settings.image_url != blank -%}
                               </a>
                             {%- endif -%}
@@ -230,6 +233,9 @@
                               height="{{ block.settings.image_2.height }}"
                               alt="{{ block.settings.image_2.alt | default: block.settings.image_2.id }}"
                             >
+                            {%- if block.settings.cwear_text != blank -%}
+                              <span class="footer-image-link-text">{{ block.settings.cwear_text }}</span>
+                            {%- endif -%}
                             {%- if block.settings.image_url_2 != blank -%}
                               </a>
                             {%- endif -%}
@@ -527,6 +533,11 @@
           "default": "Headline"
         },
         {
+          "type": "text",
+          "id": "cap_text",
+          "label": "Cap Text"
+        },
+        {
           "type": "image_picker",
           "id": "image",
           "label": "Image"
@@ -535,6 +546,11 @@
           "type": "url",
           "id": "image_url",
           "label": "Image URL"
+        },
+        {
+          "type": "text",
+          "id": "cwear_text",
+          "label": "Cwear Text"
         },
         {
           "type": "image_picker",
