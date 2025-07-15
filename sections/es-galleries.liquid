@@ -148,7 +148,7 @@
                         src="{{ image | img_url: 'master' }}"
                         width="{{ image.width }}"
                         height="{{ image.height }}"
-                        alt="{{ image.height.alt | default: image.height.id }}"
+                        alt="{{ image.alt | default: image.id }}"
                       >
                     </div>
                   </div>
@@ -179,7 +179,7 @@
                     src="{{ block.settings.page_first_image | img_url: "master" }}"
                     width="100%"
                     height="100%"
-                    alt="{{ block.settings.button_text }}"
+                    alt="{{ block.settings.page_first_image.alt | default: block.settings.page_first_image.id }}"
                   >
                 </div>
               {%- endif -%}
