@@ -25,6 +25,7 @@
           "settings": {
             "subheading": "",
             "heading": "How it works: Screen Print",
+            "heading_tag": "h1",
             "heading_size": "h1"
           }
         }
