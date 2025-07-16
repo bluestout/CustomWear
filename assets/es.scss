@@ -2548,6 +2548,9 @@
       .grid__item-media {
         background-color: #fff;
         margin-bottom: 10px;
+        aspect-ratio: 1.5;
+        display: flex;
+        align-items: center;
 
         img {
           display: block;
