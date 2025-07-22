@@ -83,7 +83,7 @@
             "heading": "customize",
             "description": "<p>Design your perfect hat – customize colors, fonts for a unique look!</p>",
             "button_text": "Customize",
-            "button_link": "https://customizedwear.myshopify.com/collections/shop-all"
+            "button_link": "shopify://pages/shop-by-style"
           }
         },
         "slide_item_wQKygd": {
@@ -107,7 +107,7 @@
             "heading": "customize",
             "description": "<p>Design your perfect hat – customize colors, fonts for a unique look!</p>",
             "button_text": "Customize",
-            "button_link": "https://customizedwear.myshopify.com/collections/shop-all"
+            "button_link": "shopify://pages/shop-by-style"
           }
         }
       },
@@ -118,6 +118,7 @@
       ],
       "name": "ui-custom-header-slide",
       "settings": {
+        "slide_btn": "shopify://shop_images/Button_1.svg",
         "layout": "none",
         "container_color_scheme": "",
         "color_scheme": "",
@@ -285,7 +286,7 @@
         "text_XxeLzC": {
           "type": "text",
           "settings": {
-            "text": "<p>On Richardson hats, including the popular </p><p><strong>112 models</strong>—</p><p>crafted with quality and precision just for you!</p>",
+            "text": "<p>On Richardson hats, including the popular </p><p><strong>112 models</strong>—</p><p>crafted with quality and precision just for you! <a href=\"/collections/112-hats-best-sellers\" title=\"Richardson 112 Hats Best Sellers\"><strong>Check them out</strong></a></p>",
             "text_style": "subtitle"
           }
         }
@@ -383,6 +384,65 @@
         "padding_bottom_mobile": 0,
         "item_count_row": 2,
         "show_gradient": true
+      }
+    },
+    "es_image_with_text_kFT4Pw": {
+      "type": "es-image-with-text",
+      "blocks": {
+        "heading_NGVgUX": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Looking for Blank Hats in Bulk?</p>",
+            "heading_size": "h1"
+          }
+        },
+        "separator_KFgDcp": {
+          "type": "separator",
+          "settings": {
+            "color": "#990000",
+            "width": 100
+          }
+        },
+        "text_EXnEAX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Visit our partner site, <strong>CapWholesalers.com</strong>, your trusted source for wholesale blank baseball caps for over 33 years.</p><p>Clicking below will take you to a separate site specializing in bulk, undecorated headwear.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_BKEWTb": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Blank Hats at CapWholesalers",
+            "button_link": "https://www.capwholesalers.com/",
+            "button_style_secondary": false,
+            "open_new_tab": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_NGVgUX",
+        "separator_KFgDcp",
+        "text_EXnEAX",
+        "button_BKEWTb"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Image_1.png",
+        "height": "adapt",
+        "hide_media_on_mobile": true,
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "",
+        "color_scheme": "scheme-09348374-9048-4109-8e6d-ac33083b4bdd",
+        "padding_top": 4,
+        "padding_bottom": 88,
+        "padding_top_mobile": 16,
+        "padding_bottom_mobile": 40
       }
     },
     "es_testimonial_xNiLtf": {
@@ -592,65 +652,6 @@
         "item_count_row": 3,
         "show_gradient": false
       }
-    },
-    "es_image_with_text_kFT4Pw": {
-      "type": "es-image-with-text",
-      "blocks": {
-        "heading_NGVgUX": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Capwholesalers.com: Your trusted source for quality blank baseball caps</p>",
-            "heading_size": "h1"
-          }
-        },
-        "separator_KFgDcp": {
-          "type": "separator",
-          "settings": {
-            "color": "#990000",
-            "width": 100
-          }
-        },
-        "text_EXnEAX": {
-          "type": "text",
-          "settings": {
-            "text": "<p>When it comes to top-notch, wholesale blank baseball caps, CapWholesalers.com is your go-to destination. With over 33 years of industry expertise, we’ve mastered the art of supplying high-quality headwear to businesses of all sizes.</p>",
-            "text_style": "body"
-          }
-        },
-        "button_BKEWTb": {
-          "type": "button",
-          "settings": {
-            "button_label": "Learn more",
-            "button_link": "https://www.capswholesalers.com",
-            "button_style_secondary": false,
-            "open_new_tab": true
-          }
-        }
-      },
-      "block_order": [
-        "heading_NGVgUX",
-        "separator_KFgDcp",
-        "text_EXnEAX",
-        "button_BKEWTb"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/Image_1.png",
-        "height": "adapt",
-        "hide_media_on_mobile": true,
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "center",
-        "section_color_scheme": "",
-        "color_scheme": "scheme-09348374-9048-4109-8e6d-ac33083b4bdd",
-        "padding_top": 4,
-        "padding_bottom": 88,
-        "padding_top_mobile": 16,
-        "padding_bottom_mobile": 40
-      }
     }
   },
   "order": [
@@ -659,10 +660,10 @@
     "es_featured_blocks_zzkdqw",
     "es_image_with_text_QiEqMH",
     "es_gallery_with_link_CGamDr",
+    "es_image_with_text_kFT4Pw",
     "es_testimonial_xNiLtf",
     "es_featured_collection_RGkMJh",
     "es_featured_videos_zwxmNW",
-    "es_gallery_with_link_XdFTjW",
-    "es_image_with_text_kFT4Pw"
+    "es_gallery_with_link_XdFTjW"
   ]
 }

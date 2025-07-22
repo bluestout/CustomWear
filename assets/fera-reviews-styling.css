@@ -124,3 +124,17 @@ span.fera-star-rating {
 .fera-icon.fera-icon-caret path {
   stroke: #900;
 }
+
+
+.fera-stars-rating b{
+    background: transparent!important;
+    color: var(--star-color)!important;
+}
+.fera-stars-bg b {
+    color: unset!important;
+}
+.fera--srOnly.fera--srOnly.fera--srOnly {
+    /* color:rgba(0, 0, 0, 0.9)!important;
+    background: rgb(250, 250, 250, 1)!important; */
+    display: none!important;
+}

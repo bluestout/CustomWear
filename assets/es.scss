@@ -1165,6 +1165,16 @@
     }
   }
 
+  .footer__blocks-wrapper {
+    .footer-block--text {
+      width: 100%;
+      font-size: 14px;
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      line-height: 150%;
+    }
+  }
+
   .footer__payment {
     .visually-hidden {
       display: none;
@@ -2538,6 +2548,9 @@
       .grid__item-media {
         background-color: #fff;
         margin-bottom: 10px;
+        aspect-ratio: 1.5;
+        display: flex;
+        align-items: center;
 
         img {
           display: block;
@@ -4834,4 +4847,65 @@ slideshow-component {
   .fera-col[data-fera-actions-col] {
     display: block !important;
   }
+}
+
+.accessease-widget-centerleft #accessease-icon {
+  top: 70% !important;
+}
+
+@media screen and (max-width: 480px) {
+  .es-featured-videos .container .page-width .es-featured-videos__title-wrapper .es-font-h2 {
+    font-size: 19px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .fera-row.fera-reviews-header-summary-container {
+    justify-content: space-between !important;
+  }
+}
+
+.es-button.tooltip::after {
+  display: none !important;
+}
+
+@media screen and (max-width: 480px) {
+  .section-sections--19417520799985__custom_liquid_aHFcYC-padding {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+}
+
+.product-state {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+  display: block;
+  background-color: #990000;
+  padding: 5px 11px;
+  color: white;
+  font-size: 10px;
+  font-family: Inter;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 10px;
+  letter-spacing: 1px;
+  word-wrap: break-word;
+  border-radius: 30px;
+}
+
+// du-dev
+
+.footer-image-link-text {
+  text-decoration: none;
+  margin: 0px;
+  color: #FFF;
+  display: block;
+  width: 100%;
+  font-size: 14px;
+}
+
+.footer-block__image-wrapper a {
+  text-decoration: none;
 }

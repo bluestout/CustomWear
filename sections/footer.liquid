@@ -137,7 +137,7 @@
             elsif section.blocks.size > 6
               assign footer_grid_class = 'grid--4-col-desktop'
             elsif section.blocks.size > 4
-              assign footer_grid_class = 'grid--3-col-tablet'
+              assign footer_grid_class = 'grid--5-col-tablet'
             endif
           -%}
           <div
@@ -203,12 +203,15 @@
                             {%- if block.settings.image_url != blank -%}
                               <a href="{{ block.settings.image_url }}" target="_blank">
                             {%- endif -%}
-                              <img
-                                src="{{ block.settings.image | img_url: '1100x' }}"
-                                width="{{ block.settings.image.width }}"
-                                height="{{ block.settings.image.height }}"
-                                alt="{{ block.settings.image.alt | default: block.settings.image.id }}"
-                              >
+                            <img
+                              src="{{ block.settings.image | img_url: '1100x' }}"
+                              width="{{ block.settings.image.width }}"
+                              height="{{ block.settings.image.height }}"
+                              alt="{{ block.settings.image.alt | default: block.settings.image.id }}"
+                            >
+                            {%- if block.settings.cap_text != blank -%}
+                              <span class="footer-image-link-text">{{ block.settings.cap_text }}</span>
+                            {%- endif -%}
                             {%- if block.settings.image_url != blank -%}
                               </a>
                             {%- endif -%}
@@ -224,12 +227,15 @@
                             {%- if block.settings.image_url_2 != blank -%}
                               <a href="{{ block.settings.image_url_2 }}" target="_blank">
                             {%- endif -%}
-                              <img
-                                src="{{ block.settings.image_2 | img_url: '1100x' }}"
-                                width="{{ block.settings.image_2.width }}"
-                                height="{{ block.settings.image_2.height }}"
-                                alt="{{ block.settings.image_2.alt | default: block.settings.image_2.id }}"
-                              >
+                            <img
+                              src="{{ block.settings.image_2 | img_url: '1100x' }}"
+                              width="{{ block.settings.image_2.width }}"
+                              height="{{ block.settings.image_2.height }}"
+                              alt="{{ block.settings.image_2.alt | default: block.settings.image_2.id }}"
+                            >
+                            {%- if block.settings.cwear_text != blank -%}
+                              <span class="footer-image-link-text">{{ block.settings.cwear_text }}</span>
+                            {%- endif -%}
                             {%- if block.settings.image_url_2 != blank -%}
                               </a>
                             {%- endif -%}
@@ -527,6 +533,11 @@
           "default": "Headline"
         },
         {
+          "type": "text",
+          "id": "cap_text",
+          "label": "Cap Text"
+        },
+        {
           "type": "image_picker",
           "id": "image",
           "label": "Image"
@@ -535,6 +546,11 @@
           "type": "url",
           "id": "image_url",
           "label": "Image URL"
+        },
+        {
+          "type": "text",
+          "id": "cwear_text",
+          "label": "Cwear Text"
         },
         {
           "type": "image_picker",

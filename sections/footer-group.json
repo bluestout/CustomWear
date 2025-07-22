@@ -14,6 +14,13 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "text_CdmMQL": {
+          "type": "text",
+          "settings": {
+            "heading": "",
+            "subtext": "<p><strong>Custom Hats with Premium Decoration Options</strong>   At CustomizedWear.com, we specialize in <a href=\"/collections/custom-hats\" title=\"/collections/custom-hats\">custom hats featuring</a> , <a href=\"/collections/leather-patch-hats\" title=\"/collections/leather-patch-hats\">leather patches</a>, <a href=\"/collections/faux-leather-patch-hats\" title=\"/collections/faux-leather-patch-hats\">faux leather patches</a>, <a href=\"/collections/embroidered-hats\" title=\"/collections/embroidered-hats\">embroidery</a>, <a href=\"/collections/print-stitch-patches\" title=\"/collections/print-stitch-patches\">print stitch patches</a>, <a href=\"/collections/flex-patches\" title=\"/collections/flex-patches\">flex patches</a>, and <a href=\"/collections/screen-printed-hats\" title=\"/collections/screen-printed-hats\">screen printing</a>. Shop top brands like <a href=\"/collections/richardson\" title=\"/collections/richardson\">Richardson</a>, Flexfit, Otto, and YP Classics—perfect for promoting your business, team, or event. </p>"
+          }
+        },
         "link_list_iFqkVB": {
           "type": "link_list",
           "settings": {
@@ -28,21 +35,32 @@
             "menu": "help"
           }
         },
+        "link_list_JMH8wC": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Shop Custom Hats By Type",
+            "menu": "shop-custom-hats-by-type"
+          }
+        },
         "brand_information_V94PiB": {
           "type": "brand_information",
           "settings": {
             "show_social": true,
             "headline": "Discover our brands",
+            "cap_text": "Blank Hats in Bulk",
             "image": "shopify://shop_images/Group_1041.svg",
             "image_url": "https://capwholesalers.com/",
+            "cwear_text": "Custom Logos & Patches",
             "image_2": "shopify://shop_images/logo_b2b8df43-0a8f-4e1e-8db1-a20c5d7e7907.svg",
             "image_url_2": ""
           }
         }
       },
       "block_order": [
+        "text_CdmMQL",
         "link_list_iFqkVB",
         "link_list_9eCptB",
+        "link_list_JMH8wC",
         "brand_information_V94PiB"
       ],
       "settings": {

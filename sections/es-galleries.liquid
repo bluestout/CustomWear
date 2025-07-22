@@ -13,36 +13,78 @@
 {%- endstyle -%}
 
 <style>
-  .pages-first-image {
-    height: 20px;
-    width: 25px;
+  .es-button {
+    width: 24%;
+    height: 100%;
   }
 
-  .grid__item-media {
+  @media screen and (max-width: 768px) {
+    .es-button {
+      width: 32%;
+    }
+
+    .tooltip .tooltiptext {
+      left: 18% !important;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .es-button {
+      width: 48%;
+    }
+  }
+
+  .es-button-container {
+    flex-wrap: wrap;
+    margin: 50px 0px 30px 0px;
+  }
+
+  .es-galleries .es-button-container {
+    flex-direction: row !important;
+  }
+
+  .gallery-each-page-image {
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+  .tooltip {
     position: relative;
     display: inline-block;
-    transition: all 0.3s;
+    padding: 0px;
   }
 
-  .gallery-tool-tip {
-    visibility: hidden;
-    width: 120px;
-    background-color: #555;
+  .tooltip .tooltiptext {
+    {% comment %} visibility: hidden; {% endcomment %}
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: #000;
     color: #fff;
     text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 10;
-    top: 5%;
-    text-transform: uppercase;
-    left: 50%;
-    margin-left: -60px;
-    opacity: 0;
+    {% comment %} border-radius: 6px;
+    {% comment %} position: absolute; {% endcomment %} {% endcomment %}
+    {% comment %} z-index: 1;
+    top: -5%;
+    left: 30%;
+    right: 24%; {% endcomment %}
     transition: opacity 0.3s;
+    padding: 0px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    {% comment %} max-width: fit-content; {% endcomment %}
+    {% comment %} opacity: 0; {% endcomment %}
   }
 
-  .gallery-tool-tip::after {
+  .gallery-link{
+    padding: 30px;
+  }
+
+  {% comment %} .tooltip .tooltiptext::after {
     content: '';
     position: absolute;
     top: 100%;
@@ -51,16 +93,28 @@
     border-width: 5px;
     border-style: solid;
     border-color: #555 transparent transparent transparent;
-  }
+  } {% endcomment %}
 
-  .grid__item-media:hover .gallery-tool-tip {
+  .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
   }
 
-  .gallery-page-images {
-    width: 100%;
-    height: 100%;
+  @media screen and (max-width: 750px) {
+    .tooltip .tooltiptext{
+      height: 50px;
+      font-size: 13px;
+    }
+
+    .gallery-link{
+      padding: 10px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .tooltip .tooltiptext{
+      height: 45px;
+    }
   }
 </style>
 
@@ -94,10 +148,9 @@
                         src="{{ image | img_url: 'master' }}"
                         width="{{ image.width }}"
                         height="{{ image.height }}"
-                        alt="{{ image.height.alt | default: image.height.id }}"
+                        alt="{{ image.alt | default: image.id }}"
                       >
                     </div>
-                    <span class="gallery-tool-tip">{{ section.settings.galleries }}</span>
                   </div>
                 </div>
               {%- endfor -%}
@@ -118,17 +171,23 @@
       {%- if section.blocks.size > 0 -%}
         <div class="es-button-container">
           {%- for block in section.blocks -%}
-            <a href="{{ block.settings.button_link }}" class="es-button">
+            <a href="{{ block.settings.button_link }}" class="es-button tooltip">
               {%- if block.settings.page_first_image -%}
-                <img
-                  class="pages-first-image"
-                  src="{{ block.settings.page_first_image | img_url: "master" }}"
-                  width="auto"
-                  height="auto"
-                  alt="{{ block.settings.button_text }}"
-                >
+                <div class="gallery-link">
+                  <img
+                    class="gallery-each-page-image"
+                    src="{{ block.settings.page_first_image | img_url: "master" }}"
+                    width="100%"
+                    height="100%"
+                    alt="{{ block.settings.page_first_image.alt | default: block.settings.page_first_image.id }}"
+                  >
+                </div>
               {%- endif -%}
-              {{ block.settings.button_text }}
+              {%- if block.settings.button_text != blank -%}
+                <span class="tooltiptext">
+                  {{ block.settings.button_text }}
+                </span>
+              {%- endif -%}
             </a>
           {%- endfor -%}
         </div>

@@ -55,15 +55,15 @@
                 {{ block.settings.description }}
               </div>
 
-              <div class="mySwiper-{{ block.id }} swiper">
-                <div class="swiper-wrapper">
+              <div class="mySwiper-{{ block.id }}">
+                <div class="product-pagination">
                   {%- assign clip_metafield = block.settings.metaobject -%}
-                  {%- if block.settings.metaobject_2 != "" -%}
+                  {%- if block.settings.metaobject_2 != '' -%}
                     {%- assign clip_metafield = block.settings.metaobject_2 -%}
                   {%- endif -%}
 
                   {%- for clip_art in clip_metafield.clip_arts.value -%}
-                    <div class="grid__item swiper-slide ui_grid__item">
+                    <div class="grid__item ui_grid__item">
                       <div class="grid__item-media">
                         <img
                           src="{{ clip_art.image | img_url: 'master' }}"
@@ -73,19 +73,23 @@
                         >
                       </div>
                       <div class="grid__item-content center">
-                        <h4 class="es-font-h5">{{ clip_art.title }}</h4>
+                        <h2 class="es-font-h5">{{ clip_art.title }}</h2>
                         <div class="grid__item-text">{{ clip_art.text }}</div>
                       </div>
                     </div>
-                    {%- endfor -%}
+                  {%- endfor -%}
                 </div>
-                <div class="swiper-navigation">
-                  <div class="swiper-button-prev" style="--swiper-navigation-size: 12px;">
-                    {%- render 'es-arrow-right-1' -%}
+                <div class="pagination-section">
+                  <div class="page-previous-btn">
+                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none">
+                      <path d="M6 1L1 6L6 11" stroke="#900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                   </div>
-                  <div class="swiper-pagination"></div>
-                  <div class="swiper-button-next" style="--swiper-navigation-size: 12px;">
-                    {%- render 'es-arrow-right-1' -%}
+                  <div class="pagination-controls"></div>
+                  <div class="page-next-btn">
+                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none">
+                      <path d="M1 1L6 6L1 11" stroke="#900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                   </div>
                 </div>
               </div>
@@ -97,26 +101,139 @@
   </div>
 </div>
 
+<style>
+  .product-pagination {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, auto);
+  }
+
+  @media (max-width: 749px) {
+    .product-pagination {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(10, auto);
+    }
+  }
+
+  .pagination-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+    margin-top: 0;
+  }
+
+  .page-previous-btn,
+  .page-next-btn {
+    font-size: 32px;
+    color: #900;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: color 0.2s;
+    user-select: none;
+  }
+
+  .page-previous-btn.disabled,
+  .page-next-btn.disabled {
+    opacity: 0.3;
+    pointer-events: none;
+    color: #900;
+  }
+
+  .pagination-controls {
+    display: flex;
+    gap: 10px;
+  }
+
+  .pagination-controls button {
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    font-weight: 400;
+  }
+
+  .pagination-controls button.active {
+    font-weight: 700;
+    color: #900;
+  }
+
+  .pagination-controls button.active::after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 20px;
+    height: 2px;
+    border-radius: 2px;
+    background: #900;
+  }
+
+  .product-pagination .grid__item.ui_grid__item {
+    width: 100% !important;
+    max-width: none;
+  }
+
+  .product-pagination .grid__item.ui_grid__item.active {
+    display: none;
+  }
+
+  .page-previous-btn svg,
+  .page-next-btn svg {
+    display: block;
+    margin: auto;
+    width: 15px;
+    height: 15px;
+  }
+
+  .page-previous-btn:hover svg path,
+  .page-next-btn:hover svg path {
+    stroke: #600;
+  }
+
+  .grid__item.ui_grid__item.placeholder {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .es-library .content-container {
+    gap: 30px;
+  }
+</style>
+
 <script>
   document.addEventListener("DOMContentLoaded", () => {
     (() => {
       {%- for block in section.blocks -%}
-        initESSlider(document.querySelector(".mySwiper-{{ block.id }}"));
+        pagination(document.querySelectorAll('.library--item'), {{ section.settings.desktop_products_per_page }}, {{ section.settings.mobile_products_per_page }});
       {%- endfor -%}
   
       var libraryItems = document.querySelectorAll('#shopify-section-{{ section.id }} .library--item');
-  
+
       document.querySelectorAll('#shopify-section-{{ section.id }} [name="galleryCategory"]')?.forEach(input => {
         input.addEventListener("change", function () {
           libraryItems.forEach(item => {
             item.classList.add("hidden");
           });
-  
-          document.querySelector(`${this.value}`)?.classList.remove('hidden');
+
+          const target = document.querySelector(`${this.value}`);
+          if (target) {
+            target.classList.remove('hidden');
+            pagination([target], {{ section.settings.desktop_products_per_page }}, {{ section.settings.mobile_products_per_page }});
+          }
         });
       });
     })();
-  })
+  });
 </script>
 
 {% schema %}
@@ -131,6 +248,18 @@
     {
       "type": "header",
       "content": "Tab settings"
+    },
+    {
+      "type": "number",
+      "id": "desktop_products_per_page",
+      "label": "Desktop Products Per Page",
+      "default": 20
+    },
+    {
+      "type": "number",
+      "id": "mobile_products_per_page",
+      "label": "Mobile Products Per Page",
+      "default": 8
     },
     {
       "type": "checkbox",

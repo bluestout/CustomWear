@@ -25,7 +25,7 @@
           "settings": {
             "subheading": "",
             "heading": "Clip Art Library",
-            "heading_tag": "h2",
+            "heading_tag": "h1",
             "heading_size": "h1"
           }
         }
@@ -36,6 +36,7 @@
       "settings": {
         "show_space": false,
         "image": "shopify://shop_images/Clip_Art_2880_x_580_CW_f1a74204-6230-4858-a16a-191ae38b7cd1.png",
+        "image_mobile": "shopify://shop_images/Clip_Art_Mobile_CW_750_x_400-Photoroom_1_1.png",
         "image_overlay_opacity": 100,
         "opacity_type": "gradient",
         "opacity_color": "secondary",
@@ -94,183 +95,206 @@
           "settings": {
             "heading": "Aircrafts",
             "description": "<p>Browse customizable hat clip art perfect for embroidered caps, leather patches, screen printing, and custom Richardson hats. Add your logo or use bold, ready-made graphics to enhance your design.</p>",
-            "metaobject": "aircrafts"
+            "metaobject": "aircrafts",
+            "metaobject_2": ""
           }
         },
         "library_nACpkm": {
           "type": "library",
           "settings": {
             "heading": "Bugs & Insects",
-            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "bugs-insects"
+            "description": "<p>Browse customizable hat clip art perfect for embroidered caps, leather patches, screen printing, and custom Richardson hats. Add your logo or use bold, ready-made graphics to enhance your design.</p>",
+            "metaobject": "bugs-insects",
+            "metaobject_2": ""
           }
         },
         "library_7BwtJP": {
           "type": "library",
           "settings": {
             "heading": "Children",
-            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "children"
+            "description": "<p>Browse customizable hat clip art perfect for embroidered caps, leather patches, screen printing, and custom Richardson hats. Add your logo or use bold, ready-made graphics to enhance your design.</p>",
+            "metaobject": "children",
+            "metaobject_2": ""
           }
         },
         "library_XjhXp7": {
           "type": "library",
           "settings": {
             "heading": "Christmas",
-            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "christmas"
+            "description": "<p>Browse customizable hat clip art perfect for embroidered caps, leather patches, screen printing, and custom Richardson hats. Add your logo or use bold, ready-made graphics to enhance your design.</p>",
+            "metaobject": "christmas",
+            "metaobject_2": ""
           }
         },
         "library_jpaBqx": {
           "type": "library",
           "settings": {
             "heading": "Countries & Flags",
-            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "countries-flags"
+            "description": "<p>Browse customizable hat clip art perfect for embroidered caps, leather patches, screen printing, and custom Richardson hats. Add your logo or use bold, ready-made graphics to enhance your design.</p>",
+            "metaobject": "countries-flags",
+            "metaobject_2": ""
           }
         },
         "library_yhxeDm": {
           "type": "library",
           "settings": {
             "heading": "Dog & Cat",
-            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "dog-cat"
+            "description": "<p>Browse customizable hat clip art perfect for embroidered caps, leather patches, screen printing, and custom Richardson hats. Add your logo or use bold, ready-made graphics to enhance your design.</p>",
+            "metaobject": "dog-cat",
+            "metaobject_2": ""
           }
         },
         "library_MktMtX": {
           "type": "library",
           "settings": {
             "heading": "Equipment",
-            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "equipment"
+            "description": "<p>Browse customizable hat clip art perfect for embroidered caps, leather patches, screen printing, and custom Richardson hats. Add your logo or use bold, ready-made graphics to enhance your design.</p>",
+            "metaobject": "equipment",
+            "metaobject_2": ""
           }
         },
         "library_mGw4tD": {
           "type": "library",
           "settings": {
             "heading": "Fire & Rescue",
-            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "fire-rescue"
+            "description": "<p>Browse customizable hat clip art perfect for embroidered caps, leather patches, screen printing, and custom Richardson hats. Add your logo or use bold, ready-made graphics to enhance your design.</p>",
+            "metaobject": "fire-rescue",
+            "metaobject_2": ""
           }
         },
         "library_zNeLzV": {
           "type": "library",
           "settings": {
             "heading": "Fishing & Aquatic",
-            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "fishing-aquatic"
+            "description": "<p>Browse customizable hat clip art perfect for embroidered caps, leather patches, screen printing, and custom Richardson hats. Add your logo or use bold, ready-made graphics to enhance your design.</p>",
+            "metaobject": "fishing-aquatic",
+            "metaobject_2": ""
           }
         },
         "library_fWCTq3": {
           "type": "library",
           "settings": {
             "heading": "Floral",
-            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "floral"
+            "description": "<p>Browse customizable hat clip art perfect for embroidered caps, leather patches, screen printing, and custom Richardson hats. Add your logo or use bold, ready-made graphics to enhance your design.</p>",
+            "metaobject": "floral",
+            "metaobject_2": ""
           }
         },
         "library_YRf9AP": {
           "type": "library",
           "settings": {
             "heading": "Food",
-            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "food"
+            "description": "<p>Browse customizable hat clip art perfect for embroidered caps, leather patches, screen printing, and custom Richardson hats. Add your logo or use bold, ready-made graphics to enhance your design.</p>",
+            "metaobject": "food",
+            "metaobject_2": ""
           }
         },
         "library_mGbwLr": {
           "type": "library",
           "settings": {
             "heading": "Holiday",
-            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "holiday"
+            "description": "<p>Browse customizable hat clip art perfect for embroidered caps, leather patches, screen printing, and custom Richardson hats. Add your logo or use bold, ready-made graphics to enhance your design.</p>",
+            "metaobject": "holiday",
+            "metaobject_2": ""
           }
         },
         "library_dGRnMc": {
           "type": "library",
           "settings": {
             "heading": "Horse & Western",
-            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "horse-western"
+            "description": "<p>Browse customizable hat clip art perfect for embroidered caps, leather patches, screen printing, and custom Richardson hats. Add your logo or use bold, ready-made graphics to enhance your design.</p>",
+            "metaobject": "horse-western",
+            "metaobject_2": ""
           }
         },
         "library_mEkBAx": {
           "type": "library",
           "settings": {
             "heading": "Hunting & Wildlife",
-            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "hunting-wildlife"
+            "description": "<p>Browse customizable hat clip art perfect for embroidered caps, leather patches, screen printing, and custom Richardson hats. Add your logo or use bold, ready-made graphics to enhance your design.</p>",
+            "metaobject": "hunting-wildlife",
+            "metaobject_2": ""
           }
         },
         "library_feMMMk": {
           "type": "library",
           "settings": {
             "heading": "Team Sport Mascots",
-            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "team-sport-mascots"
+            "description": "<p>Browse customizable hat clip art perfect for embroidered caps, leather patches, screen printing, and custom Richardson hats. Add your logo or use bold, ready-made graphics to enhance your design.</p>",
+            "metaobject": "team-sport-mascots",
+            "metaobject_2": ""
           }
         },
         "library_PN8hLf": {
           "type": "library",
           "settings": {
             "heading": "Corporate logos",
-            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "corporate-logos"
+            "description": "<p>Browse customizable hat clip art perfect for embroidered caps, leather patches, screen printing, and custom Richardson hats. Add your logo or use bold, ready-made graphics to enhance your design.</p>",
+            "metaobject": "corporate-logos",
+            "metaobject_2": ""
           }
         },
         "library_TwTkTk": {
           "type": "library",
           "settings": {
             "heading": "Military",
-            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "military"
+            "description": "<p>Browse customizable hat clip art perfect for embroidered caps, leather patches, screen printing, and custom Richardson hats. Add your logo or use bold, ready-made graphics to enhance your design.</p>",
+            "metaobject": "military",
+            "metaobject_2": ""
           }
         },
         "library_aPGnAw": {
           "type": "library",
           "settings": {
             "heading": "Miscellaneous",
-            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "miscellaneous"
+            "description": "<p>Browse customizable hat clip art perfect for embroidered caps, leather patches, screen printing, and custom Richardson hats. Add your logo or use bold, ready-made graphics to enhance your design.</p>",
+            "metaobject": "miscellaneous",
+            "metaobject_2": ""
           }
         },
         "library_AyXRL4": {
           "type": "library",
           "settings": {
             "heading": "Music",
-            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "music"
+            "description": "<p>Browse customizable hat clip art perfect for embroidered caps, leather patches, screen printing, and custom Richardson hats. Add your logo or use bold, ready-made graphics to enhance your design.</p>",
+            "metaobject": "music",
+            "metaobject_2": ""
           }
         },
         "library_7X6df7": {
           "type": "library",
           "settings": {
             "heading": "Nautical",
-            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "nautical"
+            "description": "<p>Browse customizable hat clip art perfect for embroidered caps, leather patches, screen printing, and custom Richardson hats. Add your logo or use bold, ready-made graphics to enhance your design.</p>",
+            "metaobject": "nautical",
+            "metaobject_2": ""
           }
         },
         "library_XhMa4m": {
           "type": "library",
           "settings": {
             "heading": "Occupation",
-            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "occupation"
+            "description": "<p>Browse customizable hat clip art perfect for embroidered caps, leather patches, screen printing, and custom Richardson hats. Add your logo or use bold, ready-made graphics to enhance your design.</p>",
+            "metaobject": "occupation",
+            "metaobject_2": ""
           }
         },
         "library_4fYVEk": {
           "type": "library",
           "settings": {
             "heading": "Sports",
-            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "sports"
+            "description": "<p>Browse customizable hat clip art perfect for embroidered caps, leather patches, screen printing, and custom Richardson hats. Add your logo or use bold, ready-made graphics to enhance your design.</p>",
+            "metaobject": "sports",
+            "metaobject_2": ""
           }
         },
         "library_fHQfVq": {
           "type": "library",
           "settings": {
             "heading": "Wheels",
-            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "wheels"
+            "description": "<p>Browse customizable hat clip art perfect for embroidered caps, leather patches, screen printing, and custom Richardson hats. Add your logo or use bold, ready-made graphics to enhance your design.</p>",
+            "metaobject": "",
+            "metaobject_2": "wheels"
           }
         }
       },
@@ -300,6 +324,8 @@
         "library_fHQfVq"
       ],
       "settings": {
+        "desktop_products_per_page": 20,
+        "mobile_products_per_page": 8,
         "tab_section": true,
         "hide_section": false,
         "custom_id": "EmbroideryStockDesigns",
@@ -321,48 +347,54 @@
           "type": "library",
           "settings": {
             "heading": "Baker/Chef",
-            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "baker-chef"
+            "description": "<p>We stitch embroidered logos with precision by digitizing your artwork—perfect for the front, side, or back of structured caps. For smooth, one-color designs, screen printing creates a crisp look on seamless-front hats.</p>",
+            "metaobject": "",
+            "metaobject_2": "baker-chef"
           }
         },
         "library_4KVUzp": {
           "type": "library",
           "settings": {
             "heading": "Automotive/Service",
-            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "automotive-service"
+            "description": "<p>We stitch embroidered logos with precision by digitizing your artwork—perfect for the front, side, or back of structured caps. For smooth, one-color designs, screen printing creates a crisp look on seamless-front hats.</p>",
+            "metaobject": "",
+            "metaobject_2": "automotive-service"
           }
         },
         "library_emELhi": {
           "type": "library",
           "settings": {
             "heading": "Cleaning/Janitor",
-            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "cleaning-janitor"
+            "description": "<p>We stitch embroidered logos with precision by digitizing your artwork—perfect for the front, side, or back of structured caps. For smooth, one-color designs, screen printing creates a crisp look on seamless-front hats.</p>",
+            "metaobject": "",
+            "metaobject_2": "cleaning-janitor"
           }
         },
         "library_MTEwcA": {
           "type": "library",
           "settings": {
             "heading": "Computers",
-            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "computers"
+            "description": "<p>We stitch embroidered logos with precision by digitizing your artwork—perfect for the front, side, or back of structured caps. For smooth, one-color designs, screen printing creates a crisp look on seamless-front hats.</p>",
+            "metaobject": "",
+            "metaobject_2": "computers"
           }
         },
         "library_Kt4idG": {
           "type": "library",
           "settings": {
             "heading": "Construction",
-            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "construction"
+            "description": "<p>We stitch embroidered logos with precision by digitizing your artwork—perfect for the front, side, or back of structured caps. For smooth, one-color designs, screen printing creates a crisp look on seamless-front hats.</p>",
+            "metaobject": "",
+            "metaobject_2": "construction"
           }
         },
         "library_CKkpg6": {
           "type": "library",
           "settings": {
             "heading": "Electrician",
-            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "electrician"
+            "description": "<p>We stitch embroidered logos with precision by digitizing your artwork—perfect for the front, side, or back of structured caps. For smooth, one-color designs, screen printing creates a crisp look on seamless-front hats.</p>",
+            "metaobject": "",
+            "metaobject_2": "electrician"
           }
         },
         "library_HbUxGQ": {
@@ -378,24 +410,27 @@
           "type": "library",
           "settings": {
             "heading": "Fire/Police",
-            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "fire-police"
+            "description": "<p>We stitch embroidered logos with precision by digitizing your artwork—perfect for the front, side, or back of structured caps. For smooth, one-color designs, screen printing creates a crisp look on seamless-front hats.</p>",
+            "metaobject": "",
+            "metaobject_2": "fire-police"
           }
         },
         "library_Q3HURM": {
           "type": "library",
           "settings": {
             "heading": "Landscaping",
-            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "landscaping"
+            "description": "<p>We stitch embroidered logos with precision by digitizing your artwork—perfect for the front, side, or back of structured caps. For smooth, one-color designs, screen printing creates a crisp look on seamless-front hats.</p>",
+            "metaobject": "",
+            "metaobject_2": "landscaping"
           }
         },
         "library_cUgRHm": {
           "type": "library",
           "settings": {
             "heading": "Painting",
-            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "painting"
+            "description": "<p>We stitch embroidered logos with precision by digitizing your artwork—perfect for the front, side, or back of structured caps. For smooth, one-color designs, screen printing creates a crisp look on seamless-front hats.</p>",
+            "metaobject": "",
+            "metaobject_2": "painting"
           }
         },
         "library_jYx9Lz": {
@@ -411,24 +446,27 @@
           "type": "library",
           "settings": {
             "heading": "Plumber",
-            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "plumber"
+            "description": "<p>We stitch embroidered logos with precision by digitizing your artwork—perfect for the front, side, or back of structured caps. For smooth, one-color designs, screen printing creates a crisp look on seamless-front hats.</p>",
+            "metaobject": "",
+            "metaobject_2": "plumber"
           }
         },
         "library_4k6wEW": {
           "type": "library",
           "settings": {
             "heading": "Tools",
-            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "tools"
+            "description": "<p>We stitch embroidered logos with precision by digitizing your artwork—perfect for the front, side, or back of structured caps. For smooth, one-color designs, screen printing creates a crisp look on seamless-front hats.</p>",
+            "metaobject": "",
+            "metaobject_2": "tools"
           }
         },
         "library_8QTdGj": {
           "type": "library",
           "settings": {
             "heading": "Trucks/Heavy Equipment",
-            "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "trucks-heavy-equipment"
+            "description": "<p>We stitch embroidered logos with precision by digitizing your artwork—perfect for the front, side, or back of structured caps. For smooth, one-color designs, screen printing creates a crisp look on seamless-front hats.</p>",
+            "metaobject": "",
+            "metaobject_2": "trucks-heavy-equipment"
           }
         }
       },
@@ -449,6 +487,8 @@
         "library_8QTdGj"
       ],
       "settings": {
+        "desktop_products_per_page": 20,
+        "mobile_products_per_page": 8,
         "tab_section": true,
         "hide_section": true,
         "custom_id": "ScreenPrintStockDesigns",

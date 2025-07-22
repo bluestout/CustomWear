@@ -492,7 +492,7 @@
       "last_name": "Last name",
       "email": "Email",
       "password": "Password",
-      "submit": "Create an Account"
+      "submit": "Create an Account with CustomizedWear.com"
     },
     "reset_password": {
       "title": "Reset account password",

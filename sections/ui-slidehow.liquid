@@ -56,14 +56,21 @@
                   <div class="font-p ui-slideshow__description">{{ block.settings.description }}</div>
                 {%- endif -%}
                 {%- if block.settings.button_link != blank -%}
-                  <a href="{{ block.settings.button_link }}" class="es-button">{{ block.settings.button_text }}</a>
+                  <a href="{{ block.settings.button_link }}" class="es-button">
+                    {{- block.settings.button_text -}}
+                  </a>
                 {%- endif -%}
               </div>
             </div>
           {%- endfor -%}
         </div>
 
-        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev">
+          <img src="{{ section.settings.slide_btn | img_url : "master" }}" width="auto" height="auto" alt="no svg">
+        </div>
+        <div class="swiper-button-next">
+          <img src="{{ section.settings.slide_btn | img_url : "master" }}" width="auto" height="auto" alt="no svg">
+        </div>
       </div>
     </div>
   </div>
@@ -72,10 +79,10 @@
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const sw = new Swiper('#shopify-section-{{ section.id }} .ui-slideshow', {
-        loop: true,
-      pagination: {
-        el: '#shopify-section-{{ section.id }} .ui-slideshow .swiper-pagination',
-        clickable: true,
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       },
     });
   });
@@ -90,6 +97,11 @@
     "groups": ["header", "footer"]
   },
   "settings": [
+    {
+      "type": "image_picker",
+      "id": "slide_btn",
+      "label": "Slide Button"
+    },
     {
       "type": "header",
       "content": "t:sections.collapsible_content.settings.layout_header.content"
@@ -167,9 +179,9 @@
           "label": "Mobile Image"
         },
         {
-            "type": "text",
-            "id": "header_text",
-            "label": "header-second-text"
+          "type": "text",
+          "id": "header_text",
+          "label": "header-second-text"
         },
         {
           "type": "inline_richtext",
