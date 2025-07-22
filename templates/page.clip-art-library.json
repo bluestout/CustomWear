@@ -403,8 +403,7 @@
           "settings": {
             "heading": "Occupational/Misc.",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "occupational-misc",
-            "metaobject_2": ""
+            "metaobject": "occupational-misc"
           }
         },
         "library_rwDec7": {
@@ -440,8 +439,7 @@
           "settings": {
             "heading": "Photography",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "photography",
-            "metaobject_2": ""
+            "metaobject": "photography"
           }
         },
         "library_9cX44U": {
