@@ -4516,7 +4516,7 @@ slideshow-component {
       }
 
       a {
-        max-width: 161.5px;
+        min-width: 160px;
         max-height: 44px;
       }
     }
@@ -4615,7 +4615,7 @@ slideshow-component {
         }
 
         a {
-          max-width: 161.5px;
+          min-width: 160px;
           max-height: 44px;
         }
       }
@@ -4708,11 +4708,12 @@ slideshow-component {
       }
 
       a {
-        max-width: 161.5px;
+        min-width: 160px;
         max-height: 44px;
         display: flex;
         justify-content: center;
         align-items: center;
+        max-width: max-content;
       }
     }
   }
