@@ -91,8 +91,8 @@
           "settings": {
             "image": "shopify://shop_images/Bucket_Blank_Banner_2880_x_1300_CAPS-Photoroom.png",
             "sm_image": "shopify://shop_images/Bucket_Blank_Banner_2880_x_1300_CAPS-Photoroom.png",
-            "header_text": "Any Product",
-            "heading": "customize",
+            "header_text": "",
+            "heading": "",
             "description": "<p>Only want blank hats? Visit our other store where you’ll find hats with no decoration</p>",
             "button_text": "Visit Capswholesalers.com",
             "button_link": "https://capwholesaler.myshopify.com/"
