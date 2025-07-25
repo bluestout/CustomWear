@@ -7,7 +7,15 @@ const KlaviyoReady = () => {
     } else {
       img.setAttribute("alt", "ADA Alt Text")
     }
-  })
+  });
+
+  const btnModal = document.querySelector('div[data-testid="animated-teaser"] .needsclick');
+  if (btnModal && btnModal.parentNode.tagName !== 'NAV') {
+    const navTag = document.createElement("nav");
+    navTag.style.height = '64px';
+    btnModal.parentNode.insertBefore(navTag, btnModal);
+    navTag.appendChild(btnModal);
+  }
 }
 
 const observer = new MutationObserver((mutations, obs) => {
