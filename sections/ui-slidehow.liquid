@@ -56,7 +56,7 @@
                   <div class="font-p ui-slideshow__description">{{ block.settings.description }}</div>
                 {%- endif -%}
                 {%- if block.settings.button_link != blank -%}
-                  <a href="{{ block.settings.button_link }}" class="es-button">
+                  <a href="{{ block.settings.button_link }}" class="es-button" {% unless block.settings.button_target contains "default" %}target="{{ block.settings.button_target }}"{% endunless %}>
                     {{- block.settings.button_text -}}
                   </a>
                 {%- endif -%}
@@ -197,6 +197,22 @@
           "type": "text",
           "id": "button_text",
           "label": "Button Text"
+        },
+        {
+          "type": "select",
+          "id": "button_target",
+          "options": [
+            {
+              "label": "default",
+              "value": "default"
+            },
+            {
+              "label": "_blank",
+              "value": "_blank"
+            }
+          ],
+          "default": "default",
+          "label": "Button Target"
         },
         {
           "type": "url",
