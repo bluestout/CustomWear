@@ -83,6 +83,7 @@
             "heading": "customize",
             "description": "<p>Design your perfect hat – customize colors, fonts for a unique look!</p>",
             "button_text": "Customize",
+            "button_target": "default",
             "button_link": "shopify://pages/shop-by-style"
           }
         },
@@ -95,6 +96,7 @@
             "heading": "",
             "description": "<p>Only want blank hats? Visit our other store where you’ll find hats with no decoration</p>",
             "button_text": "Visit Capswholesalers.com",
+            "button_target": "_blank",
             "button_link": "https://capwholesaler.myshopify.com/"
           }
         },
@@ -107,6 +109,7 @@
             "heading": "customize",
             "description": "<p>Design your perfect hat – customize colors, fonts for a unique look!</p>",
             "button_text": "Customize",
+            "button_target": "default",
             "button_link": "shopify://pages/shop-by-style"
           }
         }
