@@ -90,7 +90,7 @@
 .product .cl-po--option[data-option="Right - Customization Type"],
 .product .cl-po--option[data-option="Right - Customization Type "],
 .product .cl-po--option[data-option="Back - Customization Type"],
-.product .cl-po--option[data-option="Back - Customization Type "]{
+.product .cl-po--option[data-option="Back - Customization Type "] {
   padding-left: 0px !important;
   padding-right: 0px !important;
   border: none !important;
@@ -208,7 +208,7 @@
 [data-option="Right - Customization Type "] label.cl-po--radio-item input,
 [data-option="Right - Customization Type"] label.cl-po--radio-item input,
 [data-option="Back - Customization Type "] label.cl-po--radio-item input,
-[data-option="Back - Customization Type"] label.cl-po--radio-item input{
+[data-option="Back - Customization Type"] label.cl-po--radio-item input {
   visibility: hidden;
   width: 0px !important;
   height: 0px !important;
@@ -242,7 +242,9 @@
 .product .cl-po--option[data-option="Left - Customization Type"] .cl-po--label,
 .product .cl-po--option[data-option="Left - Customization Type "] .cl-po--label,
 .product .cl-po--option[data-option="Right - Customization Type"] .cl-po--label,
-.product .cl-po--option[data-option="Right - Customization Type "] .cl-po--label,
+.product
+  .cl-po--option[data-option="Right - Customization Type "]
+  .cl-po--label,
 .product .cl-po--option[data-option="Back - Customization Type"] .cl-po--label,
 .product .cl-po--option[data-option="Back - Customization Type "] .cl-po--label,
 [data-option="Additional Lettering Location"] .cl-po--label,
@@ -256,12 +258,24 @@
 [data-option="Screen Print - Ink Color Method"] .cl-po--radio-item,
 [data-option="Additional Location "] label.cl-po--checkbox-item,
 [data-option="Additional Location"] label.cl-po--checkbox-item,
-.product .cl-po--option[data-option="Left - Customization Type"] label.cl-po--radio-item,
-.product .cl-po--option[data-option="Left - Customization Type "] label.cl-po--radio-item,
-.product .cl-po--option[data-option="Right - Customization Type"] label.cl-po--radio-item,
-.product .cl-po--option[data-option="Right - Customization Type "] label.cl-po--radio-item,
-.product .cl-po--option[data-option="Back - Customization Type"] label.cl-po--radio-item,
-.product .cl-po--option[data-option="Back - Customization Type "] label.cl-po--radio-item,
+.product
+  .cl-po--option[data-option="Left - Customization Type"]
+  label.cl-po--radio-item,
+.product
+  .cl-po--option[data-option="Left - Customization Type "]
+  label.cl-po--radio-item,
+.product
+  .cl-po--option[data-option="Right - Customization Type"]
+  label.cl-po--radio-item,
+.product
+  .cl-po--option[data-option="Right - Customization Type "]
+  label.cl-po--radio-item,
+.product
+  .cl-po--option[data-option="Back - Customization Type"]
+  label.cl-po--radio-item,
+.product
+  .cl-po--option[data-option="Back - Customization Type "]
+  label.cl-po--radio-item,
 [data-option="Additional Lettering Location"] label.cl-po--checkbox-item {
   border: 1px solid #ccc;
   padding: 5px 15px;
@@ -288,12 +302,24 @@
   .cl-po--checkbox-item:has(input[type="checkbox"]:checked),
 [data-option="Additional Location"]
   .cl-po--checkbox-item:has(input[type="checkbox"]:checked),
-.product .cl-po--option[data-option="Left - Customization Type"] .cl-po--radio-item:has(input[type="radio"]:checked),
-.product .cl-po--option[data-option="Left - Customization Type "] .cl-po--radio-item:has(input[type="radio"]:checked),
-.product .cl-po--option[data-option="Right - Customization Type"] .cl-po--radio-item:has(input[type="radio"]:checked),
-.product .cl-po--option[data-option="Right - Customization Type "] .cl-po--radio-item:has(input[type="radio"]:checked),
-.product .cl-po--option[data-option="Back - Customization Type"] .cl-po--radio-item:has(input[type="radio"]:checked),
-.product .cl-po--option[data-option="Back - Customization Type "] .cl-po--radio-item:has(input[type="radio"]:checked){
+.product
+  .cl-po--option[data-option="Left - Customization Type"]
+  .cl-po--radio-item:has(input[type="radio"]:checked),
+.product
+  .cl-po--option[data-option="Left - Customization Type "]
+  .cl-po--radio-item:has(input[type="radio"]:checked),
+.product
+  .cl-po--option[data-option="Right - Customization Type"]
+  .cl-po--radio-item:has(input[type="radio"]:checked),
+.product
+  .cl-po--option[data-option="Right - Customization Type "]
+  .cl-po--radio-item:has(input[type="radio"]:checked),
+.product
+  .cl-po--option[data-option="Back - Customization Type"]
+  .cl-po--radio-item:has(input[type="radio"]:checked),
+.product
+  .cl-po--option[data-option="Back - Customization Type "]
+  .cl-po--radio-item:has(input[type="radio"]:checked) {
   border-color: black;
   background: white;
 }
@@ -364,7 +390,8 @@
   max-width: 350px !important;
 }
 
-.cl-po--option[data-option="Buy More Save More"] {
+.cl-po--option[data-option="Buy More Save More"],
+.cl-po--option[data-option="Use_What_Ive_Created_BMSM"] {
   padding: 0px !important;
   border: none !important;
   border-top: 1px solid #d8d8d8 !important;
@@ -402,15 +429,17 @@
 }
 
 .cl-po--option[data-option="Use What I’ve Already Created"] {
-    padding-bottom: 0px!important;
+  padding-bottom: 0px !important;
 }
 
-.cl-po--option[data-option="Customer phone number"] .cl-po--input{
-  margin-bottom:10px!important;
+.cl-po--option[data-option="Customer phone number"] .cl-po--input {
+  margin-bottom: 10px !important;
 }
 
-.cl-po--option[data-option="Customer phone number"] .cl-po--input::-webkit-outer-spin-button,
-.cl-po--option[data-option="Customer phone number"] .cl-po--input::-webkit-inner-spin-button {
+.cl-po--option[data-option="Customer phone number"]
+  .cl-po--input::-webkit-outer-spin-button,
+.cl-po--option[data-option="Customer phone number"]
+  .cl-po--input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
@@ -446,79 +475,111 @@ product-form.product-form {
 }
 
 textarea.cl-po--input::placeholder {
-    color: black!important;
-    font-size: 15px!important;
-    font-family: 'Inter'!important;
+  color: black !important;
+  font-size: 15px !important;
+  font-family: "Inter" !important;
 }
 
-.cl-po--option[data-option="Buy More Save More"] .cl-po--option {
-  background: transparent!important;
+.cl-po--option[data-option="Buy More Save More"] .cl-po--option,
+.cl-po--option[data-option="Use_What_Ive_Created_BMSM"] .cl-po--option {
+  background: transparent !important;
   max-width: 400px;
 }
 
-.cl-po--option[data-option="Buy More Save More"] .cl-po--label:before {
+.cl-po--option[data-option="Use_What_Ive_Created_BMSM"] {
+    padding-top: 0px!important;
+    padding-bottom: 0px!important;
+}
+
+.cl-po--option[data-option="Buy More Save More"] .cl-po--label:before,
+.cl-po--option[data-option="Use_What_Ive_Created_BMSM"] .cl-po--label:before {
   content: "Step 4:";
   color: #900;
   margin-right: 4px;
 }
 
-.product-form__input .quantity__input{
+.product-form__input .quantity__input {
   pointer-events: none;
 }
 
-@media(max-width: 1024px){
+@media (max-width: 1024px) {
   table.MsoNormalTable {
-    width: 100%!important;
+    width: 100% !important;
   }
 }
 
 .cl-po--info {
-  background-image: url('https://cdn.shopify.com/s/files/1/0728/5784/6001/files/1.png?v=1749639752')!important;
-  background-color: #E9E9E9!important;
-  width: 20px!important;
-  height: 20px!important;
-  padding: 4px!important;
+  background-image: url("https://cdn.shopify.com/s/files/1/0728/5784/6001/files/1.png?v=1749639752") !important;
+  background-color: #e9e9e9 !important;
+  width: 20px !important;
+  height: 20px !important;
+  padding: 4px !important;
 }
 
 [data-option="Embroidery Logo Location"] .cl-po--swatch-item:nth-child(5) img,
 [data-option="Embroidery Logo Location"] .cl-po--swatch-item:nth-child(6) img,
-[data-option="Embroidery - Child - Lettering"] .cl-po--swatch-item:nth-child(5) img,
-[data-option="Embroidery - Child - Lettering"] .cl-po--swatch-item:nth-child(6) img,
+[data-option="Embroidery - Child - Lettering"]
+  .cl-po--swatch-item:nth-child(5)
+  img,
+[data-option="Embroidery - Child - Lettering"]
+  .cl-po--swatch-item:nth-child(6)
+  img,
 [data-option="Embroidery - Child - Both"] .cl-po--swatch-item:nth-child(5) img,
 [data-option="Embroidery - Child - Both"] .cl-po--swatch-item:nth-child(6) img,
 [data-option="Location"] .cl-po--swatch-item:nth-child(5) img,
-[data-option="Location"] .cl-po--swatch-item:nth-child(6) img{
-   scale:1.25!important;
+[data-option="Location"] .cl-po--swatch-item:nth-child(6) img {
+  scale: 1.25 !important;
 }
 
 .cl-po--option[data-option="Additional instructions"] {
-    padding-bottom: 0px!important;
-    padding-top: 0px!important;
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
 }
 
 .cl-po--option input,
 .cl-po--option .choices__inner {
-    border-radius: 0px!important;
+  border-radius: 0px !important;
 }
 
 textarea.cl-po--input {
-    min-width: 100% !important;
-    max-width: 100% !important;
-    max-height: 200px!important;
+  min-width: 100% !important;
+  max-width: 100% !important;
+  max-height: 200px !important;
 }
 
 .cl-po--option[data-option="Patches - Custom Logo"],
 .cl-po--option[data-option="Flex Patch - Color Options"],
 .cl-po--option[data-option="Faux Leather - Custom Logo"],
-.cl-po--option[data-option="Print Stitch - Custom logo"]{
-    padding-bottom: 20px!important;
+.cl-po--option[data-option="Print Stitch - Custom logo"] {
+  padding-bottom: 20px !important;
 }
 
-.cl-po--upload .cl-po--upload-button>span:before {
-    content: "";
-    background: url('https://cdn.shopify.com/s/files/1/0728/5784/6001/files/icons8-upload-to-the-cloud-50.png?v=1750965356');
-    width: 25px;
-    height: 25px;
-    background-size: cover;
-    margin-right: 10px;
+/* USE WHAT I'VE ALREADY CREATED */
+.choices__item[data-value="Use What I’ve Already Created"] {
+  display: none;
+}
+.cl-po--upload .cl-po--upload-button > span:before {
+  content: "";
+  background: url("https://cdn.shopify.com/s/files/1/0728/5784/6001/files/icons8-upload-to-the-cloud-50.png?v=1750965356");
+  width: 25px;
+  height: 25px;
+  background-size: cover;
+  margin-right: 10px;
+}
+
+.price-per-item__container.not-allowed-qty {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.price-per-item__container.not-allowed-qty button {
+  pointer-events: none;
+}
+
+.cl-po--option[data-option="Use What I’ve Already Created"] .cl-po--option {
+    display: none;
+}
+
+.cl-po--option[data-option="Use What I’ve Already Created"] .cl-po--option[data-option="Info"] {
+    display: block;
 }
