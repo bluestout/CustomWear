@@ -161,7 +161,8 @@
 
                   <tbody role="rowgroup">
                     {%- for item in cart.items -%}
-                      <tr id="CartDrawer-Item-{{ item.index | plus: 1 }}" class="cart-item" role="row">
+                      <div class="item-properties-data-{{ forloop.index }} hidden" data-item-properties="{{ item.properties | json | escape }}" data-product-presentment-price="{{ item.presentment_price | money }}"></div>
+                      <tr id="CartDrawer-Item-{{ item.index | plus: 1 }}" class="cart-item" role="row" data-item-quantity="{{ item.quantity }}">
                         <td class="cart-item__media" role="cell" headers="CartDrawer-ColumnProductImage">
                           {% if item.image %}
                             {% comment %} Leave empty space due to a:empty CSS display: none rule {% endcomment %}
@@ -465,12 +466,12 @@
                                 <span class="visually-hidden">
                                   {{ 'products.product.price.sale_price' | t }}
                                 </span>
-                                <span class="price price--end">
+                                <span class="cart-item__discounted-price price price--end">
                                   {{ item.final_line_price | money_with_currency }}
                                 </span>
                               </div>
                             {%- else -%}
-                              <span class="price price--end">
+                              <span class="cart-item__discounted-price price price--end">
                                 {{ item.original_line_price | money_with_currency }}
                               </span>
                             {%- endif -%}
