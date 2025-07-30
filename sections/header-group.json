@@ -56,6 +56,15 @@
             "font_weight": 600
           }
         },
+        "specific_link_8YpYzj": {
+          "type": "specific_link",
+          "settings": {
+            "link_text": "Shop Blank Hats",
+            "custom_class": "use-dropdown",
+            "link_color": "#000000",
+            "font_weight": 400
+          }
+        },
         "mobile_menu_aLMmPP": {
           "type": "mobile_menu",
           "settings": {
@@ -66,6 +75,7 @@
       "block_order": [
         "specific_link_98RPUj",
         "specific_link_9rhKQx",
+        "specific_link_8YpYzj",
         "mobile_menu_aLMmPP"
       ],
       "custom_css": [
