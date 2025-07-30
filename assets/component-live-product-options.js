@@ -126,41 +126,24 @@ function removeCartItemPropertiesFromForm() {
 
 function matchAndClickCustomizerOptions() {
   const cartItemProperties = document.querySelectorAll('.cart-item-property');
-  
-  // Track values we've already processed to avoid duplicates
-  const processedValues = new Set();
-  
+
   cartItemProperties.forEach(cartProperty => {
+    const propertyName = cartProperty.name.match(/properties\[(.*)\]/)?.[1] || '';
+    if (propertyName.startsWith('Left - ') ||
+      propertyName.startsWith('Right - ') ||
+      propertyName.startsWith('Back') ||
+      propertyName.startsWith('_cl_options_json')) {
+      return;
+    }
+
     const cartValue = cartProperty.value;
-    const propertyName = cartProperty.name;
-    
-    // Skip if we've already processed this value
-    if (processedValues.has(cartValue)) {
-      return;
-    }
-    
-    // Skip certain properties that shouldn't be matched automatically
-    // Skip specific sub-properties for additional locations, but allow main "Additional Location" property
-    if (propertyName.includes('Right -') || 
-        propertyName.includes('Left -') || 
-        propertyName.includes('Back -') ||
-        propertyName.includes('_cl_options') ||
-        propertyName.includes('SKU') ||
-        propertyName.includes('Brand')) {
-      return;
-    }
-    
-    // Skip empty values
-    if (!cartValue || cartValue.trim() === '') {
-      return;
-    }
-    
-    // Add to processed values
-    processedValues.add(cartValue);
-    
+
+    console.log("cartValue", cartValue);
+
     const customizerOptions = document.querySelectorAll('.cl-po--option[data-option="Use What I’ve Already Created"] [value="' + cartValue + '"]');
+    console.log("customizerOptions", customizerOptions);
     customizerOptions.forEach(option => {
-      setTimeout(() => {
+      if (option.value === cartValue) {
         if (option.value === cartValue) {
           if (option.type === 'checkbox' || option.type === 'radio') {
             if (!option.checked) {
@@ -176,7 +159,7 @@ function matchAndClickCustomizerOptions() {
             }
           }
         }
-      }, 200);
+      }
     });
   });
 }
