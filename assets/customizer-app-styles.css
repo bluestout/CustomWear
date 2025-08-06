@@ -583,3 +583,7 @@ textarea.cl-po--input {
 .cl-po--option[data-option="Use What I’ve Already Created"] .cl-po--option[data-option="Info"] {
     display: block;
 }
+
+.cl-po--option[data-option="info"] {
+    display: block!important;
+}
