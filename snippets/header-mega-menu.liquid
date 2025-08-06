@@ -57,6 +57,9 @@
                         id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
                         href="{{ childlink.url }}"
                         class="mega-menu__link mega-menu__link--level-2 {{ custom_class }} link{% if childlink.current %} mega-menu__link--active{% endif %}"
+                        {% if childlink.url contains 'https://' %}
+                          target="_blank"
+                        {% endif %}
                         {% if childlink.current %}
                           aria-current="page"
                         {% endif %}
@@ -83,6 +86,9 @@
                                 id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}"
                                 href="{{ grandchildlink.url }}"
                                 class="mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %} {{ custom_class_2 }}"
+                                {% if grandchildlink.url contains 'https://' %}
+                                  target="_blank"
+                                {% endif %}
                                 {% if grandchildlink.current %}
                                   aria-current="page"
                                 {% endif %}
