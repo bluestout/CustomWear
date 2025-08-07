@@ -1615,9 +1615,9 @@
       text-align: center;
       min-width: max-content;
 
-      /* @media (min-width: 768px) {
-        transform: translateX(-20%);
-      } */
+      @media (max-width: 600px) {
+        display: none;
+      }
 
       &::after {
         content: "";
