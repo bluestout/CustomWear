@@ -75,8 +75,7 @@ function passCartItemPropertiesToForm(cartItemProperties) {
   const existingPropertyInputs = form.querySelectorAll('input[name^="properties["]');
   existingPropertyInputs.forEach(input => {
     if (!input.name.includes('SKU') &&
-      !input.name.includes('Brand') &&
-      !input.name.includes('Additional instructions')) {
+      !input.name.includes('Brand')) {
       input.remove();
     }
   });
@@ -87,20 +86,15 @@ function passCartItemPropertiesToForm(cartItemProperties) {
       return;
     }
 
-    // Skip Additional instructions only if it's empty
-    if (propertyName === 'Additional instructions' && (!propertyValue || propertyValue.trim() === '')) {
-      return;
-    }
-
     // Skip customizer options properties
     if (propertyName === '_cl_options_quantity_id' ||
       propertyName === '_cl_options_id' ||
       propertyName === '_cl_options_price' ||
       propertyName === '_cl_options_quantity_discount' ||
-      propertyName === '_cl_options') {
+      propertyName === '_cl_options'
+    ) {
       return;
     }
-
 
     // Decode HTML entities in property name
     const decodedPropertyName = decodeHTMLEntities(propertyName);
@@ -111,6 +105,7 @@ function passCartItemPropertiesToForm(cartItemProperties) {
     hiddenInput.classList.add('cart-item-property');
     form.appendChild(hiddenInput);
   });
+  
 }
 
 function removeCartItemPropertiesFromForm() {
@@ -122,6 +117,23 @@ function removeCartItemPropertiesFromForm() {
   cartItemPropertyInputs.forEach(input => {
     input.remove();
   });
+}
+
+function handleAdditionalInstructionsBeforeSubmit() {
+  const additionalInstructionsTextarea = document.querySelector('textarea[name="properties[Additional instructions]"]');
+
+  if (additionalInstructionsTextarea) {
+    const value = additionalInstructionsTextarea.value.trim();
+    const existingHiddenInput = document.querySelector('.cart-item-property[name="properties[Additional instructions]"]');
+
+    if (value) {
+      console.log("Yes we have new additional instructions", value);
+      if (existingHiddenInput) {
+        console.log("Updating existing hidden input", existingHiddenInput);
+        existingHiddenInput.value = value;
+      }
+    }
+  }
 }
 
 function matchAndClickCustomizerOptions() {
@@ -138,10 +150,7 @@ function matchAndClickCustomizerOptions() {
 
     const cartValue = cartProperty.value;
 
-    console.log("cartValue", cartValue);
-
     const customizerOptions = document.querySelectorAll('.cl-po--option[data-option="Use What I’ve Already Created"] [value="' + cartValue + '"]');
-    console.log("customizerOptions", customizerOptions);
     customizerOptions.forEach(option => {
       if (option.value === cartValue) {
         if (option.value === cartValue) {
@@ -206,6 +215,7 @@ function useWhatIHaveAlreadyCreated() {
       if (currentSelectedMethod === "Use What I’ve Already Created" && matchingCartItemProperties) {
         passCartItemPropertiesToForm(matchingCartItemProperties);
         matchAndClickCustomizerOptions();
+        handleAdditionalInstructionsBeforeSubmit();
 
         const cartCustomizationMethod = getPropertyValue(matchingCartItemProperties, 'Customization Method');
         if (cartCustomizationMethod === "Patches") {
@@ -243,4 +253,14 @@ window.addEventListener('option:changed', () => {
 
 window.addEventListener('cart:items-updated', () => {
   useWhatIHaveAlreadyCreated();
+});
+
+// Add event listener for form submission to handle Additional instructions
+document.addEventListener('DOMContentLoaded', () => {
+  const addToCartForm = document.querySelector('form[action="/cart/add"]');
+  if (addToCartForm) {
+    addToCartForm.addEventListener('submit', (e) => {
+      handleAdditionalInstructionsBeforeSubmit();
+    });
+  }
 });
