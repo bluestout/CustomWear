@@ -200,6 +200,11 @@
                 {{ 'accessibility.total_reviews' | t -}}
               </span>
             </p>
+
+          {% else %}
+            <div class="fera-reviews-wrapper">
+              <div data-fera-container="product_reviews_summary" data-product-id="{{ card_product.id }}"></div>
+            </div>
           {%- endif -%}
 
           {%- if sku -%}

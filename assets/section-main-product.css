@@ -1075,7 +1075,7 @@ a.product__text {
 }
 
 .thumbnail[aria-current] {
-  box-shadow: 0 0 0rem 0.1rem #b2b2b2;
+  box-shadow: 0 0 0rem 0.2rem #b2b2b2;
   border-color: #b2b2b2;
 }
 
@@ -1150,7 +1150,7 @@ a.product__text {
 }
 .thumbnail[aria-current]:focus:not(:focus-visible) {
   outline: 0;
-  box-shadow: 0 0 0 0.1rem rgb(var(--color-foreground));
+  box-shadow: 0 0 0 0.2rem #b2b2b2;
 }
 
 .thumbnail img {
@@ -1654,4 +1654,8 @@ product-info {
 }
 .product__media {
   background: white;
+}
+
+.fera-reviews-wrapper .fera-averageRating-count {
+    display: none;
 }
