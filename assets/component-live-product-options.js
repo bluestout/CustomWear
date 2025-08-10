@@ -1,143 +1,235 @@
-/*
-====================================================
-START - QUANTITY RULES EVENT LISTENER
-====================================================
-*/
-const minQty = {
+/**
+ * Live Product Options Component
+ * Handles dynamic product customization, quantity rules, and cart item matching
+ */
+
+// =============================================================================
+// CONSTANTS AND CONFIGURATION
+// =============================================================================
+
+/**
+ * Minimum quantity requirements for different customization methods
+ */
+const MINIMUM_QUANTITIES = {
   'Embroidery': 12,
-  "Use What I've Already Created": 12,
+  "Use What I’ve Already Created": 12,
   'Patches': 24,
   'Screen Print': 12
 };
 
-// Store matching cart item properties
+/**
+ * DOM selectors used throughout the component
+ */
+const SELECTORS = {
+  quantityInput: '.product-form__input quantity-input',
+  addToCartForm: 'form[action="/cart/add"]',
+  cartItemData: '.item-properties-data-1',
+  customizerOptions: '.cl-po--option[data-option="Use What I’ve Already Created"]',
+  useWhatCreatedChoices: '.choices__item[data-value="Use What I’ve Already Created"]',
+  customizationMethodSelect: 'select[name="properties[Customization Method]"]',
+  customizationTypeInputs: 'input[name="properties[Customization Type]"]',
+  additionalInstructionsTextarea: 'textarea[name="properties[Additional instructions]"]',
+  cartItemPropertyInputs: '.cart-item-property'
+};
+
+// =============================================================================
+// GLOBAL STATE
+// =============================================================================
+
+/**
+ * Stores matching cart item properties for reuse functionality
+ * @type {Array|null}
+ */
 let matchingCartItemProperties = null;
 
-// Helper function to decode HTML entities
+// =============================================================================
+// UTILITY FUNCTIONS
+// =============================================================================
+
+/**
+ * Decodes HTML entities in text
+ * @param {string} text - Text containing HTML entities
+ * @returns {string} Decoded text
+ */
 function decodeHTMLEntities(text) {
   const textArea = document.createElement('textarea');
   textArea.innerHTML = text;
   return textArea.value;
 }
 
-const qtyInputSelector = '.product-form__input quantity-input';
-window.addEventListener('option:changed', async (e) => {
-  if (e.detail.name === 'Customization Method') {
-    const customizationMethod = e.detail.value;
-
-    // Store the customization method for cart matching
-    if (window.cartMatchingProducts) {
-      window.cartMatchingProducts.currentCustomizationMethod = customizationMethod;
-    }
-
-    const qtyInput = document.querySelector(qtyInputSelector);
-    if (customizationMethod === "Use What I’ve Already Created") {
-      // Check if there's a matching cart item with Patches customization method
-      let qty = "12"; // default quantity
-      if (matchingCartItemProperties) {
-        const cartCustomizationMethod = getPropertyValue(matchingCartItemProperties, 'Customization Method');
-        if (cartCustomizationMethod === "Patches") {
-          qty = "24";
-        }
-      }
-      qtyInput.input.setAttribute('min', qty);
-      qtyInput.input.setAttribute('data-min', qty);
-      qtyInput.input.value = qty;
-      qtyInput.dispatchEvent(new Event('change'));
-
-    } else if (minQty[customizationMethod]) {
-      const qty = minQty[customizationMethod].toString();
-      qtyInput.input.setAttribute('min', qty);
-      qtyInput.input.setAttribute('data-min', qty);
-      qtyInput.input.value = qty;
-      qtyInput.dispatchEvent(new Event('change'));
-    }
-  }
-});
-
-
-/*
-====================================================
-END - QUANTITY RULES EVENT LISTENER
-====================================================
-*/
-
+/**
+ * Retrieves a property value from cart item properties array
+ * @param {Array} properties - Array of property key-value pairs
+ * @param {string} propertyName - Name of the property to find
+ * @returns {string|null} Property value or null if not found
+ */
 function getPropertyValue(properties, propertyName) {
   const propertyArray = properties.find(prop => prop[0] === propertyName);
   return propertyArray ? propertyArray[1] : null;
 }
 
-function passCartItemPropertiesToForm(cartItemProperties) {
-  const form = document.querySelector('form[action="/cart/add"]');
-  if (!form) return;
-
-  // Remove existing hidden property inputs that might conflict
-  const existingPropertyInputs = form.querySelectorAll('input[name^="properties["]');
-  existingPropertyInputs.forEach(input => {
-    if (!input.name.includes('SKU') &&
-      !input.name.includes('Brand')) {
-      input.remove();
-    }
-  });
-
-  // Add all properties from the cart item to the form
-  cartItemProperties.forEach(([propertyName, propertyValue]) => {
-    if (propertyName === 'SKU' || propertyName === 'Brand') {
-      return;
-    }
-
-    // Skip customizer options properties
-    if (propertyName === '_cl_options_quantity_id' ||
-      propertyName === '_cl_options_id' ||
-      propertyName === '_cl_options_price' ||
-      propertyName === '_cl_options_quantity_discount' ||
-      propertyName === '_cl_options'
-    ) {
-      return;
-    }
-
-    // Decode HTML entities in property name
-    const decodedPropertyName = decodeHTMLEntities(propertyName);
-    const hiddenInput = document.createElement('input');
-    hiddenInput.type = 'hidden';
-    hiddenInput.name = `properties[${decodedPropertyName}]`;
-    hiddenInput.value = propertyValue;
-    hiddenInput.classList.add('cart-item-property');
-    form.appendChild(hiddenInput);
-  });
+/**
+ * Updates quantity input with new minimum value
+ * @param {string} quantity - New quantity value
+ */
+function updateQuantityInput(quantity) {
+  const qtyInput = document.querySelector(SELECTORS.quantityInput);
+  if (!qtyInput) return;
   
+  qtyInput.input.setAttribute('min', quantity);
+  qtyInput.input.setAttribute('data-min', quantity);
+  qtyInput.input.value = quantity;
+  qtyInput.dispatchEvent(new Event('change'));
 }
 
-function removeCartItemPropertiesFromForm() {
-  const form = document.querySelector('form[action="/cart/add"]');
-  if (!form) return;
+// =============================================================================
+// QUANTITY MANAGEMENT
+// =============================================================================
 
-  // Remove all hidden inputs that were added from cart item properties
-  const cartItemPropertyInputs = form.querySelectorAll('input.cart-item-property');
-  cartItemPropertyInputs.forEach(input => {
-    input.remove();
-  });
-}
-
-function handleAdditionalInstructionsBeforeSubmit() {
-  const additionalInstructionsTextarea = document.querySelector('textarea[name="properties[Additional instructions]"]');
-
-  if (additionalInstructionsTextarea) {
-    const value = additionalInstructionsTextarea.value.trim();
-    const existingHiddenInput = document.querySelector('.cart-item-property[name="properties[Additional instructions]"]');
-
-    if (value) {
-      console.log("Yes we have new additional instructions", value);
-      if (existingHiddenInput) {
-        console.log("Updating existing hidden input", existingHiddenInput);
-        existingHiddenInput.value = value;
-      }
-    }
+/**
+ * Handles quantity rules based on customization method changes
+ * @param {CustomEvent} event - Option changed event
+ */
+function handleQuantityRules(event) {
+  if (event.detail.name !== 'Customization Method') return;
+  
+  const customizationMethod = event.detail.value;
+  
+  // Store the customization method for cart matching
+  if (window.cartMatchingProducts) {
+    window.cartMatchingProducts.currentCustomizationMethod = customizationMethod;
+  }
+  
+  if (customizationMethod === "Use What I’ve Already Created") {
+    handleUseWhatCreatedQuantity();
+  } else if (MINIMUM_QUANTITIES[customizationMethod]) {
+    const quantity = MINIMUM_QUANTITIES[customizationMethod].toString();
+    updateQuantityInput(quantity);
   }
 }
 
+/**
+ * Handles quantity for "Use What I've Already Created" option
+ */
+function handleUseWhatCreatedQuantity() {
+  let quantity = "12"; // default quantity
+  
+  if (matchingCartItemProperties) {
+    const cartCustomizationMethod = getPropertyValue(matchingCartItemProperties, 'Customization Method');
+    if (cartCustomizationMethod === "Patches") {
+      quantity = "24";
+    }
+  }
+  
+  updateQuantityInput(quantity);
+}
+
+// =============================================================================
+// FORM PROPERTY MANAGEMENT
+// =============================================================================
+
+/**
+ * Adds cart item properties to the product form as hidden inputs
+ * @param {Array} cartItemProperties - Array of property key-value pairs
+ */
+function passCartItemPropertiesToForm(cartItemProperties) {
+  const form = document.querySelector(SELECTORS.addToCartForm);
+  if (!form) return;
+  
+  // Remove existing property inputs (except SKU and Brand)
+  removeExistingPropertyInputs(form);
+  
+  // Add cart item properties to form
+  cartItemProperties.forEach(([propertyName, propertyValue]) => {
+    if (shouldSkipProperty(propertyName)) return;
+    
+    const decodedPropertyName = decodeHTMLEntities(propertyName);
+    const hiddenInput = createPropertyInput(decodedPropertyName, propertyValue);
+    form.appendChild(hiddenInput);
+  });
+}
+
+/**
+ * Removes existing property inputs from form (except protected ones)
+ * @param {HTMLElement} form - The form element
+ */
+function removeExistingPropertyInputs(form) {
+  const existingPropertyInputs = form.querySelectorAll('input[name^="properties["]');
+  existingPropertyInputs.forEach(input => {
+    if (!input.name.includes('SKU') && !input.name.includes('Brand')) {
+      input.remove();
+    }
+  });
+}
+
+/**
+ * Determines if a property should be skipped when adding to form
+ * @param {string} propertyName - Name of the property
+ * @returns {boolean} True if property should be skipped
+ */
+function shouldSkipProperty(propertyName) {
+  const skipProperties = [
+    'SKU', 
+    'Brand', 
+    '_cl_options_quantity_id',
+    '_cl_options_id',
+    '_cl_options_quantity_discount',
+    '_cl_options'
+  ];
+  
+  return skipProperties.includes(propertyName);
+}
+
+/**
+ * Creates a hidden input element for a property
+ * @param {string} propertyName - Name of the property
+ * @param {string} propertyValue - Value of the property
+ * @returns {HTMLInputElement} Hidden input element
+ */
+function createPropertyInput(propertyName, propertyValue) {
+  const hiddenInput = document.createElement('input');
+  hiddenInput.type = 'hidden';
+  hiddenInput.name = `properties[${propertyName}]`;
+  hiddenInput.value = propertyValue;
+  hiddenInput.classList.add('cart-item-property');
+  return hiddenInput;
+}
+
+/**
+ * Removes all cart item property inputs from the form
+ */
+function removeCartItemPropertiesFromForm() {
+  const form = document.querySelector(SELECTORS.addToCartForm);
+  if (!form) return;
+  
+  const cartItemPropertyInputs = form.querySelectorAll(SELECTORS.cartItemPropertyInputs);
+  cartItemPropertyInputs.forEach(input => input.remove());
+}
+
+/**
+ * Handles additional instructions before form submission
+ */
+function handleAdditionalInstructionsBeforeSubmit() {
+  const additionalInstructionsTextarea = document.querySelector(SELECTORS.additionalInstructionsTextarea);
+  if (!additionalInstructionsTextarea) return;
+  
+  const value = additionalInstructionsTextarea.value.trim();
+  const existingHiddenInput = document.querySelector('.cart-item-property[name="properties[Additional instructions]"]');
+  
+  if (value && existingHiddenInput) {
+    existingHiddenInput.value = value;
+  }
+}
+
+// =============================================================================
+// CUSTOMIZER OPTIONS MANAGEMENT
+// =============================================================================
+
+/**
+ * Matches and clicks customizer options based on cart item properties
+ */
 function matchAndClickCustomizerOptions() {
-  const cartItemProperties = document.querySelectorAll('.cart-item-property');
+  const cartItemProperties = document.querySelectorAll(SELECTORS.cartItemPropertyInputs);
 
   cartItemProperties.forEach(cartProperty => {
     const propertyName = cartProperty.name.match(/properties\[(.*)\]/)?.[1] || '';
@@ -173,87 +265,190 @@ function matchAndClickCustomizerOptions() {
   });
 }
 
+/**
+ * Extracts property name from input name attribute
+ * @param {string} inputName - Input name attribute
+ * @returns {string} Extracted property name
+ */
+function extractPropertyName(inputName) {
+  return inputName.match(/properties\[(.*)\]/)?.[1] || '';
+}
+
+/**
+ * Determines if a property should be skipped for customizer options
+ * @param {string} propertyName - Name of the property
+ * @returns {boolean} True if property should be skipped
+ */
+function shouldSkipCustomizerProperty(propertyName) {
+  return propertyName.startsWith('Left - ') ||
+         propertyName.startsWith('Right - ') ||
+         propertyName.startsWith('Back') ||
+         propertyName.startsWith('_cl_options_json');
+}
+
+/**
+ * Clicks an option element if it's not already selected
+ * @param {HTMLElement} option - Option element to click
+ */
+function clickOptionIfNeeded(option) {
+  if (option.type === 'checkbox' || option.type === 'radio') {
+    if (!option.checked) option.click();
+  } else if (option.tagName.toLowerCase() === 'option') {
+    if (!option.selected) option.click();
+  } else {
+    if (!option.checked && !option.selected) option.click();
+  }
+}
+
+/**
+ * Resets all customizer options (checkboxes and radio buttons)
+ */
+function resetCustomizerOptions() {
+  // Reset checkboxes
+  const checkboxes = document.querySelectorAll(
+    `${SELECTORS.customizerOptions} input[type="checkbox"]`
+  );
+  resetInputElements(checkboxes);
+  
+  // Reset radio buttons
+  const radios = document.querySelectorAll(
+    `${SELECTORS.customizerOptions} input[type="radio"]`
+  );
+  resetInputElements(radios);
+}
+
+/**
+ * Resets input elements and triggers change events
+ * @param {NodeList} elements - Input elements to reset
+ */
+function resetInputElements(elements) {
+  elements.forEach(element => {
+    if (element.checked) {
+      element.checked = false;
+      element.dispatchEvent(new Event('change', { bubbles: true }));
+    }
+  });
+}
+
+// =============================================================================
+// "USE WHAT I'VE ALREADY CREATED" FUNCTIONALITY
+// =============================================================================
+
+/**
+ * Main function to handle "Use What I've Already Created" functionality
+ */
 function useWhatIHaveAlreadyCreated() {
-  const cartItem = document.querySelector('.item-properties-data-1');
+  const cartItem = document.querySelector(SELECTORS.cartItemData);
+  if (!cartItem) return;
+  
   const itemPropertiesData = cartItem.dataset.itemProperties;
   const properties = JSON.parse(itemPropertiesData);
-  let showUseWhatIHaveAlreadyCreated = false;
-
+  
   setTimeout(() => {
-    const cartCustomizationMethod = getPropertyValue(properties, 'Customization Method');
-    if (cartCustomizationMethod) {
-      const choicesItems = document.querySelectorAll('.choices__item--choice[data-value]');
-      const matchingChoice = Array.from(choicesItems).find(choice =>
-        choice.getAttribute('data-value') === cartCustomizationMethod
-      );
-
-      const productPageSelectedCustomizationMethod = document.querySelector('select[name="properties[Customization Method]"]').value;
-      if (cartCustomizationMethod === "Embroidery" && productPageSelectedCustomizationMethod === "Embroidery") {
-        const cartCustomizationType = getPropertyValue(properties, 'Customization Type');
-        if (matchingChoice && cartCustomizationType) {
-          const productPageCustomizationType = document.querySelectorAll('input[name="properties[Customization Type]"]');
-          productPageCustomizationType.forEach(input => {
-            if (cartCustomizationType === input.value) {
-              showUseWhatIHaveAlreadyCreated = true;
-              matchingCartItemProperties = properties;
-            }
-          });
-        }
-      } else if (matchingChoice) {
-        showUseWhatIHaveAlreadyCreated = true;
-        matchingCartItemProperties = properties;
-      }
-    }
-
-    if (showUseWhatIHaveAlreadyCreated) {
-      const useWhatIHaveAlreadyCreated = document.querySelectorAll('.choices__item[data-value="Use What I’ve Already Created"]')
-      useWhatIHaveAlreadyCreated.forEach(choice => {
-        choice.style.display = 'block';
-      });
-
-      const currentSelectedMethod = document.querySelector('select[name="properties[Customization Method]"]').value;
-      if (currentSelectedMethod === "Use What I’ve Already Created" && matchingCartItemProperties) {
-        passCartItemPropertiesToForm(matchingCartItemProperties);
-        matchAndClickCustomizerOptions();
-        handleAdditionalInstructionsBeforeSubmit();
-
-        const cartCustomizationMethod = getPropertyValue(matchingCartItemProperties, 'Customization Method');
-        if (cartCustomizationMethod === "Patches") {
-          const qtyInput = document.querySelector(qtyInputSelector);
-          if (qtyInput) {
-            const qty = "24";
-            qtyInput.input.setAttribute('min', qty);
-            qtyInput.input.setAttribute('data-min', qty);
-            qtyInput.input.value = qty;
-            qtyInput.dispatchEvent(new Event('change'));
-          }
-        }
-
-      } else {
-        removeCartItemPropertiesFromForm(matchingCartItemProperties);
-      }
+    const shouldShow = shouldShowUseWhatCreated(properties);
+    toggleUseWhatCreatedVisibility(shouldShow);
+    
+    if (shouldShow) {
+      handleUseWhatCreatedSelection(properties);
     } else {
-      const useWhatIHaveAlreadyCreated = document.querySelectorAll('.choices__item[data-value="Use What I’ve Already Created"]')
-      useWhatIHaveAlreadyCreated.forEach(choice => {
-        choice.style.display = 'none';
-      });
       matchingCartItemProperties = null;
     }
-
   }, 300);
 }
 
-document.addEventListener('AppOptionsLoaded', () => {
-  useWhatIHaveAlreadyCreated();
-});
+/**
+ * Determines if "Use What I've Already Created" option should be shown
+ * @param {Array} properties - Cart item properties
+ * @returns {boolean} True if option should be shown
+ */
+function shouldShowUseWhatCreated(properties) {
+  const cartCustomizationMethod = getPropertyValue(properties, 'Customization Method');
+  if (!cartCustomizationMethod) return false;
+  
+  const choicesItems = document.querySelectorAll('.choices__item--choice[data-value]');
+  const matchingChoice = Array.from(choicesItems).find(choice =>
+    choice.getAttribute('data-value') === cartCustomizationMethod
+  );
+  
+  if (!matchingChoice) return false;
+  
+  const productPageSelectedMethod = document.querySelector(SELECTORS.customizationMethodSelect).value;
+  
+  // Special handling for Embroidery
+  if (cartCustomizationMethod === "Embroidery" && productPageSelectedMethod === "Embroidery") {
+    return checkEmbroideryMatch(properties);
+  }
+  
+  matchingCartItemProperties = properties;
+  return true;
+}
 
-window.addEventListener('option:changed', () => {
-  useWhatIHaveAlreadyCreated();
-});
+/**
+ * Checks if embroidery customization type matches
+ * @param {Array} properties - Cart item properties
+ * @returns {boolean} True if embroidery types match
+ */
+function checkEmbroideryMatch(properties) {
+  const cartCustomizationType = getPropertyValue(properties, 'Customization Type');
+  if (!cartCustomizationType) return false;
+  
+  const productPageCustomizationType = document.querySelectorAll(SELECTORS.customizationTypeInputs);
+  
+  for (const input of productPageCustomizationType) {
+    if (cartCustomizationType === input.value) {
+      matchingCartItemProperties = properties;
+      return true;
+    }
+  }
+  
+  return false;
+}
 
-window.addEventListener('cart:items-updated', () => {
-  useWhatIHaveAlreadyCreated();
-});
+/**
+ * Toggles visibility of "Use What I've Already Created" option
+ * @param {boolean} show - Whether to show the option
+ */
+function toggleUseWhatCreatedVisibility(show) {
+  const useWhatCreatedChoices = document.querySelectorAll(SELECTORS.useWhatCreatedChoices);
+  useWhatCreatedChoices.forEach(choice => {
+    choice.style.display = show ? 'block' : 'none';
+  });
+}
+
+/**
+ * Handles selection of "Use What I've Already Created" option
+ * @param {Array} properties - Cart item properties
+ */
+function handleUseWhatCreatedSelection(properties) {
+  const currentSelectedMethod = document.querySelector(SELECTORS.customizationMethodSelect).value;
+  
+  if (currentSelectedMethod === "Use What I’ve Already Created" && matchingCartItemProperties) {
+    passCartItemPropertiesToForm(matchingCartItemProperties);
+    matchAndClickCustomizerOptions();
+    handleAdditionalInstructionsBeforeSubmit();
+    handlePatchesQuantity();
+  } else {
+    removeCartItemPropertiesFromForm();
+  }
+}
+
+/**
+ * Handles special quantity rules for Patches customization method
+ */
+function handlePatchesQuantity() {
+  const cartCustomizationMethod = getPropertyValue(matchingCartItemProperties, 'Customization Method');
+  if (cartCustomizationMethod === "Patches") {
+    updateQuantityInput("24");
+  }
+}
+
+// =============================================================================
+// EVENT LISTENERS
+// =============================================================================
+
+window.addEventListener('option:changed', handleQuantityRules);
+window.addEventListener('option:changed', useWhatIHaveAlreadyCreated);
+document.addEventListener('AppOptionsLoaded', useWhatIHaveAlreadyCreated);
 
 // Add event listener for form submission to handle Additional instructions
 document.addEventListener('DOMContentLoaded', () => {
@@ -261,6 +456,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (addToCartForm) {
     addToCartForm.addEventListener('submit', (e) => {
       handleAdditionalInstructionsBeforeSubmit();
+      resetCustomizerOptions();
     });
   }
 });
