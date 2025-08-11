@@ -1323,6 +1323,16 @@
 
         gap: 10px;
 
+        @media (min-width: 768px) and (max-width: 1500px) {
+          flex-wrap: wrap;
+
+          button {
+            width: 100%;
+            max-width: 100%;
+            justify-content: space-between;
+          }
+        }
+
         input {
           padding-right: 1.5rem;
           border: 1px solid #fff;
