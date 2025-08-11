@@ -587,3 +587,7 @@ textarea.cl-po--input {
 .cl-po--option[data-option="info"] {
     display: block!important;
 }
+
+.cl-po--option .cl-po--label span {
+    font-weight: 400;
+}
