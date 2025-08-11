@@ -32,6 +32,7 @@
   value="{{ value }}"
   form="{{ product_form_id }}"
   class="swatch-input__input{% if visually_disabled %} visually-disabled{% endif %}"
+  aria-label="{{ value }}"
   {% if checked %}
     checked
   {% endif %}
