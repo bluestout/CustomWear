@@ -640,5 +640,5 @@ input[type="checkbox"]:checked + .cl-po--swatch {
 
 .cl-po--gallery-thumbnails,
 .thumbnail-slider {
-    display: none;
+    display: none!important;
 }
