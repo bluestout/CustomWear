@@ -271,6 +271,7 @@ cart-items {
   justify-content: left;
   gap: 15px;
   text-decoration: unset !important;
+  padding: 0 !important;
 }
 
 .cart__contents .cart-item__details{

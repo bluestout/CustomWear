@@ -28,6 +28,7 @@
                 alt="{{ block.settings.title }}"
                 width="{{ block.settings.image.width }}"
                 height="{{ block.settings.image.height }}"
+                loading="lazy"
               >
             </div>
             {%- if block.settings.title != blank -%}
@@ -44,6 +45,7 @@
                   alt="{{ block.settings.title_2 }}"
                   width="{{ block.settings.image_2.width }}"
                   height="{{ block.settings.image_2.height }}"
+                  loading="lazy"
                 >
               </div>
               {%- if block.settings.title_2 != blank -%}

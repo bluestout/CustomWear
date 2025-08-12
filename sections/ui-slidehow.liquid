@@ -32,6 +32,11 @@
                       width="{{ block.settings.image.width }}"
                       height="{{ block.settings.image.height }}"
                       alt="{{ block.settings.image.alt | default: block.settings.image.title }}"
+                      {%- if forloop.index == 1 -%}
+                        fetchpriority="high"
+                      {%- else -%}
+                        loading="lazy"
+                      {%- endif -%}
                     >
                     {%- if block.settings.sm_image != blank -%}
                       <img
@@ -40,6 +45,11 @@
                         width="{{ block.settings.sm_image.width }}"
                         height="{{ block.settings.sm_image.height }}"
                         alt="{{ block.settings.sm_image.alt | default: block.settings.sm_image.title }}"
+                        {%- if forloop.index == 1 -%}
+                          fetchpriority="high"
+                        {%- else -%}
+                          loading="lazy"
+                        {%- endif -%}
                       >
                     {%- endif -%}
                   </div>
@@ -66,10 +76,10 @@
         </div>
 
         <div class="swiper-button-prev">
-          <img src="{{ section.settings.slide_btn | img_url : "master" }}" width="auto" height="auto" alt="no svg">
+          <img src="{{ section.settings.slide_btn | img_url : "master" }}" width="auto" height="auto" alt="no svg" loading="lazy">
         </div>
         <div class="swiper-button-next">
-          <img src="{{ section.settings.slide_btn | img_url : "master" }}" width="auto" height="auto" alt="no svg">
+          <img src="{{ section.settings.slide_btn | img_url : "master" }}" width="auto" height="auto" alt="no svg" loading="lazy">
         </div>
       </div>
     </div>

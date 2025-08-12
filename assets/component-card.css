@@ -599,6 +599,7 @@
 .cart-drawer .cart-item__details dl{
   display: flex;
   flex-direction: column;
+  margin-top: 1.5rem;
 }
 
 .cart-drawer .product-option[data-option-name="SKU"] {
@@ -726,4 +727,8 @@
   color: #990000;
   text-decoration: unset;
   margin-left: 0;
+}
+
+#accessease-icon {
+  z-index: 2 !important;
 }

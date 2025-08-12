@@ -349,7 +349,8 @@
                               </span>
                             </a>
                           </cart-remove-button>
-                          <a class="cart-edit-button" href="{{ item.url }}&item={{ item.key }}">
+                          <a class="cart-edit-button" href="{{ item.url }}&item={{ item.key }}" aria-label="{{ item.title }}">
+                            <span class="hidden">ADA</span>
                             {%- render 'es-edit-icon' -%}
                           </a>
                         </div>

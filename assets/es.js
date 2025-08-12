@@ -9,7 +9,7 @@ const KlaviyoReady = () => {
     }
   });
 
-  const btnModal = document.querySelector('div[data-testid="animated-teaser"] .needsclick');
+  const btnModal = document.querySelector('.kl-teaser-U4kxrD');
   if (btnModal && btnModal.parentNode.tagName !== 'NAV') {
     const navTag = document.createElement("nav");
     navTag.style.height = '64px';
