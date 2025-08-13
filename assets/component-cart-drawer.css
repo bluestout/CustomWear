@@ -11,6 +11,12 @@
   transition: visibility var(--duration-default) ease;
 }
 
+@media (max-width: 768px) {
+  .drawer {
+    background-color: #FFF;
+  }
+}
+
 .drawer.active {
   visibility: visible;
 }
