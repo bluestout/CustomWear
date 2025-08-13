@@ -173,6 +173,12 @@ cart-drawer {
   left: 0;
 }
 
+@media  (max-width: 640px) {
+  .cart-drawer__overlay {
+    display: none !important;
+  }
+}
+
 .cart-drawer__overlay:empty {
   display: block;
 }
