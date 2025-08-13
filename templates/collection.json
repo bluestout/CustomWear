@@ -36,8 +36,8 @@
       ],
       "settings": {
         "show_space": false,
-        "image": "shopify://shop_images/Foam_2880_x_910_CWear-Photoroom.png",
-        "image_mobile": "shopify://shop_images/Foam_2880_x_910_CWear-Photoroom.png",
+        "image": "shopify://shop_images/NEW_UPDATED_FOAM_MESH-Photoroom.png",
+        "image_mobile": "{{ collection.metafields.custom.mobile_image.value }}",
         "image_overlay_opacity": 100,
         "opacity_type": "gradient",
         "opacity_color": "primary",
