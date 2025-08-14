@@ -64,13 +64,15 @@
     position: relative;
   }
 
-  summary.list-menu__item::after{
-    content: "";
-    display: none;
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    height: 100%;
+  @media (min-width: 1500px) {
+    summary.list-menu__item::after{
+      content: "";
+      display: none;
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      height: 100%;
+    }
   }
 
   summary.list-menu__item:hover:after{
