@@ -84,7 +84,7 @@
                   {{- 'icon-close.svg' | inline_asset_content -}}
                 </span>
               </button>
-              <a href="{{ routes.all_products_collection_url }}" class="button">
+              <a href="{{ routes.root_url }}" class="button">
                 {{ 'general.continue_shopping' | t }}
               </a>
 
@@ -684,8 +684,7 @@
                   {{- 'icon-close.svg' | inline_asset_content -}}
                 </button>
                 <div class="product-popup-modal__content-info">
-                  {% comment %} <h1 class="h2">{{ section.settings.page.title | escape }}</h1> {% endcomment %}
-                  {{ settings.page.content }}
+                  {{ settings.cart_additional_info_text }}
                 </div>
               </div>
             </modal-dialog>
