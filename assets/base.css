@@ -3622,3 +3622,15 @@ details-disclosure > details {
     padding-right: 0px!important;
   } 
 }
+
+.fera-reviews-wrapper {
+    min-height: 26px;
+    display: flex;
+}
+
+.fera-reviews-wrapper .fera {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
