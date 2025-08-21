@@ -3634,3 +3634,7 @@ details-disclosure > details {
     align-items: flex-start;
     width: 100%;
 }
+
+.accessease-widget-centerleft #accessease-icon {
+    z-index: 2147483645 !important;
+}
