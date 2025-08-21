@@ -223,6 +223,12 @@ class QuantityInput extends HTMLElement {
     this.querySelectorAll('button').forEach((button) =>
       button.addEventListener('click', this.onButtonClick.bind(this))
     );
+    
+    // Predefined quantity lists for different customization methods
+    this.defaultQuantityList = [12, 24, 48, 72, 96, 144, 288, 576, 1008, 1500];
+    this.patchesQuantityList = [24, 48, 96, 144, 288, 576, 1008, 1500];
+    this.screenPrintQuantityList = [24, 48, 96, 144, 288, 576, 1008];
+    this.quantityList = this.defaultQuantityList; // Default to regular list
   }
 
   quantityUpdateUnsubscriber = undefined;
@@ -230,6 +236,35 @@ class QuantityInput extends HTMLElement {
   connectedCallback() {
     this.validateQtyRules();
     this.quantityUpdateUnsubscriber = subscribe(PUB_SUB_EVENTS.quantityUpdate, this.validateQtyRules.bind(this));
+    
+    // Set initial quantity to first value in list if current value is not in the list
+    const currentValue = parseInt(this.input.value);
+    if (!this.quantityList.includes(currentValue)) {
+      this.input.value = this.quantityList[0];
+    }
+  }
+
+  /**
+   * Switches between quantity lists based on customization method
+   * @param {string} customizationMethod - The customization method
+   */
+  setQuantityListForMethod(customizationMethod) {
+    if (customizationMethod === 'Patches') {
+      this.quantityList = this.patchesQuantityList;
+    } else if (customizationMethod === 'Screen Print') {
+      this.quantityList = this.screenPrintQuantityList;
+    } else {
+      this.quantityList = this.defaultQuantityList;
+    }
+    
+    // Update current value to match new list if needed
+    const currentValue = parseInt(this.input.value);
+    if (!this.quantityList.includes(currentValue)) {
+      this.input.value = this.quantityList[0];
+      this.input.dispatchEvent(this.changeEvent);
+    }
+    
+    this.validateQtyRules();
   }
 
   disconnectedCallback() {
@@ -245,34 +280,49 @@ class QuantityInput extends HTMLElement {
   onButtonClick(event) {
     event.preventDefault();
     const previousValue = this.input.value;
+    const currentValue = parseInt(this.input.value);
+    const currentIndex = this.quantityList.indexOf(currentValue);
 
     if (event.target.name === 'plus') {
-      if (parseInt(this.input.dataset.min) > parseInt(this.input.step) && this.input.value == 0) {
-        this.input.value = this.input.dataset.min;
-      } else {
-        this.input.stepUp();
+      // Move to next quantity in the list
+      if (currentIndex !== -1 && currentIndex < this.quantityList.length - 1) {
+        this.input.value = this.quantityList[currentIndex + 1];
+      } else if (currentIndex === -1) {
+        // If current value is not in list, find the next higher value
+        const nextValue = this.quantityList.find(qty => qty > currentValue);
+        this.input.value = nextValue || this.quantityList[this.quantityList.length - 1];
       }
+      // If already at max, stay at max
     } else {
-      this.input.stepDown();
+      // Move to previous quantity in the list
+      if (currentIndex !== -1 && currentIndex > 0) {
+        this.input.value = this.quantityList[currentIndex - 1];
+      } else if (currentIndex === -1) {
+        // If current value is not in list, find the next lower value
+        const prevValue = this.quantityList.slice().reverse().find(qty => qty < currentValue);
+        this.input.value = prevValue || this.quantityList[0];
+      }
+      // If already at min, stay at min
     }
 
     if (previousValue !== this.input.value) this.input.dispatchEvent(this.changeEvent);
-
-    if (this.input.dataset.min === previousValue && event.target.name === 'minus') {
-      this.input.value = parseInt(this.input.min);
-    }
   }
 
   validateQtyRules() {
     const value = parseInt(this.input.value);
-    if (this.input.min) {
-      const buttonMinus = this.querySelector(".quantity__button[name='minus']");
-      buttonMinus.classList.toggle('disabled', parseInt(value) <= parseInt(this.input.min));
+    const currentIndex = this.quantityList.indexOf(value);
+    
+    const buttonMinus = this.querySelector(".quantity__button[name='minus']");
+    const buttonPlus = this.querySelector(".quantity__button[name='plus']");
+    
+    // Disable minus button if at first quantity in list
+    if (buttonMinus) {
+      buttonMinus.classList.toggle('disabled', currentIndex === 0 || (currentIndex === -1 && value <= this.quantityList[0]));
     }
-    if (this.input.max) {
-      const max = parseInt(this.input.max);
-      const buttonPlus = this.querySelector(".quantity__button[name='plus']");
-      buttonPlus.classList.toggle('disabled', value >= max);
+    
+    // Disable plus button if at last quantity in list
+    if (buttonPlus) {
+      buttonPlus.classList.toggle('disabled', currentIndex === this.quantityList.length - 1 || (currentIndex === -1 && value >= this.quantityList[this.quantityList.length - 1]));
     }
   }
 }
