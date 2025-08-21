@@ -635,7 +635,7 @@
           </button>
         </div>
         <div class="continue-shopping">
-          <button class="continue-shopping_link drawer__close" type="button" onclick="this.closest('cart-drawer').close()" aria-label="Close">
+          <button class="continue-shopping_link drawer__close" type="button" onclick="this.closest('cart-drawer').close();location.href='{{ routes.root_url }}'" aria-label="Close">
             {{ settings.continue_shopping }}
             <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M1.28033 8.97271C0.987437 9.26561 0.512563 9.26561 0.21967 8.97271C-0.073223 8.67982 -0.073223 8.20495 0.21967 7.91205L3.53549 4.59623L0.21967 1.28041C-0.073223 0.987513 -0.0732229 0.512638 0.21967 0.219746C0.512564 -0.0731478 0.987437 -0.0731478 1.28033 0.219746L5.12648 4.0659C5.41938 4.35879 5.41938 4.83367 5.12648 5.12656L1.28033 8.97271Z" fill="black"></path>

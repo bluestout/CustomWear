@@ -4359,6 +4359,18 @@ cart-items {
             display: block;
           }
         }
+
+        .product-popup-modal__content {
+          .product-popup-modal__toggle {
+            margin-right: -30px;
+          }
+
+          .product-popup-modal__content-info {
+            a {
+              display: inline-block;
+            }
+          }
+        }
       }
     }
   }
