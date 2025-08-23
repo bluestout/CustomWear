@@ -1935,6 +1935,7 @@ input[type='checkbox'] {
   flex-grow: 1;
   -webkit-appearance: none;
   appearance: none;
+  pointer-events: none;
 }
 
 .quantity__button {
@@ -3621,4 +3622,20 @@ details-disclosure > details {
   product-recommendations {
     padding-right: 0px!important;
   } 
+}
+
+.fera-reviews-wrapper {
+    min-height: 26px;
+    display: flex;
+}
+
+.fera-reviews-wrapper .fera {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.accessease-widget-centerleft #accessease-icon {
+    z-index: 2147483645 !important;
 }

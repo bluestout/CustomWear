@@ -14,7 +14,7 @@ const MINIMUM_QUANTITIES = {
   'Embroidery': 12,
   "Use What I’ve Already Created": 12,
   'Patches': 24,
-  'Screen Print': 12
+  'Screen Print': 24
 };
 
 /**
@@ -69,12 +69,18 @@ function getPropertyValue(properties, propertyName) {
 }
 
 /**
- * Updates quantity input with new minimum value
+ * Updates quantity input with new minimum value and sets appropriate quantity list
  * @param {string} quantity - New quantity value
+ * @param {string} customizationMethod - The customization method to determine quantity list
  */
-function updateQuantityInput(quantity) {
+function updateQuantityInput(quantity, customizationMethod = null) {
   const qtyInput = document.querySelector(SELECTORS.quantityInput);
   if (!qtyInput) return;
+  
+  // Set the appropriate quantity list based on customization method
+  if (customizationMethod && typeof qtyInput.setQuantityListForMethod === 'function') {
+    qtyInput.setQuantityListForMethod(customizationMethod);
+  }
   
   qtyInput.input.setAttribute('min', quantity);
   qtyInput.input.setAttribute('data-min', quantity);
@@ -100,11 +106,11 @@ function handleQuantityRules(event) {
     window.cartMatchingProducts.currentCustomizationMethod = customizationMethod;
   }
   
-  if (customizationMethod === "Use What I’ve Already Created") {
+  if (customizationMethod === "Use What I've Already Created") {
     handleUseWhatCreatedQuantity();
   } else if (MINIMUM_QUANTITIES[customizationMethod]) {
     const quantity = MINIMUM_QUANTITIES[customizationMethod].toString();
-    updateQuantityInput(quantity);
+    updateQuantityInput(quantity, customizationMethod);
   }
 }
 
@@ -113,15 +119,17 @@ function handleQuantityRules(event) {
  */
 function handleUseWhatCreatedQuantity() {
   let quantity = "12"; // default quantity
+  let customizationMethod = null;
   
   if (matchingCartItemProperties) {
     const cartCustomizationMethod = getPropertyValue(matchingCartItemProperties, 'Customization Method');
-    if (cartCustomizationMethod === "Patches") {
+    customizationMethod = cartCustomizationMethod;
+    if (cartCustomizationMethod === "Patches" || cartCustomizationMethod === "Screen Print") {
       quantity = "24";
     }
   }
   
-  updateQuantityInput(quantity);
+  updateQuantityInput(quantity, customizationMethod);
 }
 
 // =============================================================================
@@ -433,12 +441,13 @@ function handleUseWhatCreatedSelection(properties) {
 }
 
 /**
- * Handles special quantity rules for Patches customization method
+ * Handles special quantity rules for Patches and Screen Print customization methods
+ * Note: Both start at 24, but Screen Print max is 1008 while Patches max is 1500
  */
 function handlePatchesQuantity() {
   const cartCustomizationMethod = getPropertyValue(matchingCartItemProperties, 'Customization Method');
-  if (cartCustomizationMethod === "Patches") {
-    updateQuantityInput("24");
+  if (cartCustomizationMethod === "Patches" || cartCustomizationMethod === "Screen Print") {
+    updateQuantityInput("24", cartCustomizationMethod);
   }
 }
 
