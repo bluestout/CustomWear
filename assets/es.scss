@@ -4961,3 +4961,15 @@ slideshow-component {
     }
   }
 }
+
+.st__block--review-notification st__content-landscape-top {
+  gap: 2px !important;
+}
+
+.st__block--review-notification .star-ratings {
+  display: inline-flex !important;
+}
+
+.st__block--review-notification .star-container {
+  display: inline-flex !important;
+}
