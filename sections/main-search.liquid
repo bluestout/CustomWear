@@ -282,7 +282,8 @@
                           lazy_load: lazy_load,
                           skip_styles: skip_card_product_styles,
                           sku: product.selected_or_first_available_variant.sku,
-                          brand_name: product.vendor
+                          brand_name: product.vendor,
+                          your_logo_here: true
                         %}
                         {%- assign skip_card_product_styles = true -%}
                       {%- when 'article' -%}
