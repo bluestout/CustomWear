@@ -1380,3 +1380,22 @@ class CartPerformance {
     );
   }
 }
+
+
+
+  // FOR ADA ISSUES ON LPO APP
+  document.addEventListener('AppOptionsLoaded', () => {
+    setTimeout(() => {
+      const lpoInfoElements = document.querySelectorAll('.cl-po--info');
+      lpoInfoElements.forEach(element => {
+        if (element.hasAttribute('aria-expanded')) {
+          element.removeAttribute('aria-expanded');
+        }
+        if (element.tagName.toLowerCase() === 'span') {
+          element.setAttribute('role', 'button');
+          element.setAttribute('tabindex', '0');
+          element.setAttribute('aria-label', 'Show information tooltip');
+        }
+      });
+    }, 300);
+  });
