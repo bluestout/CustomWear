@@ -596,7 +596,8 @@ textarea.cl-po--input {
 }
 
 /* USE WHAT I'VE ALREADY CREATED */
-.choices__item[data-value="Use What I’ve Already Created"] {
+.choices__item[data-value="Use What I’ve Already Created"],
+option[value="Use What I’ve Already Created"] {
   display: none;
 }
 .cl-po--upload .cl-po--upload-button > span:before {
