@@ -647,3 +647,8 @@ input[type="checkbox"]:checked + .cl-po--swatch {
 .cl-po--option[data-option="Leather or Faux Leather"] .cl-po--label {
     display: none!important;
 }
+
+select.cl-po--input {
+  border-radius: 0px!important;
+  cursor: pointer!important;
+}

@@ -25,7 +25,7 @@ const SELECTORS = {
   addToCartForm: 'form[action="/cart/add"]',
   cartItemData: '.item-properties-data-1',
   customizerOptions: '.cl-po--option[data-option="Use What I’ve Already Created"]',
-  useWhatCreatedChoices: 'option[value="Use What I’ve Already Created"]',
+  useWhatCreatedOption: 'option[value="Use What I’ve Already Created"]',
   customizationMethodSelect: 'select[name="properties[Customization Method]"]',
   customizationTypeInputs: 'input[name="properties[Customization Type]"]',
   additionalInstructionsTextarea: 'textarea[name="properties[Additional instructions]"]',
@@ -106,7 +106,7 @@ function handleQuantityRules(event) {
     window.cartMatchingProducts.currentCustomizationMethod = customizationMethod;
   }
   
-  if (customizationMethod === "Use What I've Already Created") {
+  if (customizationMethod === "Use What I’ve Already Created") {
     handleUseWhatCreatedQuantity();
   } else if (MINIMUM_QUANTITIES[customizationMethod]) {
     const quantity = MINIMUM_QUANTITIES[customizationMethod].toString();
@@ -365,7 +365,7 @@ function useWhatIHaveAlreadyCreated() {
 }
 
 /**
- * Determines if "Use What I've Already Created" option should be shown
+ * Determines if "Use What I’ve Already Created" option should be shown
  * @param {Array} properties - Cart item properties
  * @returns {boolean} True if option should be shown
  */
@@ -373,14 +373,14 @@ function shouldShowUseWhatCreated(properties) {
   const cartCustomizationMethod = getPropertyValue(properties, 'Customization Method');
   if (!cartCustomizationMethod) return false;
   
-  const choicesItems = document.querySelectorAll('.choices__item--choice[data-value]');
-  const matchingChoice = Array.from(choicesItems).find(choice =>
-    choice.getAttribute('data-value') === cartCustomizationMethod
-  );
+  // Check if the cart customization method exists as an option in the select
+  const selectElement = document.querySelector(SELECTORS.customizationMethodSelect);
+  if (!selectElement) return false;
   
-  if (!matchingChoice) return false;
+  const matchingOption = selectElement.querySelector(`option[value="${cartCustomizationMethod}"]`);
+  if (!matchingOption) return false;
   
-  const productPageSelectedMethod = document.querySelector(SELECTORS.customizationMethodSelect).value;
+  const productPageSelectedMethod = selectElement.value;
   
   // Special handling for Embroidery
   if (cartCustomizationMethod === "Embroidery" && productPageSelectedMethod === "Embroidery") {
@@ -413,16 +413,18 @@ function checkEmbroideryMatch(properties) {
 }
 
 /**
- * Toggles visibility of "Use What I've Already Created" option
+ * Toggles visibility of "Use What I’ve Already Created" option
  * @param {boolean} show - Whether to show the option
  */
 function toggleUseWhatCreatedVisibility(show) {
-  const useWhatCreatedChoices = document.querySelectorAll(SELECTORS.useWhatCreatedChoices);
-  useWhatCreatedChoices.style.display = show ? 'block' : 'none'; 
+  const useWhatCreatedOption = document.querySelector(SELECTORS.useWhatCreatedOption);
+  if (useWhatCreatedOption) {
+    useWhatCreatedOption.style.display = show ? 'block' : 'none';
+  }
 }
 
 /**
- * Handles selection of "Use What I've Already Created" option
+ * Handles selection of "Use What I’ve Already Created" option
  * @param {Array} properties - Cart item properties
  */
 function handleUseWhatCreatedSelection(properties) {
