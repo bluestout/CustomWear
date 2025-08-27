@@ -418,9 +418,7 @@ function checkEmbroideryMatch(properties) {
  */
 function toggleUseWhatCreatedVisibility(show) {
   const useWhatCreatedChoices = document.querySelectorAll(SELECTORS.useWhatCreatedChoices);
-  useWhatCreatedChoices.forEach(choice => {
-    choice.style.display = show ? 'block' : 'none';
-  });
+  useWhatCreatedChoices.style.display = show ? 'block' : 'none'; 
 }
 
 /**
