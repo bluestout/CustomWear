@@ -25,7 +25,7 @@ const SELECTORS = {
   addToCartForm: 'form[action="/cart/add"]',
   cartItemData: '.item-properties-data-1',
   customizerOptions: '.cl-po--option[data-option="Use What I’ve Already Created"]',
-  useWhatCreatedChoices: '.choices__item[data-value="Use What I’ve Already Created"]',
+  useWhatCreatedChoices: 'option[value="Use What I’ve Already Created"]',
   customizationMethodSelect: 'select[name="properties[Customization Method]"]',
   customizationTypeInputs: 'input[name="properties[Customization Type]"]',
   additionalInstructionsTextarea: 'textarea[name="properties[Additional instructions]"]',
