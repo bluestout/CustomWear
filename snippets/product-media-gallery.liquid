@@ -44,7 +44,7 @@
 
 {% if section.settings.enable_sticky_info %}
   <div class="product__column-sticky">
-  {% endif %}
+{% endif %}
 <media-gallery
   id="MediaGallery-{{ section.id }}"
   role="region"
@@ -65,8 +65,9 @@
         {%- assign featured_media = product.selected_or_first_available_variant.featured_media -%}
         <li
           id="Slide-{{ section.id }}-{{ featured_media.id }}"
-          class="product__media-item grid__item slider__slide is-active{% if single_media_visible %} product__media-item--single{% endif %}{% if featured_media.media_type != 'image' %} product__media-item--full{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+          class="product__media-item grid__item slider__slide cl-preview is-active{% if single_media_visible %} product__media-item--single{% endif %}{% if featured_media.media_type != 'image' %} product__media-item--full{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
           data-media-id="{{ section.id }}-{{ featured_media.id }}"
+          data-live-preview="{{ product.id }}"
         >
           {%- assign media_position = 1 -%}
           {% render 'product-thumbnail',
@@ -94,11 +95,19 @@
           {% continue %}
         {% endif %}
 
+        {% assign first_media = false %}
+        {% if forloop.first %}
+          {% assign first_media = true %}
+        {% endif %}
+
         {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
           <li
             id="Slide-{{ section.id }}-{{ media.id }}"
-            class="product__media-item grid__item slider__slide{% if single_media_visible %} product__media-item--single{% endif %}{% if product.selected_or_first_available_variant.featured_media == nil and forloop.index == 1 %} is-active{% endif %}{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+            class="product__media-item {% if first_media %}cl-preview{% endif %} grid__item slider__slide{% if single_media_visible %} product__media-item--single{% endif %}{% if product.selected_or_first_available_variant.featured_media == nil and forloop.index == 1 %} is-active{% endif %}{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
             data-media-id="{{ section.id }}-{{ media.id }}"
+            {% if first_media %}
+              data-live-preview="{{ product.id }}"
+            {% endif %}
           >
             {%- liquid
               assign media_position = media_position | default: 0 | plus: 1
@@ -329,14 +338,12 @@
       </button>
     </slider-component>
   {%- endif -%}
-
 </media-gallery>
-
 
 {% comment %} START - ADDITIONAL INFO UNDER MEDIA GALLERY {% endcomment %}
 {% render 'component-media-info', to_show: 'desktop-only', section: section %}
 {% comment %} END - ADDITIONAL INFO UNDER MEDIA GALLERY {% endcomment %}
 
 {% if section.settings.enable_sticky_info %}
-</div>
+  </div>
 {% endif %}
