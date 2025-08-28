@@ -4,7 +4,7 @@
 
 .related-products__heading {
   margin: 0 0 3rem;
-  color: rgb(var(--color-foreground));
+  color: #000000 !important;
 }
 
 @media (max-width: 768px) {
