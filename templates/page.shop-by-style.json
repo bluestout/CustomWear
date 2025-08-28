@@ -87,9 +87,9 @@
           "type": "item",
           "settings": {
             "item_width": 4,
-            "image": "shopify://shop_images/Bucket_hat_CW_1160_x_590-Photoroom_1.png",
-            "title": "Bucket & Sun Hats",
-            "url": "shopify://collections/bucket-sun-hats",
+            "image": "shopify://shop_images/CW_5_panel_1160_x_590-Photoroom_1.png",
+            "title": "Foam Mesh Hats",
+            "url": "shopify://collections/foam-mesh-hats",
             "image_2": "shopify://shop_images/budget_1690_x_590_cw-Photoroom.png",
             "title_2": "Budget Hats",
             "url_2": "shopify://collections/budget-hats"
@@ -133,9 +133,9 @@
           "type": "item",
           "settings": {
             "item_width": 4,
-            "image": "shopify://shop_images/CW_5_panel_1160_x_590-Photoroom_1.png",
-            "title": "Foam Mesh Hats",
-            "url": "shopify://collections/foam-mesh-hats",
+            "image": "shopify://shop_images/Bucket_hat_CW_1160_x_590-Photoroom_1.png",
+            "title": "Bucket & Sun Hats",
+            "url": "shopify://collections/bucket-sun-hats",
             "image_2": "shopify://shop_images/Knit_Beanies_CW_1160_x_590-Photoroom.png",
             "title_2": "Knit Beanies",
             "url_2": "shopify://collections/knit-beanies"
