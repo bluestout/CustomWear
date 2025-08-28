@@ -95,24 +95,24 @@
             "url_2": "shopify://collections/budget-hats"
           }
         },
-        "item_t9qBbg": {
+        "item_qTQxKz": {
           "type": "item",
           "settings": {
             "item_width": 6,
-            "image": "shopify://shop_images/camo_caps_1500_x_1200_cw-Photoroom.png",
-            "title": "Camo Hats",
-            "url": "shopify://collections/camo-hats",
+            "image": "shopify://shop_images/dads_cap_1500_x_1200_CW.png",
+            "title": "Relaxed Dad Hats",
+            "url": "shopify://collections/relaxed-dad-hats",
             "title_2": "Hat Style 2",
             "url_2": ""
           }
         },
-        "item_8iXADG": {
+        "item_tkjKai": {
           "type": "item",
           "settings": {
             "item_width": 6,
-            "image": "shopify://shop_images/ECO_1500_x_1200_CW.png",
-            "title": "Eco-Sustainable & Organic Hats",
-            "url": "shopify://collections/eco-sustainable-organic-hats",
+            "image": "shopify://shop_images/Roped_Hat_CW_1500_x_1200.png",
+            "title": "Roped Hats",
+            "url": "shopify://collections/camo-hats",
             "title_2": "Hat Style 2",
             "url_2": ""
           }
@@ -187,24 +187,24 @@
             "url_2": "shopify://collections/performance-hats"
           }
         },
-        "item_qTQxKz": {
+        "item_t9qBbg": {
           "type": "item",
           "settings": {
             "item_width": 6,
-            "image": "shopify://shop_images/dads_cap_1500_x_1200_CW.png",
-            "title": "Relaxed Dad Hats",
-            "url": "shopify://collections/relaxed-dad-hats",
+            "image": "shopify://shop_images/camo_caps_1500_x_1200_cw-Photoroom.png",
+            "title": "Camo Hats",
+            "url": "shopify://collections/camo-hats",
             "title_2": "Hat Style 2",
             "url_2": ""
           }
         },
-        "item_tkjKai": {
+        "item_8iXADG": {
           "type": "item",
           "settings": {
             "item_width": 6,
-            "image": "shopify://shop_images/Roped_Hat_CW_1500_x_1200.png",
-            "title": "Roped Hats",
-            "url": "shopify://collections/camo-hats",
+            "image": "shopify://shop_images/ECO_1500_x_1200_CW.png",
+            "title": "Eco-Sustainable & Organic Hats",
+            "url": "shopify://collections/eco-sustainable-organic-hats",
             "title_2": "Hat Style 2",
             "url_2": ""
           }
@@ -249,16 +249,16 @@
         "item_qXenJt",
         "item_7rAx4D",
         "item_ayUTCT",
-        "item_t9qBbg",
-        "item_8iXADG",
+        "item_qTQxKz",
+        "item_tkjKai",
         "item_iMUfVt",
         "item_JdB3Gf",
         "item_RGEwRy",
         "item_dxiBGx",
         "item_GJQ6Bc",
         "item_WqGL6N",
-        "item_qTQxKz",
-        "item_tkjKai",
+        "item_t9qBbg",
+        "item_8iXADG",
         "item_w4eKDW",
         "item_q4Qadh",
         "item_9pMaYJ"
