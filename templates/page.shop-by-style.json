@@ -78,9 +78,9 @@
             "image": "shopify://shop_images/CW_6_Panel_Baseball_1160_x_590_-Photoroom-Photoroom.png",
             "title": "6-Panel Baseball Caps",
             "url": "shopify://collections/6-panel-baseball-caps",
-            "image_2": "shopify://shop_images/CW_7_Panel_1160_x_590-Photoroom.png",
-            "title_2": "7-Panel Hats",
-            "url_2": "shopify://collections/7-panel-hats"
+            "image_2": "shopify://shop_images/flexfit_1160_x_590_cw-Photoroom.png",
+            "title_2": "Trucker Mesh Hats",
+            "url_2": "shopify://collections/trucker-mesh-hats"
           }
         },
         "item_ayUTCT": {
@@ -225,9 +225,9 @@
           "type": "item",
           "settings": {
             "item_width": 4,
-            "image": "shopify://shop_images/flexfit_1160_x_590_cw-Photoroom.png",
-            "title": "Trucker Mesh Hats",
-            "url": "shopify://collections/trucker-mesh-hats",
+            "image": "shopify://shop_images/CW_7_Panel_1160_x_590-Photoroom.png",
+            "title": "7-Panel Hats",
+            "url": "shopify://collections/7-panel-hats",
             "image_2": "shopify://shop_images/Umpire_Hat_CW_1160_x_590-Photoroom.png",
             "title_2": "Umpire Hats",
             "url_2": "shopify://collections/umpire-hats"
