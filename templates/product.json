@@ -63,13 +63,6 @@
             "swatch_shape": "square"
           }
         },
-        "upload_lift_app_block_9ity7N": {
-          "type": "shopify://apps/upload-lift/blocks/app-block/3c98bdcb-7587-4ade-bfe4-7d8af00d05ca",
-          "settings": {
-            "product": "{{product}}",
-            "field": ""
-          }
-        },
         "live_product_options_app_block_mWfNhx": {
           "type": "shopify://apps/live-product-options/blocks/app-block/88bfdf40-5e27-4962-a966-70c8d1e87757",
           "settings": {
@@ -180,7 +173,6 @@
         "sku_zdxYpC",
         "text_Pb8kXM",
         "variant_picker",
-        "upload_lift_app_block_9ity7N",
         "live_product_options_app_block_mWfNhx",
         "quantity_selector",
         "price",
