@@ -240,7 +240,7 @@ class QuantityInput extends HTMLElement {
     // Set initial quantity to first value in list if current value is not in the list
     const currentValue = parseInt(this.input.value);
     if (!this.quantityList.includes(currentValue)) {
-      this.input.value = this.quantityList[0];
+      this.input.value = this.getClosestValidQuantity(currentValue);
     }
   }
 
@@ -274,7 +274,54 @@ class QuantityInput extends HTMLElement {
   }
 
   onInputChange(event) {
+    this.validateQuantityInput(event);
     this.validateQtyRules();
+  }
+
+  validateQuantityInput(event) {
+    const inputValue = parseInt(event.target.value);
+    
+    // Check if value is in the current quantity list
+    if (!this.quantityList.includes(inputValue)) {
+      const closestValid = this.getClosestValidQuantity(inputValue);
+      const validOptions = this.quantityList.slice(0, 5).join(', ') + '…';
+      const message = window.quickOrderListStrings.quantity_list_error.replace('[options]', validOptions) || `Please enter one of these quantities: ${validOptions}`;
+      
+      // Set custom validity message
+      event.target.setCustomValidity(message);
+      event.target.reportValidity();
+      
+      // Reset to closest valid number after a short delay
+      setTimeout(() => {
+        event.target.value = closestValid;
+        event.target.setCustomValidity('');
+        event.target.dispatchEvent(this.changeEvent);
+      }, 2000);
+      
+      return false;
+    } else {
+      event.target.setCustomValidity('');
+      return true;
+    }
+  }
+
+  getClosestValidQuantity(value) {
+    if (value <= this.quantityList[0]) return this.quantityList[0];
+    if (value >= this.quantityList[this.quantityList.length - 1]) return this.quantityList[this.quantityList.length - 1];
+    
+    // Find the closest value in the quantity list
+    let closest = this.quantityList[0];
+    let minDiff = Math.abs(value - closest);
+    
+    for (let i = 1; i < this.quantityList.length; i++) {
+      const diff = Math.abs(value - this.quantityList[i]);
+      if (diff < minDiff) {
+        minDiff = diff;
+        closest = this.quantityList[i];
+      }
+    }
+    
+    return closest;
   }
 
   onButtonClick(event) {
@@ -1308,6 +1355,28 @@ class BulkAdd extends HTMLElement {
     const inputValue = parseInt(event.target.value);
     const index = event.target.dataset.index;
 
+    // Use default quantity list for bulk add
+    const quantityList = [12, 24, 48, 72, 96, 144, 288, 576, 1008, 1500];
+
+    // Check if value is in the quantity list
+    if (!quantityList.includes(inputValue)) {
+      const closestValid = this.getClosestValidQuantity(inputValue, quantityList);
+      const validOptions = quantityList.slice(0, 5).join(', ') + '…';
+      const message = window.quickOrderListStrings.quantity_list_error?.replace('[options]', validOptions) || `Please enter one of these quantities: ${validOptions}`;
+      
+      this.setValidity(event, index, message);
+      
+      // Reset to closest valid number after a short delay
+      setTimeout(() => {
+        event.target.value = closestValid;
+        event.target.setCustomValidity('');
+        event.target.setAttribute('value', closestValid);
+        this.startQueue(index, closestValid);
+      }, 2000);
+      
+      return;
+    }
+
     if (inputValue < event.target.dataset.min) {
       this.setValidity(event, index, window.quickOrderListStrings.min_error.replace('[min]', event.target.dataset.min));
     } else if (inputValue > parseInt(event.target.max)) {
@@ -1320,6 +1389,25 @@ class BulkAdd extends HTMLElement {
       event.target.setAttribute('value', inputValue);
       this.startQueue(index, inputValue);
     }
+  }
+
+  getClosestValidQuantity(value, quantityList) {
+    if (value <= quantityList[0]) return quantityList[0];
+    if (value >= quantityList[quantityList.length - 1]) return quantityList[quantityList.length - 1];
+    
+    // Find the closest value in the quantity list
+    let closest = quantityList[0];
+    let minDiff = Math.abs(value - closest);
+    
+    for (let i = 1; i < quantityList.length; i++) {
+      const diff = Math.abs(value - quantityList[i]);
+      if (diff < minDiff) {
+        minDiff = diff;
+        closest = quantityList[i];
+      }
+    }
+    
+    return closest;
   }
 
   getSectionInnerHTML(html, selector) {

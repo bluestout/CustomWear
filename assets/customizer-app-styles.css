@@ -539,10 +539,6 @@ textarea.cl-po--input::placeholder {
   margin-right: 4px;
 }
 
-.product-form__input .quantity__input {
-  pointer-events: none;
-}
-
 @media (max-width: 1024px) {
   table.MsoNormalTable {
     width: 100% !important;

@@ -379,7 +379,8 @@
       "remove_all_single_item_confirmation": "1 Artikel aus dem Warenkorb entfernen?",
       "min_error": "Dieser Artikel hat ein Minimum von {{ min }}",
       "max_error": "Dieser Artikel hat ein Maximum von {{ max }}",
-      "step_error": "Du kannst diesen Artikel nur in Abstufungen von {{ step }} hinzufügen."
+      "step_error": "Du kannst diesen Artikel nur in Abstufungen von {{ step }} hinzufügen.",
+      "quantity_list_error": "Bitte gib eine dieser Mengen ein: {{ options }}"
     }
   },
   "localization": {

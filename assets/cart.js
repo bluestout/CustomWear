@@ -18,6 +18,11 @@ class CartItems extends HTMLElement {
     this.lineItemStatusElement =
       document.getElementById('shopping-cart-line-item-status') || document.getElementById('CartDrawer-LineItemStatus');
 
+    // Predefined quantity lists for different customization methods
+    this.defaultQuantityList = [12, 24, 48, 72, 96, 144, 288, 576, 1008, 1500];
+    this.patchesQuantityList = [24, 48, 96, 144, 288, 576, 1008, 1500];
+    this.screenPrintQuantityList = [24, 48, 96, 144, 288, 576, 1008];
+
     const debouncedOnChange = debounce((event) => {
       this.onChange(event);
     }, ON_CHANGE_DEBOUNCE_TIMER);
@@ -60,6 +65,27 @@ class CartItems extends HTMLElement {
     const index = event.target.dataset.index;
     let message = '';
 
+    // Determine which quantity list to use (default for now, can be enhanced later)
+    const quantityList = this.getQuantityListForItem(event.target);
+
+    // Check if value is in the quantity list
+    if (!quantityList.includes(inputValue)) {
+      const closestValid = this.getClosestValidQuantity(inputValue, quantityList);
+      const validOptions = quantityList.slice(0, 5).join(', ') + '…';
+      message = window.quickOrderListStrings.quantity_list_error?.replace('[options]', validOptions) || `Please enter one of these quantities: ${validOptions}`;
+      
+      this.setValidity(event, index, message);
+      
+      // Reset to closest valid number after a short delay
+      setTimeout(() => {
+        event.target.value = closestValid;
+        event.target.setCustomValidity('');
+        event.target.dispatchEvent(new Event('change', { bubbles: true }));
+      }, 2000);
+      
+      return;
+    }
+
     if (inputValue < event.target.dataset.min) {
       message = window.quickOrderListStrings.min_error.replace('[min]', event.target.dataset.min);
     } else if (inputValue > parseInt(event.target.max)) {
@@ -81,6 +107,31 @@ class CartItems extends HTMLElement {
         event.target.dataset.quantityVariantId
       );
     }
+  }
+
+  getQuantityListForItem(input) {
+    // You can enhance this logic to determine the correct list based on product type
+    // For now, return default list
+    return this.defaultQuantityList;
+  }
+
+  getClosestValidQuantity(value, quantityList) {
+    if (value <= quantityList[0]) return quantityList[0];
+    if (value >= quantityList[quantityList.length - 1]) return quantityList[quantityList.length - 1];
+    
+    // Find the closest value in the quantity list
+    let closest = quantityList[0];
+    let minDiff = Math.abs(value - closest);
+    
+    for (let i = 1; i < quantityList.length; i++) {
+      const diff = Math.abs(value - quantityList[i]);
+      if (diff < minDiff) {
+        minDiff = diff;
+        closest = quantityList[i];
+      }
+    }
+    
+    return closest;
   }
 
   onChange(event) {
