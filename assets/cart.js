@@ -75,11 +75,13 @@ class CartItems extends HTMLElement {
       message = window.quickOrderListStrings.quantity_list_error?.replace('[options]', validOptions) || `Please enter one of these quantities: ${validOptions}`;
       
       this.setValidity(event, index, message);
+      this.disableCheckoutButtons(true);
       
       // Reset to closest valid number after a short delay
       setTimeout(() => {
         event.target.value = closestValid;
         event.target.setCustomValidity('');
+        this.disableCheckoutButtons(false);
         event.target.dispatchEvent(new Event('change', { bubbles: true }));
       }, 2000);
       
@@ -96,9 +98,11 @@ class CartItems extends HTMLElement {
 
     if (message) {
       this.setValidity(event, index, message);
+      this.disableCheckoutButtons(true);
     } else {
       event.target.setCustomValidity('');
       event.target.reportValidity();
+      this.disableCheckoutButtons(false);
       this.updateQuantity(
         index,
         inputValue,
@@ -107,6 +111,36 @@ class CartItems extends HTMLElement {
         event.target.dataset.quantityVariantId
       );
     }
+  }
+
+  disableCheckoutButtons(disable) {
+    // Find checkout buttons in cart
+    const checkoutButtons = document.querySelectorAll('.cart__checkout-button, .cart-drawer__checkout-button, [name="add"], button[type="submit"]:not(.quantity__button)');
+    
+    checkoutButtons.forEach(button => {
+      if (disable) {
+        button.disabled = true;
+        button.classList.add('disabled', 'quantity-invalid');
+        button.setAttribute('data-original-text', button.textContent || button.value);
+        if (button.textContent) {
+          button.textContent = 'Invalid Quantity in Cart';
+        } else if (button.value) {
+          button.value = 'Invalid Quantity in Cart';
+        }
+      } else {
+        button.disabled = false;
+        button.classList.remove('disabled', 'quantity-invalid');
+        const originalText = button.getAttribute('data-original-text');
+        if (originalText) {
+          if (button.textContent !== undefined) {
+            button.textContent = originalText;
+          } else if (button.value !== undefined) {
+            button.value = originalText;
+          }
+          button.removeAttribute('data-original-text');
+        }
+      }
+    });
   }
 
   getQuantityListForItem(input) {
