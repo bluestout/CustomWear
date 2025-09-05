@@ -291,17 +291,41 @@ class QuantityInput extends HTMLElement {
       event.target.setCustomValidity(message);
       event.target.reportValidity();
       
+      // Disable add to cart buttons
+      this.disableAddToCartButtons(true);
+      
       // Reset to closest valid number after a short delay
       setTimeout(() => {
         event.target.value = closestValid;
         event.target.setCustomValidity('');
+        this.disableAddToCartButtons(false);
         event.target.dispatchEvent(this.changeEvent);
       }, 2000);
       
       return false;
     } else {
       event.target.setCustomValidity('');
+      this.disableAddToCartButtons(false);
       return true;
+    }
+  }
+
+  disableAddToCartButtons(disable) {
+    // Find add to cart buttons in the product form
+    const productForm = this.closest('product-form') || this.closest('form[action*="/cart/add"]') || document.querySelector('.product-form');
+    
+    if (productForm) {
+      const addToCartButtons = productForm.querySelectorAll('.product-form__buttons button[type="submit"], .product-form__buttons input[type="submit"], .product-form__buttons .btn');
+      
+      addToCartButtons.forEach(button => {
+        if (disable) {
+          button.disabled = true;
+          button.classList.add('disabled', 'quantity-invalid');
+        } else {
+          button.disabled = false;
+          button.classList.remove('disabled', 'quantity-invalid');
+        }
+      });
     }
   }
 
@@ -1365,12 +1389,14 @@ class BulkAdd extends HTMLElement {
       const message = window.quickOrderListStrings.quantity_list_error?.replace('[options]', validOptions) || `Please enter one of these quantities: ${validOptions}`;
       
       this.setValidity(event, index, message);
+      this.disableBulkAddButtons(true);
       
       // Reset to closest valid number after a short delay
       setTimeout(() => {
         event.target.value = closestValid;
         event.target.setCustomValidity('');
         event.target.setAttribute('value', closestValid);
+        this.disableBulkAddButtons(false);
         this.startQueue(index, closestValid);
       }, 2000);
       
@@ -1379,16 +1405,35 @@ class BulkAdd extends HTMLElement {
 
     if (inputValue < event.target.dataset.min) {
       this.setValidity(event, index, window.quickOrderListStrings.min_error.replace('[min]', event.target.dataset.min));
+      this.disableBulkAddButtons(true);
     } else if (inputValue > parseInt(event.target.max)) {
       this.setValidity(event, index, window.quickOrderListStrings.max_error.replace('[max]', event.target.max));
+      this.disableBulkAddButtons(true);
     } else if (inputValue % parseInt(event.target.step) != 0) {
       this.setValidity(event, index, window.quickOrderListStrings.step_error.replace('[step]', event.target.step));
+      this.disableBulkAddButtons(true);
     } else {
       event.target.setCustomValidity('');
       event.target.reportValidity();
       event.target.setAttribute('value', inputValue);
+      this.disableBulkAddButtons(false);
       this.startQueue(index, inputValue);
     }
+  }
+
+  disableBulkAddButtons(disable) {
+    // Find bulk add buttons
+    const bulkAddButtons = this.querySelectorAll('button[type="submit"], .bulk-add-button, .quick-add-button');
+    
+    bulkAddButtons.forEach(button => {
+      if (disable) {
+        button.disabled = true;
+        button.classList.add('disabled', 'quantity-invalid');
+      } else {
+        button.disabled = false;
+        button.classList.remove('disabled', 'quantity-invalid');
+      }
+    });
   }
 
   getClosestValidQuantity(value, quantityList) {
