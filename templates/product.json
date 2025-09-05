@@ -52,7 +52,7 @@
         "text_Pb8kXM": {
           "type": "text",
           "settings": {
-            "text": "As low as <strong>{{ product.metafields.custom.as_low_as_price.value }}</strong><strong> USD</strong>",
+            "text": "As low as <strong>$</strong><strong>{{ product.metafields.custom.as_low_as_price.value }}</strong><strong> USD</strong>",
             "text_style": "body"
           }
         },
