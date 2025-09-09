@@ -121,7 +121,7 @@
             "sm_image": "shopify://shop_images/bonefishtrucker_1_1_1.png",
             "header_text": "Authorized Dealer",
             "heading": "Richardson",
-            "description": "",
+            "description": "<p>Authorized Dealer</p>",
             "button_text": "SHOP NOW",
             "button_target": "default",
             "button_link": "shopify://collections/richardson-hats"
