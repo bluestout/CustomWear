@@ -392,7 +392,7 @@
       "min_error": "Este artículo tiene un mínimo de {{ min }}.",
       "max_error": "Este artículo tiene un máximo de {{ max }}.",
       "step_error": "Solo puedes agregar este artículo en incrementos de {{ step }}",
-      "quantity_list_error": "Por favor ingresa una de estas cantidades: {{ options }}"
+      "multiples_error": "Por favor ingresa un múltiplo de 12, como 12, 24, 36, 48…"
     }
   },
   "localization": {

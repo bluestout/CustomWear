@@ -65,14 +65,10 @@ class CartItems extends HTMLElement {
     const index = event.target.dataset.index;
     let message = '';
 
-    // Determine which quantity list to use (default for now, can be enhanced later)
-    const quantityList = this.getQuantityListForItem(event.target);
-
-    // Check if value is in the quantity list
-    if (!quantityList.includes(inputValue)) {
-      const closestValid = this.getClosestValidQuantity(inputValue, quantityList);
-      const validOptions = quantityList.slice(0, 5).join(', ') + '…';
-      message = window.quickOrderListStrings.quantity_list_error?.replace('[options]', validOptions) || `Please enter one of these quantities: ${validOptions}`;
+    // Check if value is a multiple of 12 and at least 12
+    if (inputValue < 12 || inputValue % 12 !== 0) {
+      const closestValid = this.getClosestValidQuantity(inputValue);
+      message = window.quickOrderListStrings.multiples_error || 'Please enter a multiple of 12, like 12, 24, 36, 48…';
       
       this.setValidity(event, index, message);
       this.disableCheckoutButtons(true);
@@ -149,23 +145,36 @@ class CartItems extends HTMLElement {
     return this.defaultQuantityList;
   }
 
-  getClosestValidQuantity(value, quantityList) {
-    if (value <= quantityList[0]) return quantityList[0];
-    if (value >= quantityList[quantityList.length - 1]) return quantityList[quantityList.length - 1];
+  getClosestValidQuantity(value) {
+    if (value < 12) return 12;
     
-    // Find the closest value in the quantity list
-    let closest = quantityList[0];
-    let minDiff = Math.abs(value - closest);
+    // Round to nearest multiple of 12
+    const remainder = value % 12;
+    if (remainder === 0) return value;
     
-    for (let i = 1; i < quantityList.length; i++) {
-      const diff = Math.abs(value - quantityList[i]);
-      if (diff < minDiff) {
-        minDiff = diff;
-        closest = quantityList[i];
+    const lower = value - remainder;
+    const upper = lower + 12;
+    
+    // Return the closer multiple
+    return (remainder <= 6) ? lower : upper;
+  }
+
+  // Get the pricing tier for a given quantity
+  getPricingTier(quantity) {
+    const quantityList = this.getQuantityListForItem();
+    
+    // Find the highest tier that the quantity qualifies for
+    let applicableTier = quantityList[0];
+    
+    for (let i = 0; i < quantityList.length; i++) {
+      if (quantity >= quantityList[i]) {
+        applicableTier = quantityList[i];
+      } else {
+        break;
       }
     }
     
-    return closest;
+    return applicableTier;
   }
 
   onChange(event) {

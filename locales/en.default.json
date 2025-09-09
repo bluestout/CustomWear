@@ -380,7 +380,7 @@
       "min_error": "This item has a minimum of {{ min }}",
       "max_error": "This item has a maximum of {{ max }}",
       "step_error": "You can only add this item in increments of {{ step }}",
-      "quantity_list_error": "Please enter one of these quantities: {{ options }}"
+      "multiples_error": "Please enter a multiple of 12, like 12, 24, 36, 48…"
     }
   },
   "localization": {

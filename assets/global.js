@@ -281,11 +281,10 @@ class QuantityInput extends HTMLElement {
   validateQuantityInput(event) {
     const inputValue = parseInt(event.target.value);
     
-    // Check if value is in the current quantity list
-    if (!this.quantityList.includes(inputValue)) {
+    // Check if value is a multiple of 12 and at least 12
+    if (inputValue < 12 || inputValue % 12 !== 0) {
       const closestValid = this.getClosestValidQuantity(inputValue);
-      const validOptions = this.quantityList.slice(0, 5).join(', ') + '…';
-      const message = window.quickOrderListStrings.quantity_list_error.replace('[options]', validOptions) || `Please enter one of these quantities: ${validOptions}`;
+      const message = window.quickOrderListStrings.multiples_error || 'Please enter a multiple of 12, like 12, 24, 36, 48…';
       
       // Set custom validity message
       event.target.setCustomValidity(message);
@@ -330,50 +329,48 @@ class QuantityInput extends HTMLElement {
   }
 
   getClosestValidQuantity(value) {
-    if (value <= this.quantityList[0]) return this.quantityList[0];
-    if (value >= this.quantityList[this.quantityList.length - 1]) return this.quantityList[this.quantityList.length - 1];
+    if (value < 12) return 12;
     
-    // Find the closest value in the quantity list
-    let closest = this.quantityList[0];
-    let minDiff = Math.abs(value - closest);
+    // Round to nearest multiple of 12
+    const remainder = value % 12;
+    if (remainder === 0) return value;
     
-    for (let i = 1; i < this.quantityList.length; i++) {
-      const diff = Math.abs(value - this.quantityList[i]);
-      if (diff < minDiff) {
-        minDiff = diff;
-        closest = this.quantityList[i];
+    const lower = value - remainder;
+    const upper = lower + 12;
+    
+    // Return the closer multiple
+    return (remainder <= 6) ? lower : upper;
+  }
+
+  // Get the pricing tier for a given quantity
+  getPricingTier(quantity) {
+    // Find the highest tier that the quantity qualifies for
+    let applicableTier = this.quantityList[0];
+    
+    for (let i = 0; i < this.quantityList.length; i++) {
+      if (quantity >= this.quantityList[i]) {
+        applicableTier = this.quantityList[i];
+      } else {
+        break;
       }
     }
     
-    return closest;
+    return applicableTier;
   }
 
   onButtonClick(event) {
     event.preventDefault();
     const previousValue = this.input.value;
     const currentValue = parseInt(this.input.value);
-    const currentIndex = this.quantityList.indexOf(currentValue);
 
     if (event.target.name === 'plus') {
-      // Move to next quantity in the list
-      if (currentIndex !== -1 && currentIndex < this.quantityList.length - 1) {
-        this.input.value = this.quantityList[currentIndex + 1];
-      } else if (currentIndex === -1) {
-        // If current value is not in list, find the next higher value
-        const nextValue = this.quantityList.find(qty => qty > currentValue);
-        this.input.value = nextValue || this.quantityList[this.quantityList.length - 1];
-      }
-      // If already at max, stay at max
+      // Increment by 12 to maintain multiples of 12
+      const newValue = currentValue + 12;
+      this.input.value = newValue;
     } else {
-      // Move to previous quantity in the list
-      if (currentIndex !== -1 && currentIndex > 0) {
-        this.input.value = this.quantityList[currentIndex - 1];
-      } else if (currentIndex === -1) {
-        // If current value is not in list, find the next lower value
-        const prevValue = this.quantityList.slice().reverse().find(qty => qty < currentValue);
-        this.input.value = prevValue || this.quantityList[0];
-      }
-      // If already at min, stay at min
+      // Decrement by 12 to maintain multiples of 12, but don't go below 12
+      const newValue = Math.max(12, currentValue - 12);
+      this.input.value = newValue;
     }
 
     if (previousValue !== this.input.value) this.input.dispatchEvent(this.changeEvent);
@@ -381,19 +378,19 @@ class QuantityInput extends HTMLElement {
 
   validateQtyRules() {
     const value = parseInt(this.input.value);
-    const currentIndex = this.quantityList.indexOf(value);
     
     const buttonMinus = this.querySelector(".quantity__button[name='minus']");
     const buttonPlus = this.querySelector(".quantity__button[name='plus']");
     
-    // Disable minus button if at first quantity in list
+    // Disable minus button if at minimum (12)
     if (buttonMinus) {
-      buttonMinus.classList.toggle('disabled', currentIndex === 0 || (currentIndex === -1 && value <= this.quantityList[0]));
+      buttonMinus.classList.toggle('disabled', value <= 12);
     }
     
-    // Disable plus button if at last quantity in list
+    // Plus button is generally always enabled unless there's a max limit
     if (buttonPlus) {
-      buttonPlus.classList.toggle('disabled', currentIndex === this.quantityList.length - 1 || (currentIndex === -1 && value >= this.quantityList[this.quantityList.length - 1]));
+      const maxValue = parseInt(this.input.max);
+      buttonPlus.classList.toggle('disabled', maxValue && value >= maxValue);
     }
   }
 }
@@ -1379,14 +1376,10 @@ class BulkAdd extends HTMLElement {
     const inputValue = parseInt(event.target.value);
     const index = event.target.dataset.index;
 
-    // Use default quantity list for bulk add
-    const quantityList = [12, 24, 48, 72, 96, 144, 288, 576, 1008, 1500];
-
-    // Check if value is in the quantity list
-    if (!quantityList.includes(inputValue)) {
-      const closestValid = this.getClosestValidQuantity(inputValue, quantityList);
-      const validOptions = quantityList.slice(0, 5).join(', ') + '…';
-      const message = window.quickOrderListStrings.quantity_list_error?.replace('[options]', validOptions) || `Please enter one of these quantities: ${validOptions}`;
+    // Check if value is a multiple of 12 and at least 12
+    if (inputValue < 12 || inputValue % 12 !== 0) {
+      const closestValid = this.getClosestValidQuantity(inputValue);
+      const message = window.quickOrderListStrings.multiples_error || 'Please enter a multiple of 12, like 12, 24, 36, 48…';
       
       this.setValidity(event, index, message);
       this.disableBulkAddButtons(true);
@@ -1421,6 +1414,20 @@ class BulkAdd extends HTMLElement {
     }
   }
 
+  getClosestValidQuantity(value) {
+    if (value < 12) return 12;
+    
+    // Round to nearest multiple of 12
+    const remainder = value % 12;
+    if (remainder === 0) return value;
+    
+    const lower = value - remainder;
+    const upper = lower + 12;
+    
+    // Return the closer multiple
+    return (remainder <= 6) ? lower : upper;
+  }
+
   disableBulkAddButtons(disable) {
     // Find bulk add buttons
     const bulkAddButtons = this.querySelectorAll('button[type="submit"], .bulk-add-button, .quick-add-button');
@@ -1436,24 +1443,6 @@ class BulkAdd extends HTMLElement {
     });
   }
 
-  getClosestValidQuantity(value, quantityList) {
-    if (value <= quantityList[0]) return quantityList[0];
-    if (value >= quantityList[quantityList.length - 1]) return quantityList[quantityList.length - 1];
-    
-    // Find the closest value in the quantity list
-    let closest = quantityList[0];
-    let minDiff = Math.abs(value - closest);
-    
-    for (let i = 1; i < quantityList.length; i++) {
-      const diff = Math.abs(value - quantityList[i]);
-      if (diff < minDiff) {
-        minDiff = diff;
-        closest = quantityList[i];
-      }
-    }
-    
-    return closest;
-  }
 
   getSectionInnerHTML(html, selector) {
     return new DOMParser().parseFromString(html, 'text/html').querySelector(selector).innerHTML;
