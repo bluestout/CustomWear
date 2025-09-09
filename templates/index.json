@@ -119,8 +119,8 @@
           "settings": {
             "image": "shopify://shop_images/bonefishtrucker_1_1_1.png",
             "sm_image": "shopify://shop_images/bonefishtrucker_1_1_1.png",
-            "header_text": "Authorized Dealer",
-            "heading": "Richardson",
+            "header_text": "Richardson",
+            "heading": "",
             "description": "<p>Authorized Dealer</p>",
             "button_text": "SHOP NOW",
             "button_target": "default",
