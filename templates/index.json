@@ -113,12 +113,26 @@
             "button_target": "_blank",
             "button_link": "https://capwholesaler.myshopify.com/"
           }
+        },
+        "slide_item_XUT7XG": {
+          "type": "slide_item",
+          "settings": {
+            "image": "shopify://shop_images/bonefishtrucker_1_1_1.png",
+            "sm_image": "shopify://shop_images/bonefishtrucker_1_1_1.png",
+            "header_text": "Authorized Dealer",
+            "heading": "Richardson",
+            "description": "",
+            "button_text": "SHOP NOW",
+            "button_target": "default",
+            "button_link": "shopify://collections/richardson-hats"
+          }
         }
       },
       "block_order": [
         "slide_item_m6qqgh",
         "slide_item_bUakze",
-        "slide_item_wQKygd"
+        "slide_item_wQKygd",
+        "slide_item_XUT7XG"
       ],
       "name": "ui-custom-header-slide",
       "settings": {
