@@ -67,19 +67,10 @@ class CartItems extends HTMLElement {
 
     // Check if value is a multiple of 12 and at least 12
     if (inputValue < 12 || inputValue % 12 !== 0) {
-      const closestValid = this.getClosestValidQuantity(inputValue);
       message = window.quickOrderListStrings.multiples_error || 'Please enter a multiple of 12, like 12, 24, 36, 48…';
       
       this.setValidity(event, index, message);
       this.disableCheckoutButtons(true);
-      
-      // Reset to closest valid number after a short delay
-      setTimeout(() => {
-        event.target.value = closestValid;
-        event.target.setCustomValidity('');
-        this.disableCheckoutButtons(false);
-        event.target.dispatchEvent(new Event('change', { bubbles: true }));
-      }, 2000);
       
       return;
     }
@@ -145,19 +136,6 @@ class CartItems extends HTMLElement {
     return this.defaultQuantityList;
   }
 
-  getClosestValidQuantity(value) {
-    if (value < 12) return 12;
-    
-    // Round to nearest multiple of 12
-    const remainder = value % 12;
-    if (remainder === 0) return value;
-    
-    const lower = value - remainder;
-    const upper = lower + 12;
-    
-    // Return the closer multiple
-    return (remainder <= 6) ? lower : upper;
-  }
 
   // Get the pricing tier for a given quantity
   getPricingTier(quantity) {

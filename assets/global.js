@@ -283,7 +283,6 @@ class QuantityInput extends HTMLElement {
     
     // Check if value is a multiple of 12 and at least 12
     if (inputValue < 12 || inputValue % 12 !== 0) {
-      const closestValid = this.getClosestValidQuantity(inputValue);
       const message = window.quickOrderListStrings.multiples_error || 'Please enter a multiple of 12, like 12, 24, 36, 48…';
       
       // Set custom validity message
@@ -292,14 +291,6 @@ class QuantityInput extends HTMLElement {
       
       // Disable add to cart buttons
       this.disableAddToCartButtons(true);
-      
-      // Reset to closest valid number after a short delay
-      setTimeout(() => {
-        event.target.value = closestValid;
-        event.target.setCustomValidity('');
-        this.disableAddToCartButtons(false);
-        event.target.dispatchEvent(this.changeEvent);
-      }, 2000);
       
       return false;
     } else {
@@ -328,19 +319,6 @@ class QuantityInput extends HTMLElement {
     }
   }
 
-  getClosestValidQuantity(value) {
-    if (value < 12) return 12;
-    
-    // Round to nearest multiple of 12
-    const remainder = value % 12;
-    if (remainder === 0) return value;
-    
-    const lower = value - remainder;
-    const upper = lower + 12;
-    
-    // Return the closer multiple
-    return (remainder <= 6) ? lower : upper;
-  }
 
   // Get the pricing tier for a given quantity
   getPricingTier(quantity) {
@@ -1378,20 +1356,10 @@ class BulkAdd extends HTMLElement {
 
     // Check if value is a multiple of 12 and at least 12
     if (inputValue < 12 || inputValue % 12 !== 0) {
-      const closestValid = this.getClosestValidQuantity(inputValue);
       const message = window.quickOrderListStrings.multiples_error || 'Please enter a multiple of 12, like 12, 24, 36, 48…';
       
       this.setValidity(event, index, message);
       this.disableBulkAddButtons(true);
-      
-      // Reset to closest valid number after a short delay
-      setTimeout(() => {
-        event.target.value = closestValid;
-        event.target.setCustomValidity('');
-        event.target.setAttribute('value', closestValid);
-        this.disableBulkAddButtons(false);
-        this.startQueue(index, closestValid);
-      }, 2000);
       
       return;
     }
@@ -1414,19 +1382,6 @@ class BulkAdd extends HTMLElement {
     }
   }
 
-  getClosestValidQuantity(value) {
-    if (value < 12) return 12;
-    
-    // Round to nearest multiple of 12
-    const remainder = value % 12;
-    if (remainder === 0) return value;
-    
-    const lower = value - remainder;
-    const upper = lower + 12;
-    
-    // Return the closer multiple
-    return (remainder <= 6) ? lower : upper;
-  }
 
   disableBulkAddButtons(disable) {
     // Find bulk add buttons
