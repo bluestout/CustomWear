@@ -643,3 +643,7 @@ select.cl-po--input {
   border-radius: 0px!important;
   cursor: pointer!important;
 }
+
+label.cl-po--radio-item.cl-po--discount-text-custom {
+    display: none!important;
+}
