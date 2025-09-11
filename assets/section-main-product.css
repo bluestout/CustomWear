@@ -1674,3 +1674,7 @@ product-info {
   .cl-po--gallery-wrapper {
   display: none;
 }
+
+.product__media-list:has(.product__media-item--variant.is-active) .product__media-listt{
+  display: flex!important;
+}
