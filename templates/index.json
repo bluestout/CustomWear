@@ -432,7 +432,7 @@
           "type": "button",
           "settings": {
             "button_label": "Shop Blank Hats at CapWholesalers",
-            "button_link": "https://www.capwholesalers.com/",
+            "button_link": "https://www.capwholesalers.com/?utm_source=cw&utm_medium=redirect&utm_campaign=internal_referral",
             "button_style_secondary": false,
             "open_new_tab": true
           }
