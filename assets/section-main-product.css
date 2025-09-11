@@ -1657,5 +1657,20 @@ product-info {
 }
 
 .fera-reviews-wrapper .fera-averageRating-count {
-    display: none;
+  display: none;
+}
+
+/* Hide variant media items on all screen sizes */
+.product__media-item--variant {
+  display: none;
+}
+
+.product__media-listt {
+  display: flex !important;
+  background: white;
+}
+
+.product__media-list:has(.no-featured-linked.is-active)
+  .cl-po--gallery-wrapper {
+  display: none;
 }
