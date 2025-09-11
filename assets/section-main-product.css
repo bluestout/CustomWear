@@ -1672,7 +1672,7 @@ product-info {
 
 .product__media-list:has(.no-featured-linked.is-active)
   .cl-po--gallery-wrapper {
-  display: none;
+  display: none!important;
 }
 
 .product__media-list:has(.product__media-item--variant.is-active) .product__media-listt{
