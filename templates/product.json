@@ -92,7 +92,7 @@
             "contentAlignment": "center",
             "buttonAlignment": "center",
             "overrideFont": false,
-            "customFont": "helvetica_n4",
+            "customFont": "sans_serif_n4",
             "buttonFullwidth": true,
             "removeBoxShadowAndBorder": true,
             "horizontalPadding": 20,
@@ -146,7 +146,7 @@
             "contentAlignment": "center",
             "buttonAlignment": "center",
             "overrideFont": false,
-            "customFont": "helvetica_n4",
+            "customFont": "sans_serif_n4",
             "buttonFullwidth": true,
             "removeBoxShadowAndBorder": false,
             "horizontalPadding": 20,
@@ -161,7 +161,7 @@
             "title_1": "Your logo",
             "text_1": "<p>Submit \"YOUR LOGO\" now or skip and finish checkout. Please email </p><p>to <a href=\"mailto:logos@customizedwear.com\" target=\"_blank\" title=\"mailto:logos@customizedwear.com\">logos@customizedwear.com</a></p><p></p><p><strong>NOTE:</strong> Orders should be one decoration type with the same logo design. If you have multiple logos, please place your orders separately.</p>",
             "title_2": "After checkout",
-            "text_2": "<p>Your order will be assigned to one of our decoration specialists. They will be handling your order personally throughout the whole process, from start to finish.</p><p></p><p><strong>Want to order a blank sample first? Find this item on </strong><a href=\"https://capswholesalers.com\" target=\"_blank\" title=\"https://www.capwholesalers.com\"><strong>Capswholesalers.com</strong></a></p>"
+            "text_2": "<p>Your order will be assigned to one of our decoration specialists. They will be handling your order personally throughout the whole process, from start to finish.</p><p></p><p><strong>Want to order a blank sample first? Find this item on </strong><a href=\"https://capswholesalers.com/?utm_source=cw&utm_medium=redirect&utm_campaign=internal_referral\" target=\"_blank\" title=\"https://capswholesalers.com/?utm_source=cw&utm_medium=redirect&utm_campaign=internal_referral\"><strong>Capswholesalers.com</strong></a></p>"
           }
         }
       },
