@@ -1666,7 +1666,6 @@ product-info {
 }
 
 .product__media-listt {
-  display: flex !important;
   background: white;
 }
 
