@@ -1177,7 +1177,7 @@ class VariantSelects extends HTMLElement {
   }
 
   updateSelectionMetadata({ target }) {
-    const { value, tagName } = target;
+    const { value, tagName, name } = target;
 
     // START ==> ES - 0826202501
     document.querySelectorAll(".thumbnail-list .thumbnail-list__item")?.forEach(item => {
