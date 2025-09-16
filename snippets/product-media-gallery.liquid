@@ -281,6 +281,7 @@
                 endif
               endcapture
               assign media_index = media_index | plus: 1
+              assign media_alt = media.alt | downcase
             -%}
             <li
               id="Slide-Thumbnails-{{ section.id }}-{{ forloop.index }}"
