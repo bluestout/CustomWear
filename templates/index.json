@@ -114,8 +114,21 @@
             "button_link": "https://capwholesaler.myshopify.com/?utm_source=cw&utm_medium=redirect&utm_campaign=internal_referral"
           }
         },
+        "slide_item_AmEFjw": {
+          "type": "slide_item",
+          "settings": {
+            "image": "shopify://shop_images/CW_HomePage_Banner_2914_x_996_px.jpg",
+            "header_text": "",
+            "heading": "",
+            "description": "",
+            "button_text": "",
+            "button_target": "_blank",
+            "button_link": "shopify://collections/richardson-hats"
+          }
+        },
         "slide_item_XUT7XG": {
           "type": "slide_item",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/bonefishtrucker_1_1_1.png",
             "sm_image": "shopify://shop_images/bonefishtrucker_1_1_1.png",
@@ -132,6 +145,7 @@
         "slide_item_m6qqgh",
         "slide_item_bUakze",
         "slide_item_wQKygd",
+        "slide_item_AmEFjw",
         "slide_item_XUT7XG"
       ],
       "name": "ui-custom-header-slide",
