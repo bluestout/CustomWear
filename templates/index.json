@@ -118,10 +118,10 @@
           "type": "slide_item",
           "settings": {
             "image": "shopify://shop_images/CW_HomePage_Banner_2914_x_996_px.jpg",
-            "header_text": "",
+            "header_text": "Richardson",
             "heading": "",
-            "description": "",
-            "button_text": "",
+            "description": "<p>Authorized Dealer</p>",
+            "button_text": "SHOP NOW",
             "button_target": "default",
             "button_link": "shopify://collections/richardson-hats"
           }
