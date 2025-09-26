@@ -181,7 +181,7 @@
           "type": "collection",
           "settings": {
             "image": "shopify://shop_images/Sport_Perform_Dk_Green_3__520_x_376px_1.jpg",
-            "title": "Sport Performance Hats",
+            "title": "Performance Hats",
             "url": "shopify://collections/richardson-sport-performance"
           }
         },
@@ -197,7 +197,7 @@
           "type": "collection",
           "settings": {
             "image": "shopify://shop_images/213_Snapback_5__520_x_376px_3.jpg",
-            "title": "Snapback Hats",
+            "title": "Snapback Caps",
             "url": "shopify://collections/snapback-caps"
           }
         },
@@ -205,7 +205,7 @@
           "type": "collection",
           "settings": {
             "image": "shopify://shop_images/6006_Char_5_Panel_Golf_1-__520_x_376px_1.jpg",
-            "title": "Flat Billed Hats",
+            "title": "Flat Bill Hats",
             "url": "shopify://collections/flat-bill-hats"
           }
         },
@@ -221,7 +221,7 @@
           "type": "collection",
           "settings": {
             "image": "shopify://shop_images/840_Realtree_Camo_8__520_x_376px_1.jpg",
-            "title": "Camo Hats",
+            "title": "Camo & Military Hats",
             "url": "shopify://collections/camo-hats"
           }
         },
