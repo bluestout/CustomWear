@@ -328,6 +328,14 @@
             "title": "Patriotic & Novelty Hats",
             "url": "shopify://collections/patriotic-novelty-hats"
           }
+        },
+        "collection_z9yXYx": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/Patterned_Hats_520_x_372_px.jpg",
+            "title": "Patterned Hats",
+            "url": "shopify://collections/patterned"
+          }
         }
       },
       "block_order": [
@@ -351,7 +359,8 @@
         "collection_TJeM83",
         "collection_CHmqMx",
         "collection_U67reW",
-        "collection_rLbHDB"
+        "collection_rLbHDB",
+        "collection_z9yXYx"
       ],
       "settings": {
         "title": "Shop By Hat Style",
