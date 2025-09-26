@@ -280,6 +280,14 @@
             "title": "Ladies Hats",
             "url": "shopify://collections/ladies-hats"
           }
+        },
+        "collection_b8zkdR": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/Best_Seller_520_x_372_px.jpg",
+            "title": "Best Seller",
+            "url": ""
+          }
         }
       },
       "block_order": [
@@ -297,7 +305,8 @@
         "collection_tJzK7C",
         "collection_dzDCb6",
         "collection_V4CjNL",
-        "collection_4wKRNX"
+        "collection_4wKRNX",
+        "collection_b8zkdR"
       ],
       "settings": {
         "title": "Shop By Hat Style",
