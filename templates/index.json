@@ -336,6 +336,14 @@
             "title": "Patterned Hats",
             "url": "shopify://collections/patterned"
           }
+        },
+        "collection_V6iDRg": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/Umpire_Hats_520_x_372_px.jpg",
+            "title": "Umpire Hats",
+            "url": "shopify://collections/umpire-hats"
+          }
         }
       },
       "block_order": [
@@ -360,7 +368,8 @@
         "collection_CHmqMx",
         "collection_U67reW",
         "collection_rLbHDB",
-        "collection_z9yXYx"
+        "collection_z9yXYx",
+        "collection_V6iDRg"
       ],
       "settings": {
         "title": "Shop By Hat Style",
