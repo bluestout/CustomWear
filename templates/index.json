@@ -320,6 +320,14 @@
             "title": "Kids Hats",
             "url": ""
           }
+        },
+        "collection_rLbHDB": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/Patriotic_Novelty_Hats_520_x_372.jpg",
+            "title": "Patriotic & Novelty Hats",
+            "url": ""
+          }
         }
       },
       "block_order": [
@@ -342,7 +350,8 @@
         "collection_zBXREN",
         "collection_TJeM83",
         "collection_CHmqMx",
-        "collection_U67reW"
+        "collection_U67reW",
+        "collection_rLbHDB"
       ],
       "settings": {
         "title": "Shop By Hat Style",
