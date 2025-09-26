@@ -296,6 +296,30 @@
             "title": "Eco-Sustainable & Organic Hats",
             "url": ""
           }
+        },
+        "collection_TJeM83": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/Foam_Mesh_520_x_372_px.jpg",
+            "title": "Foam Mesh Hats",
+            "url": ""
+          }
+        },
+        "collection_CHmqMx": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/Knit_Beanie_520_x_372_px.jpg",
+            "title": "Knit Beanies",
+            "url": ""
+          }
+        },
+        "collection_U67reW": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/Kids_Caps_520_x_372_px.jpg",
+            "title": "Kids Hats",
+            "url": ""
+          }
         }
       },
       "block_order": [
@@ -315,7 +339,10 @@
         "collection_V4CjNL",
         "collection_4wKRNX",
         "collection_b8zkdR",
-        "collection_zBXREN"
+        "collection_zBXREN",
+        "collection_TJeM83",
+        "collection_CHmqMx",
+        "collection_U67reW"
       ],
       "settings": {
         "title": "Shop By Hat Style",
