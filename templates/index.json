@@ -286,7 +286,7 @@
           "settings": {
             "image": "shopify://shop_images/Best_Seller_520_x_372_px.jpg",
             "title": "Best Seller",
-            "url": ""
+            "url": "shopify://collections/best-sellers"
           }
         },
         "collection_zBXREN": {
@@ -294,7 +294,7 @@
           "settings": {
             "image": "shopify://shop_images/Eco_Sustainsable_-_Organic_Hats_520_x_372_px.jpg",
             "title": "Eco-Sustainable & Organic Hats",
-            "url": ""
+            "url": "shopify://collections/eco-sustainable-organic-hats"
           }
         },
         "collection_TJeM83": {
