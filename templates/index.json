@@ -318,7 +318,7 @@
           "settings": {
             "image": "shopify://shop_images/Kids_Caps_520_x_372_px.jpg",
             "title": "Kids Hats",
-            "url": ""
+            "url": "shopify://collections/kids-hats"
           }
         },
         "collection_rLbHDB": {
