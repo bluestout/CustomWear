@@ -302,7 +302,7 @@
           "settings": {
             "image": "shopify://shop_images/Foam_Mesh_520_x_372_px.jpg",
             "title": "Foam Mesh Hats",
-            "url": ""
+            "url": "shopify://collections/foam-mesh-hats"
           }
         },
         "collection_CHmqMx": {
@@ -310,7 +310,7 @@
           "settings": {
             "image": "shopify://shop_images/Knit_Beanie_520_x_372_px.jpg",
             "title": "Knit Beanies",
-            "url": ""
+            "url": "shopify://collections/knit-beanies"
           }
         },
         "collection_U67reW": {
