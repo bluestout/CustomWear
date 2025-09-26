@@ -288,6 +288,14 @@
             "title": "Best Seller",
             "url": ""
           }
+        },
+        "collection_zBXREN": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/Eco_Sustainsable_-_Organic_Hats_520_x_372_px.jpg",
+            "title": "Eco-Sustainable & Organic Hats",
+            "url": ""
+          }
         }
       },
       "block_order": [
@@ -306,7 +314,8 @@
         "collection_dzDCb6",
         "collection_V4CjNL",
         "collection_4wKRNX",
-        "collection_b8zkdR"
+        "collection_b8zkdR",
+        "collection_zBXREN"
       ],
       "settings": {
         "title": "Shop By Hat Style",
