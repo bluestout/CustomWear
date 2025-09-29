@@ -688,7 +688,7 @@ summary::-webkit-details-marker {
 
 .disclosure-has-popup[open] > summary + * {
   z-index: 1000;
-  position: relative;
+  /* position: relative; */
 }
 
 @media screen and (min-width: 750px) {
