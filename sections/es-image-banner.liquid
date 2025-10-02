@@ -98,6 +98,10 @@
 <div
   id="Banner-{{ section.id }}"
   class="banner {% if section.settings.show_space %} banner--space{% endif %} banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.image_height == 'adapt' and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %} opacity-{{ section.settings.opacity_type }} opacity-{{ section.settings.opacity_direction }} sm-opacity-{{ section.settings.opacity_direct_on_mobile }} sm-opacity-height-{{ section.settings.opacity_height_on_mobile }} sm-banner--{{ section.settings.image_height_on_mobile }} md-up-opacity-weight--{{ section.settings.opacity_weight_on_desktop }} opacity-color--{{ section.settings.opacity_color }}"
+  {% if section.settings.banner_link != blank %}
+    onclick="window.location.href='{{ section.settings.banner_link }}'"
+    style="cursor: pointer;"
+  {% endif %}
 >
   {%- if section.settings.image != blank -%}
     <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
@@ -169,9 +173,6 @@
       }}
     </div>
   {%- endif -%}
-  {%- if section.settings.banner_link != blank -%}
-    <a href="{{ section.settings.banner_link }}">
-  {%- endif -%}
   <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} sm-banner__content--{{ section.settings.mobile_content_position }}-{{ section.settings.mobile_content_alignment }} page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
     <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
       {%- for block in section.blocks -%}
@@ -226,9 +227,6 @@
       {%- endfor -%}
     </div>
   </div>
-  {%- if section.settings.banner_link != blank -%}
-    </a>
-  {%- endif -%}
   {%- if thumb_image != blank -%}
     {%- assign thumb_image_width = thumb_image.settings.image.width | divided_by: 2 -%}
     {%- assign thumb_image_height = thumb_image.settings.image.height | divided_by: 2 -%}
