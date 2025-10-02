@@ -317,7 +317,7 @@
   label.cl-po--radio-item,
 .product
   .cl-po--option[data-option="Embroidery - Ink Color Method"]
-  label.cl-po--radio-item,
+  label.cl-po--radio-item
  {
   border: 1px solid #ccc;
   padding: 5px 15px;
