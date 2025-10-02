@@ -212,7 +212,8 @@
 [data-option="Embroidered - Patch Background Color"] label.cl-po--radio-item input,
 [data-option="Embroidered - Patch Border Color"] label.cl-po--radio-item input,
 [data-option="Print Stitch - Patch Background Color"] label.cl-po--radio-item input,
-[data-option="Print Stitch - Patch Border Color"] label.cl-po--radio-item input {
+[data-option="Print Stitch - Patch Border Color"] label.cl-po--radio-item input,
+[data-option="Embroidery - Ink Color Method"] label.cl-po--radio-item input {
   visibility: hidden;
   width: 0px !important;
   height: 0px !important;
@@ -236,7 +237,8 @@
 .cl-po--option[data-option="Embroidered - Patch Background Color"],
 .cl-po--option[data-option="Embroidered - Patch Border Color"],
 .cl-po--option[data-option="Print Stitch - Patch Background Color"],
-.cl-po--option[data-option="Print Stitch - Patch Border Color"] {
+.cl-po--option[data-option="Print Stitch - Patch Border Color"],
+.cl-po--option[data-option="Embroidery - Ink Color Method"] {
   display: flex;
   flex-wrap: wrap;
   column-gap: 8px;
@@ -268,7 +270,11 @@
   .cl-po--label,
 .product
   .cl-po--option[data-option="Print Stitch - Patch Border Color"]
-  .cl-po--label {
+  .cl-po--label,
+.product
+  .cl-po--option[data-option="Embroidery - Ink Color Method"]
+  .cl-po--label
+   {
   width: 100%;
 }
 
@@ -308,7 +314,10 @@
   label.cl-po--radio-item,
 .product
   .cl-po--option[data-option="Print Stitch - Patch Border Color"]
-  label.cl-po--radio-item
+  label.cl-po--radio-item,
+.product
+  .cl-po--option[data-option="Embroidery - Ink Color Method"]
+  label.cl-po--radio-item,
  {
   border: 1px solid #ccc;
   padding: 5px 15px;
@@ -357,9 +366,11 @@
   .cl-po--radio-item:has(input[type="radio"]:checked),
   [data-option="Embroidered - Patch Border Color"]
   .cl-po--radio-item:has(input[type="radio"]:checked),
-[data-option="Print Stitch - Patch Background Color"]
+  [data-option="Print Stitch - Patch Background Color"]
   .cl-po--radio-item:has(input[type="radio"]:checked),
-[data-option="Print Stitch - Patch Border Color"]
+  [data-option="Print Stitch - Patch Border Color"]
+  .cl-po--radio-item:has(input[type="radio"]:checked),
+  [data-option="Embroidery - Ink Color Method"]
   .cl-po--radio-item:has(input[type="radio"]:checked) {
   border-color: black;
   background: white;
