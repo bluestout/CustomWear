@@ -85,7 +85,8 @@
             "description": "<p>Design your perfect hat – customize colors, fonts for a unique look!</p>",
             "button_text": "Customize",
             "button_target": "default",
-            "button_link": "shopify://pages/shop-by-style"
+            "button_link": "shopify://pages/shop-by-style",
+            "banner_link": ""
           }
         },
         "slide_item_bUakze": {
@@ -98,7 +99,8 @@
             "description": "<p>Design your perfect hat – customize colors, fonts for a unique look!</p>",
             "button_text": "Customize",
             "button_target": "default",
-            "button_link": "shopify://pages/shop-by-style"
+            "button_link": "shopify://pages/shop-by-style",
+            "banner_link": "shopify://collections/atlantis"
           }
         },
         "slide_item_wQKygd": {
@@ -111,7 +113,8 @@
             "description": "<p>Only want blank hats? Visit our other store where you’ll find hats with no decoration</p>",
             "button_text": "Visit Capswholesalers.com",
             "button_target": "_blank",
-            "button_link": "https://capwholesaler.myshopify.com/?utm_source=cw&utm_medium=redirect&utm_campaign=internal_referral"
+            "button_link": "https://capwholesaler.myshopify.com/?utm_source=cw&utm_medium=redirect&utm_campaign=internal_referral",
+            "banner_link": ""
           }
         },
         "slide_item_AmEFjw": {
@@ -123,7 +126,8 @@
             "description": "",
             "button_text": "",
             "button_target": "default",
-            "button_link": ""
+            "button_link": "",
+            "banner_link": ""
           }
         },
         "slide_item_XUT7XG": {
@@ -137,7 +141,8 @@
             "description": "<p>Authorized Dealer</p>",
             "button_text": "Customize Richardson Hats with Your Logo",
             "button_target": "default",
-            "button_link": "shopify://collections/richardson-hats"
+            "button_link": "shopify://collections/richardson-hats",
+            "banner_link": ""
           }
         }
       },
