@@ -173,7 +173,7 @@
     </div>
   {%- endif -%}
   {%- if section.settings.banner_link != blank -%}
-    </a>
+    <a href="{{ section.settings.banner_link }}">
   {%- endif -%}
   <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} sm-banner__content--{{ section.settings.mobile_content_position }}-{{ section.settings.mobile_content_alignment }} page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
     <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
@@ -229,6 +229,9 @@
       {%- endfor -%}
     </div>
   </div>
+  {%- if section.settings.banner_link != blank -%}
+    </a>
+  {%- endif -%}
   {%- if thumb_image != blank -%}
     {%- assign thumb_image_width = thumb_image.settings.image.width | divided_by: 2 -%}
     {%- assign thumb_image_height = thumb_image.settings.image.height | divided_by: 2 -%}
