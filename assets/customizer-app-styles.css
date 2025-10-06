@@ -215,7 +215,9 @@
 [data-option="Print Stitch - Patch Border Color"] label.cl-po--radio-item input,
 [data-option="Embroidery - Ink Color Method"] label.cl-po--radio-item input,
 [data-option="Embroidery - Fabric - Ink Color Method "] label.cl-po--radio-item input,
-[data-option="Embroidery - Thread - Ink Color Method"] label.cl-po--radio-item input{
+[data-option="Embroidery - Thread - Ink Color Method"] label.cl-po--radio-item input,
+[data-option="Print Stitch - Fabric - Ink Color Method "] label.cl-po--radio-item input,
+[data-option="Print Stitch - Thread - Ink Color Method"] label.cl-po--radio-item input{
   visibility: hidden;
   width: 0px !important;
   height: 0px !important;
@@ -242,7 +244,9 @@
 .cl-po--option[data-option="Print Stitch - Patch Border Color"],
 .cl-po--option[data-option="Embroidery - Ink Color Method"],
 .cl-po--option[data-option="Embroidery - Fabric - Ink Color Method "],
-.cl-po--option[data-option="Embroidery - Thread - Ink Color Method"] {
+.cl-po--option[data-option="Embroidery - Thread - Ink Color Method"],
+.cl-po--option[data-option="Print Stitch - Fabric - Ink Color Method "],
+.cl-po--option[data-option="Print Stitch - Thread - Ink Color Method"] {
   display: flex;
   flex-wrap: wrap;
   column-gap: 8px;
@@ -283,7 +287,13 @@
   .cl-po--label,
 .product
   .cl-po--option[data-option="Embroidery - Thread - Ink Color Method"]
-  .cl-po--label  
+  .cl-po--label,
+.product
+  .cl-po--option[data-option="Print Stitch - Fabric - Ink Color Method "]
+  .cl-po--label,
+.product
+  .cl-po--option[data-option="Print Stitch - Thread - Ink Color Method"]
+  .cl-po--label
    {
   width: 100%;
 }
@@ -333,6 +343,12 @@
   label.cl-po--radio-item,
 .product
   .cl-po--option[data-option="Embroidery - Thread - Ink Color Method"]
+  label.cl-po--radio-item,
+.product
+  .cl-po--option[data-option="Print Stitch - Fabric - Ink Color Method "]
+  label.cl-po--radio-item,
+.product
+  .cl-po--option[data-option="Print Stitch - Thread - Ink Color Method"]
   label.cl-po--radio-item
  {
   border: 1px solid #ccc;
@@ -391,6 +407,10 @@
   [data-option="Embroidery - Fabric - Ink Color Method "]
   .cl-po--radio-item:has(input[type="radio"]:checked),
   [data-option="Embroidery - Thread - Ink Color Method"]
+  .cl-po--radio-item:has(input[type="radio"]:checked),
+  [data-option="Print Stitch - Fabric - Ink Color Method "]
+  .cl-po--radio-item:has(input[type="radio"]:checked),
+  [data-option="Print Stitch - Thread - Ink Color Method"]
   .cl-po--radio-item:has(input[type="radio"]:checked) {
   border-color: black;
   background: white;
