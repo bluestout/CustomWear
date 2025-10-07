@@ -42,6 +42,7 @@
               </div>
               <div class="es-featured-blocks__item-title">
                 <a class="es-button link" href="{{ block.settings.url }}">{{ block.settings.title }}</a>
+                <div class="es-featured-blocks__item-subtitle">{{ block.settings.subtitle }}</div>
               </div>
             </div>
           </div>
@@ -122,6 +123,12 @@
           "id": "title",
           "label": "Title",
           "default": "Hat Style"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "subtitle",
+          "label": "Sub Title",
+          "default": "Hat Style Sub Title"
         },
         {
           "type": "url",
