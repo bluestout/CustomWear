@@ -551,6 +551,18 @@
               }
             }
           }
+
+          .es-featured-blocks__item-subtitle {
+            font-style: italic;
+            font-size: 1.2rem;
+            line-height: 1.3;
+            opacity: .85;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
         }
       }
     }
