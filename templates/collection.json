@@ -35,7 +35,7 @@
         "heading_Ui89kH"
       ],
       "settings": {
-        "banner_link": "",
+        "banner_link": "{{ collection.metafields.custom.banner_link.value }}",
         "show_space": false,
         "image": "{{ collection.image }}",
         "image_mobile": "{{ collection.metafields.custom.mobile_image.value }}",
