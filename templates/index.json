@@ -48,6 +48,7 @@
       ],
       "disabled": true,
       "settings": {
+        "banner_link": "",
         "show_space": false,
         "image": "shopify://shop_images/Rectangle_94.jpg",
         "image_mobile": "shopify://shop_images/Rectangle_94.png",
@@ -120,14 +121,15 @@
         "slide_item_AmEFjw": {
           "type": "slide_item",
           "settings": {
-            "image": "shopify://shop_images/CW_HomePage_Banner_2914_x_996_px.jpg",
+            "image": "shopify://shop_images/CW_Banner_2914_x_996_px.jpg",
+            "sm_image": "shopify://shop_images/CW_Banner_Mobile_750_x_740_px.jpg",
             "header_text": "",
             "heading": "",
             "description": "",
             "button_text": "",
             "button_target": "default",
             "button_link": "",
-            "banner_link": ""
+            "banner_link": "shopify://collections/richardson-hats"
           }
         },
         "slide_item_XUT7XG": {
