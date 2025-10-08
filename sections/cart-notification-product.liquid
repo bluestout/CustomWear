@@ -29,12 +29,16 @@
           {%- for property in item.properties -%}
             {%- assign property_first_char = property.first | slice: 0 -%}
             {%- if property.last != blank and property_first_char != '_' -%}
-              <div class="product-option">
+              <div class="product-option {% if property.last contains '/upload' %}image-option-property{% endif %}">
                 <dt>{{ property.first }}:</dt>
                 <dd>
-                  {%- if property.last contains '/uploads/' -%}
-                    <a href="{{ property.last }}" class="link" target="_blank">
-                      {{ property.last | split: '/' | last }}
+                  {%- if property.last contains '/upload' -%}
+                    <a href="{{ property.last }}" target="_blank">
+                      <img
+                        src="{{ property.last }}"
+                        class="image-option"
+                        loading="lazy"
+                      >
                     </a>
                   {%- else -%}
                     {{ property.last }}
