@@ -1515,5 +1515,25 @@
         "id": "cart_additional_info_text"
       }
     ]
-  }
+  },
+  {
+    "name": "Selected Variant Images",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Subscribe our channel [websensepro](https://youtube.com/@websensepro?sub_confirmation=1)"
+      },
+      {
+        "type": "text",
+        "id": "selected_option_name",
+        "label": "Variant option name",
+        "default": "Color",
+        "info": "Attach the first image of each group to a variant."
+      },
+      {
+        "type": "paragraph",
+        "content": "If you have store in multi-language, you can enter multiple values separated by commas: Color,Colour,Couleur"
+      }
+    ]
+  },
 ]
