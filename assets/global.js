@@ -1180,15 +1180,15 @@ class VariantSelects extends HTMLElement {
     const { value, tagName, name } = target;
 
     // START ==> ES - 0826202501
-    document.querySelectorAll(".thumbnail-list .thumbnail-list__item")?.forEach(item => {
-      if (name.toLowerCase().indexOf("color") !== -1) { 
-        if (item.dataset.imageAlt.toLowerCase() == value.toLowerCase()) {
-          item.classList.remove("hidden");
-        } else {
-          item.classList.add("hidden");
-        }
-      }
-    });
+    // document.querySelectorAll(".thumbnail-list .thumbnail-list__item")?.forEach(item => {
+    //   if (name.toLowerCase().indexOf("color") !== -1) { 
+    //     if (item.dataset.imageAlt.toLowerCase() == value.toLowerCase()) {
+    //       item.classList.remove("hidden");
+    //     } else {
+    //       item.classList.add("hidden");
+    //     }
+    //   }
+    // });
     // END <== ES - 0826202501
 
     if (tagName === 'SELECT' && target.selectedOptions.length) {
