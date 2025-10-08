@@ -240,10 +240,9 @@
           -%}
           <li
             id="Slide-Thumbnails-{{ section.id }}-0"
-            class="thumbnail-list__item {% if color_title != media_alt %}hidden{% endif %} slider__slide{% if section.settings.hide_variants and variant_images contains featured_media.src %} thumbnail-list_item--variant{% endif %}"
+            class="thumbnail-list__item slider__slide{% if section.settings.hide_variants and variant_images contains featured_media.src %} thumbnail-list_item--variant{% endif %}"
             data-target="{{ section.id }}-{{ featured_media.id }}"
             data-media-position="{{ media_index }}"
-            data-image-alt="{{ featured_media.alt }}"
           >
             {%- capture thumbnail_id -%}
               Thumbnail-{{ section.id }}-0
