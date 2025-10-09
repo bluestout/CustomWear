@@ -3646,3 +3646,7 @@ details-disclosure > details {
 .accessease-widget-centerleft #accessease-icon {
     z-index: 21 !important;
 }
+
+#cloud-search-results .sku {
+  display: block;
+}
