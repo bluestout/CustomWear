@@ -173,6 +173,7 @@
           "settings": {
             "image": "shopify://shop_images/255_berry_5_Panel_1__520_x_376px_2.jpg",
             "title": "5-Panel Golf Hats",
+            "subtitle": "Custom 5-panel golf hats",
             "url": "shopify://collections/5-panel-golf-hats"
           }
         },
@@ -181,6 +182,7 @@
           "settings": {
             "image": "shopify://shop_images/112_Tri-White-Aluminum-Black-520_x_376px_1.jpg",
             "title": "Trucker Mesh Hats",
+            "subtitle": "Custom 112 trucker caps",
             "url": "shopify://collections/trucker-mesh-hats"
           }
         },
@@ -189,6 +191,7 @@
           "settings": {
             "image": "shopify://shop_images/Sport_Perform_Dk_Green_3__520_x_376px_1.jpg",
             "title": "Performance Hats",
+            "subtitle": "Performance caps, custom",
             "url": "shopify://collections/richardson-sport-performance"
           }
         },
@@ -197,6 +200,7 @@
           "settings": {
             "image": "shopify://shop_images/Flexfit_4__520_x_376px_1.jpg",
             "title": "Flexfit Hats",
+            "subtitle": "Custom Flexfit® fitted hats",
             "url": "shopify://collections/flexfit-hats"
           }
         },
@@ -205,6 +209,7 @@
           "settings": {
             "image": "shopify://shop_images/213_Snapback_5__520_x_376px_3.jpg",
             "title": "Snapback Caps",
+            "subtitle": "Custom snapback caps",
             "url": "shopify://collections/snapback-caps"
           }
         },
@@ -213,6 +218,7 @@
           "settings": {
             "image": "shopify://shop_images/6006_Char_5_Panel_Golf_1-__520_x_376px_1.jpg",
             "title": "Flat Bill Hats",
+            "subtitle": "Custom flat bill snapbacks",
             "url": "shopify://collections/flat-bill-hats"
           }
         },
@@ -221,6 +227,7 @@
           "settings": {
             "image": "shopify://shop_images/decky_6032_rope_hat_Hat_Style_7-__520_x_376px_1.jpg",
             "title": "Rope Hats",
+            "subtitle": "Custom rope hats & patches",
             "url": "shopify://collections/roped-hats"
           }
         },
@@ -229,6 +236,7 @@
           "settings": {
             "image": "shopify://shop_images/840_Realtree_Camo_8__520_x_376px_1.jpg",
             "title": "Camo & Military Hats",
+            "subtitle": "Camo Military Hats with Custom Logo or Patches",
             "url": "shopify://collections/camo-military-hats"
           }
         },
@@ -237,6 +245,7 @@
           "settings": {
             "image": "shopify://shop_images/938_LegionBlue_Dads_Relax_9__520_x_376px_1.jpg",
             "title": "Relaxed Dad Hats",
+            "subtitle": "Relaxed dad hats, custom",
             "url": "shopify://collections/relaxed-dad-hats"
           }
         },
@@ -245,6 +254,7 @@
           "settings": {
             "image": "shopify://shop_images/514_Gry_Blk_6_Panel_Baseball_10-520_x_376px_1.jpg",
             "title": "6-Panel Baseball Caps",
+            "subtitle": "Custom 6-panel baseball caps",
             "url": "shopify://collections/6-panel-baseball-caps"
           }
         },
@@ -253,6 +263,7 @@
           "settings": {
             "image": "shopify://shop_images/1168_grey_blk_7_Panel_11-520px_x_372px_1.jpg",
             "title": "7-Panel Hats",
+            "subtitle": "Custom 7-panel hats",
             "url": "shopify://collections/7-panel-hats"
           }
         },
@@ -261,6 +272,7 @@
           "settings": {
             "image": "shopify://shop_images/R75_Red_Budget_12-520px_x_372px_1.jpg",
             "title": "Budget Hats",
+            "subtitle": "Affordable custom hats",
             "url": "shopify://collections/budget-hats"
           }
         },
@@ -269,6 +281,7 @@
           "settings": {
             "image": "shopify://shop_images/810_Royal_Bucket_Hat_13-520px_x_372px_1.jpg",
             "title": "Bucket & Sun Hats",
+            "subtitle": "Custom bucket & sun hats",
             "url": "shopify://collections/bucket-sun-hats"
           }
         },
@@ -277,6 +290,7 @@
           "settings": {
             "image": "shopify://shop_images/160_Navy_Sun_Visor_14__520_x_376px_1.jpg",
             "title": "Sun Visors",
+            "subtitle": "Custom sports visors",
             "url": "shopify://collections/sun-visors"
           }
         },
@@ -285,6 +299,7 @@
           "settings": {
             "image": "shopify://shop_images/220_White_Ladies_15__520_x_376px_1.jpg",
             "title": "Ladies Hats",
+            "subtitle": "Women’s fit, custom logo",
             "url": "shopify://collections/ladies-hats"
           }
         },
@@ -293,6 +308,7 @@
           "settings": {
             "image": "shopify://shop_images/Best_Seller_520_x_372_px.jpg",
             "title": "Best Seller",
+            "subtitle": "Our top custom hats",
             "url": "shopify://collections/best-sellers"
           }
         },
@@ -301,6 +317,7 @@
           "settings": {
             "image": "shopify://shop_images/Eco_Sustainsable_-_Organic_Hats_520_x_372_px.jpg",
             "title": "Eco-Sustainable & Organic Hats",
+            "subtitle": "Eco-friendly custom hats",
             "url": "shopify://collections/eco-sustainable-organic-hats"
           }
         },
@@ -309,6 +326,7 @@
           "settings": {
             "image": "shopify://shop_images/Foam_Mesh_520_x_372_px.jpg",
             "title": "Foam Mesh Hats",
+            "subtitle": "Custom foam mesh truckers",
             "url": "shopify://collections/foam-mesh-hats"
           }
         },
@@ -317,6 +335,7 @@
           "settings": {
             "image": "shopify://shop_images/Knit_Beanie_520_x_372_px.jpg",
             "title": "Knit Beanies",
+            "subtitle": "Custom knit beanies",
             "url": "shopify://collections/knit-beanies"
           }
         },
@@ -325,6 +344,7 @@
           "settings": {
             "image": "shopify://shop_images/Kids_Caps_520_x_372_px.jpg",
             "title": "Kids Hats",
+            "subtitle": "Youth custom hats",
             "url": "shopify://collections/kids-hats"
           }
         },
@@ -333,6 +353,7 @@
           "settings": {
             "image": "shopify://shop_images/Patriotic_Novelty_Hats_520_x_372.jpg",
             "title": "Patriotic & Novelty Hats",
+            "subtitle": "Patriotic & novelty hats",
             "url": "shopify://collections/patriotic-novelty-hats"
           }
         },
@@ -341,6 +362,7 @@
           "settings": {
             "image": "shopify://shop_images/Patterned_Hats_520_x_372_px.jpg",
             "title": "Patterned Hats",
+            "subtitle": "Printed & patterned hats",
             "url": "shopify://collections/patterned"
           }
         },
@@ -349,6 +371,7 @@
           "settings": {
             "image": "shopify://shop_images/Umpire_Hats_520_x_372_px.jpg",
             "title": "Umpire Hats",
+            "subtitle": "Official umpire caps",
             "url": "shopify://collections/umpire-hats"
           }
         },
@@ -357,6 +380,7 @@
           "settings": {
             "image": "shopify://shop_images/USA_Made_520_x_372_px.jpg",
             "title": "USA Made Hats",
+            "subtitle": "Made-in-USA custom hats",
             "url": "shopify://collections/usa-made-hats"
           }
         }
