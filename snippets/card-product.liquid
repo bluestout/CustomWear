@@ -53,7 +53,7 @@
       assign card__image = card_product.metafields.custom.your_logo_here.value
     endif
   -%}
-  <div class="card-wrapper product-card-wrapper underline-links-hover" data-test>
+  <div class="card-wrapper product-card-wrapper underline-links-hover" data-test onclick="window.location.href = '{{ card_product.url }}'">
     {%- assign product_state = blank -%}
     {%- if card_product.tags contains 'New' or card_product.tags contains 'New Styles' -%}
       {%- assign product_state = 'New Styles' -%}
