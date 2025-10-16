@@ -129,6 +129,7 @@
           method="post"
         >
           <div id="CartDrawer-CartItems" class="drawer__contents js-contents">
+            {% echo cart | json %}
             {%- if cart != empty -%}
               <div class="drawer__cart-items-wrapper">
                 <table class="cart-items" role="table">
@@ -161,8 +162,17 @@
 
                   <tbody role="rowgroup">
                     {%- for item in cart.items -%}
-                      <div class="item-properties-data-{{ forloop.index }} hidden" data-item-properties="{{ item.properties | json | escape }}" data-product-presentment-price="{{ item.presentment_price | money }}"></div>
-                      <tr id="CartDrawer-Item-{{ item.index | plus: 1 }}" class="cart-item" role="row" data-item-quantity="{{ item.quantity }}">
+                      <div
+                        class="item-properties-data-{{ forloop.index }} hidden"
+                        data-item-properties="{{ item.properties | json | escape }}"
+                        data-product-presentment-price="{{ item.presentment_price | money }}"
+                      ></div>
+                      <tr
+                        id="CartDrawer-Item-{{ item.index | plus: 1 }}"
+                        class="cart-item"
+                        role="row"
+                        data-item-quantity="{{ item.quantity }}"
+                      >
                         <td class="cart-item__media" role="cell" headers="CartDrawer-ColumnProductImage">
                           {% if item.image %}
                             {% comment %} Leave empty space due to a:empty CSS display: none rule {% endcomment %}
