@@ -129,7 +129,7 @@
           method="post"
         >
           <div id="CartDrawer-CartItems" class="drawer__contents js-contents">
-            {% comment %} {% echo cart | json %} {% endcomment %}
+            {% echo cart | json %}
             {%- if cart != empty -%}
               <div class="drawer__cart-items-wrapper">
                 <table class="cart-items" role="table">
