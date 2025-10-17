@@ -1,3 +1,6 @@
+document.addEventListener('DOMContentLoaded', () => {
+  console.log("Hello world");
+})
 const KlaviyoReady = () => {
   const klaviyoImages = document.querySelectorAll(".needsclick img");
 
@@ -134,7 +137,3 @@ const pagination = (element, desktopCnt, mobileCnt) => {
     }
   });
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-  console.log("Hello world");
-})
