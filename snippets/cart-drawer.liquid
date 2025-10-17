@@ -727,4 +727,38 @@
   </div>
 </cart-drawer>
 
-<script></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    console.log('🛒 Cart drawer loaded');
+
+    // Log when the drawer opens
+    document.addEventListener('cart:open', () => {
+      console.log('📂 Cart drawer opened');
+    });
+
+    // Log when the drawer closes
+    document.addEventListener('cart:close', () => {
+      console.log('🚪 Cart drawer closed');
+    });
+
+    // Log when cart data is updated
+    document.addEventListener('cart:updated', (event) => {
+      console.log('🔄 Cart updated:', event.detail);
+    });
+
+    // Check if the page was restored from browser cache (Back button)
+    window.addEventListener('pageshow', (event) => {
+      console.log('📦 Page shown', event.persisted ? '(from cache)' : '(fresh load)');
+      if (event.persisted) {
+        console.log('⚠️ Page loaded from bfcache — cart may re-render shortly');
+      }
+    });
+
+    // Optional: directly fetch cart data
+    fetch('/cart.js')
+      .then((r) => r.json())
+      .then((cart) => {
+        console.log('🧾 Current cart data:', cart);
+      });
+  });
+</script>
