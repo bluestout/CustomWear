@@ -69,6 +69,10 @@
       tabindex="-1"
     >
       {%- if cart == empty -%}
+        <p>Go away</p>
+      {%- endif -%}
+      {%- if cart != empty -%}
+        <p>Hello</p>
       {%- endif -%}
       {%- if cart == empty -%}
         <div class="drawer__inner-empty">
