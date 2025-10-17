@@ -729,27 +729,6 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    console.log('🛒 Cart drawer loaded');
-
-    document.addEventListener('cart:open', () => {
-      console.log('📂 Cart drawer opened');
-    });
-
-    document.addEventListener('cart:close', () => {
-      console.log('🚪 Cart drawer closed');
-    });
-
-    document.addEventListener('cart:updated', (event) => {
-      console.log('🔄 Cart updated:', event.detail);
-    });
-
-    window.addEventListener('pageshow', (event) => {
-      console.log('📦 Page shown', event.persisted ? '(from cache)' : '(fresh load)');
-      if (event.persisted) {
-        console.log('⚠️ Page loaded from bfcache — cart may re-render shortly');
-      }
-    });
-
     fetch('/cart.js')
       .then((r) => r.json())
       .then((cart) => {
