@@ -134,3 +134,7 @@ const pagination = (element, desktopCnt, mobileCnt) => {
     }
   });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  console.log("Hello world");
+})
