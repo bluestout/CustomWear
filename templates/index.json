@@ -123,12 +123,12 @@
           "settings": {
             "image": "shopify://shop_images/CW_Banner_2914_x_996_px.jpg",
             "sm_image": "shopify://shop_images/CW_Banner_Mobile_750_x_740_px.jpg",
-            "header_text": "Richardson Hats with Your Logo",
+            "header_text": "",
             "heading": "",
-            "description": "<p>Richardson Hats with Your Logo</p>",
-            "button_text": "SHOP",
+            "description": "",
+            "button_text": "",
             "button_target": "default",
-            "button_link": "shopify://collections/richardson-hats",
+            "button_link": "",
             "banner_link": "shopify://collections/richardson-hats"
           }
         },
