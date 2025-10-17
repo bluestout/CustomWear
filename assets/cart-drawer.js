@@ -134,3 +134,23 @@ class CartDrawerItems extends CartItems {
 }
 
 customElements.define('cart-drawer-items', CartDrawerItems);
+
+window.addEventListener('pageshow', (event) => {
+  // Detect when the user navigates back/forward and reload cart data
+  if (event.persisted || performance.getEntriesByType('navigation')[0].type === 'back_forward') {
+    fetch('/cart.js')
+      .then((response) => response.json())
+      .then((cart) => {
+        const badge = document.querySelector('#cart-icon-bubble .cart-count-bubble span[aria-hidden="true"]');
+        if (badge) {
+          badge.textContent = cart.item_count;
+          // Show or hide the badge based on cart count
+          const bubble = document.querySelector('#cart-icon-bubble .cart-count-bubble');
+          if (bubble) {
+            bubble.style.display = cart.item_count > 0 ? 'flex' : 'none';
+          }
+        }
+      })
+      .catch((err) => console.error('Cart badge refresh failed:', err));
+  }
+});
