@@ -1,12 +1,10 @@
-document.addEventListener('DOMContentLoaded', () => {
-  console.log("Hello world");
-})
 const KlaviyoReady = () => {
+  
   const klaviyoImages = document.querySelectorAll(".needsclick img");
 
   klaviyoImages.forEach(img => {
     if (img.alt) {
-      console.log("have alt!asdasdasd");
+      console.log("have alt!");
     } else {
       img.setAttribute("alt", "ADA Alt Text")
     }
@@ -137,3 +135,7 @@ const pagination = (element, desktopCnt, mobileCnt) => {
     }
   });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  console.log("Hello world");
+})
