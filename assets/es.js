@@ -6,7 +6,7 @@ const KlaviyoReady = () => {
 
   klaviyoImages.forEach(img => {
     if (img.alt) {
-      console.log("have alt!");
+      console.log("have alt!asdasdasd");
     } else {
       img.setAttribute("alt", "ADA Alt Text")
     }
