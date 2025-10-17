@@ -126,9 +126,9 @@
             "header_text": "Richardson Hats with Your Logo",
             "heading": "",
             "description": "<p>Richardson Hats with Your Logo</p>",
-            "button_text": "",
+            "button_text": "SHOP",
             "button_target": "default",
-            "button_link": "",
+            "button_link": "shopify://collections/richardson-hats",
             "banner_link": "shopify://collections/richardson-hats"
           }
         },
