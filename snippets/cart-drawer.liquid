@@ -726,9 +726,11 @@
     fetch('/cart.js')
       .then((response) => response.json())
       .then((data) => {
-        let cartDataLiquid = {{ cart | json }}.item_count;
-        let cartDataJson = data.item_count;
-        if(cartDataLiquid.item_count != cartDataJson.item_count)
+        let cartDataLiquid = {{ cart | json }};
+        let cartDataJson = data;
+        if(cartDataLiquid.item_count != cartDataJson.item_count){
+          
+        }
       })
       .catch((error) => {
         console.error('Error:', error);
