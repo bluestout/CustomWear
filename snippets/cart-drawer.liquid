@@ -729,11 +729,6 @@
           let cartDataLiquid = {{ cart | json }};
           let cartDataJson = data;
 
-          let updateData = {}
-          jsonData.forEach(item => {
-            
-          });
-
           if(cartDataLiquid.item_count != cartDataJson.item_count){
             console.log(cartDataJson);
             console.log(cartDataLiquid);
