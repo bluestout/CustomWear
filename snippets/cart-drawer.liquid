@@ -728,7 +728,8 @@
       .then((data) => {
         let cartDataLiquid = {{ cart | json }}.item_count;
         let cartDataJson = data.item_count;
-
+        console.log(cartDataLiquid);
+        console.log(cartDataJson);
       })
       .catch((error) => {
         console.error('Error:', error);
