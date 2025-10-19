@@ -726,6 +726,8 @@
     fetch('/cart.js')
       .then((response) => response.json())
       .then((data) => {
+        let cartDataLiquid = {{ cart | json }};
+        let cartDataJson = data;
         console.log({{ cart | json }});
         console.log(data);
       })
