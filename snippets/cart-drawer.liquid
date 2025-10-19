@@ -728,35 +728,23 @@
   fetch('/cart.js')
     .then((response) => response.json())
     .then((cartDataJson) => {
-      // Compare server-rendered cart with live cart
       if (cartDataLiquid.item_count !== cartDataJson.item_count) {
-        console.log('Cart mismatch → updating quietly');
 
-        // Fade page slightly to hide minor content shift
         document.body.style.transition = 'opacity 0.2s ease';
         document.body.style.opacity = '0.4';
 
-        // Prefetch the updated version of the current page
         fetch(window.location.href)
           .then(res => res.text())
           .then(html => {
-            // Parse the new HTML and replace the <body> contents
             const parser = new DOMParser();
             const doc = parser.parseFromString(html, 'text/html');
-
-            // Keep current scroll position
             const scrollY = window.scrollY;
-
-            // Replace body content smoothly
             document.body.innerHTML = doc.body.innerHTML;
-
-            // Restore opacity and scroll
             document.body.style.opacity = '1';
             window.scrollTo(0, scrollY);
           })
           .catch(err => {
-            console.error('Soft refresh failed, doing full reload.', err);
-            window.location.reload(); // fallback
+            window.location.reload();
           });
       } else {
         console.log('Cart is already in sync.');
