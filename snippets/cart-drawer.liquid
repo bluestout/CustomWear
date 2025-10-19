@@ -722,20 +722,26 @@
 </cart-drawer>
 
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      fetch('/cart.js')
-        .then((response) => response.json())
-        .then((data) => {
-          let cartDataLiquid = {{ cart | json }};
-          let cartDataJson = data;
+  document.addEventListener('DOMContentLoaded', () => {
+    fetch('/cart.js')
+      .then((response) => response.json())
+      .then((data) => {
+        let cartDataLiquid = {{ cart | json }};
+        let cartDataJson = data;
 
-          if(cartDataLiquid.item_count != cartDataJson.item_count){
-            console.log(cartDataJson);
-            console.log(cartDataLiquid);
-          }
-        })
-        .catch((error) => {
-          console.error('Error:', error);
-        });
-    });
+        if(cartDataLiquid.item_count != cartDataJson.item_count){
+           fetch('/cart.js', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(cartDataJson)
+            })
+            .then((response) => response.json())
+        }
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+  });
 </script>
