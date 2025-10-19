@@ -134,13 +134,3 @@ const pagination = (element, desktopCnt, mobileCnt) => {
     }
   });
 }
-
-// For Cart Page
-document.addEventListener('DOMContentLoaded', function(){
-  fetch('/cart.js')
-  .then(response => response.json())
-  .then(data => {
-    console.log(data);
-  })
-  .catch(error => console.error('Error:', error));
-})
