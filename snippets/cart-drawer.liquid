@@ -723,6 +723,9 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    console.log('The DOM is loaded and ready.');
+    fetch('/cart.js')
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((error) => console.error('Error:', error));
   });
 </script>
