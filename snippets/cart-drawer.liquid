@@ -730,14 +730,15 @@
         let cartDataJson = data;
 
         if(cartDataLiquid.item_count != cartDataJson.item_count){
-           fetch('/cart.js', {
+           {% comment %} fetch('/cart.js', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json'
               },
               body: JSON.stringify(cartDataJson)
             })
-            .then((response) => response.json())
+            .then((response) => response.json()) {% endcomment %}
+            location.reload(); 
         }
       })
       .catch((error) => {
