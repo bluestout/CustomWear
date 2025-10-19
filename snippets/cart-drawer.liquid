@@ -724,7 +724,9 @@
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     fetch('/cart.js')
-      .then((response) => response.json())
+      .then((response) => {
+        response.json();
+      })
       .then((data) => console.log(data))
       .catch((error) => console.error('Error:', error));
   });
