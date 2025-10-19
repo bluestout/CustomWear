@@ -161,8 +161,17 @@
 
                   <tbody role="rowgroup">
                     {%- for item in cart.items -%}
-                      <div class="item-properties-data-{{ forloop.index }} hidden" data-item-properties="{{ item.properties | json | escape }}" data-product-presentment-price="{{ item.presentment_price | money }}"></div>
-                      <tr id="CartDrawer-Item-{{ item.index | plus: 1 }}" class="cart-item" role="row" data-item-quantity="{{ item.quantity }}">
+                      <div
+                        class="item-properties-data-{{ forloop.index }} hidden"
+                        data-item-properties="{{ item.properties | json | escape }}"
+                        data-product-presentment-price="{{ item.presentment_price | money }}"
+                      ></div>
+                      <tr
+                        id="CartDrawer-Item-{{ item.index | plus: 1 }}"
+                        class="cart-item"
+                        role="row"
+                        data-item-quantity="{{ item.quantity }}"
+                      >
                         <td class="cart-item__media" role="cell" headers="CartDrawer-ColumnProductImage">
                           {% if item.image %}
                             {% comment %} Leave empty space due to a:empty CSS display: none rule {% endcomment %}
@@ -713,4 +722,7 @@
 </cart-drawer>
 
 <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    console.log('The DOM is loaded and ready.');
+  });
 </script>
