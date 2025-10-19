@@ -729,7 +729,8 @@
         let cartDataLiquid = {{ cart | json }};
         let cartDataJson = data;
         if(cartDataLiquid.item_count != cartDataJson.item_count){
-          
+          console.log(cartDataJson);
+          console.log(cartDataLiquid);
         }
       })
       .catch((error) => {
