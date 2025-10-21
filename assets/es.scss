@@ -514,11 +514,7 @@
         padding: 0 1.5rem;
       }
 
-      @media (max-widget: 768px){
-        .es-featured-blocks__item-subtitle{
-          text-align: center;
-        }
-      }
+      
 
       .swiper-slide {
         .es-featured-blocks__item {
@@ -569,6 +565,10 @@
             -webkit-line-clamp: 1;
             overflow: hidden;
             //text-overflow: ellipsis;
+
+            @media (max-width: 768px) {
+              text-align: center;
+            }
           }
         }
       }
