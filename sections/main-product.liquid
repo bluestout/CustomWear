@@ -97,7 +97,6 @@
       onload="this.media='all'"
     >
   {%- endif -%}
-{% comment %} products.product.price.regular_price {% endcomment %}
   
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
@@ -123,7 +122,6 @@
                   {{ block.shopify_attributes }}
                 >
                   {{- block.settings.text -}}
-                  {% echo products.product.price.regular_price | json %}
                 </p>
               {%- when 'title' -%}
                 <div class="product__title" {{ block.shopify_attributes }}>
