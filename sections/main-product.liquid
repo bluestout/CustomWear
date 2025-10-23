@@ -122,6 +122,7 @@
                   {{ block.shopify_attributes }}
                 >
                   {{- block.settings.text -}}
+                  {{ 'products.product.price.regular_price' | t }}
                 </p>
               {%- when 'title' -%}
                 <div class="product__title" {{ block.shopify_attributes }}>
