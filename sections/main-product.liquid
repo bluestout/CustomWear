@@ -97,6 +97,8 @@
       onload="this.media='all'"
     >
   {%- endif -%}
+{% comment %} products.product.price.regular_price {% endcomment %}
+  {% echo product.price | json %}
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
   <div class="page-width">
