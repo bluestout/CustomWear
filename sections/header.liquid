@@ -548,7 +548,7 @@
   document.addEventListener('DOMContentLoaded', function () {
     const details = document.querySelector('.header__search details');
     const search = document.querySelector('.header__search .header__icon--search');
-    const dialogDiv = document.querySelector('div[role="dialog"][aria-modal="true"][aria-label="Search"]');
+    const dialogDiv = document.querySelector('div[role="dialog"][aria-modal="true"][aria-label="Search"]').innerHTML;
 
     function handleSearchClick() {
       setTimeout(() => {
