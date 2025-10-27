@@ -553,7 +553,7 @@
       
       let redetail = document.querySelector('.header__search details');
       let redetail-tag = details.tagName.toLowerCase();
-      let attrs = Array.from(details.attributes)
+      const attrs = Array.from(details.attributes)
       .map(attr => `${attr.name}="${attr.value}"`)
       .join(' ');
       console.log(attrs);
