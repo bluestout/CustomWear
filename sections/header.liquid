@@ -550,7 +550,14 @@
     const search = document.querySelector('.header__search .header__icon--search');
     search.onclick = () => {
       details.setAttribute('open', 'true');
-      console.log(document.querySelector('.header__search details'));
+      
+      const redetail = document.querySelector('.header__search details');
+      
+      const tagName = redetail.tagName.toLowerCase();
+      const attrs = Array.from(redetail.attributes)
+        .map((attr) => `${attr.name}="${attr.value}"`)
+        .join(' ');
+      const result = attrs ? `${tagName} ${attrs}` : tagName;
     };
   });
 </script>
