@@ -551,7 +551,7 @@
     search.onclick = () => {
       details.setAttribute('open', 'true');
       
-      const redetail = document.querySelector('.header__search details');
+      let redetail = document.querySelector('.header__search details');
       
       const tagName = redetail.tagName.toLowerCase();
       const attrs = Array.from(redetail.attributes)
