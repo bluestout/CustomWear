@@ -550,7 +550,7 @@
     const search = document.querySelector('.header__search .header__icon--search');
     
     if (window.innerWidth <= 759) return;
-    else if (details && search) {
+    if (details && search) {
       search.addEventListener('click', function () {
         setTimeout(() => {
           details.setAttribute('open', 'true');
