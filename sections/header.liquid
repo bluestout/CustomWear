@@ -549,19 +549,21 @@
     const details = document.querySelector('.header__search details');
     const search = document.querySelector('.header__search .header__icon--search');
     const dialogDiv = document.querySelector('div[role="dialog"][aria-modal="true"][aria-label="Search"]');
+
     function handleSearchClick() {
       setTimeout(() => {
         details.setAttribute('open', 'true');
       }, 50);
     }
+
     function setup() {
       if (!details || !search) return;
-      search.removeEventListener('click', handleSearchClick);
 
       if (window.innerWidth >= 760) {
         search.addEventListener('click', handleSearchClick);
       }
     }
+
     setup();
     window.addEventListener('resize', setup);
   });
