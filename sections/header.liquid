@@ -545,18 +545,39 @@
 </script>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
+ document.addEventListener('DOMContentLoaded', function () {
+  const MIN_WIDTH = 761; // run only if window width >= 761px
+  const OPEN_DELAY = 1000; // 1 second delay
+
+  // Function that runs your logic
+  function enableSearchDetails() {
     const details = document.querySelector('.header__search details');
     const search = document.querySelector('.header__search .header__icon--search');
+    if (!details || !search) return;
 
-    if (details && search) {
-      search.addEventListener('click', () => {
-        setTimeout(() => {
-          details.setAttribute('open', 'true');
-        }, 1000);
-      });
+    // Remove old click events by cloning (optional, keeps it clean)
+    const newSearch = search.cloneNode(true);
+    search.parentNode.replaceChild(newSearch, search);
+
+    newSearch.addEventListener('click', () => {
+      setTimeout(() => {
+        details.setAttribute('open', 'true');
+      }, OPEN_DELAY);
+    });
+  }
+
+  // Run once if screen width is big enough
+  if (window.innerWidth >= MIN_WIDTH) {
+    enableSearchDetails();
+  }
+
+  // If the user resizes the window, update the behavior dynamically
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= MIN_WIDTH) {
+      enableSearchDetails();
     }
   });
+});
 </script>
 
 {%- if request.page_type == 'index' -%}
