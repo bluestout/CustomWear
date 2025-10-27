@@ -548,8 +548,9 @@
   document.addEventListener('DOMContentLoaded', function () {
     const details = document.querySelector('.header__search details');
     const search = document.querySelector('.header__search .header__icon--search');
-    console.log(details)
-    console.log(search)
+    search.onclick = () => {
+      console.log('hello world');
+    };
   });
 </script>
 
