@@ -754,6 +754,8 @@ li[data-address] > h2 {
   margin-top: 1.5rem;
 }
 
-.ui-search__modalhidden{
-  display: block;
+@media screen (max-width: 760px){
+  .ui-search__modalhidden{
+    display: none;
+  }
 }
