@@ -552,7 +552,7 @@
     if (window.innerWidth <= 759) {
       return;
     }
-    if (details && search) {
+    else if (details && search) {
       search.addEventListener('click', function () {
         setTimeout(() => {
           details.setAttribute('open', 'true');
