@@ -551,19 +551,27 @@
 
   if (details && search) {
     search.addEventListener('click', () => {
+      // Open the <details> element
       details.setAttribute('open', 'true');
 
+      // Re-select the element
       const redetail = document.querySelector('.header__search details');
       console.log('Details element:', redetail);
 
+      // Extract the opening tag from outerHTML
       const match = details.outerHTML.match(/^<details[^>]*>/);
       const openingTag = match ? match[0] : '<details>';
       console.log('Opening tag:', openingTag);
+
+      // ✅ Check if the details element is actually open
+      const isOpen = details.open;
+      console.log('Is details open?', isOpen); // true or false
     });
   } else {
     console.warn('Missing .header__search details or search icon');
   }
 });
+
 
 </script>
 
