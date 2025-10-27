@@ -551,7 +551,7 @@
     const details = document.querySelector('.header__search details');
     const search = document.querySelector('.header__search .header__icon--search');
 
-    if (details && search) {
+    else if (details && search) {
       search.addEventListener('click', function () {
         setTimeout(() => {
           details.setAttribute('open', 'true');
