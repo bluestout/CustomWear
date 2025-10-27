@@ -545,16 +545,14 @@
 </script>
 
 <script>
-  setTimeout(() => {
-    document.addEventListener('DOMContentLoaded', function () {
-      const details = document.querySelector('.header__search details');
-      const search = document.querySelector('.header__search .header__icon--search');
-      search.onclick = () => {
-        details.setAttribute('open', 'true');
-        console.log(details.getAttribute('open'));
-      };
-    });
-  }, 0);
+  document.addEventListener('DOMContentLoaded', function () {
+    const details = document.querySelector('.header__search details');
+    const search = document.querySelector('.header__search .header__icon--search');
+    search.onclick = () => {
+      details.setAttribute('open', 'true');
+      console.log(document.querySelector('.header__search details'));
+    };
+  });
 </script>
 
 {%- if request.page_type == 'index' -%}
