@@ -545,13 +545,20 @@
 </script>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
+  window.addEventListener('load', () => {
     const details = document.querySelector('.header__search details');
     const search = document.querySelector('.header__search .header__icon--search');
-    search.onclick = () => {
+    if (!details || !search) return;
+
+    // Remove all previous event listeners by cloning the element
+    const newSearch = search.cloneNode(true);
+    search.parentNode.replaceChild(newSearch, search);
+
+    // Add your own click handler
+    newSearch.addEventListener('click', () => {
       details.setAttribute('open', 'true');
       console.log(details.getAttribute('open'));
-    };
+    });
   });
 </script>
 
