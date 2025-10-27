@@ -552,14 +552,7 @@
       details.setAttribute('open', 'true');
       
       let redetail = document.querySelector('.header__search details');
-      
-      const tagName = redetail.tagName.toLowerCase();
-      const attrs = Array.from(redetail.attributes)
-        .map((attr) => `${attr.name}="${attr.value}"`)
-        .join(' ');
-      const result = attrs ? `${tagName} ${attrs}` : tagName;
-      console.log(result);
-      console.log(typeof(result));
+      console.log(redetail)
     };
   });
 </script>
