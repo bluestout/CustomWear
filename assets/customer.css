@@ -753,9 +753,3 @@ li[data-address] > h2 {
 .addresses form > div:nth-of-type(7) + div[id] {
   margin-top: 1.5rem;
 }
-
-@media screen and (max-width: 760px) {
-  .ui-search__modalhidden {
-    display: none;
-  }
-}
