@@ -546,20 +546,30 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    const details = document.querySelector('.header__search details');
-    const search = document.querySelector('.header__search .header__icon--search');
+  const details = document.querySelector('.header__search details');
+  const search = document.querySelector('.header__search .header__icon--search');
 
-    if (window.innerWidth <= 759) {
-      return;
+  function handleSearchClick() {
+    setTimeout(() => {
+      details.setAttribute('open', 'true');
+    }, 50);
+  }
+
+  function setup() {
+    if (!details || !search) return;
+
+    // Remove any previous event listener first
+    search.removeEventListener('click', handleSearchClick);
+
+    if (window.innerWidth >= 760) {
+      search.addEventListener('click', handleSearchClick);
     }
-    else if (details && search) {
-      search.addEventListener('click', function () {
-        setTimeout(() => {
-          details.setAttribute('open', 'true');
-        }, 50);
-      });
-    }
-  });
+  }
+
+  setup();
+  window.addEventListener('resize', setup);
+});
+
 </script>
 
 {%- if request.page_type == 'index' -%}
