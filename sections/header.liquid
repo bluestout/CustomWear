@@ -545,28 +545,31 @@
 </script>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const details = document.querySelector('.header__search details');
-    const search = document.querySelector('.header__search .header__icon--search');
-    const dialogDiv = document.querySelector('div[role="dialog"][aria-modal="true"][aria-label="Search"]').innerHTML;
+ document.addEventListener('DOMContentLoaded', function () {
+  const details = document.querySelector('.header__search details');
+  const search = document.querySelector('.header__search .header__icon--search');
 
-    function handleSearchClick() {
+  function handleSearchClick() {
+    if (window.innerWidth >= 760 && window.innerHeight >= 200) {
       setTimeout(() => {
         details.setAttribute('open', 'true');
       }, 50);
     }
+  }
 
-    function setup() {
-      if (!details || !search) return;
-      console.log(dialogDiv)
-      if (window.innerWidth >= 760) {
-        search.addEventListener('click', handleSearchClick);
-      }
+  function setup() {
+    if (!details || !search) return;
+    search.removeEventListener('click', handleSearchClick);
+
+    if (window.innerWidth >= 760 && window.innerHeight >= 200) {
+      search.addEventListener('click', handleSearchClick);
     }
+  }
 
-    setup();
-    window.addEventListener('resize', setup);
-  });
+  setup();
+  window.addEventListener('resize', setup);
+});
+
 </script>
 
 {%- if request.page_type == 'index' -%}
