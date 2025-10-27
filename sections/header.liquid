@@ -549,7 +549,10 @@
     const details = document.querySelector('.header__search details');
     const search = document.querySelector('.header__search .header__icon--search');
     
-    if (window.innerWidth <= 759) return;
+    if (window.innerWidth <= 759){
+      console.log("hello world");
+      return;
+    }
     if (details && search) {
       search.addEventListener('click', function () {
         setTimeout(() => {
