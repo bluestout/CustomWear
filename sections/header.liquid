@@ -558,6 +558,8 @@
         .map((attr) => `${attr.name}="${attr.value}"`)
         .join(' ');
       const result = attrs ? `${tagName} ${attrs}` : tagName;
+      console.log(result);
+      console.log(typeof(result));
     };
   });
 </script>
