@@ -135,13 +135,3 @@ const pagination = (element, desktopCnt, mobileCnt) => {
     }
   });
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-  console.log("Hello world");
-  
-  fetch('/cart.js')
-  .then(response => response.json())
-  .then(cart => {
-    console.log('🧾 Cart data:', cart);
-  });
-})
