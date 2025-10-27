@@ -8,14 +8,6 @@
   {% render 'header-search', input_id: 'My-Id'%}
 {% endcomment %}
 
-{% comment %} <style>
-  @media screen and (max-width: 760px) {
-    .ui-search__modalhidden {
-      display: none;
-    }
-  }
-</style> {% endcomment %}
-
 <details-modal class="header__search">
   <details>
     <summary
@@ -33,12 +25,12 @@
       </span>
     </summary>
     <div
-      class="search-modal modal__content gradient ui-search__modalhidden"
+      class="ui-search__modalhidden search-modal modal__content gradient"
       role="dialog"
       aria-modal="true"
       aria-label="{{ 'general.search.search' | t }}"
     >
-      <div class="modal-overlay"></div>
+      <div class="modal-overlay"></div> 
       <div
         class="search-modal__content{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} search-modal__content-top{% else %} search-modal__content-bottom{% endif %}"
         tabindex="-1"
