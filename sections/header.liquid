@@ -551,10 +551,14 @@
 
   if (details && search) {
     search.addEventListener('click', () => {
-      // Open the <details> element
-      details.setAttribute('open', 'true');
+      // Check current state before toggling
+      const wasOpen = details.open;
+      console.log('Was details open before click?', wasOpen);
 
-      // Re-select the element
+      // Toggle the open state
+      details.open = !wasOpen;
+
+      // Re-select the element (optional, same as 'details' here)
       const redetail = document.querySelector('.header__search details');
       console.log('Details element:', redetail);
 
@@ -563,9 +567,8 @@
       const openingTag = match ? match[0] : '<details>';
       console.log('Opening tag:', openingTag);
 
-      // ✅ Check if the details element is actually open
-      const isOpen = details.open;
-      console.log('Is details open?', isOpen); // true or false
+      // Log the new state
+      console.log('Is details open now?', details.open);
     });
   } else {
     console.warn('Missing .header__search details or search icon');
