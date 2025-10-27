@@ -554,16 +554,7 @@
         setTimeout(() => {
           details.setAttribute('open', 'true');
         }, 1000);
-
-        const redetail = document.querySelector('.header__search details');
-        console.log('Details element:', redetail);
-
-        const match = details.outerHTML.match(/^<details[^>]*>/);
-        const openingTag = match ? match[0] : '<details>';
-        console.log('Opening tag:', openingTag);
       });
-    } else {
-      console.warn('Missing .header__search details or search icon');
     }
   });
 </script>
