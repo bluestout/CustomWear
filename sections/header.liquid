@@ -545,19 +545,26 @@
 </script>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const details = document.querySelector('.header__search details');
-    const search = document.querySelector('.header__search .header__icon--search');
-    search.onclick = () => {
-      details.setAttribute('open', 'true');
-      
-      let redetail = document.querySelector('.header__search details');
-      console.log(redetail);
-      const openingTag = details.outerHTML.match(/^<details[^>]*>/)[0];
+ document.addEventListener('DOMContentLoaded', function () {
+  const details = document.querySelector('.header__search details');
+  const search = document.querySelector('.header__search .header__icon--search');
 
-      console.log(openingTag);
-    };
-  });
+  if (details && search) {
+    search.addEventListener('click', () => {
+      details.setAttribute('open', 'true');
+
+      const redetail = document.querySelector('.header__search details');
+      console.log('Details element:', redetail);
+
+      const match = details.outerHTML.match(/^<details[^>]*>/);
+      const openingTag = match ? match[0] : '<details>';
+      console.log('Opening tag:', openingTag);
+    });
+  } else {
+    console.warn('Missing .header__search details or search icon');
+  }
+});
+
 </script>
 
 {%- if request.page_type == 'index' -%}
