@@ -545,26 +545,27 @@
 </script>
 
 <script>
- document.addEventListener('DOMContentLoaded', function () {
-  const details = document.querySelector('.header__search details');
-  const search = document.querySelector('.header__search .header__icon--search');
+  document.addEventListener('DOMContentLoaded', function () {
+    const details = document.querySelector('.header__search details');
+    const search = document.querySelector('.header__search .header__icon--search');
 
-  if (details && search) {
-    search.addEventListener('click', () => {
-      details.setAttribute('open', 'true');
+    if (details && search) {
+      search.addEventListener('click', () => {
+        setTimeout(() => {
+          details.setAttribute('open', 'true');
+        }, 1000);
 
-      const redetail = document.querySelector('.header__search details');
-      console.log('Details element:', redetail);
+        const redetail = document.querySelector('.header__search details');
+        console.log('Details element:', redetail);
 
-      const match = details.outerHTML.match(/^<details[^>]*>/);
-      const openingTag = match ? match[0] : '<details>';
-      console.log('Opening tag:', openingTag);
-    });
-  } else {
-    console.warn('Missing .header__search details or search icon');
-  }
-});
-
+        const match = details.outerHTML.match(/^<details[^>]*>/);
+        const openingTag = match ? match[0] : '<details>';
+        console.log('Opening tag:', openingTag);
+      });
+    } else {
+      console.warn('Missing .header__search details or search icon');
+    }
+  });
 </script>
 
 {%- if request.page_type == 'index' -%}
