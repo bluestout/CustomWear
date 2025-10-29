@@ -234,16 +234,20 @@
                 role="cell"
                 data-label="reorder button"
               >
-                {% assign reorder_items = '' %}
+                {% assign base_url = '/cart/add?' %}
+                {% assign reorder_params = '' %}
+
                 {% for item in order.line_items %}
                   {% assign variant_id = item.variant_id %}
                   {% assign quantity = item.quantity %}
-                  {% assign reorder_items = reorder_items | append: variant_id | append: ':' | append: quantity | append: ',' %}
+                  {% assign reorder_params = reorder_params | append: 'id=' | append: variant_id | append: '&quantity=' | append: quantity %}
+                  {% if forloop.last == false %}
+                    {% assign reorder_params = reorder_params | append: '&' %}
+                  {% endif %}
                 {% endfor %}
-                {% assign reorder_items = reorder_items | remove_last: ',' %}
-                {{ reorder_items }}
+
                 <a 
-                  href="{{ routes.cart_add_url }}?items={{ reorder_items | url_encode }}" 
+                  href="{{ base_url }}{{ reorder_params }}" 
                   class="btn btn--primary"
                 >
                   Reorder
