@@ -229,6 +229,25 @@
                   {{ line_item.original_line_price | money }}
                 {%- endif -%}
               </td>
+              <td
+                headers="Row{{ line_item.key }} ColumnReorder"
+                role="cell"
+                data-label="reorder button"
+              >
+                {% assign reorder_items = '' %}
+                {% for item in order.line_items %}
+                  {% assign variant_id = item.variant_id %}
+                  {% assign quantity = item.quantity %}
+                  {% assign reorder_items = reorder_items | append: variant_id | append: ':' | append: quantity | append: ',' %}
+                {% endfor %}
+                {% assign reorder_items = reorder_items | remove_last: ',' %}
+                <a 
+                  href="{{ routes.cart_add_url }}?items={{ reorder_items | url_encode }}" 
+                  class="btn btn--primary"
+                >
+                  Reorder
+                </a>
+              </td>
             </tr>
           {%- endfor -%}
         </tbody>
