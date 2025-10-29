@@ -236,16 +236,23 @@
               >
                 {% assign base_url = '/cart/add?' %}
                 {% assign reorder_params = '' %}
-
                 {% for item in order.line_items %}
                   {% assign variant_id = item.variant_id %}
                   {% assign quantity = item.quantity %}
+                  
                   {% assign reorder_params = reorder_params | append: 'id=' | append: variant_id | append: '&quantity=' | append: quantity %}
+                  
+                  {% for property in item.properties %}
+                    {% if property.last != blank %}
+                      {% assign prop_name = property.first | url_encode %}
+                      {% assign prop_value = property.last | url_encode %}
+                      {% assign reorder_params = reorder_params | append: '&properties[' | append: prop_name | append: ']=' | append: prop_value %}
+                    {% endif %}
+                  {% endfor %}
                   {% if forloop.last == false %}
                     {% assign reorder_params = reorder_params | append: '&' %}
                   {% endif %}
                 {% endfor %}
-
                 <a 
                   href="{{ base_url }}{{ reorder_params }}" 
                   class="btn btn--primary"
