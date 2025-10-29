@@ -75,6 +75,7 @@
                       {%- endunless -%}
                       {%- if property_size != 0 -%}
                         {%- for property in line_item.properties -%}
+                          <div class="product-option {% if property.last contains '/upload' %}image-option-property{% endif %}">
                           {% assign property_first_char = property.first | slice: 0 %}
                           {%- if property.last != blank and property_first_char != '_' -%}
                             <span>{{ property.first }}:</span>
@@ -94,6 +95,7 @@
                               {%- endif -%}
                             </span>
                           {%- endif -%}
+                          </div>
                         {%- endfor -%}
                       {%- endif -%}
                     </div>
