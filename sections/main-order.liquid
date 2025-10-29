@@ -241,6 +241,7 @@
                   {% assign reorder_items = reorder_items | append: variant_id | append: ':' | append: quantity | append: ',' %}
                 {% endfor %}
                 {% assign reorder_items = reorder_items | remove_last: ',' %}
+                {{ reorder_items }}
                 <a 
                   href="{{ routes.cart_add_url }}?items={{ reorder_items | url_encode }}" 
                   class="btn btn--primary"
