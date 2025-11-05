@@ -184,7 +184,7 @@
             {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
             {% capture sizes %}(max-width: {{ settings.logo_width | times: 2 }}px) 50vw, {{ settings.logo_width }}px{% endcapture %}
             {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
-            {%- liquid 
+            {%- liquid
               assign logo_class = 'header__heading-logo motion-reduce'
               if settings.logo_mobile != blank
                 assign logo_class = 'header__heading-logo motion-reduce small-hide'
@@ -249,7 +249,7 @@
             {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
             {% capture sizes %}(min-width: 750px) {{ settings.logo_width }}px, 50vw{% endcapture %}
             {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
-            {%- liquid 
+            {%- liquid
               assign logo_class = 'header__heading-logo motion-reduce'
               if settings.logo_mobile != blank
                 assign logo_class = 'header__heading-logo motion-reduce small-hide'
@@ -289,7 +289,9 @@
     {%- endif -%}
 
     <div class="header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}">
-      {%- if section.settings.separate_menu and section.settings.separate_menu_count < section.settings.menu.links.size -%}
+      {%- if section.settings.separate_menu
+        and section.settings.separate_menu_count < section.settings.menu.links.size
+      -%}
         <div class="small-hide medium-hide">
           {%- liquid
             assign separate_menu_offset = section.settings.separate_menu_count
@@ -330,7 +332,9 @@
           </localization-form>
         {%- endif -%}
       </div>
-      <a href="#hero-wishlist" aria-label="hero-wishlist" class="header__icon header__icon--wishlist link"><span class="hidden" hidden>ADA</span>{% render 'es-icon-heart' %}</a>
+      <a href="#hero-wishlist" aria-label="hero-wishlist" class="header__icon header__icon--wishlist link"
+        ><span class="hidden" hidden>ADA</span>{% render 'es-icon-heart' -%}
+      </a>
       {% render 'header-search', input_id: 'Search-In-Modal' %}
 
       {%- if shop.customer_accounts_enabled -%}
@@ -370,7 +374,11 @@
       {%- endfor -%}
 
       {%- if section.settings.phone_number != blank -%}
-        <a href="tel:{{ section.settings.phone_number }}" aria-label="tel:{{ section.settings.phone_number }}" class="header__icon header__icon--phone link focus-inset">
+        <a
+          href="tel:{{ section.settings.phone_number }}"
+          aria-label="tel:{{ section.settings.phone_number }}"
+          class="header__icon header__icon--phone link focus-inset"
+        >
           <span class="hidden" hidden>ADA</span>
           <span class="svg-wrapper">{{ 'icon-phone.svg' | inline_asset_content }}</span>
         </a>
@@ -534,6 +542,33 @@
     ],
     "url": {{ request.origin | append: page.url | json }}
   }
+</script>
+
+<script>
+ document.addEventListener('DOMContentLoaded', function () {
+  const details = document.querySelector('.header__search details');
+  const search = document.querySelector('.header__search .header__icon--search');
+
+  function handleSearchClick() {
+    if (window.innerWidth >= 760 && window.innerHeight >= 200) {
+      setTimeout(() => {
+        details.setAttribute('open', 'true');
+      }, 50);
+    }
+  }
+
+  function setup() {
+    if (!details || !search) return;
+    search.removeEventListener('click', handleSearchClick);
+
+    if (window.innerWidth >= 760 && window.innerHeight >= 200) {
+      search.addEventListener('click', handleSearchClick);
+    }
+  }
+
+  setup();
+});
+
 </script>
 
 {%- if request.page_type == 'index' -%}

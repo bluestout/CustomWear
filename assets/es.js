@@ -1,4 +1,5 @@
 const KlaviyoReady = () => {
+  
   const klaviyoImages = document.querySelectorAll(".needsclick img");
 
   klaviyoImages.forEach(img => {
