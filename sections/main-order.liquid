@@ -37,6 +37,7 @@
         </caption>
         <thead role="rowgroup">
           <tr role="row">
+            <th id="ColumnImage" scope="col" role="columnheader">Product Image</th>
             <th id="ColumnProduct" scope="col" role="columnheader">{{ 'customer.order.product' | t }}</th>
             <th id="ColumnSku" scope="col" role="columnheader">{{ 'customer.order.sku' | t }}</th>
             <th id="ColumnPrice" scope="col" role="columnheader">{{ 'customer.order.price' | t }}</th>
@@ -46,7 +47,24 @@
         </thead>
         <tbody role="rowgroup">
           {%- for line_item in order.line_items -%}
-            <tr role="row">
+            <tr role="row" data-line-item-key="{{ line_item.key }}">
+              {%- if line_item.image != blank -%}
+                <td
+                  id="row-{{ line_item.key }}"
+                  headers="ColumnProduct"
+                  role="rowheader"
+                  scope="row"
+                  data-label="Product Image"
+                >
+                  <img
+                    src="{{ line_item.image | image_url: width: 100 }}"
+                    class="product-image"
+                    loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; max-width: 100px;"
+                    alt="{{ line_item.image.alt | escape }}"
+                  >
+                </td>
+              {%- endif -%}
               <td
                 id="Row{{ line_item.key }}"
                 headers="ColumnProduct"
@@ -75,17 +93,27 @@
                       {%- endunless -%}
                       {%- if property_size != 0 -%}
                         {%- for property in line_item.properties -%}
-                          {% assign property_first_char = property.first | slice: 0 %}
-                          {%- if property.last != blank and property_first_char != '_' -%}
-                            <span>{{ property.first }}:</span>
-                            <span>
-                              {%- if property.last contains '/uploads/' -%}
-                                <a href="{{ property.last }}">{{ property.last | split: '/' | last }}</a>
-                              {%- else -%}
-                                {{ property.last }}
-                              {%- endif -%}
-                            </span>
-                          {%- endif -%}
+                          <div class="product-option {% if property.last contains '/upload' %}image-option-property{% endif %}">
+                            {% assign property_first_char = property.first | slice: 0 %}
+                            {%- if property.last != blank and property_first_char != '_' -%}
+                              <span>{{ property.first }}:</span>
+                              <span>
+                                {%- if property.last contains '/upload' -%}
+                                  <a href="{{ property.last }}" target="_blank">
+                                    <img
+                                      src="{{ property.last }}"
+                                      class="image-option"
+                                      loading="lazy"
+                                      width="40px"
+                                      height="40px"
+                                    >
+                                  </a>
+                                {%- else -%}
+                                  {{ property.last }}
+                                {%- endif -%}
+                              </span>
+                            {%- endif -%}
+                          </div>
                         {%- endfor -%}
                       {%- endif -%}
                     </div>
@@ -218,6 +246,47 @@
                 {%- else -%}
                   {{ line_item.original_line_price | money }}
                 {%- endif -%}
+              </td>
+              <td
+                headers="Row{{ line_item.key }} ColumnReorder"
+                role="cell"
+                data-label="reorder button"
+              >
+                {% assign base_url = '/cart/add?' %}
+                {% assign reorder_params = '' %}
+                {% for item in order.line_items %}
+                  {% assign variant_id = item.variant_id %}
+                  {% assign quantity = item.quantity %}
+                  {% assign reorder_params = reorder_params
+                    | append: 'id='
+                    | append: variant_id
+                    | append: '&quantity='
+                    | append: quantity
+                  %}
+
+                  {% for property in item.properties %}
+                    {% if property.last != blank %}
+                      {% assign prop_name = property.first | url_encode %}
+                      {% assign prop_value = property.last | url_encode %}
+                      {% assign reorder_params = reorder_params
+                        | append: '&properties['
+                        | append: prop_name
+                        | append: ']='
+                        | append: prop_value
+                      %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% if forloop.last == false %}
+                    {% assign reorder_params = reorder_params | append: '&' %}
+                  {% endif %}
+                {% endfor %}
+                <a
+                  href="{{ base_url }}{{ reorder_params }}"
+                  class="btn btn--primary"
+                >
+                  Reorder
+                </a>
               </td>
             </tr>
           {%- endfor -%}
