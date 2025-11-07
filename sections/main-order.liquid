@@ -75,27 +75,17 @@
                       {%- endunless -%}
                       {%- if property_size != 0 -%}
                         {%- for property in line_item.properties -%}
-                          <div class="product-option {% if property.last contains '/upload' %}image-option-property{% endif %}">
                           {% assign property_first_char = property.first | slice: 0 %}
                           {%- if property.last != blank and property_first_char != '_' -%}
                             <span>{{ property.first }}:</span>
                             <span>
-                              {%- if property.last contains '/upload' -%}
-                               <a href="{{ property.last }}" target="_blank">
-                                  <img
-                                    src="{{ property.last }}"
-                                    class="image-option"
-                                    loading="lazy"
-                                    width="40px"
-                                    height="40px"
-                                  >
-                                </a>
+                              {%- if property.last contains '/uploads/' -%}
+                                <a href="{{ property.last }}">{{ property.last | split: '/' | last }}</a>
                               {%- else -%}
                                 {{ property.last }}
                               {%- endif -%}
                             </span>
                           {%- endif -%}
-                          </div>
                         {%- endfor -%}
                       {%- endif -%}
                     </div>
@@ -228,37 +218,6 @@
                 {%- else -%}
                   {{ line_item.original_line_price | money }}
                 {%- endif -%}
-              </td>
-              <td
-                headers="Row{{ line_item.key }} ColumnReorder"
-                role="cell"
-                data-label="reorder button"
-              >
-                {% assign base_url = '/cart/add?' %}
-                {% assign reorder_params = '' %}
-                {% for item in order.line_items %}
-                  {% assign variant_id = item.variant_id %}
-                  {% assign quantity = item.quantity %}
-                  
-                  {% assign reorder_params = reorder_params | append: 'id=' | append: variant_id | append: '&quantity=' | append: quantity %}
-                  
-                  {% for property in item.properties %}
-                    {% if property.last != blank %}
-                      {% assign prop_name = property.first | url_encode %}
-                      {% assign prop_value = property.last | url_encode %}
-                      {% assign reorder_params = reorder_params | append: '&properties[' | append: prop_name | append: ']=' | append: prop_value %}
-                    {% endif %}
-                  {% endfor %}
-                  {% if forloop.last == false %}
-                    {% assign reorder_params = reorder_params | append: '&' %}
-                  {% endif %}
-                {% endfor %}
-                <a 
-                  href="{{ base_url }}{{ reorder_params }}" 
-                  class="btn btn--primary"
-                >
-                  Reorder
-                </a>
               </td>
             </tr>
           {%- endfor -%}
