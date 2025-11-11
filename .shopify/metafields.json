@@ -11,6 +11,16 @@
         "name": "file_reference",
         "category": "REFERENCE"
       }
+    },
+    {
+      "key": "banner_link",
+      "namespace": "custom",
+      "name": "Banner Link",
+      "description": "",
+      "type": {
+        "name": "url",
+        "category": "URL"
+      }
     }
   ],
   "company": [],
@@ -279,6 +289,26 @@
         "name": "file_reference",
         "category": "REFERENCE"
       }
+    },
+    {
+      "key": "display_color",
+      "namespace": "custom",
+      "name": "Display Color",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "customization_first_option_price",
+      "namespace": "custom",
+      "name": "Customization First Option Price",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
     }
   ],
   "variant": [
@@ -437,6 +467,16 @@
       "namespace": "mm-google-shopping",
       "name": "Google: Age Group",
       "description": "The demographic for which your product is intended.",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "display_color",
+      "namespace": "custom",
+      "name": "Display Color",
+      "description": "",
       "type": {
         "name": "single_line_text_field",
         "category": "TEXT"
