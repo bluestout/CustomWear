@@ -4,7 +4,8 @@
 {% assign product_new_price = product_customization_price | plus: product_actual_price | times: 1 %}
 
 <div class="es-price">
-  <span>Entry Price (Price Drops with Qty)</span>
+  {% comment %} <span>Entry Price (Price Drops with Qty)</span> {% endcomment %}
+  <span>From</span>
   <div class="price">
     ${{ product_new_price -}}
     <sup class="small-hide">*</sup>
