@@ -1,7 +1,15 @@
 {% comment %} INCLUDING THE FIRST SELECTED CUSTOMIZATION PRICE {% endcomment %}
 {% assign product_actual_price = product.selected_or_first_available_variant.price | money_without_currency %}
 {% comment %} {% assign product_customization_price = product.metafields.custom.customization_first_option_price | plus: 0 %} {% endcomment %}
-{% assign product_customization_price = 16.45 %}
+{% if product.tags contains 'CustomAll'
+  or product.tags contains 'Custom1-5'
+  or product.tags contains 'Custom4'
+  or product.tags contains 'Customw/o6'
+%}
+  {% assign product_customization_price = 16.45 %}
+{% else %}
+  {% assign product_customization_price = 0 %}
+{% endif %}
 {% assign product_new_price = product_customization_price | plus: product_actual_price | times: 1 %}
 
 <div class="es-price">

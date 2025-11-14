@@ -299,16 +299,6 @@
         "name": "single_line_text_field",
         "category": "TEXT"
       }
-    },
-    {
-      "key": "customization_first_option_price",
-      "namespace": "custom",
-      "name": "Customization First Option Price",
-      "description": "",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
     }
   ],
   "variant": [
