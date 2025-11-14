@@ -1,10 +1,10 @@
 {% comment %} INCLUDING THE FIRST SELECTED CUSTOMIZATION PRICE {% endcomment %}
 {% assign product_actual_price = product.selected_or_first_available_variant.price | money_without_currency %}
-{% assign product_customization_price = product.metafields.custom.customization_first_option_price | plus: 0 %}
+{% comment %} {% assign product_customization_price = product.metafields.custom.customization_first_option_price | plus: 0 %} {% endcomment %}
+{% assign product_customization_price = 16.45 %}
 {% assign product_new_price = product_customization_price | plus: product_actual_price | times: 1 %}
 
 <div class="es-price">
-  {% comment %} <span>Entry Price (Price Drops with Qty)</span> {% endcomment %}
   <span>From</span>
   <div class="price">
     ${{ product_new_price -}}
