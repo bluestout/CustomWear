@@ -13,7 +13,11 @@
 {% assign product_new_price = product_customization_price | plus: product_actual_price | times: 1 %}
 
 <div class="es-price">
-  <span>From</span>
+  {% if template contains 'product' %}
+    <span style="font-size: 15px; font-weight: 400;">As low as</span>
+  {% else %}
+    <span>From</span>
+  {% endif %}
   <div class="price">
     ${{ product_new_price -}}
     <sup class="small-hide">*</sup>

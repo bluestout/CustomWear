@@ -49,12 +49,9 @@
             "text_style": "body"
           }
         },
-        "text_Pb8kXM": {
-          "type": "text",
-          "settings": {
-            "text": "As low as <strong>$</strong><strong>{{ product.metafields.custom.as_low_as_price.value }}</strong><strong> USD</strong>",
-            "text_style": "body"
-          }
+        "es-price": {
+          "type": "es-price",
+          "settings": {}
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -177,7 +174,7 @@
         "product_tags_Uc7D3J",
         "text_tnN9k9",
         "sku_zdxYpC",
-        "text_Pb8kXM",
+        "es-price",
         "variant_picker",
         "live_product_options_app_block_mWfNhx",
         "quantity_selector",
