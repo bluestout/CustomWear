@@ -14,11 +14,16 @@
 
 <div class="es-price">
   {% if template contains 'product' %}
-    <span style="font-size: 15px; font-weight: 400;">As low as</span>
+    <span style="font-size: 15px; font-weight: 400;">As low as&nbsp;</span>
   {% else %}
     <span>From</span>
   {% endif %}
-  <div class="price">
+  <div
+    class="price"
+    {% if template contains 'product' %}
+      style="font-size: 15px;"
+    {% endif %}
+  >
     ${{ product_new_price -}}
     <sup class="small-hide">*</sup>
   </div>
