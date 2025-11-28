@@ -2718,6 +2718,10 @@
   align-items: baseline;
   gap: 2px;
 
+  .price {
+    display: flex;
+  }
+
   sup {
     color: #900;
     font-family: "Inter";

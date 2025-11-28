@@ -132,6 +132,8 @@
                     </h2>
                   </a>
                 </div>
+              {%- when 'es-price' -%}
+                {% render 'es-price', product: product %}
               
               {%- when 'product_tags' -%}
                 <div class="product__tags-main-wrapper">
@@ -2246,6 +2248,12 @@
           "label": "Text 2"
         }
       ]
+    },
+    {
+      "type": "es-price",
+      "name": "ES Price",
+      "limit": 1,
+      "settings": []
     }
   ],
   "settings": [
