@@ -25,6 +25,7 @@
           "settings": {
             "subheading": "",
             "heading": "How it works: Patches",
+            "heading_tag": "h2",
             "heading_size": "h1"
           }
         }
@@ -33,8 +34,9 @@
         "heading_Jxq4Qf"
       ],
       "settings": {
+        "banner_link": "",
         "show_space": false,
-        "image": "shopify://shop_images/CW_How_it_works_Screen_Ptg_1_color_2880_x_580_1.png",
+        "image": "shopify://shop_images/Patches_2880_x_580-Photoroom.png",
         "image_mobile": "shopify://shop_images/Image_20.png",
         "image_overlay_opacity": 100,
         "opacity_type": "gradient",
