@@ -34,6 +34,16 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  /* Enable flexbox ordering for custom price sorting */
+  #product-grid.custom-price-sort {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #product-grid.custom-price-sort .grid__item {
+    order: 0;
+  }
 {%- endstyle -%}
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
@@ -158,8 +168,24 @@
                 {%- if forloop.index > 2 -%}
                   {%- assign lazy_load = true -%}
                 {%- endif -%}
+
+                {% comment %} START - PRODUCT CUSTOMIZATION PRICE CALCULATION {% endcomment %}
+                {% assign product_actual_price = product.selected_or_first_available_variant.price | money_without_currency %}
+                {% if product.tags contains 'CustomAll'
+                  or product.tags contains 'Custom1-5'
+                  or product.tags contains 'Custom4'
+                  or product.tags contains 'Customw/o6'
+                %}
+                  {% assign product_customization_price = 16.45 %}
+                {% else %}
+                  {% assign product_customization_price = 0 %}
+                {% endif %}
+                {% assign product_new_price = product_customization_price | plus: product_actual_price | times: 1 %}
+                {% comment %} END - PRODUCT CUSTOMIZATION PRICE CALCULATION {% endcomment %}
+
                 <li
                   class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                  data-product-custom-price="{{ product_new_price }}"
                   {% if settings.animations_reveal_on_scroll %}
                     data-cascade
                     style="--animation-order: {{ forloop.index }};"

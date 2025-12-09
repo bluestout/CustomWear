@@ -90,6 +90,53 @@ class FacetFiltersForm extends HTMLElement {
       .forEach((element) => {
         element.classList.add('scroll-trigger--cancel');
       });
+
+    // Apply custom price sorting after rendering
+    FacetFiltersForm.applyCustomPriceSorting();
+  }
+
+  static applyCustomPriceSorting() {
+    const sortSelect = document.querySelector('#SortBy, select[name="sort_by"]');
+    const productGrid = document.getElementById('product-grid');
+    
+    if (!sortSelect || !productGrid) return;
+    
+    const sortValue = sortSelect.value;
+    const isPriceSorting = sortValue.includes('price-ascending') || sortValue.includes('price-descending');
+    
+    if (isPriceSorting) {
+      productGrid.classList.add('custom-price-sort');
+      
+      // Get all product items with custom prices
+      const productItems = Array.from(productGrid.querySelectorAll('.grid__item[data-product-custom-price]'));
+      
+      // Create array of items with their custom prices
+      const itemsWithPrices = productItems.map(item => ({
+        element: item,
+        price: parseFloat(item.getAttribute('data-product-custom-price')) || 0
+      }));
+      
+      // Sort based on the selected order
+      itemsWithPrices.sort((a, b) => {
+        if (sortValue.includes('price-ascending')) {
+          return a.price - b.price; // Low to high
+        } else {
+          return b.price - a.price; // High to low
+        }
+      });
+      
+      // Apply CSS order property to each item
+      itemsWithPrices.forEach((item, index) => {
+        item.element.style.order = index;
+      });
+    } else {
+      // Remove custom sorting if not price-based
+      productGrid.classList.remove('custom-price-sort');
+      const productItems = productGrid.querySelectorAll('.grid__item[data-product-custom-price]');
+      productItems.forEach(item => {
+        item.style.order = '';
+      });
+    }
   }
 
   static renderProductCount(html) {
@@ -298,6 +345,19 @@ FacetFiltersForm.searchParamsInitial = window.location.search.slice(1);
 FacetFiltersForm.searchParamsPrev = window.location.search.slice(1);
 customElements.define('facet-filters-form', FacetFiltersForm);
 FacetFiltersForm.setListeners();
+
+// Initialize custom price sorting on page load
+document.addEventListener('DOMContentLoaded', () => {
+  FacetFiltersForm.applyCustomPriceSorting();
+  
+  // Re-apply when sort option changes
+  document.addEventListener('change', (e) => {
+    if (e.target.matches('#SortBy, select[name="sort_by"]')) {
+      // Small delay to ensure form submission completes
+      setTimeout(() => FacetFiltersForm.applyCustomPriceSorting(), 100);
+    }
+  });
+});
 
 class PriceRange extends HTMLElement {
   constructor() {
