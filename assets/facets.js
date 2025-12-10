@@ -91,8 +91,10 @@ class FacetFiltersForm extends HTMLElement {
         element.classList.add('scroll-trigger--cancel');
       });
 
-    // Apply custom price sorting after rendering
-    FacetFiltersForm.applyCustomPriceSorting();
+    // Apply custom price sorting after rendering with a small delay to ensure DOM is ready
+    setTimeout(() => {
+      FacetFiltersForm.applyCustomPriceSorting();
+    }, 50);
   }
 
   static applyCustomPriceSorting() {
@@ -100,39 +102,36 @@ class FacetFiltersForm extends HTMLElement {
     const productGrid = document.getElementById('product-grid');
     
     if (!sortSelect || !productGrid) return;
-    
     const sortValue = sortSelect.value;
     const isPriceSorting = sortValue.includes('price-ascending') || sortValue.includes('price-descending');
     
     if (isPriceSorting) {
       productGrid.classList.add('custom-price-sort');
-      
-      // Get all product items with custom prices
-      const productItems = Array.from(productGrid.querySelectorAll('.grid__item[data-product-custom-price]'));
-      
-      // Create array of items with their custom prices
+      const productGridContainer = document.getElementById('ProductGridContainer');
+      const productItems = Array.from(productGridContainer.querySelectorAll('.grid__item'));
       const itemsWithPrices = productItems.map(item => ({
         element: item,
         price: parseFloat(item.getAttribute('data-product-custom-price')) || 0
       }));
-      
-      // Sort based on the selected order
-      itemsWithPrices.sort((a, b) => {
+      itemsWithPrices.forEach((item, index) => {
+        const orderValue = Math.round(item.price * 100);
+        
+        // Preserve existing --animation-order if present
+        const animationOrder = item.element.style.getPropertyValue('--animation-order');
+        
         if (sortValue.includes('price-ascending')) {
-          return a.price - b.price; // Low to high
+          item.element.style.order = orderValue;
         } else {
-          return b.price - a.price; // High to low
+          item.element.style.order = -orderValue;
+        }
+        if (animationOrder) {
+          item.element.style.setProperty('--animation-order', animationOrder);
         }
       });
-      
-      // Apply CSS order property to each item
-      itemsWithPrices.forEach((item, index) => {
-        item.element.style.order = index;
-      });
     } else {
-      // Remove custom sorting if not price-based
       productGrid.classList.remove('custom-price-sort');
-      const productItems = productGrid.querySelectorAll('.grid__item[data-product-custom-price]');
+      const productGridContainer = document.getElementById('ProductGridContainer');
+      const productItems = productGridContainer.querySelectorAll('.grid__item');
       productItems.forEach(item => {
         item.style.order = '';
       });
