@@ -90,6 +90,52 @@ class FacetFiltersForm extends HTMLElement {
       .forEach((element) => {
         element.classList.add('scroll-trigger--cancel');
       });
+
+    // Apply custom price sorting after rendering with a small delay to ensure DOM is ready
+    setTimeout(() => {
+      FacetFiltersForm.applyCustomPriceSorting();
+    }, 50);
+  }
+
+  static applyCustomPriceSorting() {
+    const sortSelect = document.querySelector('#SortBy, select[name="sort_by"]');
+    const productGrid = document.getElementById('product-grid');
+    
+    if (!sortSelect || !productGrid) return;
+    const sortValue = sortSelect.value;
+    const isPriceSorting = sortValue.includes('price-ascending') || sortValue.includes('price-descending');
+    
+    if (isPriceSorting) {
+      productGrid.classList.add('custom-price-sort');
+      const productGridContainer = document.getElementById('ProductGridContainer');
+      const productItems = Array.from(productGridContainer.querySelectorAll('.grid__item'));
+      const itemsWithPrices = productItems.map(item => ({
+        element: item,
+        price: parseFloat(item.getAttribute('data-product-custom-price')) || 0
+      }));
+      itemsWithPrices.forEach((item, index) => {
+        const orderValue = Math.round(item.price * 100);
+        
+        // Preserve existing --animation-order if present
+        const animationOrder = item.element.style.getPropertyValue('--animation-order');
+        
+        if (sortValue.includes('price-ascending')) {
+          item.element.style.order = orderValue;
+        } else {
+          item.element.style.order = -orderValue;
+        }
+        if (animationOrder) {
+          item.element.style.setProperty('--animation-order', animationOrder);
+        }
+      });
+    } else {
+      productGrid.classList.remove('custom-price-sort');
+      const productGridContainer = document.getElementById('ProductGridContainer');
+      const productItems = productGridContainer.querySelectorAll('.grid__item');
+      productItems.forEach(item => {
+        item.style.order = '';
+      });
+    }
   }
 
   static renderProductCount(html) {
@@ -298,6 +344,19 @@ FacetFiltersForm.searchParamsInitial = window.location.search.slice(1);
 FacetFiltersForm.searchParamsPrev = window.location.search.slice(1);
 customElements.define('facet-filters-form', FacetFiltersForm);
 FacetFiltersForm.setListeners();
+
+// Initialize custom price sorting on page load
+document.addEventListener('DOMContentLoaded', () => {
+  FacetFiltersForm.applyCustomPriceSorting();
+  
+  // Re-apply when sort option changes
+  document.addEventListener('change', (e) => {
+    if (e.target.matches('#SortBy, select[name="sort_by"]')) {
+      // Small delay to ensure form submission completes
+      setTimeout(() => FacetFiltersForm.applyCustomPriceSorting(), 100);
+    }
+  });
+});
 
 class PriceRange extends HTMLElement {
   constructor() {
