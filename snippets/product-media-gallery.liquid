@@ -64,8 +64,10 @@
       <li class="product__media-item product__media-listt grid__item slider__slide" data-live-preview="{{ product.id }}">
         &nbsp;
       </li>
+
+      {{ product  }}
       
-      {%- if product.selected_or_first_available_variant.featured_media != null -%}
+      {%- if product__media-item product__media-listt grid__item slider__slide.selected_or_first_available_variant.featured_media != null -%}
         {%- assign featured_media = product.selected_or_first_available_variant.featured_media -%}
         <li
           id="Slide-{{ section.id }}-{{ featured_media.id }}"
