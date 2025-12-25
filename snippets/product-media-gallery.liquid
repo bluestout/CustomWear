@@ -65,6 +65,8 @@
         &nbsp;
       </li>
 
+      {{ product.selected_or_first_available_variant }}
+
       {%- if product.selected_or_first_available_variant.featured_media != null -%}
         {%- assign featured_media = product.selected_or_first_available_variant.featured_media -%}
         <li
