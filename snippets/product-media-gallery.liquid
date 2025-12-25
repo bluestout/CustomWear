@@ -65,7 +65,7 @@
         &nbsp;
       </li>
 
-      {%- if product.selected_or_first_available_variant.featured_media != null -%}
+      {% comment %} {%- if product.selected_or_first_available_variant.featured_media != null -%} {% endcomment %}
         {%- assign featured_media = product.selected_or_first_available_variant.featured_media -%}
         <li
           id="Slide-{{ section.id }}-{{ featured_media.id }}"
@@ -89,7 +89,7 @@
             lazy_load: false
           %}
         </li>
-      {%- endif -%}
+      {% comment %} {%- endif -%} {% endcomment %}
       {%- for media in product.media -%}
         {% if media_position >= limit
           or media_position >= 1
