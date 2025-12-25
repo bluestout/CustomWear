@@ -65,7 +65,7 @@
         &nbsp;
       </li>
 
-      {{ product.selected_or_first_available_variant }}
+      {{ product.selected_or_first_available_variant | json }}
 
       {%- if product.selected_or_first_available_variant.featured_media != null -%}
         {%- assign featured_media = product.selected_or_first_available_variant.featured_media -%}
