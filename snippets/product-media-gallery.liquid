@@ -65,7 +65,7 @@
         &nbsp;
       </li>
 
-      {{ product  }}
+      {{ product | json  }}
       
       {%- if product__media-item product__media-listt grid__item slider__slide.selected_or_first_available_variant.featured_media != null -%}
         {%- assign featured_media = product.selected_or_first_available_variant.featured_media -%}
