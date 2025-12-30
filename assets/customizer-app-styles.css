@@ -213,7 +213,7 @@
 [data-option="Embroidered - Patch Border Color"] label.cl-po--radio-item input,
 [data-option="Print Stitch - Patch Background Color"] label.cl-po--radio-item input,
 [data-option="Print Stitch - Patch Border Color"] label.cl-po--radio-item input,
-[data-option="Embroidery - Ink Color Method"] label.cl-po--radio-item input,
+[data-option="Embroidery - Thread Color Method"] label.cl-po--radio-item input,
 [data-option="Embroidery - Fabric - Ink Color Method "] label.cl-po--radio-item input,
 [data-option="Embroidery - Thread - Ink Color Method"] label.cl-po--radio-item input,
 [data-option="Print Stitch - Fabric - Ink Color Method "] label.cl-po--radio-item input,
@@ -242,7 +242,7 @@
 .cl-po--option[data-option="Embroidered - Patch Border Color"],
 .cl-po--option[data-option="Print Stitch - Patch Background Color"],
 .cl-po--option[data-option="Print Stitch - Patch Border Color"],
-.cl-po--option[data-option="Embroidery - Ink Color Method"],
+.cl-po--option[data-option="Embroidery - Thread Color Method"],
 .cl-po--option[data-option="Embroidery - Fabric - Ink Color Method "],
 .cl-po--option[data-option="Embroidery - Thread - Ink Color Method"],
 .cl-po--option[data-option="Print Stitch - Fabric - Ink Color Method "],
@@ -280,7 +280,7 @@
   .cl-po--option[data-option="Print Stitch - Patch Border Color"]
   .cl-po--label,
 .product
-  .cl-po--option[data-option="Embroidery - Ink Color Method"]
+  .cl-po--option[data-option="Embroidery - Thread Color Method"]
   .cl-po--label,
 .product
   .cl-po--option[data-option="Embroidery - Fabric - Ink Color Method "]
@@ -336,7 +336,7 @@
   .cl-po--option[data-option="Print Stitch - Patch Border Color"]
   label.cl-po--radio-item,
 .product
-  .cl-po--option[data-option="Embroidery - Ink Color Method"]
+  .cl-po--option[data-option="Embroidery - Thread Color Method"]
   label.cl-po--radio-item,
 .product
   .cl-po--option[data-option="Embroidery - Fabric - Ink Color Method "]
@@ -402,7 +402,7 @@
   .cl-po--radio-item:has(input[type="radio"]:checked),
   [data-option="Print Stitch - Patch Border Color"]
   .cl-po--radio-item:has(input[type="radio"]:checked),
-  [data-option="Embroidery - Ink Color Method"]
+  [data-option="Embroidery - Thread Color Method"]
   .cl-po--radio-item:has(input[type="radio"]:checked),
   [data-option="Embroidery - Fabric - Ink Color Method "]
   .cl-po--radio-item:has(input[type="radio"]:checked),
