@@ -700,7 +700,8 @@ label.cl-po--radio-item.cl-po--discount-text-custom {
 }
 
 .cl-po--option[data-option="Embroidery Logo Location"] .cl-po--label:after,
-.cl-po--option[data-option="Location"] .cl-po--label:after{
+.cl-po--option[data-option="Location"] .cl-po--label:after,
+.cl-po--option[data-option="Lettering Location"] .cl-po--label:after{
     width: 100%;
     content: "Customization preview only available on front facing";
     color: #637381;
@@ -710,7 +711,8 @@ label.cl-po--radio-item.cl-po--discount-text-custom {
 }
 
 .cl-po--option[data-option="Embroidery Logo Location"] .cl-po--label,
-.cl-po--option[data-option="Location"] .cl-po--label{
+.cl-po--option[data-option="Location"] .cl-po--label,
+.cl-po--option[data-option="Lettering Location"] .cl-po--label{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
