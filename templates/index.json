@@ -204,15 +204,6 @@
             "url": "shopify://collections/flexfit-and-stretch-fit-hats"
           }
         },
-        "collection_fraWam": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify://shop_images/213_Snapback_5__520_x_376px_3.jpg",
-            "title": "Snapback Caps",
-            "subtitle": "Custom snapback caps",
-            "url": "shopify://collections/snapback-caps"
-          }
-        },
         "collection_TGYUpq": {
           "type": "collection",
           "settings": {
@@ -253,7 +244,7 @@
           "type": "collection",
           "settings": {
             "image": "shopify://shop_images/514_Gry_Blk_6_Panel_Baseball_10-520_x_376px_1.jpg",
-            "title": "6-Panel Baseball Caps",
+            "title": "Baseball Caps",
             "subtitle": "Custom 6-panel baseball caps",
             "url": "shopify://collections/6-panel-baseball-caps"
           }
@@ -390,7 +381,6 @@
         "collection_3tFD4j",
         "collection_J89ex6",
         "collection_EmE39w",
-        "collection_fraWam",
         "collection_TGYUpq",
         "collection_nfmcKf",
         "collection_epykX9",
