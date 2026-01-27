@@ -677,11 +677,11 @@
     "es_featured_videos_zwxmNW": {
       "type": "es-featured-videos",
       "blocks": {
-        "video_nQgbYm": {
+        "video_LC4fM8": {
           "type": "video",
           "settings": {
-            "video_url": "https://youtu.be/Nl9YJBWvrco",
-            "featured_image": "shopify://shop_images/image_6.png",
+            "video_url": "https://youtu.be/D0r6cdG9QDQ",
+            "featured_image": "shopify://shop_images/Screen_Shot_2025-06-25_at_18.50.49.png",
             "enable_video_looping": false,
             "full_width": false,
             "description": ""
@@ -697,6 +697,16 @@
             "description": ""
           }
         },
+        "video_nQgbYm": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://youtu.be/Nl9YJBWvrco",
+            "featured_image": "shopify://shop_images/image_6.png",
+            "enable_video_looping": false,
+            "full_width": false,
+            "description": ""
+          }
+        },
         "video_azGMUG": {
           "type": "video",
           "settings": {
@@ -706,23 +716,13 @@
             "full_width": false,
             "description": ""
           }
-        },
-        "video_LC4fM8": {
-          "type": "video",
-          "settings": {
-            "video_url": "https://youtu.be/D0r6cdG9QDQ",
-            "featured_image": "shopify://shop_images/Screen_Shot_2025-06-25_at_18.50.49.png",
-            "enable_video_looping": false,
-            "full_width": false,
-            "description": ""
-          }
         }
       },
       "block_order": [
-        "video_nQgbYm",
+        "video_LC4fM8",
         "video_pyYEmP",
-        "video_azGMUG",
-        "video_LC4fM8"
+        "video_nQgbYm",
+        "video_azGMUG"
       ],
       "settings": {
         "scrollable": true,
