@@ -373,10 +373,20 @@
         {%- endcase -%}
       {%- endfor -%}
 
-      {%- if section.settings.phone_number != blank -%}
+      {% comment %} {%- if section.settings.phone_number != blank -%}
         <a
           href="tel:{{ section.settings.phone_number }}"
           aria-label="tel:{{ section.settings.phone_number }}"
+          class="header__icon header__icon--phone link focus-inset"
+        >
+          <span class="hidden" hidden>ADA</span>
+          <span class="svg-wrapper">{{ 'icon-phone.svg' | inline_asset_content }}</span>
+        </a>
+      {%- endif -%} {% endcomment %}
+      {%- if section.settings.phone_number != blank -%}
+        <a
+          href="{{ section.settings.phone_number }}"
+          aria-label="{{ section.settings.phone_number }}"
           class="header__icon header__icon--phone link focus-inset"
         >
           <span class="hidden" hidden>ADA</span>
