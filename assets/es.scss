@@ -4714,6 +4714,11 @@ slideshow-component {
         max-width: 317px;
       }
 
+      @media (max-width: 425px) {
+        margin-right: 50px;
+        max-widget: 300px;
+      }
+
       h1 {
         margin: 0;
         padding: 0;
