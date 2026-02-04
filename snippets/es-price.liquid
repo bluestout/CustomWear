@@ -1,16 +1,18 @@
-{% comment %} INCLUDING THE FIRST SELECTED CUSTOMIZATION PRICE {% endcomment %}
-{% assign product_actual_price = product.selected_or_first_available_variant.price | money_without_currency %}
-{% comment %} {% assign product_customization_price = product.metafields.custom.customization_first_option_price | plus: 0 %} {% endcomment %}
+{% comment %} BASE PRICE IN CENTS {% endcomment %}
+{% assign product_actual_price_cents = product.selected_or_first_available_variant.price %}
+
+{% comment %} CUSTOMIZATION PRICE IN CENTS {% endcomment %}
+{% assign product_customization_price_cents = 0 %}
+
 {% if product.tags contains 'CustomAll'
   or product.tags contains 'Custom1-5'
   or product.tags contains 'Custom4'
   or product.tags contains 'Customw/o6'
 %}
-  {% assign product_customization_price = 16.45 %}
-{% else %}
-  {% assign product_customization_price = 0 %}
+  {% assign product_customization_price_cents = 1645 %}
 {% endif %}
-{% assign product_new_price = product_customization_price | plus: product_actual_price | times: 1 %}
+
+{% assign product_new_price_cents = product_actual_price_cents | plus: product_customization_price_cents %}
 
 <div class="es-price">
   {% if template contains 'product' %}
@@ -18,13 +20,9 @@
   {% else %}
     <span>From</span>
   {% endif %}
-  <div
-    class="price"
-    {% if template contains 'product' %}
-      style="font-size: 15px;"
-    {% endif %}
-  >
-    ${{ product_new_price | round: 2 -}}
+
+  <div class="price" {% if template contains 'product' %}style="font-size: 15px;"{% endif %}>
+    ${{ product_new_price_cents | money_without_currency }}
     <sup class="small-hide">*</sup>
   </div>
 </div>
