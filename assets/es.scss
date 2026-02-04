@@ -4709,15 +4709,16 @@ slideshow-component {
       justify-content: center;
       margin-left: 53px;
 
+      @media (max-width: 425px) {
+        margin-right: 50px;
+        max-widget: 300px;
+      }
+      
       @media (max-width: 700px) {
         margin-left: 50px;
         max-width: 317px;
       }
 
-      @media (max-width: 425px) {
-        margin-right: 50px;
-        max-widget: 300px;
-      }
 
       h1 {
         margin: 0;
