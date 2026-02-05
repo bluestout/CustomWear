@@ -155,6 +155,9 @@
         "slide_item_AmEFjw",
         "slide_item_XUT7XG"
       ],
+      "custom_css": [
+        "@media (max-width){.ui-slideshow__description{max-width: 320px }}"
+      ],
       "name": "ui-custom-header-slide",
       "settings": {
         "slide_btn": "shopify://shop_images/Button_1.svg",
