@@ -643,8 +643,8 @@ h3 .icon-arrow,
 }
 
 .svg-wrapper > svg {
-  height: 12px;
-  width: 7px;
+  /* height: 12px; */
+  /* width: 7px; */
 }
 
 /* base-details-summary */
