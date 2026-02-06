@@ -368,15 +368,6 @@
             "subtitle": "Official umpire caps",
             "url": "shopify://collections/umpire-hats"
           }
-        },
-        "collection_8yJY4f": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify://shop_images/USA_Made_520_x_372_px.jpg",
-            "title": "USA Made Hats",
-            "subtitle": "Made-in-USA custom hats",
-            "url": "shopify://collections/usa-made-hats"
-          }
         }
       },
       "block_order": [
@@ -401,8 +392,7 @@
         "collection_U67reW",
         "collection_rLbHDB",
         "collection_z9yXYx",
-        "collection_V6iDRg",
-        "collection_8yJY4f"
+        "collection_V6iDRg"
       ],
       "settings": {
         "title": "Shop By Hat Style",
