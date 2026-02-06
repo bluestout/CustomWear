@@ -156,7 +156,7 @@
         "slide_item_XUT7XG"
       ],
       "custom_css": [
-        "@media (max-width) {.ui-slideshow__description {max-width: 320px; }}"
+        "@media (max-width: 425px) {.ui-slideshow__description {max-width: 320px; }}"
       ],
       "name": "ui-custom-header-slide",
       "settings": {
@@ -433,7 +433,7 @@
         "text_XxeLzC"
       ],
       "custom_css": [
-        "@media (max-width: 1400px){a{display: block; }}",
+        "@media (max-width: 1400px) {a {display: block; }}",
         "@media (min-width: 751px) {.image-with-text__media-item {padding-left: 50px; }}"
       ],
       "settings": {
