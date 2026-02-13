@@ -2792,7 +2792,7 @@ details[open] > .header__submenu {
   margin-left: 0;
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1000px) {
   .header__inline-menu {
     display: block;
   }
