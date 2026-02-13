@@ -720,3 +720,55 @@ label.cl-po--radio-item.cl-po--discount-text-custom {
     align-items: flex-start;
 }
 
+
+/* HOVER MESSAGE ON FLEX PATCH */
+
+label.cl-po--radio-item:has(input[value="Flex Patch"]) {
+    position: relative;
+}
+
+label.cl-po--radio-item:has(input[value="Flex Patch"])::after {
+    content: "Complex and/or detailed graphics, and photo-realistic images. 24 piece minimum. Heat sealted application included.";
+    
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #111;
+    color: #fff;
+    padding: 8px 15px;
+    font-size: 12px;
+    line-height:16px;
+    min-width: 220px;
+    white-space: normal;
+    text-align: center;
+    border-radius: 4px;
+    opacity: 0;
+    transition: 0.25s ease;
+    pointer-events: none;
+}
+
+/* Arrow pin */
+label.cl-po--radio-item:has(input[value="Flex Patch"])::before {
+    content: "";
+    position: absolute;
+    bottom: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 7px;
+    border-style: solid;
+    border-color: #111 transparent transparent transparent;
+    opacity: 0;
+    transition: 0.25s ease;
+}
+
+label.cl-po--radio-item:has(input[value="Flex Patch"]):hover::after,
+label.cl-po--radio-item:has(input[value="Flex Patch"]):hover::before {
+    opacity: 1;
+}
+
+@media(max-width:749px){
+    label.cl-po--radio-item:has(input[value="Flex Patch"])::after {
+        transform: translateX(-30%);
+    }
+}
