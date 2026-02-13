@@ -2792,16 +2792,10 @@ details[open] > .header__submenu {
   margin-left: 0;
 }
 
-@media screen and (min-width: 1500px){
+@media screen and (min-width: 1000px) {
   .header__inline-menu {
     display: block;
   }
-}
-
-@media screen and (min-width: 1500px) {
-  /* .header__inline-menu {
-    display: block;
-  } */
 
   .header--top-center .header__inline-menu {
     justify-self: center;
