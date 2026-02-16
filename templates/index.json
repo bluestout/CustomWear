@@ -105,10 +105,10 @@
         "slide_item_bUakze": {
           "type": "slide_item",
           "settings": {
-            "image": "shopify://shop_images/Homepage_Banner_CW_2914_x_996-Photoroom_a30ebfa9-a32c-41d8-bc84-5b8f3d8df944.png",
+            "image": "shopify://shop_images/CWear_Customize_your_hat_2914_x_996.png",
             "sm_image": "shopify://shop_images/Homepage_Banner_CW_2914_x_996-Photoroom_7b9b7e89-d28e-4d21-858e-f23890c3d8ed.png",
             "header_text": "Embroidery and patch options on top styles for teams, brands, and events.",
-            "heading": "CUSTOM HATS made easy",
+            "heading": "",
             "description": "",
             "button_text": "Start Customizing",
             "button_target": "default",
