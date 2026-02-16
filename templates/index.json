@@ -107,10 +107,10 @@
           "settings": {
             "image": "shopify://shop_images/Homepage_Banner_CW_2914_x_996-Photoroom_a30ebfa9-a32c-41d8-bc84-5b8f3d8df944.png",
             "sm_image": "shopify://shop_images/Homepage_Banner_CW_2914_x_996-Photoroom_7b9b7e89-d28e-4d21-858e-f23890c3d8ed.png",
-            "header_text": "Any Product",
-            "heading": "customize",
+            "header_text": "Embroidery and patch options on top styles for teams, brands, and events.",
+            "heading": "Custom Hats Made Easy",
             "description": "<p>Design your perfect hat – customize colors, fonts for a unique look!</p>",
-            "button_text": "Customize",
+            "button_text": "Start Customizing",
             "button_target": "default",
             "button_link": "shopify://pages/shop-by-style",
             "banner_link": "shopify://pages/shop-by-style"
