@@ -92,6 +92,7 @@
         },
         "slide_item_GRVNdH": {
           "type": "slide_item",
+          "disabled": true,
           "settings": {
             "header_text": "",
             "heading": "",
@@ -106,7 +107,7 @@
           "type": "slide_item",
           "settings": {
             "image": "shopify://shop_images/CWear_Need_Custom_Hats_2914_x_996_Final_update.png",
-            "sm_image": "shopify://shop_images/Homepage_Banner_CW_2914_x_996-Photoroom_7b9b7e89-d28e-4d21-858e-f23890c3d8ed.png",
+            "sm_image": "shopify://shop_images/Copy_of_Need_Blank_Hats_in_Bulk_1080_x_1350_px.png",
             "header_text": "",
             "heading": "",
             "description": "",
