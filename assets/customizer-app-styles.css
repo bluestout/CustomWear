@@ -769,9 +769,22 @@ label.cl-po--radio-item:has(input[value="Flex Patch"]):hover::before {
 
 @media(max-width:749px){
     label.cl-po--radio-item:has(input[value="Flex Patch"])::after {
-        transform: translateX(-30%);
+        transform: translateX(-40%);
     }
 }
+
+@media(max-width:408px){
+    label.cl-po--radio-item:has(input[value="Flex Patch"]):after {
+        transform: translate(-70%);
+    }
+}
+
+@media(max-width:345px){
+    label.cl-po--radio-item:has(input[value="Flex Patch"]):after {
+        transform: translate(-20%);
+    }
+}
+
 
 .tippy-content{
   text-align: left;
