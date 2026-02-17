@@ -781,7 +781,7 @@ label.cl-po--radio-item:has(input[value="Flex Patch"]):hover::before {
 
 @media(max-width:408px){
     label.cl-po--radio-item:has(input[value="Flex Patch"]):after {
-        transform: translate(-30%);
+        transform: translate(-75%);
     }
 }
 
