@@ -103,12 +103,22 @@
           "disabled": true,
           "settings": {}
         },
-        "collapsible_tab_eM4Wkc": {
+        "collapsible_tab_bpG9Bm": {
           "type": "collapsible_tab",
           "settings": {
             "default_open": true,
             "heading": "Description",
             "icon": "description",
+            "content": "{{ product.description }}",
+            "page": ""
+          }
+        },
+        "collapsible_tab_eM4Wkc": {
+          "type": "collapsible_tab",
+          "settings": {
+            "default_open": false,
+            "heading": "Details",
+            "icon": "details",
             "content": "{{ product.description }}",
             "page": ""
           }
@@ -182,6 +192,7 @@
         "buy_buttons",
         "wishlist_hero_custom_product_button_Aacrr3",
         "description",
+        "collapsible_tab_bpG9Bm",
         "collapsible_tab_eM4Wkc",
         "popup_cKwkVJ",
         "popup_wP4nXf",
