@@ -772,3 +772,7 @@ label.cl-po--radio-item:has(input[value="Flex Patch"]):hover::before {
         transform: translateX(-30%);
     }
 }
+
+.tippy-content{
+  text-align: left;
+}
