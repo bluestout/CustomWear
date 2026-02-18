@@ -5072,6 +5072,9 @@ slideshow-component {
     }
 
     .header__icons {
+      @media (min-width: 1000px) and (max-width: 1500px) {
+        justify-self: start;
+      }
       @media (min-width: 1000px) and (max-width: 1020px) {
         gap: 6px;
       }
