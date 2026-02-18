@@ -24,6 +24,14 @@
   endif
 %}
 
+{% if class_unable %}
+  <style>
+    .ui-es-button {
+      margin-top: 140px;
+    }
+  </style>
+{% endif %}
+
 <div
   id="{{ section.settings.custom_id }}"
   class="color-{{ section.settings.color_scheme }} gradient{% if section.settings.tab_section %} tab-section{% endif %}{% if section.settings.hide_section %} hidden{% endif %}"
