@@ -5025,29 +5025,29 @@ slideshow-component {
 
 .header-wrapper {
   .header {
-    @media (min-width: 990px) and (max-width: 1500px) {
+    @media (min-width: 1000px) and (max-width: 1500px) {
       column-gap: 1.5rem;
     }
     &:not(.drawer-menu).page-width{
-      @media (min-width: 990px) and (max-width: 1500px) {
+      @media (min-width: 1000px) and (max-width: 1500px) {
         padding-left: 2.5rem;
         padding-right: 2.5rem; 
       }
     }
     .header__inline-menu {
       .list-menu {
-        @media (min-width: 990px) and (max-width: 1500px) {
+        @media (min-width: 1000px) and (max-width: 1500px) {
           flex-wrap: nowrap;
         }
         .header__menu-item {
-          @media (min-width: 990px) and (max-width: 1500px) {
+          @media (min-width: 1000px) and (max-width: 1500px) {
             font-size: 12px;
             white-space: nowrap;
             font-weight: bold;
             padding-left: 0px;
           }
           .icon-caret {
-            @media (min-width: 990px) and (max-width: 1500px) {
+            @media (min-width: 1000px) and (max-width: 1500px) {
               right: 1.1rem;
             }
           }
@@ -5056,12 +5056,12 @@ slideshow-component {
     }
 
     .header__heading-link {
-      @media (min-width: 990px) and (max-width: 1500px) {
+      @media (min-width: 1000px) and (max-width: 1500px) {
         padding-left: 0px;
       }
       .header__heading-logo-wrapper {
         img {
-          @media (min-width: 990px) and (max-width: 1500px) {
+          @media (min-width: 1000px) and (max-width: 1500px) {
             min-width: 120px;
           }
         }
@@ -5070,12 +5070,12 @@ slideshow-component {
 
     .header__icons {
       .header__icon {
-        @media (min-width: 990px) and (max-width: 1500px) {
+        @media (min-width: 1000px) and (max-width: 1500px) {
           height: 20px;
           width: 20px;
         }
         svg {
-          @media (min-width: 990px) and (max-width: 1500px) {
+          @media (min-width: 1000px) and (max-width: 1500px) {
             height: 20px;
             width: 20px;
           }
@@ -5091,19 +5091,19 @@ slideshow-component {
       }
       .list-menu {
         #HeaderMenu-featured-work {
-          @media (min-width: 990px) and (max-width: 1500px) {
+          @media (min-width: 1000px) and (max-width: 1500px) {
             padding-right: 0px;
           }
         }
         .header__menu-item {
-          @media (min-width: 990px) and (max-width: 1500px) {
+          @media (min-width: 1000px) and (max-width: 1500px) {
             font-size: 12px;
             white-space: nowrap;
             font-weight: bold;
             padding-left: 0px;
           }
           .icon-caret {
-            @media (min-width: 990px) and (max-width: 1500px) {
+            @media (min-width: 1000px) and (max-width: 1500px) {
               right: 1.1rem;
             }
           }
