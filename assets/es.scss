@@ -5038,14 +5038,20 @@ slideshow-component {
   .header__heading-link {
     .header__heading-logo-wrapper {
       img {
-
+        @media (min-width: 990px) and @media (max-width: 1500px) {
+          min-width: 120px;
+        }
       }
     }
   }
   .header__icons {
     .list-menu {
       .header__menu-item {
-
+        @media (min-width: 990px) and @media (max-width: 1500px) {
+          font-size: 12px;
+          white-space: nowrap;
+          font-weight: bold;
+        }
       }
     }
   }
