@@ -13,6 +13,17 @@
   }
 {%- endstyle -%}
 
+{% liquid
+  assign class_unable = false
+  if block.settings.heading == blank
+    assign class_unable = true
+  elsif block.settings.header_text == blank
+    assign class_unable = true
+  elsif block.settings.description == blank
+    assign class_unable = true
+  endif
+%}
+
 <div
   id="{{ section.settings.custom_id }}"
   class="color-{{ section.settings.color_scheme }} gradient{% if section.settings.tab_section %} tab-section{% endif %}{% if section.settings.hide_section %} hidden{% endif %}"
