@@ -5029,7 +5029,8 @@ slideshow-component {
       .header__menu-item {
         @media (min-width: 990px) and @media (max-width: 1500px) {
           font-size: 12px;
-          white-space: nowrap
+          white-space: nowrap;
+          font-weight: bold;
         }
       }
     }
