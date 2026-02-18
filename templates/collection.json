@@ -39,7 +39,7 @@
         "show_space": false,
         "image": "{{ collection.image }}",
         "image_mobile": "{{ collection.metafields.custom.mobile_image.value }}",
-        "image_overlay_opacity": 100,
+        "image_overlay_opacity": 60,
         "opacity_type": "gradient",
         "opacity_color": "primary",
         "opacity_weight_on_desktop": "extra-heavy",
@@ -53,7 +53,7 @@
         "stack_images_on_mobile": false,
         "mobile_content_position": "bottom",
         "mobile_content_alignment": "center",
-        "opacity_direct_on_mobile": "vertical",
+        "opacity_direct_on_mobile": "horizontal",
         "opacity_height_on_mobile": "small",
         "image_height_on_mobile": "adapt",
         "show_text_below": false
