@@ -109,7 +109,7 @@
             "default_open": true,
             "heading": "Description",
             "icon": "description",
-            "content": "{{ product.description }}",
+            "content": "{{ product.metafields.custom.detail | metafield_tag }}",
             "page": ""
           }
         },
@@ -119,7 +119,7 @@
             "default_open": false,
             "heading": "Details",
             "icon": "details",
-            "content": "{{ product.metafields.custom.detail | metafield_tag }}",
+            "content": "{{ product.description }}",
             "page": ""
           }
         },
