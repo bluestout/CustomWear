@@ -32,17 +32,9 @@
   {%- endif -%}
 
   {%- if section.settings.menu_type_desktop != "drawer" -%}
-    /* Hide hamburger at 990px and up; show desktop nav only */
-    @media screen and (min-width: 990px) {
+    @media screen and (min-width: 1000px) {
       header-drawer {
         display: none;
-      }
-    }
-    /* Hamburger visible only below 990px */
-    @media screen and (max-width: 989px) {
-      header-drawer,
-      .menu-drawer-container {
-        display: flex !important;
       }
     }
   {%- endif -%}
@@ -72,7 +64,7 @@
     position: relative;
   }
 
-  @media (min-width: 990px) {
+  @media (min-width: 1500px) {
     summary.list-menu__item::after{
       content: "";
       display: none;
