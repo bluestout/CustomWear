@@ -83,7 +83,7 @@
                   <div class="font-p ui-slideshow__description">{{ block.settings.description }}</div>
                 {%- endif -%}
                 {%- if block.settings.button_link != blank -%}
-                  <a href="{{ block.settings.button_link }}" class="es-button" {% unless block.settings.button_target contains "default" %}target="{{ block.settings.button_target }}"{% endunless %}>
+                  <a href="{{ block.settings.button_link }}" class="es-button {% unless class_unable %}ui-es-button{% endunless %}" {% unless block.settings.button_target contains "default" %}target="{{ block.settings.button_target }}"{% endunless %}>
                     {{- block.settings.button_text -}}
                   </a>
                 {%- endif -%}
