@@ -5025,6 +5025,10 @@ slideshow-component {
 
 .header-wrapper {
   .header {
+    &:not(.drawer-menu).page-width{
+     padding-left: 2rem;
+     padding-rigth: 2rem; 
+    }
     .header__inline-menu {
       .list-menu {
         @media (min-width: 990px) and (max-width: 1500px) {
