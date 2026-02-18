@@ -5047,6 +5047,9 @@ slideshow-component {
     }
 
     .header__heading-link {
+      @media (min-width: 990px) and (max-width: 1500px) {
+        padding-left: 0px;
+      }
       .header__heading-logo-wrapper {
         img {
           @media (min-width: 990px) and (max-width: 1500px) {
