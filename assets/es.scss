@@ -5051,6 +5051,9 @@ slideshow-component {
     }
 
     .header__icons {
+      .header__icon {
+        fill: red;
+      }
       .list-menu {
         .header__menu-item {
           @media (min-width: 990px) and (max-width: 1500px) {
