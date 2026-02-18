@@ -5027,6 +5027,9 @@ slideshow-component {
   .header {
     .header__inline-menu {
       .list-menu {
+        @media (min-width: 990px) and (max-width: 1500px) {
+          flex-wrap: nowrap;
+        }
         .header__menu-item {
           @media (min-width: 990px) and (max-width: 1500px) {
             font-size: 12px;
@@ -5047,7 +5050,6 @@ slideshow-component {
       }
     }
 
-    // Only if you have a menu inside the icons area (e.g. separate right menu):
     .header__icons {
       .list-menu {
         .header__menu-item {
