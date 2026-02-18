@@ -5078,6 +5078,11 @@ slideshow-component {
         }
       }
       .list-menu {
+        #HeaderMenu-featured-work {
+          @media (min-width: 990px) and (max-width: 1500px) {
+            padding-right: 0px;
+          }
+        }
         .header__menu-item {
           @media (min-width: 990px) and (max-width: 1500px) {
             font-size: 12px;
