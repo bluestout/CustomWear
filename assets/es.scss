@@ -5027,7 +5027,10 @@ slideshow-component {
   .header__inline-menu {
     .list-menu {
       .header__menu-item {
-
+        @media (min-width: 990px) and @media (max-width: 1500px) {
+          font-size: 12px;
+          white-space: nowrap
+        }
       }
     }
   }
@@ -5041,7 +5044,7 @@ slideshow-component {
   .header__icons {
     .list-menu {
       .header__menu-item {
-        
+
       }
     }
   }
