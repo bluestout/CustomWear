@@ -5052,7 +5052,9 @@ slideshow-component {
 
     .header__icons {
       .header__icon {
-        fill: red;
+        svg {
+          fill: red;
+        }
       }
       .list-menu {
         .header__menu-item {
