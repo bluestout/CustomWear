@@ -2787,16 +2787,26 @@ details[open] > .header__submenu {
   display: none;
 }
 
+/* Force desktop nav hidden when max-width 989px (hamburger only below 990px) */
+@media screen and (max-width: 989px) {
+  .header__inline-menu {
+    display: none !important;
+  }
+}
+
 .header--top-center .header__inline-menu,
 .header--top-center .header__heading-link {
   margin-left: 0;
 }
 
-@media screen and (min-width: 1000px) {
+/* Show desktop nav from 990px and up (no hamburger at 990px) */
+@media screen and (min-width: 990px){
   .header__inline-menu {
     display: block;
   }
+}
 
+@media screen and (min-width: 990px) {
   .header--top-center .header__inline-menu {
     justify-self: center;
   }
