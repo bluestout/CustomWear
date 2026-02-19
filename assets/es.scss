@@ -4518,8 +4518,9 @@ slideshow-component {
         .ui-slideshow__media-wrapper {
           img {
             width: 100%;
-            
+            object-fit: cover;
             max-height: 479px;
+            object-position: left;
           }
         }
       }
@@ -4590,7 +4591,8 @@ slideshow-component {
       .ui-slideshow__media-wrapper {
         img {
           width: 100%;
-          
+          object-fit: cover;
+          object-position: left;
           max-height: 479px;
           width: 100%;
           display: flex;
