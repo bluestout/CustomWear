@@ -94,7 +94,7 @@
     assign fetch_priority = 'high'
   endif
 -%}
-
+{{ section.settings.opacity_direct_on_mobile | json }}
 <div
   id="Banner-{{ section.id }}"
   class="banner 
@@ -109,7 +109,7 @@
   {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}
   opacity-{{ section.settings.opacity_type }} 
   opacity-{{ section.settings.opacity_direction }} 
-  sm-opacity-{{ section.settings.opacity_direct_on_mobile }} 
+  sm-opacity-{{ section.settings.opacity_direct_on_mobile }}
   sm-opacity-height-{{ section.settings.opacity_height_on_mobile }} 
   sm-banner--{{ section.settings.image_height_on_mobile }} 
   md-up-opacity-weight--{{ section.settings.opacity_weight_on_desktop }} 
