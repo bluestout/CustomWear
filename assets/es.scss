@@ -5030,7 +5030,7 @@ slideshow-component {
 .header-wrapper {
   .header {
     @media (min-width: 1000px) and (max-width: 1500px) {
-      column-gap: 1.5rem;
+      column-gap: 0.5rem;
     }
     &:not(.drawer-menu).page-width{
       @media (min-width: 1000px) and (max-width: 1500px) {
