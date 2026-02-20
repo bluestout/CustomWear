@@ -103,23 +103,23 @@
           "disabled": true,
           "settings": {}
         },
-        "collapsible_tab_bpG9Bm": {
-          "type": "collapsible_tab",
-          "settings": {
-            "default_open": true,
-            "heading": "Description",
-            "icon": "description",
-            "content": "{{ product.metafields.custom.detail | metafield_tag }}",
-            "page": ""
-          }
-        },
         "collapsible_tab_eM4Wkc": {
           "type": "collapsible_tab",
           "settings": {
-            "default_open": false,
+            "default_open": true,
             "heading": "Details",
             "icon": "details",
             "content": "{{ product.description }}",
+            "page": ""
+          }
+        },
+        "collapsible_tab_bpG9Bm": {
+          "type": "collapsible_tab",
+          "settings": {
+            "default_open": false,
+            "heading": "Description",
+            "icon": "description",
+            "content": "{{ product.metafields.custom.detail | metafield_tag }}",
             "page": ""
           }
         },
@@ -192,8 +192,8 @@
         "buy_buttons",
         "wishlist_hero_custom_product_button_Aacrr3",
         "description",
-        "collapsible_tab_bpG9Bm",
         "collapsible_tab_eM4Wkc",
+        "collapsible_tab_bpG9Bm",
         "popup_cKwkVJ",
         "popup_wP4nXf",
         "share",
