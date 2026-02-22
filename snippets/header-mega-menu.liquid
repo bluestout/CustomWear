@@ -139,12 +139,13 @@
       menu.addEventListener('mouseenter', () => {
         menu.setAttribute('open', '');
         document.querySelector(".section-header").classList.add("megamenu-open");
-        console.log("go away")
+        console.log("go on")
       });
-  
+      
       menu.addEventListener('mouseleave', () => {
         menu.removeAttribute('open');
         document.querySelector(".section-header").classList.remove("megamenu-open");
+        console.log("go away")
       });
     });
   });
