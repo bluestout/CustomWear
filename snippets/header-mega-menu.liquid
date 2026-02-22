@@ -132,21 +132,57 @@
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const menuItems = document.querySelectorAll('header-menu > details');
-  
-    menuItems.forEach((menu) => {
-      const summary = menu.querySelector('summary');
+    const sectionHeader = document.querySelector(".section-header");
 
-      menu.addEventListener('mouseenter', () => {
+    menuItems.forEach((menu) => {
+      let closeTimer = null;
+
+      function openMenu() {
+        // Cancel any pending close
+        if (closeTimer) {
+          clearTimeout(closeTimer);
+          closeTimer = null;
+        }
+        // Close all other open menus first
+        menuItems.forEach((otherMenu) => {
+          if (otherMenu !== menu) {
+            otherMenu.removeAttribute('open');
+          }
+        });
         menu.setAttribute('open', '');
-        document.querySelector(".section-header").classList.add("megamenu-open");
-        console.log("go on")
-      });
-      
-      menu.addEventListener('mouseleave', () => {
-        menu.removeAttribute('open');
-        document.querySelector(".section-header").classList.remove("megamenu-open");
-        console.log("go away")
-      });
+        if (sectionHeader) sectionHeader.classList.add("megamenu-open");
+      }
+
+      function scheduleClose() {
+        // Delay before closing — gives cursor time to travel into dropdown
+        closeTimer = setTimeout(() => {
+          // Only close if cursor isn't over the content panel
+          if (!menu.matches(':hover')) {
+            menu.removeAttribute('open');
+            // Only remove class if no other menu is open
+            const anyOpen = Array.from(menuItems).some(m => m.hasAttribute('open'));
+            if (!anyOpen && sectionHeader) {
+              sectionHeader.classList.remove("megamenu-open");
+            }
+          }
+        }, 100); // 100ms grace period — adjust if needed
+      }
+
+      // Listen on the details element (covers summary + content)
+      menu.addEventListener('mouseenter', openMenu);
+      menu.addEventListener('mouseleave', scheduleClose);
+
+      // Also guard the mega menu content panel directly
+      const content = menu.querySelector('.mega-menu__content');
+      if (content) {
+        content.addEventListener('mouseenter', () => {
+          if (closeTimer) {
+            clearTimeout(closeTimer);
+            closeTimer = null;
+          }
+        });
+        content.addEventListener('mouseleave', scheduleClose);
+      }
     });
   });
 </script>
