@@ -43,7 +43,7 @@
         "opacity_type": "gradient",
         "opacity_color": "primary",
         "opacity_weight_on_desktop": "extra-heavy",
-        "opacity_direction": "vertical",
+        "opacity_direction": "horizontal",
         "image_height": "adapt",
         "image_behavior": "none",
         "desktop_content_position": "middle-left",
