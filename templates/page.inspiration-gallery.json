@@ -24,7 +24,7 @@
           "type": "heading",
           "settings": {
             "subheading": "",
-            "heading": "Inspiration Gallery",
+            "heading": "Our Latest Work",
             "heading_tag": "h1",
             "heading_size": "h1"
           }
@@ -34,6 +34,7 @@
         "heading_gbky39"
       ],
       "settings": {
+        "banner_link": "",
         "show_space": false,
         "image": "shopify://shop_images/Rectangle_1.jpg",
         "image_mobile": "shopify://shop_images/allenburt_94637_Create_a_collection_of_beautiful_business_and_bdaa3d16-0340-4d24-be75-89caa2c3c065_1_1.png",
