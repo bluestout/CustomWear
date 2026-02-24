@@ -30,6 +30,7 @@
         },
         "link_list_9eCptB": {
           "type": "link_list",
+          "name": "Our Latest Work",
           "settings": {
             "heading": "Help",
             "menu": "help"
