@@ -5136,8 +5136,12 @@ slideshow-component {
             font-size: 12px;
             white-space: nowrap;
             font-weight: bold;
+          }
+
+          @media (min-width: 1000px) and (max-width: 1440px){
             padding-left: 0px;
           }
+
           .icon-caret {
             @media (min-width: 1000px) and (max-width: 1500px) {
               right: 1.1rem;
