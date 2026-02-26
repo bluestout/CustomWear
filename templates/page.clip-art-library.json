@@ -34,6 +34,7 @@
         "heading_Jxq4Qf"
       ],
       "settings": {
+        "banner_link": "",
         "show_space": false,
         "image": "shopify://shop_images/Clip_Art_2880_x_580_CW_f1a74204-6230-4858-a16a-191ae38b7cd1.png",
         "image_mobile": "shopify://shop_images/Clip_Art_Mobile_CW_750_x_400-Photoroom_1_1.png",
@@ -41,7 +42,7 @@
         "opacity_type": "gradient",
         "opacity_color": "secondary",
         "opacity_weight_on_desktop": "light",
-        "opacity_direction": "horizontal",
+        "opacity_direction": "vertical",
         "image_height": "adapt",
         "image_behavior": "none",
         "desktop_content_position": "middle-left",
@@ -403,7 +404,8 @@
           "settings": {
             "heading": "Occupational/Misc.",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "occupational-misc"
+            "metaobject": "occupational-misc",
+            "metaobject_2": ""
           }
         },
         "library_rwDec7": {
@@ -439,7 +441,8 @@
           "settings": {
             "heading": "Photography",
             "description": "<p>{{ block.settings.metaobject.description | metafield_tag }}</p>",
-            "metaobject": "photography"
+            "metaobject": "photography",
+            "metaobject_2": ""
           }
         },
         "library_9cX44U": {
