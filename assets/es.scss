@@ -5059,7 +5059,7 @@ slideshow-component {
     }
     .header__inline-menu {
       @media (min-width: 1000px) and (max-width: 1500px) {
-        margin-left: auto;
+        margin: auto;
       }
       .list-menu {
         @media (min-width: 1000px) and (max-width: 1500px) {
@@ -5096,7 +5096,7 @@ slideshow-component {
 
     .header__icons {
       @media (min-width: 1000px) and (max-width: 1500px) {
-        justify-self: start;
+        justify-self: center;
       }
       @media (min-width: 1000px) and (max-width: 1200px) {
         gap: 6px;
