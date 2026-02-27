@@ -489,6 +489,7 @@
         "library_4k6wEW",
         "library_8QTdGj"
       ],
+      "disabled": true,
       "settings": {
         "desktop_products_per_page": 20,
         "mobile_products_per_page": 8,
