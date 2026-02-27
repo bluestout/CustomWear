@@ -29,6 +29,11 @@
 {%- endif -%}
 
 {%- style -%}
+  {% if template contains "page" %}
+    #Banner-{{ section.id }}.opacity-gradient.opacity-vertical::after{
+      background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0) 41%);
+    }
+  {% endif %}
   @media (max-width: 768px) {
     #Banner-{{ section.id }}.opacity-gradient.sm-opacity-vertical::after {
       background: linear-gradient(90deg, black 0%, rgba(0, 0, 0, 0) 20%) !important;
