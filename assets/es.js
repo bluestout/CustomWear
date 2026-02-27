@@ -71,7 +71,6 @@ const initESSlider = element => {
 
 const pagination = (element, desktopCnt, mobileCnt) => {
   element.forEach((item) => {
-    // Prevent re-initializing if already set up
     if (item.dataset.paginationInit === 'true') return;
     item.dataset.paginationInit = 'true';
 
@@ -128,16 +127,14 @@ const pagination = (element, desktopCnt, mobileCnt) => {
           if (currentPage < getTotalPages()) setActive(currentPage + 1);
         });
 
-        // Fix: track previous width to detect REAL resize vs iOS scroll
         let previousWidth = window.innerWidth;
         window.addEventListener('resize', () => {
           const newWidth = window.innerWidth;
-          if (newWidth !== previousWidth) {  // Only reset if width actually changed
+          if (newWidth !== previousWidth) {
             previousWidth = newWidth;
             renderPagination();
             setActive(1);
           }
-          // iOS scroll triggers resize by changing height only — we ignore that
         });
 
         renderPagination();
