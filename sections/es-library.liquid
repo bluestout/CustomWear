@@ -213,42 +213,22 @@
 <script>
   document.addEventListener("DOMContentLoaded", () => {
     (() => {
-      // Track which items have already been initialized
-      const initializedItems = new Set();
-
-      function initPagination(items) {
-        items.forEach(item => {
-          if (!initializedItems.has(item)) {
-            initializedItems.add(item);
-            pagination([item], {{ section.settings.desktop_products_per_page }}, {{ section.settings.mobile_products_per_page }});
-          }
-        });
-      }
-
-      // Initialize visible items on load
-      const libraryItems = document.querySelectorAll('#shopify-section-{{ section.id }} .library--item');
-      initPagination(Array.from(libraryItems).filter(item => !item.classList.contains('hidden')));
-
-      // Track current value to prevent duplicate/spurious change events (iOS fix)
-      let currentValue = null;
+      {%- for block in section.blocks -%}
+        pagination(document.querySelectorAll('.library--item'), {{ section.settings.desktop_products_per_page }}, {{ section.settings.mobile_products_per_page }});
+      {%- endfor -%}
+  
+      var libraryItems = document.querySelectorAll('#shopify-section-{{ section.id }} .library--item');
 
       document.querySelectorAll('#shopify-section-{{ section.id }} [name="galleryCategory"]')?.forEach(input => {
         input.addEventListener("change", function () {
-          const newValue = this.value;
-
-          // iOS Safari guard: ignore if value hasn't actually changed
-          if (newValue === currentValue) return;
-          currentValue = newValue;
-
           libraryItems.forEach(item => {
             item.classList.add("hidden");
           });
 
-          const target = document.querySelector(`${newValue}`);
+          const target = document.querySelector(`${this.value}`);
           if (target) {
             target.classList.remove('hidden');
-            // Only initialize pagination if not already done
-            initPagination([target]);
+            pagination([target], {{ section.settings.desktop_products_per_page }}, {{ section.settings.mobile_products_per_page }});
           }
         });
       });
