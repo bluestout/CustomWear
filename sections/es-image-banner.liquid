@@ -50,9 +50,6 @@
     #Banner-{{ section.id }}.opacity-gradient.sm-opacity-vertical.opacity-color--secondary::after {
       background: linear-gradient(0deg, #553300 0%, rgba(85, 51, 0, 0) 100%);
     }
-    /* .banner__media.media{
-      max-height: 68px;
-    } */
   }
   #Banner-{{ section.id }}::after {
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
@@ -78,6 +75,109 @@
 
   #Banner-{{ section.id }}.banner {
     background-color: #676767;
+  }
+
+  /* =============================================
+     MOBILE CONTENT POSITION FIX
+     All 9 position/alignment combinations
+  ============================================= */
+  @media screen and (max-width: 749px) {
+
+    /* --- TOP positions --- */
+    #Banner-{{ section.id }} .sm-banner__content--top-left,
+    #Banner-{{ section.id }} .sm-banner__content--top-center,
+    #Banner-{{ section.id }} .sm-banner__content--top-right {
+      justify-content: flex-start !important;
+      align-self: flex-start !important;
+      margin-top: 0 !important;
+      margin-bottom: auto !important;
+    }
+
+    #Banner-{{ section.id }} .sm-banner__content--top-left {
+      align-items: flex-start !important;
+      text-align: left !important;
+    }
+    #Banner-{{ section.id }} .sm-banner__content--top-center {
+      align-items: center !important;
+      text-align: center !important;
+    }
+    #Banner-{{ section.id }} .sm-banner__content--top-right {
+      align-items: flex-end !important;
+      text-align: right !important;
+    }
+
+    /* Ensure banner allows top positioning */
+    #Banner-{{ section.id }}.banner--mobile-bottom .sm-banner__content--top-left,
+    #Banner-{{ section.id }}.banner--mobile-bottom .sm-banner__content--top-center,
+    #Banner-{{ section.id }}.banner--mobile-bottom .sm-banner__content--top-right {
+      position: absolute !important;
+      top: 0 !important;
+      bottom: auto !important;
+      width: 100% !important;
+    }
+
+    /* --- MIDDLE positions --- */
+    #Banner-{{ section.id }} .sm-banner__content--middle-left,
+    #Banner-{{ section.id }} .sm-banner__content--middle-center,
+    #Banner-{{ section.id }} .sm-banner__content--middle-right {
+      justify-content: center !important;
+      align-self: center !important;
+      margin-top: auto !important;
+      margin-bottom: auto !important;
+    }
+
+    #Banner-{{ section.id }} .sm-banner__content--middle-left {
+      align-items: flex-start !important;
+      text-align: left !important;
+    }
+    #Banner-{{ section.id }} .sm-banner__content--middle-center {
+      align-items: center !important;
+      text-align: center !important;
+    }
+    #Banner-{{ section.id }} .sm-banner__content--middle-right {
+      align-items: flex-end !important;
+      text-align: right !important;
+    }
+
+    /* --- BOTTOM positions --- */
+    #Banner-{{ section.id }} .sm-banner__content--bottom-left,
+    #Banner-{{ section.id }} .sm-banner__content--bottom-center,
+    #Banner-{{ section.id }} .sm-banner__content--bottom-right {
+      justify-content: flex-end !important;
+      align-self: flex-end !important;
+      margin-top: auto !important;
+      margin-bottom: 0 !important;
+    }
+
+    #Banner-{{ section.id }} .sm-banner__content--bottom-left {
+      align-items: flex-start !important;
+      text-align: left !important;
+    }
+    #Banner-{{ section.id }} .sm-banner__content--bottom-center {
+      align-items: center !important;
+      text-align: center !important;
+    }
+    #Banner-{{ section.id }} .sm-banner__content--bottom-right {
+      align-items: flex-end !important;
+      text-align: right !important;
+    }
+
+    /* Also fix text alignment on child elements */
+    #Banner-{{ section.id }} .sm-banner__content--top-left *,
+    #Banner-{{ section.id }} .sm-banner__content--middle-left *,
+    #Banner-{{ section.id }} .sm-banner__content--bottom-left * {
+      text-align: left !important;
+    }
+    #Banner-{{ section.id }} .sm-banner__content--top-center *,
+    #Banner-{{ section.id }} .sm-banner__content--middle-center *,
+    #Banner-{{ section.id }} .sm-banner__content--bottom-center * {
+      text-align: center !important;
+    }
+    #Banner-{{ section.id }} .sm-banner__content--top-right *,
+    #Banner-{{ section.id }} .sm-banner__content--middle-right *,
+    #Banner-{{ section.id }} .sm-banner__content--bottom-right * {
+      text-align: right !important;
+    }
   }
 {%- endstyle -%}
 
@@ -112,7 +212,7 @@
   banner--{{ section.settings.image_height }}
   {% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}
   {% if section.settings.image_height == 'adapt' and section.settings.image != blank %} banner--adapt{% endif %}
-  {% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}
+  {% if section.settings.mobile_content_position == 'bottom' or section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}
   {% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}
   {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}
   opacity-{{ section.settings.opacity_type }} 
