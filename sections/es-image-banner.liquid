@@ -38,18 +38,29 @@
     }
   {% endif %}
   @media (max-width: 768px) {
+    #Banner-{{ section.id }}.opacity-gradient.sm-opacity-vertical::after {
+      background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0) 41%) !important;
+    }
     #Banner-{{ section.id }}.opacity-gradient.sm-opacity-vertical.sm-opacity-height-large::after {
-      /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0) 100%); */
       background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0) 100%) !important;
     }
-    #Banner-{{ section.id }}.opacity-gradient.sm-opacity-vertical::after {
-      background: linear-gradient(90deg, black 0%, rgba(0, 0, 0, 0) 20%) !important;
+    #Banner-{{ section.id }}.opacity-gradient.sm-opacity-vertical.opacity-color--secondary::after {
+      background: linear-gradient(0deg, #553300 0%, rgba(85, 51, 0, 0) 41%) !important;
+    }
+    #Banner-{{ section.id }}.opacity-gradient.sm-opacity-vertical.sm-opacity-height-large.opacity-color--secondary::after {
+      background: linear-gradient(0deg, #553300 0%, rgba(85, 51, 0, 0) 100%) !important;
     }
     #Banner-{{ section.id }}.opacity-gradient.sm-opacity-horizontal::after {
-      background: linear-gradient(360deg, black 0%, rgba(0, 0, 0, 0) 41%) !important;
+      background: linear-gradient(90deg, black 0%, rgba(0, 0, 0, 0) 41%) !important;
     }
-    #Banner-{{ section.id }}.opacity-gradient.sm-opacity-vertical.opacity-color--secondary::after {
-      background: linear-gradient(0deg, #553300 0%, rgba(85, 51, 0, 0) 100%);
+    #Banner-{{ section.id }}.opacity-gradient.sm-opacity-horizontal.sm-opacity-height-large::after {
+      background: linear-gradient(90deg, black 0%, rgba(0, 0, 0, 0) 100%) !important;
+    }
+    #Banner-{{ section.id }}.opacity-gradient.sm-opacity-horizontal.opacity-color--secondary::after {
+      background: linear-gradient(90deg, #553300 0%, rgba(85, 51, 0, 0) 41%) !important;
+    }
+    #Banner-{{ section.id }}.opacity-gradient.sm-opacity-horizontal.sm-opacity-height-large.opacity-color--secondary::after {
+      background: linear-gradient(90deg, #553300 0%, rgba(85, 51, 0, 0) 100%) !important;
     }
   }
   #Banner-{{ section.id }}::after {
@@ -81,36 +92,37 @@
   @media screen and (max-width: 749px) {
 
     #Banner-{{ section.id }} {
+      display: grid !important;
+      grid-template-columns: 1fr !important;
+      grid-template-rows: 1fr !important;
       position: relative !important;
-      display: block !important;
     }
 
     #Banner-{{ section.id }} .banner__media {
-      position: relative !important;
+      grid-column: 1 !important;
+      grid-row: 1 !important;
       width: 100% !important;
       display: block !important;
       z-index: 0 !important;
     }
 
     #Banner-{{ section.id }} .banner__content {
-      position: absolute !important;
-      top: 0 !important;
-      left: 0 !important;
-      right: 0 !important;
-      bottom: 0 !important;
+      grid-column: 1 !important;
+      grid-row: 1 !important;
+      position: relative !important;
       width: 100% !important;
       max-width: 100% !important;
       height: 100% !important;
       margin: 0 !important;
       padding: 1.5rem !important;
       display: flex !important;
-      flex-direction: row !important;
-      flex-wrap: wrap !important;
+      flex-direction: column !important;
       z-index: 1 !important;
       box-sizing: border-box !important;
     }
 
     #Banner-{{ section.id }} .banner__content .banner__box {
+      flex-shrink: 0 !important;
       width: auto !important;
       max-width: 100% !important;
     }
@@ -118,36 +130,27 @@
     #Banner-{{ section.id }} .sm-banner__content--top-left,
     #Banner-{{ section.id }} .sm-banner__content--top-center,
     #Banner-{{ section.id }} .sm-banner__content--top-right {
-      align-content: flex-start !important;
-      padding-top: 0px !important;
-      align-items: flex-start !important;
+      justify-content: flex-start !important;
     }
-
     #Banner-{{ section.id }} .sm-banner__content--middle-left,
     #Banner-{{ section.id }} .sm-banner__content--middle-center,
     #Banner-{{ section.id }} .sm-banner__content--middle-right {
-      align-content: center !important;
-      align-items: center !important;
+      justify-content: center !important;
     }
-
     #Banner-{{ section.id }} .sm-banner__content--bottom-left,
     #Banner-{{ section.id }} .sm-banner__content--bottom-center,
     #Banner-{{ section.id }} .sm-banner__content--bottom-right {
-      align-content: flex-end !important;
-      align-items: flex-end !important;
-      padding-bottom: 0px !important;
+      justify-content: flex-end !important;
     }
 
     #Banner-{{ section.id }} .sm-banner__content--top-left,
     #Banner-{{ section.id }} .sm-banner__content--middle-left,
     #Banner-{{ section.id }} .sm-banner__content--bottom-left {
-      justify-content: flex-start !important;
+      align-items: flex-start !important;
     }
     #Banner-{{ section.id }} .sm-banner__content--top-left .banner__box,
     #Banner-{{ section.id }} .sm-banner__content--middle-left .banner__box,
-    #Banner-{{ section.id }} .sm-banner__content--bottom-left .banner__box {
-      text-align: left !important;
-    }
+    #Banner-{{ section.id }} .sm-banner__content--bottom-left .banner__box,
     #Banner-{{ section.id }} .sm-banner__content--top-left *,
     #Banner-{{ section.id }} .sm-banner__content--middle-left *,
     #Banner-{{ section.id }} .sm-banner__content--bottom-left * {
@@ -157,13 +160,11 @@
     #Banner-{{ section.id }} .sm-banner__content--top-center,
     #Banner-{{ section.id }} .sm-banner__content--middle-center,
     #Banner-{{ section.id }} .sm-banner__content--bottom-center {
-      justify-content: center !important;
+      align-items: center !important;
     }
     #Banner-{{ section.id }} .sm-banner__content--top-center .banner__box,
     #Banner-{{ section.id }} .sm-banner__content--middle-center .banner__box,
-    #Banner-{{ section.id }} .sm-banner__content--bottom-center .banner__box {
-      text-align: center !important;
-    }
+    #Banner-{{ section.id }} .sm-banner__content--bottom-center .banner__box,
     #Banner-{{ section.id }} .sm-banner__content--top-center *,
     #Banner-{{ section.id }} .sm-banner__content--middle-center *,
     #Banner-{{ section.id }} .sm-banner__content--bottom-center * {
@@ -173,18 +174,17 @@
     #Banner-{{ section.id }} .sm-banner__content--top-right,
     #Banner-{{ section.id }} .sm-banner__content--middle-right,
     #Banner-{{ section.id }} .sm-banner__content--bottom-right {
-      justify-content: flex-end !important;
+      align-items: flex-end !important;
     }
     #Banner-{{ section.id }} .sm-banner__content--top-right .banner__box,
     #Banner-{{ section.id }} .sm-banner__content--middle-right .banner__box,
-    #Banner-{{ section.id }} .sm-banner__content--bottom-right .banner__box {
-      text-align: right !important;
-    }
+    #Banner-{{ section.id }} .sm-banner__content--bottom-right .banner__box,
     #Banner-{{ section.id }} .sm-banner__content--top-right *,
     #Banner-{{ section.id }} .sm-banner__content--middle-right *,
     #Banner-{{ section.id }} .sm-banner__content--bottom-right * {
       text-align: right !important;
     }
+
   }
 {%- endstyle -%}
 
@@ -246,7 +246,7 @@
         if section.settings.image_2 != blank and section.settings.stack_images_on_mobile
           assign sizes = stacked_sizes
         elsif section.settings.image_2 != blank
-          assign sizes = half_width
+          assign sizes = half_widthf
         else
           assign sizes = full_width
         endif
