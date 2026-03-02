@@ -39,9 +39,10 @@
   {% endif %}
   @media (max-width: 768px) {
     #Banner-{{ section.id }}.opacity-gradient.sm-opacity-vertical.sm-opacity-height-large::after {
-      /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0) 100%); */
-      background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0) 100%) !important;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0) 100%); 
     }
+    {% if section.settings.opacity_height_on_mobile == "large" %}
+    {% endif %}
     #Banner-{{ section.id }}.opacity-gradient.sm-opacity-vertical::after {
       background: linear-gradient(90deg, black 0%, rgba(0, 0, 0, 0) 20%) !important;
     }
@@ -224,7 +225,7 @@
   opacity-{{ section.settings.opacity_type }} 
   opacity-{{ section.settings.opacity_direction }} 
   sm-opacity-{{ section.settings.opacity_direct_on_mobile }}
-  sm-opacity-height-{{ section.settings.opacity_height_on_mobile }} 
+  {% comment %} sm-opacity-height-{{ section.settings.opacity_height_on_mobile }}  {% endcomment %}
   sm-banner--{{ section.settings.image_height_on_mobile }} 
   md-up-opacity-weight--{{ section.settings.opacity_weight_on_desktop }} 
   opacity-color--{{ section.settings.opacity_color }}"
