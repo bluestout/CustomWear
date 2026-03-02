@@ -77,19 +77,13 @@
     background-color: #676767;
   }
 
-  /* =============================================
-     MOBILE CONTENT POSITION FIX
-     All 9 position/alignment combinations supported.
-  ============================================= */
   @media screen and (max-width: 749px) {
 
-    /* 1. Banner is the positioning context, never collapses */
     #Banner-{{ section.id }} {
       position: relative !important;
       display: block !important;
     }
 
-    /* 2. Image stays in normal flow — it drives the banner height */
     #Banner-{{ section.id }} .banner__media {
       position: relative !important;
       width: 100% !important;
@@ -97,7 +91,6 @@
       z-index: 0 !important;
     }
 
-    /* 3. Content overlays the image absolutely, full width/height */
     #Banner-{{ section.id }} .banner__content {
       position: absolute !important;
       top: 0 !important;
@@ -116,28 +109,26 @@
       box-sizing: border-box !important;
     }
 
-    /* 4. banner__box sits inside and respects alignment */
     #Banner-{{ section.id }} .banner__content .banner__box {
       width: auto !important;
       max-width: 100% !important;
     }
 
-    /* ---- VERTICAL (justify along column = align-content) ---- */
-    /* TOP */
     #Banner-{{ section.id }} .sm-banner__content--top-left,
     #Banner-{{ section.id }} .sm-banner__content--top-center,
     #Banner-{{ section.id }} .sm-banner__content--top-right {
       align-content: flex-start !important;
+      padding-top: 15px;
       align-items: flex-start !important;
     }
-    /* MIDDLE */
+
     #Banner-{{ section.id }} .sm-banner__content--middle-left,
     #Banner-{{ section.id }} .sm-banner__content--middle-center,
     #Banner-{{ section.id }} .sm-banner__content--middle-right {
       align-content: center !important;
       align-items: center !important;
     }
-    /* BOTTOM */
+
     #Banner-{{ section.id }} .sm-banner__content--bottom-left,
     #Banner-{{ section.id }} .sm-banner__content--bottom-center,
     #Banner-{{ section.id }} .sm-banner__content--bottom-right {
@@ -145,8 +136,6 @@
       align-items: flex-end !important;
     }
 
-    /* ---- HORIZONTAL (justify-content) ---- */
-    /* LEFT */
     #Banner-{{ section.id }} .sm-banner__content--top-left,
     #Banner-{{ section.id }} .sm-banner__content--middle-left,
     #Banner-{{ section.id }} .sm-banner__content--bottom-left {
@@ -163,7 +152,6 @@
       text-align: left !important;
     }
 
-    /* CENTER */
     #Banner-{{ section.id }} .sm-banner__content--top-center,
     #Banner-{{ section.id }} .sm-banner__content--middle-center,
     #Banner-{{ section.id }} .sm-banner__content--bottom-center {
@@ -180,7 +168,6 @@
       text-align: center !important;
     }
 
-    /* RIGHT */
     #Banner-{{ section.id }} .sm-banner__content--top-right,
     #Banner-{{ section.id }} .sm-banner__content--middle-right,
     #Banner-{{ section.id }} .sm-banner__content--bottom-right {
@@ -230,7 +217,6 @@
   banner--{{ section.settings.image_height }}
   {% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}
   {% if section.settings.image_height == 'adapt' and section.settings.image != blank %} banner--adapt{% endif %}
-  {%- comment -%}banner--mobile-bottom intentionally removed: content is always absolutely positioned over the image via CSS{%- endcomment -%}
   {% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}
   {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}
   opacity-{{ section.settings.opacity_type }} 
