@@ -94,9 +94,9 @@
         "collapsible_row_CqVCww": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Can I order a blank caps sample before I order my custom patch order?",
+            "heading": "Can I order a blank caps sample before I order my custom patch order? X",
             "icon": "none",
-            "row_content": "<p>Yes, please visit our blank cap store at <a href=\"https://www.CapWholesalers.com\" target=\"_blank\" title=\"https://www.CapWholesalers.com\">https://www.CapWholesalers.com</a></p>",
+            "row_content": "<p>Yes, please visit our blank cap store at <a href=\"https://www.CapWholesalers.com\" target=\"_blank\" title=\"https://www.CapWholesalers.com\">https://www.CapWholesalers.com<br/>XXX</a></p>",
             "page": ""
           }
         },
