@@ -451,8 +451,7 @@
         "@media (min-width: 751px) {.image-with-text__media-item {padding-left: 50px; }}"
       ],
       "settings": {
-        "image": "shopify://shop_images/need_editing_112_-_Edited.png",
-        "image_2": "shopify://shop_images/needs_edit_112_golf_-_Edited.png",
+        "image": "shopify://shop_images/1000x800_ladies.jpg",
         "height": "adapt",
         "hide_media_on_mobile": false,
         "desktop_image_width": "large",
@@ -477,7 +476,7 @@
           "type": "item",
           "settings": {
             "item_width": 6,
-            "image": "shopify://shop_images/Richardson_Best_Seller_1500_x_1200_CW.png",
+            "image": "shopify://shop_images/1100x800_mid.jpg",
             "title": "Richardson",
             "url": "shopify://collections/richardson-112-hats",
             "title_2": "Hat Style 2",
@@ -488,7 +487,7 @@
           "type": "item",
           "settings": {
             "item_width": 4,
-            "image": "shopify://shop_images/bg_1.png",
+            "image": "shopify://shop_images/1000x800_5panel_golf.jpg",
             "title": "Flexfit",
             "url": "shopify://collections/flexfit-and-stretch-fit-hats",
             "image_2": "shopify://shop_images/OC-main-herov2.jpg",
@@ -500,10 +499,10 @@
           "type": "item",
           "settings": {
             "item_width": 4,
-            "image": "shopify://shop_images/top_selling_brands_Otto_1160_x_590_CW-Photoroom.png",
+            "image": "shopify://shop_images/1000x509_otto.jpg",
             "title": "Otto",
             "url": "shopify://collections/otto-hats",
-            "image_2": "shopify://shop_images/Decky_Girl_1160_x_590-Photoroom.png",
+            "image_2": "shopify://shop_images/1000x509_decky.jpg",
             "title_2": "Decky Hats",
             "url_2": "shopify://collections/decky-hats"
           }
@@ -579,7 +578,7 @@
         "button_BKEWTb"
       ],
       "settings": {
-        "image": "shopify://shop_images/Image_1.png",
+        "image": "shopify://shop_images/1100x800_mid_down.jpg",
         "height": "adapt",
         "hide_media_on_mobile": true,
         "desktop_image_width": "medium",
@@ -757,7 +756,7 @@
           "type": "item",
           "settings": {
             "item_width": 4,
-            "image": "shopify://shop_images/Feathure_Work_1032_x_1136-Photoroom.png",
+            "image": "shopify://shop_images/1000x1014__E2_80_93_3.png",
             "title": "",
             "url": "shopify://pages/inspiration-gallery",
             "title_2": "Hat Style 2",
@@ -768,7 +767,7 @@
           "type": "item",
           "settings": {
             "item_width": 4,
-            "image": "shopify://shop_images/Featured_Work_1032_x_1046--Photoroom.png",
+            "image": "shopify://shop_images/1000x1014__E2_80_93_1.jpg",
             "title": "",
             "url": "shopify://pages/inspiration-gallery",
             "title_2": "Hat Style 2",
@@ -779,10 +778,10 @@
           "type": "item",
           "settings": {
             "item_width": 2,
-            "image": "shopify://shop_images/Featured_Work_654_x_514-Photoroom.png",
+            "image": "shopify://shop_images/1000x509_patriotic.png",
             "title": "",
             "url": "shopify://pages/inspiration-gallery",
-            "image_2": "shopify://shop_images/Featured_Work_654_x514-Photoroom-Photoroom.png",
+            "image_2": "shopify://shop_images/659x514__E2_80_93_1.jpg",
             "title_2": "",
             "url_2": "shopify://pages/inspiration-gallery"
           }
