@@ -1677,3 +1677,16 @@ product-info {
 .product__media-list:has(.product__media-item--variant.is-active) .product__media-listt{
   display: flex!important;
 }
+
+#Slider-Gallery-template--21013816279281__main .product-media-container.media-type-image {
+  --aspect-ratio: 1 !important;
+  --preview-ratio: 1 !important;
+  overflow: hidden !important;
+}
+
+#Slider-Gallery-template--21013816279281__main .product-media-container.media-type-image img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
