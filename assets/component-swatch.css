@@ -10,7 +10,7 @@
   background: var(--swatch--background);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-origin: border-box;
   /* border: 0.1rem solid rgba(var(--color-foreground), 0.15); */
   border-radius: var(--swatch--border-radius);
