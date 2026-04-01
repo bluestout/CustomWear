@@ -53,8 +53,7 @@
   class="product-media-container media-type-{{ media.media_type }} media-fit-{{ media_fit }} global-media-settings gradient{% if constrain_to_viewport %} constrain-height{% endif %}"
   style="
   --ratio: {% if media.media_type == 'image' %}1{% else %}{{ media.aspect_ratio | default: 1.0 }}{% endif %};
-  --preview-ratio: {% if media.media_type == 'image' %}1{% else %}{{ media.preview_image.aspect_ratio | default: 1.0 }}{% endif %};
-"
+  --preview-ratio: {% if media.media_type == 'image' %}1{% else %}{{ media.preview_image.aspect_ratio | default: 1.0 }}{% endif %};"
 >
   <modal-opener
     class="product__modal-opener product__modal-opener--{{ media.media_type }}"
@@ -80,7 +79,7 @@
       {% endcase %}
     </span>
     {%- render 'loading-spinner' -%}
-    <div class="product__media media media--transparent" style="position: relative; padding-top: 100%; overflow: hidden;">
+    <div class="product__media media media--transparent">
       {{
         media.preview_image
         | image_url: width: 1946
@@ -88,8 +87,7 @@
           class: image_class,
           loading: lazy,
           sizes: sizes,
-          widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946',
-          style: 'position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; display:block; transform:scale(1.15); transform-origin:center;'
+          widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946'
       }}
     </div>
     <button
