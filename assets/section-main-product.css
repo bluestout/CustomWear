@@ -1372,6 +1372,11 @@ a.product__text {
   padding-top: var(--ratio-percent);
 }
 
+/* Fixed aspect ratio for consistent media gallery display */
+.product__media-list .product-media-container .media {
+  padding-top: 100%; /* Square aspect ratio for consistency */
+  position: relative;
+}
 
 .product__media-list .product-media-container .media img {
   position: absolute;
@@ -1400,7 +1405,7 @@ a.product__text {
 
 @media screen and (min-width: 750px) {
   .product-media-container {
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto;
   }
 
