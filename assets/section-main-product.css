@@ -1701,3 +1701,9 @@ product-info {
     transform-origin: center center !important;
   }
 }
+
+#Slider-Gallery-template--21013816279281__main .product-media-container .media,
+#Slider-Gallery-template--21013816279281__main .product-media-container .media * {
+  outline: 4px solid red !important;
+  background: yellow !important;
+}
