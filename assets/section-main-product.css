@@ -1374,7 +1374,6 @@ a.product__text {
 
 /* Fixed aspect ratio for consistent media gallery display */
 .product__media-list .product-media-container .media {
-  padding-top: 100%; /* Square aspect ratio for consistency */
   position: relative;
 }
 
