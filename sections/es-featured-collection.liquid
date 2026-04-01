@@ -17,7 +17,6 @@
       width: 100%;
       max-width: 700px;
       height: 0px;
-      display: block;
       position: absolute;
       bottom: 0;
       left: 50%;
@@ -35,11 +34,11 @@
       --padding-bottom: {{ section.settings.padding_bottom | divided_by: 2 }}px;
     }
 
-    #shopify-section-{{ section.id }}{
+    #shopify-section-{{ section.id }} {
       border-top: 0px solid #CCC;
     }
 
-    .es-font-h2.center{
+    .es-font-h2.center {
       text-align: center;
     }
   }
@@ -53,7 +52,8 @@
     overflow: hidden;
   }
 
-  /* Default behavior */
+  /* Default image behavior */
+  #shopify-section-{{ section.id }} .card__media .media img,
   #shopify-section-{{ section.id }} .media img {
     position: absolute;
     top: 50%;
@@ -65,13 +65,17 @@
     transform: translate(-50%, -50%);
   }
 
-  /* Landscape images:
-     leave a little top/bottom space, but still crop sides a bit */
+  /* Wide images:
+     keep square frame, add a little top/bottom breathing room,
+     and only crop the sides slightly */
   #shopify-section-{{ section.id }} .media.is-landscape img {
-    width: auto;
-    height: 88%;
-    min-width: 100%;
-    object-fit: fill !important;
+    width: auto !important;
+    height: 92% !important;
+    min-width: 100% !important;
+    max-width: none !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 {%- endstyle -%}
 
@@ -89,6 +93,7 @@
           </div>
         </div>
       </div>
+
       <div class="esSwiper">
         <div class="swiper-wrapper">
           {% assign skip_card_product_styles = false %}
