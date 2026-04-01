@@ -1690,3 +1690,19 @@ product-info {
   object-fit: cover !important;
   display: block !important;
 }
+
+@media screen and (min-width: 750px) {
+  .cl-po--gallery-wrapper .splide__slide {
+    aspect-ratio: 1 / 1 !important;
+    overflow: hidden !important;
+    background: #fff !important;
+  }
+
+  .cl-po--gallery-wrapper .splide__slide img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    display: block !important;
+  }
+}
