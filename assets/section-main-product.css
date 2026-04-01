@@ -1692,19 +1692,8 @@ product-info {
 }
 
 @media screen and (min-width: 750px) {
-  #Slide-template--21013816279281__main-37775151923441 .product__media {
-    position: relative !important;
-    padding-top: 100% !important;
-    overflow: hidden !important;
-  }
-
-  #Slide-template--21013816279281__main-37775151923441 .product__media img {
-    position: absolute !important;
-    inset: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    object-position: center !important;
-    display: block !important;
+  .product__media-item.is-active .product__media img {
+    outline: 12px solid fuchsia !important;
+    opacity: 0.5 !important;
   }
 }
