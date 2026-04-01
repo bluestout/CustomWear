@@ -66,13 +66,13 @@
   }
 
   /* Wide images:
-     keep square frame, add a little top/bottom breathing room,
-     and only crop the sides slightly */
+     keep the frame square, preserve proportions,
+     and only crop the sides a little */
   #shopify-section-{{ section.id }} .media.is-landscape img {
-    width: auto !important;
-    height: 92% !important;
-    min-width: 100% !important;
+    width: 108% !important;
+    height: auto !important;
     max-width: none !important;
+    object-fit: unset !important;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
