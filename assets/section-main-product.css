@@ -1376,7 +1376,7 @@ a.product__text {
 /* Fixed aspect ratio for consistent media gallery display */
 /*.product__media-list .product-media-container .media {
   padding-top: 100%; */ /* Square aspect ratio for consistency */
-  /* position: relative; */
+  /* position: relative; 
 }
 
 
@@ -1388,6 +1388,8 @@ a.product__text {
   height: 100%;
   object-fit: cover;
 }
+
+*/
 
 .product-media-container.constrain-height .media {
   padding-top: min(var(--constrained-height), var(--ratio-percent));
