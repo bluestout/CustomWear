@@ -1372,11 +1372,6 @@ a.product__text {
   padding-top: var(--ratio-percent);
 }
 
-.product__media-list .product-media-container .media {
-  padding-top: var(--ratio-percent);
-  position: relative;
-}
-
 .product__media-list .product-media-container .media img {
   position: absolute;
   top: 0;
