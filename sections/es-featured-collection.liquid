@@ -56,19 +56,22 @@
   /* Default behavior */
   #shopify-section-{{ section.id }} .media img {
     position: absolute;
-    inset: 0;
+    top: 50%;
+    left: 50%;
     width: 100%;
     height: 100%;
     object-fit: cover !important;
     object-position: center center !important;
+    transform: translate(-50%, -50%);
   }
 
-  /* Landscape images only:
-     keep square frame, show a bit more top/bottom, crop sides less aggressively */
+  /* Landscape images:
+     leave a little top/bottom space, but still crop sides a bit */
   #shopify-section-{{ section.id }} .media.is-landscape img {
-    object-fit: contain !important;
-    transform: scale(1.12);
-    transform-origin: center center;
+    width: auto;
+    height: 88%;
+    min-width: 100%;
+    object-fit: fill !important;
   }
 {%- endstyle -%}
 
