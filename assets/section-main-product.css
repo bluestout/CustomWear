@@ -1678,20 +1678,3 @@ product-info {
   display: flex!important;
 }
 
-#Slider-Gallery-template--21013816279281__main .product-media-container.media-type-image {
-  --aspect-ratio: 1 !important;
-  --preview-ratio: 1 !important;
-  overflow: hidden !important;
-}
-
-#Slider-Gallery-template--21013816279281__main .product-media-container.media-type-image img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  display: block !important;
-}
-
-.product__media-list .product-media-container .media {
-  padding-top: 75%; /* 4:3 ratio */
-  position: relative;
-}
