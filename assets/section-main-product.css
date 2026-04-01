@@ -1437,7 +1437,7 @@ a.product__text {
 
   /* Ensure contain fit maintains aspect ratio consistency */
   .product-media-container.media-fit-contain .media img {
-    object-fit: contain;
+    object-fit: cover;
     width: 100%;
     height: 100%;
     object-position: center;
