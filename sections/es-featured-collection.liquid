@@ -17,6 +17,7 @@
       width: 100%;
       max-width: 700px;
       height: 0px;
+      display: block;
       position: absolute;
       bottom: 0;
       left: 50%;
@@ -34,48 +35,13 @@
       --padding-bottom: {{ section.settings.padding_bottom | divided_by: 2 }}px;
     }
 
-    #shopify-section-{{ section.id }} {
+    #shopify-section-{{ section.id }}{
       border-top: 0px solid #CCC;
     }
 
-    .es-font-h2.center {
+    .es-font-h2.center{
       text-align: center;
     }
-  }
-
-  /* Keep all product media square */
-  #shopify-section-{{ section.id }} .card__media,
-  #shopify-section-{{ section.id }} .card__inner .media,
-  #shopify-section-{{ section.id }} .media {
-    aspect-ratio: 1 / 1 !important;
-    position: relative;
-    overflow: hidden;
-  }
-
-  /* Default image behavior */
-  #shopify-section-{{ section.id }} .card__media .media img,
-  #shopify-section-{{ section.id }} .media img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover !important;
-    object-position: center center !important;
-    transform: translate(-50%, -50%);
-  }
-
-  /* Wide images:
-     keep the frame square, preserve proportions,
-     and only crop the sides a little */
-  #shopify-section-{{ section.id }} .media.is-landscape img {
-    width: 108% !important;
-    height: auto !important;
-    max-width: none !important;
-    object-fit: unset !important;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 {%- endstyle -%}
 
@@ -93,7 +59,6 @@
           </div>
         </div>
       </div>
-
       <div class="esSwiper">
         <div class="swiper-wrapper">
           {% assign skip_card_product_styles = false %}
@@ -103,7 +68,7 @@
                 <div class="swiper-slide">
                   {% render 'card-product',
                     card_product: product,
-                    media_aspect_ratio: 'square',
+                    media_aspect_ratio: section.settings.image_ratio,
                     image_shape: section.settings.image_shape,
                     show_secondary_image: section.settings.show_secondary_image,
                     show_vendor: section.settings.show_vendor,
@@ -144,27 +109,6 @@
           spaceBetween: 10,
         },
       },
-    });
-
-    const images = document.querySelectorAll('#shopify-section-{{ section.id }} .media img');
-
-    images.forEach((img) => {
-      const applyOrientationClass = () => {
-        const media = img.closest('.media');
-        if (!media) return;
-
-        if (img.naturalWidth > img.naturalHeight) {
-          media.classList.add('is-landscape');
-        } else {
-          media.classList.remove('is-landscape');
-        }
-      };
-
-      if (img.complete && img.naturalWidth > 0) {
-        applyOrientationClass();
-      } else {
-        img.addEventListener('load', applyOrientationClass);
-      }
     });
   });
 </script>
