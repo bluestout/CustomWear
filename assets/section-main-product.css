@@ -1681,3 +1681,13 @@ product-info {
   display: flex!important;
 }
 
+@media screen and (min-width: 750px) {
+  .product__media-list .product-media-container .media {
+    overflow: hidden;
+  }
+
+  .product__media-list .product-media-container .media img {
+    transform: scale(1.18);
+    transform-origin: center center;
+  }
+}
