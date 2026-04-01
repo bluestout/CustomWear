@@ -1385,7 +1385,6 @@ a.product__text {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  object-position: center;
 }
 
 .product-media-container.constrain-height .media {
@@ -1440,8 +1439,6 @@ a.product__text {
     object-fit: contain;
     width: 100%;
     height: 100%;
-    object-position: center;
-
   }
 }
 
@@ -1679,15 +1676,4 @@ product-info {
 
 .product__media-list:has(.product__media-item--variant.is-active) .product__media-listt{
   display: flex!important;
-}
-
-@media screen and (min-width: 750px) {
-  .product__media-list .product-media-container .media {
-    overflow: hidden;
-  }
-
-  .product__media-list .product-media-container .media img {
-    transform: scale(1.18);
-    transform-origin: center center;
-  }
 }
