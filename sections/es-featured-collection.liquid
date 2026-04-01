@@ -137,6 +137,27 @@
         },
       },
     });
+
+    const images = document.querySelectorAll('#shopify-section-{{ section.id }} .media img');
+
+    images.forEach((img) => {
+      const applyOrientationClass = () => {
+        const media = img.closest('.media');
+        if (!media) return;
+
+        if (img.naturalWidth > img.naturalHeight) {
+          media.classList.add('is-landscape');
+        } else {
+          media.classList.remove('is-landscape');
+        }
+      };
+
+      if (img.complete && img.naturalWidth > 0) {
+        applyOrientationClass();
+      } else {
+        img.addEventListener('load', applyOrientationClass);
+      }
+    });
   });
 </script>
 
