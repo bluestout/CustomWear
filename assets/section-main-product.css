@@ -1692,8 +1692,18 @@ product-info {
 }
 
 @media screen and (min-width: 750px) {
-  product-info img {
-    outline: 10px solid cyan !important;
-    opacity: 0.6 !important;
+  product-info img.image-magnify-hover {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    transform: scale(1.18) !important;
+    transform-origin: center center !important;
+  }
+
+  product-info .product__media {
+    position: relative !important;
+    padding-top: 100% !important;
+    overflow: hidden !important;
   }
 }
