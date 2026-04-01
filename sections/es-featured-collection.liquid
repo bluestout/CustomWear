@@ -44,17 +44,31 @@
     }
   }
 
-  /* Softer crop for product images in this carousel */
+  /* Keep all product media square */
   #shopify-section-{{ section.id }} .card__media,
   #shopify-section-{{ section.id }} .card__inner .media,
   #shopify-section-{{ section.id }} .media {
-    aspect-ratio: 4 / 5 !important;
+    aspect-ratio: 1 / 1 !important;
+    position: relative;
+    overflow: hidden;
   }
 
+  /* Default image behavior */
   #shopify-section-{{ section.id }} .card__media img,
   #shopify-section-{{ section.id }} .media img {
     width: 100%;
     height: 100%;
+    object-fit: cover !important;
+    object-position: center;
+  }
+
+  /* Landscape images: slightly less aggressive side crop + top/bottom breathing room */
+  #shopify-section-{{ section.id }} .media img.is-landscape {
+    position: absolute;
+    top: 7%;
+    left: 0;
+    width: 100%;
+    height: 86%;
     object-fit: cover !important;
     object-position: center;
   }
