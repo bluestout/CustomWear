@@ -43,6 +43,20 @@
       text-align: center;
     }
   }
+
+    /* Force product images in this carousel to display as square crops */
+  #shopify-section-{{ section.id }} .card__media,
+  #shopify-section-{{ section.id }} .media {
+    aspect-ratio: 1 / 1;
+  }
+
+  #shopify-section-{{ section.id }} .card__media .media img,
+  #shopify-section-{{ section.id }} .media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
 {%- endstyle -%}
 
 <div class="container">
@@ -68,7 +82,7 @@
                 <div class="swiper-slide">
                   {% render 'card-product',
                     card_product: product,
-                    media_aspect_ratio: section.settings.image_ratio,
+                    media_aspect_ratio: 'square',
                     image_shape: section.settings.image_shape,
                     show_secondary_image: section.settings.show_secondary_image,
                     show_vendor: section.settings.show_vendor,
