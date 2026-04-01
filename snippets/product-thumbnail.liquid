@@ -80,7 +80,7 @@
       {% endcase %}
     </span>
     {%- render 'loading-spinner' -%}
-    <div class="product__media media media--transparent">
+    <div class="product__media media media--transparent" style="position: relative; padding-top: 100%; overflow: hidden;">
       {{
         media.preview_image
         | image_url: width: 1946
@@ -88,7 +88,8 @@
           class: image_class,
           loading: lazy,
           sizes: sizes,
-          widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946'
+          widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946',
+          style: 'position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; display:block;'
       }}
     </div>
     <button
