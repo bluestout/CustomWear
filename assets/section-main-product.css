@@ -1690,3 +1690,8 @@ product-info {
   object-fit: cover !important;
   display: block !important;
 }
+
+.product__media-list .product-media-container .media {
+  padding-top: 75%; /* 4:3 ratio */
+  position: relative;
+}
