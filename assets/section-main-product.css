@@ -1694,3 +1694,7 @@ product-info {
   object-fit: cover !important;
   display: block !important;
 }
+
+ul.product__media-list {
+  align-items: flex-start;
+}
