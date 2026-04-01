@@ -1699,3 +1699,9 @@ product-info {
   overflow: hidden;
   align-self: flex-start;
 }
+
+.product__media-listt {
+  max-height: 0 !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+}
