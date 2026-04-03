@@ -1,5 +1,6 @@
 {%- style -%}
   #shopify-section-{{ section.id }} {
+    position: relative;
     --padding-top: {{ section.settings.padding_top }}px;
     --padding-bottom: {{ section.settings.padding_bottom }}px;
   }
@@ -9,63 +10,78 @@
       --padding-top: {{ section.settings.padding_top | divided_by: 2 }}px;
       --padding-bottom: {{ section.settings.padding_bottom | divided_by: 2 }}px;
     }
+
+    .es-font-h2.center {
+      text-align: center;
+    }
   }
 {%- endstyle -%}
 
 <div class="container">
-  <div class="swiper">
-    <div class="page-width es-featured-blocks__title-wrapper small-hide">
-      <h2 class="es-font-h2">{{ section.settings.title }}</h2>
-      <div class="es-featured-blocks__navigation">
-        <div class="swiper-button-prev">
-          {%- render 'es-icon-arrow-right' -%}
-        </div>
-        <div class="swiper-button-next">
-          {%- render 'es-icon-arrow-right' -%}
+  <div class="page-width">
+    <div class="swiper">
+      <div class="es-featured-collection__title-wrapper">
+        <h2 class="es-font-h2 center">{{ section.settings.title }}</h2>
+        <div class="es-featured-collection__navigation small-hide">
+          <div class="swiper-button-prev es-swiper-button">
+            {%- render 'es-icon-arrow-right' -%}
+          </div>
+          <div class="swiper-button-next es-swiper-button">
+            {%- render 'es-icon-arrow-right' -%}
+          </div>
         </div>
       </div>
-    </div>
-    <div class="esSwiper page-width">
-      <div class="swiper-wrapper">
-        {%- for block in section.blocks -%}
-          {%- assign product = block.settings.product -%}
-          {%- if block.settings.custom_image != blank -%}
-            {%- assign block_image = block.settings.custom_image -%}
-          {%- elsif product != blank -%}
-            {%- assign block_image = product.featured_image -%}
-          {%- endif -%}
-          {%- assign block_title = block.settings.title | default: product.title -%}
-          {%- assign block_url = block.settings.url | default: product.url -%}
-          <div class="swiper-slide">
-            <div class="es-featured-blocks__item">
-              <div class="es-featured-blocks__item-image">
-                <a class="link" href="{{ block_url }}">
-                  {%- if block_image != blank -%}
-                    <img
-                      src="{{ block_image | image_url: width: 1000 }}"
-                      alt="{{ block_title }}"
-                      width="{{ block_image.width | divided_by: 2 }}"
-                      height="{{ block_image.height | divided_by: 2 }}"
-                    >
-                  {%- endif -%}
-                </a>
+      <div class="esSwiper">
+        <div class="swiper-wrapper">
+          {%- assign skip_card_product_styles = false -%}
+          {%- for block in section.blocks -%}
+            {%- assign product = block.settings.product -%}
+            {%- if product != blank -%}
+              <div class="swiper-slide">
+                {%- if block.settings.custom_image != blank -%}
+                  <div class="es-featured-blocks__item">
+                    <div class="es-featured-blocks__item-image">
+                      <a class="link" href="{{ product.url }}">
+                        <img
+                          src="{{ block.settings.custom_image | image_url: width: 1000 }}"
+                          alt="{{ product.title }}"
+                          width="{{ block.settings.custom_image.width | divided_by: 2 }}"
+                          height="{{ block.settings.custom_image.height | divided_by: 2 }}"
+                        >
+                      </a>
+                    </div>
+                    <div class="es-featured-blocks__item-title">
+                      <a class="link" href="{{ product.url }}">{{ product.title }}</a>
+                      <div>{{ product.price | money }}</div>
+                    </div>
+                  </div>
+                {%- else -%}
+                  {% render 'card-product',
+                    card_product: product,
+                    media_aspect_ratio: section.settings.image_ratio,
+                    image_shape: section.settings.image_shape,
+                    show_secondary_image: section.settings.show_secondary_image,
+                    show_vendor: section.settings.show_vendor,
+                    show_rating: section.settings.show_rating,
+                    skip_styles: skip_card_product_styles,
+                    section_id: section.id,
+                    quick_add: section.settings.quick_add
+                  %}
+                {%- endif -%}
               </div>
-              <div class="es-featured-blocks__item-title">
-                <a class="es-button link" href="{{ block_url }}">{{ block_title }}</a>
-                <div class="es-featured-blocks__item-subtitle">{{ block.settings.subtitle }}</div>
-              </div>
-            </div>
-          </div>
-        {%- endfor -%}
+              {%- assign skip_card_product_styles = true -%}
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function () {
     new Swiper('#shopify-section-{{ section.id }} .esSwiper', {
-      slidesPerView: 5,
+      slidesPerView: 4,
       spaceBetween: 20,
       navigation: {
         nextEl: '#shopify-section-{{ section.id }} .swiper-button-next',
@@ -73,14 +89,14 @@
       },
       breakpoints: {
         1024: {
-          slidesPerView: 5,
+          slidesPerView: 4,
         },
         768: {
           slidesPerView: 3,
         },
         320: {
           slidesPerView: 2.5,
-          spaceBetween: 4,
+          spaceBetween: 10,
         },
       },
     });
@@ -91,13 +107,95 @@
 {
   "name": "ES Featured Products",
   "tag": "section",
-  "class": "section es-featured-blocks",
+  "class": "section es-featured-collection",
   "settings": [
     {
       "type": "inline_richtext",
       "id": "title",
       "label": "Title",
       "default": "Featured Products"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "Adapt to image"
+        },
+        {
+          "value": "portrait",
+          "label": "Portrait"
+        },
+        {
+          "value": "square",
+          "label": "Square"
+        },
+        {
+          "value": "rectangle",
+          "label": "Rectangle"
+        }
+      ],
+      "default": "adapt",
+      "label": "Image ratio"
+    },
+    {
+      "type": "select",
+      "id": "image_shape",
+      "options": [
+        {
+          "value": "default",
+          "label": "Default"
+        },
+        {
+          "value": "arch",
+          "label": "Arch"
+        },
+        {
+          "value": "round",
+          "label": "Round"
+        }
+      ],
+      "default": "default",
+      "label": "Image shape"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_secondary_image",
+      "default": false,
+      "label": "Show secondary image on hover"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_vendor",
+      "default": false,
+      "label": "Show vendor"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_rating",
+      "default": false,
+      "label": "Show rating"
+    },
+    {
+      "type": "select",
+      "id": "quick_add",
+      "default": "none",
+      "label": "Quick add",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "standard",
+          "label": "Standard"
+        },
+        {
+          "value": "bulk",
+          "label": "Bulk"
+        }
+      ]
     },
     {
       "type": "range",
@@ -131,22 +229,7 @@
         {
           "type": "image_picker",
           "id": "custom_image",
-          "label": "Custom Image (optional, overrides product image)"
-        },
-        {
-          "type": "inline_richtext",
-          "id": "title",
-          "label": "Title (optional, overrides product title)"
-        },
-        {
-          "type": "inline_richtext",
-          "id": "subtitle",
-          "label": "Sub Title"
-        },
-        {
-          "type": "url",
-          "id": "url",
-          "label": "URL (optional, overrides product URL)"
+          "label": "Custom Image (optional)"
         }
       ]
     }
