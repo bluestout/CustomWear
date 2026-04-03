@@ -691,6 +691,37 @@
         "padding_bottom": 80
       }
     },
+    "1775241589d5956ba8": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_1cb4d7d_Tzqhz9": {
+          "type": "ai_gen_block_1cb4d7d",
+          "settings": {
+            "title": "<h1><strong>Best Sellers by Brand</strong></h1>",
+            "products": [
+              "authentic-richardson-sized-112-trucker-6-panel-siz",
+              "richardson-laser-cut-five-panel-tru-p66331",
+              "yupoong-classic-full-poplin-golf-cap",
+              "richardson-printed-five-panel-trucker-hat"
+            ],
+            "products_per_row_desktop": 4,
+            "products_per_row_tablet": 3,
+            "products_per_row_mobile": 2,
+            "show_vendor": false,
+            "show_rating": false,
+            "quick_add": "none",
+            "border_bottom": false,
+            "padding_top": 36,
+            "padding_bottom": 36
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_1cb4d7d_Tzqhz9"
+      ],
+      "settings": {}
+    },
     "es_featured_videos_zwxmNW": {
       "type": "es-featured-videos",
       "blocks": {
@@ -803,37 +834,6 @@
         "item_count_row": 3,
         "show_gradient": false
       }
-    },
-    "1775241589d5956ba8": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_1cb4d7d_Tzqhz9": {
-          "type": "ai_gen_block_1cb4d7d",
-          "settings": {
-            "title": "<h1><strong>Best Sellers by Brand</strong></h1>",
-            "products": [
-              "authentic-richardson-sized-112-trucker-6-panel-siz",
-              "richardson-laser-cut-five-panel-tru-p66331",
-              "yupoong-classic-full-poplin-golf-cap",
-              "richardson-printed-five-panel-trucker-hat"
-            ],
-            "products_per_row_desktop": 4,
-            "products_per_row_tablet": 3,
-            "products_per_row_mobile": 2,
-            "show_vendor": false,
-            "show_rating": false,
-            "quick_add": "none",
-            "border_bottom": false,
-            "padding_top": 36,
-            "padding_bottom": 36
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_1cb4d7d_Tzqhz9"
-      ],
-      "settings": {}
     }
   },
   "order": [
@@ -845,8 +845,8 @@
     "es_image_with_text_kFT4Pw",
     "es_testimonial_xNiLtf",
     "es_featured_collection_RGkMJh",
+    "1775241589d5956ba8",
     "es_featured_videos_zwxmNW",
-    "es_gallery_with_link_XdFTjW",
-    "1775241589d5956ba8"
+    "es_gallery_with_link_XdFTjW"
   ]
 }
