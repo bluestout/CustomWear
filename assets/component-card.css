@@ -705,7 +705,7 @@
 }
 
 .es-featured-collection .container .page-width .swiper .product-card-wrapper .card__inner {
-  --ratio-percent: 60%
+  --ratio-percent: 60% !important;
 }
 
 #CartDrawer-CartItems .cart-item__details{
