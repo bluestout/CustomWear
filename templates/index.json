@@ -811,7 +811,12 @@
           "type": "ai_gen_block_1cb4d7d",
           "settings": {
             "title": "<h1><strong>Best Sellers by Brand</strong></h1>",
-            "products": [],
+            "products": [
+              "authentic-richardson-sized-112-trucker-6-panel-siz",
+              "richardson-laser-cut-five-panel-tru-p66331",
+              "yupoong-classic-full-poplin-golf-cap",
+              "richardson-printed-five-panel-trucker-hat"
+            ],
             "products_per_row_desktop": 4,
             "products_per_row_tablet": 3,
             "products_per_row_mobile": 2,
