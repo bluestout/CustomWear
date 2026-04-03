@@ -694,47 +694,40 @@
     "es_featured_products_f7J3tb": {
       "type": "es-featured-products",
       "blocks": {
-        "product_gd9VbV": {
+        "product_Fa794r": {
           "type": "product",
           "settings": {
-            "product": "kati-atlantis-headwear-sustainable-honeycomb"
+            "product": "authentic-richardson-sized-112-trucker-6-panel-siz"
           }
         },
-        "product_aPGB4Q": {
+        "product_4i7XzQ": {
           "type": "product",
           "settings": {
-            "product": "kati-atlantis-sustainable-finished-edge"
+            "product": "richardson-laser-cut-five-panel-tru-p66331"
           }
         },
-        "product_7fLUeF": {
+        "product_Kaxgp6": {
           "type": "product",
           "settings": {
-            "product": "kati-atlantis-headwear-sustainable-five-panel"
+            "product": "yupoong-classic-full-poplin-golf-cap"
           }
         },
-        "product_a9PW6k": {
+        "product_XwJan7": {
           "type": "product",
           "settings": {
-            "product": "cobra-6-panel-garment-washed-sand-peached-chino-co"
-          }
-        },
-        "product_9LhJbN": {
-          "type": "product",
-          "settings": {
-            "product": "p67373"
+            "product": "richardson-printed-five-panel-trucker-hat"
           }
         }
       },
       "block_order": [
-        "product_gd9VbV",
-        "product_aPGB4Q",
-        "product_7fLUeF",
-        "product_a9PW6k",
-        "product_9LhJbN"
+        "product_Fa794r",
+        "product_4i7XzQ",
+        "product_Kaxgp6",
+        "product_XwJan7"
       ],
       "name": "ES Featured Products",
       "settings": {
-        "title": "Featured Products",
+        "title": "Best Sellers By Brand",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": false,
