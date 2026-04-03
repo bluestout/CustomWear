@@ -101,6 +101,26 @@
       },
     });
   });
+
+  if (window.Shopify && Shopify.designMode) {
+  document.addEventListener('shopify:section:load', function(e) {
+    if (e.detail.sectionId === '{{ section.id }}') {
+      new Swiper('#shopify-section-{{ section.id }} .esSwiper', {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        navigation: {
+          nextEl: '#shopify-section-{{ section.id }} .swiper-button-next',
+          prevEl: '#shopify-section-{{ section.id }} .swiper-button-prev',
+        },
+        breakpoints: {
+          1024: { slidesPerView: 4 },
+          768: { slidesPerView: 3 },
+          320: { slidesPerView: 2.5, spaceBetween: 10 },
+        },
+      });
+    }
+  });
+}
 </script>
 
 {%- schema -%}
