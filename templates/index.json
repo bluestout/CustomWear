@@ -803,6 +803,32 @@
         "item_count_row": 3,
         "show_gradient": false
       }
+    },
+    "1775241589d5956ba8": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_1cb4d7d_Tzqhz9": {
+          "type": "ai_gen_block_1cb4d7d",
+          "settings": {
+            "title": "<h1><strong>Best Sellers by Brand</strong></h1>",
+            "products": [],
+            "products_per_row_desktop": 4,
+            "products_per_row_tablet": 3,
+            "products_per_row_mobile": 2,
+            "show_vendor": false,
+            "show_rating": false,
+            "quick_add": "none",
+            "border_bottom": false,
+            "padding_top": 36,
+            "padding_bottom": 36
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_1cb4d7d_Tzqhz9"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -815,6 +841,7 @@
     "es_testimonial_xNiLtf",
     "es_featured_collection_RGkMJh",
     "es_featured_videos_zwxmNW",
-    "es_gallery_with_link_XdFTjW"
+    "es_gallery_with_link_XdFTjW",
+    "1775241589d5956ba8"
   ]
 }
