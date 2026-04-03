@@ -694,16 +694,16 @@
     "es_featured_products_f7J3tb": {
       "type": "es-featured-products",
       "blocks": {
-        "product_aPGB4Q": {
-          "type": "product",
-          "settings": {
-            "product": "kati-atlantis-sustainable-finished-edge"
-          }
-        },
         "product_gd9VbV": {
           "type": "product",
           "settings": {
             "product": "kati-atlantis-headwear-sustainable-honeycomb"
+          }
+        },
+        "product_aPGB4Q": {
+          "type": "product",
+          "settings": {
+            "product": "kati-atlantis-sustainable-finished-edge"
           }
         },
         "product_7fLUeF": {
@@ -726,8 +726,8 @@
         }
       },
       "block_order": [
-        "product_aPGB4Q",
         "product_gd9VbV",
+        "product_aPGB4Q",
         "product_7fLUeF",
         "product_a9PW6k",
         "product_9LhJbN"
