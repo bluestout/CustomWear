@@ -30,24 +30,27 @@
     }
   {% endif %}
 
-  #shopify-section-{{ section.id }} .es-featured-collection__title-wrapper {
-    position: relative;
-    margin-bottom: 3rem;
+  #shopify-section-{{ section.id }} .es-featured-products__title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 2.4rem;
   }
 
-  #shopify-section-{{ section.id }} .es-featured-collection__navigation {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
+  #shopify-section-{{ section.id }} .es-featured-products__title-wrapper h2 {
+    margin: 0;
+  }
+
+  #shopify-section-{{ section.id }} .es-featured-products__navigation {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-shrink: 0;
   }
 
   #shopify-section-{{ section.id }} .esSwiper {
     overflow: hidden;
-  }
-
-  #shopify-section-{{ section.id }} .swiper-wrapper {
-    align-items: stretch;
   }
 
   #shopify-section-{{ section.id }} .swiper-slide {
@@ -55,26 +58,29 @@
     box-sizing: border-box;
   }
 
-  #shopify-section-{{ section.id }} .es-custom-card-product,
-  #shopify-section-{{ section.id }} .es-custom-card-product .card-wrapper,
-  #shopify-section-{{ section.id }} .es-custom-card-product .card {
+  #shopify-section-{{ section.id }} .es-custom-card {
     height: 100%;
   }
 
-  #shopify-section-{{ section.id }} .es-custom-card-product .card__inner {
+  #shopify-section-{{ section.id }} .es-custom-card .card-wrapper,
+  #shopify-section-{{ section.id }} .es-custom-card .card {
+    height: 100%;
+  }
+
+  #shopify-section-{{ section.id }} .es-custom-card .card__inner {
     position: relative;
   }
 
-  #shopify-section-{{ section.id }} .es-custom-card-product .card__media {
+  #shopify-section-{{ section.id }} .es-custom-card .card__media {
     overflow: hidden;
   }
 
-  #shopify-section-{{ section.id }} .es-custom-card-product .media {
+  #shopify-section-{{ section.id }} .es-custom-card .media {
     position: relative;
   }
 
-  #shopify-section-{{ section.id }} .es-custom-card-product .media > img.es-custom-primary-image,
-  #shopify-section-{{ section.id }} .es-custom-card-product .media > img.es-custom-secondary-image {
+  #shopify-section-{{ section.id }} .es-custom-card .media > img.es-custom-primary-image,
+  #shopify-section-{{ section.id }} .es-custom-card .media > img.es-custom-secondary-image {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -82,36 +88,32 @@
     display: block;
   }
 
-  #shopify-section-{{ section.id }} .es-custom-card-product .media > img.es-custom-primary-image {
+  #shopify-section-{{ section.id }} .es-custom-card .media > img.es-custom-primary-image {
     object-fit: cover;
     opacity: 1;
     transition: opacity 0.35s ease;
     z-index: 1;
   }
 
-  #shopify-section-{{ section.id }} .es-custom-card-product .media > img.es-custom-secondary-image {
+  #shopify-section-{{ section.id }} .es-custom-card .media > img.es-custom-secondary-image {
     object-fit: cover;
     opacity: 0;
     transition: opacity 0.35s ease;
     z-index: 2;
   }
 
-  #shopify-section-{{ section.id }} .es-custom-card-product:hover .media > img.es-custom-primary-image,
-  #shopify-section-{{ section.id }} .es-custom-card-product:focus-within .media > img.es-custom-primary-image {
+  #shopify-section-{{ section.id }} .es-custom-card:hover .media > img.es-custom-primary-image,
+  #shopify-section-{{ section.id }} .es-custom-card:focus-within .media > img.es-custom-primary-image {
     opacity: 0;
   }
 
-  #shopify-section-{{ section.id }} .es-custom-card-product:hover .media > img.es-custom-secondary-image,
-  #shopify-section-{{ section.id }} .es-custom-card-product:focus-within .media > img.es-custom-secondary-image {
+  #shopify-section-{{ section.id }} .es-custom-card:hover .media > img.es-custom-secondary-image,
+  #shopify-section-{{ section.id }} .es-custom-card:focus-within .media > img.es-custom-secondary-image {
     opacity: 1;
   }
 
-  #shopify-section-{{ section.id }} .es-custom-card-product .card__heading a {
+  #shopify-section-{{ section.id }} .es-custom-card .card__heading a {
     text-decoration: none;
-  }
-
-  #shopify-section-{{ section.id }} .es-custom-card-product .card__information {
-    text-align: left;
   }
 
   @media (max-width: 768px) {
@@ -120,43 +122,43 @@
       --padding-bottom: {{ section.settings.padding_bottom | divided_by: 2 }}px;
     }
 
-    #shopify-section-{{ section.id }} {
-      border-top: 0 solid #CCC;
+    #shopify-section-{{ section.id }} .es-featured-products__title-wrapper {
+      justify-content: center;
+      margin-bottom: 2rem;
     }
 
-    .es-font-h2.center {
+    #shopify-section-{{ section.id }} .es-font-h2.center {
       text-align: center;
     }
   }
 {%- endstyle -%}
 
-<div class="{% if section.settings.page_width == 'full' %}container{% else %}page-width{% endif %}">
-  <div class="swiper color-{{ section.settings.color_scheme }}">
-    <div class="es-featured-collection__title-wrapper">
+<div class="container">
+  <div class="swiper">
+    <div class="page-width es-featured-products__title-wrapper small-hide">
       <h2 class="es-font-h2 center">{{ section.settings.title }}</h2>
-
-      <div class="es-featured-collection__navigation small-hide">
-        <div class="swiper-button-prev es-swiper-button">
+      <div class="es-featured-products__navigation">
+        <div class="swiper-button-prev">
           {%- render 'es-icon-arrow-right' -%}
         </div>
-        <div class="swiper-button-next es-swiper-button">
+        <div class="swiper-button-next">
           {%- render 'es-icon-arrow-right' -%}
         </div>
       </div>
     </div>
 
-    <div class="esSwiper">
+    <div class="esSwiper page-width">
       <div class="swiper-wrapper">
         {% assign skip_card_product_styles = false %}
 
-        {% for block in section.blocks %}
+        {%- for block in section.blocks -%}
           {% assign product = block.settings.product %}
           {% assign custom_image = block.settings.custom_image %}
 
           {% if product != blank %}
             <div class="swiper-slide" {{ block.shopify_attributes }}>
               {% if custom_image != blank %}
-                <div class="es-custom-card-product">
+                <div class="es-custom-card">
                   <div class="card-wrapper product-card-wrapper underline-links-hover">
                     <div class="card card--{{ section.settings.card_style }}{% if product.featured_media %} card--media{% else %} card--text{% endif %}{% if section.settings.card_style == 'card' %} color-{{ section.settings.color_scheme }} gradient{% endif %}{% if section.settings.image_shape != 'default' %} card--shape{% endif %}">
                       <div
@@ -317,14 +319,14 @@
             </div>
             {%- assign skip_card_product_styles = true -%}
           {% endif %}
-        {% endfor %}
+        {%- endfor -%}
       </div>
     </div>
   </div>
 </div>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener('DOMContentLoaded', function() {
     new Swiper('#shopify-section-{{ section.id }} .esSwiper', {
       slidesPerView: {{ section.settings.products_per_row_desktop }},
       spaceBetween: 20,
@@ -332,23 +334,20 @@
         nextEl: '#shopify-section-{{ section.id }} .swiper-button-next',
         prevEl: '#shopify-section-{{ section.id }} .swiper-button-prev',
       },
-      observer: true,
-      observeParents: true,
-      watchOverflow: true,
       breakpoints: {
         1024: {
           slidesPerView: {{ section.settings.products_per_row_desktop }},
-          spaceBetween: 20
+          spaceBetween: 20,
         },
         768: {
           slidesPerView: {{ section.settings.products_per_row_tablet }},
-          spaceBetween: 20
+          spaceBetween: 20,
         },
         320: {
           slidesPerView: {{ section.settings.products_per_row_mobile }},
-          spaceBetween: 10
-        }
-      }
+          spaceBetween: 10,
+        },
+      },
     });
   });
 </script>
@@ -357,7 +356,7 @@
 {
   "name": "ES Featured Products",
   "tag": "section",
-  "class": "section es-featured-collection",
+  "class": "section es-featured-products",
   "settings": [
     {
       "type": "checkbox",
@@ -376,14 +375,8 @@
       "id": "page_width",
       "label": "Page width",
       "options": [
-        {
-          "value": "contained",
-          "label": "Contained"
-        },
-        {
-          "value": "full",
-          "label": "Full width"
-        }
+        { "value": "contained", "label": "Contained" },
+        { "value": "full", "label": "Full width" }
       ],
       "default": "contained"
     },
@@ -398,14 +391,8 @@
       "id": "card_style",
       "label": "Card style",
       "options": [
-        {
-          "value": "standard",
-          "label": "Standard"
-        },
-        {
-          "value": "card",
-          "label": "Card"
-        }
+        { "value": "standard", "label": "Standard" },
+        { "value": "card", "label": "Card" }
       ],
       "default": "standard"
     },
@@ -440,22 +427,10 @@
       "type": "select",
       "id": "image_ratio",
       "options": [
-        {
-          "value": "adapt",
-          "label": "t:sections.featured-collection.settings.image_ratio.options__1.label"
-        },
-        {
-          "value": "portrait",
-          "label": "t:sections.featured-collection.settings.image_ratio.options__2.label"
-        },
-        {
-          "value": "square",
-          "label": "t:sections.featured-collection.settings.image_ratio.options__3.label"
-        },
-        {
-          "value": "rectangle",
-          "label": "Rectangle"
-        }
+        { "value": "adapt", "label": "t:sections.featured-collection.settings.image_ratio.options__1.label" },
+        { "value": "portrait", "label": "t:sections.featured-collection.settings.image_ratio.options__2.label" },
+        { "value": "square", "label": "t:sections.featured-collection.settings.image_ratio.options__3.label" },
+        { "value": "rectangle", "label": "Rectangle" }
       ],
       "default": "adapt",
       "label": "t:sections.featured-collection.settings.image_ratio.label"
@@ -464,38 +439,14 @@
       "type": "select",
       "id": "image_shape",
       "options": [
-        {
-          "value": "default",
-          "label": "t:sections.all.image_shape.options__1.label"
-        },
-        {
-          "value": "arch",
-          "label": "t:sections.all.image_shape.options__2.label"
-        },
-        {
-          "value": "blob",
-          "label": "t:sections.all.image_shape.options__3.label"
-        },
-        {
-          "value": "chevronleft",
-          "label": "t:sections.all.image_shape.options__4.label"
-        },
-        {
-          "value": "chevronright",
-          "label": "t:sections.all.image_shape.options__5.label"
-        },
-        {
-          "value": "diamond",
-          "label": "t:sections.all.image_shape.options__6.label"
-        },
-        {
-          "value": "parallelogram",
-          "label": "t:sections.all.image_shape.options__7.label"
-        },
-        {
-          "value": "round",
-          "label": "t:sections.all.image_shape.options__8.label"
-        }
+        { "value": "default", "label": "t:sections.all.image_shape.options__1.label" },
+        { "value": "arch", "label": "t:sections.all.image_shape.options__2.label" },
+        { "value": "blob", "label": "t:sections.all.image_shape.options__3.label" },
+        { "value": "chevronleft", "label": "t:sections.all.image_shape.options__4.label" },
+        { "value": "chevronright", "label": "t:sections.all.image_shape.options__5.label" },
+        { "value": "diamond", "label": "t:sections.all.image_shape.options__6.label" },
+        { "value": "parallelogram", "label": "t:sections.all.image_shape.options__7.label" },
+        { "value": "round", "label": "t:sections.all.image_shape.options__8.label" }
       ],
       "default": "default",
       "label": "t:sections.all.image_shape.label"
@@ -525,18 +476,9 @@
       "default": "none",
       "label": "t:sections.main-collection-product-grid.settings.quick_add.label",
       "options": [
-        {
-          "value": "none",
-          "label": "t:sections.main-collection-product-grid.settings.quick_add.options.option_1"
-        },
-        {
-          "value": "standard",
-          "label": "t:sections.main-collection-product-grid.settings.quick_add.options.option_2"
-        },
-        {
-          "value": "bulk",
-          "label": "t:sections.main-collection-product-grid.settings.quick_add.options.option_3"
-        }
+        { "value": "none", "label": "t:sections.main-collection-product-grid.settings.quick_add.options.option_1" },
+        { "value": "standard", "label": "t:sections.main-collection-product-grid.settings.quick_add.options.option_2" },
+        { "value": "bulk", "label": "t:sections.main-collection-product-grid.settings.quick_add.options.option_3" }
       ]
     },
     {
