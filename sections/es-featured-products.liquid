@@ -84,6 +84,54 @@
   #shopify-section-{{ section.id }} .es-custom-card-product:focus-within .media > img.es-custom-secondary-image {
     opacity: 1;
   }
+
+    #shopify-section-{{ section.id }} .es-featured-collection__title-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+
+  #shopify-section-{{ section.id }} .es-featured-collection__title {
+    width: 100%;
+    text-align: center;
+  }
+
+  #shopify-section-{{ section.id }} .es-featured-collection__title p {
+    margin: 0;
+  }
+
+  #shopify-section-{{ section.id }} .es-featured-collection__title h1,
+  #shopify-section-{{ section.id }} .es-featured-collection__title h2,
+  #shopify-section-{{ section.id }} .es-featured-collection__title h3,
+  #shopify-section-{{ section.id }} .es-featured-collection__title h4,
+  #shopify-section-{{ section.id }} .es-featured-collection__title h5,
+  #shopify-section-{{ section.id }} .es-featured-collection__title h6 {
+    margin: 0;
+  }
+
+  #shopify-section-{{ section.id }} .es-featured-collection__navigation {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #shopify-section-{{ section.id }} .es-custom-card-product .card__heading a {
+    text-decoration: none;
+  }
+
+  #shopify-section-{{ section.id }} .es-custom-card-product .card__information {
+    text-align: left;
+  }
+
+  #shopify-section-{{ section.id }} .es-custom-card-product .price {
+    margin-top: 0.6rem;
+  }
 {%- endstyle -%}
 
 <div class="{% if section.settings.page_width == 'full' %}container{% else %}page-width{% endif %}">
