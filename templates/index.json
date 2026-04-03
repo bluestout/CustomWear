@@ -691,35 +691,62 @@
         "padding_bottom": 80
       }
     },
-    "1775241589d5956ba8": {
-      "type": "_blocks",
+    "es_featured_products_f7J3tb": {
+      "type": "es-featured-products",
       "blocks": {
-        "ai_gen_block_1cb4d7d_Tzqhz9": {
-          "type": "ai_gen_block_1cb4d7d",
+        "product_aPGB4Q": {
+          "type": "product",
           "settings": {
-            "title": "<h1><strong>Best Sellers by Brand</strong></h1>",
-            "products": [
-              "authentic-richardson-sized-112-trucker-6-panel-siz",
-              "richardson-laser-cut-five-panel-tru-p66331",
-              "yupoong-classic-full-poplin-golf-cap",
-              "richardson-printed-five-panel-trucker-hat"
-            ],
-            "products_per_row_desktop": 4,
-            "products_per_row_tablet": 3,
-            "products_per_row_mobile": 2,
-            "show_vendor": false,
-            "show_rating": false,
-            "quick_add": "none",
-            "border_bottom": false,
-            "padding_top": 36,
-            "padding_bottom": 36
-          },
-          "blocks": {}
+            "product": "kati-atlantis-sustainable-finished-edge"
+          }
+        },
+        "product_gd9VbV": {
+          "type": "product",
+          "settings": {
+            "product": "kati-atlantis-headwear-sustainable-honeycomb"
+          }
+        },
+        "product_7fLUeF": {
+          "type": "product",
+          "settings": {
+            "product": "kati-atlantis-headwear-sustainable-five-panel"
+          }
+        },
+        "product_a9PW6k": {
+          "type": "product",
+          "settings": {
+            "product": "cobra-6-panel-garment-washed-sand-peached-chino-co"
+          }
+        },
+        "product_9LhJbN": {
+          "type": "product",
+          "settings": {
+            "product": "p67373"
+          }
         }
       },
       "block_order": [
-        "ai_gen_block_1cb4d7d_Tzqhz9"
+        "product_aPGB4Q",
+        "product_gd9VbV",
+        "product_7fLUeF",
+        "product_a9PW6k",
+        "product_9LhJbN"
       ],
+      "name": "ES Featured Products",
+      "settings": {
+        "title": "Featured Products",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "1775241589d5956ba8": {
+      "type": "_blocks",
       "settings": {}
     },
     "es_featured_videos_zwxmNW": {
@@ -845,6 +872,7 @@
     "es_image_with_text_kFT4Pw",
     "es_testimonial_xNiLtf",
     "es_featured_collection_RGkMJh",
+    "es_featured_products_f7J3tb",
     "1775241589d5956ba8",
     "es_featured_videos_zwxmNW",
     "es_gallery_with_link_XdFTjW"
