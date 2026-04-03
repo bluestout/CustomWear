@@ -152,195 +152,190 @@
     </div>
 
     <div class="esSwiper">
-      <div class="swiper-wrapper">
-        {% assign skip_card_product_styles = false %}
+  <div class="swiper-wrapper">
+    {% assign skip_card_product_styles = false %}
 
-        {% for i in (1..12) %}
-          {% assign product_key = 'product_' | append: i %}
-          {% assign custom_image_key = 'custom_image_' | append: i %}
-          {% assign product = section.settings[product_key] %}
-          {% assign custom_image = section.settings[custom_image_key] %}
+    {% for block in section.blocks %}
+      {% assign product = block.settings.product %}
+      {% assign custom_image = block.settings.custom_image %}
 
-          {% if product != blank %}
-            <div class="swiper-slide">
-              {% if custom_image != blank %}
+      {% if product != blank %}
+        <div class="swiper-slide" {{ block.shopify_attributes }}>
+            {% if custom_image != blank %}
                 <div class="card-wrapper product-card-wrapper underline-links-hover es-custom-card-product">
-                  <div class="card card--{{ section.settings.card_style }}{% if product.featured_media %} card--media{% else %} card--text{% endif %}{% if settings.card_style == 'card' %} color-{{ section.settings.color_scheme }} gradient{% endif %}{% if section.settings.image_shape and section.settings.image_shape != 'default' %} card--shape{% endif %}">
+                <div class="card card--{{ section.settings.card_style }}{% if product.featured_media %} card--media{% else %} card--text{% endif %}{% if settings.card_style == 'card' %} color-{{ section.settings.color_scheme }} gradient{% endif %}{% if section.settings.image_shape and section.settings.image_shape != 'default' %} card--shape{% endif %}">
                     <div
-                      class="card__inner {% if settings.card_style == 'standard' %}color-{{ section.settings.color_scheme }} gradient{% endif %}{% if product.featured_media or custom_image %} ratio{% endif %}"
-                      {% if section.settings.image_ratio == 'adapt' and custom_image != blank %}
+                    class="card__inner {% if settings.card_style == 'standard' %}color-{{ section.settings.color_scheme }} gradient{% endif %}{% if product.featured_media or custom_image %} ratio{% endif %}"
+                    {% if section.settings.image_ratio == 'adapt' and custom_image != blank %}
                         style="--ratio-percent: 100%;"
-                      {% elsif section.settings.image_ratio == 'adapt' and product.featured_media %}
+                    {% elsif section.settings.image_ratio == 'adapt' and product.featured_media %}
                         style="--ratio-percent: {{ 1 | divided_by: product.featured_media.aspect_ratio | times: 100 }}%;"
-                      {% endif %}
+                    {% endif %}
                     >
-                      {% if custom_image != blank or product.featured_media %}
-                        <div class="card__media">
-                          <div class="media media--transparent media--hover-effect">
+                    <div class="card__media">
+                        <div class="media media--transparent media--hover-effect">
+                        <img
+                            srcset="
+                            {{ custom_image | image_url: width: 165 }} 165w,
+                            {{ custom_image | image_url: width: 360 }} 360w,
+                            {{ custom_image | image_url: width: 533 }} 533w,
+                            {{ custom_image | image_url: width: 720 }} 720w,
+                            {{ custom_image | image_url: width: 940 }} 940w,
+                            {{ custom_image | image_url: width: 1066 }} 1066w
+                            "
+                            src="{{ custom_image | image_url: width: 533 }}"
+                            sizes="(min-width: 1200px) calc((100vw - 80px) / {{ section.settings.products_per_row_desktop }}), (min-width: 750px) calc((100vw - 60px) / {{ section.settings.products_per_row_tablet }}), calc((100vw - 30px) / {{ section.settings.products_per_row_mobile }})"
+                            alt="{{ custom_image.alt | escape | default: product.title | escape }}"
+                            class="es-custom-primary-image motion-reduce"
+                            loading="lazy"
+                            width="{{ custom_image.width }}"
+                            height="{{ custom_image.height }}"
+                        >
+
+                        {% if section.settings.show_secondary_image and product.media[1] != blank %}
                             <img
-                              srcset="
-                                {{ custom_image | image_url: width: 165 }} 165w,
-                                {{ custom_image | image_url: width: 360 }} 360w,
-                                {{ custom_image | image_url: width: 533 }} 533w,
-                                {{ custom_image | image_url: width: 720 }} 720w,
-                                {{ custom_image | image_url: width: 940 }} 940w,
-                                {{ custom_image | image_url: width: 1066 }} 1066w
-                              "
-                              src="{{ custom_image | image_url: width: 533 }}"
-                              sizes="(min-width: 1200px) calc((100vw - 80px) / {{ section.settings.products_per_row_desktop }}), (min-width: 750px) calc((100vw - 60px) / {{ section.settings.products_per_row_tablet }}), calc((100vw - 30px) / {{ section.settings.products_per_row_mobile }})"
-                              alt="{{ custom_image.alt | escape | default: product.title | escape }}"
-                              class="es-custom-primary-image motion-reduce"
-                              loading="lazy"
-                              width="{{ custom_image.width }}"
-                              height="{{ custom_image.height }}"
+                            srcset="
+                                {{ product.media[1] | image_url: width: 165 }} 165w,
+                                {{ product.media[1] | image_url: width: 360 }} 360w,
+                                {{ product.media[1] | image_url: width: 533 }} 533w,
+                                {{ product.media[1] | image_url: width: 720 }} 720w,
+                                {{ product.media[1] | image_url: width: 940 }} 940w,
+                                {{ product.media[1] | image_url: width: 1066 }} 1066w
+                            "
+                            src="{{ product.media[1] | image_url: width: 533 }}"
+                            sizes="(min-width: 1200px) calc((100vw - 80px) / {{ section.settings.products_per_row_desktop }}), (min-width: 750px) calc((100vw - 60px) / {{ section.settings.products_per_row_tablet }}), calc((100vw - 30px) / {{ section.settings.products_per_row_mobile }})"
+                            alt="{{ product.media[1].alt | escape | default: product.title | escape }}"
+                            class="es-custom-secondary-image motion-reduce"
+                            loading="lazy"
+                            width="{{ product.media[1].width }}"
+                            height="{{ product.media[1].height }}"
                             >
-
-                            {% if section.settings.show_secondary_image and product.media[1] != blank %}
-                              <img
-                                srcset="
-                                  {{ product.media[1] | image_url: width: 165 }} 165w,
-                                  {{ product.media[1] | image_url: width: 360 }} 360w,
-                                  {{ product.media[1] | image_url: width: 533 }} 533w,
-                                  {{ product.media[1] | image_url: width: 720 }} 720w,
-                                  {{ product.media[1] | image_url: width: 940 }} 940w,
-                                  {{ product.media[1] | image_url: width: 1066 }} 1066w
-                                "
-                                src="{{ product.media[1] | image_url: width: 533 }}"
-                                sizes="(min-width: 1200px) calc((100vw - 80px) / {{ section.settings.products_per_row_desktop }}), (min-width: 750px) calc((100vw - 60px) / {{ section.settings.products_per_row_tablet }}), calc((100vw - 30px) / {{ section.settings.products_per_row_mobile }})"
-                                alt="{{ product.media[1].alt | escape | default: product.title | escape }}"
-                                class="es-custom-secondary-image motion-reduce"
-                                loading="lazy"
-                                width="{{ product.media[1].width }}"
-                                height="{{ product.media[1].height }}"
-                              >
-                            {% endif %}
-                          </div>
+                        {% endif %}
                         </div>
-                      {% endif %}
-
-                      <div class="card__content">
-                        <div class="card__information">
-                          <h3 class="card__heading">
-                            <a href="{{ product.url }}" class="full-unstyled-link">
-                              {{ product.title | escape }}
-                            </a>
-                          </h3>
-                        </div>
-                      </div>
                     </div>
 
                     <div class="card__content">
-                      <div class="card__information">
+                        <div class="card__information">
+                        <h3 class="card__heading">
+                            <a href="{{ product.url }}" class="full-unstyled-link">
+                            {{ product.title | escape }}
+                            </a>
+                        </h3>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card__content">
+                    <div class="card__information">
                         {% if section.settings.show_vendor %}
-                          <div class="caption-with-letter-spacing light">
+                        <div class="caption-with-letter-spacing light">
                             {{ product.vendor }}
-                          </div>
+                        </div>
                         {% endif %}
 
                         <h3
-                          class="card__heading{% if product.featured_media or custom_image %} h5{% endif %}"
-                          {% if product.featured_media or custom_image %}
-                            id="title-{{ section.id }}-{{ product.id }}"
-                          {% endif %}
+                        class="card__heading{% if product.featured_media or custom_image %} h5{% endif %}"
+                        {% if product.featured_media or custom_image %}
+                            id="title-{{ section.id }}-{{ block.id }}"
+                        {% endif %}
                         >
-                          <a
+                        <a
                             href="{{ product.url }}"
-                            id="StandardCardNoMediaLink-{{ section.id }}-{{ product.id }}"
+                            id="StandardCardNoMediaLink-{{ section.id }}-{{ block.id }}"
                             class="full-unstyled-link"
-                            aria-labelledby="StandardCardNoMediaLink-{{ section.id }}-{{ product.id }} NoMediaStandardBadge-{{ section.id }}-{{ product.id }}"
-                          >
+                        >
                             {{ product.title | escape }}
-                          </a>
+                        </a>
                         </h3>
 
                         {% if section.settings.show_rating and product.metafields.reviews.rating.value != blank %}
-                          <div class="rating">
+                        <div class="rating">
                             {{ product.metafields.reviews.rating.value }}
-                          </div>
+                        </div>
                         {% endif %}
 
                         {% render 'price', product: product, price_class: '' %}
-                      </div>
+                    </div>
 
-                      {% if section.settings.quick_add != 'none' %}
+                    {% if section.settings.quick_add != 'none' %}
                         <div class="card__badge bottom left">
-                          {% if product.available %}
+                        {% if product.available %}
                             {% if section.settings.quick_add == 'standard' %}
-                              <product-form data-section-id="{{ section.id }}">
+                            <product-form data-section-id="{{ section.id }}">
                                 {%- form 'product',
-                                  product,
-                                  id: 'quick-add-' | append: section.id | append: product.id,
-                                  class: 'form',
-                                  novalidate: 'novalidate',
-                                  data-type: 'add-to-cart-form'
+                                product,
+                                id: 'quick-add-' | append: section.id | append: block.id,
+                                class: 'form',
+                                novalidate: 'novalidate',
+                                data-type: 'add-to-cart-form'
                                 -%}
-                                  <input
+                                <input
                                     type="hidden"
                                     name="id"
                                     value="{{ product.selected_or_first_available_variant.id }}"
                                     class="product-variant-id"
                                     {% if product.selected_or_first_available_variant.available == false %}
-                                      disabled
+                                    disabled
                                     {% endif %}
-                                  >
-                                  <button
-                                    id="{{ 'quick-add-' | append: section.id | append: product.id }}"
+                                >
+                                <button
+                                    id="{{ 'quick-add-' | append: section.id | append: block.id }}"
                                     type="submit"
                                     name="add"
                                     class="quick-add__submit button button--full-width button--secondary"
                                     aria-haspopup="dialog"
-                                    aria-labelledby="{{ 'quick-add-' | append: section.id | append: product.id }} title-{{ section.id }}-{{ product.id }}"
+                                    aria-labelledby="{{ 'quick-add-' | append: section.id | append: block.id }} title-{{ section.id }}-{{ block.id }}"
                                     aria-live="polite"
                                     data-sold-out-message="true"
                                     {% if product.selected_or_first_available_variant.available == false %}
-                                      disabled
+                                    disabled
                                     {% endif %}
-                                  >
+                                >
                                     <span>
-                                      {% if product.selected_or_first_available_variant.available %}
+                                    {% if product.selected_or_first_available_variant.available %}
                                         {{ 'products.product.add_to_cart' | t }}
-                                      {% else %}
+                                    {% else %}
                                         {{ 'products.product.sold_out' | t }}
-                                      {% endif %}
+                                    {% endif %}
                                     </span>
                                     <span class="sold-out-message hidden">
-                                      {{ 'products.product.sold_out' | t }}
+                                    {{ 'products.product.sold_out' | t }}
                                     </span>
                                     {%- render 'loading-spinner' -%}
-                                  </button>
+                                </button>
                                 {%- endform -%}
-                              </product-form>
+                            </product-form>
                             {% elsif section.settings.quick_add == 'bulk' %}
-                              <div class="quick-add-bulk">
+                            <div class="quick-add-bulk">
                                 <a href="{{ product.url }}" class="button button--secondary button--full-width">
-                                  {{ 'products.product.choose_options' | t }}
+                                {{ 'products.product.choose_options' | t }}
                                 </a>
-                              </div>
+                            </div>
                             {% endif %}
-                          {% endif %}
+                        {% endif %}
                         </div>
-                      {% endif %}
+                    {% endif %}
                     </div>
-                  </div>
                 </div>
-              {% else %}
+                </div>
+            {% else %}
                 {% render 'card-product',
-                  card_product: product,
-                  media_aspect_ratio: section.settings.image_ratio,
-                  image_shape: section.settings.image_shape,
-                  show_secondary_image: section.settings.show_secondary_image,
-                  show_vendor: section.settings.show_vendor,
-                  show_rating: section.settings.show_rating,
-                  skip_styles: skip_card_product_styles,
-                  section_id: section.id,
-                  quick_add: section.settings.quick_add
+                card_product: product,
+                media_aspect_ratio: section.settings.image_ratio,
+                image_shape: section.settings.image_shape,
+                show_secondary_image: section.settings.show_secondary_image,
+                show_vendor: section.settings.show_vendor,
+                show_rating: section.settings.show_rating,
+                skip_styles: skip_card_product_styles,
+                section_id: section.id,
+                quick_add: section.settings.quick_add
                 %}
-              {% endif %}
+            {% endif %}
             </div>
             {%- assign skip_card_product_styles = true -%}
-          {% endif %}
+        {% endif %}
         {% endfor %}
-      </div>
+    </div>
     </div>
   </div>
 </div>
