@@ -1,0 +1,282 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    position: relative;
+    --padding-top: {{ section.settings.padding_top }}px;
+    --padding-bottom: {{ section.settings.padding_bottom }}px;
+
+    {%- if section.settings.border_top -%}
+      border-top: 1px solid #CCC;
+    {%- endif -%}
+  }
+
+  {% if section.settings.border_bottom %}
+    #shopify-section-{{ section.id }}::after {
+      border-bottom: 1px solid #C6C6C6;
+      content: '';
+      display: block;
+      width: 100%;
+      max-width: 700px;
+      height: 0px;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @media (max-width: 768px) {
+        max-width: calc(100% - 3rem);
+      }
+    }
+  {% endif %}
+
+  @media (max-width: 768px) {
+    #shopify-section-{{ section.id }} {
+      --padding-top: {{ section.settings.padding_top | divided_by: 2 }}px;
+      --padding-bottom: {{ section.settings.padding_bottom | divided_by: 2 }}px;
+    }
+
+    #shopify-section-{{ section.id }}{
+      border-top: 0px solid #CCC;
+    }
+
+    .es-font-h2.center{
+      text-align: center;
+    }
+  }
+{%- endstyle -%}
+
+<div class="container">
+  <div class="page-width">
+    <div class="swiper">
+      <div class="es-featured-collection__title-wrapper">
+        <h2 class="es-font-h2 center">{{ section.settings.title }}</h2>
+        <div class="es-featured-collection__navigation small-hide">
+          <div class="swiper-button-prev es-swiper-button">
+            {%- render 'es-icon-arrow-right' -%}
+          </div>
+          <div class="swiper-button-next es-swiper-button">
+            {%- render 'es-icon-arrow-right' -%}
+          </div>
+        </div>
+      </div>
+      <div class="esSwiper">
+        <div class="swiper-wrapper">
+          {% assign skip_card_product_styles = false %}
+          {%- if section.settings.collection.products.size > 0 -%}
+            {% paginate section.settings.collection.products by section.settings.products_to_show %}
+              {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
+                <div class="swiper-slide">
+                  {% render 'card-product',
+                    card_product: product,
+                    media_aspect_ratio: section.settings.image_ratio,
+                    image_shape: section.settings.image_shape,
+                    show_secondary_image: section.settings.show_secondary_image,
+                    show_vendor: section.settings.show_vendor,
+                    show_rating: section.settings.show_rating,
+                    skip_styles: skip_card_product_styles,
+                    section_id: section.id,
+                    quick_add: section.settings.quick_add
+                  %}
+                </div>
+                {%- assign skip_card_product_styles = true -%}
+              {%- endfor -%}
+            {% endpaginate %}
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    new Swiper('#shopify-section-{{ section.id }} .esSwiper', {
+      slidesPerView: 4,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: '#shopify-section-{{ section.id }} .swiper-button-next',
+        prevEl: '#shopify-section-{{ section.id }} .swiper-button-prev',
+      },
+      breakpoints: {
+        1024: {
+          slidesPerView: 4,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        320: {
+          slidesPerView: 2.5,
+          spaceBetween: 10,
+        },
+      },
+    });
+  });
+</script>
+
+{%- schema -%}
+{
+  "name": "ES Featured Collection",
+  "tag": "section",
+  "class": "section es-featured-collection",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "border_top",
+      "label": "Border Top",
+      "default": false
+    },
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Title",
+      "default": "Shop By Hat Style"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "t:sections.featured-collection.settings.collection.label"
+    },
+    {
+      "type": "range",
+      "id": "products_to_show",
+      "min": 2,
+      "max": 25,
+      "step": 1,
+      "default": 4,
+      "label": "t:sections.featured-collection.settings.products_to_show.label"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "t:sections.featured-collection.settings.image_ratio.options__1.label"
+        },
+        {
+          "value": "portrait",
+          "label": "t:sections.featured-collection.settings.image_ratio.options__2.label"
+        },
+        {
+          "value": "square",
+          "label": "t:sections.featured-collection.settings.image_ratio.options__3.label"
+        },
+        {
+          "value": "rectangle",
+          "label": "Rectangle"
+        }
+      ],
+      "default": "adapt",
+      "label": "t:sections.featured-collection.settings.image_ratio.label"
+    },
+    {
+      "type": "select",
+      "id": "image_shape",
+      "options": [
+        {
+          "value": "default",
+          "label": "t:sections.all.image_shape.options__1.label"
+        },
+        {
+          "value": "arch",
+          "label": "t:sections.all.image_shape.options__2.label"
+        },
+        {
+          "value": "blob",
+          "label": "t:sections.all.image_shape.options__3.label"
+        },
+        {
+          "value": "chevronleft",
+          "label": "t:sections.all.image_shape.options__4.label"
+        },
+        {
+          "value": "chevronright",
+          "label": "t:sections.all.image_shape.options__5.label"
+        },
+        {
+          "value": "diamond",
+          "label": "t:sections.all.image_shape.options__6.label"
+        },
+        {
+          "value": "parallelogram",
+          "label": "t:sections.all.image_shape.options__7.label"
+        },
+        {
+          "value": "round",
+          "label": "t:sections.all.image_shape.options__8.label"
+        }
+      ],
+      "default": "default",
+      "label": "t:sections.all.image_shape.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_secondary_image",
+      "default": false,
+      "label": "t:sections.featured-collection.settings.show_secondary_image.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_vendor",
+      "default": false,
+      "label": "t:sections.featured-collection.settings.show_vendor.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_rating",
+      "default": false,
+      "label": "t:sections.featured-collection.settings.show_rating.label",
+      "info": "t:sections.featured-collection.settings.show_rating.info"
+    },
+    {
+      "type": "select",
+      "id": "quick_add",
+      "default": "none",
+      "label": "t:sections.main-collection-product-grid.settings.quick_add.label",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:sections.main-collection-product-grid.settings.quick_add.options.option_1"
+        },
+        {
+          "value": "standard",
+          "label": "t:sections.main-collection-product-grid.settings.quick_add.options.option_2"
+        },
+        {
+          "value": "bulk",
+          "label": "t:sections.main-collection-product-grid.settings.quick_add.options.option_3"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "border_bottom",
+      "default": true,
+      "label": "Border Bottom"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "ES Featured Collection"
+    }
+  ]
+}
+{%- endschema -%}
