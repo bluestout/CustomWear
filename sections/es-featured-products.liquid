@@ -34,30 +34,13 @@
       <div class="esSwiper">
         <div class="swiper-wrapper">
           {%- assign skip_card_product_styles = false -%}
-          {%- for block in section.blocks -%}
-            {%- assign product = block.settings.product -%}
-            {%- if product != blank -%}
-              <div class="swiper-slide">
-                {%- if block.settings.custom_image != blank -%}
-                  <div class="es-featured-blocks__item">
-                    <div class="es-featured-blocks__item-image">
-                      <a class="link" href="{{ product.url }}">
-                        <img
-                          src="{{ block.settings.custom_image | image_url: width: 1000 }}"
-                          alt="{{ product.title }}"
-                          width="{{ block.settings.custom_image.width | divided_by: 2 }}"
-                          height="{{ block.settings.custom_image.height | divided_by: 2 }}"
-                        >
-                      </a>
-                    </div>
-                    <div class="es-featured-blocks__item-title">
-                      <a class="link" href="{{ product.url }}">{{ product.title }}</a>
-                      <div>{{ product.price | money }}</div>
-                    </div>
-                  </div>
-                {%- else -%}
+            {%- for block in section.blocks -%}
+              {%- assign product = block.settings.product -%}
+              {%- if product != blank -%}
+                <div class="swiper-slide">
                   {% render 'card-product',
                     card_product: product,
+                    custom_image: block.settings.custom_image,
                     media_aspect_ratio: section.settings.image_ratio,
                     image_shape: section.settings.image_shape,
                     show_secondary_image: section.settings.show_secondary_image,
@@ -67,11 +50,10 @@
                     section_id: section.id,
                     quick_add: section.settings.quick_add
                   %}
-                {%- endif -%}
-              </div>
-              {%- assign skip_card_product_styles = true -%}
-            {%- endif -%}
-          {%- endfor -%}
+                </div>
+                {%- assign skip_card_product_styles = true -%}
+              {%- endif -%}
+            {%- endfor -%}
         </div>
       </div>
     </div>

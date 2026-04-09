@@ -49,9 +49,11 @@
     endif
 
     assign card__image = card_product.featured_media
-    if your_logo_here and card_product.metafields.custom.your_logo_here.value != blank
-      assign card__image = card_product.metafields.custom.your_logo_here.value
-    endif
+      if custom_image != blank
+        assign card__image = custom_image
+      elsif your_logo_here and card_product.metafields.custom.your_logo_here.value != blank
+        assign card__image = card_product.metafields.custom.your_logo_here.value
+      endif
   -%}
   <div class="card-wrapper product-card-wrapper underline-links-hover" data-test onclick="window.location.href = '{{ card_product.url }}'">
     {%- assign product_state = blank -%}
