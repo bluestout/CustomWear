@@ -27,7 +27,7 @@
             "subheading": "",
             "heading": "{{ collection.title }}",
             "heading_tag": "h1",
-            "heading_size": "h1"
+            "heading_size": "h0"
           }
         }
       },
@@ -54,7 +54,7 @@
         "mobile_content_position": "bottom",
         "mobile_content_alignment": "left",
         "opacity_direct_on_mobile": "horizontal",
-        "opacity_height_on_mobile": "small",
+        "opacity_height_on_mobile": "large",
         "image_height_on_mobile": "adapt",
         "show_text_below": false
       }
