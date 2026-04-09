@@ -676,13 +676,13 @@
     "es_featured_products_f7J3tb": {
       "type": "es-featured-products",
       "blocks": {
-        "product_Fa794r": {
+        "product_4i7XzQ": {
           "type": "product",
           "settings": {
             "product": "authentic-richardson-sized-112-trucker-6-panel-siz"
           }
         },
-        "product_4i7XzQ": {
+        "product_YGDHtN": {
           "type": "product",
           "settings": {
             "product": "richardson-laser-cut-five-panel-tru-p66331"
@@ -700,19 +700,75 @@
             "product": "richardson-printed-five-panel-trucker-hat"
           }
         },
-        "product_KH3ikz": {
+        "product_ajqUkR": {
           "type": "product",
           "settings": {
-            "product": "cobra-6-panel-garment-washed-sand-peached-chino-co"
+            "product": "richardson-5-panel-seamless-front-trucker-twill-me"
+          }
+        },
+        "product_YtBPXp": {
+          "type": "product",
+          "settings": {
+            "product": "yupoong-v-flexfit-brand-cotton-twill"
+          }
+        },
+        "product_zyJWe3": {
+          "type": "product",
+          "settings": {
+            "product": "authentic-richardson-five-panel-classic-rope-cap"
+          }
+        },
+        "product_wiTXRB": {
+          "type": "product",
+          "settings": {
+            "product": "5-panel-high-profile-relaxed-cottonpoly-blend-rope"
+          }
+        },
+        "product_ph3gGF": {
+          "type": "product",
+          "settings": {
+            "product": "budget-caps-yupoong-flat-bill-classic-5-panel-truc"
+          }
+        },
+        "product_Mj7DHt": {
+          "type": "product",
+          "settings": {
+            "product": "outdoor-6-panel-premium-modern-trucker"
+          }
+        },
+        "product_KxrjPV": {
+          "type": "product",
+          "settings": {
+            "product": "pacific-aug-brand-d-series-trucker-p72026"
+          }
+        },
+        "product_36e9Cd": {
+          "type": "product",
+          "settings": {
+            "product": "cobra-6-panel-structured-mesh-back"
+          }
+        },
+        "product_4GjYth": {
+          "type": "product",
+          "settings": {
+            "product": "mega-summer-trucker-foam-mesh"
           }
         }
       },
       "block_order": [
-        "product_Fa794r",
         "product_4i7XzQ",
+        "product_YGDHtN",
         "product_Kaxgp6",
         "product_XwJan7",
-        "product_KH3ikz"
+        "product_ajqUkR",
+        "product_YtBPXp",
+        "product_zyJWe3",
+        "product_wiTXRB",
+        "product_ph3gGF",
+        "product_Mj7DHt",
+        "product_KxrjPV",
+        "product_36e9Cd",
+        "product_4GjYth"
       ],
       "name": "ES Featured Products",
       "settings": {
