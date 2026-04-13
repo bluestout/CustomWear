@@ -429,6 +429,7 @@
       "blocks": {
         "heading_ptCCnT": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "<p>Custom Embroidery</p>",
             "heading_size": "h1"
@@ -437,7 +438,7 @@
         "text_XxeLzC": {
           "type": "text",
           "settings": {
-            "text": "<p>On Richardson hats, including the popular </p><p><strong>112 models</strong>—</p><p>crafted with quality and precision just for you! <a href=\"/collections/112-hats-best-sellers\" title=\"Richardson 112 Hats Best Sellers\"><strong>Check them out</strong></a></p>",
+            "text": "<p>Explore custom embroidery on Richardson hats, including the popular <strong>112 models.<br/></strong></p><p>These hats are crafted with quality and precision just for you! <a href=\"/collections/112-hats-best-sellers\" title=\"Richardson 112 Hats Best Sellers\"><strong>Check them out</strong></a></p>",
             "text_style": "subtitle"
           }
         }
