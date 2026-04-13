@@ -429,7 +429,6 @@
       "blocks": {
         "heading_ptCCnT": {
           "type": "heading",
-          "disabled": true,
           "settings": {
             "heading": "<p>Custom Embroidery</p>",
             "heading_size": "h1"
