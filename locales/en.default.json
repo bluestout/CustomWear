@@ -542,6 +542,9 @@
       },
       "shipping": {
         "free_rate_label": "TBD"
+      },
+      "order_summary": {
+        "free_shipping_total_label": "TBD"
       }
     }
   }
