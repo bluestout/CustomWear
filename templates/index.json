@@ -438,24 +438,14 @@
         "text_XxeLzC": {
           "type": "text",
           "settings": {
-            "text": "<h2>Explore custom embroidery on Richardson hats, including the popular <strong>112 models.<br/></strong></h2><h2>These hats are crafted with quality and precision just for you! </h2>",
+            "text": "<h2>Explore custom embroidery on Richardson hats, including the popular 112 models.<strong><br/></strong></h2><h2>These hats are crafted with quality and precision just for you! <br/><br/><a href=\"/collections/richardson-112-hats\" title=\"Richardson: 112 Hats\"><strong>Check Them Out</strong></a></h2>",
             "text_style": "body"
-          }
-        },
-        "button_eMq4nw": {
-          "type": "button",
-          "settings": {
-            "button_label": "Check Them Out",
-            "button_link": "shopify://collections/richardson-112-hats",
-            "button_style_secondary": false,
-            "open_new_tab": false
           }
         }
       },
       "block_order": [
         "heading_ptCCnT",
-        "text_XxeLzC",
-        "button_eMq4nw"
+        "text_XxeLzC"
       ],
       "custom_css": [
         "@media (max-width: 1500px) {a {display: block; }}",
