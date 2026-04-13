@@ -3650,3 +3650,8 @@ details-disclosure > details {
 #cloud-search-results .sku {
   display: block;
 }
+
+#HeaderMenu-shop-brands-shop-all-brands {
+  font-weight: 600;
+  margin-bottom: 30px;
+}
