@@ -25,6 +25,10 @@
         display: block;
       }
     }
+
+    #Banner-{{ section.id }} .banner__content {
+  z-index: 2;
+}
   {%- endstyle -%}
 {%- endif -%}
 
@@ -114,7 +118,7 @@
       display: flex !important;
       flex-direction: row !important;
       flex-wrap: wrap !important;
-      z-index: 2 !important;
+      z-index: 3 !important;
       box-sizing: border-box !important;
     }
 

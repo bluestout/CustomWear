@@ -49,9 +49,11 @@
     endif
 
     assign card__image = card_product.featured_media
-    if your_logo_here and card_product.metafields.custom.your_logo_here.value != blank
-      assign card__image = card_product.metafields.custom.your_logo_here.value
-    endif
+      if custom_image != blank
+        assign card__image = custom_image
+      elsif your_logo_here and card_product.metafields.custom.your_logo_here.value != blank
+        assign card__image = card_product.metafields.custom.your_logo_here.value
+      endif
   -%}
   <div class="card-wrapper product-card-wrapper underline-links-hover" data-test onclick="window.location.href = '{{ card_product.url }}'">
     {%- assign product_state = blank -%}
@@ -110,7 +112,7 @@
               >
               {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
 
-              {% comment %} {%- if card_product.media[1] != null and show_secondary_image -%}
+              {%- if card_product.media[1] != null and show_secondary_image -%}
                 <img
                   srcset="
                     {%- if card_product.media[1].width >= 165 -%}{{ card_product.media[1] | image_url: width: 165 }} 165w,{%- endif -%}
@@ -129,7 +131,7 @@
                   width="{{ card_product.media[1].width }}"
                   height="{{ card_product.media[1].height }}"
                 >
-              {%- endif -%} {% endcomment %}
+              {%- endif -%}
             </div>
           </div>
         {%- endif -%}
