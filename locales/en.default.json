@@ -534,5 +534,18 @@
       "send_on": "YYYY-MM-DD",
       "send_on_label": "Send on (optional)"
     }
+  },
+  "shopify": {
+    "checkout": {
+      "delivery_options": {
+        "free_total_label": "TBD"
+      },
+      "shipping": {
+        "free_rate_label": "TBD"
+      },
+      "order_summary": {
+        "free_shipping_total_label": "TBD"
+      }
+    }
   }
 }

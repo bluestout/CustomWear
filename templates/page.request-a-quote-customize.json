@@ -23,7 +23,7 @@
         "heading_8Uwxfk": {
           "type": "heading",
           "settings": {
-            "heading": "Request a Quote customized wear",
+            "heading": "Request a Quote CustomizedWear",
             "heading_tag": "h1",
             "heading_size": "h1"
           }
@@ -48,7 +48,7 @@
         "text_PyzBcC": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>📞 Get in Touch with CustomizedWear</strong></p><p>We’d love to hear from you! Whether you're ready to start your custom hat order or just have a few questions, we're here to help.</p><p>Feel free to call, email, or fill out the form below. We respond to most messages within <strong>24 hours</strong>.</p><p>For more information about our services, production, and policies, check out our <a href=\"/pages/ordering-shipping-and-return-policies\" title=\"Ordering, Shipping, and Return Policies\">FAQ and Shipping Page</a>.</p><p></p><p><strong>📱 Contact Information</strong></p><p><strong>Toll-Free:</strong> 877-984-2277<br/><br/></p><p><strong>📧 Email Contacts</strong></p><ul><li><strong>General Inquiries & Support</strong><br/>✉️ <a href=\"mailto:info@customizedwear.com\"><span style=\"text-decoration:underline\">info@customizedwear.com</span></a></li><li><strong>Free Quotes & Sales Requests</strong><br/>✉️ <a href=\"mailto:info@customizedwear.com\"><span style=\"text-decoration:underline\">info@customizedwear.com</span></a> <em>(Subject: Quotes)</em></li><li><strong>Embroidery & Custom Product Inquiries</strong><br/>✉️ <a href=\"mailto:sales@customizedwear.com\"><span style=\"text-decoration:underline\">sales@customizedwear.com</span></a> <em>(Subject: Custom)</em></li><li><strong>Sales Tax & Resale Certificates</strong><br/>✉️ <a href=\"mailto:info@customizedwear.com\"><span style=\"text-decoration:underline\">info@customizedwear.com</span></a> <em>(Subject: Resale Sales Tax)</em></li><li><strong>Website or Tech Support</strong><br/>✉️ <a href=\"mailto:info@customizedwear.com\"><span style=\"text-decoration:underline\">info@customizedwear.com</span></a> <em>(Subject: IT)</em></li></ul><p> </p><p> .</p><p><strong>🕘 Business Hours</strong></p><p>Monday – Friday: <strong>9:00 a.m. – 5:00 p.m. EST</strong><br/><em>We are closed on weekends and holidays.</em></p><p></p><p><strong>📬 Mailing Address<br/>Hatco International<br/>CustomizedWear</strong><br/>12530 Wiles Rd<br/>Coral Springs, FL 33076</p>"
+            "text": "<p><strong>📞 Get in Touch with CustomizedWear</strong></p><p>We’d love to hear from you! Whether you're ready to start your custom hat order or just have a few questions, we're here to help.</p><p>Feel free to call, email, or fill out the form below. We respond to most messages within <strong>24 hours</strong>.</p><p>For more information about our services, production, and policies, check out our <a href=\"/pages/ordering-shipping-and-return-policies\" title=\"Ordering, Shipping, and Return Policies\">FAQ and Shipping Page</a>.</p><p></p><p><strong>📱 Contact Information</strong></p><p><strong>Toll-Free:</strong> 877-984-2277<br/><br/></p><p><strong>📧 Email Contacts</strong></p><ul><li><strong>General Inquiries & Support</strong><br/>✉️ <a href=\"mailto:info@customizedwear.com\"><span style=\"text-decoration:underline\">info@customizedwear.com</span></a></li><li><strong>Free Quotes & Sales Requests</strong><br/>✉️ <a href=\"mailto:info@customizedwear.com\"><span style=\"text-decoration:underline\">info@customizedwear.com</span></a> <em>(Subject: Quotes)</em></li><li><strong>Embroidery & Custom Product Inquiries</strong><br/>✉️ <a href=\"mailto:sales@customizedwear.com\"><span style=\"text-decoration:underline\">sales@customizedwear.com</span></a> <em>(Subject: Custom)</em></li><li><strong>Sales Tax & Resale Certificates</strong><br/>✉️ <a href=\"mailto:info@customizedwear.com\"><span style=\"text-decoration:underline\">info@customizedwear.com</span></a> <em>(Subject: Resale Sales Tax)</em></li><li><strong>Website or Tech Support</strong><br/>✉️ <a href=\"mailto:info@customizedwear.com\"><span style=\"text-decoration:underline\">info@customizedwear.com</span></a> <em>(Subject: IT)<br/><br/></em></li></ul><p><strong>🕘 Business Hours</strong></p><p>Monday – Friday: <strong>9:00 a.m. – 5:00 p.m. EST</strong><br/><em>We are closed on weekends and holidays.<br/><br/></em></p><p><strong>📬 Mailing Address<br/>Hatco International<br/>CustomizedWear</strong><br/>12530 Wiles Rd<br/>Coral Springs, FL 33076</p>"
           }
         }
       },
@@ -69,7 +69,7 @@
       "type": "apps",
       "blocks": {
         "sk_form_builder_form_DiWr4W": {
-          "type": "shopify://apps/sk-form-builder/blocks/form/f3e35b58-5874-4ef2-8e03-c92cda6e49eb",
+          "type": "shopify://apps/sk-contact-form-builder/blocks/form/f3e35b58-5874-4ef2-8e03-c92cda6e49eb",
           "settings": {
             "show_form": true,
             "form_token": "4e73625577744244"
