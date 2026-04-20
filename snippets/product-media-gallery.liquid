@@ -90,7 +90,7 @@
         </li>
       {% comment %} {%- endif -%} {% endcomment %}
       {%- for media in product.media -%}
-        {%- if variant_images contains media,src and media.src != product.selected_or_first_available_variant.featured_media.src -%}
+        {%- if variant_images contains media.src and media.src != product.selected_or_first_available_variant.featured_media.src -%}
           {%- continue -%}
         {%- endif -%}
 
