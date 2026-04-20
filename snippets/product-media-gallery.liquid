@@ -90,10 +90,6 @@
         </li>
       {% comment %} {%- endif -%} {% endcomment %}
       {%- for media in product.media -%}
-        {%- if variant_images contains media.src and media.src != product.selected_or_first_available_variant.featured_media.src -%}
-          {%- continue -%}
-        {%- endif -%}
-
         {% if media_position >= limit
           or media_position >= 1
           and section.settings.hide_variants
@@ -272,11 +268,6 @@
           </li>
         {%- endif -%}
         {%- for media in product.media -%}
-
-          {%- if variant_images contains media.src and media.src != product.selected_or_first_available_variant.featured_media.src -%}
-            {%- continue -%}
-          {%- endif -%}
-
           {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
             {%- liquid
               capture media_index
