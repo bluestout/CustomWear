@@ -61,7 +61,7 @@
       class="product__media-list contains-media grid grid--peek list-unstyled slider slider--mobile"
       role="list"
     >
-      <li class="product__media-item product__media-listt grid__item slider__slide" data-live-preview="{{ product.id }}" style="display:none;">
+     <li class="product__media-item product__media-listt grid__item slider__slide" data-live-preview="{{ product.id }}" style="display:none;">
       </li>
 
       {% comment %} {%- if product.selected_or_first_available_variant.featured_media != null -%} {% endcomment %}
@@ -89,24 +89,21 @@
           %}
         </li>
       {% comment %} {%- endif -%} {% endcomment %}
-
       {%- for media in product.media -%}
+        {% if media_position >= limit
+          or media_position >= 1
+          and section.settings.hide_variants
+          and variant_images contains media.src
+        %}
+          {% continue %}
+        {% endif %}
+
+        {% assign first_media = false %}
+        {% if forloop.first %}
+          {% assign first_media = true %}
+        {% endif %}
+
         {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
-
-          {% comment %} FIXED: Skip images belonging to OTHER variants {% endcomment %}
-          {%- if variant_images contains media.src -%}
-            {%- continue -%}
-          {%- endif -%}
-
-          {% if media_position >= limit %}
-            {% continue %}
-          {% endif %}
-
-          {% assign first_media = false %}
-          {% if forloop.first %}
-            {% assign first_media = true %}
-          {% endif %}
-
           <li
             id="Slide-{{ section.id }}-{{ media.id }}"
             class="product__media-item {% if first_media %}cl-preview{% endif %} grid__item slider__slide{% if single_media_visible %} product__media-item--single{% endif %}{% if product.selected_or_first_available_variant.featured_media == nil and forloop.index == 1 %} is-active{% endif %}{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if variant_images contains media.src %} product__media-item--variant{% else %} no-featured-linked{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
@@ -137,7 +134,6 @@
               lazy_load: lazy_load
             %}
           </li>
-
         {%- endunless -%}
       {%- endfor -%}
     </ul>
@@ -271,15 +267,8 @@
             </button>
           </li>
         {%- endif -%}
-
         {%- for media in product.media -%}
           {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
-
-            {% comment %} FIXED: Skip thumbnails belonging to OTHER variants {% endcomment %}
-            {%- if variant_images contains media.src -%}
-              {%- continue -%}
-            {%- endif -%}
-
             {%- liquid
               capture media_index
                 if media.media_type == 'model'
@@ -339,7 +328,6 @@
                 }}
               </button>
             </li>
-
           {%- endunless -%}
         {%- endfor -%}
       </ul>
