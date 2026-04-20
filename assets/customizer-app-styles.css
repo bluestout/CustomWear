@@ -483,12 +483,16 @@
 }
 
 .cl-po--option[data-option="Buy More Save More"],
-.cl-po--option[data-option="Buy More Save More Global"],
+.cl-po--option[data-option="Buy More Save More Global "],
 .cl-po--option[data-option="Use_What_Ive_Created_BMSM"] {
   padding: 0px !important;
   border: none !important;
   border-top: 1px solid #d8d8d8 !important;
   background: var(--gradient-background) !important;
+}
+
+.cl-po--option[data-option="Buy More Save More Global "] .cl-po--label {
+    display: none!important;
 }
 
 .cl-po--option .cl-po--swatch.cl-po--swatch-color {
@@ -574,7 +578,7 @@ textarea.cl-po--input::placeholder {
 }
 
 .cl-po--option[data-option="Buy More Save More"] .cl-po--option,
-.cl-po--option[data-option="Buy More Save More Global"] .cl-po--option,
+.cl-po--option[data-option="Buy More Save More Global "] .cl-po--option,
 .cl-po--option[data-option="Use_What_Ive_Created_BMSM"] .cl-po--option {
   background: transparent !important;
   max-width: 400px;
@@ -586,7 +590,7 @@ textarea.cl-po--input::placeholder {
 }
 
 .cl-po--option[data-option="Buy More Save More"] .cl-po--label:before,
-.cl-po--option[data-option="Buy More Save More Global"] .cl-po--label:before,
+.cl-po--option[data-option="Buy More Save More Global "] .cl-po--label:before,
 .cl-po--option[data-option="Use_What_Ive_Created_BMSM"] .cl-po--label:before {
   content: "Step 4:";
   color: #900;
