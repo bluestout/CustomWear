@@ -159,6 +159,34 @@
             "button_link": "shopify://collections/richardson-hats",
             "banner_link": ""
           }
+        },
+        "slide_item_94cthK": {
+          "type": "slide_item",
+          "settings": {
+            "image": "shopify://shop_images/CW_Banner_Richardson_Dealer_V1_2.jpg",
+            "sm_image": "shopify://shop_images/740x740px_Richardson.jpg",
+            "header_text": "",
+            "heading": "",
+            "description": "",
+            "button_text": "",
+            "button_target": "default",
+            "button_link": "",
+            "banner_link": "shopify://collections/richardson-hats"
+          }
+        },
+        "slide_item_bRhQ97": {
+          "type": "slide_item",
+          "settings": {
+            "image": "shopify://shop_images/Banner_2.jpg",
+            "sm_image": "shopify://shop_images/740x740px_Customized_Wear__E2_80_93_1.jpg",
+            "header_text": "",
+            "heading": "",
+            "description": "",
+            "button_text": "Shop All Hats",
+            "button_target": "default",
+            "button_link": "shopify://collections/shop-all",
+            "banner_link": ""
+          }
         }
       },
       "block_order": [
@@ -167,7 +195,9 @@
         "slide_item_bUakze",
         "slide_item_wQKygd",
         "slide_item_AmEFjw",
-        "slide_item_XUT7XG"
+        "slide_item_XUT7XG",
+        "slide_item_94cthK",
+        "slide_item_bRhQ97"
       ],
       "custom_css": [
         "@media (max-width: 425px) {.ui-slideshow__description p {max-width: 300px; }}"
