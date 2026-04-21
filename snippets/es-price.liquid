@@ -15,11 +15,11 @@
 {% assign product_new_price_cents = product_actual_price_cents | plus: product_customization_price_cents %}
 
 <div class="es-price">
-  {% if template contains 'product' %}
+  {% comment %} {% if template contains 'product' %}
     <span style="font-size: 15px; font-weight: 400;">As low as&nbsp;</span>
-  {% else %}
+  {% else %} {% endcomment %}
     <span>From</span>
-  {% endif %}
+  {% comment %} {% endif %} {% endcomment %}
 
   <div class="price" {% if template contains 'product' %}style="font-size: 15px;"{% endif %}>
     ${{ product_new_price_cents | money_without_currency }}
