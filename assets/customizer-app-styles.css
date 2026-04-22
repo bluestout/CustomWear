@@ -802,3 +802,7 @@ label.cl-po--radio-item:has(input[value="Flex Patch"]):hover::before {
 .tippy-content{
   text-align: left;
 }
+
+.cl-po--option[data-option="Buy More Save More Global"] {
+    display: none;
+}
