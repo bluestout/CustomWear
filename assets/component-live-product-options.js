@@ -469,3 +469,37 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+
+// =============================================================================
+// QUANTITY INPUT SYNC
+// =============================================================================
+
+const SYNC_QUANTITY_VALUES = ['48', '72', '144', '576', '1008'];
+let isSyncingQuantityInputs = false;
+
+function syncQuantityInputs(clickedInput) {
+  if (isSyncingQuantityInputs) return;
+  isSyncingQuantityInputs = true;
+  const value = clickedInput.value;
+  const isChecked = clickedInput.checked;
+
+  document.querySelectorAll(`.cl-po--input[value="${value}"]`).forEach(input => {
+    if (input === clickedInput) return;
+    if (input.checked !== isChecked) {
+      input.checked = isChecked;
+      input.dispatchEvent(new Event('change', { bubbles: true }));
+    }
+  });
+  isSyncingQuantityInputs = false;
+}
+
+document.addEventListener('click', (e) => {
+  const input = e.target.closest('.cl-po--input');
+  if (!input || !SYNC_QUANTITY_VALUES.includes(input.value)) return;
+  if (!input.checked) {
+    input.checked = true;
+    input.dispatchEvent(new Event('change', { bubbles: true }));
+  }
+  setTimeout(() => syncQuantityInputs(input), 10);
+});
