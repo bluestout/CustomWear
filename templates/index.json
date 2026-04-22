@@ -714,6 +714,19 @@
             "custom_image": "shopify://shop_images/new-authentic-richardson-sized-112-trucker-6-panel-lxl-twill-mesh-back-custom-richardson-hat-3122491_66619207-d09f-47f8-9aa4-0ca97348f5d9.png"
           }
         },
+        "product_Aq6GNx": {
+          "type": "product",
+          "settings": {
+            "product": "richardson-112-hat-trucker-snapback-cap-tri-color"
+          }
+        },
+        "product_Wngn9B": {
+          "type": "product",
+          "settings": {
+            "product": "richardson-112-hat-trucker-snapback-cap-solid-color",
+            "custom_image": "shopify://shop_images/new-richardson-112-hat-trucker-snapback-cap-solid-custom-richardson-hat-5294175.png"
+          }
+        },
         "product_YGDHtN": {
           "type": "product",
           "settings": {
@@ -801,6 +814,8 @@
       },
       "block_order": [
         "product_4i7XzQ",
+        "product_Aq6GNx",
+        "product_Wngn9B",
         "product_YGDHtN",
         "product_Kaxgp6",
         "product_XwJan7",
