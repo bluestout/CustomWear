@@ -1678,39 +1678,3 @@ product-info {
   display: flex!important;
 }
 
-.template-product .product__media-item:has(.cl-po--gallery) .product-media-container {
-  max-width: none !important;
-  width: 100% !important;
-}
-
-.template-product .product__media-item:has(.cl-po--gallery) .product-media-container .media {
-  padding-top: 67.65% !important;
-  position: relative !important;
-  overflow: hidden !important;
-}
-
-.template-product .product__media-item:has(.cl-po--gallery) .cl-po--gallery {
-  position: absolute !important;
-  inset: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
-}
-
-.template-product .product__media-item:has(.cl-po--gallery) .cl-po--gallery-main,
-.template-product .product__media-item:has(.cl-po--gallery) .splide,
-.template-product .product__media-item:has(.cl-po--gallery) .splide__track,
-.template-product .product__media-item:has(.cl-po--gallery) .splide__list,
-.template-product .product__media-item:has(.cl-po--gallery) .splide__slide,
-.template-product .product__media-item:has(.cl-po--gallery) .cl-po--preview-wrapper,
-.template-product .product__media-item:has(.cl-po--gallery) .cl-po--preview,
-.template-product .product__media-item:has(.cl-po--gallery) .canvas-container,
-.template-product .product__media-item:has(.cl-po--gallery) canvas {
-  width: 100% !important;
-  height: 100% !important;
-  max-width: none !important;
-  max-height: none !important;
-}
-
-.template-product .product__media-item:has(.cl-po--gallery) .canvas-container {
-  position: relative !important;
-}
