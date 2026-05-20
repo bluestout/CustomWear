@@ -193,7 +193,7 @@
           "settings": {
             "item_width": 6,
             "image": "shopify://shop_images/camo_caps_1500_x_1200_cw-Photoroom.png",
-            "title": "Camo Hats",
+            "title": "Camo & Military Hats",
             "url": "shopify://collections/camo-military-hats",
             "title_2": "Hat Style 2",
             "url_2": ""
@@ -221,17 +221,6 @@
             "title_2": "Sun Visors",
             "url_2": "shopify://collections/sun-visors"
           }
-        },
-        "item_q4Qadh": {
-          "type": "item",
-          "settings": {
-            "item_width": 5,
-            "image": "shopify://shop_images/CW_7_Panel_1160_x_590-Photoroom.png",
-            "title": "7-Panel Hats",
-            "url": "shopify://collections/7-panel-hats",
-            "title_2": "",
-            "url_2": ""
-          }
         }
       },
       "block_order": [
@@ -248,8 +237,7 @@
         "item_WqGL6N",
         "item_t9qBbg",
         "item_8iXADG",
-        "item_w4eKDW",
-        "item_q4Qadh"
+        "item_w4eKDW"
       ],
       "settings": {
         "scrollable": false,
