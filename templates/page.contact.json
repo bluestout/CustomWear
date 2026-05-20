@@ -35,6 +35,7 @@
         "text_WHkNyh"
       ],
       "settings": {
+        "banner_link": "",
         "show_space": false,
         "image": "shopify://shop_images/Contact_us_CW_2880_x_596-Photoroom.png",
         "image_mobile": "shopify://shop_images/allenburt_94637_front_view_of_a_navy_color_trucker_mesh_back__1437e6c4-5721-479b-ac11-dd2e092d9b9e_1_1.png",
@@ -70,7 +71,7 @@
       "type": "es-contact-us",
       "blocks": {
         "sk_form_builder_form_nF4A66": {
-          "type": "shopify://apps/sk-form-builder/blocks/form/f3e35b58-5874-4ef2-8e03-c92cda6e49eb",
+          "type": "shopify://apps/sk-contact-form-builder/blocks/form/f3e35b58-5874-4ef2-8e03-c92cda6e49eb",
           "settings": {
             "show_form": true,
             "form_token": "414b6a5658774570"
@@ -109,7 +110,7 @@
           "type": "icon_with_text",
           "settings": {
             "image": "shopify://shop_images/Ico.svg",
-            "text": "<p><a href=\"https://CapWholesalers.com\" title=\"https://CapWholesalers.com\">CapWholesalers.com</a> & <a href=\"https://CustomizedWear.com\" title=\"https://CustomizedWear.com\">CustomizedWear.com</a></p><p>12530 Wiles Rd, Coral Springs, FL 33076</p>",
+            "text": "<p>Hatco International</p><p>12530 Wiles Rd, Coral Springs, FL 33076</p>",
             "align_items": "flex-start"
           }
         },
