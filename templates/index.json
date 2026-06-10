@@ -568,142 +568,6 @@
         "show_gradient": true
       }
     },
-    "es_image_with_text_kFT4Pw": {
-      "type": "es-image-with-text",
-      "blocks": {
-        "heading_NGVgUX": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Looking for Blank Hats in Bulk?</p>",
-            "heading_size": "h1"
-          }
-        },
-        "separator_KFgDcp": {
-          "type": "separator",
-          "settings": {
-            "color": "#990000",
-            "width": 100
-          }
-        },
-        "text_EXnEAX": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Visit our partner site, <strong>CapWholesalers.com</strong>, your trusted source for wholesale blank hats since 1991.</p><p>Clicking below will take you to a separate site specializing in bulk, undecorated headwear.</p>",
-            "text_style": "body"
-          }
-        },
-        "button_BKEWTb": {
-          "type": "button",
-          "settings": {
-            "button_label": "Shop Blank Hats at CapWholesalers",
-            "button_link": "https://www.capwholesalers.com/?utm_source=cw&utm_medium=redirect&utm_campaign=internal_referral",
-            "button_style_secondary": false,
-            "open_new_tab": true
-          }
-        }
-      },
-      "block_order": [
-        "heading_NGVgUX",
-        "separator_KFgDcp",
-        "text_EXnEAX",
-        "button_BKEWTb"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/1100x800_mid_down__E2_80_93_4.jpg",
-        "height": "adapt",
-        "hide_media_on_mobile": true,
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "center",
-        "section_color_scheme": "",
-        "color_scheme": "scheme-09348374-9048-4109-8e6d-ac33083b4bdd",
-        "padding_top": 4,
-        "padding_bottom": 88,
-        "padding_top_mobile": 16,
-        "padding_bottom_mobile": 40
-      }
-    },
-    "es_testimonial_xNiLtf": {
-      "type": "es-testimonial",
-      "blocks": {
-        "review_xxMRxP": {
-          "type": "review",
-          "settings": {
-            "title": "Amazing Hats!",
-            "image": "shopify://shop_images/Stars.svg",
-            "text": "<p>We designed some hats to give away to patients and promote the business.  The patients have loved them!  Thanks to Lisette in customer service who has made the process easy! Great Company and excellent service!</p>",
-            "created_at": "Tue, Sep 01 2020",
-            "name": "Julie"
-          }
-        },
-        "review_LNLbd3": {
-          "type": "review",
-          "settings": {
-            "title": "Perfect Hats!",
-            "image": "shopify://shop_images/Stars.svg",
-            "text": "<p>Our hats are awesome! Customers and employees alike are always asking for new ones!</p>",
-            "created_at": "Mon, Aug 31 2020",
-            "name": "Sarah M Dymond"
-          }
-        },
-        "review_h8GNw6": {
-          "type": "review",
-          "settings": {
-            "title": "Thanks Robin! Great Caps/Great Service",
-            "image": "shopify://shop_images/Stars.svg",
-            "text": "<p>Pleased as always with my recent order! Seamless and quality work. Thanks for all of your help Robin!</p>",
-            "created_at": "Tue, Oct 15 2024",
-            "name": "empowermentoutfitters@gmail.com"
-          }
-        },
-        "review_kf7iPz": {
-          "type": "review",
-          "settings": {
-            "title": "Amazing Hats!",
-            "image": "shopify://shop_images/Stars.svg",
-            "text": "<p>We designed some hats to give away to patients and promote the business.  The patients have loved them!  Thanks to Lisette in customer service who has made the process easy! Great Company and excellent service!</p>",
-            "created_at": "Tue, Sep 01 2020",
-            "name": "Julie"
-          }
-        },
-        "review_mBWtJC": {
-          "type": "review",
-          "settings": {
-            "title": "Perfect Hats!",
-            "image": "shopify://shop_images/Stars.svg",
-            "text": "<p>Our hats are awesome! Customers and employees alike are always asking for new ones!</p>",
-            "created_at": "Mon, Aug 31 2020",
-            "name": "Sarah M Dymond"
-          }
-        },
-        "review_LGegcN": {
-          "type": "review",
-          "settings": {
-            "title": "Thanks Robin! Great Caps/Great Service",
-            "image": "shopify://shop_images/Stars.svg",
-            "text": "<p>Pleased as always with my recent order! Seamless and quality work. Thanks for all of your help Robin!</p>",
-            "created_at": "Tue, Oct 15 2024",
-            "name": "empowermentoutfitters@gmail.com"
-          }
-        }
-      },
-      "block_order": [
-        "review_xxMRxP",
-        "review_LNLbd3",
-        "review_h8GNw6",
-        "review_kf7iPz",
-        "review_mBWtJC",
-        "review_LGegcN"
-      ],
-      "settings": {
-        "padding_top": 26,
-        "padding_bottom": 40
-      }
-    },
     "es_featured_products_f7J3tb": {
       "type": "es-featured-products",
       "blocks": {
@@ -850,6 +714,142 @@
         "padding_bottom": 80
       }
     },
+    "es_image_with_text_kFT4Pw": {
+      "type": "es-image-with-text",
+      "blocks": {
+        "heading_NGVgUX": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Looking for Blank Hats in Bulk?</p>",
+            "heading_size": "h1"
+          }
+        },
+        "separator_KFgDcp": {
+          "type": "separator",
+          "settings": {
+            "color": "#990000",
+            "width": 100
+          }
+        },
+        "text_EXnEAX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Visit our partner site, <strong>CapWholesalers.com</strong>, your trusted source for wholesale blank hats since 1991.</p><p>Clicking below will take you to a separate site specializing in bulk, undecorated headwear.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_BKEWTb": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Blank Hats at CapWholesalers",
+            "button_link": "https://www.capwholesalers.com/?utm_source=cw&utm_medium=redirect&utm_campaign=internal_referral",
+            "button_style_secondary": false,
+            "open_new_tab": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_NGVgUX",
+        "separator_KFgDcp",
+        "text_EXnEAX",
+        "button_BKEWTb"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/1100x800_mid_down__E2_80_93_4.jpg",
+        "height": "adapt",
+        "hide_media_on_mobile": true,
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "",
+        "color_scheme": "scheme-09348374-9048-4109-8e6d-ac33083b4bdd",
+        "padding_top": 4,
+        "padding_bottom": 88,
+        "padding_top_mobile": 16,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "es_testimonial_xNiLtf": {
+      "type": "es-testimonial",
+      "blocks": {
+        "review_xxMRxP": {
+          "type": "review",
+          "settings": {
+            "title": "Amazing Hats!",
+            "image": "shopify://shop_images/Stars.svg",
+            "text": "<p>We designed some hats to give away to patients and promote the business.  The patients have loved them!  Thanks to Lisette in customer service who has made the process easy! Great Company and excellent service!</p>",
+            "created_at": "Tue, Sep 01 2020",
+            "name": "Julie"
+          }
+        },
+        "review_LNLbd3": {
+          "type": "review",
+          "settings": {
+            "title": "Perfect Hats!",
+            "image": "shopify://shop_images/Stars.svg",
+            "text": "<p>Our hats are awesome! Customers and employees alike are always asking for new ones!</p>",
+            "created_at": "Mon, Aug 31 2020",
+            "name": "Sarah M Dymond"
+          }
+        },
+        "review_h8GNw6": {
+          "type": "review",
+          "settings": {
+            "title": "Thanks Robin! Great Caps/Great Service",
+            "image": "shopify://shop_images/Stars.svg",
+            "text": "<p>Pleased as always with my recent order! Seamless and quality work. Thanks for all of your help Robin!</p>",
+            "created_at": "Tue, Oct 15 2024",
+            "name": "empowermentoutfitters@gmail.com"
+          }
+        },
+        "review_kf7iPz": {
+          "type": "review",
+          "settings": {
+            "title": "Amazing Hats!",
+            "image": "shopify://shop_images/Stars.svg",
+            "text": "<p>We designed some hats to give away to patients and promote the business.  The patients have loved them!  Thanks to Lisette in customer service who has made the process easy! Great Company and excellent service!</p>",
+            "created_at": "Tue, Sep 01 2020",
+            "name": "Julie"
+          }
+        },
+        "review_mBWtJC": {
+          "type": "review",
+          "settings": {
+            "title": "Perfect Hats!",
+            "image": "shopify://shop_images/Stars.svg",
+            "text": "<p>Our hats are awesome! Customers and employees alike are always asking for new ones!</p>",
+            "created_at": "Mon, Aug 31 2020",
+            "name": "Sarah M Dymond"
+          }
+        },
+        "review_LGegcN": {
+          "type": "review",
+          "settings": {
+            "title": "Thanks Robin! Great Caps/Great Service",
+            "image": "shopify://shop_images/Stars.svg",
+            "text": "<p>Pleased as always with my recent order! Seamless and quality work. Thanks for all of your help Robin!</p>",
+            "created_at": "Tue, Oct 15 2024",
+            "name": "empowermentoutfitters@gmail.com"
+          }
+        }
+      },
+      "block_order": [
+        "review_xxMRxP",
+        "review_LNLbd3",
+        "review_h8GNw6",
+        "review_kf7iPz",
+        "review_mBWtJC",
+        "review_LGegcN"
+      ],
+      "settings": {
+        "padding_top": 26,
+        "padding_bottom": 40
+      }
+    },
     "1775241589d5956ba8": {
       "type": "_blocks",
       "settings": {}
@@ -974,9 +974,9 @@
     "es_featured_blocks_zzkdqw",
     "es_image_with_text_QiEqMH",
     "es_gallery_with_link_CGamDr",
+    "es_featured_products_f7J3tb",
     "es_image_with_text_kFT4Pw",
     "es_testimonial_xNiLtf",
-    "es_featured_products_f7J3tb",
     "1775241589d5956ba8",
     "es_featured_videos_zwxmNW",
     "es_gallery_with_link_XdFTjW"
