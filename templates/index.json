@@ -703,7 +703,7 @@
       ],
       "name": "ES Featured Products",
       "settings": {
-        "title": "Best Sellers By Brand",
+        "title": "<strong>Best Sellers</strong>",
         "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
