@@ -220,7 +220,7 @@
           "type": "collection",
           "settings": {
             "image": "shopify://shop_images/255_berry_5_Panel_1__520_x_376px_2.jpg",
-            "title": "5-Panel Golf Hats",
+            "title": "<strong>5-Panel Golf Hats</strong>",
             "subtitle": "Custom 5-panel golf hats",
             "url": "shopify://collections/5-panel-caps"
           }
@@ -229,7 +229,7 @@
           "type": "collection",
           "settings": {
             "image": "shopify://shop_images/112_Tri-White-Aluminum-Black-520_x_376px_1.jpg",
-            "title": "Trucker Mesh Hats",
+            "title": "<strong>Trucker Mesh Hats</strong>",
             "subtitle": "Custom 112 trucker caps",
             "url": "shopify://collections/trucker-mesh-hats"
           }
@@ -238,7 +238,7 @@
           "type": "collection",
           "settings": {
             "image": "shopify://shop_images/Sport_Perform_Dk_Green_3__520_x_376px_1.jpg",
-            "title": "Performance Hats",
+            "title": "<strong>Performance Hats</strong>",
             "subtitle": "Custom performance caps",
             "url": "shopify://collections/richardson-sport-performance"
           }
@@ -450,7 +450,7 @@
         "collection_8yJY4f"
       ],
       "settings": {
-        "title": "Shop By Hat Style",
+        "title": "<strong>Shop By Hat Style</strong>",
         "padding_top": 32,
         "padding_bottom": 32
       }
