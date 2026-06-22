@@ -24,6 +24,13 @@
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
+
+    #shopify-section-{{ section.id }} .footer-block__heading,
+    #shopify-section-{{ section.id }} .footer-block__heading *,
+    #shopify-section-{{ section.id }} .list-menu__item--link,
+    #shopify-section-{{ section.id }} .footer-image-link-text {
+      color: #fff !important;
+    }
   }
 {%- endstyle -%}
 
