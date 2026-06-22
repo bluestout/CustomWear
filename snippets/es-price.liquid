@@ -17,12 +17,12 @@
 
 <div class="es-price">
   {% comment %} {% if template contains 'product' %}
-    <span style="font-size: 15px; font-weight: 400; color:#000 !important;">As low as&nbsp;</span>
+    <span style="font-size: 15px; font-weight: 400; color:#000 !important; -webkit-text-fill-color:#000 !important;">As low as&nbsp;</span>
   {% else %} {% endcomment %}
-    <span style="font-size: 15px; font-weight: 400; color:#000 !important;">From</span>
+    <span style="font-size: 15px; font-weight: 400; color:#000 !important; -webkit-text-fill-color:#000 !important;">From</span>
   {% comment %} {% endif %} {% endcomment %}
 
-  <div class="price" style="color:#000 !important;{% if template contains 'product' %}font-size: 15px;{% endif %}">
+  <div class="price" style="color:#000 !important; -webkit-text-fill-color:#000 !important;{% if template contains 'product' %}font-size: 15px;{% endif %}">
     ${{ product_new_price_cents | money_without_currency }}
     <sup class="small-hide">*</sup>
   </div>
