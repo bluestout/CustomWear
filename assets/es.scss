@@ -5152,3 +5152,20 @@ slideshow-component {
     }
   }
 }
+
+
+
+.card__content .ui_card_sku,
+.card__content .ui_card_sku *,
+.card__content .card__sku,
+.card__content .ui_card__brand_name,
+.card__content .ui_card__brand_name *,
+.card__content .card__brand-name,
+.card__content .card__heading,
+.card__content .card__heading .full-unstyled-link,
+.card__content .es-price,
+.card__content .es-price span,
+.card__content .es-price .price,
+.card__content .es-price .price sup {
+  color: #000 !important;
+}
