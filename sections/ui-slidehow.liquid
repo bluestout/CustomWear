@@ -43,7 +43,26 @@
           {%- for block in section.blocks -%}
             <div class="swiper-slide">
               {%- if block.settings.banner_link != blank -%}
-                <a href="{{ block.settings.banner_link }}">
+                {%- liquid
+                  assign slide_label = block.settings.button_text
+                  if slide_label == blank
+                    assign slide_label = block.settings.header_text
+                  endif
+                  if slide_label == blank
+                    assign slide_label = block.settings.heading
+                  endif
+                  if slide_label == blank
+                    assign slide_label = block.settings.image.alt
+                  endif
+                  if slide_label == blank
+                    assign slide_label = block.settings.image.title
+                  endif
+                  assign slide_label = slide_label | strip_html | strip
+                  if slide_label == blank
+                    assign slide_label = 'Slide ' | append: forloop.index
+                  endif
+                -%}
+                <a href="{{ block.settings.banner_link }}" aria-label="{{ slide_label | escape }}">
               {%- endif -%}
               <div class="ui-slideshow__media">
                 {%- if block.settings.image != blank -%}
