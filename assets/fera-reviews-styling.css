@@ -138,3 +138,7 @@ span.fera-star-rating {
     background: rgb(250, 250, 250, 1)!important; */
     display: none!important;
 }
+
+.fera-review-helpful-text {
+  color: #595959 !important;
+}
