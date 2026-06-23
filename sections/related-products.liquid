@@ -21,18 +21,18 @@
 {%- endstyle -%}
 
 <div class="color-{{ section.settings.color_scheme }} gradient">
-    <product-recommendations
+    {% comment %} <product-recommendations
       class="related-products page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
       data-url="{{ routes.product_recommendations_url }}?limit={{ section.settings.products_to_show }}"
       data-section-id="{{ section.id }}"
       data-product-id="{{ product.id }}"
-    >
-  {% comment %} <product-recommendations
+    > {% endcomment %}
+  <product-recommendations
     class="related-products page-width section-{{ section.id }}-padding isolate"
     data-url="{{ routes.product_recommendations_url }}?limit={{ section.settings.products_to_show }}"
     data-section-id="{{ section.id }}"
     data-product-id="{{ product.id }}"
-  > {% endcomment %}
+  >
     {% if recommendations.performed and recommendations.products_count > 0 %}
       <h2 class="related-products__heading inline-richtext es-font-h2 center {{ section.settings.heading_size }}">
         {{ section.settings.heading }}
