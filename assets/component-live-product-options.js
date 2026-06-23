@@ -503,3 +503,41 @@ document.addEventListener('click', (e) => {
   }
   setTimeout(() => syncQuantityInputs(input), 10);
 });
+
+
+
+(function normalizeCustomizerAutocomplete() {
+  function fix() {
+    document.querySelectorAll('[autocomplete="noop"]').forEach((el) => {
+      el.setAttribute('autocomplete', 'off');
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', fix);
+  } else {
+    fix();
+  }
+  window.addEventListener('load', fix);
+  [300, 1000, 2500].forEach((ms) => setTimeout(fix, ms));
+  if ('MutationObserver' in window) {
+    const start = function () {
+      let scheduled = false;
+      const schedule = function () {
+        if (scheduled) return;
+        scheduled = true;
+        requestAnimationFrame(function () { scheduled = false; fix(); });
+      };
+      new MutationObserver(schedule).observe(document.body, {
+        childList: true,
+        subtree: true,
+        attributes: true,
+        attributeFilter: ['autocomplete'],
+      });
+    };
+    if (document.body) {
+      start();
+    } else {
+      document.addEventListener('DOMContentLoaded', start);
+    }
+  }
+})();
