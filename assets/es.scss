@@ -4525,10 +4525,6 @@ slideshow-component {
               height: fit-content;
               max-height: 400px;
             }
-
-            @media (max-width: 425px) {
-              max-height: 300px;
-            }
           }
         }
       }
