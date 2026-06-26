@@ -419,7 +419,7 @@
         "collection_8yJY4f"
       ],
       "settings": {
-        "title": "Shop By Hat Style",
+        "title": "<strong>Shop By Hat Style</strong>",
         "padding_top": 32,
         "padding_bottom": 32
       }
@@ -482,7 +482,7 @@
       ],
       "settings": {
         "scrollable": false,
-        "title": "Shop By Top Brands",
+        "title": "<strong>Shop By Top Brands</strong>",
         "hide_title_on_mobile": true,
         "padding_top": 40,
         "padding_bottom": 40,
@@ -490,51 +490,6 @@
         "padding_bottom_mobile": 0,
         "item_count_row": 2,
         "show_gradient": true
-      }
-    },
-    "es_image_with_text_QiEqMH": {
-      "type": "es-image-with-text",
-      "blocks": {
-        "heading_ptCCnT": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Custom Embroidery</p>",
-            "heading_size": "h1"
-          }
-        },
-        "text_XxeLzC": {
-          "type": "text",
-          "settings": {
-            "text": "<h2>Explore custom embroidery on Richardson hats, including the popular 112 models.<strong><br/></strong></h2><h2>These hats are crafted with quality and precision just for you! <br/><br/><a href=\"/collections/richardson-112-hats\" title=\"Richardson: 112 Hats\"><strong>Check Them Out</strong></a></h2>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_ptCCnT",
-        "text_XxeLzC"
-      ],
-      "custom_css": [
-        "@media (max-width: 1500px) {a {display: block; }}",
-        "@media (min-width: 751px) {.image-with-text__media-item {padding-left: 50px; }}"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/1000x800_ladies.jpg",
-        "height": "adapt",
-        "hide_media_on_mobile": false,
-        "desktop_image_width": "large",
-        "layout": "text_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "center",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "padding_top_mobile": 0,
-        "padding_bottom_mobile": 16
       }
     },
     "es_image_with_text_kFT4Pw": {
@@ -594,6 +549,51 @@
         "padding_bottom": 88,
         "padding_top_mobile": 16,
         "padding_bottom_mobile": 40
+      }
+    },
+    "es_image_with_text_QiEqMH": {
+      "type": "es-image-with-text",
+      "blocks": {
+        "heading_ptCCnT": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Custom Embroidery</p>",
+            "heading_size": "h1"
+          }
+        },
+        "text_XxeLzC": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Explore custom embroidery on Richardson hats, including the popular 112 models.<strong><br/></strong></h2><h2>These hats are crafted with quality and precision just for you! <br/><br/><a href=\"/collections/richardson-112-hats\" title=\"Richardson: 112 Hats\"><strong>Check Them Out</strong></a></h2>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ptCCnT",
+        "text_XxeLzC"
+      ],
+      "custom_css": [
+        "@media (max-width: 1500px) {a {display: block; }}",
+        "@media (min-width: 751px) {.image-with-text__media-item {padding-left: 50px; }}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/1000x800_ladies.jpg",
+        "height": "adapt",
+        "hide_media_on_mobile": false,
+        "desktop_image_width": "large",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 16
       }
     },
     "es_testimonial_xNiLtf": {
@@ -785,7 +785,7 @@
       ],
       "name": "ES Featured Products",
       "settings": {
-        "title": "Best Sellers By Brand",
+        "title": "<strong>Best Sellers By Brand</strong>",
         "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -919,8 +919,8 @@
     "ui_slidehow_RXbyRd",
     "es_featured_blocks_zzkdqw",
     "es_gallery_with_link_CGamDr",
-    "es_image_with_text_QiEqMH",
     "es_image_with_text_kFT4Pw",
+    "es_image_with_text_QiEqMH",
     "es_testimonial_xNiLtf",
     "es_featured_products_f7J3tb",
     "1775241589d5956ba8",
