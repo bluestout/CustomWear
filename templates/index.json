@@ -523,49 +523,63 @@
         "show_gradient": true
       }
     },
-    "es_image_with_text_QiEqMH": {
+    "es_image_with_text_kFT4Pw": {
       "type": "es-image-with-text",
       "blocks": {
-        "heading_ptCCnT": {
+        "heading_NGVgUX": {
           "type": "heading",
           "settings": {
-            "heading": "<p>Custom Embroidery</p>",
+            "heading": "<p>Looking for Blank Hats in Bulk?</p>",
             "heading_size": "h1"
           }
         },
-        "text_XxeLzC": {
+        "separator_KFgDcp": {
+          "type": "separator",
+          "settings": {
+            "color": "#990000",
+            "width": 100
+          }
+        },
+        "text_EXnEAX": {
           "type": "text",
           "settings": {
-            "text": "<h2>Explore custom embroidery on Richardson hats, including the popular 112 models.<strong><br/></strong></h2><h2>These hats are crafted with quality and precision just for you! <br/><br/><a href=\"/collections/richardson-112-hats\" title=\"Richardson: 112 Hats\"><strong>Check Them Out</strong></a></h2>",
+            "text": "<p>Visit our partner site, <strong>CapWholesalers.com</strong>, your trusted source for wholesale blank hats since 1991.</p><p>Clicking below will take you to a separate site specializing in bulk, undecorated headwear.</p>",
             "text_style": "body"
+          }
+        },
+        "button_BKEWTb": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Blank Hats at CapWholesalers",
+            "button_link": "https://www.capwholesalers.com/?utm_source=cw&utm_medium=redirect&utm_campaign=internal_referral",
+            "button_style_secondary": false,
+            "open_new_tab": true
           }
         }
       },
       "block_order": [
-        "heading_ptCCnT",
-        "text_XxeLzC"
-      ],
-      "custom_css": [
-        "@media (max-width: 1500px) {a {display: block; }}",
-        "@media (min-width: 751px) {.image-with-text__media-item {padding-left: 50px; }}"
+        "heading_NGVgUX",
+        "separator_KFgDcp",
+        "text_EXnEAX",
+        "button_BKEWTb"
       ],
       "settings": {
-        "image": "shopify://shop_images/1000x800_ladies.jpg",
+        "image": "shopify://shop_images/1100x800_mid_down__E2_80_93_4.jpg",
         "height": "adapt",
-        "hide_media_on_mobile": false,
-        "desktop_image_width": "large",
-        "layout": "text_first",
+        "hide_media_on_mobile": true,
+        "desktop_image_width": "medium",
+        "layout": "image_first",
         "image_behavior": "none",
         "content_layout": "no-overlap",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "mobile_content_alignment": "center",
         "section_color_scheme": "",
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "padding_top_mobile": 0,
-        "padding_bottom_mobile": 16
+        "color_scheme": "scheme-09348374-9048-4109-8e6d-ac33083b4bdd",
+        "padding_top": 4,
+        "padding_bottom": 88,
+        "padding_top_mobile": 16,
+        "padding_bottom_mobile": 40
       }
     },
     "es_featured_products_f7J3tb": {
@@ -714,63 +728,49 @@
         "padding_bottom": 84
       }
     },
-    "es_image_with_text_kFT4Pw": {
+    "es_image_with_text_QiEqMH": {
       "type": "es-image-with-text",
       "blocks": {
-        "heading_NGVgUX": {
+        "heading_ptCCnT": {
           "type": "heading",
           "settings": {
-            "heading": "<p>Looking for Blank Hats in Bulk?</p>",
+            "heading": "<p>Custom Embroidery</p>",
             "heading_size": "h1"
           }
         },
-        "separator_KFgDcp": {
-          "type": "separator",
-          "settings": {
-            "color": "#990000",
-            "width": 100
-          }
-        },
-        "text_EXnEAX": {
+        "text_XxeLzC": {
           "type": "text",
           "settings": {
-            "text": "<p>Visit our partner site, <strong>CapWholesalers.com</strong>, your trusted source for wholesale blank hats since 1991.</p><p>Clicking below will take you to a separate site specializing in bulk, undecorated headwear.</p>",
+            "text": "<h2>Explore custom embroidery on Richardson hats, including the popular 112 models.<strong><br/></strong></h2><h2>These hats are crafted with quality and precision just for you! <br/><br/><a href=\"/collections/richardson-112-hats\" title=\"Richardson: 112 Hats\"><strong>Check Them Out</strong></a></h2>",
             "text_style": "body"
-          }
-        },
-        "button_BKEWTb": {
-          "type": "button",
-          "settings": {
-            "button_label": "Shop Blank Hats at CapWholesalers",
-            "button_link": "https://www.capwholesalers.com/?utm_source=cw&utm_medium=redirect&utm_campaign=internal_referral",
-            "button_style_secondary": false,
-            "open_new_tab": true
           }
         }
       },
       "block_order": [
-        "heading_NGVgUX",
-        "separator_KFgDcp",
-        "text_EXnEAX",
-        "button_BKEWTb"
+        "heading_ptCCnT",
+        "text_XxeLzC"
+      ],
+      "custom_css": [
+        "@media (max-width: 1500px) {a {display: block; }}",
+        "@media (min-width: 751px) {.image-with-text__media-item {padding-left: 50px; }}"
       ],
       "settings": {
-        "image": "shopify://shop_images/1100x800_mid_down__E2_80_93_4.jpg",
+        "image": "shopify://shop_images/1000x800_ladies.jpg",
         "height": "adapt",
-        "hide_media_on_mobile": true,
-        "desktop_image_width": "medium",
-        "layout": "image_first",
+        "hide_media_on_mobile": false,
+        "desktop_image_width": "large",
+        "layout": "text_first",
         "image_behavior": "none",
         "content_layout": "no-overlap",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "mobile_content_alignment": "center",
         "section_color_scheme": "",
-        "color_scheme": "scheme-09348374-9048-4109-8e6d-ac33083b4bdd",
-        "padding_top": 4,
-        "padding_bottom": 88,
-        "padding_top_mobile": 16,
-        "padding_bottom_mobile": 40
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 16
       }
     },
     "es_testimonial_xNiLtf": {
@@ -974,8 +974,8 @@
     "es_featured_blocks_zzkdqw",
     "es_gallery_with_link_CGamDr",
     "es_image_with_text_kFT4Pw",
-    "es_image_with_text_QiEqMH",
     "es_featured_products_f7J3tb",
+    "es_image_with_text_QiEqMH",
     "es_testimonial_xNiLtf",
     "1775241589d5956ba8",
     "es_featured_videos_zwxmNW",
