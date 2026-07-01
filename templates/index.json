@@ -854,6 +854,61 @@
       "type": "_blocks",
       "settings": {}
     },
+    "es_gallery_with_link_XdFTjW": {
+      "type": "es-gallery-with-link",
+      "blocks": {
+        "item_EP8aGf": {
+          "type": "item",
+          "settings": {
+            "item_width": 4,
+            "image": "shopify://shop_images/1000x1014__E2_80_93_3.png",
+            "title": "",
+            "url": "shopify://pages/inspiration-gallery",
+            "title_2": "Hat Style 2",
+            "url_2": ""
+          }
+        },
+        "item_Fp6UFz": {
+          "type": "item",
+          "settings": {
+            "item_width": 4,
+            "image": "shopify://shop_images/1000x1014__E2_80_93_1.jpg",
+            "title": "",
+            "url": "shopify://pages/inspiration-gallery",
+            "title_2": "Hat Style 2",
+            "url_2": ""
+          }
+        },
+        "item_aJtUkE": {
+          "type": "item",
+          "settings": {
+            "item_width": 2,
+            "image": "shopify://shop_images/1000x509_patriotic.png",
+            "title": "",
+            "url": "shopify://pages/inspiration-gallery",
+            "image_2": "shopify://shop_images/659x514__E2_80_93_1.jpg",
+            "title_2": "",
+            "url_2": "shopify://pages/inspiration-gallery"
+          }
+        }
+      },
+      "block_order": [
+        "item_EP8aGf",
+        "item_Fp6UFz",
+        "item_aJtUkE"
+      ],
+      "settings": {
+        "scrollable": true,
+        "title": "Featured Work",
+        "hide_title_on_mobile": false,
+        "padding_top": 40,
+        "padding_bottom": 80,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20,
+        "item_count_row": 3,
+        "show_gradient": false
+      }
+    },
     "es_featured_videos_zwxmNW": {
       "type": "es-featured-videos",
       "blocks": {
@@ -911,61 +966,6 @@
         "padding_top": 80,
         "padding_bottom": 40
       }
-    },
-    "es_gallery_with_link_XdFTjW": {
-      "type": "es-gallery-with-link",
-      "blocks": {
-        "item_EP8aGf": {
-          "type": "item",
-          "settings": {
-            "item_width": 4,
-            "image": "shopify://shop_images/1000x1014__E2_80_93_3.png",
-            "title": "",
-            "url": "shopify://pages/inspiration-gallery",
-            "title_2": "Hat Style 2",
-            "url_2": ""
-          }
-        },
-        "item_Fp6UFz": {
-          "type": "item",
-          "settings": {
-            "item_width": 4,
-            "image": "shopify://shop_images/1000x1014__E2_80_93_1.jpg",
-            "title": "",
-            "url": "shopify://pages/inspiration-gallery",
-            "title_2": "Hat Style 2",
-            "url_2": ""
-          }
-        },
-        "item_aJtUkE": {
-          "type": "item",
-          "settings": {
-            "item_width": 2,
-            "image": "shopify://shop_images/1000x509_patriotic.png",
-            "title": "",
-            "url": "shopify://pages/inspiration-gallery",
-            "image_2": "shopify://shop_images/659x514__E2_80_93_1.jpg",
-            "title_2": "",
-            "url_2": "shopify://pages/inspiration-gallery"
-          }
-        }
-      },
-      "block_order": [
-        "item_EP8aGf",
-        "item_Fp6UFz",
-        "item_aJtUkE"
-      ],
-      "settings": {
-        "scrollable": true,
-        "title": "Featured Work",
-        "hide_title_on_mobile": false,
-        "padding_top": 40,
-        "padding_bottom": 80,
-        "padding_top_mobile": 20,
-        "padding_bottom_mobile": 20,
-        "item_count_row": 3,
-        "show_gradient": false
-      }
     }
   },
   "order": [
@@ -975,10 +975,10 @@
     "es_gallery_with_link_CGamDr",
     "es_image_with_text_kFT4Pw",
     "es_featured_products_f7J3tb",
+    "es_gallery_with_link_XdFTjW",
     "es_image_with_text_QiEqMH",
-    "es_testimonial_xNiLtf",
-    "1775241589d5956ba8",
     "es_featured_videos_zwxmNW",
-    "es_gallery_with_link_XdFTjW"
+    "es_testimonial_xNiLtf",
+    "1775241589d5956ba8"
   ]
 }
