@@ -863,6 +863,9 @@ class SliderComponent extends HTMLElement {
     // Temporarily prevents unneeded updates resulting from variant changes
     // This should be refactored as part of https://github.com/Shopify/dawn/issues/2057
     if (!this.slider || !this.nextButton) return;
+    // initPages bails out with fewer than 2 visible slides, leaving
+    // sliderItemOffset unset — dividing by it would render "NaN"
+    if (!this.sliderItemOffset) return;
 
     const previousPage = this.currentPage;
     this.currentPage = Math.round(this.slider.scrollLeft / this.sliderItemOffset) + 1;

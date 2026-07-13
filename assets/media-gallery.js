@@ -54,7 +54,14 @@ if (!customElements.get('media-gallery')) {
         this.preventStickyHeader();
         window.setTimeout(() => {
           if (!this.mql.matches || this.elements.thumbnails) {
-            activeMedia.parentElement.scrollTo({ left: activeMedia.offsetLeft });
+            // variant media items can be hidden via CSS (live preview shown
+            // instead); a hidden slide reports offsetLeft 0, so scroll to the
+            // first visible slide to land on the preview deterministically
+            const scrollTarget =
+              activeMedia.clientWidth > 0
+                ? activeMedia
+                : Array.from(activeMedia.parentElement.children).find((element) => element.clientWidth > 0);
+            activeMedia.parentElement.scrollTo({ left: scrollTarget ? scrollTarget.offsetLeft : 0 });
           }
           const activeMediaRect = activeMedia.getBoundingClientRect();
           // Don't scroll if the image is already in view

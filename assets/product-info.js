@@ -282,20 +282,27 @@ if (!customElements.get('product-info')) {
           // refresh
           if (shouldRefresh) [mediaGallerySourceItems, sourceSet, sourceMap] = refreshSourceData();
 
-          // if media galleries don't match, sort to match new data order
+          // if media galleries don't match, sort to match new data order.
+          // Insert relative to other media items only — the list also contains
+          // non-media <li> elements (live preview placeholder, app-injected
+          // slides) whose count varies, so nth-of-type targets are unstable.
           mediaGalleryDestinationItems.forEach((destinationItem, destinationIndex) => {
             const sourceData = sourceMap.get(destinationItem.dataset.mediaId);
 
             if (sourceData && sourceData.index !== destinationIndex) {
-              mediaGallerySource.insertBefore(
-                sourceData.item,
-                mediaGallerySource.querySelector(`li:nth-of-type(${destinationIndex + 1})`)
-              );
+              mediaGallerySource.insertBefore(sourceData.item, mediaGallerySourceItems[destinationIndex] || null);
 
               // refresh source now that it has been modified
               [mediaGallerySourceItems, sourceSet, sourceMap] = refreshSourceData();
             }
           });
+
+          // keep the live preview placeholder pinned as the first slide so the
+          // app preview always occupies the same position after variant changes
+          const livePreviewSlide = mediaGallerySource.querySelector('li[data-live-preview]:not([data-media-id])');
+          if (livePreviewSlide && mediaGallerySource.firstElementChild !== livePreviewSlide) {
+            mediaGallerySource.prepend(livePreviewSlide);
+          }
         }
 
         // set featured media as active in the media gallery
