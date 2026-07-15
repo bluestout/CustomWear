@@ -3677,4 +3677,9 @@ details-disclosure > details {
     position: relative;
     top: -1px;
 }
+
+button.PinturaButton.PinturaButtonExport {
+    background: #14a44d;
+    color: white;
+}
 /* END - PDP - Customizer image upload extension styling */
