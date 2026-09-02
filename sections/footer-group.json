@@ -11,6 +11,16 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "custom_liquid_CeD3Nr": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width\">\n  <h2>Custom Hats With Your Logo</h2>\n\n  <p>CustomizedWear makes it easy to create professional custom hats for businesses, teams, organizations and events. Choose from Richardson, Flexfit, OTTO, trucker hats, performance caps, snapbacks, golf hats and more.</p>\n\n  <p>Customize your hats with <strong>embroidery, genuine leather patches, faux leather patches, embroidered patches, Print Stitch patches or Flex patches</strong>.</p>\n\n  <p>Embroidery orders generally start at <strong>12 pieces</strong>, while custom patch orders generally start at <strong>24 pieces</strong>.</p>\n</div>",
+        "color_scheme": "",
+        "padding_top": 20,
+        "padding_bottom": 32
+      }
+    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -81,6 +91,7 @@
     }
   },
   "order": [
+    "custom_liquid_CeD3Nr",
     "footer"
   ]
 }
