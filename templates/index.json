@@ -889,6 +889,15 @@
     "es_testimonial_xNiLtf": {
       "type": "es-testimonial",
       "blocks": {
+        "review_rhgREn": {
+          "type": "review",
+          "settings": {
+            "title": "They are perfect!",
+            "text": "<p>Hi Robin, I got the caps.  Thank you so much! They are perfect and we are very happy with them. Tell you crew we appreciate the detail work and the effort put into this order!  We should make and order again soon!!!</p>",
+            "created_at": "June 26, 2026",
+            "name": "Susan Moore"
+          }
+        },
         "review_aawJc8": {
           "type": "review",
           "settings": {
@@ -996,6 +1005,7 @@
         }
       },
       "block_order": [
+        "review_rhgREn",
         "review_aawJc8",
         "review_UqCnTn",
         "review_BUxY4P",
