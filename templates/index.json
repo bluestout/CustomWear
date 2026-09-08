@@ -889,6 +889,15 @@
     "es_testimonial_xNiLtf": {
       "type": "es-testimonial",
       "blocks": {
+        "review_XjTpDR": {
+          "type": "review",
+          "settings": {
+            "title": "I LOVE them!",
+            "text": "<p>I received my hats today and I LOVE them!  They turned out great.  I will definitely be ordering more from you folks in the near future.  Thank you for all of your work.</p>",
+            "created_at": "Feb, 22, 2025",
+            "name": "Will"
+          }
+        },
         "review_bVVmxX": {
           "type": "review",
           "settings": {
@@ -960,6 +969,7 @@
         }
       },
       "block_order": [
+        "review_XjTpDR",
         "review_bVVmxX",
         "review_xxMRxP",
         "review_LNLbd3",
