@@ -889,6 +889,15 @@
     "es_testimonial_xNiLtf": {
       "type": "es-testimonial",
       "blocks": {
+        "review_bVVmxX": {
+          "type": "review",
+          "settings": {
+            "title": "The kids are ecstatic!!!",
+            "text": "<p>The hats arrived on Tuesday! They are great!!! We are so excited to have them. The kids (at my summer camp) are ecstatic!!! I really appreciate all your time and effort in helping to co-create them. : )</p>",
+            "created_at": "Feb 7, 2025",
+            "name": "Veronica Rae Cowen"
+          }
+        },
         "review_xxMRxP": {
           "type": "review",
           "settings": {
@@ -951,6 +960,7 @@
         }
       },
       "block_order": [
+        "review_bVVmxX",
         "review_xxMRxP",
         "review_LNLbd3",
         "review_h8GNw6",
