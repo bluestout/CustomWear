@@ -889,6 +889,15 @@
     "es_testimonial_xNiLtf": {
       "type": "es-testimonial",
       "blocks": {
+        "review_UqCnTn": {
+          "type": "review",
+          "settings": {
+            "title": "Hats are above and beyond",
+            "text": "<p>I just received the hats for the PHNX order. I just want to thank you so much because these hats are above and beyond everything and are just wonderful! Thank you! If we have future embroidery needs, I will definitely come to customized wear first.</p>",
+            "created_at": "Mar 5, 2026",
+            "name": "Kathie"
+          }
+        },
         "review_BUxY4P": {
           "type": "review",
           "settings": {
@@ -978,6 +987,7 @@
         }
       },
       "block_order": [
+        "review_UqCnTn",
         "review_BUxY4P",
         "review_XjTpDR",
         "review_bVVmxX",
