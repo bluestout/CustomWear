@@ -728,6 +728,61 @@
         "padding_bottom": 84
       }
     },
+    "es_gallery_with_link_XdFTjW": {
+      "type": "es-gallery-with-link",
+      "blocks": {
+        "item_EP8aGf": {
+          "type": "item",
+          "settings": {
+            "item_width": 4,
+            "image": "shopify://shop_images/1000x1014__E2_80_93_3.png",
+            "title": "",
+            "url": "shopify://pages/inspiration-gallery",
+            "title_2": "Hat Style 2",
+            "url_2": ""
+          }
+        },
+        "item_Fp6UFz": {
+          "type": "item",
+          "settings": {
+            "item_width": 4,
+            "image": "shopify://shop_images/1000x1014__E2_80_93_1.jpg",
+            "title": "",
+            "url": "shopify://pages/inspiration-gallery",
+            "title_2": "Hat Style 2",
+            "url_2": ""
+          }
+        },
+        "item_aJtUkE": {
+          "type": "item",
+          "settings": {
+            "item_width": 2,
+            "image": "shopify://shop_images/1000x509_patriotic.png",
+            "title": "",
+            "url": "shopify://pages/inspiration-gallery",
+            "image_2": "shopify://shop_images/659x514__E2_80_93_1.jpg",
+            "title_2": "",
+            "url_2": "shopify://pages/inspiration-gallery"
+          }
+        }
+      },
+      "block_order": [
+        "item_EP8aGf",
+        "item_Fp6UFz",
+        "item_aJtUkE"
+      ],
+      "settings": {
+        "scrollable": true,
+        "title": "Featured Work",
+        "hide_title_on_mobile": false,
+        "padding_top": 40,
+        "padding_bottom": 80,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20,
+        "item_count_row": 3,
+        "show_gradient": false
+      }
+    },
     "es_image_with_text_QiEqMH": {
       "type": "es-image-with-text",
       "blocks": {
@@ -773,17 +828,75 @@
         "padding_bottom_mobile": 16
       }
     },
+    "es_featured_videos_zwxmNW": {
+      "type": "es-featured-videos",
+      "blocks": {
+        "video_LC4fM8": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://youtu.be/D0r6cdG9QDQ",
+            "featured_image": "shopify://shop_images/Screen_Shot_2025-06-25_at_18.50.49.png",
+            "enable_video_looping": false,
+            "full_width": false,
+            "description": ""
+          }
+        },
+        "video_pyYEmP": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://youtu.be/ViyWxaebVmA",
+            "featured_image": "shopify://shop_images/image_7.png",
+            "enable_video_looping": false,
+            "full_width": false,
+            "description": ""
+          }
+        },
+        "video_nQgbYm": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://youtu.be/Nl9YJBWvrco",
+            "featured_image": "shopify://shop_images/image_6.png",
+            "enable_video_looping": false,
+            "full_width": false,
+            "description": ""
+          }
+        },
+        "video_azGMUG": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://youtu.be/axfsK2KEtuk",
+            "featured_image": "shopify://shop_images/image_8.png",
+            "enable_video_looping": false,
+            "full_width": false,
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_LC4fM8",
+        "video_pyYEmP",
+        "video_nQgbYm",
+        "video_azGMUG"
+      ],
+      "settings": {
+        "scrollable": true,
+        "title": "Customized Wear Techniques 101",
+        "description": "<p>Discover the best techniques for embroidering hats, washing </p><p>caps & measuring your head for the perfect fit with ease!</p>",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
     "es_testimonial_xNiLtf": {
       "type": "es-testimonial",
       "blocks": {
         "review_xxMRxP": {
           "type": "review",
           "settings": {
-            "title": "Amazing Hats!",
+            "title": "Hats turned out great!",
             "image": "shopify://shop_images/Stars.svg",
-            "text": "<p>We designed some hats to give away to patients and promote the business.  The patients have loved them!  Thanks to Lisette in customer service who has made the process easy! Great Company and excellent service!</p>",
-            "created_at": "Tue, Sep 01 2020",
-            "name": "Julie"
+            "text": "<p>The hats turned out great! Thank you! Thanks :) All the best.</p>",
+            "created_at": "Jan, 29, 2025",
+            "name": "Krystle Orlando Marketing"
           }
         },
         "review_LNLbd3": {
@@ -853,119 +966,6 @@
     "1775241589d5956ba8": {
       "type": "_blocks",
       "settings": {}
-    },
-    "es_gallery_with_link_XdFTjW": {
-      "type": "es-gallery-with-link",
-      "blocks": {
-        "item_EP8aGf": {
-          "type": "item",
-          "settings": {
-            "item_width": 4,
-            "image": "shopify://shop_images/1000x1014__E2_80_93_3.png",
-            "title": "",
-            "url": "shopify://pages/inspiration-gallery",
-            "title_2": "Hat Style 2",
-            "url_2": ""
-          }
-        },
-        "item_Fp6UFz": {
-          "type": "item",
-          "settings": {
-            "item_width": 4,
-            "image": "shopify://shop_images/1000x1014__E2_80_93_1.jpg",
-            "title": "",
-            "url": "shopify://pages/inspiration-gallery",
-            "title_2": "Hat Style 2",
-            "url_2": ""
-          }
-        },
-        "item_aJtUkE": {
-          "type": "item",
-          "settings": {
-            "item_width": 2,
-            "image": "shopify://shop_images/1000x509_patriotic.png",
-            "title": "",
-            "url": "shopify://pages/inspiration-gallery",
-            "image_2": "shopify://shop_images/659x514__E2_80_93_1.jpg",
-            "title_2": "",
-            "url_2": "shopify://pages/inspiration-gallery"
-          }
-        }
-      },
-      "block_order": [
-        "item_EP8aGf",
-        "item_Fp6UFz",
-        "item_aJtUkE"
-      ],
-      "settings": {
-        "scrollable": true,
-        "title": "Featured Work",
-        "hide_title_on_mobile": false,
-        "padding_top": 40,
-        "padding_bottom": 80,
-        "padding_top_mobile": 20,
-        "padding_bottom_mobile": 20,
-        "item_count_row": 3,
-        "show_gradient": false
-      }
-    },
-    "es_featured_videos_zwxmNW": {
-      "type": "es-featured-videos",
-      "blocks": {
-        "video_LC4fM8": {
-          "type": "video",
-          "settings": {
-            "video_url": "https://youtu.be/D0r6cdG9QDQ",
-            "featured_image": "shopify://shop_images/Screen_Shot_2025-06-25_at_18.50.49.png",
-            "enable_video_looping": false,
-            "full_width": false,
-            "description": ""
-          }
-        },
-        "video_pyYEmP": {
-          "type": "video",
-          "settings": {
-            "video_url": "https://youtu.be/ViyWxaebVmA",
-            "featured_image": "shopify://shop_images/image_7.png",
-            "enable_video_looping": false,
-            "full_width": false,
-            "description": ""
-          }
-        },
-        "video_nQgbYm": {
-          "type": "video",
-          "settings": {
-            "video_url": "https://youtu.be/Nl9YJBWvrco",
-            "featured_image": "shopify://shop_images/image_6.png",
-            "enable_video_looping": false,
-            "full_width": false,
-            "description": ""
-          }
-        },
-        "video_azGMUG": {
-          "type": "video",
-          "settings": {
-            "video_url": "https://youtu.be/axfsK2KEtuk",
-            "featured_image": "shopify://shop_images/image_8.png",
-            "enable_video_looping": false,
-            "full_width": false,
-            "description": ""
-          }
-        }
-      },
-      "block_order": [
-        "video_LC4fM8",
-        "video_pyYEmP",
-        "video_nQgbYm",
-        "video_azGMUG"
-      ],
-      "settings": {
-        "scrollable": true,
-        "title": "Customized Wear Techniques 101",
-        "description": "<p>Discover the best techniques for embroidering hats, washing </p><p>caps & measuring your head for the perfect fit with ease!</p>",
-        "padding_top": 80,
-        "padding_bottom": 40
-      }
     }
   },
   "order": [
