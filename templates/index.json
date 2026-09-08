@@ -889,6 +889,15 @@
     "es_testimonial_xNiLtf": {
       "type": "es-testimonial",
       "blocks": {
+        "review_BUxY4P": {
+          "type": "review",
+          "settings": {
+            "title": "Raised about $18,000 for our shelter!",
+            "text": "<p>Thanks so much for all of your communication and flexibility! We just had the 5k today and raised about $18000 for our shelter! The hats were a wonderful prize and looked great!</p>",
+            "created_at": "Feb, 28 2025",
+            "name": "Sarah Cleveland"
+          }
+        },
         "review_XjTpDR": {
           "type": "review",
           "settings": {
@@ -969,6 +978,7 @@
         }
       },
       "block_order": [
+        "review_BUxY4P",
         "review_XjTpDR",
         "review_bVVmxX",
         "review_xxMRxP",
